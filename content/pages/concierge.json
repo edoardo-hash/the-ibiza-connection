@@ -1,0 +1,48 @@
+{
+  "slug": "concierge",
+  "nav": "experiences",
+  "eyebrow": "Experiences · Concierge",
+  "title": "Consider it arranged",
+  "lede": "The difference between a good week and a great one is usually a handful of details. A chef, a table, a boat, a babysitter — one message and they are handled.",
+  "image": "/assets/img/concierge.webp",
+  "image_alt": "A shaded dining terrace at an Ibiza villa",
+  "sections": [
+    {
+      "type": "prose",
+      "eyebrow": "How it works",
+      "title": "One number, for everything",
+      "paragraphs": [
+        "Before you arrive we will ask a few questions: who is coming, what you like to eat, whether you want to be busy or do nothing at all. Then we make the week work around that.",
+        "During your stay there is one number to call. It reaches a person, not a portal. If the pool needs attention, a flight is delayed or you decide at four o'clock that you want a table for ten at eight, we will sort it."
+      ]
+    },
+    {
+      "type": "cards",
+      "eyebrow": "What we arrange",
+      "title": "The things that make a week",
+      "items": [
+        { "number": "01", "title": "A chef at the villa", "text": "Breakfast, a long lunch, a birthday dinner — with the shopping, the service and the washing up included." },
+        { "number": "02", "title": "Tables worth the drive", "text": "From toes-in-the-sand lunches to the island's best dining rooms, booked before you land." },
+        { "number": "03", "title": "Boat days", "text": "Day boats, llaüts and crewed yachts, with a skipper who knows where to anchor." },
+        { "number": "04", "title": "Wellness", "text": "A trainer at the villa, a massage after the beach, a yoga teacher for the group." },
+        { "number": "05", "title": "Children", "text": "Babysitters, nannies and activities that keep everyone happy — including the parents." },
+        { "number": "06", "title": "Celebrations", "text": "Birthdays, anniversaries and small weddings, from the cake to the string quartet." },
+        { "number": "07", "title": "Transfers & drivers", "text": "Airport transfers, drivers by the evening, cars delivered to the villa." },
+        { "number": "08", "title": "The house", "text": "Extra housekeeping, a private bartender, flowers on arrival, the fridge stocked before you get there." }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Ask once. Consider it arranged.",
+      "cite": "The Ibiza Connection"
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Concierge",
+      "title": "Tell us how you like your days",
+      "text": "Send us a note before you arrive and we will build the week around it — or leave it entirely open and decide as you go.",
+      "primary": { "label": "Start an enquiry", "href": "/contact/" },
+      "secondary": { "label": "WhatsApp us", "href": "https://wa.me/34697875890" }
+    }
+  ]
+}

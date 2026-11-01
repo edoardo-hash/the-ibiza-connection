@@ -1,0 +1,77 @@
+{
+  "slug": "terms",
+  "nav": "terms",
+  "eyebrow": "Legal",
+  "title": "Terms of use & booking",
+  "lede": "The short version: we introduce you to villas, the owner's terms apply to your stay, and we will always tell you what those terms are before you commit.",
+  "sections": [
+    {
+      "type": "prose",
+      "title": "About this website",
+      "paragraphs": [
+        "This site is published by The Ibiza Connection (NIF B42772145), Carrer Pintors Puget 16, Local 3, Santa Eulària des Riu, Ibiza. By using it you agree to these terms.",
+        "We try to keep the information accurate and the prices current. Villa details, availability and rates can change, and photographs are indicative: a house is a living thing and furniture moves. Nothing on this site is a binding offer until we confirm it in writing."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Enquiries and bookings",
+      "paragraphs": [
+        "An enquiry through this site, by email or by WhatsApp does not reserve a villa. A booking is confirmed only when we have confirmed availability, you have accepted the quote and any deposit has been received and acknowledged in writing.",
+        "Each villa has its own conditions — minimum stay, arrival day, deposit, cancellation policy and security deposit. They are set out in the booking confirmation, which prevails over any general description on this website."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Prices",
+      "paragraphs": [
+        "Prices are shown in euros, per villa per week, and include the villa only unless stated otherwise. Cleaning, security deposits, tourist tax where applicable, and any extras are confirmed with your quote. We do not charge a booking fee.",
+        "If a price is shown in error, we will tell you as soon as we notice and you will never be charged more than the price you confirmed."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Changes and cancellations",
+      "paragraphs": [
+        "Cancellation terms are those of the individual villa and are set out in your booking confirmation. We recommend travel insurance that covers cancellation. If your plans change, tell us as early as possible: we will always try to move your dates or find an alternative house."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Your stay",
+      "paragraphs": [
+        "The number of guests must not exceed the villa's stated capacity. Parties, events and commercial photography require our written agreement. Guests are asked to respect the house, the neighbours and the island — most villas have a quiet-hours rule after midnight.",
+        "A security deposit may be taken at check-in and returned after departure, less any damage. The lead guest is responsible for the behaviour of the whole group."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Extras and third parties",
+      "paragraphs": [
+        "Boats, cars, chefs, transfers and other experiences are provided by independent local operators. We introduce them and help you book, but their own terms and insurance apply. We choose partners carefully and will always help if something goes wrong."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Liability",
+      "paragraphs": [
+        "We are responsible for the service we provide with the care of a diligent professional. We are not responsible for events outside our control — weather, strikes, government restrictions, or the acts of third-party providers — but we will do everything reasonable to limit their effect on your holiday.",
+        "Nothing in these terms limits rights you have under Spanish or European consumer law."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Governing law",
+      "paragraphs": [
+        "These terms are governed by Spanish law. If we cannot resolve a disagreement between us, the courts of the Balearic Islands have jurisdiction, without prejudice to your rights as a consumer to bring proceedings where you live."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Questions",
+      "paragraphs": [
+        "Write to mail@theibizaconnection.net or call +34 697 87 58 90. We would much rather answer a question before you book than solve a problem afterwards."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "owners",
+  "nav": "owners",
+  "eyebrow": "For owners",
+  "title": "Entrust your villa to people who live here",
+  "lede": "We look after a small number of private houses in Ibiza — marketing them properly, filling the calendar and taking care of the details that owners should not have to think about from another country.",
+  "image": "/assets/img/owners.webp",
+  "image_alt": "A villa terrace on the south-west coast of Ibiza",
+  "sections": [
+    {
+      "type": "split",
+      "eyebrow": "Why us",
+      "title": "A villa is not a listing",
+      "paragraphs": [
+        "The best rentals are run like small hotels: the right photography, honest copy, a calendar that is actually up to date, and a team who can solve a broken air-conditioning unit on a Sunday in August.",
+        "We represent owners directly, with no layers in between. You deal with the people who look after your house, and we deal with everything else — the guests, the changeovers, the maintenance, the paperwork."
+      ],
+      "image": "/assets/img/region-south-west.webp",
+      "image_alt": "A turquoise pool above the sea",
+      "caption": "Cala Vadella, south west Ibiza."
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Services",
+      "title": "What we take care of",
+      "items": [
+        { "number": "01", "title": "Marketing & photography", "text": "A proper shoot, honest copy and placement across our site and partner channels." },
+        { "number": "02", "title": "Pricing & calendar", "text": "Seasonal pricing, minimum stays and availability kept in sync with your own bookings." },
+        { "number": "03", "title": "Guest care", "text": "Enquiries, contracts, deposits, check-in, welcome and a number guests can call at any hour." },
+        { "number": "04", "title": "Housekeeping & maintenance", "text": "Changeovers, linen, pool and garden, and a trusted list of trades who turn up when they say they will." },
+        { "number": "05", "title": "Licensing & compliance", "text": "Guidance on tourist rental licences, insurance and the paperwork the island now asks for." },
+        { "number": "06", "title": "Reporting", "text": "Clear monthly statements, occupancy and revenue — no surprises at the end of the season." }
+      ]
+    },
+    {
+      "type": "steps",
+      "eyebrow": "How it works",
+      "title": "From first visit to first booking",
+      "items": [
+        { "title": "We visit", "text": "We come to the house, take our own photographs and talk through what you want from the season." },
+        { "title": "We plan", "text": "A pricing and calendar proposal, a photography and copy plan, and a clear agreement on what we handle." },
+        { "title": "We launch", "text": "The villa goes live on our site and partner channels, with the calendar connected and enquiries answered the same day." },
+        { "title": "We look after it", "text": "Guests, changeovers, maintenance and reporting — with one person accountable for your house." }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "Most of our owners came to us through another owner. That is the only review that matters.",
+      "cite": "The Ibiza Connection"
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Owners",
+      "title": "Tell us about your villa",
+      "text": "Send a few details — location, bedrooms, whether you already rent it — and we will come and see it.",
+      "primary": { "label": "Write to us", "href": "/contact/" },
+      "secondary": { "label": "Call the office", "href": "tel:+34697875890" }
+    }
+  ]
+}

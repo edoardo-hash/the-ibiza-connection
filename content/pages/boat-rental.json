@@ -1,0 +1,166 @@
+{
+  "slug": "boat-rental",
+  "nav": "experiences",
+  "eyebrow": "Experiences · Boat days",
+  "title": "Days on the water",
+  "lede": "From a traditional llaüt for a morning to a crewed yacht for a week — a boat turns Ibiza into an island again.",
+  "image": "/assets/img/boat-hero.webp",
+  "image_alt": "A motor yacht at speed on the Mediterranean off Ibiza",
+  "sections": [
+    {
+      "type": "prose",
+      "eyebrow": "The day",
+      "title": "No roads, no queues, no plans beyond the next cove",
+      "paragraphs": [
+        "We arrange boats of every size for every kind of day: a quiet swim at Cala Mastella, a long lunch at Cala Jondal, the cliffs of Es Vedrà at golden hour, or the crossing to Formentera with the family.",
+        "Every booking includes a licensed skipper, fuel for the agreed itinerary, and the equipment you need for the day. We will plan the route around the wind, the crowds and the light — and we will tell you honestly if the weather suggests another day.",
+        "Boats can be booked by the day, the half-day or the week. For groups of ten or more, a crewed yacht is often better value than two day boats."
+      ],
+      "image": "/assets/img/journal-water.webp",
+      "image_alt": "An infinity pool at the edge of the sea"
+    },
+    {
+      "type": "fleet",
+      "eyebrow": "The fleet",
+      "title": "Boats we arrange",
+      "text": "A selection of the boats our partners run out of Ibiza. Availability changes by season — tell us your dates and we will send the options that suit your group.",
+      "items": [
+        {
+          "name": "Sunseeker Predator 108",
+          "type": "Superyacht",
+          "capacity": "12 guests",
+          "note": "Crewed, for a day or a week."
+        },
+        {
+          "name": "Pershing 90",
+          "type": "Motor yacht",
+          "capacity": "9 guests",
+          "note": "Fast, sleek, and made for the south coast."
+        },
+        {
+          "name": "Leopard 32",
+          "type": "Day boat",
+          "capacity": "12 guests",
+          "note": "The classic Ibiza day boat: sun, shade and a swim platform."
+        },
+        {
+          "name": "Leopard 27",
+          "type": "Day boat",
+          "capacity": "12 guests",
+          "note": "Easy, quick and perfect for a half-day."
+        },
+        {
+          "name": "Maiora 24S",
+          "type": "Motor yacht",
+          "capacity": "12 guests",
+          "note": "Comfortable cruising with plenty of deck."
+        },
+        {
+          "name": "Van Dutch 40",
+          "type": "Day boat",
+          "capacity": "9 guests",
+          "note": "Minimal, fast and very photogenic."
+        },
+        {
+          "name": "Vanquish VQ48",
+          "type": "Day boat",
+          "capacity": "12 guests",
+          "note": "Space for a long lunch and a big group."
+        },
+        {
+          "name": "Vanquish V43",
+          "type": "Day boat",
+          "capacity": "11 guests",
+          "note": "A good all-rounder for the north and east."
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "eyebrow": "On the water",
+      "title": "A few of the boats we arrange",
+      "text": "From a quiet llaüt for a morning swim to a crewed motor yacht for a week. Availability and prices depend on the season and the size of your group.",
+      "items": [
+        {
+          "src": "/assets/img/boat-01.webp",
+          "alt": "A dark motor yacht at sea",
+          "caption": "Crewed motor yacht"
+        },
+        {
+          "src": "/assets/img/boat-02.webp",
+          "alt": "A motor yacht cruising off Ibiza",
+          "caption": "Day boat, south coast"
+        },
+        {
+          "src": "/assets/img/boat-03.webp",
+          "alt": "A yacht anchored below the cliffs",
+          "caption": "Anchored at Cala d'Hort"
+        },
+        {
+          "src": "/assets/img/boat-04.webp",
+          "alt": "A white motor yacht on calm water",
+          "caption": "For long lunches"
+        },
+        {
+          "src": "/assets/img/boat-05.webp",
+          "alt": "A low day boat on turquoise water",
+          "caption": "Minimal, fast, very photogenic"
+        },
+        {
+          "src": "/assets/img/boat-06.webp",
+          "alt": "A dark day boat on turquoise water",
+          "caption": "North coast day boat"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "eyebrow": "Included",
+      "title": "What comes with the boat",
+      "items": [
+        "A licensed skipper and crew where required",
+        "Fuel for the agreed itinerary",
+        "Snorkelling gear, paddleboards and towels",
+        "A cool box with water, soft drinks and ice",
+        "Lunch on board or a table on the beach, arranged in advance",
+        "Hotel or villa transfers to the marina"
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Good to know",
+      "items": [
+        {
+          "q": "How far in advance should we book?",
+          "a": "In July and August, the best skippers are usually booked several weeks ahead. For June, September and October, a week or two is often enough."
+        },
+        {
+          "q": "Can we choose the itinerary?",
+          "a": "Yes. We will suggest a route based on the wind, the season and what you want from the day — and adjust it if the weather changes."
+        },
+        {
+          "q": "Do we need a licence?",
+          "a": "No. Every boat we arrange comes with a licensed skipper. If you hold a licence and want to charter bareboat, tell us and we will find the right operator."
+        },
+        {
+          "q": "What happens if the weather turns?",
+          "a": "Safety comes first. If the skipper decides the day cannot go ahead, we will rebook or refund according to the operator's terms — and we will tell you before you leave the villa."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Boat days",
+      "title": "Tell us about your day on the water",
+      "text": "Send your dates, the size of your group and whether you would like a skipper, lunch or both.",
+      "primary": {
+        "label": "Enquire about a boat",
+        "href": "/contact/"
+      },
+      "secondary": {
+        "label": "WhatsApp us",
+        "href": "https://wa.me/34697875890"
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "car-hire",
+  "nav": "experiences",
+  "eyebrow": "Experiences · Car hire",
+  "title": "Cars, delivered to the villa",
+  "lede": "The island is small, but the best coves are down lanes a taxi will not take. We arrange cars from local operators — delivered, insured and ready when you land.",
+  "image": "/assets/img/car.webp",
+  "image_alt": "A villa garden and drive in Ibiza",
+  "sections": [
+    {
+      "type": "prose",
+      "eyebrow": "The practical bit",
+      "title": "The right car for the right week",
+      "paragraphs": [
+        "A small car is perfect for two and for the lanes around Santa Gertrudis. A family of five will want an SUV, and a group of eight will need something larger — or two cars, which is often easier and cheaper.",
+        "We arrange delivery to your villa or the airport, full insurance, additional drivers and child seats. For evenings out, we can also arrange a driver, so nobody has to think about parking in Ibiza Town."
+      ],
+      "image": "/assets/img/region-east.webp",
+      "image_alt": "A pool surrounded by pines"
+    },
+    {
+      "type": "cards",
+      "eyebrow": "The cars",
+      "title": "What we can arrange",
+      "items": [
+        { "number": "01", "title": "Compact", "text": "Easy to park, easy on fuel, ideal for two and the north's narrow lanes." },
+        { "number": "02", "title": "SUV", "text": "Room for the family, the beach kit and the shopping. The most popular choice." },
+        { "number": "03", "title": "Premium & convertible", "text": "For the drive to dinner, or the coast road at sunset." },
+        { "number": "04", "title": "Seven seats & vans", "text": "For larger groups, airport runs and everything that comes with a villa." },
+        { "number": "05", "title": "Drivers", "text": "English-speaking drivers by the hour or the evening, with a car included." },
+        { "number": "06", "title": "Transfers", "text": "Airport transfers timed to your flight, with a name at arrivals." }
+      ]
+    },
+    {
+      "type": "list",
+      "eyebrow": "Included",
+      "title": "What we sort out",
+      "items": [
+        "Delivery to your villa, the airport or the marina",
+        "Full insurance and breakdown cover",
+        "Additional drivers at no extra charge",
+        "Child and booster seats",
+        "Flexible pick-up and drop-off times",
+        "An English-speaking contact on the island if anything goes wrong"
+      ]
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Car hire",
+      "title": "Tell us when you land",
+      "text": "Send your dates, the number of drivers and the size of your group. We will send options and prices.",
+      "primary": { "label": "Enquire about a car", "href": "/contact/" },
+      "secondary": { "label": "WhatsApp us", "href": "https://wa.me/34697875890" }
+    }
+  ]
+}

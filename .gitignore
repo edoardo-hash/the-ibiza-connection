@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+.build/
+.dist-old/
+.image-cache/
+dist/
+screenshots/review/
+
+.vercel-home/
+.vercel
+.env*

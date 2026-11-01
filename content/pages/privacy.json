@@ -1,0 +1,78 @@
+{
+  "slug": "privacy",
+  "nav": "privacy",
+  "eyebrow": "Legal",
+  "title": "Privacy & cookies",
+  "lede": "We collect as little as possible, use it only to answer you and run your booking, and never sell it. This page explains what that means in practice.",
+  "sections": [
+    {
+      "type": "prose",
+      "title": "Who we are",
+      "paragraphs": [
+        "The Ibiza Connection (NIF B42772145), Carrer Pintors Puget 16, Local 3, Santa Eulària des Riu, Ibiza, is the data controller for the information described on this page. You can reach us at mail@theibizaconnection.net or on +34 697 87 58 90.",
+        "This website is a showcase for our villa collection. It does not create an account for you, and it does not process payments."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "What we collect",
+      "paragraphs": [
+        "When you contact us we receive the details you choose to send: your name, email address, telephone number, dates, group size, the villa you are interested in and anything else in your message.",
+        "If your enquiry becomes a booking, we will also need the details required to prepare the contract and comply with Spanish law — identification, address and payment information, handled by our booking and payment providers.",
+        "Our web server records standard technical information (anonymised IP address, requested page, browser type, time) to keep the site secure and understand which pages are used. We do not use advertising trackers and we do not sell data."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Why we use it",
+      "paragraphs": [
+        "We use your information to answer your enquiry, prepare a quote or shortlist, manage a booking, arrange the extras you ask for, meet our legal and tax obligations, and — only if you have asked — send occasional news about the collection."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "The legal bases",
+      "paragraphs": [
+        "We rely on your consent when you send an enquiry or subscribe to our news; on the performance of a contract when you book with us; on our legitimate interest in running and securing the website; and on legal obligation for tax and accounting records."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Who sees it",
+      "paragraphs": [
+        "Your details are seen by the people who need them to answer you or run your booking: our team, the owner or representative of the villa you book, and the providers who host the site and our email. Booking and payment providers process the information needed to confirm and charge a stay.",
+        "We do not sell your data and we do not share it for advertising. Where a provider is outside the European Economic Area, we use a contract that meets European data protection standards."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "How long we keep it",
+      "paragraphs": [
+        "Enquiries that do not become bookings are kept for up to two years, so we can pick up the conversation next season. Booking and invoice records are kept for as long as Spanish tax and accounting law requires. Marketing consent can be withdrawn at any time, and we will remove you from the list."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Your rights",
+      "paragraphs": [
+        "You can ask to see the information we hold about you, have it corrected or deleted, restrict or object to its use, or receive it in a portable format. Write to mail@theibizaconnection.net and we will answer within one month.",
+        "If you are not satisfied with our response, you can complain to the Spanish data protection authority, the Agencia Española de Protección de Datos (aepd.es)."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Cookies",
+      "paragraphs": [
+        "This site uses no advertising or analytics cookies by default. It stores a small preference in your browser only when you use a feature that needs it — for example remembering the villas you have saved. That information stays in your browser and is not sent to us.",
+        "If we add analytics in future, this page will say so and you will be asked before anything is set."
+      ]
+    },
+    {
+      "type": "prose",
+      "title": "Changes",
+      "paragraphs": [
+        "If this policy changes, the new version will appear here with the date below. Last updated October 2026."
+      ]
+    }
+  ]
+}

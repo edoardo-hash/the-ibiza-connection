@@ -1,0 +1,63 @@
+{
+  "slug": "about",
+  "nav": "about",
+  "eyebrow": "About",
+  "title": "A small agency with a long memory",
+  "lede": "The Ibiza Connection arranges villas, boats and long lunches for people who love this island — from an office five minutes from the sea in Santa Eulària.",
+  "image": "/assets/img/about.webp",
+  "image_alt": "A whitewashed villa among the pines in Ibiza",
+  "sections": [
+    {
+      "type": "split",
+      "eyebrow": "Our story",
+      "title": "The best villa holidays are arranged, not booked",
+      "paragraphs": [
+        "The agency grew out of a simple observation: the difference between a good holiday and a great one is almost never the house. It is the person who knows which beach to go to on a windy Tuesday, which restaurant will fit twelve without a fuss, and which villa's photographs do not do it justice.",
+        "So we built a small team around that idea. We visit every house, we know every owner, and we answer the phone ourselves. Our office is in Santa Eulària, on the east coast, and most of our guests come back to the same handful of houses year after year.",
+        "We are independent, which means we can tell you when a villa is not right for you — and we will. A shortlist of three good houses is worth more than a catalogue of seventy."
+      ],
+      "image": "/assets/img/story.webp",
+      "image_alt": "A pool and pine trees at an Ibiza villa",
+      "caption": "North Ibiza, where the roads end at the sea."
+    },
+    {
+      "type": "cards",
+      "eyebrow": "What we do differently",
+      "title": "Three promises",
+      "items": [
+        {
+          "number": "01",
+          "title": "Local knowledge, not a call centre",
+          "text": "You speak to someone who lives here, has walked the beach and eaten in the restaurant. No scripts, no hold music, no chatbot."
+        },
+        {
+          "number": "02",
+          "title": "One number for the whole stay",
+          "text": "Villa, car, boat, chef, babysitter, transfer — one team arranges it, and one team answers if something changes."
+        },
+        {
+          "number": "03",
+          "title": "The best price we can get you",
+          "text": "We work directly with owners and their representatives. If you find the same villa cheaper elsewhere, tell us and we will look at it honestly."
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": "We are not here to sell you the island. We are here to introduce you to it.",
+      "cite": "The Ibiza Connection"
+    },
+    {
+      "type": "split",
+      "eyebrow": "The office",
+      "title": "Come and find us",
+      "paragraphs": [
+        "We are on Carrer Pintors Puget in Santa Eulària des Riu, a short walk from the marina and the promenade. There is usually someone in during office hours, and always someone on the end of the phone.",
+        "If you are on the island, come in for a coffee and a map. If you are not, send us a note — we will reply with a shortlist, not a brochure."
+      ],
+      "image": "/assets/img/contact.webp",
+      "image_alt": "The east coast of Ibiza",
+      "reverse": true
+    }
+  ]
+}

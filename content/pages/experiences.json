@@ -1,0 +1,60 @@
+{
+  "slug": "experiences",
+  "nav": "experiences",
+  "eyebrow": "Experiences",
+  "title": "The rest of the holiday, arranged",
+  "lede": "A villa is the beginning. We can put the boat at the end of the jetty, the car in the drive, the chef in the kitchen and the table on the water.",
+  "image": "/assets/img/experiences.webp",
+  "image_alt": "A terrace above the sea on Ibiza's east coast",
+  "sections": [
+    {
+      "type": "split",
+      "eyebrow": "Boat days",
+      "title": "The island from the water",
+      "paragraphs": [
+        "Half of Ibiza is only visible from the sea. A traditional llaüt for a morning, a fast day boat for the south coast, or a crewed yacht for a week around the Balearics — we match the boat to the group and the weather.",
+        "Skippers, lunch on board, paddleboards and snorkelling can all be arranged. In July and August, book early."
+      ],
+      "image": "/assets/img/boat.webp",
+      "image_alt": "A motor yacht at speed on the Mediterranean",
+      "link": {
+        "label": "See the fleet",
+        "href": "/experiences/boat-rental/"
+      },
+      "caption": "Cala d'Hort and Es Vedrà, an hour from the marina."
+    },
+    {
+      "type": "split",
+      "eyebrow": "Car hire",
+      "title": "A car, delivered to the villa",
+      "paragraphs": [
+        "The north is not on a bus route and the best coves are down unmarked lanes. We arrange cars from trusted local operators, delivered to your villa and insured for the island.",
+        "Small cars for two, SUVs for the family, convertibles for the drive to dinner — and a driver if you would rather not think about parking."
+      ],
+      "image": "/assets/img/car.webp",
+      "image_alt": "An Ibiza villa driveway and garden",
+      "link": {
+        "label": "Cars & drivers",
+        "href": "/experiences/car-hire/"
+      },
+      "reverse": true,
+      "caption": "Delivered, insured, and ready when you land."
+    },
+    {
+      "type": "split",
+      "eyebrow": "Concierge",
+      "title": "The things that make a week",
+      "paragraphs": [
+        "A chef who arrives with the fish and leaves the kitchen cleaner than they found it. A table for twelve on the water. A trainer at eight, a babysitter at nine, a boat at ten.",
+        "Ask once, and consider it arranged. We have been doing this long enough to know who is good — and who is not."
+      ],
+      "image": "/assets/img/concierge.webp",
+      "image_alt": "A shaded dining terrace at an Ibiza villa",
+      "link": {
+        "label": "What we arrange",
+        "href": "/experiences/concierge/"
+      },
+      "caption": "Long lunches, arranged."
+    }
+  ]
+}

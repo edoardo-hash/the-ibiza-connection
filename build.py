@@ -1,0 +1,2157 @@
+#!/usr/bin/env python3
+"""
+The Ibiza Connection — static site builder.
+
+    python3 build.py
+
+Reads content/ (editable copy) and data/ (fetched from the Invenio API) and
+writes a complete static site to dist/. No framework, no database, no build
+step in the browser.
+
+The site is intentionally plain HTML + one stylesheet + one small JS file so it
+can be hosted anywhere — Netlify, Vercel, S3, nginx, a Raspberry Pi.
+"""
+
+from __future__ import annotations
+
+import html
+import json
+import os
+import re
+import shutil
+import unicodedata
+from datetime import date, datetime, timezone
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+CONTENT = ROOT / "content"
+DATA = ROOT / "data"
+DIST = ROOT / "dist"
+STAGE = ROOT / ".build"
+ASSETS = ROOT / "assets"
+
+
+# --------------------------------------------------------------------------- #
+#  Data
+# --------------------------------------------------------------------------- #
+
+
+def load(path: Path):
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+SETTINGS = load(CONTENT / "settings.json")
+SITE = SETTINGS["site"]
+PRICING = SETTINGS["pricing"]
+NAV = SETTINGS["nav"]
+FOOTER = SETTINGS["footer"]
+HOME = load(CONTENT / "home.json")
+DESTINATIONS = load(CONTENT / "destinations.json")
+JOURNAL = load(CONTENT / "journal.json")
+PAGES = {
+    name: load(CONTENT / "pages" / f"{name}.json")
+    for name in (
+        "about",
+        "owners",
+        "experiences",
+        "boat-rental",
+        "car-hire",
+        "concierge",
+        "contact",
+        "privacy",
+        "terms",
+    )
+}
+VILLAS = load(DATA / "villas.json")
+META = load(DATA / "meta.json")
+PRICES = load(DATA / "prices.json")
+
+VILLA_BY_SLUG = {v["slug"]: v for v in VILLAS}
+REGIONS = {r["slug"]: r for r in DESTINATIONS["regions"]}
+REGION_ORDER = [r["slug"] for r in DESTINATIONS["regions"]]
+POSTS = {p["slug"]: p for p in JOURNAL["posts"]}
+
+SITE_URL = (
+    os.environ.get("SITE_URL")
+    or (f"https://{os.environ['VERCEL_PROJECT_PRODUCTION_URL']}" if os.environ.get("VERCEL_PROJECT_PRODUCTION_URL") else None)
+    or SITE["url"]
+).rstrip("/")
+TODAY = date.today()
+BUILD_DAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+COUNTS = {
+    "count": len(VILLAS),
+    "areas": len({v["area_key"] for v in VILLAS}),
+    "regions": len({v["region"] for v in VILLAS}),
+}
+AREA_COUNTS: dict[str, int] = {}
+for _villa in VILLAS:
+    AREA_COUNTS[_villa["area"]] = AREA_COUNTS.get(_villa["area"], 0) + 1
+REGION_COUNTS: dict[str, int] = {}
+for _villa in VILLAS:
+    REGION_COUNTS[_villa["region"]] = REGION_COUNTS.get(_villa["region"], 0) + 1
+
+
+def fill(text: str) -> str:
+    """Replace {count}, {areas} placeholders in copy."""
+    if not isinstance(text, str):
+        return text
+    for key, value in COUNTS.items():
+        text = text.replace("{" + key + "}", str(value))
+    return text
+
+
+def esc(value) -> str:
+    return html.escape(str(value), quote=True)
+
+
+def slugify(value: str) -> str:
+    value = unicodedata.normalize("NFKD", value)
+    value = re.sub(r"[^a-zA-Z0-9]+", "-", value).strip("-").lower()
+    return value
+
+
+def money(amount) -> str:
+    try:
+        return f"€{int(round(float(amount))):,}"
+    except (TypeError, ValueError):
+        return "On request"
+
+
+def date_label(value: str, short: bool = False) -> str:
+    try:
+        day = datetime.strptime(value, "%Y-%m-%d").date()
+    except (TypeError, ValueError):
+        return value or ""
+    if short:
+        return f"{day.day} {day.strftime('%b')} {day.year}"
+    return f"{day.day} {day.strftime('%B %Y')}"
+
+
+# --------------------------------------------------------------------------- #
+#  Icons
+# --------------------------------------------------------------------------- #
+
+
+ICONS = {
+    "arrow": '<path d="M4 12h15M13 6l6 6-6 6"/>',
+    "arrow-up": '<path d="M7 17 17 7M8 7h9v9"/>',
+    "heart": '<path d="M12 20s-7-4.6-7-9.4A3.9 3.9 0 0 1 12 7a3.9 3.9 0 0 1 7 3.6C19 15.4 12 20 12 20z"/>',
+    "bed": '<path d="M3 19v-8m0 4h18v4M3 15V7m18 8v-3a3 3 0 0 0-3-3H9v3"/><circle cx="6.5" cy="10.5" r="1.4"/>',
+    "bath": '<path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zM6 12V6a2 2 0 0 1 4 0M4 19l-1 2m18-2 1 2"/>',
+    "users": '<path d="M16 19v-1.5a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4V19"/><circle cx="9" cy="7" r="3"/><path d="M17 11a3 3 0 1 0 0-6M22 19v-1a4 4 0 0 0-3-3.8"/>',
+    "phone": '<path d="M6 3h3l2 5-2.4 1.4a12 12 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>',
+    "mail": '<rect x="3" y="5" width="18" height="14"/><path d="m3 7 9 6 9-6"/>',
+    "chat": '<path d="M21 11.5a8 8 0 0 1-8.5 8L7 21l1-4.5A8 8 0 1 1 21 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/>',
+    "check": '<path d="m4 12 5 5L20 6"/>',
+    "search": '<circle cx="11" cy="11" r="7"/><path d="m20 20-4.5-4.5"/>',
+    "sliders": '<path d="M4 6h9M18 6h2M4 12h4M13 12h7M4 18h8M16 18h4"/><circle cx="15.5" cy="6" r="2"/><circle cx="10.5" cy="12" r="2"/><circle cx="13.5" cy="18" r="2"/>',
+    "close": '<path d="M6 6l12 12M18 6 6 18"/>',
+    "chevron-left": '<path d="M15 5 8 12l7 7"/>',
+    "chevron-right": '<path d="m9 5 7 7-7 7"/>',
+    "camera": '<path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.4"/>',
+    "pool": '<path d="M8 14V6a2 2 0 0 1 4 0M16 14V6a2 2 0 0 1 4 0M3 16c2 0 2-1.3 4-1.3s2 1.3 4 1.3 2-1.3 4-1.3 2 1.3 4 1.3 2-1.3 4-1.3"/><path d="M3 20c2 0 2-1.3 4-1.3s2 1.3 4 1.3 2-1.3 4-1.3 2 1.3 4 1.3 2-1.3 4-1.3"/>',
+    "sea": '<path d="M3 9c2 0 2-1.4 4-1.4S9 9 11 9s2-1.4 4-1.4S17 9 19 9s2-1.4 4-1.4"/><path d="M3 14c2 0 2-1.4 4-1.4S9 14 11 14s2-1.4 4-1.4S17 14 19 14s2-1.4 4-1.4"/><path d="M3 19c2 0 2-1.4 4-1.4S9 19 11 19s2-1.4 4-1.4S17 19 19 19s2-1.4 4-1.4"/>',
+    "wifi": '<path d="M2 8.5a15 15 0 0 1 20 0M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/>',
+    "wind": '<path d="M3 8h11a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h8a2.5 2.5 0 1 1-2.5 2.5"/>',
+    "leaf": '<path d="M4 20C4 11 10 5 20 4c1 10-5 16-14 16"/><path d="M4 20c3-5 7-8 12-9"/>',
+    "flame": '<path d="M12 21c4 0 6-2.7 6-6 0-5-6-9-6-12 0 0-6 5-6 12 0 3.3 2 6 6 6z"/>',
+    "car": '<path d="M4 16v-3l2-5h12l2 5v3M3 16h18v3h-3v-2H6v2H3z"/><circle cx="7" cy="14" r="1"/><circle cx="17" cy="14" r="1"/>',
+    "lock": '<rect x="5" y="10" width="14" height="10"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>',
+    "shield": '<path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="m9 12 2 2 4-4"/>',
+    "sun": '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/>',
+    "tv": '<rect x="3" y="5" width="18" height="12"/><path d="M8 21h8M12 17v4"/>',
+    "music": '<path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/>',
+    "dumbbell": '<path d="M6 8v8M18 8v8M3 10v4M21 10v4M6 12h12"/>',
+    "utensils": '<path d="M6 3v8a2 2 0 0 0 4 0V3M8 11v10M16 3c-2 3-2 6 0 7v11"/>',
+    "bell": '<path d="M4 18h16M6 18a6 6 0 0 1 12 0M12 12V9"/><circle cx="12" cy="7" r="1.4"/>',
+    "map-pin": '<path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/>',
+    "calendar": '<rect x="3" y="5" width="18" height="16"/><path d="M8 3v4M16 3v4M3 10h18"/>',
+    "key": '<circle cx="8" cy="9" r="4"/><path d="m11 12 9 9M16 17l2-2M19 20l2-2"/>',
+    "star": '<path d="m12 3 2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.4l6.1-.8z"/>',
+    "expand": '<path d="M9 4H4v5M15 20h5v-5M4 4l6 6M20 20l-6-6"/>',
+    "quote": '<path d="M9 7H5v6h4v4H4M20 7h-4v6h4v4h-5"/>',
+}
+
+FEATURE_ICONS = {
+    "Swimming Pool": "pool",
+    "Infinity pool": "pool",
+    "Heated Pool (additional charges may apply)": "pool",
+    "Sea View": "sea",
+    "Sunset View": "sun",
+    "Wifi": "wifi",
+    "Air Conditioning": "wind",
+    "Air Con - Bedrooms Only": "wind",
+    "Gym/Fitness Equipment": "dumbbell",
+    "Fully fitted kitchen": "utensils",
+    "BBQ": "flame",
+    "Al Fresco Dining": "utensils",
+    "Private Parking": "car",
+    "Garden": "leaf",
+    "Lawn Area": "leaf",
+    "Terraces": "sun",
+    "Roof Terrace": "sun",
+    "Safety Box": "lock",
+    "Alarm": "shield",
+    "CCTV": "shield",
+    "Music System": "music",
+    "Smart TV": "tv",
+    "TV - Satellite": "tv",
+    "Fireplace": "flame",
+}
+
+
+def icon(name: str, cls: str = "") -> str:
+    path = ICONS.get(name)
+    if not path:
+        return ""
+    klass = f' class="{cls}"' if cls else ""
+    return (
+        f'<svg{klass} viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+        f'stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" '
+        f'aria-hidden="true">{path}</svg>'
+    )
+
+
+def brand_mark(cls: str = "brand__mark") -> str:
+    return (
+        f'<svg class="{cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+        'stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+        '<circle cx="12" cy="9.1" r="5.1"/>'
+        '<path d="M2.6 18.4c2.1 0 2.1-1.4 4.2-1.4s2.1 1.4 4.2 1.4 2.1-1.4 4.2-1.4 2.1 1.4 4.2 1.4 2.1-1.4 4.2-1.4" transform="translate(-1.6 0)"/>'
+        '<path d="M2.6 21.9c2.1 0 2.1-1.4 4.2-1.4s2.1 1.4 4.2 1.4 2.1-1.4 4.2-1.4 2.1 1.4 4.2 1.4 2.1-1.4 4.2-1.4" opacity=".55" transform="translate(-1.6 0)"/>'
+        "</svg>"
+    )
+
+
+# --------------------------------------------------------------------------- #
+#  Images
+# --------------------------------------------------------------------------- #
+
+
+def villa_image(villa: dict, index: int = 0) -> dict:
+    images = villa.get("images") or []
+    if index < len(images):
+        return images[index]
+    if images:
+        return images[0]
+    return {"base": None, "url": villa.get("image", ""), "width": 1400, "height": 933, "colour": "#d8d1c4"}
+
+
+def image_tag(image: dict, alt: str, sizes: str, cls: str = "", loading: str = "lazy", priority: bool = False) -> str:
+    alt_attr = esc(alt)
+    attrs = [f'alt="{alt_attr}"', f'class="{cls}"' ] if cls else [f'alt="{alt_attr}"']
+    if loading:
+        attrs.append(f'loading="{loading}"')
+    attrs.append('decoding="async"')
+    if priority:
+        attrs.append('fetchpriority="high"')
+    base = image.get("base")
+    if base:
+        src = f"/assets/{base}-800.webp"
+        srcset = ", ".join(f"/assets/{base}-{w}.webp {w}w" for w in (400, 800, 1400))
+        attrs += [
+            f'src="{src}"',
+            f'srcset="{srcset}"',
+            f'sizes="{sizes}"',
+            f'width="{image.get("width", 1400)}"',
+            f'height="{image.get("height", 933)}"',
+        ]
+    else:
+        attrs += [f'src="{esc(image.get("url", ""))}"', 'width="1400"', 'height="933"']
+    return "<img " + " ".join(attrs) + ">"
+
+
+def villa_card(villa: dict, *, compact: bool = False) -> str:
+    image = villa_image(villa, 0)
+    price = (
+        f'<strong>{money(villa["price_from"])}</strong><em>/ week</em>'
+        if villa["price_from"]
+        else "<strong>On request</strong>"
+    )
+    features = " ".join(slugify(a) for a in villa.get("amenities", []))
+    return f"""
+        <article class="villa-card"
+           data-villa data-slug="{villa['slug']}" data-uuid="{villa['v_uuid']}" data-name="{esc(villa['name'].lower())}"
+           data-area="{esc(villa['area'])}" data-region="{villa['region']}"
+           data-sleeps="{villa['sleeps']}" data-bedrooms="{villa['bedrooms']}"
+           data-price="{villa['price_from']}" data-features="{esc(features)}">
+          <a class="villa-card__link" href="/villa/{villa['slug']}/">
+            <div class="villa-card__media" style="background-color:{image.get('colour', '#d8d1c4')}">
+              {image_tag(image, f"{villa['name']}, {villa['area']}, Ibiza", "(max-width: 760px) 100vw, (max-width: 1080px) 50vw, 33vw")}
+              <span class="villa-card__tag">Sleeps {villa['sleeps']}</span>
+            </div>
+            <div class="villa-card__body">
+              <div class="villa-card__top">
+                <h3 class="villa-card__name">{esc(villa['name'])}</h3>
+                <span class="villa-card__area">{esc(villa['area'])}</span>
+              </div>
+              <div class="villa-card__meta">
+                <span>{villa['bedrooms']} bedrooms</span>
+                <span>{villa['bathrooms']} bathrooms</span>
+              </div>
+              <div class="villa-card__price"><span>From</span>{price}</div>
+            </div>
+          </a>
+          <button class="villa-card__fav" type="button" data-fav="{villa['slug']}"
+                  aria-label="Save {esc(villa['name'])}" aria-pressed="false">{icon('heart')}</button>
+        </article>"""
+
+
+def region_card(region: dict) -> str:
+    count = REGION_COUNTS.get(region["slug"], 0)
+    return f"""
+        <a class="region-card" href="/destinations/{region['slug']}/">
+          <div class="region-card__media">
+            <img src="{region['image']}" alt="{esc(region['image_alt'])}" loading="lazy" width="1200" height="1500">
+          </div>
+          <div class="region-card__body">
+            <span class="region-card__name">{esc(region['name'])}</span>
+            <span class="region-card__count">{count} villas</span>
+          </div>
+        </a>"""
+
+
+# --------------------------------------------------------------------------- #
+#  Chrome: head, header, menu, footer
+# --------------------------------------------------------------------------- #
+
+
+def wa_link(message: str) -> str:
+    from urllib.parse import quote
+
+    return f"https://wa.me/{SITE['whatsapp']}?text={quote(message)}"
+
+
+def head(
+    *,
+    title: str,
+    description: str,
+    path: str,
+    image: str | None = None,
+    jsonld: list[dict] | None = None,
+    body_attrs: str = "",
+) -> str:
+    full_title = f"{title} — {SITE['name']}" if title else SITE["name"]
+    canonical = f"{SITE_URL}{path}"
+    og_image = image or "/assets/img/og.webp"
+    if og_image.startswith("/"):
+        og_image = SITE_URL + og_image
+    jsonld = jsonld or []
+    schemas = "".join(
+        f'<script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script>'
+        for schema in jsonld
+    )
+    return f"""<!doctype html>
+<html lang="en-GB" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{esc(full_title)}</title>
+<meta name="description" content="{esc(description)}">
+<link rel="canonical" href="{canonical}">
+<meta name="theme-color" content="#f6f1e7">
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{esc(SITE['name'])}">
+<meta property="og:title" content="{esc(full_title)}">
+<meta property="og:description" content="{esc(description)}">
+<meta property="og:url" content="{canonical}">
+<meta property="og:image" content="{esc(og_image)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(full_title)}">
+<meta name="twitter:description" content="{esc(description)}">
+<meta name="twitter:image" content="{esc(og_image)}">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>document.documentElement.classList.add('js')</script>
+{schemas}
+</head>
+<body {body_attrs}>
+<a class="skip-link" href="#main">Skip to content</a>
+"""
+
+
+def organisation_schema() -> dict:
+    return {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": SITE["name"],
+        "url": SITE_URL,
+        "description": SITE["description"],
+        "email": SITE["email"],
+        "telephone": SITE["phone"],
+        "vatID": SITE["nif"],
+        "image": SITE_URL + "/assets/img/og.webp",
+        "logo": SITE_URL + "/assets/img/favicon.svg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": SITE["address"]["line1"],
+            "addressLocality": "Santa Eulària des Riu",
+            "addressRegion": "Ibiza, Balearic Islands",
+            "addressCountry": "ES",
+        },
+        "geo": {"@type": "GeoCoordinates", "latitude": SITE["map"]["lat"], "longitude": SITE["map"]["lng"]},
+        "areaServed": "Ibiza",
+        "sameAs": [s["href"] for s in SITE["socials"]],
+    }
+
+
+def header(active: str = "") -> str:
+    def item(entry: dict) -> str:
+        children = entry.get("children") or []
+        current = ' aria-current="page"' if entry["href"].strip("/").split("/")[0] == active else ""
+        if children:
+            sub = "".join(
+                f'<li><a href="{c["href"]}">{esc(c["label"])}</a></li>' for c in children
+            )
+            return (
+                f'<li class="has-sub"><a href="{entry["href"]}"{current}>{esc(entry["label"])}</a>'
+                f'<div class="subnav"><ul>{sub}</ul></div></li>'
+            )
+        return f'<li><a href="{entry["href"]}"{current}>{esc(entry["label"])}</a></li>'
+
+    nav_items = "".join(item(entry) for entry in NAV)
+    return f"""
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <a class="brand" href="/" aria-label="{esc(SITE['name'])} — home">
+      {brand_mark()}
+      <span class="brand__name">{esc(SITE['name'])}</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul>{nav_items}</ul>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:{SITE['phone']}">{SITE['phone_display']}</a>
+      <a class="btn btn--small btn--ghost" href="/contact/">Plan your stay</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+        <span></span><span></span><span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+"""
+
+
+def menu() -> str:
+    links = []
+    for entry in NAV:
+        children = entry.get("children") or []
+        sub = ""
+        if children:
+            sub = '<div class="menu-sub">' + "".join(
+                f'<a href="{c["href"]}">{esc(c["label"])}</a>' for c in children
+            ) + "</div>"
+        links.append(f'<li><a href="{entry["href"]}">{esc(entry["label"])}</a>{sub}</li>')
+    socials = "".join(f'<a href="{s["href"]}" rel="noopener" target="_blank">{esc(s["label"])}</a>' for s in SITE["socials"])
+    return f"""
+<div class="site-menu" id="site-menu" aria-hidden="true">
+  <nav class="site-menu__nav" aria-label="Mobile">
+    <ul>{''.join(links)}</ul>
+  </nav>
+  <div class="site-menu__aside">
+    <div>
+      <p class="eyebrow">The Ibiza Connection</p>
+      <div class="site-menu__contact">
+        <a href="tel:{SITE['phone']}">{SITE['phone_display']}</a>
+        <a href="mailto:{SITE['email']}">{SITE['email']}</a>
+        <a href="{wa_link(SITE['whatsapp_message'])}" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow">Find us</p>
+      <p class="muted" style="color:rgba(246,241,231,.7);font-size:14px">{esc(SITE['address']['line1'])}<br>{esc(SITE['address']['line2'])}<br>{esc(SITE['address']['line3'])}</p>
+    </div>
+    <div class="site-menu__socials">{socials}</div>
+  </div>
+</div>
+"""
+
+
+def footer() -> str:
+    cols = []
+    for column in FOOTER["columns"]:
+        links = "".join(f'<li><a href="{l["href"]}">{esc(l["label"])}</a></li>' for l in column["links"])
+        cols.append(f'<div class="footer-col"><h4>{esc(column["title"])}</h4><ul>{links}</ul></div>')
+    socials = "".join(
+        f'<a href="{s["href"]}" target="_blank" rel="noopener">{esc(s["label"])}</a>' for s in SITE["socials"]
+    )
+    return f"""
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand__mark">{brand_mark()}<span class="brand__name">{esc(SITE['name'])}</span></div>
+        <h2 class="footer-headline">{esc(FOOTER['headline'])}</h2>
+        <p class="footer-note">{esc(FOOTER['note'])}</p>
+        <div class="footer-contact">
+          <a href="tel:{SITE['phone']}">{SITE['phone_display']}</a>
+          <a href="mailto:{SITE['email']}">{SITE['email']}</a>
+          <a href="{wa_link(SITE['whatsapp_message'])}" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-cols">{''.join(cols)}</div>
+    </div>
+    <div class="footer-middle">
+      <span>{esc(SITE['address']['line1'])}, {esc(SITE['address']['line2'])}, {esc(SITE['address']['line3'])}</span>
+      <span>{esc(SITE['hours'])}</span>
+      <div class="site-menu__socials" style="margin:0">{socials}</div>
+    </div>
+    <div class="footer-legal">
+      <span>{esc(FOOTER['legal'])}</span>
+      <span>© {TODAY.year} {esc(SITE['name'])}. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+"""
+
+
+def shell(
+    *,
+    title: str,
+    description: str,
+    path: str,
+    body: str,
+    active: str = "",
+    image: str | None = None,
+    jsonld: list[dict] | None = None,
+    hero: bool = False,
+    body_class: str = "",
+    scripts: str = "",
+) -> str:
+    schemas = [organisation_schema()] + (jsonld or [])
+    attrs = f'data-hero="true" class="{body_class}"' if hero else (f'class="{body_class}"' if body_class else "")
+    return (
+        head(
+            title=title,
+            description=description,
+            path=path,
+            image=image,
+            jsonld=schemas,
+            body_attrs=attrs,
+        )
+        + header(active)
+        + menu()
+        + f'<main id="main">{body}</main>'
+        + footer()
+        + f"""
+<div class="lightbox" data-lightbox aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo gallery">
+  <div class="lightbox__top">
+    <span data-lightbox-count>1 / 1</span>
+    <button class="lightbox__close" type="button" data-lightbox-close>{icon('close')} Close</button>
+  </div>
+  <div class="lightbox__stage">
+    <button class="lightbox__btn lightbox__btn--prev" type="button" data-lightbox-prev aria-label="Previous photo">{icon('chevron-left')}</button>
+    <img data-lightbox-img src="" alt="">
+    <button class="lightbox__btn lightbox__btn--next" type="button" data-lightbox-next aria-label="Next photo">{icon('chevron-right')}</button>
+  </div>
+  <div class="lightbox__foot"><span data-lightbox-caption></span><span>Use ← → to browse · Esc to close</span></div>
+</div>
+<script src="/assets/js/site.js" defer></script>
+{scripts}
+</body>
+</html>
+"""
+    )
+
+
+# --------------------------------------------------------------------------- #
+#  Shared components
+# --------------------------------------------------------------------------- #
+
+
+def section_head(block: dict) -> str:
+    aside = ""
+    if block.get("text"):
+        link = ""
+        if block.get("link"):
+            link = f'<a class="link" href="{block["link"]["href"]}">{esc(fill(block["link"]["label"]))}{icon("arrow")}</a>'
+        aside = f'<div class="section-head__aside"><p class="lede">{esc(fill(block["text"]))}</p>{link}</div>'
+    return f"""
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">{esc(block['eyebrow'])}</p>
+          <h2>{esc(fill(block['title']))}</h2>
+        </div>
+        {aside}
+      </div>"""
+
+
+def enquiry_band(title: str, text: str, image: str = "/assets/img/cta.webp", alt: str = "An infinity pool above the Mediterranean") -> str:
+    return f"""
+<section class="cta">
+  <div class="cta__media"><img src="{image}" alt="{esc(alt)}" loading="lazy" width="2200" height="1200"></div>
+  <div class="wrap">
+    <div class="cta__inner reveal">
+      <p class="eyebrow eyebrow--light">Enquiries</p>
+      <h2>{title}</h2>
+      <p>{esc(text)}</p>
+      <div class="btn-row">
+        <a class="btn btn--light" href="/contact/">Start an enquiry{icon('arrow')}</a>
+        <a class="btn btn--ghost-light" href="{wa_link(SITE['whatsapp_message'])}" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </div>
+  </div>
+</section>"""
+
+
+def page_hero(page: dict, active: str, *, image: bool = True, hero_class: str = "") -> str:
+    media = ""
+    if image and page.get("image"):
+        media = f'<div class="page-hero__media"><img src="{page["image"]}" alt="{esc(page.get("image_alt", ""))}" fetchpriority="high" width="1800" height="1200"></div>'
+    klass = "page-hero page-hero--image" if media else "page-hero"
+    return f"""
+<section class="{klass} {hero_class}">
+  {media}
+  <div class="wrap">
+    <p class="eyebrow{' eyebrow--light' if media else ''}">{esc(page['eyebrow'])}</p>
+    <h1>{esc(page['title'])}</h1>
+    <p class="lede">{esc(page['lede'])}</p>
+  </div>
+</section>"""
+
+
+def content_sections(page: dict) -> str:
+    out = []
+    for section in page.get("sections", []):
+        kind = section.get("type", "prose")
+        if kind == "split":
+            media = f'<div class="split__media"><img src="{section["image"]}" alt="{esc(section.get("image_alt", ""))}" loading="lazy" width="1600" height="1200">'
+            if section.get("caption"):
+                media += f'<p class="split__caption">{esc(section["caption"])}</p>'
+            media += "</div>"
+            body = ""
+            if section.get("eyebrow"):
+                body += f'<p class="eyebrow">{esc(section["eyebrow"])}</p>'
+            body += f'<h2>{esc(section["title"])}</h2>'
+            body += "".join(f"<p>{esc(p)}</p>" for p in section.get("paragraphs", []))
+            if section.get("link"):
+                body += f'<a class="link" href="{section["link"]["href"]}">{esc(section["link"]["label"])}{icon("arrow")}</a>'
+            reverse = " split--reverse" if section.get("reverse") else ""
+            out.append(
+                f'<section class="section"><div class="wrap"><div class="split{reverse}">'
+                f'<div class="split__text reveal">{body}</div>{media}</div></div></section>'
+            )
+        elif kind == "cards":
+            items = "".join(
+                f'<div class="card-block reveal"><p class="card-block__num">{esc(item.get("number", ""))}</p>'
+                f'<h3>{esc(item["title"])}</h3><p>{esc(item["text"])}</p></div>'
+                for item in section.get("items", [])
+            )
+            intro = f'<div class="section-head__aside"><p class="lede">{esc(section["intro"])}</p></div>' if section.get("intro") else ""
+            out.append(
+                f'<section class="section section--tight"><div class="wrap">'
+                f'<div class="section-head reveal"><div><p class="eyebrow">{esc(section.get("eyebrow", ""))}</p>'
+                f'<h2>{esc(section["title"])}</h2></div>{intro}</div>'
+                f'<div class="cards-grid reveal">{items}</div></div></section>'
+            )
+        elif kind == "steps":
+            items = "".join(
+                f'<div class="step reveal"><p class="step__num">{i:02d}</p><h3>{esc(item["title"])}</h3><p>{esc(item["text"])}</p></div>'
+                for i, item in enumerate(section.get("items", []), 1)
+            )
+            out.append(
+                f'<section class="section section--tight"><div class="wrap">'
+                f'<div class="section-head reveal"><div><p class="eyebrow">{esc(section.get("eyebrow", ""))}</p>'
+                f'<h2>{esc(section["title"])}</h2></div></div>'
+                f'<div class="steps reveal">{items}</div></div></section>'
+            )
+        elif kind == "quote":
+            out.append(
+                f'<section class="section section--tight"><div class="wrap"><div class="quote-block reveal">'
+                f'<blockquote>{esc(section["text"])}</blockquote>'
+                f'<cite>{esc(section.get("cite", ""))}</cite></div></div></section>'
+            )
+        elif kind == "list":
+            items = "".join(f"<li>{esc(item)}</li>" for item in section.get("items", []))
+            out.append(
+                f'<section class="section section--tight"><div class="wrap"><div class="list-block">'
+                f'<div class="reveal"><p class="eyebrow">{esc(section.get("eyebrow", ""))}</p><h2>{esc(section["title"])}</h2></div>'
+                f'<ul class="reveal">{items}</ul></div></div></section>'
+            )
+        elif kind == "fleet":
+            rows = "".join(
+                f'<div class="fleet-row"><span class="fleet-row__name">{esc(item["name"])}</span>'
+                f'<span class="fleet-row__type">{esc(item["type"])}</span>'
+                f'<span class="fleet-row__cap">{esc(item["capacity"])}</span>'
+                f'<span class="fleet-row__note">{esc(item["note"])}</span></div>'
+                for item in section.get("items", [])
+            )
+            out.append(
+                f'<section class="section section--tight"><div class="wrap">'
+                f'<div class="section-head reveal"><div><p class="eyebrow">{esc(section.get("eyebrow", ""))}</p><h2>{esc(section["title"])}</h2></div>'
+                f'<div class="section-head__aside"><p class="lede">{esc(section.get("text", ""))}</p></div></div>'
+                f'<div class="fleet reveal"><div class="fleet-head"><span>Boat</span><span>Type</span><span>Capacity</span><span>Notes</span></div>{rows}</div>'
+                f"</div></section>"
+            )
+        elif kind == "gallery":
+            items = "".join(
+                f'<figure class="reveal"><img src="{item["src"]}" alt="{esc(item.get("alt", ""))}" loading="lazy" width="1000" height="750">'
+                f'<figcaption>{esc(item.get("caption", ""))}</figcaption></figure>'
+                for item in section.get("items", [])
+            )
+            lead = f'<div class="section-head__aside"><p class="lede">{esc(section["text"])}</p></div>' if section.get("text") else ""
+            out.append(
+                f'<section class="section section--tight"><div class="wrap">'
+                f'<div class="section-head reveal"><div><p class="eyebrow">{esc(section.get("eyebrow", ""))}</p>'
+                f'<h2>{esc(section["title"])}</h2></div>{lead}</div>'
+                f'<div class="photo-grid">{items}</div></div></section>'
+            )
+        elif kind == "faq":
+            rows = "".join(
+                f'<details><summary>{esc(item["q"])}</summary><div class="faq__a">{esc(item["a"])}</div></details>'
+                for item in section.get("items", [])
+            )
+            out.append(
+                f'<section class="section section--tight"><div class="wrap">'
+                f'<div class="section-head reveal"><div><p class="eyebrow">Questions</p><h2>{esc(section["title"])}</h2></div></div>'
+                f'<div class="faq reveal">{rows}</div></div></section>'
+            )
+        elif kind == "cta":
+            out.append(
+                f'<section class="section section--tight"><div class="wrap"><div class="quote-block reveal">'
+                f'<p class="eyebrow" style="justify-content:center">{esc(section.get("eyebrow", ""))}</p>'
+                f'<h2 style="margin-bottom:18px">{esc(section["title"])}</h2>'
+                f'<p class="lede" style="margin:0 auto 28px">{esc(section["text"])}</p>'
+                f'<div class="btn-row" style="justify-content:center">'
+                f'<a class="btn" href="{section["primary"]["href"]}">{esc(section["primary"]["label"])}{icon("arrow")}</a>'
+                + (
+                    f'<a class="btn btn--ghost" href="{section["secondary"]["href"]}">{esc(section["secondary"]["label"])}</a>'
+                    if section.get("secondary")
+                    else ""
+                )
+                + "</div></div></div></section>"
+            )
+        else:  # prose
+            body = ""
+            if section.get("eyebrow"):
+                body += f'<p class="eyebrow">{esc(section["eyebrow"])}</p>'
+            if section.get("title"):
+                body += f'<h2>{esc(section["title"])}</h2>'
+            body += "".join(f"<p>{esc(p)}</p>" for p in section.get("paragraphs", []))
+            image = ""
+            if section.get("image"):
+                image = (
+                    f'<div class="split__media"><img src="{section["image"]}" alt="{esc(section.get("image_alt", ""))}" loading="lazy" width="1600" height="1067">'
+                    f'<p class="split__caption">Santa Eulària des Riu</p></div>'
+                )
+                out.append(
+                    f'<section class="section"><div class="wrap"><div class="split">'
+                    f'<div class="split__text reveal">{body}</div>{image}</div></div></section>'
+                )
+            else:
+                out.append(
+                    f'<section class="section section--tight"><div class="wrap"><div class="list-block">'
+                    f'<div class="reveal"><p class="eyebrow">{esc(section.get("eyebrow", ""))}</p><h2>{esc(section.get("title", ""))}</h2></div>'
+                    f'<div class="reveal">{body}</div></div></div></section>'
+                )
+    return "".join(out)
+
+
+def post_read_time(post: dict) -> str:
+    words = len(re.sub(r"<[^>]+>", " ", post.get("lede", "")).split())
+    for block in post.get("body", []):
+        words += len(str(block.get("text", "")).split())
+        for item in block.get("items", []) or []:
+            words += len(str(item).split())
+    return f"{max(3, round(words / 220))} min read"
+
+
+def journal_card(post: dict) -> str:
+    return f"""
+        <a class="journal-card" href="/journal/{post['slug']}/">
+          <div class="journal-card__media"><img src="{post['image']}" alt="{esc(post['image_alt'])}" loading="lazy" width="1600" height="1067"></div>
+          <div class="journal-card__meta"><span>{esc(post['category'])}</span><span>{date_label(post['date'], short=True)}</span></div>
+          <h3>{esc(post['title'])}</h3>
+          <p>{esc(post['excerpt'])}</p>
+        </a>"""
+
+
+# --------------------------------------------------------------------------- #
+#  Home
+# --------------------------------------------------------------------------- #
+
+
+def region_options(selected: str = "") -> str:
+    options = ['<option value="">Anywhere</option>']
+    for slug in REGION_ORDER:
+        region = REGIONS[slug]
+        is_selected = " selected" if slug == selected else ""
+        options.append(
+            f'<option value="{slug}"{is_selected}>{esc(region["name"])} ({REGION_COUNTS.get(slug, 0)})</option>'
+        )
+    return "".join(options)
+
+
+def guest_options(max_guests: int = 12, selected: int = 0) -> str:
+    options = [] if selected else ['<option value="">Any number</option>']
+    for n in range(2, max_guests + 1):
+        is_selected = " selected" if n == selected else ""
+        options.append(f'<option value="{n}"{is_selected}>{n} guests</option>')
+    if max_guests < 12:
+        options.append('<option value="12">12 guests</option>')
+    return "".join(options)
+
+
+def build_home() -> str:
+    hero = HOME["hero"]
+    search = hero["search"]
+    search_panel = f"""
+      <form class="search-panel" action="/villas/" method="get" role="search" aria-label="Find a villa">
+        <div class="search-field">
+          <label for="hero-region">{esc(search['regions_label'])}</label>
+          <select id="hero-region" name="region">{region_options()}</select>
+        </div>
+        <div class="search-field">
+          <label for="hero-arrive">{esc(search['arrive_label'])}</label>
+          <input type="date" id="hero-arrive" name="arrive" aria-label="Arrival date">
+        </div>
+        <div class="search-field">
+          <label for="hero-depart">{esc(search['depart_label'])}</label>
+          <input type="date" id="hero-depart" name="depart" aria-label="Departure date">
+        </div>
+        <div class="search-field">
+          <label for="hero-guests">{esc(search['guests_label'])}</label>
+          <select id="hero-guests" name="guests">{guest_options()}</select>
+        </div>
+        <button class="btn" type="submit">{esc(search['submit'])}{icon('arrow')}</button>
+      </form>"""
+
+    featured = [VILLA_BY_SLUG[s] for s in HOME["featured"]["slugs"] if s in VILLA_BY_SLUG]
+    featured_html = "".join(villa_card(v) for v in featured)
+
+    stats = "".join(
+        f'<div class="stat reveal"><span class="stat__value">{esc(fill(s["value"]))}</span>'
+        f'<span class="stat__label">{esc(fill(s["label"]))}</span></div>'
+        for s in HOME["intro"]["stats"]
+    )
+
+    regions_html = "".join(region_card(REGIONS[slug]) for slug in REGION_ORDER)
+
+    experiences = "".join(
+        f'<div class="experience-item reveal"><span class="experience-item__num">{esc(item["number"])}</span>'
+        f'<div><h3>{esc(item["title"])}</h3><p>{esc(item["text"])}</p>'
+        f'<a class="link link--light" href="{item["href"]}">{esc(item["link_label"])}{icon("arrow")}</a></div></div>'
+        for item in HOME["experiences"]["items"]
+    )
+
+    posts = "".join(journal_card(p) for p in JOURNAL["posts"][:3])
+
+    body = f"""
+<section class="hero">
+  <div class="hero__media">
+    <picture>
+      <source media="(max-width: 760px)" srcset="{hero['image_mobile']}">
+      <img src="{hero['image']}" alt="{esc(hero['alt'])}" width="2400" height="1400" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
+  <div class="hero__inner wrap">
+    <p class="eyebrow eyebrow--light">{esc(hero['eyebrow'])}</p>
+    <h1 class="hero__title">{hero['title_html']}</h1>
+    <p class="hero__lede">{esc(hero['lede'])}</p>
+    <div class="hero__actions">
+      <a class="btn btn--light" href="{hero['primary']['href']}">{esc(hero['primary']['label'])}{icon('arrow')}</a>
+      <a class="btn btn--ghost-light" href="{hero['secondary']['href']}">{esc(hero['secondary']['label'])}</a>
+    </div>
+  </div>
+  <span class="hero__scroll">{esc(hero['scroll_label'])}</span>
+  {search_panel}
+</section>
+
+<section class="section home-intro">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="intro-grid__media reveal">
+        <img src="{HOME['intro']['image']}" alt="{esc(HOME['intro']['image_alt'])}" loading="lazy" width="1800" height="1200">
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">{esc(HOME['intro']['eyebrow'])}</p>
+        <h2>{esc(HOME['intro']['title'])}</h2>
+        {''.join(f'<p>{esc(p)}</p>' for p in HOME['intro']['paragraphs'])}
+        <a class="link" href="{HOME['intro']['link']['href']}" style="margin-top:14px">{esc(HOME['intro']['link']['label'])}{icon('arrow')}</a>
+        <div class="stats">{stats}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    {section_head(HOME['featured'])}
+    <div class="villa-grid">{featured_html}</div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap">
+    {section_head(HOME['regions'])}
+    <div class="region-strip">{regions_html}</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="story">
+      <div class="reveal">
+        <p class="eyebrow">{esc(HOME['story']['eyebrow'])}</p>
+        <h2>{esc(HOME['story']['title'])}</h2>
+        {''.join(f'<p>{esc(p)}</p>' for p in HOME['story']['paragraphs'])}
+        <a class="link" href="{HOME['story']['link']['href']}" style="margin-top:18px">{esc(HOME['story']['link']['label'])}{icon('arrow')}</a>
+      </div>
+      <div class="story__media reveal">
+        <img src="{HOME['story']['image']}" alt="{esc(HOME['story']['image_alt'])}" loading="lazy" width="1400" height="1750">
+        <span class="story__caption">{esc(HOME['story']['caption'])}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="wrap">
+    <div class="experiences">
+      <div class="experiences__media reveal">
+        <img src="{HOME['experiences']['image']}" alt="{esc(HOME['experiences']['image_alt'])}" loading="lazy" width="2000" height="1200">
+      </div>
+      <div>
+        <div class="reveal">
+          <p class="eyebrow eyebrow--light">{esc(HOME['experiences']['eyebrow'])}</p>
+          <h2 style="max-width:14ch">{esc(HOME['experiences']['title'])}</h2>
+          <p class="lede" style="margin:18px 0 34px">{esc(HOME['experiences']['text'])}</p>
+        </div>
+        <div class="experiences__list">{experiences}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    {section_head(HOME['journal'])}
+    <div class="journal-grid">{posts}</div>
+  </div>
+</section>
+
+{enquiry_band(HOME['cta']['title_html'], HOME['cta']['text'], HOME['cta']['image'], HOME['cta']['image_alt'])}
+"""
+    jsonld = [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": SITE["name"],
+            "url": SITE_URL,
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": f"{SITE_URL}/villas/?q={{search_term_string}}",
+                "query-input": "required name=search_term_string",
+            },
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Selected villa stays in Ibiza",
+            "itemListElement": [
+                {"@type": "ListItem", "position": i, "url": f"{SITE_URL}/villa/{v['slug']}/", "name": v["name"]}
+                for i, v in enumerate(featured, 1)
+            ],
+        },
+    ]
+    return shell(
+        title="Private villas in Ibiza, arranged by locals",
+        description=(
+            f"{len(VILLAS)} hand-picked private villas across {COUNTS['areas']} areas of Ibiza, with boat days, "
+            "car hire and concierge arranged by a local team in Santa Eulària."
+        ),
+        path="/",
+        body=body,
+        active="",
+        image="/assets/img/og.webp",
+        jsonld=jsonld,
+        hero=True,
+    )
+
+
+# --------------------------------------------------------------------------- #
+#  Villas index
+# --------------------------------------------------------------------------- #
+
+
+def amenity_filter_options() -> str:
+    counts = {}
+    for villa in VILLAS:
+        for amenity in villa.get("amenities", []):
+            counts[amenity] = counts.get(amenity, 0) + 1
+    preferred = [
+        "Swimming Pool",
+        "Sea View",
+        "Infinity pool",
+        "Gym/Fitness Equipment",
+        "Heated Pool (additional charges may apply)",
+        "Outdoor Kitchen",
+        "Garden",
+        "Roof Terrace",
+        "Sunset View",
+        "BBQ",
+        "Wifi",
+        "Air Conditioning",
+    ]
+    chosen = [a for a in preferred if counts.get(a, 0) >= 6][:12]
+    return "".join(
+        f'<label class="check"><input type="checkbox" data-feature="{slugify(a)}">'
+        f'<span>{esc(a.replace(" (additional charges may apply)", ""))} <span class="muted" style="font-size:11px">({counts.get(a, 0)})</span></span></label>'
+        for a in chosen
+    )
+
+
+def area_options() -> str:
+    options = ['<option value="">All areas</option>']
+    for area in sorted(AREA_COUNTS):
+        options.append(f'<option value="{esc(area)}">{esc(area)} ({AREA_COUNTS[area]})</option>')
+    return "".join(options)
+
+
+def build_villas() -> str:
+    featured_slugs = [slug for slug in HOME["featured"]["slugs"] if slug in VILLA_BY_SLUG]
+    ordered = [VILLA_BY_SLUG[slug] for slug in featured_slugs]
+    ordered += [villa for villa in VILLAS if villa["slug"] not in featured_slugs]
+    cards = "".join(villa_card(v) for v in ordered)
+    body = f"""
+<section class="page-head">
+  <div class="wrap">
+    <div class="page-head__top">
+      <div>
+        <p class="eyebrow">The collection</p>
+        <h1>Villas in Ibiza</h1>
+        <p class="lede">{len(VILLAS)} private houses across {COUNTS['areas']} areas of the island — from fincas in the pine woods to contemporary villas above the sea. Every one visited, photographed and priced by us.</p>
+      </div>
+      <div class="page-head__meta">
+        <span><strong>{len(VILLAS)}</strong> villas</span>
+        <span><strong>{COUNTS['regions']}</strong> regions</span>
+        <span><strong>{COUNTS['areas']}</strong> areas</span>
+        <span>Sleeps up to <strong>{META['max_sleeps']}</strong></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="filter-bar">
+  <div class="wrap">
+    <div class="filter-bar__row">
+      <div class="filter-search">
+        {icon('search')}
+        <input type="search" placeholder="Search by villa or area" aria-label="Search villas" data-search>
+      </div>
+      <select class="filter-select filter-select--bar" data-filter="region" aria-label="Region">
+        <option value="">All regions</option>
+        {''.join(f'<option value="{slug}">{esc(REGIONS[slug]["name"])}</option>' for slug in REGION_ORDER)}
+      </select>
+      <select class="filter-select filter-select--bar" data-filter="guests" aria-label="Guests">
+        <option value="">Any guests</option>
+        {''.join(f'<option value="{n}">{n}+ guests</option>' for n in (2, 4, 6, 8, 10, 12))}
+      </select>
+      <select class="filter-select filter-select--bar" data-filter="sort" aria-label="Sort by">
+        <option value="featured">Featured</option>
+        <option value="price-asc">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+        <option value="sleeps">Sleeps: most first</option>
+        <option value="name">Name A–Z</option>
+      </select>
+      <button class="filter-toggle" type="button" data-drawer-open>{icon('sliders')} Filters</button>
+      <div class="filter-bar__spacer"></div>
+      <span class="filter-count"><strong data-count>{len(VILLAS)}</strong> villas</span>
+    </div>
+    <div class="active-filters" data-active-filters></div>
+  </div>
+</div>
+
+<section class="results">
+  <div class="wrap">
+    <div class="availability-note" data-availability-note hidden></div>
+    <div class="results__grid" data-results>{cards}</div>
+    <div class="results__empty" data-empty>
+      <h3>No villas match those filters</h3>
+      <p class="lede" style="margin-inline:auto">Try widening the dates or the number of guests — or tell us what you are looking for and we will find it.</p>
+      <a class="btn btn--ghost" href="/contact/" style="margin-top:24px">Ask us to look</a>
+    </div>
+    <div class="results__more" data-more-wrap>
+      <button class="btn btn--ghost" type="button" data-load-more>Load more villas</button>
+    </div>
+  </div>
+</section>
+
+<div class="filter-drawer" data-drawer aria-hidden="true">
+  <div class="filter-drawer__scrim" data-drawer-close></div>
+  <div class="filter-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <div class="filter-drawer__head">
+      <h3 id="drawer-title">Filter the collection</h3>
+      <button type="button" aria-label="Close filters" data-drawer-close>{icon('close')}</button>
+    </div>
+    <div class="filter-drawer__body">
+    <div class="filter-group">
+      <h4>Your list</h4>
+      <label class="check"><input type="checkbox" data-saved>
+        <span>Only saved villas (<span data-saved-count>0</span>)</span>
+      </label>
+    </div>
+    <div class="filter-group">
+      <h4>Dates</h4>
+      <div class="date-pair">
+        <input type="date" data-date="from" aria-label="Arrival date">
+        <input type="date" data-date="to" aria-label="Departure date">
+      </div>
+      <p class="filter-hint">We check live availability with the villa owners.</p>
+    </div>
+    <div class="filter-group">
+      <h4>Region</h4>
+      <select class="filter-select" style="width:100%" data-filter="region" aria-label="Region">
+        <option value="">All regions</option>
+        {''.join(f'<option value="{slug}">{esc(REGIONS[slug]["name"])}</option>' for slug in REGION_ORDER)}
+      </select>
+    </div>
+    <div class="filter-group">
+      <h4>Area</h4>
+      <select class="filter-select" style="width:100%" data-filter="area" aria-label="Area">{area_options()}</select>
+    </div>
+    <div class="filter-group">
+      <h4>Guests</h4>
+      <select class="filter-select" style="width:100%" data-filter="guests" aria-label="Guests">
+        <option value="">Any guests</option>
+        {''.join(f'<option value="{n}">{n}+ guests</option>' for n in (2, 4, 6, 8, 10, 12))}
+      </select>
+    </div>
+    <div class="filter-group">
+      <h4>Bedrooms</h4>
+      <select class="filter-select" style="width:100%" data-filter="bedrooms" aria-label="Bedrooms">
+        <option value="">Any bedrooms</option>
+        <option value="3">3+ bedrooms</option>
+        <option value="4">4+ bedrooms</option>
+        <option value="5">5+ bedrooms</option>
+        <option value="6">6+ bedrooms</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <h4>Weekly price</h4>
+      <select class="filter-select" style="width:100%" data-filter="price" aria-label="Weekly price">
+        <option value="">Any price</option>
+        <option value="0-7500">Under €7,500</option>
+        <option value="7500-15000">€7,500 – €15,000</option>
+        <option value="15000-30000">€15,000 – €30,000</option>
+        <option value="30000-">€30,000 and above</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <h4>Sort by</h4>
+      <select class="filter-select" style="width:100%" data-filter="sort" aria-label="Sort by">
+        <option value="featured">Featured</option>
+        <option value="price-asc">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+        <option value="sleeps">Sleeps: most first</option>
+        <option value="name">Name A–Z</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <h4>Amenities</h4>
+      <div class="check-list">{amenity_filter_options()}</div>
+    </div>
+    </div>
+    <div class="filter-drawer__foot">
+      <button class="btn btn--block" type="button" data-drawer-close>Show <span data-drawer-count>{len(VILLAS)}</span> villas</button>
+      <button class="btn btn--ghost btn--block" type="button" data-clear>Clear all filters</button>
+    </div>
+  </div>
+</div>
+"""
+    jsonld = [
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Villas in Ibiza",
+            "url": SITE_URL + "/villas/",
+            "description": f"Private villa rentals in Ibiza — {len(VILLAS)} houses across {COUNTS['areas']} areas.",
+            "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": len(VILLAS),
+                "itemListElement": [
+                    {"@type": "ListItem", "position": i, "url": f"{SITE_URL}/villa/{v['slug']}/", "name": v["name"]}
+                    for i, v in enumerate(VILLAS, 1)
+                ],
+            },
+        }
+    ]
+    return shell(
+        title="The collection — private villas in Ibiza",
+        description=(
+            f"Browse {len(VILLAS)} private villas in Ibiza by area, guests, bedrooms and price. "
+            "Photographed and priced by a local team. Best price guaranteed."
+        ),
+        path="/villas/",
+        body=body,
+        active="villas",
+        image="/assets/img/region-south-west.webp",
+        jsonld=jsonld,
+    )
+
+
+# --------------------------------------------------------------------------- #
+#  Villa detail
+# --------------------------------------------------------------------------- #
+
+
+def area_link(villa: dict) -> str:
+    return f"/destinations/{villa['region']}/"
+
+
+def build_villa(villa: dict) -> str:
+    from urllib.parse import quote
+
+    region = REGIONS.get(villa["region"], DESTINATIONS["regions"][0])
+    images = villa.get("images") or []
+    image_count = len(images)
+    gallery_items = ""
+    for i, image in enumerate(images[:3]):
+        alt = f"{villa['name']}, {villa['area']}, Ibiza — photo {i + 1}"
+        gallery_items += (
+            f'<button class="gallery__item" type="button" data-gallery-open="{i}" '
+            f'aria-label="Open photo {i + 1} of {image_count}">'
+            + image_tag(image, alt, "(max-width: 760px) 100vw, 60vw", priority=(i == 0))
+            + "</button>"
+        )
+    for _ in range(3 - len(images[:3])):
+        gallery_items += '<button class="gallery__item gallery__item--empty" tabindex="-1" aria-hidden="true"></button>'
+
+    price_html = (
+        f'<strong>{money(villa["price_from"])}</strong><span>from / week</span>'
+        if villa["price_from"]
+        else '<strong>On request</strong><span>price on application</span>'
+    )
+    price_note = (
+        f"Minimum {villa['min_nights']} nights"
+        + (" · Short stays possible" if villa.get("short_stays") else "")
+        + " · Best price guaranteed"
+    )
+
+    guests = "".join(
+        f'<option value="{n}"{" selected" if n == min(8, villa["sleeps"]) else ""}>{n} guests</option>'
+        for n in range(2, villa["sleeps"] + 1)
+    )
+
+    wa_message = (
+        f"Hello The Ibiza Connection, I would like to enquire about {villa['name']} "
+        f"({villa['area']}, Ibiza)."
+    )
+    enquiry_url = f"/contact/?villa={quote(villa['name'])}"
+
+    amenity_groups = ""
+    for group in villa.get("amenity_groups", []):
+        items = "".join(f"<li>{esc(item)}</li>" for item in group["items"])
+        amenity_groups += (
+            f'<div class="amenity-group"><h4>{esc(group["title"])}</h4>'
+            f'<ul class="amenity-list">{items}</ul></div>'
+        )
+
+    facts = []
+    if villa.get("check_in"):
+        facts.append(("Check-in", f"From {esc(villa['check_in'])}"))
+    if villa.get("check_out"):
+        facts.append(("Check-out", f"By {esc(villa['check_out'])}"))
+    facts.append(("Minimum stay", f"{villa['min_nights']} nights"))
+    if villa.get("cleaning"):
+        facts.append(("Housekeeping", esc(villa["cleaning"])))
+    if villa.get("cleaning_charge"):
+        facts.append(("Cleaning charge", money(villa["cleaning_charge"])))
+    if villa.get("check_in_days"):
+        facts.append(("Arrival days", esc(villa["check_in_days"])))
+    if villa.get("license") and villa["license"].upper() != "TBA":
+        facts.append(("Tourist licence", esc(villa["license"])))
+    facts.append(("Short stays", "Available on request" if villa.get("short_stays") else "Weekly stays"))
+    fact_html = "".join(
+        f'<div class="fact"><dt>{label}</dt><dd>{value}</dd></div>' for label, value in facts
+    )
+
+    rate_rows = []
+    for row in PRICES.get(villa["slug"], []):
+        if row.get("to") and row["to"] < TODAY.isoformat():
+            continue
+        rate_rows.append(row)
+    if not rate_rows:
+        rate_rows = PRICES.get(villa["slug"], [])
+    rate_html = ""
+    for row in rate_rows[:6]:
+        rate_html += (
+            f'<tr><td>{date_label(row["from"], short=True)} – {date_label(row["to"], short=True)}</td>'
+            f'<td>{row["min_nights"] or villa["min_nights"]} nights</td>'
+            f'<td>{money(row["night"])}</td></tr>'
+        )
+    rates_section = ""
+    if rate_html:
+        rates_section = f"""
+    <section class="villa-section">
+      <h2>Seasonal rates</h2>
+      <div class="table-scroll"><table class="rate-table">
+        <thead><tr><th>Dates</th><th>Minimum stay</th><th>Per night</th></tr></thead>
+        <tbody>{rate_html}</tbody>
+      </table></div>
+      <p class="muted" style="font-size:12px;margin-top:14px">{esc(PRICING['note'])}</p>
+    </section>"""
+
+    map_section = ""
+    if villa.get("lat") and villa.get("lng"):
+        lat, lng = villa["lat"], villa["lng"]
+        bbox = f"{lng - 0.018:.4f},{lat - 0.012:.4f},{lng + 0.018:.4f},{lat + 0.012:.4f}"
+        map_section = f"""
+      <div class="map-frame">
+        <iframe title="Map showing the approximate location of {esc(villa['name'])}"
+          src="https://www.openstreetmap.org/export/embed.html?bbox={bbox}&amp;layer=mapnik&amp;marker={lat},{lng}"
+          loading="lazy"></iframe>
+      </div>
+      <div class="map-note">
+        <span>Approximate location · {esc(villa['area'])}, Ibiza</span>
+        <a class="link" href="https://www.openstreetmap.org/?mlat={lat}&amp;mlon={lng}#map=14/{lat}/{lng}" target="_blank" rel="noopener">View larger map</a>
+      </div>"""
+
+    similar = [v for v in VILLAS if v["region"] == villa["region"] and v["slug"] != villa["slug"]]
+    similar.sort(key=lambda v: abs((v["price_from"] or 999999) - (villa["price_from"] or 999999)))
+    similar_html = "".join(villa_card(v) for v in similar[:3])
+
+    gallery_json = json.dumps(
+        [
+            {
+                "src": f"/assets/{im['base']}-1400.webp" if im.get("base") else im.get("url", ""),
+                "thumb": f"/assets/{im['base']}-400.webp" if im.get("base") else im.get("url", ""),
+                "alt": f"{villa['name']}, {villa['area']}, Ibiza — photo {i + 1}",
+                "caption": f"{villa['name']} · {villa['area']}",
+                "width": im.get("width", 1400),
+                "height": im.get("height", 933),
+            }
+            for i, im in enumerate(images)
+        ],
+        ensure_ascii=False,
+    ).replace("</", "<\\/")
+
+    body = f"""
+<section class="villa-head">
+  <div class="wrap">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a><span>/</span><a href="/villas/">Villas</a><span>/</span>
+      <a href="{area_link(villa)}">{esc(region['name'])}</a><span>/</span><span>{esc(villa['name'])}</span>
+    </nav>
+    <div class="villa-head__top">
+      <div>
+        <h1>{esc(villa['name'])}</h1>
+        <p class="villa-head__tagline">{esc(villa['tagline'])}</p>
+      </div>
+      <div class="villa-head__area">
+        <strong>{esc(villa['area'])}</strong>
+        {esc(region['name'])}, Ibiza
+      </div>
+    </div>
+    <div class="spec-bar">
+      <span class="spec">{icon('bed')} {villa['bedrooms']} bedrooms</span>
+      <span class="spec">{icon('bath')} {villa['bathrooms']} bathrooms</span>
+      <span class="spec">{icon('users')} Sleeps {villa['sleeps']}</span>
+      <span class="spec">{icon('calendar')} {villa['min_nights']} nights minimum</span>
+      {f'<span class="spec">{icon("pool")} Private pool</span>' if "Swimming Pool" in villa.get("amenities", []) else ''}
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="gallery">
+    {gallery_items}
+    <button class="gallery__all" type="button" data-gallery-open="0">{icon('camera')} View all {image_count} photos</button>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="villa-layout">
+    <div class="villa-main">
+      <section class="villa-section">
+        <h2>The villa</h2>
+        <div class="villa-intro">
+          {''.join(f'<p>{esc(p)}</p>' for p in villa.get('description', []))}
+        </div>
+      </section>
+
+      <section class="villa-section">
+        <h2>Amenities</h2>
+        <div class="amenity-groups">{amenity_groups}</div>
+      </section>
+
+      <section class="villa-section">
+        <h2>The area</h2>
+        <p class="villa-intro" style="font-size:1.05rem">{esc(region['intro'][0])}</p>
+        <p class="muted" style="font-size:13px">Exact addresses are shared once a booking is confirmed. The map shows the approximate area.</p>
+        {map_section}
+      </section>
+
+      <section class="villa-section">
+        <h2>Good to know</h2>
+        <dl class="fact-grid">{fact_html}</dl>
+      </section>
+
+      {rates_section}
+    </div>
+
+    <aside>
+      <form class="booking" id="booking" novalidate data-villa-uuid="{villa['v_uuid']}" data-villa-name="{esc(villa['name'])}">
+        <div class="booking__price">{price_html}</div>
+        <p class="booking__note">{esc(price_note)}</p>
+        <div class="booking__fields">
+          <div class="booking__field">
+            <label for="book-from">Arrive</label>
+            <input type="date" id="book-from" name="from" required>
+          </div>
+          <div class="booking__field">
+            <label for="book-to">Depart</label>
+            <input type="date" id="book-to" name="to" required>
+          </div>
+          <div class="booking__field booking__field--wide">
+            <label for="book-guests">Guests</label>
+            <select id="book-guests" name="guests">{guests}</select>
+          </div>
+        </div>
+        <button class="btn btn--block" type="submit">Check availability{icon('arrow')}</button>
+        <div class="booking__result" data-booking-result role="status" aria-live="polite"></div>
+        <div class="booking__contact">
+          <a id="booking-whatsapp" href="{wa_link(wa_message)}" target="_blank" rel="noopener">{icon('chat')} Message us on WhatsApp</a>
+          <a id="booking-enquiry" href="{enquiry_url}">{icon('mail')} Send an enquiry</a>
+          <a href="tel:{SITE['phone']}">{icon('phone')} {SITE['phone_display']}</a>
+        </div>
+        <div class="booking__assure">
+          <span>{icon('check')} Local team, on the island</span>
+          <span>{icon('check')} Best price guaranteed</span>
+          <span>{icon('check')} No booking fee</span>
+        </div>
+      </form>
+    </aside>
+  </div>
+</div>
+
+<section class="section section--sand" style="padding-top:clamp(56px,6vw,90px);padding-bottom:clamp(56px,6vw,90px)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><p class="eyebrow">Keep looking</p><h2>More in {esc(region['name'])}</h2></div>
+      <div class="section-head__aside"><a class="link" href="/villas/?region={villa['region']}">All villas in {esc(region['name'])}{icon('arrow')}</a></div>
+    </div>
+    <div class="villa-grid">{similar_html}</div>
+  </div>
+</section>
+
+<div class="mobile-bar">
+  <div class="mobile-bar__price">{'From' if villa['price_from'] else ''}<strong>{money(villa['price_from']) if villa['price_from'] else 'On request'}</strong>{'/ week' if villa['price_from'] else ''}</div>
+  <a class="btn btn--small" href="{enquiry_url}">Enquire{icon('arrow')}</a>
+</div>
+
+<script type="application/json" id="villa-gallery">{gallery_json}</script>
+"""
+
+    jsonld = [
+        {
+            "@context": "https://schema.org",
+            "@type": "VacationRental",
+            "name": villa["name"],
+            "description": " ".join(villa.get("description", []))[:900],
+            "url": f"{SITE_URL}/villa/{villa['slug']}/",
+            "image": [SITE_URL + f"/assets/{im['base']}-1400.webp" for im in images[:4] if im.get("base")],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": villa["area"],
+                "addressRegion": "Ibiza",
+                "addressCountry": "ES",
+            },
+            "numberOfRooms": villa["bedrooms"],
+            "occupancy": {"@type": "QuantitativeValue", "maxValue": villa["sleeps"]},
+            "amenityFeature": [
+                {"@type": "LocationFeatureSpecification", "name": a, "value": True}
+                for a in villa.get("amenities", [])[:12]
+            ],
+            "priceRange": (
+                f"{money(villa['price_from'])}–{money(villa['price_to'])} per week"
+                if villa.get("price_from") and villa.get("price_to")
+                else "On request"
+            ),
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL + "/"},
+                {"@type": "ListItem", "position": 2, "name": "Villas", "item": SITE_URL + "/villas/"},
+                {"@type": "ListItem", "position": 3, "name": region["name"], "item": SITE_URL + f"/destinations/{region['slug']}/"},
+                {"@type": "ListItem", "position": 4, "name": villa["name"], "item": f"{SITE_URL}/villa/{villa['slug']}/"},
+            ],
+        },
+    ]
+    if villa.get("lat") and villa.get("lng"):
+        jsonld[0]["geo"] = {"@type": "GeoCoordinates", "latitude": villa["lat"], "longitude": villa["lng"]}
+
+    return shell(
+        title=f"{villa['name']}, {villa['area']}",
+        description=(
+            f"{villa['name']} — {villa['bedrooms']}-bedroom private villa in {villa['area']}, Ibiza, sleeping {villa['sleeps']}. "
+            f"{villa.get('tagline', '')} From {money(villa['price_from'])} per week."
+        ),
+        path=f"/villa/{villa['slug']}/",
+        body=body,
+        active="villas",
+        image=(f"/assets/{images[0]['base']}-1400.webp" if images and images[0].get("base") else None),
+        jsonld=jsonld,
+        body_class="has-mobile-bar",
+    )
+
+
+# --------------------------------------------------------------------------- #
+#  Destinations
+# --------------------------------------------------------------------------- #
+
+
+def area_list_for_region(region_slug: str) -> str:
+    areas = {}
+    for villa in VILLAS:
+        if villa["region"] == region_slug:
+            areas[villa["area"]] = areas.get(villa["area"], 0) + 1
+    return "".join(
+        f'<li><a href="/villas/?area={esc(area)}">{esc(area)} <span class="muted">({count})</span></a></li>'
+        for area, count in sorted(areas.items(), key=lambda x: (-x[1], x[0]))
+    )
+
+
+def build_destinations() -> str:
+    rows = ""
+    for index, slug in enumerate(REGION_ORDER, 1):
+        region = REGIONS[slug]
+        count = REGION_COUNTS.get(slug, 0)
+        reverse = " split--reverse" if index % 2 == 0 else ""
+        rows += f"""
+    <div class="split{reverse}">
+      <div class="split__media reveal"><img src="{region['image']}" alt="{esc(region['image_alt'])}" loading="lazy" width="1200" height="1500"></div>
+      <div class="split__text reveal">
+        <p class="eyebrow">{index:02d} — {esc(region['name'])}</p>
+        <h2>{esc(region['title'])}</h2>
+        <p>{esc(region['intro'][0])}</p>
+        <p class="muted" style="font-size:13px;margin-top:16px">{count} villas in the collection</p>
+        <a class="link" href="/destinations/{slug}/">Explore {esc(region['name'])}{icon('arrow')}</a>
+      </div>
+    </div>"""
+
+    body = f"""
+<section class="page-head">
+  <div class="wrap">
+    <div class="page-head__top">
+      <div>
+        <p class="eyebrow">{esc(DESTINATIONS['eyebrow'])}</p>
+        <h1>{esc(DESTINATIONS['title'])}</h1>
+        <p class="lede">{esc(DESTINATIONS['lede'])}</p>
+      </div>
+      <div class="page-head__meta">
+        <span><strong>{COUNTS['regions']}</strong> regions</span>
+        <span><strong>{COUNTS['areas']}</strong> areas</span>
+        <span><strong>{len(VILLAS)}</strong> villas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div style="display:grid;gap:clamp(56px,8vw,120px)">{rows}</div>
+  </div>
+</section>
+
+{enquiry_band("Not sure where to start?", "Tell us how you like to spend your days — beach, boat, long lunches, quiet — and we will point you at the right corner of the island.", "/assets/img/cta.webp")}
+"""
+    return shell(
+        title="Destinations — five corners of Ibiza",
+        description=(
+            "North, west, south west, east and Ibiza Town: a local guide to the five corners of Ibiza, "
+            "with the villas we keep in each."
+        ),
+        path="/destinations/",
+        body=body,
+        active="destinations",
+        image="/assets/img/region-west.webp",
+    )
+
+
+def build_destination(region: dict) -> str:
+    villas = [v for v in VILLAS if v["region"] == region["slug"]]
+    cards = "".join(villa_card(v) for v in villas[:9])
+    highlights = "".join(
+        f'<div class="card-block reveal"><p class="card-block__num">{i:02d}</p><h3>{esc(h["title"])}</h3><p>{esc(h["text"])}</p></div>'
+        for i, h in enumerate(region["highlights"], 1)
+    )
+    others = "".join(region_card(REGIONS[s]) for s in REGION_ORDER if s != region["slug"])
+    region_index = REGION_ORDER.index(region["slug"])
+    prices = [v["price_from"] for v in villas if v["price_from"]]
+
+    body = f"""
+<section class="page-hero page-hero--image">
+  <div class="page-hero__media"><img src="{region.get('image_wide', region['image'])}" alt="{esc(region['image_alt'])}" fetchpriority="high" width="2000" height="1200"></div>
+  <div class="wrap">
+    <nav class="breadcrumbs" aria-label="Breadcrumb" style="color:rgba(246,241,231,.7)">
+      <a href="/">Home</a><span>/</span><a href="/destinations/">Destinations</a><span>/</span><span>{esc(region['name'])}</span>
+    </nav>
+    <p class="eyebrow eyebrow--light">{region_index + 1:02d} — {esc(region['name'])}</p>
+    <h1>{esc(region['title'])}</h1>
+    <p class="lede">{esc(region['intro'][0])}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="split__text reveal">
+        <p class="eyebrow">The corner</p>
+        <h2>Why we send people {('here' if region['slug'] != 'east' else 'home')}</h2>
+        {''.join(f'<p>{esc(p)}</p>' for p in region['intro'])}
+        <p class="muted" style="font-size:14px;margin-top:18px">{esc(region['note'])}</p>
+      </div>
+      <div class="split__media reveal">
+        <p class="eyebrow">Villages &amp; coves</p>
+        <h2 style="font-size:clamp(1.6rem,2.4vw,2.2rem);margin-bottom:16px">Where you will be</h2>
+        <ul class="amenity-list amenity-list--two">{area_list_for_region(region['slug'])}</ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><p class="eyebrow">Don't miss</p><h2>Three good reasons to be here</h2></div>
+      <div class="section-head__aside"><p class="lede">{esc(region['short'])}.</p></div>
+    </div>
+    <div class="cards-grid">{highlights}</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><p class="eyebrow">The houses</p><h2>Villas in {esc(region['name'])}</h2></div>
+      <div class="section-head__aside">
+        <p class="lede">{len(villas)} houses in this part of the island{f', from {money(min(prices))} per week' if prices else ''}.</p>
+        <a class="link" href="/villas/?region={region['slug']}">See all {len(villas)} villas{icon('arrow')}</a>
+      </div>
+    </div>
+    <div class="villa-grid">{cards}</div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><p class="eyebrow">Keep exploring</p><h2>The other corners</h2></div>
+      <div class="section-head__aside"><a class="link" href="/destinations/">All destinations{icon('arrow')}</a></div>
+    </div>
+    <div class="region-strip">{others}</div>
+  </div>
+</section>
+"""
+    jsonld = [
+        {
+            "@context": "https://schema.org",
+            "@type": "TouristDestination",
+            "name": f"{region['name']}, Ibiza",
+            "description": region["intro"][0],
+            "image": SITE_URL + region["image"],
+            "url": f"{SITE_URL}/destinations/{region['slug']}/",
+            "includesAttraction": [h["title"] for h in region["highlights"]],
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL + "/"},
+                {"@type": "ListItem", "position": 2, "name": "Destinations", "item": SITE_URL + "/destinations/"},
+                {"@type": "ListItem", "position": 3, "name": region["name"], "item": f"{SITE_URL}/destinations/{region['slug']}/"},
+            ],
+        },
+    ]
+    return shell(
+        title=f"{region['name']}, Ibiza — villas and places to go",
+        description=f"{region['short']}. {region['intro'][0][:120]}…",
+        path=f"/destinations/{region['slug']}/",
+        body=body,
+        active="destinations",
+        image=region.get("image_wide", region["image"]),
+        jsonld=jsonld,
+        hero=True,
+    )
+
+
+# --------------------------------------------------------------------------- #
+#  Journal
+# --------------------------------------------------------------------------- #
+
+
+def build_journal() -> str:
+    cards = "".join(journal_card(p) for p in JOURNAL["posts"])
+    body = f"""
+<section class="page-head">
+  <div class="wrap">
+    <div class="page-head__top">
+      <div>
+        <p class="eyebrow">{esc(JOURNAL['eyebrow'])}</p>
+        <h1>{esc(JOURNAL['title'])}</h1>
+        <p class="lede">{esc(JOURNAL['lede'])}</p>
+      </div>
+      <div class="page-head__meta"><span>Written in Santa Eulària</span><span>{len(JOURNAL['posts'])} stories</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="journal-grid">{cards}</div>
+  </div>
+</section>
+
+{enquiry_band("Rather just ask us?", "We will tell you where to eat, which beach to avoid and which house fits — no obligation.", "/assets/img/cta.webp")}
+"""
+    return shell(
+        title="Journal — notes from Ibiza",
+        description="Island guides, itineraries and boat days from the team at The Ibiza Connection.",
+        path="/journal/",
+        body=body,
+        active="journal",
+        image="/assets/img/journal-north.webp",
+    )
+
+
+def build_article(post: dict) -> str:
+    blocks = ""
+    for block in post.get("body", []):
+        kind = block.get("type")
+        if kind == "h2":
+            blocks += f'<h2>{esc(block["text"])}</h2>'
+        elif kind == "quote":
+            blocks += f'<blockquote>{esc(block["text"])}</blockquote>'
+        elif kind == "list":
+            blocks += "<ul>" + "".join(f"<li>{esc(item)}</li>" for item in block.get("items", [])) + "</ul>"
+        elif kind == "image":
+            blocks += (
+                f'<figure><img src="{block["src"]}" alt="{esc(block.get("alt", ""))}" loading="lazy">'
+                f'<figcaption>{esc(block.get("caption", ""))}</figcaption></figure>'
+            )
+        else:
+            blocks += f"<p>{esc(block['text'])}</p>"
+
+    others = [p for p in JOURNAL["posts"] if p["slug"] != post["slug"]][:2]
+    related = "".join(journal_card(p) for p in others)
+
+    body = f"""
+<article>
+  <header class="article-head">
+    <div class="wrap">
+      <p class="eyebrow" style="justify-content:center">{esc(post['category'])}</p>
+      <h1>{esc(post['title'])}</h1>
+      <p class="lede">{esc(post['lede'])}</p>
+      <div class="article-meta">
+        <span>{esc(post['category'])}</span>
+        <span>{date_label(post['date'])}</span>
+        <span>{post_read_time(post)}</span>
+      </div>
+    </div>
+  </header>
+  <div class="article-hero">
+    <img src="{post['image']}" alt="{esc(post['image_alt'])}" width="1600" height="1067">
+  </div>
+  <div class="article-body">
+    {blocks}
+    <div class="article-foot">
+      <a class="link" href="/journal/">{icon('chevron-left')} All stories</a>
+      <a class="btn btn--ghost" href="/villas/">Explore the villas{icon('arrow')}</a>
+    </div>
+  </div>
+</article>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><p class="eyebrow">Keep reading</p><h2>More notes from the island</h2></div>
+      <div class="section-head__aside"><a class="link" href="/journal/">The journal{icon('arrow')}</a></div>
+    </div>
+    <div class="journal-grid">{related}</div>
+  </div>
+</section>
+"""
+    jsonld = [
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": post["title"],
+            "description": post["excerpt"],
+            "image": SITE_URL + post["image"],
+            "datePublished": post["date"],
+            "dateModified": post["date"],
+            "author": {"@type": "Organization", "name": SITE["name"]},
+            "publisher": {
+                "@type": "Organization",
+                "name": SITE["name"],
+                "logo": {"@type": "ImageObject", "url": SITE_URL + "/assets/img/favicon.svg"},
+            },
+            "mainEntityOfPage": f"{SITE_URL}/journal/{post['slug']}/",
+        }
+    ]
+    return shell(
+        title=post["title"],
+        description=post["excerpt"],
+        path=f"/journal/{post['slug']}/",
+        body=body,
+        active="journal",
+        image=post["image"],
+        jsonld=jsonld,
+    )
+
+
+# --------------------------------------------------------------------------- #
+#  Content pages
+# --------------------------------------------------------------------------- #
+
+
+def build_content_page(key: str, path: str, active: str = "") -> str:
+    page = PAGES[key]
+    body = page_hero(page, active) + content_sections(page)
+    has_cta = any(section.get("type") == "cta" for section in page.get("sections", []))
+    if not has_cta:
+        body += enquiry_band(
+            "Tell us what you have in mind.",
+            "One shortlist, three houses, no pressure. Send your dates and we will take it from there.",
+            "/assets/img/cta.webp",
+        )
+    return shell(
+        title=page["title"],
+        description=page["lede"][:158],
+        path=path,
+        body=body,
+        active=active,
+        image=page.get("image"),
+        hero=bool(page.get("image")),
+    )
+
+
+# --------------------------------------------------------------------------- #
+#  Contact
+# --------------------------------------------------------------------------- #
+
+
+def build_contact() -> str:
+    page = PAGES["contact"]
+    form = page["form"]
+    labels = form["labels"]
+    placeholders = form["placeholders"]
+    details = ""
+    for item in page["details"]:
+        if item.get("href"):
+            value = f'<a href="{item["href"]}">{esc(item["value"])}</a>'
+        else:
+            value = esc(item["value"]).replace("\n", "<br>")
+        details += f'<dl class="contact-detail"><dt>{esc(item["label"])}</dt><dd>{value}</dd></dl>'
+
+    villa_options = "".join(f'<option value="{esc(v["name"])}">{esc(v["name"])}</option>' for v in sorted(VILLAS, key=lambda x: x["name"]))
+    lat, lng = SITE["map"]["lat"], SITE["map"]["lng"]
+    bbox = f"{lng - 0.012:.4f},{lat - 0.008:.4f},{lng + 0.012:.4f},{lat + 0.008:.4f}"
+
+    body = f"""
+<section class="page-head">
+  <div class="wrap">
+    <div class="page-head__top">
+      <div>
+        <p class="eyebrow">{esc(page['eyebrow'])}</p>
+        <h1>{esc(page['title'])}</h1>
+        <p class="lede">{esc(page['lede'])}</p>
+      </div>
+      <div class="page-head__meta">
+        <span>Reply usually <strong>the same day</strong></span>
+        <span>{esc(SITE['hours'])}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <p class="eyebrow">{esc(form['title'])}</p>
+        <form class="contact-form" id="enquiry-form" data-mailto="{SITE['email']}" novalidate>
+          <div class="field">
+            <label for="c-name">{esc(labels['name'])} <span aria-hidden="true">*</span></label>
+            <input type="text" id="c-name" name="name" autocomplete="name" required>
+            <span class="field__error">Please tell us your name.</span>
+          </div>
+          <div class="field">
+            <label for="c-email">{esc(labels['email'])} <span aria-hidden="true">*</span></label>
+            <input type="email" id="c-email" name="email" autocomplete="email" required>
+            <span class="field__error">Please add a valid email address.</span>
+          </div>
+          <div class="field">
+            <label for="c-phone">{esc(labels['phone'])}</label>
+            <input type="tel" id="c-phone" name="phone" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="c-guests">{esc(labels['guests'])}</label>
+            <select id="c-guests" name="guests">
+              <option value="">Select</option>
+              {''.join(f'<option value="{n}">{n} guests</option>' for n in range(1, 13))}
+            </select>
+          </div>
+          <div class="field">
+            <label for="c-dates">{esc(labels['dates'])}</label>
+            <input type="text" id="c-dates" name="dates" placeholder="{esc(placeholders['dates'])}">
+          </div>
+          <div class="field">
+            <label for="c-villa">{esc(labels['villa'])}</label>
+            <input type="text" id="c-villa" name="villa" list="villa-names" placeholder="Any villa, or a name">
+            <datalist id="villa-names">{villa_options}</datalist>
+          </div>
+          <div class="field field--wide">
+            <label for="c-message">{esc(labels['message'])}</label>
+            <textarea id="c-message" name="message" rows="4" placeholder="{esc(placeholders['message'])}"></textarea>
+          </div>
+          <div class="field field--wide">
+            <label class="check-line">
+              <input type="checkbox" name="consent" required>
+              <span>{esc(labels['consent']).replace('privacy policy', '<a href="/privacy/">privacy policy</a>')}</span>
+            </label>
+            <span class="field__error" style="margin-top:6px">Please accept the privacy policy.</span>
+          </div>
+          <div class="field field--wide" style="gap:0">
+            <button class="btn" type="submit">{esc(labels['submit'])}{icon('arrow')}</button>
+            <p class="form-note">{esc(form['note'])}</p>
+            <div class="form-status" data-form-status role="status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <p class="eyebrow">Direct lines</p>
+        <div class="contact-details">{details}</div>
+        <div class="contact-socials">
+          {''.join(f'<a href="{s["href"]}" target="_blank" rel="noopener">{esc(s["label"])}</a>' for s in SITE["socials"])}
+        </div>
+        <div style="margin-top:30px;padding:22px;background:var(--bone-2);border:1px solid var(--line)">
+          <p style="font-family:var(--serif);font-size:1.4rem;line-height:1.2;margin-bottom:10px">Prefer to talk?</p>
+          <p class="muted" style="font-size:13px;margin-bottom:14px">Call us, or message on WhatsApp — a person, not a portal.</p>
+          <div class="btn-row">
+            <a class="btn btn--small" href="tel:{SITE['phone']}">{icon('phone')} Call</a>
+            <a class="btn btn--ghost btn--small" href="{wa_link(SITE['whatsapp_message'])}" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" style="padding-top:0">
+  <div class="wrap">
+    <div class="map-frame">
+      <iframe title="Map showing the office of The Ibiza Connection in Santa Eulària des Riu"
+        src="https://www.openstreetmap.org/export/embed.html?bbox={bbox}&amp;layer=mapnik&amp;marker={lat},{lng}"
+        style="height:420px"></iframe>
+    </div>
+    <div class="map-note">
+      <span>{esc(page['map_note'])}</span>
+      <a class="link" href="https://www.openstreetmap.org/?mlat={lat}&amp;mlon={lng}#map=16/{lat}/{lng}" target="_blank" rel="noopener">Open in maps</a>
+    </div>
+  </div>
+</section>
+"""
+    return shell(
+        title="Contact — tell us about your stay",
+        description=(
+            "Call, WhatsApp or email The Ibiza Connection in Santa Eulària. Send your dates and group size "
+            "and we will reply with a shortlist of villas."
+        ),
+        path="/contact/",
+        body=body,
+        active="contact",
+        image=None,
+    )
+
+
+# --------------------------------------------------------------------------- #
+#  Legal pages
+# --------------------------------------------------------------------------- #
+
+
+def build_legal(key: str, path: str) -> str:
+    page = PAGES[key]
+    nav = ""
+    sections_html = ""
+    for section in page["sections"]:
+        anchor = slugify(section["title"])
+        nav += f'<a href="#{anchor}">{esc(section["title"])}</a>'
+        sections_html += f'<h2 id="{anchor}">{esc(section["title"])}</h2>'
+        sections_html += "".join(f"<p>{esc(p)}</p>" for p in section.get("paragraphs", []))
+    body = f"""
+<section class="page-head">
+  <div class="wrap">
+    <div class="page-head__top">
+      <div>
+        <p class="eyebrow">{esc(page['eyebrow'])}</p>
+        <h1>{esc(page['title'])}</h1>
+        <p class="lede">{esc(page['lede'])}</p>
+      </div>
+      <div class="page-head__meta"><span>Last updated <strong>{date_label('2026-10-01')}</strong></span></div>
+    </div>
+  </div>
+</section>
+<section class="prose-page">
+  <div class="wrap prose-layout">
+    <nav class="prose-nav" aria-label="On this page">{nav}</nav>
+    <div class="prose">{sections_html}</div>
+  </div>
+</section>
+"""
+    return shell(
+        title=page["title"],
+        description=page["lede"][:158],
+        path=path,
+        body=body,
+        active="",
+    )
+
+
+# --------------------------------------------------------------------------- #
+#  404 + robots + sitemap
+# --------------------------------------------------------------------------- #
+
+
+def build_404() -> str:
+    body = f"""
+<section class="notfound">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center">404</p>
+    <h1>Lost at sea</h1>
+    <p class="lede" style="margin-inline:auto">That page has drifted off. The collection is still where you left it — or we can point you in the right direction.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn" href="/villas/">The villas{icon('arrow')}</a>
+      <a class="btn btn--ghost" href="/contact/">Ask us</a>
+    </div>
+  </div>
+</section>
+"""
+    return shell(
+        title="Page not found",
+        description="That page could not be found. Explore the villa collection or contact The Ibiza Connection.",
+        path="/404.html",
+        body=body,
+    )
+
+
+def all_urls() -> list[tuple[str, str, str]]:
+    urls = [("/", "1.0", "weekly"), ("/villas/", "0.9", "weekly"), ("/destinations/", "0.8", "monthly")]
+    urls += [(f"/destinations/{r['slug']}/", "0.7", "monthly") for r in DESTINATIONS["regions"]]
+    urls += [(f"/villa/{v['slug']}/", "0.8", "weekly") for v in VILLAS]
+    urls += [("/experiences/", "0.7", "monthly"), ("/experiences/boat-rental/", "0.6", "monthly"),
+             ("/experiences/car-hire/", "0.6", "monthly"), ("/experiences/concierge/", "0.6", "monthly")]
+    urls += [("/journal/", "0.6", "monthly")] + [(f"/journal/{p['slug']}/", "0.6", "yearly") for p in JOURNAL["posts"]]
+    urls += [("/about/", "0.6", "yearly"), ("/owners/", "0.6", "yearly"), ("/contact/", "0.8", "yearly"),
+             ("/privacy/", "0.3", "yearly"), ("/terms/", "0.3", "yearly")]
+    return urls
+
+
+def build_sitemap() -> str:
+    entries = "".join(
+        f"  <url><loc>{SITE_URL}{path}</loc><lastmod>{BUILD_DAY}</lastmod>"
+        f"<changefreq>{freq}</changefreq><priority>{priority}</priority></url>\n"
+        for path, priority, freq in all_urls()
+    )
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{entries}</urlset>\n"
+    )
+
+
+# --------------------------------------------------------------------------- #
+#  Build
+# --------------------------------------------------------------------------- #
+
+
+def write(path: str, content: str) -> None:
+    target = STAGE / path
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(content, encoding="utf-8")
+
+
+def main() -> None:
+    # Build into a staging folder, then swap it into place. This keeps the
+    # running site complete while a rebuild is in progress.
+    if STAGE.exists():
+        shutil.rmtree(STAGE)
+    STAGE.mkdir(parents=True)
+
+    # Assets
+    shutil.copytree(ASSETS, STAGE / "assets")
+
+    # Core pages
+    write("index.html", build_home())
+    write("villas/index.html", build_villas())
+    write("destinations/index.html", build_destinations())
+    for region in DESTINATIONS["regions"]:
+        write(f"destinations/{region['slug']}/index.html", build_destination(region))
+    write("journal/index.html", build_journal())
+    for post in JOURNAL["posts"]:
+        write(f"journal/{post['slug']}/index.html", build_article(post))
+    for villa in VILLAS:
+        write(f"villa/{villa['slug']}/index.html", build_villa(villa))
+
+    write("about/index.html", build_content_page("about", "/about/", "about"))
+    write("owners/index.html", build_content_page("owners", "/owners/", ""))
+    write("experiences/index.html", build_content_page("experiences", "/experiences/", "experiences"))
+    write("experiences/boat-rental/index.html", build_content_page("boat-rental", "/experiences/boat-rental/", "experiences"))
+    write("experiences/car-hire/index.html", build_content_page("car-hire", "/experiences/car-hire/", "experiences"))
+    write("experiences/concierge/index.html", build_content_page("concierge", "/experiences/concierge/", "experiences"))
+    write("contact/index.html", build_contact())
+    write("privacy/index.html", build_legal("privacy", "/privacy/"))
+    write("terms/index.html", build_legal("terms", "/terms/"))
+    write("404.html", build_404())
+
+    # Machine-readable
+    write("sitemap.xml", build_sitemap())
+    write(
+        "robots.txt",
+        f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n",
+    )
+    write(
+        "site.webmanifest",
+        json.dumps(
+            {
+                "name": SITE["name"],
+                "short_name": SITE["short_name"],
+                "icons": [{"src": "/assets/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}],
+                "theme_color": "#f6f1e7",
+                "background_color": "#f6f1e7",
+                "display": "standalone",
+                "start_url": "/",
+            },
+            indent=2,
+        ),
+    )
+
+    old = ROOT / ".dist-old"
+    if old.exists():
+        shutil.rmtree(old)
+    if DIST.exists():
+        DIST.rename(old)
+    STAGE.rename(DIST)
+    if old.exists():
+        shutil.rmtree(old, ignore_errors=True)
+
+    pages = sum(1 for _ in DIST.rglob("index.html"))
+    size = sum(f.stat().st_size for f in DIST.rglob("*") if f.is_file())
+    print(f"✓ {pages} pages · {len(VILLAS)} villas · {len(JOURNAL['posts'])} journal stories")
+    print(f"✓ dist/ — {size / 1024 / 1024:.1f} MB")
+    print(f"  {META['fetched_at']} · {META['published']} published of {META['available_in_account']} in the account")
+
+
+if __name__ == "__main__":
+    main()

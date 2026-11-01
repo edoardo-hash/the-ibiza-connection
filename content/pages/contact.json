@@ -1,0 +1,38 @@
+{
+  "slug": "contact",
+  "nav": "contact",
+  "eyebrow": "Contact",
+  "title": "Tell us about your stay",
+  "lede": "Send your dates, the size of your group and the feeling you are after. We will reply with a shortlist — usually the same day.",
+  "image": "/assets/img/contact.webp",
+  "image_alt": "The east coast of Ibiza from above the sea",
+  "form": {
+    "title": "Start an enquiry",
+    "note": "No obligation, no newsletter unless you ask. We reply to every enquiry personally.",
+    "labels": {
+      "name": "Your name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "dates": "Dates or month",
+      "guests": "Guests",
+      "villa": "Villa of interest (optional)",
+      "message": "What are you looking for?",
+      "consent": "I have read and accept the privacy policy.",
+      "submit": "Send enquiry",
+      "success": "Your email app should open with the enquiry ready to send. If it does not, write to mail@theibizaconnection.net — or message us on WhatsApp.",
+      "error": "Please check the fields marked in red."
+    },
+    "placeholders": {
+      "dates": "e.g. 12–19 July, or late September",
+      "message": "Who is coming, how you like to spend your days, anything that matters…"
+    }
+  },
+  "details": [
+    { "label": "Telephone", "value": "+34 697 87 58 90", "href": "tel:+34697875890" },
+    { "label": "WhatsApp", "value": "Chat with us", "href": "https://wa.me/34697875890?text=Hello%20The%20Ibiza%20Connection%2C%20I%20would%20like%20to%20enquire%20about%20a%20villa." },
+    { "label": "Email", "value": "mail@theibizaconnection.net", "href": "mailto:mail@theibizaconnection.net" },
+    { "label": "Office", "value": "Carrer Pintors Puget 16, Local 3\nSanta Eulària des Riu\nIbiza, Balearic Islands" },
+    { "label": "Hours", "value": "Monday to Saturday, 09:00 – 19:00 (CET)" }
+  ],
+  "map_note": "Our office is five minutes from the Santa Eulària marina. If you are on the island, come in for a coffee."
+}

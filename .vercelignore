@@ -1,0 +1,7 @@
+.git
+.vercel-home
+.image-cache
+screenshots
+dist
+.env
+.env.local

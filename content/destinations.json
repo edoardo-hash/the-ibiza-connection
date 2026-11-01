@@ -1,0 +1,148 @@
+{
+  "eyebrow": "The island",
+  "title": "Five corners of Ibiza",
+  "lede": "Ibiza is small — you can drive across it in forty minutes — but each corner has its own weather, its own rhythm and its own kind of holiday. These are the five we know best.",
+  "image": "/assets/img/hero.webp",
+  "regions": [
+    {
+      "slug": "north",
+      "name": "North",
+      "short": "Pine woods, stone fincas and the long way round",
+      "image": "/assets/img/region-north.webp",
+      "image_alt": "A finca in the pine woods of north Ibiza",
+      "title": "The north: pine woods, stone fincas and the long way round",
+      "intro": [
+        "The north is the quietest part of Ibiza, and the part that feels most like itself. Roads narrow into pine woods, villages are a handful of whitewashed houses, and the sea appears at the end of a track rather than at the end of a strip.",
+        "This is where you come for long lunches in Santa Gertrudis, the Sunday drummers at Benirrás, the hippy market at San Carlos, and coves like Portinatx and Cala San Vicente that reward the drive."
+      ],
+      "highlights": [
+        {
+          "title": "Benirrás at sunset",
+          "text": "Drums on the beach on Sunday evenings, and the best sunset on the island's north coast."
+        },
+        {
+          "title": "Santa Gertrudis",
+          "text": "A village square with galleries, coffee and more good restaurants per metre than anywhere else on Ibiza."
+        },
+        {
+          "title": "Portinatx & Cala San Vicente",
+          "text": "Pine-backed coves with clear, calm water — the north's answer to a beach day."
+        }
+      ],
+      "note": "The north suits families, walkers and anyone who wants the island at a slower pace. A car is essential; the best coves are at the end of unsignposted lanes.",
+      "image_wide": "/assets/img/destination-north.webp"
+    },
+    {
+      "slug": "west",
+      "name": "West",
+      "short": "Sunset coast, salt air and Cala Conta",
+      "image": "/assets/img/region-west.webp",
+      "image_alt": "Sunset over a pool on the west coast of Ibiza",
+      "title": "The west: sunset coast, salt air and Cala Conta",
+      "intro": [
+        "The west has the island's most photographed sunsets, and the beaches that go with them. Cala Bassa, Cala Conta and Cala Salada are a short drive from San Antonio, with water so clear it looks edited.",
+        "Inland, the roads climb through almond terraces to Santa Agnès, where the island still feels agricultural. Come in February for the blossom, or in September for the quiet."
+      ],
+      "highlights": [
+        {
+          "title": "Cala Conta",
+          "text": "Two beaches, a handful of chiringuitos and a horizon that turns gold at eight."
+        },
+        {
+          "title": "Cala Bassa",
+          "text": "Shallow, family-friendly water and a beach club that has been getting it right for years."
+        },
+        {
+          "title": "Santa Agnès",
+          "text": "Almond groves, a village church and one very good restaurant. The west's best-kept afternoon."
+        }
+      ],
+      "note": "The west is the easiest corner for a first visit: close to the airport, close to San Antonio, and pointed straight at the sunset.",
+      "image_wide": "/assets/img/destination-west.webp"
+    },
+    {
+      "slug": "south-west",
+      "name": "South West",
+      "short": "Es Vedrà, Cala Jondal and the good life",
+      "image": "/assets/img/region-south-west.webp",
+      "image_alt": "A turquoise pool and white villa above the south-west coast",
+      "title": "The south west: Es Vedrà, Cala Jondal and the good life",
+      "intro": [
+        "This is the Ibiza of the postcards: Es Vedrà rising out of the sea, the beach clubs of Cala Jondal, and villas tucked into the hills above Cala Vadella, Es Cubells and Porroig.",
+        "It is also where the island's best restaurants cluster — from toes-in-the-sand lunches to long dinners in the hills. You will drive more slowly here, because the views insist on it."
+      ],
+      "highlights": [
+        {
+          "title": "Es Vedrà & Cala d'Hort",
+          "text": "The rock, the legend and a plate of seafood at the water's edge. Go early or go at sunset."
+        },
+        {
+          "title": "Cala Jondal",
+          "text": "Beach clubs, boats at anchor and the island's most sociable stretch of pebbles."
+        },
+        {
+          "title": "Es Cubells",
+          "text": "A whitewashed village above the sea, with one of the best views on the island from the church terrace."
+        }
+      ],
+      "note": "The south west is where we place guests who want the classic Ibiza holiday: sea views, good food and a short drive to everything.",
+      "image_wide": "/assets/img/destination-south-west.webp"
+    },
+    {
+      "slug": "east",
+      "name": "East",
+      "short": "Promenades, family beaches and the quiet side",
+      "image": "/assets/img/region-east.webp",
+      "image_alt": "A lap pool surrounded by pine trees on the east coast",
+      "title": "The east: promenades, family beaches and the quiet side",
+      "intro": [
+        "Santa Eulària is a proper town rather than a resort: a palm-lined promenade, a marina, and a beach you can walk to from dinner. North and south of it, Cala Llonga, Es Canar and S'Argamassa offer calm water and space for children.",
+        "The east gets the morning sun and a little more breeze, which matters in August. It is also where the island's quieter luxury sits — long views, big gardens and not a club in earshot."
+      ],
+      "highlights": [
+        {
+          "title": "Santa Eulària promenade",
+          "text": "An evening walk, an ice cream, a table by the water. The most civilised hour of the day."
+        },
+        {
+          "title": "Cala Llonga",
+          "text": "A sheltered bay with shallow water, beach bars and pine shade at the back of the sand."
+        },
+        {
+          "title": "Es Canar",
+          "text": "Home of the Wednesday hippy market, and a good base for boat days up the east coast."
+        }
+      ],
+      "note": "The east is our home. Our office is on Carrer Pintors Puget in Santa Eulària, five minutes from the marina — come and say hello.",
+      "image_wide": "/assets/img/destination-east.webp"
+    },
+    {
+      "slug": "ibiza-town",
+      "name": "Ibiza Town & Centre",
+      "short": "Dalt Vila, Talamanca and a short walk home",
+      "image": "/assets/img/region-ibiza-town.webp",
+      "image_alt": "An infinity pool looking across the sea towards Ibiza Town",
+      "title": "Ibiza Town: Dalt Vila, Talamanca and a short walk home",
+      "intro": [
+        "Dalt Vila is a UNESCO World Heritage site for a reason — a walled town of stone lanes, bougainvillea and sudden views over the harbour. Below it, the marina, the restaurants of La Marina and the boutiques of Vara de Rey.",
+        "Stay in Talamanca or Cap Martinet and the beach, the old town and the airport are all within fifteen minutes. It is the most convenient corner of the island, and the one with the most to do after dark."
+      ],
+      "highlights": [
+        {
+          "title": "Dalt Vila",
+          "text": "Walk up through the Portal de ses Taules in the late afternoon, when the stone turns pink."
+        },
+        {
+          "title": "Talamanca",
+          "text": "A long curve of sand with a handful of excellent restaurants and the town skyline behind it."
+        },
+        {
+          "title": "Cap Martinet",
+          "text": "Pine-covered cliffs, big sea views and a short drive to both Talamanca and the old town."
+        }
+      ],
+      "note": "This is the corner for guests who want to walk to dinner, take a boat from the marina and still be in a private villa by ten.",
+      "image_wide": "/assets/img/destination-ibiza-town.webp"
+    }
+  ]
+}

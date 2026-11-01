@@ -1,0 +1,112 @@
+{
+  "hero": {
+    "eyebrow": "Ibiza · Private villa collection",
+    "title_html": "The island,<br><em>arranged</em> around you.",
+    "lede": "Private houses, quiet coves and a local team who answer the phone. This is Ibiza, without the guesswork.",
+    "image": "/assets/img/hero.webp",
+    "image_mobile": "/assets/img/hero-mobile.webp",
+    "alt": "Sunset over the pool at Villa Katherine, Cala Vadella",
+    "primary": { "label": "Explore the villas", "href": "/villas/" },
+    "secondary": { "label": "Speak to us", "href": "/contact/" },
+    "scroll_label": "Scroll to explore",
+    "search": {
+      "regions_label": "Where",
+      "arrive_label": "Arrive",
+      "depart_label": "Depart",
+      "guests_label": "Guests",
+      "submit": "Search"
+    }
+  },
+  "intro": {
+    "eyebrow": "The agency",
+    "title": "Not a booking platform. A connection.",
+    "paragraphs": [
+      "The Ibiza Connection is an independent villa agency based in Santa Eulària. We match people with houses on this island — the ones with the right light, the right pool, the right distance from the noise.",
+      "Every villa in the collection is visited by us, photographed by us and priced by us. There are no call centres and no algorithms. When you write, you reach someone who can tell you how long it takes to walk to the beach."
+    ],
+    "link": { "label": "More about us", "href": "/about/" },
+    "image": "/assets/img/about.webp",
+    "image_alt": "A whitewashed Ibiza villa seen through the pines",
+    "stats": [
+      { "value": "{count}", "label": "villas in the collection" },
+      { "value": "{areas}", "label": "areas, from Portinatx to Cala Jondal" },
+      { "value": "One team", "label": "based in Santa Eulària, on the island" }
+    ]
+  },
+  "featured": {
+    "eyebrow": "01 — Selected stays",
+    "title": "Houses with a point of view",
+    "text": "A short list from the collection: contemporary villas above the sea, old fincas in the pine woods, and a few places that are simply hard to leave.",
+    "link": { "label": "View all {count} villas", "href": "/villas/" },
+    "slugs": [
+      "villa-katherine",
+      "villa-abigail",
+      "can-alivia",
+      "villa-mariola",
+      "villa-nia",
+      "villa-amaya"
+    ]
+  },
+  "regions": {
+    "eyebrow": "02 — The island",
+    "title": "Five ways to be on Ibiza",
+    "text": "The island changes character every twenty minutes. Choose the corner that matches the holiday you have in mind.",
+    "link": { "label": "Explore the destinations", "href": "/destinations/" }
+  },
+  "story": {
+    "eyebrow": "03 — Local knowledge",
+    "title": "The real Ibiza is quieter than you think",
+    "paragraphs": [
+      "The north is where the island still looks like itself: stone fincas, fig trees, roads that end at a cove. Mornings are for Portinatx and Cala San Vicente; afternoons for the galleries and cafés of Santa Gertrudis; Sunday evenings for drums at Benirrás.",
+      "We live here, so we will tell you which beach to avoid in August and which restaurant is worth the drive. It is the difference between a villa booking and a holiday that works."
+    ],
+    "link": { "label": "Explore the north", "href": "/destinations/north/" },
+    "image": "/assets/img/story.webp",
+    "image_alt": "Pine trees and a pool at a north Ibiza villa",
+    "caption": "The north, where the roads end at the sea."
+  },
+  "experiences": {
+    "eyebrow": "04 — Beyond the villa",
+    "title": "The rest of the holiday, arranged",
+    "text": "The house is the beginning. We can put the boat at the end of the jetty, the car in the drive and the chef in the kitchen.",
+    "image": "/assets/img/experiences.webp",
+    "image_alt": "A terrace above the sea on the east coast of Ibiza",
+    "items": [
+      {
+        "number": "01",
+        "title": "Boat days",
+        "text": "Traditional llaüts, fast day boats and crewed yachts — from a morning at Cala Salada to a week around the Balearics.",
+        "href": "/experiences/boat-rental/",
+        "link_label": "The fleet"
+      },
+      {
+        "number": "02",
+        "title": "Car hire",
+        "text": "Delivered to your villa, insured and ready. Small cars for the lanes, something larger for the whole group.",
+        "href": "/experiences/car-hire/",
+        "link_label": "Cars & drivers"
+      },
+      {
+        "number": "03",
+        "title": "Concierge",
+        "text": "A chef for the evening, a table on the water, a trainer at eight. Ask once and consider it done.",
+        "href": "/experiences/concierge/",
+        "link_label": "What we arrange"
+      }
+    ]
+  },
+  "journal": {
+    "eyebrow": "05 — Journal",
+    "title": "Notes from the island",
+    "text": "Places we go, tables we book, coves we keep to ourselves.",
+    "link": { "label": "Read the journal", "href": "/journal/" }
+  },
+  "cta": {
+    "title_html": "Tell us what you are <em>dreaming</em> of.",
+    "text": "Send your dates, the size of your group and the feeling you are after. We will reply with a shortlist — usually the same day.",
+    "image": "/assets/img/cta.webp",
+    "image_alt": "An infinity pool looking out to the Mediterranean",
+    "primary": { "label": "Start an enquiry", "href": "/contact/" },
+    "whatsapp": "WhatsApp us"
+  }
+}

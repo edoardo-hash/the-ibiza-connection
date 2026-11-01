@@ -1,0 +1,17 @@
+{
+  "name": "theibizaconnection",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The Ibiza Connection \u2014 villa collection and island guide",
+  "scripts": {
+    "build": "python3 build.py",
+    "fetch": "python3 tools/fetch_invenio.py",
+    "start": "node dev-server.mjs",
+    "dev": "node dev-server.mjs",
+    "preview": "python3 -m http.server 4321 --directory dist"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

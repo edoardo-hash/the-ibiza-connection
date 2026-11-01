@@ -1,0 +1,162 @@
+{
+  "site": {
+    "name": "The Ibiza Connection",
+    "short_name": "Ibiza Connection",
+    "legal_name": "The Ibiza Connection",
+    "nif": "B42772145",
+    "url": "https://theibizaconnection.net",
+    "locale": "en_GB",
+    "tagline": "Private villas and island living, arranged by people who live here.",
+    "description": "A hand-picked collection of private villas in Ibiza, with boat days, cars and concierge arranged by a local team in Santa Eulària. Best price guaranteed.",
+    "email": "mail@theibizaconnection.net",
+    "phone_display": "+34 697 87 58 90",
+    "phone": "+34697875890",
+    "whatsapp": "34697875890",
+    "whatsapp_message": "Hello The Ibiza Connection, I would like to enquire about a villa.",
+    "address": {
+      "line1": "Carrer Pintors Puget 16, Local 3",
+      "line2": "Santa Eulària des Riu",
+      "line3": "Ibiza, Balearic Islands"
+    },
+    "map": {
+      "lat": 38.98489,
+      "lng": 1.53303
+    },
+    "hours": "Monday to Saturday, by phone or WhatsApp",
+    "socials": [
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/theibizaconnection/"
+      },
+      {
+        "label": "Facebook",
+        "href": "https://www.facebook.com/theibizaconnection/"
+      },
+      {
+        "label": "X",
+        "href": "https://twitter.com/ibizaconnection"
+      }
+    ]
+  },
+  "pricing": {
+    "currency": "EUR",
+    "symbol": "€",
+    "markup_percent": 0,
+    "note": "Rates in the seasonal table are per night, in euros, for the villa only. Card prices are weekly starting rates. Cleaning, deposits and any extras are confirmed with your quote. We never add a booking fee."
+  },
+  "nav": [
+    {
+      "label": "Villas",
+      "href": "/villas/"
+    },
+    {
+      "label": "Destinations",
+      "href": "/destinations/",
+      "children": [
+        {
+          "label": "North",
+          "href": "/destinations/north/"
+        },
+        {
+          "label": "West",
+          "href": "/destinations/west/"
+        },
+        {
+          "label": "South West",
+          "href": "/destinations/south-west/"
+        },
+        {
+          "label": "East",
+          "href": "/destinations/east/"
+        },
+        {
+          "label": "Ibiza Town & Centre",
+          "href": "/destinations/ibiza-town/"
+        }
+      ]
+    },
+    {
+      "label": "Experiences",
+      "href": "/experiences/",
+      "children": [
+        {
+          "label": "Boat days",
+          "href": "/experiences/boat-rental/"
+        },
+        {
+          "label": "Car hire",
+          "href": "/experiences/car-hire/"
+        },
+        {
+          "label": "Concierge",
+          "href": "/experiences/concierge/"
+        }
+      ]
+    },
+    {
+      "label": "Journal",
+      "href": "/journal/"
+    },
+    {
+      "label": "About",
+      "href": "/about/"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/"
+    }
+  ],
+  "footer": {
+    "headline": "Your Ibiza, arranged.",
+    "note": "Tell us who is coming, when, and how you like to spend your days. We will send back a shortlist of houses that fit — not a list of everything we have.",
+    "columns": [
+      {
+        "title": "Explore",
+        "links": [
+          {
+            "label": "The collection",
+            "href": "/villas/"
+          },
+          {
+            "label": "Destinations",
+            "href": "/destinations/"
+          },
+          {
+            "label": "Experiences",
+            "href": "/experiences/"
+          },
+          {
+            "label": "Journal",
+            "href": "/journal/"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          {
+            "label": "About us",
+            "href": "/about/"
+          },
+          {
+            "label": "List your villa",
+            "href": "/owners/"
+          },
+          {
+            "label": "Contact",
+            "href": "/contact/"
+          },
+          {
+            "label": "Privacy & cookies",
+            "href": "/privacy/"
+          },
+          {
+            "label": "Terms",
+            "href": "/terms/"
+          }
+        ]
+      }
+    ],
+    "legal": "The Ibiza Connection · NIF B42772145 · Carrer Pintors Puget 16, Local 3, Santa Eulària des Riu, Ibiza"
+  }
+}

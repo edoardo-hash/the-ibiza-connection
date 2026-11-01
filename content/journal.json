@@ -1,0 +1,209 @@
+{
+  "eyebrow": "Journal",
+  "title": "Notes from the island",
+  "lede": "Places we go, tables we book, coves we keep to ourselves. Written by the team in Santa Eulària — not by a content agency.",
+  "posts": [
+    {
+      "slug": "north-ibiza-guide",
+      "title": "The north: Ibiza's quiet, bohemian heart",
+      "category": "Island guide",
+      "date": "2026-09-18",
+      "image": "/assets/img/journal-north.webp",
+      "image_alt": "A villa hidden in the pine woods of northern Ibiza",
+      "excerpt": "Stone fincas, pine woods and roads that end at the sea. A local's route through the part of Ibiza that still feels undiscovered.",
+      "lede": "The north is not the Ibiza of the posters. There are no towers, no strip, no queue for the sunset. Just pine woods, stone fincas, a handful of villages and a sea that arrives at the end of a track.",
+      "body": [
+        {
+          "type": "p",
+          "text": "Drive north from Santa Eulària and the island changes within ten minutes. The road lifts away from the coast, the verges fill with rosemary and pine, and the villages become smaller and whiter. By the time you reach San Carlos you are somewhere else entirely."
+        },
+        {
+          "type": "h2",
+          "text": "Start in Santa Gertrudis"
+        },
+        {
+          "type": "p",
+          "text": "Santa Gertrudis is the north's living room: a church, a square, a handful of cafés and a surprising number of galleries. Come for a slow coffee in the morning and stay for lunch. The village has become the island's creative centre without ever losing its village manners — the same families still run the bakery, and the man selling figs from a table outside knows everyone by name."
+        },
+        {
+          "type": "p",
+          "text": "From here, the roads fan out towards San Lorenzo and San Mateu, where the island's oldest fincas sit among almond and olive trees. This is walking country: quiet lanes, dry-stone walls, and the sea appearing as a thin blue line between the hills."
+        },
+        {
+          "type": "h2",
+          "text": "The beaches at the end of the road"
+        },
+        {
+          "type": "p",
+          "text": "Portinatx is the north's family beach: three coves, shallow water, pines right down to the sand. Further east, Cala San Vicente has the same clear water with a little more space and a couple of good places to eat at the back of the beach. Both are best in the morning, before the island wakes up properly."
+        },
+        {
+          "type": "p",
+          "text": "For something smaller, follow the lane to Cala Mastella — a tiny inlet with a handful of fishing boats and a restaurant that has been serving bullit de peix to anyone who books ahead for decades. Cala Boix, black-pebbled and backed by cliffs, is five minutes further on and rarely crowded."
+        },
+        {
+          "type": "quote",
+          "text": "The north rewards people who are willing to drive ten minutes further than they planned."
+        },
+        {
+          "type": "h2",
+          "text": "Sunday, and the drums"
+        },
+        {
+          "type": "p",
+          "text": "Benirrás on a Sunday evening is one of the island's great free spectacles. Drummers gather on the beach as the sun goes down behind the islets, boats anchor offshore, and nobody is in a hurry. Arrive by six, park where you can, and walk. Bring water; leave the drone at home."
+        },
+        {
+          "type": "p",
+          "text": "If you would rather have the beach to yourself, come back on a Tuesday morning. The drums are only half the story — the bay itself, with its cold, clear water and pine-backed sand, is one of the best swimming spots on the island."
+        },
+        {
+          "type": "h2",
+          "text": "Where to stay"
+        },
+        {
+          "type": "p",
+          "text": "The north suits villas with land around them: old fincas with thick walls and shaded terraces, or newer houses tucked into the pines with long views towards the sea. You will want a car — the best coves are not on a bus route — and you will want to leave the evenings free. This is not the part of Ibiza where you book every hour."
+        },
+        {
+          "type": "p",
+          "text": "We keep a handful of north houses in the collection, from a four-bedroom finca near San Lorenzo to a modern villa above Portinatx. Tell us what you need and we will tell you honestly which one fits."
+        }
+      ]
+    },
+    {
+      "slug": "ibiza-town-in-a-day",
+      "title": "Ibiza Town in a day, the way we do it",
+      "category": "Itinerary",
+      "date": "2026-07-02",
+      "image": "/assets/img/journal-town.webp",
+      "image_alt": "The view across the water towards Ibiza Town",
+      "excerpt": "Dalt Vila before the crowds, a long lunch in Talamanca, and a table in La Marina when the harbour lights come on.",
+      "lede": "Ibiza Town is the island's capital, its oldest quarter and its most sociable address. It is also small enough to do properly in a day — if you start early and stop for lunch.",
+      "body": [
+        {
+          "type": "h2",
+          "text": "Morning: up into Dalt Vila"
+        },
+        {
+          "type": "p",
+          "text": "Go early. The walls open to the town at nine, and for the first hour the lanes belong to residents, delivery vans and the occasional cat. Walk up through the Portal de ses Taules, past the stone bastions, and keep going until the view opens out over the harbour and the salt flats beyond."
+        },
+        {
+          "type": "p",
+          "text": "The cathedral at the top is worth ten minutes, but the real pleasure is the walking: bougainvillea against whitewash, a shop selling nothing but espadrilles, a doorway that turns out to be a bar. Take the long way down."
+        },
+        {
+          "type": "h2",
+          "text": "Midday: the market and the marina"
+        },
+        {
+          "type": "p",
+          "text": "Back at sea level, the Mercat Vell on the edge of La Marina is a good place for a cold drink and a plate of something simple. From there, wander the harbour front and the streets behind it — the fish shops, the chandlers, the bars that have been there since before the island became fashionable."
+        },
+        {
+          "type": "h2",
+          "text": "Afternoon: Talamanca"
+        },
+        {
+          "type": "p",
+          "text": "Talamanca is a fifteen-minute walk along the water from the marina, or a five-minute drive. The beach is a long, gentle curve with the town skyline behind it and the sea in front — the rare Ibiza beach where you can combine a swim with a decent lunch and be back in the old town for the evening."
+        },
+        {
+          "type": "p",
+          "text": "If you are staying in Talamanca or Cap Martinet, this is the moment to go home, swim, and sleep off the afternoon. The island is still awake at midnight; there is no need to rush."
+        },
+        {
+          "type": "h2",
+          "text": "Evening: La Marina"
+        },
+        {
+          "type": "p",
+          "text": "When the light goes, head back to La Marina. The restaurants around the harbour fill up late — book ahead in July and August — and the people-watching is better than any show. Afterwards, walk up to the walls again: Dalt Vila is floodlit at night and almost empty after ten."
+        },
+        {
+          "type": "quote",
+          "text": "The best thing about Ibiza Town is that you can walk home from it."
+        },
+        {
+          "type": "h2",
+          "text": "Where to stay"
+        },
+        {
+          "type": "p",
+          "text": "We keep villas in Talamanca, Cap Martinet and the hills behind the town — close enough to walk to dinner, far enough to hear the cicadas. For a group of six to twelve, a house with a pool and a view of the old town is hard to beat."
+        }
+      ]
+    },
+    {
+      "slug": "a-day-on-the-water",
+      "title": "A day on the water: the coves you can only reach by boat",
+      "category": "Boat days",
+      "date": "2026-05-15",
+      "image": "/assets/img/journal-water.webp",
+      "image_alt": "A yacht anchored in clear water below the cliffs of Ibiza",
+      "excerpt": "The island looks different from the sea. A short guide to the coves, the timing and the boats worth booking.",
+      "lede": "Half of Ibiza is only visible from the water. The cliffs, the hidden coves, the beaches with no road — a day on a boat is the closest thing the island has to a secret.",
+      "body": [
+        {
+          "type": "p",
+          "text": "You do not need a superyacht. A small day boat with a cool box and a skipper who knows the coast is enough to reach places that feel genuinely remote, even in August. The trick is to leave early and to go in the opposite direction to everyone else."
+        },
+        {
+          "type": "h2",
+          "text": "South: Es Vedrà and the cliffs"
+        },
+        {
+          "type": "p",
+          "text": "From Cala Jondal or the marina at Ibiza Town, head south-west towards Es Vedrà. The rock is impressive from the beach at Cala d'Hort; from the water it is something else entirely — a sheer limestone island with a halo of birds and water so clear you can see the bottom at fifteen metres."
+        },
+        {
+          "type": "p",
+          "text": "Anchor off Cala Llentia or Cala d'Hort for a swim and lunch, then run back along the cliffs as the afternoon light comes across the island. This is the classic south coast day, and it is popular for a reason."
+        },
+        {
+          "type": "h2",
+          "text": "North and east: Tagomago and the quiet coves"
+        },
+        {
+          "type": "p",
+          "text": "From Santa Eulària or Es Canar, head north-east to Tagomago, a private island with a lighthouse and a sheltered anchorage. On the way, stop at Cala Mastella or Cala Boix — both are prettier from the sea, and neither is reachable by a comfortable walk."
+        },
+        {
+          "type": "p",
+          "text": "Continue to Es Figueral and Cala San Vicente if the weather is settled. The north coast is breezier and less crowded; on a good day you can anchor in water so still it looks like glass."
+        },
+        {
+          "type": "h2",
+          "text": "West: Cala Salada and Cala Comte"
+        },
+        {
+          "type": "p",
+          "text": "The west coast is about the sunset. Leave mid-afternoon, swim at Cala Salada or Cala Bassa, and anchor off Cala Comte for the last hour of light. The horizon turns gold, the boats all face the same way, and nobody says much."
+        },
+        {
+          "type": "h2",
+          "text": "Practical notes"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Book the boat before you book the villa — in July and August the good skippers go first.",
+            "A skipper is not a luxury. The best coves are in marine reserves and anchoring rules apply.",
+            "Take more water than you think, and a jacket for the return leg.",
+            "Ask about lunch: some boats can arrange a table on the beach, or a chef on board.",
+            "If you are a group of ten or more, a crewed yacht is often better value than two day boats."
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "The island is at its best from a boat: no roads, no queues, no plans beyond the next cove."
+        },
+        {
+          "type": "p",
+          "text": "We arrange boats of every size, from a traditional llaüt for six to a crewed motor yacht for twelve. Tell us the day you have in mind and we will match the boat to the group — and to the weather."
+        }
+      ]
+    }
+  ]
+}
