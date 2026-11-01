@@ -182,8 +182,9 @@ for `/assets/*` and the availability redirect.
 
 **Vercel**
 
-The site is already deployed at <https://theibizaconnection.vercel.app/>. To ship a
-new version from this checkout:
+The site is deployed at <https://theibizaconnection.vercel.app/> from the GitHub repo
+`edoardo-hash/the-ibiza-connection`. Every push to `main` deploys to production;
+other branches get preview deployments. A manual deploy from a checkout still works:
 
 ```bash
 vercel --prod
