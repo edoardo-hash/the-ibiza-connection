@@ -262,8 +262,8 @@ def image_tag(image: dict, alt: str, sizes: str, cls: str = "", loading: str = "
     return "<img " + " ".join(attrs) + ">"
 
 
-def villa_card(villa: dict, *, compact: bool = False) -> str:
-    image = villa_image(villa, 0)
+def villa_card(villa: dict, *, compact: bool = False, image_index: int = 0) -> str:
+    image = villa_image(villa, image_index)
     price = (
         f'<strong>{money(villa["price_from"])}</strong><em>/ week</em>'
         if villa["price_from"]
@@ -548,7 +548,7 @@ def shell(
   </div>
   <div class="lightbox__stage">
     <button class="lightbox__btn lightbox__btn--prev" type="button" data-lightbox-prev aria-label="Previous photo">{icon('chevron-left')}</button>
-    <img data-lightbox-img src="" alt="">
+    <img data-lightbox-img alt="">
     <button class="lightbox__btn lightbox__btn--next" type="button" data-lightbox-next aria-label="Next photo">{icon('chevron-right')}</button>
   </div>
   <div class="lightbox__foot"><span data-lightbox-caption></span><span>Use ← → to browse · Esc to close</span></div>
@@ -824,7 +824,10 @@ def build_home() -> str:
       </form>"""
 
     featured = [VILLA_BY_SLUG[s] for s in HOME["featured"]["slugs"] if s in VILLA_BY_SLUG]
-    featured_html = "".join(villa_card(v) for v in featured)
+    # Optional per-villa photo override, so a featured card never repeats an
+    # editorial image used elsewhere on the page (e.g. the hero).
+    card_images = HOME["featured"].get("image_index", {})
+    featured_html = "".join(villa_card(v, image_index=card_images.get(v["slug"], 0)) for v in featured)
 
     stats = "".join(
         f'<div class="stat reveal"><span class="stat__value">{esc(fill(s["value"]))}</span>'

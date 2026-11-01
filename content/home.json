@@ -26,7 +26,7 @@
     ],
     "link": { "label": "More about us", "href": "/about/" },
     "image": "/assets/img/about.webp",
-    "image_alt": "A whitewashed Ibiza villa seen through the pines",
+    "image_alt": "A whitewashed finca below the pine-covered hills of north Ibiza",
     "stats": [
       { "value": "{count}", "label": "villas in the collection" },
       { "value": "{areas}", "label": "areas, from Portinatx to Cala Jondal" },
@@ -45,7 +45,10 @@
       "villa-mariola",
       "villa-nia",
       "villa-amaya"
-    ]
+    ],
+    "image_index": {
+      "villa-katherine": 2
+    }
   },
   "regions": {
     "eyebrow": "02 — The island",
@@ -105,7 +108,7 @@
     "title_html": "Tell us what you are <em>dreaming</em> of.",
     "text": "Send your dates, the size of your group and the feeling you are after. We will reply with a shortlist — usually the same day.",
     "image": "/assets/img/cta.webp",
-    "image_alt": "An infinity pool looking out to the Mediterranean",
+    "image_alt": "An infinity pool looking out over the sea from the south-west coast",
     "primary": { "label": "Start an enquiry", "href": "/contact/" },
     "whatsapp": "WhatsApp us"
   }

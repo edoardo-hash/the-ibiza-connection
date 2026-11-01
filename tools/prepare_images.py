@@ -5,7 +5,8 @@ Art-directed crops for the editorial parts of the site.
 Downloads the original photographs for a handful of chosen villas and writes
 the exact sizes the templates ask for:
 
-    python3 tools/prepare_images.py
+    python3 tools/prepare_images.py              # every crop
+    python3 tools/prepare_images.py cta about    # only the named crops
 
 Outputs live in assets/img/ and are committed with the site.
 """
@@ -37,19 +38,19 @@ CROPS = [
     ("villa-amaya", 1, "destination-north", 2000, 1200, (0.5, 0.5)),
     ("villa-katherine", 0, "hero-mobile", 1100, 1500, (0.5, 0.55)),
     ("villa-katherine", 0, "og", 1200, 630, (0.5, 0.5)),
-    ("villa-katherine", 2, "region-south-west", 1200, 1500, (0.5, 0.5)),
-    ("villa-abigail", 0, "region-ibiza-town", 1200, 1500, (0.5, 0.55)),
+    ("villa-ivy", 3, "region-south-west", 1200, 1500, (0.5, 0.5)),
+    ("villa-perla-blanca", 2, "region-ibiza-town", 1200, 1500, (0.5, 0.5)),
     ("villa-mariola", 1, "region-east", 1200, 1500, (0.5, 0.5)),
     ("vista-conta", 0, "region-west", 1200, 1500, (0.5, 0.5)),
     ("can-cecilia", 1, "region-north", 1200, 1500, (0.5, 0.55)),
-    ("can-alivia", 0, "journal-north", 1600, 1067, (0.5, 0.5)),
-    ("villa-talamanca-views", 0, "journal-town", 1600, 1067, (0.5, 0.5)),
-    ("villa-abigail", 0, "cta", 2200, 1200, (0.5, 0.5)),
+    ("can-mira", 0, "journal-north", 1600, 1067, (0.5, 0.5)),
+    ("villa-shiva", 3, "journal-town", 1600, 1067, (0.5, 0.5)),
+    ("villa-lydia", 2, "cta", 2200, 1200, (0.5, 0.5)),
     ("villa-talamanca-views", 0, "experiences", 2000, 1200, (0.5, 0.5)),
     ("villa-mariola", 2, "car", 1800, 1200, (0.5, 0.5)),
     ("villa-mariola", 5, "concierge", 1800, 1200, (0.5, 0.5)),
     ("villa-nia", 1, "owners", 1800, 1200, (0.5, 0.5)),
-    ("can-alivia", 2, "about", 1800, 1200, (0.5, 0.5)),
+    ("can-xarraca", 1, "about", 1800, 1200, (0.5, 0.5)),
     ("villa-talamanca-views", 1, "contact", 1800, 1200, (0.5, 0.5)),
 ]
 
@@ -82,8 +83,11 @@ def crop(image: Image.Image, width: int, height: int, focal: tuple[float, float]
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     CACHE.mkdir(parents=True, exist_ok=True)
+    only = set(sys.argv[1:])
     failures = 0
     for slug, index, name, width, height, focal in CROPS:
+        if only and name not in only:
+            continue
         villa = BY_SLUG.get(slug)
         if not villa:
             print(f"! missing villa {slug}")
