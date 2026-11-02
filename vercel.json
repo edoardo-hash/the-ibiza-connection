@@ -30,5 +30,32 @@
     "api/availability/index.js": {
       "maxDuration": 60
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/destinations/north/",
+      "destination": "/destinations/san-juan/",
+      "permanent": true
+    },
+    {
+      "source": "/destinations/west/",
+      "destination": "/destinations/san-antonio/",
+      "permanent": true
+    },
+    {
+      "source": "/destinations/south-west/",
+      "destination": "/destinations/san-jose/",
+      "permanent": true
+    },
+    {
+      "source": "/destinations/east/",
+      "destination": "/destinations/santa-eulalia/",
+      "permanent": true
+    },
+    {
+      "source": "/destinations/ibiza-town/",
+      "destination": "/destinations/ibiza/",
+      "permanent": true
+    }
+  ]
 }

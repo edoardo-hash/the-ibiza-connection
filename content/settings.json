@@ -54,24 +54,24 @@
       "href": "/destinations/",
       "children": [
         {
-          "label": "North",
-          "href": "/destinations/north/"
+          "label": "San Juan",
+          "href": "/destinations/san-juan/"
         },
         {
-          "label": "West",
-          "href": "/destinations/west/"
+          "label": "San Antonio",
+          "href": "/destinations/san-antonio/"
         },
         {
-          "label": "South West",
-          "href": "/destinations/south-west/"
+          "label": "San José",
+          "href": "/destinations/san-jose/"
         },
         {
-          "label": "East",
-          "href": "/destinations/east/"
+          "label": "Santa Eulalia",
+          "href": "/destinations/santa-eulalia/"
         },
         {
-          "label": "Ibiza Town & Centre",
-          "href": "/destinations/ibiza-town/"
+          "label": "Ibiza",
+          "href": "/destinations/ibiza/"
         }
       ]
     },
@@ -158,5 +158,12 @@
       }
     ],
     "legal": "The Ibiza Connection · NIF B42772145 · Carrer Pintors Puget 16, Local 3, Santa Eulària des Riu, Ibiza"
-  }
+  },
+  "hidden_villas": [
+    {
+      "uuid": "9293ab5e-220d-4eb2-85d1-64046b0e8acd",
+      "name": "Can Best",
+      "note": "Removed by Edo, 2 Nov 2026 (description in IMpulse is just \"i\")"
+    }
+  ]
 }

@@ -256,28 +256,28 @@ ICON_BY_FEATURE = {
 
 REGIONS = {
     "San Jose de Sa Talaia": {
-        "slug": "south-west",
-        "name": "South West",
+        "slug": "san-jose",
+        "name": "San José",
         "short": "Es Cubells, Cala Jondal & the sunset coast",
     },
     "Ibiza": {
-        "slug": "ibiza-town",
-        "name": "Ibiza Town & Centre",
+        "slug": "ibiza",
+        "name": "Ibiza",
         "short": "The old town, Talamanca & Cap Martinet",
     },
     "Santa Eulalia del Rio": {
-        "slug": "east",
-        "name": "East",
+        "slug": "santa-eulalia",
+        "name": "Santa Eulalia",
         "short": "Santa Eulalia, Cala Llonga & Es Canar",
     },
     "San Antonio de Portmany": {
-        "slug": "west",
-        "name": "West",
+        "slug": "san-antonio",
+        "name": "San Antonio",
         "short": "San Antonio, Cala Bassa & Cala Conta",
     },
     "San Juan de Labritja": {
-        "slug": "north",
-        "name": "North",
+        "slug": "san-juan",
+        "name": "San Juan",
         "short": "San Juan, Portinatx & the bohemian coast",
     },
 }

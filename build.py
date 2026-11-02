@@ -22,6 +22,7 @@ import os
 import re
 import shutil
 import unicodedata
+from urllib.parse import quote
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -65,6 +66,10 @@ PAGES = {
     )
 }
 VILLAS = load(DATA / "villas.json")
+# Villas taken off this site by hand (content/settings.json "hidden_villas", by IMpulse uuid):
+# they stay hidden whatever the daily refresh brings back.
+_HIDDEN = {str(h["uuid"]).lower() for h in SETTINGS.get("hidden_villas", [])}
+VILLAS = [v for v in VILLAS if str(v.get("v_uuid", "")).lower() not in _HIDDEN]
 META = load(DATA / "meta.json")
 PRICES = load(DATA / "prices.json")
 
@@ -1141,7 +1146,7 @@ def build_villas() -> str:
       </div>
       <div class="page-head__meta">
         <span><strong>{len(VILLAS)}</strong> villas</span>
-        <span><strong>{COUNTS['regions']}</strong> regions</span>
+        <span><strong>{COUNTS['regions']}</strong> districts</span>
         <span><strong>{COUNTS['areas']}</strong> areas</span>
         <span>Sleeps up to <strong>{META['max_sleeps']}</strong></span>
       </div>
@@ -1522,7 +1527,7 @@ def build_villa(villa: dict) -> str:
   <div class="wrap">
     <div class="section-head reveal">
       <div><p class="eyebrow">Keep looking</p><h2>More in {esc(region['name'])}</h2></div>
-      <div class="section-head__aside"><a class="link" href="/villas/?region={villa['region']}">All villas in {esc(region['name'])}{icon('arrow')}</a></div>
+      <div class="section-head__aside"><a class="link" href="/villas/?where={quote('d:' + region['district'])}">All villas in {esc(region['name'])}{icon('arrow')}</a></div>
     </div>
     <div class="villa-grid">{similar_html}</div>
   </div>
@@ -1635,7 +1640,7 @@ def build_destinations() -> str:
         <p class="lede">{esc(DESTINATIONS['lede'])}</p>
       </div>
       <div class="page-head__meta">
-        <span><strong>{COUNTS['regions']}</strong> regions</span>
+        <span><strong>{COUNTS['regions']}</strong> districts</span>
         <span><strong>{COUNTS['areas']}</strong> areas</span>
         <span><strong>{len(VILLAS)}</strong> villas</span>
       </div>
@@ -1693,7 +1698,7 @@ def build_destination(region: dict) -> str:
     <div class="split">
       <div class="split__text reveal">
         <p class="eyebrow">The corner</p>
-        <h2>Why we send people {('here' if region['slug'] != 'east' else 'home')}</h2>
+        <h2>Why we send people {('here' if region['slug'] != 'santa-eulalia' else 'home')}</h2>
         {''.join(f'<p>{esc(p)}</p>' for p in region['intro'])}
         <p class="muted" style="font-size:14px;margin-top:18px">{esc(region['note'])}</p>
       </div>
@@ -1722,7 +1727,7 @@ def build_destination(region: dict) -> str:
       <div><p class="eyebrow">The houses</p><h2>Villas in {esc(region['name'])}</h2></div>
       <div class="section-head__aside">
         <p class="lede">{len(villas)} houses in this part of the island{f', from {money(min(prices))} per week' if prices else ''}.</p>
-        <a class="link" href="/villas/?region={region['slug']}">See all {len(villas)} villas{icon('arrow')}</a>
+        <a class="link" href="/villas/?where={quote('d:' + region['district'])}">See all {len(villas)} villas{icon('arrow')}</a>
       </div>
     </div>
     <div class="villa-grid">{cards}</div>

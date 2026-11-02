@@ -449,7 +449,8 @@
     // "Where" (portal districts and areas): d:<district> or a:<district>|<area>.
     // Older links (?region=<slug>, ?area=<name>, ?bedrooms=<n>) still work.
     const legacyWhere = () => {
-      const region = params.get("region");
+      const RENAMED = { north: "san-juan", west: "san-antonio", "south-west": "san-jose", east: "santa-eulalia", "ibiza-town": "ibiza" };
+      const region = RENAMED[params.get("region")] || params.get("region");
       const area = params.get("area");
       if (area) {
         const card = cards.find((c) => c.dataset.area === area);

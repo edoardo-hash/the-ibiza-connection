@@ -176,6 +176,12 @@ The build is atomic: it renders into `.build/`, swaps it with `dist/`, and the r
 server never serves a half-written page. A full rebuild takes about a second (excluding
 photography).
 
+### Hiding a villa
+
+To take a villa off the site by hand, add it to `hidden_villas` in `content/settings.json`
+(its IMpulse uuid, name and why). It stays hidden whatever the daily refresh brings back.
+Currently: Can Best (Edo, 2 Nov 2026).
+
 ## Live availability
 
 The browser never sees the API key. Two endpoints are provided:
