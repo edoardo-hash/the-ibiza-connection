@@ -282,23 +282,8 @@ REGIONS = {
     },
 }
 
-# Nice-to-have: areas we want to spell consistently on the site.
-AREA_LABELS = {
-    "S'argamassa": "S'Argamassa",
-    "Playa d´en Bossa": "Playa d'en Bossa",
-    "Puig den Valls": "Puig d'en Valls",
-    "San Jordi": "Sant Jordi",
-    "San Jose": "Sant Josep",
-    "San Agustin": "Sant Agustí",
-    "San Antonio": "Sant Antoni",
-    "San Matteo": "Sant Mateu",
-    "San Rafael": "Sant Rafel",
-    "San Lorenzo": "Sant Llorenç",
-    "San Juan": "Sant Joan",
-    "Santa Eulalia": "Santa Eulària",
-    "Jesus": "Jesús",
-    "Es Canar": "Es Canar",
-}
+# Area names are kept exactly as IMpulse and the Invenio portal spell them (Edo, 2 Nov 2026).
+AREA_LABELS: dict[str, str] = {}
 
 
 def group_features(features: list[str]) -> tuple[list[str], list[dict], list[str]]:

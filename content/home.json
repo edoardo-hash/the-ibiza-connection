@@ -11,8 +11,8 @@
     "scroll_label": "Scroll to explore",
     "search": {
       "regions_label": "Where",
-      "arrive_label": "Arrive",
-      "depart_label": "Depart",
+      "dates_label": "Check in · Check out",
+      "bedrooms_label": "Bedrooms",
       "guests_label": "Guests",
       "submit": "Search"
     }

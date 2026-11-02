@@ -476,7 +476,7 @@ body.menu-open .site-menu { opacity: 1; visibility: visible; }
   border: 1px solid var(--line);
   box-shadow: 0 30px 80px -50px rgba(22, 20, 15, 0.55);
   display: grid;
-  grid-template-columns: 1.25fr 1fr 1fr 0.8fr auto;
+  grid-template-columns: 1.15fr 1.45fr 0.8fr 0.95fr auto;
   align-items: stretch;
   padding: 10px;
   gap: 0;
@@ -492,7 +492,9 @@ body.menu-open .site-menu { opacity: 1; visibility: visible; }
   min-width: 0;
 }
 .search-field:last-of-type { border-right: 0; }
-.search-field label {
+.search-field label,
+.search-field__label,
+.date-range__label {
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.2em;
@@ -519,6 +521,133 @@ body.menu-open .site-menu { opacity: 1; visibility: visible; }
 .search-field input[type="date"]::-webkit-calendar-picker-indicator { opacity: 0.45; cursor: pointer; }
 .search-field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%2316140f' stroke-width='1.2'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 4px center; cursor: pointer; }
 .search-panel .btn { margin: 4px; padding-inline: 34px; }
+
+/* Date range field (one calendar for check-in and check-out) ------------- */
+.date-range { position: relative; width: 100%; }
+.date-range__trigger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  color: var(--ink);
+}
+.date-range__label {
+  display: block;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+.date-range__value { font-size: 15px; font-weight: 300; line-height: 1.4; min-height: 26px; display: flex; align-items: center; color: var(--muted); }
+.date-range.has-value .date-range__value { color: var(--ink); }
+.date-range__trigger:focus-visible { outline: 2px solid var(--clay); outline-offset: 4px; }
+/* In the filter drawer and the villa booking box the field sits in a framed control. */
+.filter-group .date-range__trigger { border: 1px solid var(--line-strong); padding: 10px 14px; background: var(--white); }
+.filter-group .date-range__label { display: none; }
+.booking__field--dates .date-range__label { font-size: 11px; letter-spacing: 0.18em; }
+.booking__field--dates .date-range__value { font-size: 14px; min-height: 22px; }
+
+/* Bedrooms from – to ----------------------------------------------------- */
+.bed-range { display: flex; align-items: center; gap: 8px; min-height: 26px; }
+.bed-range input {
+  width: 4.2em;
+  min-width: 0;
+  border: 0;
+  border-bottom: 1px solid var(--line-strong);
+  background: transparent;
+  padding: 2px 0;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--ink);
+  text-align: center;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.bed-range input::-webkit-outer-spin-button,
+.bed-range input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.bed-range input:focus { outline: 0; border-bottom-color: var(--clay); }
+.bed-range span { color: var(--muted); }
+.filter-group .bed-range input { width: 100%; border: 1px solid var(--line-strong); padding: 10px 12px; background: var(--white); text-align: left; }
+
+/* Calendar popover / bottom sheet ---------------------------------------- */
+.dr-scrim { position: fixed; inset: 0; z-index: 120; background: transparent; }
+.dr-panel {
+  position: absolute;
+  z-index: 121;
+  width: min(680px, calc(100vw - 32px));
+  max-height: min(560px, calc(100vh - 32px));
+  display: flex;
+  flex-direction: column;
+  background: var(--bone);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 60px -24px rgba(22, 20, 15, 0.45);
+  font-family: var(--sans);
+}
+.dr-panel.is-sheet {
+  position: fixed;
+  inset: auto 0 0 0;
+  width: 100%;
+  max-height: 88vh;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -12px 32px rgba(22, 20, 15, 0.25);
+}
+.dr-panel.is-sheet ~ .dr-scrim, .dr-scrim:has(+ .dr-panel.is-sheet) { background: rgba(12, 11, 8, 0.4); }
+.dr-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--line); flex-shrink: 0; }
+.dr-title { font-size: 16px; font-weight: 500; }
+.dr-title span { font-weight: 300; color: var(--muted); }
+.dr-hint { font-size: 13px; color: var(--muted); }
+.dr-close { width: 40px; height: 40px; border: 1px solid var(--line); border-radius: 50%; background: transparent; font-size: 20px; line-height: 1; cursor: pointer; color: var(--ink); }
+.dr-quick, .dr-jump { display: flex; gap: 6px; padding: 10px 18px; border-bottom: 1px solid var(--line); flex-shrink: 0; align-items: center; }
+.dr-quick:empty { display: none; }
+.dr-quick span { font-size: 13px; color: var(--muted); margin-right: 4px; }
+.dr-jump { overflow-x: auto; scrollbar-width: none; }
+.dr-jump::-webkit-scrollbar { display: none; }
+.dr-quick button, .dr-jump button {
+  flex-shrink: 0;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  font-size: 13px;
+  color: var(--ink);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.dr-quick button.is-on { background: var(--ink); color: var(--bone); border-color: var(--ink); }
+.dr-months { overflow-y: auto; padding: 8px 18px 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 28px; align-content: start; overscroll-behavior: contain; }
+.dr-month h5 { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; margin: 10px 0 6px; }
+.dr-grid { display: grid; grid-template-columns: repeat(7, 1fr); }
+.dr-dow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); text-align: center; padding: 4px 0; }
+.dr-day {
+  aspect-ratio: 1;
+  min-height: 36px;
+  border: 0;
+  background: transparent;
+  font-size: 14px;
+  color: var(--ink);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.dr-day:hover:not([disabled]) { background: var(--bone-2); }
+.dr-day[disabled] { color: rgba(22, 20, 15, 0.25); cursor: default; }
+.dr-day.is-in { background: rgba(162, 98, 60, 0.14); border-radius: 0; }
+.dr-day.is-start, .dr-day.is-end { background: var(--ink); color: var(--bone); font-weight: 500; }
+.dr-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 18px; border-top: 1px solid var(--line); flex-shrink: 0; }
+.dr-clear { border: 0; background: transparent; font-size: 13px; text-decoration: underline; text-underline-offset: 3px; color: var(--ink); cursor: pointer; }
+.dr-apply[disabled] { opacity: 0.4; cursor: default; }
+@media (max-width: 640px) {
+  .dr-months { grid-template-columns: 1fr; }
+  .dr-day { min-height: 44px; }
+}
 
 /* Page head -------------------------------------------------------------- */
 .page-head {
@@ -1102,7 +1231,7 @@ select.filter-select,
 .booking__fields { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); margin-bottom: 12px; }
 .booking__field { background: var(--bone); padding: 10px 12px; }
 .booking__field--wide { grid-column: span 2; }
-.booking__field label { display: block; font-size: 8px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+.booking__field label { display: block; font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
 .booking__field input, .booking__field select { width: 100%; border: 0; background: transparent; font-size: 14px; padding: 0; min-height: 22px; appearance: none; -webkit-appearance: none; }
 .booking__field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='5' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%2316140f' stroke-width='1.2'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0 center; }
 .booking__result {
@@ -1472,10 +1601,11 @@ select.filter-select,
     grid-template-columns: 1fr 1fr;
   }
   .search-field { padding: 10px 12px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .search-field:nth-child(2n) { border-right: 0; }
-  .search-field:nth-child(3), .search-field:nth-child(4) { border-bottom: 0; }
+  .search-field--where, .search-field--dates { grid-column: span 2; border-right: 0; }
+  .search-field--beds { border-right: 0; border-bottom: 0; }
+  .search-field:nth-child(3) { border-bottom: 0; }
   .search-panel .btn { grid-column: span 2; margin: 8px 10px 6px; }
-  .search-field label { font-size: 8px; }
+  .search-field label, .search-field__label, .date-range__label { font-size: 11px; }
   .search-field select, .search-field input { font-size: 14px; }
   .page-head { padding-top: calc(var(--header) + 40px); }
   .stats { grid-template-columns: 1fr; gap: 20px; }

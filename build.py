@@ -121,6 +121,20 @@ SITE_URL = (
 TODAY = date.today()
 BUILD_DAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
+# Districts and areas exactly as the Invenio portal shows them (Edo, 2 Nov 2026): the five
+# IMpulse districts with the portal's short labels (src/lib/search.ts DISTRICTS), and the
+# IMpulse area names as they are (no Catalan respelling).
+DISTRICTS = [
+    ("Ibiza", "Ibiza"),
+    ("San Antonio de Portmany", "San Antonio"),
+    ("San Jose de Sa Talaia", "San José"),
+    ("San Juan de Labritja", "San Juan"),
+    ("Santa Eulalia del Rio", "Santa Eulalia"),
+]
+DISTRICT_LABEL = dict(DISTRICTS)
+for _villa in VILLAS:
+    _villa["area"] = _villa.get("area_key") or _villa["area"]
+
 COUNTS = {
     "count": len(VILLAS),
     "areas": len({v["area_key"] for v in VILLAS}),
@@ -315,7 +329,7 @@ def villa_card(villa: dict, *, compact: bool = False, image_index: int = 0) -> s
     return f"""
         <article class="villa-card"
            data-villa data-slug="{villa['slug']}" data-uuid="{villa['v_uuid']}" data-name="{esc(villa['name'].lower())}"
-           data-area="{esc(villa['area'])}" data-region="{villa['region']}"
+           data-area="{esc(villa['area'])}" data-district="{esc(villa['district'])}" data-region="{villa['region']}"
            data-sleeps="{villa['sleeps']}" data-bedrooms="{villa['bedrooms']}"
            data-price="{villa['price_from']}" data-features="{esc(features)}">
           <a class="villa-card__link" href="/villa/{villa['slug']}/">
@@ -831,6 +845,50 @@ def region_options(selected: str = "") -> str:
     return "".join(options)
 
 
+def where_options() -> str:
+    """"Where": each portal district, then its areas (as on the portal). Values are
+    d:<district> or a:<district>|<area>, read by assets/js/site.js."""
+    options = ['<option value="">Anywhere</option>']
+    for value, label in DISTRICTS:
+        villas = [v for v in VILLAS if v["district"] == value]
+        if not villas:
+            continue
+        areas: dict[str, int] = {}
+        for v in villas:
+            areas[v["area"]] = areas.get(v["area"], 0) + 1
+        options.append(f'<optgroup label="{esc(label)}">')
+        options.append(f'<option value="d:{esc(value)}">All of {esc(label)} ({len(villas)})</option>')
+        for area in sorted(areas, key=str.lower):
+            options.append(f'<option value="a:{esc(value)}|{esc(area)}">{esc(area)} ({areas[area]})</option>')
+        options.append("</optgroup>")
+    return "".join(options)
+
+
+def date_range_field(from_name: str, to_name: str, *, from_id: str = "", to_id: str = "",
+                     from_attrs: str = "", to_attrs: str = "", label: str = "Check in · Check out") -> str:
+    """One field for check-in and check-out: opens a single calendar (assets/js/site.js,
+    "Date range"), like the portal's DateRangePicker. The dates travel in two hidden inputs."""
+    fid = f' id="{from_id}"' if from_id else ""
+    tid = f' id="{to_id}"' if to_id else ""
+    return f"""<div class="date-range" data-date-range>
+            <input type="hidden" name="{from_name}"{fid} {from_attrs}>
+            <input type="hidden" name="{to_name}"{tid} {to_attrs}>
+            <button type="button" class="date-range__trigger" aria-haspopup="dialog" aria-expanded="false">
+              <span class="date-range__label">{esc(label)}</span>
+              <span class="date-range__value" data-date-range-value>Add dates</span>
+            </button>
+          </div>"""
+
+
+def bedrooms_range(min_name: str = "bmin", max_name: str = "bmax", attrs: tuple[str, str] = ("", "")) -> str:
+    """Bedrooms "from – to" (as on the portal): two number fields, any range (e.g. 2 to 4)."""
+    return f"""<div class="bed-range">
+            <input type="number" inputmode="numeric" min="1" max="30" step="1" name="{min_name}" placeholder="From" aria-label="Bedrooms from" {attrs[0]}>
+            <span aria-hidden="true">–</span>
+            <input type="number" inputmode="numeric" min="1" max="30" step="1" name="{max_name}" placeholder="To" aria-label="Bedrooms to" {attrs[1]}>
+          </div>"""
+
+
 def guest_options(max_guests: int = 12, selected: int = 0) -> str:
     options = [] if selected else ['<option value="">Any number</option>']
     for n in range(2, max_guests + 1):
@@ -846,21 +904,20 @@ def build_home() -> str:
     search = hero["search"]
     search_panel = f"""
       <form class="search-panel" action="/villas/" method="get" role="search" aria-label="Find a villa">
-        <div class="search-field">
-          <label for="hero-region">{esc(search['regions_label'])}</label>
-          <select id="hero-region" name="region">{region_options()}</select>
+        <div class="search-field search-field--where">
+          <label for="hero-where">{esc(search['regions_label'])}</label>
+          <select id="hero-where" name="where">{where_options()}</select>
         </div>
-        <div class="search-field">
-          <label for="hero-arrive">{esc(search['arrive_label'])}</label>
-          <input type="date" id="hero-arrive" name="arrive" aria-label="Arrival date">
-        </div>
-        <div class="search-field">
-          <label for="hero-depart">{esc(search['depart_label'])}</label>
-          <input type="date" id="hero-depart" name="depart" aria-label="Departure date">
+        <div class="search-field search-field--dates">
+          {date_range_field("arrive", "depart", label=search.get("dates_label", "Check in · Check out"))}
         </div>
         <div class="search-field">
           <label for="hero-guests">{esc(search['guests_label'])}</label>
           <select id="hero-guests" name="guests">{guest_options()}</select>
+        </div>
+        <div class="search-field search-field--beds">
+          <span class="search-field__label">{esc(search.get('bedrooms_label', 'Bedrooms'))}</span>
+          {bedrooms_range()}
         </div>
         <button class="btn" type="submit">{esc(search['submit'])}{icon('arrow')}</button>
       </form>"""
@@ -1091,10 +1148,7 @@ def build_villas() -> str:
         {icon('search')}
         <input type="search" placeholder="Search by villa or area" aria-label="Search villas" data-search>
       </div>
-      <select class="filter-select filter-select--bar" data-filter="region" aria-label="Region">
-        <option value="">All regions</option>
-        {''.join(f'<option value="{slug}">{esc(REGIONS[slug]["name"])}</option>' for slug in REGION_ORDER)}
-      </select>
+      <select class="filter-select filter-select--bar" data-filter="where" aria-label="Where">{where_options()}</select>
       <select class="filter-select filter-select--bar" data-filter="guests" aria-label="Guests">
         <option value="">Any guests</option>
         {''.join(f'<option value="{n}">{n}+ guests</option>' for n in (2, 4, 6, 8, 10, 12))}
@@ -1145,22 +1199,12 @@ def build_villas() -> str:
     </div>
     <div class="filter-group">
       <h4>Dates</h4>
-      <div class="date-pair">
-        <input type="date" data-date="from" aria-label="Arrival date">
-        <input type="date" data-date="to" aria-label="Departure date">
-      </div>
+      {date_range_field("arrive", "depart", from_attrs='data-date="from"', to_attrs='data-date="to"')}
       <p class="filter-hint">We check live availability with the villa owners.</p>
     </div>
     <div class="filter-group">
-      <h4>Region</h4>
-      <select class="filter-select" style="width:100%" data-filter="region" aria-label="Region">
-        <option value="">All regions</option>
-        {''.join(f'<option value="{slug}">{esc(REGIONS[slug]["name"])}</option>' for slug in REGION_ORDER)}
-      </select>
-    </div>
-    <div class="filter-group">
-      <h4>Area</h4>
-      <select class="filter-select" style="width:100%" data-filter="area" aria-label="Area">{area_options()}</select>
+      <h4>Where</h4>
+      <select class="filter-select" style="width:100%" data-filter="where" aria-label="Where">{where_options()}</select>
     </div>
     <div class="filter-group">
       <h4>Guests</h4>
@@ -1171,13 +1215,7 @@ def build_villas() -> str:
     </div>
     <div class="filter-group">
       <h4>Bedrooms</h4>
-      <select class="filter-select" style="width:100%" data-filter="bedrooms" aria-label="Bedrooms">
-        <option value="">Any bedrooms</option>
-        <option value="3">3+ bedrooms</option>
-        <option value="4">4+ bedrooms</option>
-        <option value="5">5+ bedrooms</option>
-        <option value="6">6+ bedrooms</option>
-      </select>
+      {bedrooms_range(attrs=('data-filter="bmin"', 'data-filter="bmax"'))}
     </div>
     <div class="filter-group">
       <h4>Weekly price</h4>
@@ -1447,13 +1485,8 @@ def build_villa(villa: dict) -> str:
         <div class="booking__price">{price_html}</div>
         <p class="booking__note">{esc(price_note)}</p>
         <div class="booking__fields">
-          <div class="booking__field">
-            <label for="book-from">Arrive</label>
-            <input type="date" id="book-from" name="from" required>
-          </div>
-          <div class="booking__field">
-            <label for="book-to">Depart</label>
-            <input type="date" id="book-to" name="to" required>
+          <div class="booking__field booking__field--wide booking__field--dates">
+            {date_range_field("from", "to", from_id="book-from", to_id="book-to")}
           </div>
           <div class="booking__field booking__field--wide">
             <label for="book-guests">Guests</label>
