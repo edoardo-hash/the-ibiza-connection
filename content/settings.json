@@ -41,7 +41,7 @@
   "pricing": {
     "currency": "EUR",
     "symbol": "€",
-    "markup_percent": 0,
+    "markup_percent": 5,
     "note": "Rates in the seasonal table are per night, in euros, for the villa only. Card prices are weekly starting rates. Cleaning, deposits and any extras are confirmed with your quote. We never add a booking fee."
   },
   "nav": [

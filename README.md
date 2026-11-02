@@ -77,9 +77,22 @@ python3 -m http.server 4321 --directory dist
 
 | Endpoint | Used for |
 |---|---|
-| `POST /plapi/getdata/api_villa_list` | every published villa |
-| `POST /plapi/getdata/api_villa_price` | seasonal nightly rates |
-| `POST /plapi/getdata/api_villa_availability` | live availability (server-side only) |
+| `POST /plapi/getdata/api_villa_list` | villa data (public fields only) |
+| `POST /plapi/getdata/api_villa_list_lr` | which villas are published (whatever the "API" switch) |
+| `POST /plapi/getdata/api_villa_price_full` | seasonal nightly rates for every villa |
+| `POST /plapi/getdata/api_villa_availability` | live availability and quotes (server-side only) |
+
+**Which villas are listed:** every villa in the destination that is **published** and
+**licensed** (licence field of 4+ characters, the portal's rule), whether its back-office
+"API" switch is on or off and whether it is DCC. Villa data comes from `api_villa_list`,
+which carries only public fields (public alias, approximate GPS, licensed room counts);
+the long-rental list is used only for the published flag, because it also holds real
+names, exact GPS and owner contacts. IMpulse asks for at most 1–2 full long-rental pulls a
+day (~50 MB): reuse a saved copy while developing with `--lr-file path/to/lr.json`.
+
+This needs an API key with access to `api_villa_list_lr`. With a key that has none, the
+script falls back to `api_villa_list` alone, which then lists only the villas with the API
+switch on.
 
 It writes:
 
@@ -115,10 +128,16 @@ destination-agnostic apart from the region names in `content/destinations.json`.
 
 ### Prices and markup
 
-The API returns **net** rates. `content/settings.json` has `pricing.markup_percent`,
-applied at the display level if you want to add a margin. It is **0** by default,
-because the API documentation forbids markup on `direct_client_contract` villas and we
-do not know which commercial terms apply. Change it deliberately.
+The API returns **net** rates: the Invenio net price (owner + 10 %), or on **DCC**
+(`direct_client_contract`) villas the owner's own price. `data/` keeps them as they come.
+
+Every price on the site is the net rate **+ `pricing.markup_percent`** (5 %, in
+`content/settings.json`), rounded half up to the euro. **DCC villas are never marked
+up**: the client contracts with the owner and sees the owner's price. `build.py` applies
+this once when it loads the data, so cards, villa pages, rate tables, filters and
+structured data agree, and writes `lib/pricing.mjs` so live quotes
+(`lib/availability.mjs`) use the same percentage and the same DCC rule. Change the
+percentage in `settings.json` only, then rebuild.
 
 ## Editing the site
 
@@ -167,7 +186,10 @@ back gracefully: all villas stay visible and the note invites the visitor to sen
 by email or WhatsApp. No errors, no empty page.
 
 Results are cached for ten minutes per date range, and the local server rate-limits
-requests per IP.
+requests per IP. With a full-access key the bulk answer covers every villa the key can see
+(~27 MB, ~20 s), so the first search for a date range is slow and later ones are instant;
+the function allows 45 s for it (`vercel.json` gives it 60). Only licensed villas are ever
+returned, and only id, price, minimum nights and cleaning — never names.
 
 ## Deployment
 

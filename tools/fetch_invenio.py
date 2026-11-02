@@ -7,7 +7,8 @@ Fetch the villa collection from the Invenio Homes Data Export API.
     python3 tools/fetch_invenio.py --images 8      # photos per villa
 
 Writes:
-    data/villas.json   public, normalised villa records (published destination only)
+    data/villas.json   public, normalised villa records: every published, licensed villa
+                       in the destination, whether or not its "API" switch is on, DCC or not
     data/prices.json   seasonal nightly rates, keyed by villa
     data/meta.json     fetch timestamp, counts, API host
     assets/villas/<slug>/*.webp   local, responsive photography
@@ -104,6 +105,8 @@ def clean_description(value) -> str:
             continue
         kept.append(line)
     text = "\n".join(kept)
+    # Some owners write markdown (**bold**); the site shows plain text.
+    text = re.sub(r"\*\*(.+?)\*\*", r"\1", text, flags=re.S).replace("**", "")
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
 
@@ -151,6 +154,37 @@ def api_post(path: str, payload, retries: int = 4):
             print(f"  ! {path} attempt {attempt} failed ({exc}); retrying in {wait}s")
             time.sleep(wait)
     raise SystemExit(f"Could not reach {url}: {last_error}")
+
+
+def api_form(endpoint: str, param: list, timeout: int = 600):
+    """POST in the form the full-list endpoints expect: body param=<JSON array>.
+    Returns (rows, payload_size). Rows are [] when the key has no access to the endpoint."""
+    base = os.environ.get("INVENIO_BASE_URL", "https://api.inveniohomes.com").rstrip("/")
+    headers = {k: v for k, v in api_headers().items() if k != "Content-Type"}
+    headers["Content-Type"] = "application/x-www-form-urlencoded"
+    body = urllib.parse.urlencode({"param": json.dumps(param)}).encode("utf-8")
+    request = urllib.request.Request(f"{base}/plapi/getdata/{endpoint}", data=body, headers=headers, method="POST")
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        raw = response.read()
+    data = json.loads(raw.decode("utf-8"))
+    rows = []
+    if isinstance(data, list) and data and isinstance(data[0], dict) and "result" in data[0]:
+        rows = data[0].get("result") or []
+    elif isinstance(data, list):
+        rows = data
+    elif isinstance(data, dict):
+        rows = next((v for v in data.values() if isinstance(v, list)), [])
+    return [r for r in rows if isinstance(r, dict)], len(raw)
+
+
+def is_licensed(value) -> bool:
+    """Same rule as the Invenio portal: a licence is a licence field of 4+ characters."""
+    return len(str(value or "").strip()) >= 4
+
+
+def yes(value) -> bool:
+    """The long-rental list says "Yes"/"No" (or 1/0); the other endpoints say "1"/"0"."""
+    return str(value if value is not None else "").strip().lower() in ("1", "yes", "true")
 
 
 # --------------------------------------------------------------------------- #
@@ -431,6 +465,7 @@ def build_prices(raw: dict, villa_map: dict) -> dict:
         for uuid, rows in entry.items():
             if uuid in ("price_last_updated_by", "price_last_updated_on"):
                 continue
+            uuid = str(uuid).strip().lower()
             if uuid not in villa_map:
                 continue
             clean = []
@@ -469,6 +504,8 @@ def main() -> None:
     parser.add_argument("--no-images", action="store_true", help="skip photography")
     parser.add_argument("--images", type=int, default=6, help="photos per villa (default 6)")
     parser.add_argument("--only", default="", help="comma separated villa names (debug)")
+    parser.add_argument("--lr-file", default="", help="reuse a saved api_villa_list_lr response instead of pulling it "
+                        "again (IMpulse asks for at most 1-2 full pulls a day)")
     args = parser.parse_args()
 
     load_env()
@@ -483,7 +520,45 @@ def main() -> None:
         sys.exit("The API returned no villas.")
     print(f"  {len(all_villas)} villas / {size / 1024:.0f} kB")
 
-    selected = [v for v in all_villas if str(v.get("destination", "")).strip().lower() == destination.lower()]
+    in_destination = lambda v: str(v.get("destination", "")).strip().lower() == destination.lower()
+    candidates = [v for v in all_villas if in_destination(v) and is_licensed(v.get("license"))]
+
+    # Which villas are published. api_villa_list has no published flag; the long-rental
+    # list (api_villa_list_lr) has it for every villa, whatever the back-office "API"
+    # switch says. Villa data itself still comes from api_villa_list above: it carries
+    # only public fields (public alias, approximate GPS, licensed room counts), whereas
+    # the long-rental list also holds real names, exact GPS and owner contacts.
+    # IMpulse asks for at most 1-2 full pulls of the long-rental list per day.
+    print("→ published status (api_villa_list_lr)")
+    try:
+        if args.lr_file:
+            raw_lr = Path(args.lr_file).read_bytes()
+            data_lr = json.loads(raw_lr)
+            lr_rows = (data_lr[0].get("result") if isinstance(data_lr, list) and data_lr else data_lr) or []
+            lr_size = len(raw_lr)
+        else:
+            lr_rows, lr_size = api_form("api_villa_list_lr", [{"long_rental_check_skip": "1"}])
+    except Exception as exc:  # noqa: BLE001
+        lr_rows, lr_size = [], 0
+        print(f"  ! could not read api_villa_list_lr ({exc})")
+    status = {
+        str(r.get("bp_uuid") or "").strip().lower(): (yes(r.get("published_status")), yes(r.get("api_information")))
+        for r in lr_rows
+        if isinstance(r, dict)
+    }
+    if status:
+        selected = [v for v in candidates if status.get(str(v.get("v_uuid") or "").lower(), (False, False))[0]]
+        for v in selected:
+            v["_api_switch_on"] = status[str(v["v_uuid"]).lower()][1]
+        off = sum(1 for v in selected if not v["_api_switch_on"])
+        print(f"  {len(lr_rows)} villas / {lr_size / 1024:.0f} kB → {len(selected)} published, licensed {destination} villas "
+              f"({off} with the API switch off)")
+    else:
+        # Without the long-rental list, api_villa_list only returns published villas
+        # with the API switch on (true of the old partner key), so use it as it is.
+        selected = candidates
+        print("  ! api_villa_list_lr returned nothing for this API key: listing only the villas in api_villa_list.\n"
+              "    Use a key with access to api_villa_list_lr to include villas with the API switch off.")
     if not selected:
         sys.exit(f"No villas found for destination '{destination}'.")
     if args.only:
@@ -491,7 +566,11 @@ def main() -> None:
         selected = [v for v in selected if str(v.get("villa_name", "")).lower() in wanted]
 
     print(f"→ prices for {len(selected)} {destination} villas")
-    price_raw, price_size = api_post("/plapi/getdata/api_villa_price", {})
+    # api_villa_price_full covers every villa (api_villa_price only the API-on ones).
+    # Amounts are nightly net rates: Invenio net (owner + 10 %), or the owner's own
+    # amount on DCC villas. The site's markup is applied at build time (build.py).
+    price_rows, price_size = api_form("api_villa_price_full", [{}])
+    price_raw = {"price_data": price_rows}
     print(f"  {price_size / 1024:.0f} kB")
 
     seen_slugs: dict[str, int] = {}
@@ -546,6 +625,12 @@ def main() -> None:
             "check_out": clean_text(item.get("check_out")),
             "check_in_days": clean_text(item.get("allowed_checkin_days")),
             "license": clean_text(item.get("license")),
+            # DCC: the client contracts with the owner directly; prices are shown
+            # exactly as the owner sets them, with no markup (see build.py).
+            "dcc": yes(item.get("direct_client_contract")),
+            # Back-office "API" switch. Informational only: every published, licensed
+            # villa is listed whatever this says.
+            "api_switch_on": bool(item.get("_api_switch_on", True)),
             "amenities": amenities,
             "amenity_groups": amenity_groups,
             "audience": audience,
@@ -555,13 +640,13 @@ def main() -> None:
             "v_id": item.get("v_id"),
             "v_uuid": uuid,
         }
-        villa_uuid_map[uuid] = record
+        villa_uuid_map[uuid.lower()] = record
         villas.append(record)
 
     # Prices → starting rates and seasonal calendar (only for published villas)
     prices = build_prices(price_raw, villa_uuid_map)
     for villa in villas:
-        rows = prices.get(villa["v_uuid"], [])
+        rows = prices.get(villa["v_uuid"].lower(), [])
         nightly = [r["night"] for r in rows if r["night"] > 0]
         if nightly:
             villa["nightly_from"] = min(nightly)
@@ -570,9 +655,15 @@ def main() -> None:
             villa["nightly_from"] = 0
             villa["nightly_to"] = 0
         villa["rate_rows"] = len(rows)
+        # A villa without weekly min/max: derive them from the nightly rates, as IMpulse
+        # does for the API list (minimum_price = lowest nightly rate x 7).
+        if not villa["price_from"] and villa["nightly_from"] and villa["nightly_from"] * 7 >= 500:
+            villa["price_from"] = villa["nightly_from"] * 7
+            villa["price_to"] = max(villa["price_to"], villa["nightly_to"] * 7)
+            villa["price_on_request"] = False
 
     # Curated ordering: best-value / most complete villas lead the collection.
-    villas.sort(key=lambda v: (-(v["photos"] and 1), v["price_from"] <= 0, -v["sleeps"], v["name"].lower()))
+    villas.sort(key=lambda v: (0 if v["photos"] else 1, v["price_from"] <= 0, -v["sleeps"], v["name"].lower()))
 
     if not args.no_images:
         print(f"→ photography into assets/villas/")
@@ -610,7 +701,7 @@ def main() -> None:
 
     public_prices = {}
     for villa in villas:
-        rows = prices.get(villa["v_uuid"], [])
+        rows = prices.get(villa["v_uuid"].lower(), [])
         if rows:
             public_prices[villa["slug"]] = [
                 {
@@ -629,6 +720,8 @@ def main() -> None:
         "api_host": urllib.parse.urlparse(os.environ.get("INVENIO_BASE_URL", "https://api.inveniohomes.com")).netloc,
         "available_in_account": len(all_villas),
         "published": len(villas),
+        "api_switch_on": sum(1 for v in villas if v["api_switch_on"]),
+        "dcc": sum(1 for v in villas if v["dcc"]),
         "regions": len({v["region"] for v in villas}),
         "areas": len({v["area_key"] for v in villas}),
         "photos": sum(len(v["images"]) for v in villas),
