@@ -14,6 +14,7 @@ can be hosted anywhere — Netlify, Vercel, S3, nginx, a Raspberry Pi.
 
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import math
@@ -109,6 +110,13 @@ META["max_price"] = max([v.get("price_to") or 0 for v in VILLAS] or [0])
 )
 
 VILLA_BY_SLUG = {v["slug"]: v for v in VILLAS}
+
+# /assets/* is served with a one-year immutable cache (vercel.json), so the stylesheet and the
+# script are linked with a fingerprint of their content: a change reaches returning visitors at once.
+ASSET_VERSION = {
+    "css": hashlib.sha1((ROOT / "assets" / "css" / "site.css").read_bytes()).hexdigest()[:10],
+    "js": hashlib.sha1((ROOT / "assets" / "js" / "site.js").read_bytes()).hexdigest()[:10],
+}
 REGIONS = {r["slug"]: r for r in DESTINATIONS["regions"]}
 REGION_ORDER = [r["slug"] for r in DESTINATIONS["regions"]]
 POSTS = {p["slug"]: p for p in JOURNAL["posts"]}
@@ -424,7 +432,7 @@ def head(
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/site.css?v={ASSET_VERSION['css']}">
 <script>document.documentElement.classList.add('js')</script>
 {schemas}
 </head>
@@ -609,7 +617,7 @@ def shell(
   </div>
   <div class="lightbox__foot"><span data-lightbox-caption></span><span>Use ← → to browse · Esc to close</span></div>
 </div>
-<script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/site.js?v={ASSET_VERSION['js']}" defer></script>
 {scripts}
 </body>
 </html>
