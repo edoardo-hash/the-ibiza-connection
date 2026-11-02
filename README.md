@@ -82,9 +82,10 @@ python3 -m http.server 4321 --directory dist
 | `POST /plapi/getdata/api_villa_price_full` | seasonal nightly rates for every villa |
 | `POST /plapi/getdata/api_villa_availability` | live availability and quotes (server-side only) |
 
-**Which villas are listed:** every villa in the destination that is **published** and
-**licensed** (licence field of 4+ characters, the portal's rule), whether its back-office
-"API" switch is on or off and whether it is DCC. Villa data comes from `api_villa_list`,
+**Which villas are listed:** every villa in the destination that is **licensed** (licence
+field of 4+ characters, the portal's rule) and either **published** or **unpublished in the
+last 7 days** (`--recent-unpublished-days`, from the long-rental list's `unpublished_date`),
+whether its back-office "API" switch is on or off and whether it is DCC. Villa data comes from `api_villa_list`,
 which carries only public fields (public alias, approximate GPS, licensed room counts);
 the long-rental list is used only for the published flag, because it also holds real
 names, exact GPS and owner contacts. IMpulse asks for at most 1–2 full long-rental pulls a

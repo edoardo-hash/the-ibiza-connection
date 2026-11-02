@@ -8,7 +8,8 @@ Fetch the villa collection from the Invenio Homes Data Export API.
 
 Writes:
     data/villas.json   public, normalised villa records: every published, licensed villa
-                       in the destination, whether or not its "API" switch is on, DCC or not
+                       in the destination, whether or not its "API" switch is on, DCC or not,
+                       plus the licensed ones unpublished in the last 7 days
     data/prices.json   seasonal nightly rates, keyed by villa
     data/meta.json     fetch timestamp, counts, API host
     assets/villas/<slug>/*.webp   local, responsive photography
@@ -509,6 +510,8 @@ def main() -> None:
     parser.add_argument("--only", default="", help="comma separated villa names (debug)")
     parser.add_argument("--lr-file", default="", help="reuse a saved api_villa_list_lr response instead of pulling it "
                         "again (IMpulse asks for at most 1-2 full pulls a day)")
+    parser.add_argument("--recent-unpublished-days", type=int, default=7,
+                        help="also list villas unpublished within this many days (Edo, 2 Nov 2026: 7); 0 = published only")
     parser.add_argument("--max-change", type=float, default=0.3,
                         help="stop if the number of villas changes by more than this share vs data/villas.json "
                              "(default 0.3 = 30%%); 0 = no check")
@@ -558,18 +561,40 @@ def main() -> None:
     except Exception as exc:  # noqa: BLE001
         lr_rows, lr_size = [], 0
         print(f"  ! could not read api_villa_list_lr ({exc})")
-    status = {
-        str(r.get("bp_uuid") or "").strip().lower(): (yes(r.get("published_status")), yes(r.get("api_information")))
-        for r in lr_rows
-        if isinstance(r, dict)
-    }
+    # Villas unpublished in the last N days stay listed too (Edo, 2 Nov 2026): a villa is often
+    # unpublished for a few days (e.g. a calendar to confirm) and is still bookable.
+    today = datetime.now(timezone.utc).date()
+
+    def unpublished_on(row):
+        try:
+            return datetime.strptime(str(row.get("unpublished_date") or "")[:10], "%Y-%m-%d").date()
+        except ValueError:
+            return None
+
+    status = {}
+    for r in lr_rows:
+        if not isinstance(r, dict):
+            continue
+        published = yes(r.get("published_status"))
+        since = None if published else unpublished_on(r)
+        recent = since is not None and 0 <= (today - since).days <= args.recent_unpublished_days
+        status[str(r.get("bp_uuid") or "").strip().lower()] = {
+            "listed": published or (args.recent_unpublished_days > 0 and recent),
+            "published": published,
+            "unpublished_on": since.isoformat() if since and recent else None,
+            "api": yes(r.get("api_information")),
+        }
     if status:
-        selected = [v for v in candidates if status.get(str(v.get("v_uuid") or "").lower(), (False, False))[0]]
+        selected = [v for v in candidates if status.get(str(v.get("v_uuid") or "").lower(), {}).get("listed")]
         for v in selected:
-            v["_api_switch_on"] = status[str(v["v_uuid"]).lower()][1]
+            st = status[str(v["v_uuid"]).lower()]
+            v["_api_switch_on"] = st["api"]
+            v["_unpublished_on"] = st["unpublished_on"]
         off = sum(1 for v in selected if not v["_api_switch_on"])
-        print(f"  {len(lr_rows)} villas / {lr_size / 1024:.0f} kB → {len(selected)} published, licensed {destination} villas "
-              f"({off} with the API switch off)")
+        recent_n = sum(1 for v in selected if v["_unpublished_on"])
+        print(f"  {len(lr_rows)} villas / {lr_size / 1024:.0f} kB → {len(selected)} licensed {destination} villas: "
+              f"{len(selected) - recent_n} published + {recent_n} unpublished in the last "
+              f"{args.recent_unpublished_days} days ({off} with the API switch off)")
     else:
         # Without the long-rental list there is no published flag. A full-access key's
         # api_villa_list also holds hundreds of unpublished villas, so never fall back to it.
@@ -653,6 +678,8 @@ def main() -> None:
             # Back-office "API" switch. Informational only: every published, licensed
             # villa is listed whatever this says.
             "api_switch_on": bool(item.get("_api_switch_on", True)),
+            # Set when the villa is listed because it was unpublished recently (YYYY-MM-DD).
+            "unpublished_on": item.get("_unpublished_on"),
             "amenities": amenities,
             "amenity_groups": amenity_groups,
             "audience": audience,
@@ -743,6 +770,7 @@ def main() -> None:
         "available_in_account": len(all_villas),
         "published": len(villas),
         "api_switch_on": sum(1 for v in villas if v["api_switch_on"]),
+        "recently_unpublished": sum(1 for v in villas if v.get("unpublished_on")),
         "dcc": sum(1 for v in villas if v["dcc"]),
         "regions": len({v["region"] for v in villas}),
         "areas": len({v["area_key"] for v in villas}),
