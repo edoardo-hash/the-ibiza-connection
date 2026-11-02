@@ -592,7 +592,7 @@
           ? ` from ${new Date(from.value).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })} to ${new Date(to.value).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}`
           : "";
       const message = `Hello The Ibiza Connection, I would like to enquire about ${villaName}${dates}.`;
-      whatsapp.href = `https://wa.me/34671349592?text=${encodeURIComponent(message)}`;
+      whatsapp.href = `https://wa.me/34697875890?text=${encodeURIComponent(message)}`;
       if (enquiry) {
         const params = new URLSearchParams({ villa: villaName });
         if (from.value) params.set("arrive", from.value);
