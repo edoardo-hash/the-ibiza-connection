@@ -1,0 +1,75 @@
+# Daily villa refresh (Edo, 2 Nov 2026).
+# Reads which villas are published from the netcup mirror (the ETL's nightly 23:00 Madrid pull of
+# api_villa_list_lr — no extra load on IMpulse), refreshes villa data, prices and photos, checks that
+# the site builds, and pushes only when something really changed. The push makes Vercel deploy.
+# Needs repository secrets INVENIO_API_KEY and INVENIO_BP_UUID (Settings → Secrets and variables → Actions).
+name: Refresh villas
+
+on:
+  schedule:
+    - cron: "0 5 * * *" # 05:00 UTC = 06:00 Madrid in winter, 07:00 in summer
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-villas
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Pillow
+        run: pip install --quiet pillow
+
+      - name: Fetch villas, prices and photos
+        env:
+          INVENIO_API_KEY: ${{ secrets.INVENIO_API_KEY }}
+          INVENIO_BP_UUID: ${{ secrets.INVENIO_BP_UUID }}
+          INVENIO_LR_BASE_URL: https://data.invenio.tools
+          INVENIO_DESTINATION: Ibiza
+        # Stops (and nothing is written) if the published list can't be read or the
+        # villa count moves by more than 30 %: GitHub then emails a failed run.
+        run: python3 tools/fetch_invenio.py
+
+      - name: Check the site builds
+        run: python3 build.py
+
+      - name: Commit and push if anything changed
+        run: |
+          git add data assets/villas
+          # meta.json always changes (fetch timestamp): on its own it is not a reason to deploy.
+          if git diff --cached --quiet -- . ':(exclude)data/meta.json'; then
+            echo "No villa changes since the last refresh."
+            exit 0
+          fi
+          summary=$(python3 - <<'PY'
+          import json, subprocess
+          old = {v["slug"]: v for v in json.loads(subprocess.check_output(["git", "show", "HEAD:data/villas.json"]))}
+          new = {v["slug"]: v for v in json.load(open("data/villas.json"))}
+          added = sorted(new[s]["name"] for s in set(new) - set(old))
+          removed = sorted(old[s]["name"] for s in set(old) - set(new))
+          prices = sum(1 for s in set(new) & set(old) if new[s]["price_from"] != old[s]["price_from"])
+          lines = [f"{len(new)} villas"]
+          if added: lines.append("Published: " + ", ".join(added))
+          if removed: lines.append("Removed: " + ", ".join(removed))
+          if prices: lines.append(f"Starting price changed on {prices} villa(s)")
+          print("\n".join(lines))
+          PY
+          )
+          echo "$summary"
+          git config user.name "Edoardo Marvaso"
+          git config user.email "edoardo@inveniohomes.com"
+          git commit -q -m "Villa refresh $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M %Z') / $(date -u '+%H:%M UTC')" -m "$summary" -m "Automatic daily refresh (.github/workflows/refresh-villas.yml)."
+          git push

@@ -156,16 +156,19 @@ def api_post(path: str, payload, retries: int = 4):
     raise SystemExit(f"Could not reach {url}: {last_error}")
 
 
-def api_form(endpoint: str, param: list, timeout: int = 600):
+def api_form(endpoint: str, param: list, timeout: int = 600, base: str | None = None):
     """POST in the form the full-list endpoints expect: body param=<JSON array>.
     Returns (rows, payload_size). Rows are [] when the key has no access to the endpoint."""
-    base = os.environ.get("INVENIO_BASE_URL", "https://api.inveniohomes.com").rstrip("/")
+    base = (base or os.environ.get("INVENIO_BASE_URL", "https://api.inveniohomes.com")).rstrip("/")
     headers = {k: v for k, v in api_headers().items() if k != "Content-Type"}
     headers["Content-Type"] = "application/x-www-form-urlencoded"
     body = urllib.parse.urlencode({"param": json.dumps(param)}).encode("utf-8")
     request = urllib.request.Request(f"{base}/plapi/getdata/{endpoint}", data=body, headers=headers, method="POST")
     with urllib.request.urlopen(request, timeout=timeout) as response:
         raw = response.read()
+        mirror = response.headers.get("X-Mirror")
+        if mirror:
+            print(f"  mirror: {mirror}, fetched at {response.headers.get('X-Mirror-Fetched-At', '?')}")
     data = json.loads(raw.decode("utf-8"))
     rows = []
     if isinstance(data, list) and data and isinstance(data[0], dict) and "result" in data[0]:
@@ -506,6 +509,9 @@ def main() -> None:
     parser.add_argument("--only", default="", help="comma separated villa names (debug)")
     parser.add_argument("--lr-file", default="", help="reuse a saved api_villa_list_lr response instead of pulling it "
                         "again (IMpulse asks for at most 1-2 full pulls a day)")
+    parser.add_argument("--max-change", type=float, default=0.3,
+                        help="stop if the number of villas changes by more than this share vs data/villas.json "
+                             "(default 0.3 = 30%%); 0 = no check")
     args = parser.parse_args()
 
     load_env()
@@ -537,7 +543,18 @@ def main() -> None:
             lr_rows = (data_lr[0].get("result") if isinstance(data_lr, list) and data_lr else data_lr) or []
             lr_size = len(raw_lr)
         else:
-            lr_rows, lr_size = api_form("api_villa_list_lr", [{"long_rental_check_skip": "1"}])
+            lr_rows, lr_size = [], 0
+            # INVENIO_LR_BASE_URL: the netcup mirror (https://data.invenio.tools) serves the full list
+            # from the ETL's nightly 23:00 pull, so reading it costs IMpulse nothing. IMpulse is only
+            # asked directly when the mirror isn't set or fails.
+            mirror = os.environ.get("INVENIO_LR_BASE_URL", "").strip()
+            if mirror:
+                try:
+                    lr_rows, lr_size = api_form("api_villa_list_lr", [{"long_rental_check_skip": "1"}], base=mirror)
+                except Exception as exc:  # noqa: BLE001
+                    print(f"  ! mirror {mirror} failed ({exc}); asking IMpulse directly")
+            if not lr_rows:
+                lr_rows, lr_size = api_form("api_villa_list_lr", [{"long_rental_check_skip": "1"}])
     except Exception as exc:  # noqa: BLE001
         lr_rows, lr_size = [], 0
         print(f"  ! could not read api_villa_list_lr ({exc})")
@@ -554,13 +571,18 @@ def main() -> None:
         print(f"  {len(lr_rows)} villas / {lr_size / 1024:.0f} kB → {len(selected)} published, licensed {destination} villas "
               f"({off} with the API switch off)")
     else:
-        # Without the long-rental list, api_villa_list only returns published villas
-        # with the API switch on (true of the old partner key), so use it as it is.
-        selected = candidates
-        print("  ! api_villa_list_lr returned nothing for this API key: listing only the villas in api_villa_list.\n"
-              "    Use a key with access to api_villa_list_lr to include villas with the API switch off.")
+        # Without the long-rental list there is no published flag. A full-access key's
+        # api_villa_list also holds hundreds of unpublished villas, so never fall back to it.
+        sys.exit("api_villa_list_lr returned nothing (mirror and IMpulse): cannot tell which villas are published.\n"
+                 "Nothing was written. Check the key's access to api_villa_list_lr and the netcup mirror.")
     if not selected:
         sys.exit(f"No villas found for destination '{destination}'.")
+    previous_file = DATA / "villas.json"
+    if args.max_change and previous_file.exists() and not args.only:
+        before = len(json.loads(previous_file.read_text(encoding="utf-8")))
+        if before and abs(len(selected) - before) / before > args.max_change:
+            sys.exit(f"Villa count would change from {before} to {len(selected)} (more than {args.max_change:.0%}). "
+                     "Nothing was written. Check the data, then rerun with --max-change 0 to accept it.")
     if args.only:
         wanted = {x.strip().lower() for x in args.only.split(",") if x.strip()}
         selected = [v for v in selected if str(v.get("villa_name", "")).lower() in wanted]

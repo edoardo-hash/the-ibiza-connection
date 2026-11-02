@@ -108,6 +108,17 @@ locally — no hotlinking to the Invenio CDN, no dependency on their file naming
 
 ### Refresh the collection
 
+**Automatic:** `.github/workflows/refresh-villas.yml` runs every morning at 05:00 UTC
+(06:00 Madrid in winter). It reads the published list from the netcup mirror
+(`INVENIO_LR_BASE_URL=https://data.invenio.tools`, the ETL's 23:00 pull, so no extra load on
+IMpulse), refreshes data, prices and photos, checks the build and pushes only if something
+changed; the push deploys. It stops without writing anything if the published list can't be
+read or the villa count moves by more than 30 % (`--max-change`), and GitHub emails the
+failed run. Run it by hand from the Actions tab ("Run workflow"). Needs the repository
+secrets `INVENIO_API_KEY` and `INVENIO_BP_UUID`.
+
+**By hand:**
+
 ```bash
 python3 tools/fetch_invenio.py            # data + new photography
 python3 tools/fetch_invenio.py --no-images
