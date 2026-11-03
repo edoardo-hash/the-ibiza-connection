@@ -181,6 +181,8 @@
   "nightly_from": 4715,
   "nightly_to": 6286,
   "rate_rows": 7,
+  "real_bedrooms": 14,
+  "real_bathrooms": 9,
   "licence_check": {
    "status": "format_differs",
    "ok": true,
@@ -287,9 +289,7 @@
   ],
   "image": "/assets/villas/can-arte/01-800.webp",
   "image_large": "/assets/villas/can-arte/01-1400.webp",
-  "image_colour": "#82755b",
-  "real_bedrooms": 14,
-  "real_bathrooms": 9
+  "image_colour": "#82755b"
  },
  {
   "slug": "can-anna-grande",
@@ -521,6 +521,8 @@
   "nightly_from": 6600,
   "nightly_to": 11000,
   "rate_rows": 12,
+  "real_bedrooms": 11,
+  "real_bathrooms": 10,
   "licence_check": {
    "status": "other_register",
    "ok": true,
@@ -662,9 +664,7 @@
   ],
   "image": "/assets/villas/can-anna-grande/01-800.webp",
   "image_large": "/assets/villas/can-anna-grande/01-1400.webp",
-  "image_colour": "#949fa1",
-  "real_bedrooms": 11,
-  "real_bathrooms": 10
+  "image_colour": "#949fa1"
  },
  {
   "slug": "finca-utopia-xarraca",
@@ -969,6 +969,8 @@
   "nightly_from": 11429,
   "nightly_to": 18572,
   "rate_rows": 6,
+  "real_bedrooms": 9,
+  "real_bathrooms": 9,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -1038,9 +1040,7 @@
   ],
   "image": "/assets/villas/finca-utopia-xarraca/01-800.webp",
   "image_large": "/assets/villas/finca-utopia-xarraca/01-1400.webp",
-  "image_colour": "#72755d",
-  "real_bedrooms": 9,
-  "real_bathrooms": 9
+  "image_colour": "#72755d"
  },
  {
   "slug": "finca-utopia",
@@ -1226,6 +1226,8 @@
   "nightly_from": 6429,
   "nightly_to": 12858,
   "rate_rows": 11,
+  "real_bedrooms": 9,
+  "real_bathrooms": 9,
   "licence_check": {
    "status": "other_register",
    "ok": true,
@@ -1359,9 +1361,7 @@
   ],
   "image": "/assets/villas/finca-utopia/01-800.webp",
   "image_large": "/assets/villas/finca-utopia/01-1400.webp",
-  "image_colour": "#877a69",
-  "real_bedrooms": 9,
-  "real_bathrooms": 9
+  "image_colour": "#877a69"
  },
  {
   "slug": "villa-espada",
@@ -1520,6 +1520,8 @@
   "nightly_from": 1573,
   "nightly_to": 4400,
   "rate_rows": 11,
+  "real_bedrooms": 9,
+  "real_bathrooms": 11,
   "licence_check": {
    "status": "other_register",
    "ok": true,
@@ -1705,9 +1707,7 @@
   ],
   "image": "/assets/villas/villa-espada/01-800.webp",
   "image_large": "/assets/villas/villa-espada/01-1400.webp",
-  "image_colour": "#777e7a",
-  "real_bedrooms": 9,
-  "real_bathrooms": 11
+  "image_colour": "#777e7a"
  },
  {
   "slug": "villa-gina",
@@ -1882,6 +1882,8 @@
   "nightly_from": 1971,
   "nightly_to": 4212,
   "rate_rows": 11,
+  "real_bedrooms": 8,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -1969,9 +1971,7 @@
   ],
   "image": "/assets/villas/villa-gina/01-800.webp",
   "image_large": "/assets/villas/villa-gina/01-1400.webp",
-  "image_colour": "#6b9fb7",
-  "real_bedrooms": 8,
-  "real_bathrooms": 7
+  "image_colour": "#6b9fb7"
  },
  {
   "slug": "villa-magnifique",
@@ -2230,6 +2230,8 @@
   "nightly_from": 4715,
   "nightly_to": 8643,
   "rate_rows": 5,
+  "real_bedrooms": 9,
+  "real_bathrooms": 9,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -2453,9 +2455,7 @@
   ],
   "image": "/assets/villas/villa-magnifique/01-800.webp",
   "image_large": "/assets/villas/villa-magnifique/01-1400.webp",
-  "image_colour": "#8b8b70",
-  "real_bedrooms": 9,
-  "real_bathrooms": 9
+  "image_colour": "#8b8b70"
  },
  {
   "slug": "villa-eliza",
@@ -2654,6 +2654,8 @@
   "nightly_from": 11597,
   "nightly_to": 22433,
   "rate_rows": 6,
+  "real_bedrooms": 7,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -2885,9 +2887,7 @@
   ],
   "image": "/assets/villas/villa-eliza/01-800.webp",
   "image_large": "/assets/villas/villa-eliza/01-1400.webp",
-  "image_colour": "#6c737b",
-  "real_bedrooms": 7,
-  "real_bathrooms": 7
+  "image_colour": "#6c737b"
  },
  {
   "slug": "belantara",
@@ -3062,6 +3062,8 @@
   "nightly_from": 708,
   "nightly_to": 1650,
   "rate_rows": 9,
+  "real_bedrooms": 6,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -3213,9 +3215,7 @@
   ],
   "image": "/assets/villas/belantara/01-800.webp",
   "image_large": "/assets/villas/belantara/01-1400.webp",
-  "image_colour": "#5e7193",
-  "real_bedrooms": 6,
-  "real_bathrooms": 3
+  "image_colour": "#5e7193"
  },
  {
   "slug": "can-ariel",
@@ -3359,6 +3359,8 @@
   "nightly_from": 1415,
   "nightly_to": 2633,
   "rate_rows": 14,
+  "real_bedrooms": 6,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -3486,9 +3488,7 @@
   ],
   "image": "/assets/villas/can-ariel/01-800.webp",
   "image_large": "/assets/villas/can-ariel/01-1400.webp",
-  "image_colour": "#939383",
-  "real_bedrooms": 6,
-  "real_bathrooms": 7
+  "image_colour": "#939383"
  },
  {
   "slug": "can-beso",
@@ -3512,7 +3512,7 @@
   "bathrooms": 6,
   "sleeps": 12,
   "price_from": 10450,
-  "price_to": 23650,
+  "price_to": 26636,
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
@@ -3641,8 +3641,10 @@
   "v_id": 10658,
   "v_uuid": "5df336ed-657f-4269-9e22-138b305f242e",
   "nightly_from": 1493,
-  "nightly_to": 3379,
-  "rate_rows": 10,
+  "nightly_to": 14850,
+  "rate_rows": 12,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -3932,9 +3934,7 @@
   ],
   "image": "/assets/villas/can-beso/01-800.webp",
   "image_large": "/assets/villas/can-beso/01-1400.webp",
-  "image_colour": "#8c7b54",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#8c7b54"
  },
  {
   "slug": "can-captur",
@@ -4060,6 +4060,8 @@
   "nightly_from": 943,
   "nightly_to": 2248,
   "rate_rows": 10,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -4267,9 +4269,7 @@
   ],
   "image": "/assets/villas/can-captur/01-800.webp",
   "image_large": "/assets/villas/can-captur/01-1400.webp",
-  "image_colour": "#868966",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#868966"
  },
  {
   "slug": "can-cecilia",
@@ -4439,6 +4439,8 @@
   "nightly_from": 1496,
   "nightly_to": 3101,
   "rate_rows": 13,
+  "real_bedrooms": 8,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -4670,9 +4672,7 @@
   ],
   "image": "/assets/villas/can-cecilia/01-800.webp",
   "image_large": "/assets/villas/can-cecilia/01-1400.webp",
-  "image_colour": "#9b917f",
-  "real_bedrooms": 8,
-  "real_bathrooms": 8
+  "image_colour": "#9b917f"
  },
  {
   "slug": "can-danza",
@@ -4981,6 +4981,8 @@
   "nightly_from": 2483,
   "nightly_to": 4950,
   "rate_rows": 13,
+  "real_bedrooms": 6,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -5172,9 +5174,7 @@
   ],
   "image": "/assets/villas/can-danza/01-800.webp",
   "image_large": "/assets/villas/can-danza/01-1400.webp",
-  "image_colour": "#617070",
-  "real_bedrooms": 6,
-  "real_bathrooms": 7
+  "image_colour": "#617070"
  },
  {
   "slug": "can-ellie",
@@ -5349,6 +5349,8 @@
   "nightly_from": 1022,
   "nightly_to": 1415,
   "rate_rows": 6,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -5452,9 +5454,7 @@
   ],
   "image": "/assets/villas/can-ellie/01-800.webp",
   "image_large": "/assets/villas/can-ellie/01-1400.webp",
-  "image_colour": "#828c88",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#828c88"
  },
  {
   "slug": "can-gabriel",
@@ -5740,6 +5740,8 @@
   "nightly_from": 877,
   "nightly_to": 1746,
   "rate_rows": 13,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -5895,9 +5897,7 @@
   ],
   "image": "/assets/villas/can-gabriel/01-800.webp",
   "image_large": "/assets/villas/can-gabriel/01-1400.webp",
-  "image_colour": "#798d94",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#798d94"
  },
  {
   "slug": "can-josie",
@@ -6070,6 +6070,8 @@
   "nightly_from": 2420,
   "nightly_to": 4699,
   "rate_rows": 6,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -6345,9 +6347,7 @@
   ],
   "image": "/assets/villas/can-josie/01-800.webp",
   "image_large": "/assets/villas/can-josie/01-1400.webp",
-  "image_colour": "#6f8887",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#6f8887"
  },
  {
   "slug": "can-koi",
@@ -6541,6 +6541,8 @@
   "nightly_from": 1650,
   "nightly_to": 4400,
   "rate_rows": 8,
+  "real_bedrooms": 6,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -6768,9 +6770,7 @@
   ],
   "image": "/assets/villas/can-koi/01-800.webp",
   "image_large": "/assets/villas/can-koi/01-1400.webp",
-  "image_colour": "#6d7162",
-  "real_bedrooms": 6,
-  "real_bathrooms": 4
+  "image_colour": "#6d7162"
  },
  {
   "slug": "can-leilani",
@@ -6903,6 +6903,8 @@
   "nightly_from": 1415,
   "nightly_to": 1886,
   "rate_rows": 5,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -6974,9 +6976,7 @@
   ],
   "image": "/assets/villas/can-leilani/01-800.webp",
   "image_large": "/assets/villas/can-leilani/01-1400.webp",
-  "image_colour": "#8496a1",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#8496a1"
  },
  {
   "slug": "can-nemo",
@@ -7346,6 +7346,8 @@
   "nightly_from": 4286,
   "nightly_to": 14215,
   "rate_rows": 9,
+  "real_bedrooms": 8,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -7637,9 +7639,7 @@
   ],
   "image": "/assets/villas/can-nemo/01-800.webp",
   "image_large": "/assets/villas/can-nemo/01-1400.webp",
-  "image_colour": "#879498",
-  "real_bedrooms": 8,
-  "real_bathrooms": 8
+  "image_colour": "#879498"
  },
  {
   "slug": "can-nora",
@@ -7782,6 +7782,8 @@
   "nightly_from": 693,
   "nightly_to": 6930,
   "rate_rows": 20,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -7937,9 +7939,7 @@
   ],
   "image": "/assets/villas/can-nora/01-800.webp",
   "image_large": "/assets/villas/can-nora/01-1400.webp",
-  "image_colour": "#97bcbb",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#97bcbb"
  },
  {
   "slug": "can-nuri",
@@ -8169,6 +8169,8 @@
   "nightly_from": 3929,
   "nightly_to": 5972,
   "rate_rows": 6,
+  "real_bedrooms": 8,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -8442,9 +8444,7 @@
   ],
   "image": "/assets/villas/can-nuri/01-800.webp",
   "image_large": "/assets/villas/can-nuri/01-1400.webp",
-  "image_colour": "#85938f",
-  "real_bedrooms": 8,
-  "real_bathrooms": 8
+  "image_colour": "#85938f"
  },
  {
   "slug": "can-octavia",
@@ -8616,6 +8616,8 @@
   "nightly_from": 1855,
   "nightly_to": 2145,
   "rate_rows": 2,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -8787,9 +8789,7 @@
   ],
   "image": "/assets/villas/can-octavia/01-800.webp",
   "image_large": "/assets/villas/can-octavia/01-1400.webp",
-  "image_colour": "#868667",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#868667"
  },
  {
   "slug": "can-paloma",
@@ -8965,6 +8965,8 @@
   "nightly_from": 2051,
   "nightly_to": 3929,
   "rate_rows": 5,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -9184,9 +9186,7 @@
   ],
   "image": "/assets/villas/can-paloma/01-800.webp",
   "image_large": "/assets/villas/can-paloma/01-1400.webp",
-  "image_colour": "#869e95",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#869e95"
  },
  {
   "slug": "can-sahara",
@@ -9446,6 +9446,8 @@
   "nightly_from": 7143,
   "nightly_to": 10000,
   "rate_rows": 5,
+  "real_bedrooms": 8,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -9645,9 +9647,7 @@
   ],
   "image": "/assets/villas/can-sahara/01-800.webp",
   "image_large": "/assets/villas/can-sahara/01-1400.webp",
-  "image_colour": "#444633",
-  "real_bedrooms": 8,
-  "real_bathrooms": 7
+  "image_colour": "#444633"
  },
  {
   "slug": "can-sandra",
@@ -9867,6 +9867,8 @@
   "nightly_from": 786,
   "nightly_to": 2515,
   "rate_rows": 23,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -10050,9 +10052,7 @@
   ],
   "image": "/assets/villas/can-sandra/01-800.webp",
   "image_large": "/assets/villas/can-sandra/01-1400.webp",
-  "image_colour": "#a5afaa",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#a5afaa"
  },
  {
   "slug": "can-senna",
@@ -10227,6 +10227,8 @@
   "nightly_from": 1666,
   "nightly_to": 4165,
   "rate_rows": 13,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -10496,9 +10498,7 @@
   ],
   "image": "/assets/villas/can-senna/01-800.webp",
   "image_large": "/assets/villas/can-senna/01-1400.webp",
-  "image_colour": "#b9c5c1",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#b9c5c1"
  },
  {
   "slug": "can-tehani",
@@ -10739,6 +10739,8 @@
   "nightly_from": 2572,
   "nightly_to": 6429,
   "rate_rows": 12,
+  "real_bedrooms": 7,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -11032,9 +11034,7 @@
   ],
   "image": "/assets/villas/can-tehani/01-800.webp",
   "image_large": "/assets/villas/can-tehani/01-1400.webp",
-  "image_colour": "#7c9494",
-  "real_bedrooms": 7,
-  "real_bathrooms": 8
+  "image_colour": "#7c9494"
  },
  {
   "slug": "can-vina",
@@ -11270,6 +11270,8 @@
   "nightly_from": 2768,
   "nightly_to": 5715,
   "rate_rows": 10,
+  "real_bedrooms": 8,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -11417,9 +11419,7 @@
   ],
   "image": "/assets/villas/can-vina/01-800.webp",
   "image_large": "/assets/villas/can-vina/01-1400.webp",
-  "image_colour": "#71827e",
-  "real_bedrooms": 8,
-  "real_bathrooms": 8
+  "image_colour": "#71827e"
  },
  {
   "slug": "can-xarraca",
@@ -11629,6 +11629,8 @@
   "nightly_from": 2161,
   "nightly_to": 8800,
   "rate_rows": 17,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -11692,9 +11694,7 @@
   ],
   "image": "/assets/villas/can-xarraca/01-800.webp",
   "image_large": "/assets/villas/can-xarraca/01-1400.webp",
-  "image_colour": "#738c84",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#738c84"
  },
  {
   "slug": "cana-serena",
@@ -11888,6 +11888,8 @@
   "nightly_from": 629,
   "nightly_to": 2908,
   "rate_rows": 16,
+  "real_bedrooms": 6,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -12207,9 +12209,7 @@
   ],
   "image": "/assets/villas/cana-serena/01-800.webp",
   "image_large": "/assets/villas/cana-serena/01-1400.webp",
-  "image_colour": "#88a9a9",
-  "real_bedrooms": 6,
-  "real_bathrooms": 7
+  "image_colour": "#88a9a9"
  },
  {
   "slug": "casa-yolanda-1",
@@ -12372,6 +12372,8 @@
   "nightly_from": 582,
   "nightly_to": 1320,
   "rate_rows": 11,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -12479,9 +12481,7 @@
   ],
   "image": "/assets/villas/casa-yolanda-1/01-800.webp",
   "image_large": "/assets/villas/casa-yolanda-1/01-1400.webp",
-  "image_colour": "#7f9892",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#7f9892"
  },
  {
   "slug": "casa-yolanda-2",
@@ -12643,6 +12643,8 @@
   "nightly_from": 632,
   "nightly_to": 1540,
   "rate_rows": 10,
+  "real_bedrooms": 7,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -12750,9 +12752,7 @@
   ],
   "image": "/assets/villas/casa-yolanda-2/01-800.webp",
   "image_large": "/assets/villas/casa-yolanda-2/01-1400.webp",
-  "image_colour": "#7d817f",
-  "real_bedrooms": 7,
-  "real_bathrooms": 6
+  "image_colour": "#7d817f"
  },
  {
   "slug": "finca-lucia",
@@ -12927,6 +12927,8 @@
   "nightly_from": 1258,
   "nightly_to": 1886,
   "rate_rows": 8,
+  "real_bedrooms": 6,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -13262,9 +13264,7 @@
   ],
   "image": "/assets/villas/finca-lucia/01-800.webp",
   "image_large": "/assets/villas/finca-lucia/01-1400.webp",
-  "image_colour": "#7a8d77",
-  "real_bedrooms": 6,
-  "real_bathrooms": 4
+  "image_colour": "#7a8d77"
  },
  {
   "slug": "finca-palmeras",
@@ -13447,6 +13447,8 @@
   "nightly_from": 1650,
   "nightly_to": 1870,
   "rate_rows": 5,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "format_differs",
    "ok": true,
@@ -13593,9 +13595,7 @@
   ],
   "image": "/assets/villas/finca-palmeras/01-800.webp",
   "image_large": "/assets/villas/finca-palmeras/01-1400.webp",
-  "image_colour": "#4d7375",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#4d7375"
  },
  {
   "slug": "lovella",
@@ -13784,6 +13784,8 @@
   "nightly_from": 1965,
   "nightly_to": 4636,
   "rate_rows": 11,
+  "real_bedrooms": 6,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -13907,9 +13909,7 @@
   ],
   "image": "/assets/villas/lovella/01-800.webp",
   "image_large": "/assets/villas/lovella/01-1400.webp",
-  "image_colour": "#7195b1",
-  "real_bedrooms": 6,
-  "real_bathrooms": 7
+  "image_colour": "#7195b1"
  },
  {
   "slug": "villa-allison",
@@ -13942,7 +13942,7 @@
   "price_on_request": false,
   "min_nights": 5,
   "short_stays": false,
-  "cleaning": "6 Cleanings per week",
+  "cleaning": "5 Cleanings per week",
   "cleaning_charge": 0,
   "check_in": "16:00",
   "check_out": "10:00",
@@ -13972,7 +13972,6 @@
    "Fully fitted kitchen",
    "Terraces",
    "Wine Cooler",
-   "Breakfast Chef",
    "Saltwater Pool",
    "CCTV",
    "Outdoor Music System",
@@ -14019,7 +14018,6 @@
      "Views to Formentera",
      "Sunrise View",
      "Wine Cooler",
-     "Breakfast Chef",
      "Saltwater Pool",
      "Views to Ibiza Old Town"
     ]
@@ -14207,6 +14205,8 @@
   "nightly_from": 1415,
   "nightly_to": 4597,
   "rate_rows": 12,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -14498,9 +14498,7 @@
   ],
   "image": "/assets/villas/villa-allison/01-800.webp",
   "image_large": "/assets/villas/villa-allison/01-1400.webp",
-  "image_colour": "#908c70",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#908c70"
  },
  {
   "slug": "villa-alyssa",
@@ -14744,6 +14742,8 @@
   "nightly_from": 14929,
   "nightly_to": 14929,
   "rate_rows": 3,
+  "real_bedrooms": 8,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -15047,9 +15047,7 @@
   ],
   "image": "/assets/villas/villa-alyssa/01-800.webp",
   "image_large": "/assets/villas/villa-alyssa/01-1400.webp",
-  "image_colour": "#6996a7",
-  "real_bedrooms": 8,
-  "real_bathrooms": 8
+  "image_colour": "#6996a7"
  },
  {
   "slug": "villa-amaris",
@@ -15278,6 +15276,8 @@
   "nightly_from": 4400,
   "nightly_to": 12100,
   "rate_rows": 15,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -15515,9 +15515,7 @@
   ],
   "image": "/assets/villas/villa-amaris/01-800.webp",
   "image_large": "/assets/villas/villa-amaris/01-1400.webp",
-  "image_colour": "#88a0b2",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#88a0b2"
  },
  {
   "slug": "villa-amaya",
@@ -15675,6 +15673,8 @@
   "nightly_from": 1586,
   "nightly_to": 3496,
   "rate_rows": 11,
+  "real_bedrooms": 7,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -15906,9 +15906,7 @@
   ],
   "image": "/assets/villas/villa-amaya/01-800.webp",
   "image_large": "/assets/villas/villa-amaya/01-1400.webp",
-  "image_colour": "#7ca8b9",
-  "real_bedrooms": 7,
-  "real_bathrooms": 7
+  "image_colour": "#7ca8b9"
  },
  {
   "slug": "villa-brielle",
@@ -16044,6 +16042,8 @@
   "nightly_from": 1320,
   "nightly_to": 2750,
   "rate_rows": 13,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -16267,9 +16267,7 @@
   ],
   "image": "/assets/villas/villa-brielle/01-800.webp",
   "image_large": "/assets/villas/villa-brielle/01-1400.webp",
-  "image_colour": "#5091af",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#5091af"
  },
  {
   "slug": "villa-centelleo",
@@ -16477,6 +16475,8 @@
   "nightly_from": 6429,
   "nightly_to": 55000,
   "rate_rows": 10,
+  "real_bedrooms": 7,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "format_differs",
    "ok": true,
@@ -16750,9 +16750,7 @@
   ],
   "image": "/assets/villas/villa-centelleo/01-800.webp",
   "image_large": "/assets/villas/villa-centelleo/01-1400.webp",
-  "image_colour": "#899c9b",
-  "real_bedrooms": 7,
-  "real_bathrooms": 7
+  "image_colour": "#899c9b"
  },
  {
   "slug": "villa-charo",
@@ -16982,6 +16980,8 @@
   "nightly_from": 629,
   "nightly_to": 2750,
   "rate_rows": 7,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -17117,9 +17117,7 @@
   ],
   "image": "/assets/villas/villa-charo/01-800.webp",
   "image_large": "/assets/villas/villa-charo/01-1400.webp",
-  "image_colour": "#588672",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#588672"
  },
  {
   "slug": "villa-dalt-view",
@@ -17294,6 +17292,8 @@
   "nightly_from": 2358,
   "nightly_to": 2750,
   "rate_rows": 7,
+  "real_bedrooms": 6,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -17589,9 +17589,7 @@
   ],
   "image": "/assets/villas/villa-dalt-view/01-800.webp",
   "image_large": "/assets/villas/villa-dalt-view/01-1400.webp",
-  "image_colour": "#979185",
-  "real_bedrooms": 6,
-  "real_bathrooms": 4
+  "image_colour": "#979185"
  },
  {
   "slug": "villa-eliana",
@@ -17776,6 +17774,8 @@
   "nightly_from": 578,
   "nightly_to": 1898,
   "rate_rows": 16,
+  "real_bedrooms": 6,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -17927,9 +17927,7 @@
   ],
   "image": "/assets/villas/villa-eliana/01-800.webp",
   "image_large": "/assets/villas/villa-eliana/01-1400.webp",
-  "image_colour": "#8c9884",
-  "real_bedrooms": 6,
-  "real_bathrooms": 4
+  "image_colour": "#8c9884"
  },
  {
   "slug": "villa-fabienne",
@@ -18104,6 +18102,8 @@
   "nightly_from": 2286,
   "nightly_to": 3572,
   "rate_rows": 7,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -18343,9 +18343,7 @@
   ],
   "image": "/assets/villas/villa-fabienne/01-800.webp",
   "image_large": "/assets/villas/villa-fabienne/01-1400.webp",
-  "image_colour": "#869084",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#869084"
  },
  {
   "slug": "villa-gie",
@@ -18490,6 +18488,8 @@
   "nightly_from": 1258,
   "nightly_to": 1745,
   "rate_rows": 10,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -18577,9 +18577,7 @@
   ],
   "image": "/assets/villas/villa-gie/01-800.webp",
   "image_large": "/assets/villas/villa-gie/01-1400.webp",
-  "image_colour": "#7b888d",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#7b888d"
  },
  {
   "slug": "villa-goia",
@@ -18733,6 +18731,8 @@
   "nightly_from": 943,
   "nightly_to": 4086,
   "rate_rows": 10,
+  "real_bedrooms": 9,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -18976,9 +18976,7 @@
   ],
   "image": "/assets/villas/villa-goia/01-800.webp",
   "image_large": "/assets/villas/villa-goia/01-1400.webp",
-  "image_colour": "#5e8182",
-  "real_bedrooms": 9,
-  "real_bathrooms": 8
+  "image_colour": "#5e8182"
  },
  {
   "slug": "villa-haisley",
@@ -19167,6 +19165,8 @@
   "nightly_from": 1100,
   "nightly_to": 2420,
   "rate_rows": 20,
+  "real_bedrooms": 7,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -19358,9 +19358,7 @@
   ],
   "image": "/assets/villas/villa-haisley/01-800.webp",
   "image_large": "/assets/villas/villa-haisley/01-1400.webp",
-  "image_colour": "#747b6b",
-  "real_bedrooms": 7,
-  "real_bathrooms": 6
+  "image_colour": "#747b6b"
  },
  {
   "slug": "villa-ingrid",
@@ -19516,6 +19514,8 @@
   "nightly_from": 943,
   "nightly_to": 3300,
   "rate_rows": 10,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -19809,9 +19809,7 @@
   ],
   "image": "/assets/villas/villa-ingrid/01-800.webp",
   "image_large": "/assets/villas/villa-ingrid/01-1400.webp",
-  "image_colour": "#70839b",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#70839b"
  },
  {
   "slug": "villa-ivy",
@@ -20030,6 +20028,8 @@
   "nightly_from": 1965,
   "nightly_to": 4715,
   "rate_rows": 16,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -20233,9 +20233,7 @@
   ],
   "image": "/assets/villas/villa-ivy/01-800.webp",
   "image_large": "/assets/villas/villa-ivy/01-1400.webp",
-  "image_colour": "#7e949b",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#7e949b"
  },
  {
   "slug": "villa-katherine",
@@ -20394,6 +20392,8 @@
   "nightly_from": 1556,
   "nightly_to": 3129,
   "rate_rows": 9,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -20549,9 +20549,7 @@
   ],
   "image": "/assets/villas/villa-katherine/01-800.webp",
   "image_large": "/assets/villas/villa-katherine/01-1400.webp",
-  "image_colour": "#6c8388",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#6c8388"
  },
  {
   "slug": "villa-larish",
@@ -20725,6 +20723,8 @@
   "nightly_from": 865,
   "nightly_to": 2554,
   "rate_rows": 6,
+  "real_bedrooms": 7,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "format_differs",
    "ok": true,
@@ -20882,9 +20882,7 @@
   ],
   "image": "/assets/villas/villa-larish/01-800.webp",
   "image_large": "/assets/villas/villa-larish/01-1400.webp",
-  "image_colour": "#6f8d91",
-  "real_bedrooms": 7,
-  "real_bathrooms": 4
+  "image_colour": "#6f8d91"
  },
  {
   "slug": "villa-lino",
@@ -21057,6 +21055,8 @@
   "nightly_from": 1768,
   "nightly_to": 2122,
   "rate_rows": 4,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -21212,9 +21212,7 @@
   ],
   "image": "/assets/villas/villa-lino/01-800.webp",
   "image_large": "/assets/villas/villa-lino/01-1400.webp",
-  "image_colour": "#7c8f8a",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#7c8f8a"
  },
  {
   "slug": "villa-lydia",
@@ -21348,6 +21346,8 @@
   "nightly_from": 1426,
   "nightly_to": 3123,
   "rate_rows": 28,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -21515,9 +21515,7 @@
   ],
   "image": "/assets/villas/villa-lydia/01-800.webp",
   "image_large": "/assets/villas/villa-lydia/01-1400.webp",
-  "image_colour": "#82a0bb",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#82a0bb"
  },
  {
   "slug": "villa-margo",
@@ -21692,6 +21690,8 @@
   "nightly_from": 2358,
   "nightly_to": 4950,
   "rate_rows": 17,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -21931,9 +21931,7 @@
   ],
   "image": "/assets/villas/villa-margo/01-800.webp",
   "image_large": "/assets/villas/villa-margo/01-1400.webp",
-  "image_colour": "#9aaba6",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#9aaba6"
  },
  {
   "slug": "villa-meghan",
@@ -22177,6 +22175,8 @@
   "nightly_from": 2405,
   "nightly_to": 4950,
   "rate_rows": 11,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -22416,9 +22416,7 @@
   ],
   "image": "/assets/villas/villa-meghan/01-800.webp",
   "image_large": "/assets/villas/villa-meghan/01-1400.webp",
-  "image_colour": "#62798f",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#62798f"
  },
  {
   "slug": "villa-meghan-deluxe",
@@ -22664,6 +22662,8 @@
   "nightly_from": 2546,
   "nightly_to": 5516,
   "rate_rows": 13,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -22903,9 +22903,7 @@
   ],
   "image": "/assets/villas/villa-meghan-deluxe/01-800.webp",
   "image_large": "/assets/villas/villa-meghan-deluxe/01-1400.webp",
-  "image_colour": "#949d8a",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#949d8a"
  },
  {
   "slug": "villa-meghan-grande",
@@ -23153,6 +23151,8 @@
   "nightly_from": 2829,
   "nightly_to": 5940,
   "rate_rows": 11,
+  "real_bedrooms": 8,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -23396,9 +23396,7 @@
   ],
   "image": "/assets/villas/villa-meghan-grande/01-800.webp",
   "image_large": "/assets/villas/villa-meghan-grande/01-1400.webp",
-  "image_colour": "#86969a",
-  "real_bedrooms": 8,
-  "real_bathrooms": 7
+  "image_colour": "#86969a"
  },
  {
   "slug": "villa-nicole",
@@ -23562,6 +23560,8 @@
   "nightly_from": 865,
   "nightly_to": 1965,
   "rate_rows": 7,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -23801,9 +23801,7 @@
   ],
   "image": "/assets/villas/villa-nicole/01-800.webp",
   "image_large": "/assets/villas/villa-nicole/01-1400.webp",
-  "image_colour": "#85978f",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#85978f"
  },
  {
   "slug": "villa-nizra",
@@ -24070,6 +24068,8 @@
   "nightly_from": 6286,
   "nightly_to": 7072,
   "rate_rows": 3,
+  "real_bedrooms": 8,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -24381,9 +24381,7 @@
   ],
   "image": "/assets/villas/villa-nizra/01-800.webp",
   "image_large": "/assets/villas/villa-nizra/01-1400.webp",
-  "image_colour": "#89a1af",
-  "real_bedrooms": 8,
-  "real_bathrooms": 8
+  "image_colour": "#89a1af"
  },
  {
   "slug": "villa-paradis",
@@ -24541,6 +24539,8 @@
   "nightly_from": 1886,
   "nightly_to": 16500,
   "rate_rows": 17,
+  "real_bedrooms": 7,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -24700,9 +24700,7 @@
   ],
   "image": "/assets/villas/villa-paradis/01-800.webp",
   "image_large": "/assets/villas/villa-paradis/01-1400.webp",
-  "image_colour": "#798883",
-  "real_bedrooms": 7,
-  "real_bathrooms": 7
+  "image_colour": "#798883"
  },
  {
   "slug": "villa-parque",
@@ -24864,6 +24862,8 @@
   "nightly_from": 1048,
   "nightly_to": 3471,
   "rate_rows": 17,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -24963,9 +24963,7 @@
   ],
   "image": "/assets/villas/villa-parque/01-800.webp",
   "image_large": "/assets/villas/villa-parque/01-1400.webp",
-  "image_colour": "#787a71",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#787a71"
  },
  {
   "slug": "villa-puma",
@@ -25152,6 +25150,8 @@
   "nightly_from": 1886,
   "nightly_to": 3143,
   "rate_rows": 7,
+  "real_bedrooms": 7,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -25395,9 +25395,7 @@
   ],
   "image": "/assets/villas/villa-puma/01-800.webp",
   "image_large": "/assets/villas/villa-puma/01-1400.webp",
-  "image_colour": "#81a5b1",
-  "real_bedrooms": 7,
-  "real_bathrooms": 6
+  "image_colour": "#81a5b1"
  },
  {
   "slug": "villa-reina",
@@ -25565,6 +25563,8 @@
   "nightly_from": 666,
   "nightly_to": 1572,
   "rate_rows": 10,
+  "real_bedrooms": 6,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -25680,9 +25680,7 @@
   ],
   "image": "/assets/villas/villa-reina/01-800.webp",
   "image_large": "/assets/villas/villa-reina/01-1400.webp",
-  "image_colour": "#b5aba3",
-  "real_bedrooms": 6,
-  "real_bathrooms": 4
+  "image_colour": "#b5aba3"
  },
  {
   "slug": "villa-serenity",
@@ -25882,6 +25880,8 @@
   "nightly_from": 2129,
   "nightly_to": 4208,
   "rate_rows": 11,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -26133,9 +26133,7 @@
   ],
   "image": "/assets/villas/villa-serenity/01-800.webp",
   "image_large": "/assets/villas/villa-serenity/01-1400.webp",
-  "image_colour": "#56767d",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#56767d"
  },
  {
   "slug": "villa-serenya",
@@ -26289,6 +26287,8 @@
   "nightly_from": 613,
   "nightly_to": 1195,
   "rate_rows": 10,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -26424,9 +26424,7 @@
   ],
   "image": "/assets/villas/villa-serenya/01-800.webp",
   "image_large": "/assets/villas/villa-serenya/01-1400.webp",
-  "image_colour": "#8d8981",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#8d8981"
  },
  {
   "slug": "villa-solvista",
@@ -26615,6 +26613,8 @@
   "nightly_from": 2122,
   "nightly_to": 4243,
   "rate_rows": 7,
+  "real_bedrooms": 7,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -26790,9 +26790,7 @@
   ],
   "image": "/assets/villas/villa-solvista/01-800.webp",
   "image_large": "/assets/villas/villa-solvista/01-1400.webp",
-  "image_colour": "#6799af",
-  "real_bedrooms": 7,
-  "real_bathrooms": 7
+  "image_colour": "#6799af"
  },
  {
   "slug": "villa-sylvia",
@@ -26951,6 +26949,8 @@
   "nightly_from": 2829,
   "nightly_to": 3458,
   "rate_rows": 6,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -27110,9 +27110,7 @@
   ],
   "image": "/assets/villas/villa-sylvia/01-800.webp",
   "image_large": "/assets/villas/villa-sylvia/01-1400.webp",
-  "image_colour": "#a6a594",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#a6a594"
  },
  {
   "slug": "villa-terra-blanca",
@@ -27252,6 +27250,8 @@
   "nightly_from": 1320,
   "nightly_to": 1650,
   "rate_rows": 9,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "format_differs",
    "ok": true,
@@ -27370,9 +27370,7 @@
   ],
   "image": "/assets/villas/villa-terra-blanca/01-800.webp",
   "image_large": "/assets/villas/villa-terra-blanca/01-1400.webp",
-  "image_colour": "#a1a78c",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#a1a78c"
  },
  {
   "slug": "villa-tuscany",
@@ -27573,6 +27571,8 @@
   "nightly_from": 2947,
   "nightly_to": 7858,
   "rate_rows": 9,
+  "real_bedrooms": 6,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -27880,9 +27880,7 @@
   ],
   "image": "/assets/villas/villa-tuscany/01-800.webp",
   "image_large": "/assets/villas/villa-tuscany/01-1400.webp",
-  "image_colour": "#426173",
-  "real_bedrooms": 6,
-  "real_bathrooms": 7
+  "image_colour": "#426173"
  },
  {
   "slug": "villa-vanessa",
@@ -28144,6 +28142,8 @@
   "nightly_from": 1715,
   "nightly_to": 4465,
   "rate_rows": 18,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -28387,9 +28387,7 @@
   ],
   "image": "/assets/villas/villa-vanessa/01-800.webp",
   "image_large": "/assets/villas/villa-vanessa/01-1400.webp",
-  "image_colour": "#718075",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#718075"
  },
  {
   "slug": "villa-wendy",
@@ -28556,6 +28554,8 @@
   "nightly_from": 2829,
   "nightly_to": 5972,
   "rate_rows": 10,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -28799,9 +28799,7 @@
   ],
   "image": "/assets/villas/villa-wendy/01-800.webp",
   "image_large": "/assets/villas/villa-wendy/01-1400.webp",
-  "image_colour": "#608781",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#608781"
  },
  {
   "slug": "villa-xantara",
@@ -28954,6 +28952,8 @@
   "nightly_from": 613,
   "nightly_to": 1195,
   "rate_rows": 10,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -29117,9 +29117,7 @@
   ],
   "image": "/assets/villas/villa-xantara/01-800.webp",
   "image_large": "/assets/villas/villa-xantara/01-1400.webp",
-  "image_colour": "#7a8272",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#7a8272"
  },
  {
   "slug": "can-harley",
@@ -29337,6 +29335,8 @@
   "nightly_from": 755,
   "nightly_to": 2515,
   "rate_rows": 12,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -29456,9 +29456,7 @@
   ],
   "image": "/assets/villas/can-harley/01-800.webp",
   "image_large": "/assets/villas/can-harley/01-1400.webp",
-  "image_colour": "#657070",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#657070"
  },
  {
   "slug": "can-kali",
@@ -29573,6 +29571,8 @@
   "nightly_from": 1100,
   "nightly_to": 1980,
   "rate_rows": 13,
+  "real_bedrooms": 6,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -29720,9 +29720,7 @@
   ],
   "image": "/assets/villas/can-kali/01-800.webp",
   "image_large": "/assets/villas/can-kali/01-1400.webp",
-  "image_colour": "#75a0b4",
-  "real_bedrooms": 6,
-  "real_bathrooms": 7
+  "image_colour": "#75a0b4"
  },
  {
   "slug": "can-melanie",
@@ -29862,6 +29860,8 @@
   "nightly_from": 841,
   "nightly_to": 2043,
   "rate_rows": 27,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -30037,9 +30037,7 @@
   ],
   "image": "/assets/villas/can-melanie/01-800.webp",
   "image_large": "/assets/villas/can-melanie/01-1400.webp",
-  "image_colour": "#91a0a0",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#91a0a0"
  },
  {
   "slug": "can-noelia",
@@ -30271,6 +30269,8 @@
   "nightly_from": 1415,
   "nightly_to": 12353,
   "rate_rows": 10,
+  "real_bedrooms": 5,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "format_differs",
    "ok": true,
@@ -30409,9 +30409,7 @@
   ],
   "image": "/assets/villas/can-noelia/01-800.webp",
   "image_large": "/assets/villas/can-noelia/01-1400.webp",
-  "image_colour": "#949791",
-  "real_bedrooms": 5,
-  "real_bathrooms": 4
+  "image_colour": "#949791"
  },
  {
   "slug": "can-sage",
@@ -30578,6 +30576,8 @@
   "nightly_from": 1650,
   "nightly_to": 2515,
   "rate_rows": 10,
+  "real_bedrooms": 9,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -30869,9 +30869,7 @@
   ],
   "image": "/assets/villas/can-sage/01-800.webp",
   "image_large": "/assets/villas/can-sage/01-1400.webp",
-  "image_colour": "#b8c5ca",
-  "real_bedrooms": 9,
-  "real_bathrooms": 8
+  "image_colour": "#b8c5ca"
  },
  {
   "slug": "villa-auren",
@@ -31018,6 +31016,8 @@
   "nightly_from": 9429,
   "nightly_to": 11000,
   "rate_rows": 2,
+  "real_bedrooms": 8,
+  "real_bathrooms": 10,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -31287,9 +31287,7 @@
   ],
   "image": "/assets/villas/villa-auren/01-800.webp",
   "image_large": "/assets/villas/villa-auren/01-1400.webp",
-  "image_colour": "#7f847b",
-  "real_bedrooms": 8,
-  "real_bathrooms": 10
+  "image_colour": "#7f847b"
  },
  {
   "slug": "villa-marita",
@@ -31474,6 +31472,8 @@
   "nightly_from": 1572,
   "nightly_to": 3850,
   "rate_rows": 10,
+  "real_bedrooms": 6,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -31625,9 +31625,7 @@
   ],
   "image": "/assets/villas/villa-marita/01-800.webp",
   "image_large": "/assets/villas/villa-marita/01-1400.webp",
-  "image_colour": "#686f52",
-  "real_bedrooms": 6,
-  "real_bathrooms": 4
+  "image_colour": "#686f52"
  },
  {
   "slug": "cana-calma",
@@ -31813,6 +31811,8 @@
   "nightly_from": 2572,
   "nightly_to": 20000,
   "rate_rows": 4,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -31984,9 +31984,7 @@
   ],
   "image": "/assets/villas/cana-calma/01-800.webp",
   "image_large": "/assets/villas/cana-calma/01-1400.webp",
-  "image_colour": "#92b5c4",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#92b5c4"
  },
  {
   "slug": "can-agustin",
@@ -32125,6 +32123,8 @@
   "nightly_from": 644,
   "nightly_to": 1336,
   "rate_rows": 9,
+  "real_bedrooms": 5,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -32280,9 +32280,7 @@
   ],
   "image": "/assets/villas/can-agustin/01-800.webp",
   "image_large": "/assets/villas/can-agustin/01-1400.webp",
-  "image_colour": "#647980",
-  "real_bedrooms": 5,
-  "real_bathrooms": 3
+  "image_colour": "#647980"
  },
  {
   "slug": "can-aspen",
@@ -32420,6 +32418,8 @@
   "nightly_from": 1022,
   "nightly_to": 1886,
   "rate_rows": 9,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -32549,9 +32549,7 @@
   ],
   "image": "/assets/villas/can-aspen/01-800.webp",
   "image_large": "/assets/villas/can-aspen/01-1400.webp",
-  "image_colour": "#9ab4c1",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#9ab4c1"
  },
  {
   "slug": "can-bassora",
@@ -32756,6 +32754,8 @@
   "nightly_from": 396,
   "nightly_to": 2277,
   "rate_rows": 15,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -32891,9 +32891,7 @@
   ],
   "image": "/assets/villas/can-bassora/01-800.webp",
   "image_large": "/assets/villas/can-bassora/01-1400.webp",
-  "image_colour": "#718478",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#718478"
  },
  {
   "slug": "can-berry",
@@ -33010,6 +33008,8 @@
   "nightly_from": 1100,
   "nightly_to": 1886,
   "rate_rows": 15,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -33301,9 +33301,7 @@
   ],
   "image": "/assets/villas/can-berry/01-800.webp",
   "image_large": "/assets/villas/can-berry/01-1400.webp",
-  "image_colour": "#7895a8",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#7895a8"
  },
  {
   "slug": "can-brooke",
@@ -33437,6 +33435,8 @@
   "nightly_from": 928,
   "nightly_to": 2109,
   "rate_rows": 12,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -33542,9 +33542,7 @@
   ],
   "image": "/assets/villas/can-brooke/01-800.webp",
   "image_large": "/assets/villas/can-brooke/01-1400.webp",
-  "image_colour": "#899ba2",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#899ba2"
  },
  {
   "slug": "can-catalina",
@@ -33679,6 +33677,8 @@
   "nightly_from": 2358,
   "nightly_to": 3143,
   "rate_rows": 8,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "format_differs",
    "ok": true,
@@ -33812,9 +33812,7 @@
   ],
   "image": "/assets/villas/can-catalina/01-800.webp",
   "image_large": "/assets/villas/can-catalina/01-1400.webp",
-  "image_colour": "#4b7c8c",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#4b7c8c"
  },
  {
   "slug": "can-chloe",
@@ -34015,6 +34013,8 @@
   "nightly_from": 786,
   "nightly_to": 1650,
   "rate_rows": 15,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -34182,9 +34182,7 @@
   ],
   "image": "/assets/villas/can-chloe/01-800.webp",
   "image_large": "/assets/villas/can-chloe/01-1400.webp",
-  "image_colour": "#85988c",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#85988c"
  },
  {
   "slug": "can-daneri",
@@ -34403,6 +34401,8 @@
   "nightly_from": 645,
   "nightly_to": 2153,
   "rate_rows": 10,
+  "real_bedrooms": 5,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -34596,9 +34596,7 @@
   ],
   "image": "/assets/villas/can-daneri/01-800.webp",
   "image_large": "/assets/villas/can-daneri/01-1400.webp",
-  "image_colour": "#869692",
-  "real_bedrooms": 5,
-  "real_bathrooms": 3
+  "image_colour": "#869692"
  },
  {
   "slug": "can-daphne",
@@ -34908,6 +34906,8 @@
   "nightly_from": 1886,
   "nightly_to": 3246,
   "rate_rows": 10,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -35099,9 +35099,7 @@
   ],
   "image": "/assets/villas/can-daphne/01-800.webp",
   "image_large": "/assets/villas/can-daphne/01-1400.webp",
-  "image_colour": "#85a2a1",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#85a2a1"
  },
  {
   "slug": "can-elsa",
@@ -35263,6 +35261,8 @@
   "nightly_from": 1210,
   "nightly_to": 2248,
   "rate_rows": 9,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -35442,9 +35442,7 @@
   ],
   "image": "/assets/villas/can-elsa/01-800.webp",
   "image_large": "/assets/villas/can-elsa/01-1400.webp",
-  "image_colour": "#7c9583",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#7c9583"
  },
  {
   "slug": "can-luna",
@@ -35583,6 +35581,8 @@
   "nightly_from": 655,
   "nightly_to": 9162,
   "rate_rows": 38,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -35718,9 +35718,7 @@
   ],
   "image": "/assets/villas/can-luna/01-800.webp",
   "image_large": "/assets/villas/can-luna/01-1400.webp",
-  "image_colour": "#9a9b9a",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#9a9b9a"
  },
  {
   "slug": "can-mayans",
@@ -35866,6 +35864,8 @@
   "nightly_from": 605,
   "nightly_to": 875,
   "rate_rows": 6,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -35989,9 +35989,7 @@
   ],
   "image": "/assets/villas/can-mayans/01-800.webp",
   "image_large": "/assets/villas/can-mayans/01-1400.webp",
-  "image_colour": "#888f8c",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#888f8c"
  },
  {
   "slug": "can-mira",
@@ -36155,6 +36153,8 @@
   "nightly_from": 2436,
   "nightly_to": 2436,
   "rate_rows": 4,
+  "real_bedrooms": 5,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -36338,9 +36338,7 @@
   ],
   "image": "/assets/villas/can-mira/01-800.webp",
   "image_large": "/assets/villas/can-mira/01-1400.webp",
-  "image_colour": "#72735d",
-  "real_bedrooms": 5,
-  "real_bathrooms": 4
+  "image_colour": "#72735d"
  },
  {
   "slug": "can-mistique",
@@ -36480,6 +36478,8 @@
   "nightly_from": 660,
   "nightly_to": 1089,
   "rate_rows": 8,
+  "real_bedrooms": 5,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -36693,9 +36693,7 @@
   ],
   "image": "/assets/villas/can-mistique/01-800.webp",
   "image_large": "/assets/villas/can-mistique/01-1400.webp",
-  "image_colour": "#77a1a6",
-  "real_bedrooms": 5,
-  "real_bathrooms": 6
+  "image_colour": "#77a1a6"
  },
  {
   "slug": "can-nala",
@@ -36843,6 +36841,8 @@
   "nightly_from": 1698,
   "nightly_to": 3112,
   "rate_rows": 7,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -37134,9 +37134,7 @@
   ],
   "image": "/assets/villas/can-nala/01-800.webp",
   "image_large": "/assets/villas/can-nala/01-1400.webp",
-  "image_colour": "#a2bed1",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#a2bed1"
  },
  {
   "slug": "can-puig-lorenzo",
@@ -37288,6 +37286,8 @@
   "nightly_from": 1100,
   "nightly_to": 1415,
   "rate_rows": 5,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -37443,9 +37443,7 @@
   ],
   "image": "/assets/villas/can-puig-lorenzo/01-800.webp",
   "image_large": "/assets/villas/can-puig-lorenzo/01-1400.webp",
-  "image_colour": "#84887b",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#84887b"
  },
  {
   "slug": "can-savasana",
@@ -37602,6 +37600,8 @@
   "nightly_from": 943,
   "nightly_to": 1572,
   "rate_rows": 5,
+  "real_bedrooms": 5,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -37681,9 +37681,7 @@
   ],
   "image": "/assets/villas/can-savasana/01-800.webp",
   "image_large": "/assets/villas/can-savasana/01-1400.webp",
-  "image_colour": "#988e75",
-  "real_bedrooms": 5,
-  "real_bathrooms": 4
+  "image_colour": "#988e75"
  },
  {
   "slug": "can-timo",
@@ -37857,6 +37855,8 @@
   "nightly_from": 629,
   "nightly_to": 2138,
   "rate_rows": 12,
+  "real_bedrooms": 5,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -37984,9 +37984,7 @@
   ],
   "image": "/assets/villas/can-timo/01-800.webp",
   "image_large": "/assets/villas/can-timo/01-1400.webp",
-  "image_colour": "#6c7366",
-  "real_bedrooms": 5,
-  "real_bathrooms": 3
+  "image_colour": "#6c7366"
  },
  {
   "slug": "can-verde",
@@ -38159,6 +38157,8 @@
   "nightly_from": 979,
   "nightly_to": 1969,
   "rate_rows": 8,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -38330,9 +38330,7 @@
   ],
   "image": "/assets/villas/can-verde/01-800.webp",
   "image_large": "/assets/villas/can-verde/01-1400.webp",
-  "image_colour": "#8e948f",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#8e948f"
  },
  {
   "slug": "can-vista-cala-jondal",
@@ -38497,6 +38495,8 @@
   "nightly_from": 1415,
   "nightly_to": 3772,
   "rate_rows": 18,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -38764,9 +38764,7 @@
   ],
   "image": "/assets/villas/can-vista-cala-jondal/01-800.webp",
   "image_large": "/assets/villas/can-vista-cala-jondal/01-1400.webp",
-  "image_colour": "#6d8793",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#6d8793"
  },
  {
   "slug": "casa-fourteen",
@@ -38928,6 +38926,8 @@
   "nightly_from": 943,
   "nightly_to": 3772,
   "rate_rows": 10,
+  "real_bedrooms": 7,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -39255,9 +39255,7 @@
   ],
   "image": "/assets/villas/casa-fourteen/01-800.webp",
   "image_large": "/assets/villas/casa-fourteen/01-1400.webp",
-  "image_colour": "#6d9aba",
-  "real_bedrooms": 7,
-  "real_bathrooms": 7
+  "image_colour": "#6d9aba"
  },
  {
   "slug": "casa-maxi",
@@ -39439,6 +39437,8 @@
   "nightly_from": 849,
   "nightly_to": 1226,
   "rate_rows": 7,
+  "real_bedrooms": 5,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -39568,9 +39568,7 @@
   ],
   "image": "/assets/villas/casa-maxi/01-800.webp",
   "image_large": "/assets/villas/casa-maxi/01-1400.webp",
-  "image_colour": "#6e6c6c",
-  "real_bedrooms": 5,
-  "real_bathrooms": 4
+  "image_colour": "#6e6c6c"
  },
  {
   "slug": "casa-muca",
@@ -39791,6 +39789,8 @@
   "nightly_from": 660,
   "nightly_to": 2358,
   "rate_rows": 9,
+  "real_bedrooms": 5,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -39922,9 +39922,7 @@
   ],
   "image": "/assets/villas/casa-muca/01-800.webp",
   "image_large": "/assets/villas/casa-muca/01-1400.webp",
-  "image_colour": "#8a8158",
-  "real_bedrooms": 5,
-  "real_bathrooms": 7
+  "image_colour": "#8a8158"
  },
  {
   "slug": "casa-roma",
@@ -40053,6 +40051,8 @@
   "nightly_from": 396,
   "nightly_to": 1634,
   "rate_rows": 12,
+  "real_bedrooms": 5,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -40248,9 +40248,7 @@
   ],
   "image": "/assets/villas/casa-roma/01-800.webp",
   "image_large": "/assets/villas/casa-roma/01-1400.webp",
-  "image_colour": "#648898",
-  "real_bedrooms": 5,
-  "real_bathrooms": 3
+  "image_colour": "#648898"
  },
  {
   "slug": "el-sueno-marino",
@@ -40450,6 +40448,8 @@
   "nightly_from": 3300,
   "nightly_to": 3615,
   "rate_rows": 7,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -40665,9 +40665,7 @@
   ],
   "image": "/assets/villas/el-sueno-marino/01-800.webp",
   "image_large": "/assets/villas/el-sueno-marino/01-1400.webp",
-  "image_colour": "#758688",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#758688"
  },
  {
   "slug": "house-of-dreams",
@@ -40861,6 +40859,8 @@
   "nightly_from": 1886,
   "nightly_to": 2829,
   "rate_rows": 8,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -41222,9 +41222,7 @@
   ],
   "image": "/assets/villas/house-of-dreams/01-800.webp",
   "image_large": "/assets/villas/house-of-dreams/01-1400.webp",
-  "image_colour": "#9da39d",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#9da39d"
  },
  {
   "slug": "puesta-del-sol",
@@ -41388,6 +41386,8 @@
   "nightly_from": 1462,
   "nightly_to": 2028,
   "rate_rows": 5,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -41495,9 +41495,7 @@
   ],
   "image": "/assets/villas/puesta-del-sol/01-800.webp",
   "image_large": "/assets/villas/puesta-del-sol/01-1400.webp",
-  "image_colour": "#7e7f66",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#7e7f66"
  },
  {
   "slug": "the-wave-ibiza",
@@ -41689,6 +41687,8 @@
   "nightly_from": 9286,
   "nightly_to": 22143,
   "rate_rows": 13,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -42016,9 +42016,7 @@
   ],
   "image": "/assets/villas/the-wave-ibiza/01-800.webp",
   "image_large": "/assets/villas/the-wave-ibiza/01-1400.webp",
-  "image_colour": "#6d9bb0",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#6d9bb0"
  },
  {
   "slug": "villa-ashley",
@@ -42179,6 +42177,8 @@
   "nightly_from": 943,
   "nightly_to": 3772,
   "rate_rows": 10,
+  "real_bedrooms": 7,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -42510,9 +42510,7 @@
   ],
   "image": "/assets/villas/villa-ashley/01-800.webp",
   "image_large": "/assets/villas/villa-ashley/01-1400.webp",
-  "image_colour": "#7c8985",
-  "real_bedrooms": 7,
-  "real_bathrooms": 7
+  "image_colour": "#7c8985"
  },
  {
   "slug": "villa-calm",
@@ -42702,6 +42700,8 @@
   "nightly_from": 396,
   "nightly_to": 5544,
   "rate_rows": 17,
+  "real_bedrooms": 5,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -42965,9 +42965,7 @@
   ],
   "image": "/assets/villas/villa-calm/01-800.webp",
   "image_large": "/assets/villas/villa-calm/01-1400.webp",
-  "image_colour": "#88908e",
-  "real_bedrooms": 5,
-  "real_bathrooms": 4
+  "image_colour": "#88908e"
  },
  {
   "slug": "villa-can-gertrudis",
@@ -43132,6 +43130,8 @@
   "nightly_from": 786,
   "nightly_to": 1650,
   "rate_rows": 13,
+  "real_bedrooms": 5,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -43279,9 +43279,7 @@
   ],
   "image": "/assets/villas/villa-can-gertrudis/01-800.webp",
   "image_large": "/assets/villas/villa-can-gertrudis/01-1400.webp",
-  "image_colour": "#6a7f7c",
-  "real_bedrooms": 5,
-  "real_bathrooms": 4
+  "image_colour": "#6a7f7c"
  },
  {
   "slug": "villa-capo",
@@ -43415,6 +43413,8 @@
   "nightly_from": 2122,
   "nightly_to": 2436,
   "rate_rows": 4,
+  "real_bedrooms": 5,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -43706,9 +43706,7 @@
   ],
   "image": "/assets/villas/villa-capo/01-800.webp",
   "image_large": "/assets/villas/villa-capo/01-1400.webp",
-  "image_colour": "#a9c3d2",
-  "real_bedrooms": 5,
-  "real_bathrooms": 4
+  "image_colour": "#a9c3d2"
  },
  {
   "slug": "villa-claire",
@@ -43863,6 +43861,8 @@
   "nightly_from": 1179,
   "nightly_to": 1650,
   "rate_rows": 6,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -44054,9 +44054,7 @@
   ],
   "image": "/assets/villas/villa-claire/01-800.webp",
   "image_large": "/assets/villas/villa-claire/01-1400.webp",
-  "image_colour": "#89a2a4",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#89a2a4"
  },
  {
   "slug": "villa-cubes",
@@ -44251,6 +44249,8 @@
   "nightly_from": 897,
   "nightly_to": 3137,
   "rate_rows": 14,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -44478,9 +44478,7 @@
   ],
   "image": "/assets/villas/villa-cubes/01-800.webp",
   "image_large": "/assets/villas/villa-cubes/01-1400.webp",
-  "image_colour": "#a09f95",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#a09f95"
  },
  {
   "slug": "villa-diso",
@@ -44652,6 +44650,8 @@
   "nightly_from": 1910,
   "nightly_to": 1910,
   "rate_rows": 1,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -44791,9 +44791,7 @@
   ],
   "image": "/assets/villas/villa-diso/01-800.webp",
   "image_large": "/assets/villas/villa-diso/01-1400.webp",
-  "image_colour": "#7c94a6",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#7c94a6"
  },
  {
   "slug": "villa-fico",
@@ -44937,6 +44935,8 @@
   "nightly_from": 1415,
   "nightly_to": 2515,
   "rate_rows": 9,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -45298,9 +45298,7 @@
   ],
   "image": "/assets/villas/villa-fico/01-800.webp",
   "image_large": "/assets/villas/villa-fico/01-1400.webp",
-  "image_colour": "#808075",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#808075"
  },
  {
   "slug": "villa-frankie",
@@ -45455,6 +45453,8 @@
   "nightly_from": 2279,
   "nightly_to": 3300,
   "rate_rows": 6,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -45778,9 +45778,7 @@
   ],
   "image": "/assets/villas/villa-frankie/01-800.webp",
   "image_large": "/assets/villas/villa-frankie/01-1400.webp",
-  "image_colour": "#80979c",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#80979c"
  },
  {
   "slug": "villa-heidi",
@@ -45944,6 +45942,8 @@
   "nightly_from": 2723,
   "nightly_to": 7779,
   "rate_rows": 8,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -46171,9 +46171,7 @@
   ],
   "image": "/assets/villas/villa-heidi/01-800.webp",
   "image_large": "/assets/villas/villa-heidi/01-1400.webp",
-  "image_colour": "#97a7ab",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#97a7ab"
  },
  {
   "slug": "villa-ibiza-bay",
@@ -46298,6 +46296,8 @@
   "nightly_from": 791,
   "nightly_to": 1655,
   "rate_rows": 8,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -46553,9 +46553,7 @@
   ],
   "image": "/assets/villas/villa-ibiza-bay/01-800.webp",
   "image_large": "/assets/villas/villa-ibiza-bay/01-1400.webp",
-  "image_colour": "#a5a79b",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#a5a79b"
  },
  {
   "slug": "villa-jaja",
@@ -46719,6 +46717,8 @@
   "nightly_from": 1572,
   "nightly_to": 2986,
   "rate_rows": 6,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -46930,9 +46930,7 @@
   ],
   "image": "/assets/villas/villa-jaja/01-800.webp",
   "image_large": "/assets/villas/villa-jaja/01-1400.webp",
-  "image_colour": "#8fa08e",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#8fa08e"
  },
  {
   "slug": "villa-jeanette",
@@ -47099,6 +47097,8 @@
   "nightly_from": 786,
   "nightly_to": 8250,
   "rate_rows": 16,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -47298,9 +47298,7 @@
   ],
   "image": "/assets/villas/villa-jeanette/01-800.webp",
   "image_large": "/assets/villas/villa-jeanette/01-1400.webp",
-  "image_colour": "#8f8a75",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#8f8a75"
  },
  {
   "slug": "villa-lyla",
@@ -47512,6 +47510,8 @@
   "nightly_from": 5972,
   "nightly_to": 7072,
   "rate_rows": 7,
+  "real_bedrooms": 8,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -47803,9 +47803,7 @@
   ],
   "image": "/assets/villas/villa-lyla/01-800.webp",
   "image_large": "/assets/villas/villa-lyla/01-1400.webp",
-  "image_colour": "#8f8a7a",
-  "real_bedrooms": 8,
-  "real_bathrooms": 8
+  "image_colour": "#8f8a7a"
  },
  {
   "slug": "villa-marielle",
@@ -48096,6 +48094,8 @@
   "nightly_from": 7858,
   "nightly_to": 17286,
   "rate_rows": 9,
+  "real_bedrooms": 8,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -48391,9 +48391,7 @@
   ],
   "image": "/assets/villas/villa-marielle/01-800.webp",
   "image_large": "/assets/villas/villa-marielle/01-1400.webp",
-  "image_colour": "#697066",
-  "real_bedrooms": 8,
-  "real_bathrooms": 8
+  "image_colour": "#697066"
  },
  {
   "slug": "villa-monica",
@@ -48549,6 +48547,8 @@
   "nightly_from": 1100,
   "nightly_to": 1870,
   "rate_rows": 8,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -48728,9 +48728,7 @@
   ],
   "image": "/assets/villas/villa-monica/01-800.webp",
   "image_large": "/assets/villas/villa-monica/01-1400.webp",
-  "image_colour": "#73776a",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#73776a"
  },
  {
   "slug": "villa-obsidian",
@@ -48954,6 +48952,8 @@
   "nightly_from": 3143,
   "nightly_to": 4715,
   "rate_rows": 10,
+  "real_bedrooms": 5,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -49121,9 +49121,7 @@
   ],
   "image": "/assets/villas/villa-obsidian/01-800.webp",
   "image_large": "/assets/villas/villa-obsidian/01-1400.webp",
-  "image_colour": "#8f8579",
-  "real_bedrooms": 5,
-  "real_bathrooms": 6
+  "image_colour": "#8f8579"
  },
  {
   "slug": "villa-ocean-vista",
@@ -49309,6 +49307,8 @@
   "nightly_from": 5343,
   "nightly_to": 7543,
   "rate_rows": 7,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -49472,9 +49472,7 @@
   ],
   "image": "/assets/villas/villa-ocean-vista/01-800.webp",
   "image_large": "/assets/villas/villa-ocean-vista/01-1400.webp",
-  "image_colour": "#799095",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#799095"
  },
  {
   "slug": "villa-paola",
@@ -49686,6 +49684,8 @@
   "nightly_from": 3520,
   "nightly_to": 6129,
   "rate_rows": 8,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -49965,9 +49965,7 @@
   ],
   "image": "/assets/villas/villa-paola/01-800.webp",
   "image_large": "/assets/villas/villa-paola/01-1400.webp",
-  "image_colour": "#b7b4a8",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#b7b4a8"
  },
  {
   "slug": "villa-paraiso",
@@ -50160,6 +50158,8 @@
   "nightly_from": 1139,
   "nightly_to": 2420,
   "rate_rows": 9,
+  "real_bedrooms": 7,
+  "real_bathrooms": 9,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -50423,9 +50423,7 @@
   ],
   "image": "/assets/villas/villa-paraiso/01-800.webp",
   "image_large": "/assets/villas/villa-paraiso/01-1400.webp",
-  "image_colour": "#aea9a1",
-  "real_bedrooms": 7,
-  "real_bathrooms": 9
+  "image_colour": "#aea9a1"
  },
  {
   "slug": "villa-riley",
@@ -50592,6 +50590,8 @@
   "nightly_from": 1047,
   "nightly_to": 2348,
   "rate_rows": 12,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -50831,9 +50831,7 @@
   ],
   "image": "/assets/villas/villa-riley/01-800.webp",
   "image_large": "/assets/villas/villa-riley/01-1400.webp",
-  "image_colour": "#899598",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#899598"
  },
  {
   "slug": "villa-ronda",
@@ -51001,6 +50999,8 @@
   "nightly_from": 3572,
   "nightly_to": 45000,
   "rate_rows": 10,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -51296,9 +51296,7 @@
   ],
   "image": "/assets/villas/villa-ronda/01-800.webp",
   "image_large": "/assets/villas/villa-ronda/01-1400.webp",
-  "image_colour": "#859c9c",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#859c9c"
  },
  {
   "slug": "villa-sa-carroca-oasis",
@@ -51434,6 +51432,8 @@
   "nightly_from": 629,
   "nightly_to": 1073,
   "rate_rows": 12,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -51629,9 +51629,7 @@
   ],
   "image": "/assets/villas/villa-sa-carroca-oasis/01-800.webp",
   "image_large": "/assets/villas/villa-sa-carroca-oasis/01-1400.webp",
-  "image_colour": "#91a293",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#91a293"
  },
  {
   "slug": "villa-samy",
@@ -51781,6 +51779,8 @@
   "nightly_from": 589,
   "nightly_to": 2153,
   "rate_rows": 13,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -52076,9 +52076,7 @@
   ],
   "image": "/assets/villas/villa-samy/01-800.webp",
   "image_large": "/assets/villas/villa-samy/01-1400.webp",
-  "image_colour": "#6a7d7e",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#6a7d7e"
  },
  {
   "slug": "villa-serenza",
@@ -52196,6 +52194,8 @@
   "nightly_from": 605,
   "nightly_to": 1595,
   "rate_rows": 7,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -52503,9 +52503,7 @@
   ],
   "image": "/assets/villas/villa-serenza/01-800.webp",
   "image_large": "/assets/villas/villa-serenza/01-1400.webp",
-  "image_colour": "#787e6d",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#787e6d"
  },
  {
   "slug": "villa-style",
@@ -52733,6 +52731,8 @@
   "nightly_from": 629,
   "nightly_to": 2358,
   "rate_rows": 10,
+  "real_bedrooms": 5,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -52930,9 +52930,7 @@
   ],
   "image": "/assets/villas/villa-style/01-800.webp",
   "image_large": "/assets/villas/villa-style/01-1400.webp",
-  "image_colour": "#b4bfce",
-  "real_bedrooms": 5,
-  "real_bathrooms": 4
+  "image_colour": "#b4bfce"
  },
  {
   "slug": "villa-talamanca-views",
@@ -53073,6 +53071,8 @@
   "nightly_from": 1258,
   "nightly_to": 2515,
   "rate_rows": 5,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -53360,9 +53360,7 @@
   ],
   "image": "/assets/villas/villa-talamanca-views/01-800.webp",
   "image_large": "/assets/villas/villa-talamanca-views/01-1400.webp",
-  "image_colour": "#8aa6b7",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#8aa6b7"
  },
  {
   "slug": "villa-terra",
@@ -53515,6 +53513,8 @@
   "nightly_from": 1981,
   "nightly_to": 5186,
   "rate_rows": 26,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -53650,9 +53650,7 @@
   ],
   "image": "/assets/villas/villa-terra/01-800.webp",
   "image_large": "/assets/villas/villa-terra/01-1400.webp",
-  "image_colour": "#6b889a",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#6b889a"
  },
  {
   "slug": "villa-trinity",
@@ -53887,6 +53885,8 @@
   "nightly_from": 12143,
   "nightly_to": 23572,
   "rate_rows": 9,
+  "real_bedrooms": 12,
+  "real_bathrooms": 12,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -54138,9 +54138,7 @@
   ],
   "image": "/assets/villas/villa-trinity/01-800.webp",
   "image_large": "/assets/villas/villa-trinity/01-1400.webp",
-  "image_colour": "#888977",
-  "real_bedrooms": 12,
-  "real_bathrooms": 12
+  "image_colour": "#888977"
  },
  {
   "slug": "villa-violetta",
@@ -54278,6 +54276,8 @@
   "nightly_from": 1022,
   "nightly_to": 1415,
   "rate_rows": 7,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -54437,9 +54437,7 @@
   ],
   "image": "/assets/villas/villa-violetta/01-800.webp",
   "image_large": "/assets/villas/villa-violetta/01-1400.webp",
-  "image_colour": "#81a5b6",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#81a5b6"
  },
  {
   "slug": "villa-zaria",
@@ -54595,6 +54593,8 @@
   "nightly_from": 8572,
   "nightly_to": 9429,
   "rate_rows": 4,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -54858,9 +54858,7 @@
   ],
   "image": "/assets/villas/villa-zaria/01-800.webp",
   "image_large": "/assets/villas/villa-zaria/01-1400.webp",
-  "image_colour": "#7692a6",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#7692a6"
  },
  {
   "slug": "villa-zola",
@@ -55044,6 +55042,8 @@
   "nightly_from": 1886,
   "nightly_to": 2829,
   "rate_rows": 7,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -55363,9 +55363,7 @@
   ],
   "image": "/assets/villas/villa-zola/01-800.webp",
   "image_large": "/assets/villas/villa-zola/01-1400.webp",
-  "image_colour": "#586e70",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#586e70"
  },
  {
   "slug": "waterfront-dream",
@@ -55570,6 +55568,8 @@
   "nightly_from": 3041,
   "nightly_to": 8415,
   "rate_rows": 13,
+  "real_bedrooms": 7,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -55789,9 +55789,7 @@
   ],
   "image": "/assets/villas/waterfront-dream/01-800.webp",
   "image_large": "/assets/villas/waterfront-dream/01-1400.webp",
-  "image_colour": "#99958c",
-  "real_bedrooms": 7,
-  "real_bathrooms": 8
+  "image_colour": "#99958c"
  },
  {
   "slug": "finca-sabariz",
@@ -55948,6 +55946,8 @@
   "nightly_from": 594,
   "nightly_to": 2970,
   "rate_rows": 12,
+  "real_bedrooms": 7,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -56207,9 +56207,7 @@
   ],
   "image": "/assets/villas/finca-sabariz/01-800.webp",
   "image_large": "/assets/villas/finca-sabariz/01-1400.webp",
-  "image_colour": "#676e8b",
-  "real_bedrooms": 7,
-  "real_bathrooms": 7
+  "image_colour": "#676e8b"
  },
  {
   "slug": "can-alivia",
@@ -56342,6 +56340,8 @@
   "nightly_from": 792,
   "nightly_to": 2145,
   "rate_rows": 6,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -56497,9 +56497,7 @@
   ],
   "image": "/assets/villas/can-alivia/01-800.webp",
   "image_large": "/assets/villas/can-alivia/01-1400.webp",
-  "image_colour": "#748182",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#748182"
  },
  {
   "slug": "can-aria",
@@ -56640,6 +56638,8 @@
   "nightly_from": 655,
   "nightly_to": 9162,
   "rate_rows": 38,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -56775,9 +56775,7 @@
   ],
   "image": "/assets/villas/can-aria/01-800.webp",
   "image_large": "/assets/villas/can-aria/01-1400.webp",
-  "image_colour": "#96a7b0",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#96a7b0"
  },
  {
   "slug": "can-balena",
@@ -56936,6 +56934,8 @@
   "nightly_from": 943,
   "nightly_to": 1258,
   "rate_rows": 8,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -57227,9 +57227,7 @@
   ],
   "image": "/assets/villas/can-balena/01-800.webp",
   "image_large": "/assets/villas/can-balena/01-1400.webp",
-  "image_colour": "#a6b7ba",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#a6b7ba"
  },
  {
   "slug": "can-beth",
@@ -57374,6 +57372,8 @@
   "nightly_from": 943,
   "nightly_to": 1886,
   "rate_rows": 12,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -57597,9 +57597,7 @@
   ],
   "image": "/assets/villas/can-beth/01-800.webp",
   "image_large": "/assets/villas/can-beth/01-1400.webp",
-  "image_colour": "#818e93",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#818e93"
  },
  {
   "slug": "can-cleo",
@@ -57740,6 +57738,8 @@
   "nightly_from": 590,
   "nightly_to": 1368,
   "rate_rows": 8,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -58029,9 +58029,7 @@
   ],
   "image": "/assets/villas/can-cleo/01-800.webp",
   "image_large": "/assets/villas/can-cleo/01-1400.webp",
-  "image_colour": "#747f73",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#747f73"
  },
  {
   "slug": "can-deme",
@@ -58194,6 +58192,8 @@
   "nightly_from": 1994,
   "nightly_to": 1994,
   "rate_rows": 1,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -58389,9 +58389,7 @@
   ],
   "image": "/assets/villas/can-deme/01-800.webp",
   "image_large": "/assets/villas/can-deme/01-1400.webp",
-  "image_colour": "#666a76",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#666a76"
  },
  {
   "slug": "can-elyza",
@@ -58587,6 +58585,8 @@
   "nightly_from": 1980,
   "nightly_to": 2750,
   "rate_rows": 4,
+  "real_bedrooms": 5,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -58722,9 +58722,7 @@
   ],
   "image": "/assets/villas/can-elyza/01-800.webp",
   "image_large": "/assets/villas/can-elyza/01-1400.webp",
-  "image_colour": "#7c8b8c",
-  "real_bedrooms": 5,
-  "real_bathrooms": 6
+  "image_colour": "#7c8b8c"
  },
  {
   "slug": "can-floral",
@@ -58923,6 +58921,8 @@
   "nightly_from": 3080,
   "nightly_to": 3850,
   "rate_rows": 5,
+  "real_bedrooms": 7,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -59078,9 +59078,7 @@
   ],
   "image": "/assets/villas/can-floral/01-800.webp",
   "image_large": "/assets/villas/can-floral/01-1400.webp",
-  "image_colour": "#908f80",
-  "real_bedrooms": 7,
-  "real_bathrooms": 6
+  "image_colour": "#908f80"
  },
  {
   "slug": "can-frutal",
@@ -59287,6 +59285,8 @@
   "nightly_from": 1650,
   "nightly_to": 2515,
   "rate_rows": 8,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -59590,9 +59590,7 @@
   ],
   "image": "/assets/villas/can-frutal/01-800.webp",
   "image_large": "/assets/villas/can-frutal/01-1400.webp",
-  "image_colour": "#8e9a8a",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#8e9a8a"
  },
  {
   "slug": "can-ki",
@@ -59752,6 +59750,8 @@
   "nightly_from": 1733,
   "nightly_to": 2178,
   "rate_rows": 6,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -59879,9 +59879,7 @@
   ],
   "image": "/assets/villas/can-ki/01-800.webp",
   "image_large": "/assets/villas/can-ki/01-1400.webp",
-  "image_colour": "#808d8f",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#808d8f"
  },
  {
   "slug": "can-mambo",
@@ -60055,6 +60053,8 @@
   "nightly_from": 990,
   "nightly_to": 2138,
   "rate_rows": 9,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -60354,9 +60354,7 @@
   ],
   "image": "/assets/villas/can-mambo/01-800.webp",
   "image_large": "/assets/villas/can-mambo/01-1400.webp",
-  "image_colour": "#8fa4a9",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#8fa4a9"
  },
  {
   "slug": "can-melody",
@@ -60562,6 +60560,8 @@
   "nightly_from": 5000,
   "nightly_to": 5000,
   "rate_rows": 1,
+  "real_bedrooms": 6,
+  "real_bathrooms": 9,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -60709,9 +60709,7 @@
   ],
   "image": "/assets/villas/can-melody/01-800.webp",
   "image_large": "/assets/villas/can-melody/01-1400.webp",
-  "image_colour": "#8198a1",
-  "real_bedrooms": 6,
-  "real_bathrooms": 9
+  "image_colour": "#8198a1"
  },
  {
   "slug": "can-meuni",
@@ -60834,6 +60832,8 @@
   "nightly_from": 1022,
   "nightly_to": 1336,
   "rate_rows": 7,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -60913,9 +60913,7 @@
   ],
   "image": "/assets/villas/can-meuni/01-800.webp",
   "image_large": "/assets/villas/can-meuni/01-1400.webp",
-  "image_colour": "#3e7695",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#3e7695"
  },
  {
   "slug": "can-nik",
@@ -61131,6 +61129,8 @@
   "nightly_from": 1572,
   "nightly_to": 5500,
   "rate_rows": 11,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -61330,9 +61330,7 @@
   ],
   "image": "/assets/villas/can-nik/01-800.webp",
   "image_large": "/assets/villas/can-nik/01-1400.webp",
-  "image_colour": "#758c7f",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#758c7f"
  },
  {
   "slug": "can-orange",
@@ -61493,6 +61491,8 @@
   "nightly_from": 668,
   "nightly_to": 1100,
   "rate_rows": 9,
+  "real_bedrooms": 5,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -61704,9 +61704,7 @@
   ],
   "image": "/assets/villas/can-orange/01-800.webp",
   "image_large": "/assets/villas/can-orange/01-1400.webp",
-  "image_colour": "#8896a5",
-  "real_bedrooms": 5,
-  "real_bathrooms": 2
+  "image_colour": "#8896a5"
  },
  {
   "slug": "can-pajarito",
@@ -61856,6 +61854,8 @@
   "nightly_from": 1886,
   "nightly_to": 4558,
   "rate_rows": 8,
+  "real_bedrooms": 10,
+  "real_bathrooms": 9,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -62081,9 +62081,7 @@
   ],
   "image": "/assets/villas/can-pajarito/01-800.webp",
   "image_large": "/assets/villas/can-pajarito/01-1400.webp",
-  "image_colour": "#6e8aa5",
-  "real_bedrooms": 10,
-  "real_bathrooms": 9
+  "image_colour": "#6e8aa5"
  },
  {
   "slug": "can-sabina",
@@ -62280,6 +62278,8 @@
   "nightly_from": 1320,
   "nightly_to": 2200,
   "rate_rows": 7,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -62557,9 +62557,7 @@
   ],
   "image": "/assets/villas/can-sabina/01-800.webp",
   "image_large": "/assets/villas/can-sabina/01-1400.webp",
-  "image_colour": "#7e7362",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#7e7362"
  },
  {
   "slug": "can-sef",
@@ -62733,6 +62731,8 @@
   "nightly_from": 2286,
   "nightly_to": 14000,
   "rate_rows": 11,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -62808,9 +62808,7 @@
   ],
   "image": "/assets/villas/can-sef/01-800.webp",
   "image_large": "/assets/villas/can-sef/01-1400.webp",
-  "image_colour": "#8ca6b1",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#8ca6b1"
  },
  {
   "slug": "can-simo",
@@ -62953,6 +62951,8 @@
   "nightly_from": 1155,
   "nightly_to": 10395,
   "rate_rows": 10,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -63244,9 +63244,7 @@
   ],
   "image": "/assets/villas/can-simo/01-800.webp",
   "image_large": "/assets/villas/can-simo/01-1400.webp",
-  "image_colour": "#7b7d7b",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#7b7d7b"
  },
  {
   "slug": "cana-celeste",
@@ -63427,6 +63425,8 @@
   "nightly_from": 393,
   "nightly_to": 1572,
   "rate_rows": 8,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -63610,9 +63610,7 @@
   ],
   "image": "/assets/villas/cana-celeste/01-800.webp",
   "image_large": "/assets/villas/cana-celeste/01-1400.webp",
-  "image_colour": "#9aa995",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#9aa995"
  },
  {
   "slug": "cana-safari",
@@ -63792,6 +63790,8 @@
   "nightly_from": 770,
   "nightly_to": 1430,
   "rate_rows": 10,
+  "real_bedrooms": 4,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -64079,9 +64079,7 @@
   ],
   "image": "/assets/villas/cana-safari/01-800.webp",
   "image_large": "/assets/villas/cana-safari/01-1400.webp",
-  "image_colour": "#98a99e",
-  "real_bedrooms": 4,
-  "real_bathrooms": 2
+  "image_colour": "#98a99e"
  },
  {
   "slug": "cana-sole",
@@ -64209,6 +64207,8 @@
   "nightly_from": 739,
   "nightly_to": 1383,
   "rate_rows": 6,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -64400,9 +64400,7 @@
   ],
   "image": "/assets/villas/cana-sole/01-800.webp",
   "image_large": "/assets/villas/cana-sole/01-1400.webp",
-  "image_colour": "#9ba1a8",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#9ba1a8"
  },
  {
   "slug": "casa-alhena",
@@ -64539,6 +64537,8 @@
   "nightly_from": 786,
   "nightly_to": 1399,
   "rate_rows": 6,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -64714,9 +64714,7 @@
   ],
   "image": "/assets/villas/casa-alhena/01-800.webp",
   "image_large": "/assets/villas/casa-alhena/01-1400.webp",
-  "image_colour": "#8e837a",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#8e837a"
  },
  {
   "slug": "casa-can-tina",
@@ -64858,6 +64856,8 @@
   "nightly_from": 1760,
   "nightly_to": 1760,
   "rate_rows": 2,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -65045,9 +65045,7 @@
   ],
   "image": "/assets/villas/casa-can-tina/01-800.webp",
   "image_large": "/assets/villas/casa-can-tina/01-1400.webp",
-  "image_colour": "#869097",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#869097"
  },
  {
   "slug": "casa-canela",
@@ -65182,6 +65180,8 @@
   "nightly_from": 676,
   "nightly_to": 2043,
   "rate_rows": 12,
+  "real_bedrooms": 4,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -65525,9 +65525,7 @@
   ],
   "image": "/assets/villas/casa-canela/01-800.webp",
   "image_large": "/assets/villas/casa-canela/01-1400.webp",
-  "image_colour": "#695f52",
-  "real_bedrooms": 4,
-  "real_bathrooms": 2
+  "image_colour": "#695f52"
  },
  {
   "slug": "casa-dhort",
@@ -65668,6 +65666,8 @@
   "nightly_from": 786,
   "nightly_to": 1022,
   "rate_rows": 5,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "format_differs",
    "ok": true,
@@ -65853,9 +65853,7 @@
   ],
   "image": "/assets/villas/casa-dhort/01-800.webp",
   "image_large": "/assets/villas/casa-dhort/01-1400.webp",
-  "image_colour": "#656e6f",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#656e6f"
  },
  {
   "slug": "cielo-del-norte",
@@ -66048,6 +66046,8 @@
   "nightly_from": 1006,
   "nightly_to": 1808,
   "rate_rows": 5,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -66139,9 +66139,7 @@
   ],
   "image": "/assets/villas/cielo-del-norte/01-800.webp",
   "image_large": "/assets/villas/cielo-del-norte/01-1400.webp",
-  "image_colour": "#778a73",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#778a73"
  },
  {
   "slug": "los-pinos",
@@ -66255,6 +66253,8 @@
   "nightly_from": 1786,
   "nightly_to": 2886,
   "rate_rows": 6,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -66398,9 +66398,7 @@
   ],
   "image": "/assets/villas/los-pinos/01-800.webp",
   "image_large": "/assets/villas/los-pinos/01-1400.webp",
-  "image_colour": "#929998",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#929998"
  },
  {
   "slug": "villa-abigail",
@@ -66576,6 +66574,8 @@
   "nightly_from": 1603,
   "nightly_to": 2868,
   "rate_rows": 9,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -66867,9 +66867,7 @@
   ],
   "image": "/assets/villas/villa-abigail/01-800.webp",
   "image_large": "/assets/villas/villa-abigail/01-1400.webp",
-  "image_colour": "#8798ad",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#8798ad"
  },
  {
   "slug": "villa-amazonia",
@@ -67054,6 +67052,8 @@
   "nightly_from": 1650,
   "nightly_to": 4636,
   "rate_rows": 8,
+  "real_bedrooms": 5,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -67281,9 +67281,7 @@
   ],
   "image": "/assets/villas/villa-amazonia/01-800.webp",
   "image_large": "/assets/villas/villa-amazonia/01-1400.webp",
-  "image_colour": "#778ea0",
-  "real_bedrooms": 5,
-  "real_bathrooms": 6
+  "image_colour": "#778ea0"
  },
  {
   "slug": "villa-amorigen",
@@ -67417,6 +67415,8 @@
   "nightly_from": 635,
   "nightly_to": 1662,
   "rate_rows": 13,
+  "real_bedrooms": 6,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -67604,9 +67604,7 @@
   ],
   "image": "/assets/villas/villa-amorigen/01-800.webp",
   "image_large": "/assets/villas/villa-amorigen/01-1400.webp",
-  "image_colour": "#8c9792",
-  "real_bedrooms": 6,
-  "real_bathrooms": 4
+  "image_colour": "#8c9792"
  },
  {
   "slug": "villa-andana",
@@ -67738,6 +67736,8 @@
   "nightly_from": 396,
   "nightly_to": 1089,
   "rate_rows": 11,
+  "real_bedrooms": 4,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -67961,9 +67961,7 @@
   ],
   "image": "/assets/villas/villa-andana/01-800.webp",
   "image_large": "/assets/villas/villa-andana/01-1400.webp",
-  "image_colour": "#768583",
-  "real_bedrooms": 4,
-  "real_bathrooms": 2
+  "image_colour": "#768583"
  },
  {
   "slug": "villa-apia",
@@ -68167,6 +68165,8 @@
   "nightly_from": 858,
   "nightly_to": 1929,
   "rate_rows": 15,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -68524,9 +68524,7 @@
   ],
   "image": "/assets/villas/villa-apia/01-800.webp",
   "image_large": "/assets/villas/villa-apia/01-1400.webp",
-  "image_colour": "#a2a9a4",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#a2a9a4"
  },
  {
   "slug": "villa-aurora",
@@ -68715,6 +68713,8 @@
   "nightly_from": 880,
   "nightly_to": 2358,
   "rate_rows": 10,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -68910,9 +68910,7 @@
   ],
   "image": "/assets/villas/villa-aurora/01-800.webp",
   "image_large": "/assets/villas/villa-aurora/01-1400.webp",
-  "image_colour": "#767989",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#767989"
  },
  {
   "slug": "villa-azura",
@@ -69068,6 +69066,8 @@
   "nightly_from": 1980,
   "nightly_to": 5658,
   "rate_rows": 13,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -69355,9 +69355,7 @@
   ],
   "image": "/assets/villas/villa-azura/01-800.webp",
   "image_large": "/assets/villas/villa-azura/01-1400.webp",
-  "image_colour": "#7c939e",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#7c939e"
  },
  {
   "slug": "villa-bailey",
@@ -69592,6 +69590,8 @@
   "nightly_from": 9036,
   "nightly_to": 14300,
   "rate_rows": 5,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -69791,9 +69791,7 @@
   ],
   "image": "/assets/villas/villa-bailey/01-800.webp",
   "image_large": "/assets/villas/villa-bailey/01-1400.webp",
-  "image_colour": "#99b7c5",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#99b7c5"
  },
  {
   "slug": "villa-cara",
@@ -69937,6 +69935,8 @@
   "nightly_from": 660,
   "nightly_to": 1089,
   "rate_rows": 9,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -70148,9 +70148,7 @@
   ],
   "image": "/assets/villas/villa-cara/01-800.webp",
   "image_large": "/assets/villas/villa-cara/01-1400.webp",
-  "image_colour": "#5aaec3",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#5aaec3"
  },
  {
   "slug": "villa-carrion",
@@ -70385,6 +70383,8 @@
   "nightly_from": 2210,
   "nightly_to": 2652,
   "rate_rows": 2,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -70536,9 +70536,7 @@
   ],
   "image": "/assets/villas/villa-carrion/01-800.webp",
   "image_large": "/assets/villas/villa-carrion/01-1400.webp",
-  "image_colour": "#83827b",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#83827b"
  },
  {
   "slug": "villa-ceres",
@@ -70691,6 +70689,8 @@
   "nightly_from": 786,
   "nightly_to": 1886,
   "rate_rows": 12,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -70886,9 +70886,7 @@
   ],
   "image": "/assets/villas/villa-ceres/01-800.webp",
   "image_large": "/assets/villas/villa-ceres/01-1400.webp",
-  "image_colour": "#7a8885",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#7a8885"
  },
  {
   "slug": "villa-claudette",
@@ -71042,6 +71040,8 @@
   "nightly_from": 1430,
   "nightly_to": 2750,
   "rate_rows": 6,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -71333,9 +71333,7 @@
   ],
   "image": "/assets/villas/villa-claudette/01-800.webp",
   "image_large": "/assets/villas/villa-claudette/01-1400.webp",
-  "image_colour": "#577e8f",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#577e8f"
  },
  {
   "slug": "villa-dama",
@@ -71516,6 +71514,8 @@
   "nightly_from": 545,
   "nightly_to": 1782,
   "rate_rows": 12,
+  "real_bedrooms": 6,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -71795,9 +71795,7 @@
   ],
   "image": "/assets/villas/villa-dama/01-800.webp",
   "image_large": "/assets/villas/villa-dama/01-1400.webp",
-  "image_colour": "#627278",
-  "real_bedrooms": 6,
-  "real_bathrooms": 3
+  "image_colour": "#627278"
  },
  {
   "slug": "villa-de-golf",
@@ -71942,6 +71940,8 @@
   "nightly_from": 1485,
   "nightly_to": 1485,
   "rate_rows": 1,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -72257,9 +72257,7 @@
   ],
   "image": "/assets/villas/villa-de-golf/01-800.webp",
   "image_large": "/assets/villas/villa-de-golf/01-1400.webp",
-  "image_colour": "#929e90",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#929e90"
  },
  {
   "slug": "villa-emilia",
@@ -72495,6 +72493,8 @@
   "nightly_from": 1886,
   "nightly_to": 2200,
   "rate_rows": 4,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -72794,9 +72794,7 @@
   ],
   "image": "/assets/villas/villa-emilia/01-800.webp",
   "image_large": "/assets/villas/villa-emilia/01-1400.webp",
-  "image_colour": "#a5a3a2",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#a5a3a2"
  },
  {
   "slug": "villa-equis",
@@ -72932,6 +72930,8 @@
   "nightly_from": 556,
   "nightly_to": 2283,
   "rate_rows": 10,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -73223,9 +73223,7 @@
   ],
   "image": "/assets/villas/villa-equis/01-800.webp",
   "image_large": "/assets/villas/villa-equis/01-1400.webp",
-  "image_colour": "#9baeab",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#9baeab"
  },
  {
   "slug": "villa-espera",
@@ -73411,6 +73409,8 @@
   "nightly_from": 1430,
   "nightly_to": 2691,
   "rate_rows": 4,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -73702,9 +73702,7 @@
   ],
   "image": "/assets/villas/villa-espera/01-800.webp",
   "image_large": "/assets/villas/villa-espera/01-1400.webp",
-  "image_colour": "#bbbbaf",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#bbbbaf"
  },
  {
   "slug": "villa-evelyn",
@@ -73872,6 +73870,8 @@
   "nightly_from": 2358,
   "nightly_to": 2750,
   "rate_rows": 6,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -74143,9 +74143,7 @@
   ],
   "image": "/assets/villas/villa-evelyn/01-800.webp",
   "image_large": "/assets/villas/villa-evelyn/01-1400.webp",
-  "image_colour": "#7aa3c6",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#7aa3c6"
  },
  {
   "slug": "villa-hailey",
@@ -74439,6 +74437,8 @@
   "nightly_from": 7143,
   "nightly_to": 70000,
   "rate_rows": 15,
+  "real_bedrooms": 7,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -74630,9 +74630,7 @@
   ],
   "image": "/assets/villas/villa-hailey/01-800.webp",
   "image_large": "/assets/villas/villa-hailey/01-1400.webp",
-  "image_colour": "#9b8d81",
-  "real_bedrooms": 7,
-  "real_bathrooms": 7
+  "image_colour": "#9b8d81"
  },
  {
   "slug": "villa-hebe",
@@ -74814,6 +74812,8 @@
   "nightly_from": 550,
   "nightly_to": 2122,
   "rate_rows": 16,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "format_differs",
    "ok": true,
@@ -74959,9 +74959,7 @@
   ],
   "image": "/assets/villas/villa-hebe/01-800.webp",
   "image_large": "/assets/villas/villa-hebe/01-1400.webp",
-  "image_colour": "#aeb6ac",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#aeb6ac"
  },
  {
   "slug": "villa-hilltopview",
@@ -75116,6 +75114,8 @@
   "nightly_from": 990,
   "nightly_to": 1595,
   "rate_rows": 5,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -75291,9 +75291,7 @@
   ],
   "image": "/assets/villas/villa-hilltopview/01-800.webp",
   "image_large": "/assets/villas/villa-hilltopview/01-1400.webp",
-  "image_colour": "#727d73",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#727d73"
  },
  {
   "slug": "villa-infinite",
@@ -75539,6 +75537,8 @@
   "nightly_from": 1320,
   "nightly_to": 23100,
   "rate_rows": 25,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -75846,9 +75846,7 @@
   ],
   "image": "/assets/villas/villa-infinite/01-800.webp",
   "image_large": "/assets/villas/villa-infinite/01-1400.webp",
-  "image_colour": "#a2aab0",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#a2aab0"
  },
  {
   "slug": "villa-judith",
@@ -76005,6 +76003,8 @@
   "nightly_from": 6758,
   "nightly_to": 7386,
   "rate_rows": 3,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -76276,9 +76276,7 @@
   ],
   "image": "/assets/villas/villa-judith/01-800.webp",
   "image_large": "/assets/villas/villa-judith/01-1400.webp",
-  "image_colour": "#92a6b6",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#92a6b6"
  },
  {
   "slug": "villa-kni",
@@ -76456,6 +76454,8 @@
   "nightly_from": 715,
   "nightly_to": 2000,
   "rate_rows": 14,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -76743,9 +76743,7 @@
   ],
   "image": "/assets/villas/villa-kni/01-800.webp",
   "image_large": "/assets/villas/villa-kni/01-1400.webp",
-  "image_colour": "#586053",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#586053"
  },
  {
   "slug": "villa-libelula",
@@ -76901,6 +76899,8 @@
   "nightly_from": 910,
   "nightly_to": 1498,
   "rate_rows": 6,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -77040,9 +77040,7 @@
   ],
   "image": "/assets/villas/villa-libelula/01-800.webp",
   "image_large": "/assets/villas/villa-libelula/01-1400.webp",
-  "image_colour": "#89958d",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#89958d"
  },
  {
   "slug": "villa-livia",
@@ -77175,6 +77173,8 @@
   "nightly_from": 645,
   "nightly_to": 2153,
   "rate_rows": 10,
+  "real_bedrooms": 5,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -77470,9 +77470,7 @@
   ],
   "image": "/assets/villas/villa-livia/01-800.webp",
   "image_large": "/assets/villas/villa-livia/01-1400.webp",
-  "image_colour": "#748b8c",
-  "real_bedrooms": 5,
-  "real_bathrooms": 6
+  "image_colour": "#748b8c"
  },
  {
   "slug": "villa-lumara",
@@ -77613,6 +77611,8 @@
   "nightly_from": 385,
   "nightly_to": 1375,
   "rate_rows": 10,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "format_differs",
    "ok": true,
@@ -77786,9 +77786,7 @@
   ],
   "image": "/assets/villas/villa-lumara/01-800.webp",
   "image_large": "/assets/villas/villa-lumara/01-1400.webp",
-  "image_colour": "#9a9086",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#9a9086"
  },
  {
   "slug": "villa-maia",
@@ -77940,6 +77938,8 @@
   "nightly_from": 2515,
   "nightly_to": 3025,
   "rate_rows": 4,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -78183,9 +78183,7 @@
   ],
   "image": "/assets/villas/villa-maia/01-800.webp",
   "image_large": "/assets/villas/villa-maia/01-1400.webp",
-  "image_colour": "#a8bab0",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#a8bab0"
  },
  {
   "slug": "villa-mariola",
@@ -78317,6 +78315,8 @@
   "nightly_from": 550,
   "nightly_to": 1155,
   "rate_rows": 8,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -78560,9 +78560,7 @@
   ],
   "image": "/assets/villas/villa-mariola/01-800.webp",
   "image_large": "/assets/villas/villa-mariola/01-1400.webp",
-  "image_colour": "#7f8c81",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#7f8c81"
  },
  {
   "slug": "villa-mia",
@@ -78800,6 +78798,8 @@
   "nightly_from": 1346,
   "nightly_to": 4416,
   "rate_rows": 22,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -78979,9 +78979,7 @@
   ],
   "image": "/assets/villas/villa-mia/01-800.webp",
   "image_large": "/assets/villas/villa-mia/01-1400.webp",
-  "image_colour": "#92918c",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#92918c"
  },
  {
   "slug": "villa-mila",
@@ -79190,6 +79188,8 @@
   "nightly_from": 3615,
   "nightly_to": 5000,
   "rate_rows": 4,
+  "real_bedrooms": 4,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -79425,9 +79425,7 @@
   ],
   "image": "/assets/villas/villa-mila/01-800.webp",
   "image_large": "/assets/villas/villa-mila/01-1400.webp",
-  "image_colour": "#707667",
-  "real_bedrooms": 4,
-  "real_bathrooms": 6
+  "image_colour": "#707667"
  },
  {
   "slug": "villa-nadal",
@@ -79656,6 +79654,8 @@
   "nightly_from": 1965,
   "nightly_to": 3929,
   "rate_rows": 9,
+  "real_bedrooms": 7,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -79883,9 +79883,7 @@
   ],
   "image": "/assets/villas/villa-nadal/01-800.webp",
   "image_large": "/assets/villas/villa-nadal/01-1400.webp",
-  "image_colour": "#97a7a5",
-  "real_bedrooms": 7,
-  "real_bathrooms": 5
+  "image_colour": "#97a7a5"
  },
  {
   "slug": "villa-niu-blau",
@@ -80069,6 +80067,8 @@
   "nightly_from": 1081,
   "nightly_to": 1572,
   "rate_rows": 9,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -80208,9 +80208,7 @@
   ],
   "image": "/assets/villas/villa-niu-blau/01-800.webp",
   "image_large": "/assets/villas/villa-niu-blau/01-1400.webp",
-  "image_colour": "#6b714a",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#6b714a"
  },
  {
   "slug": "villa-noel",
@@ -80343,6 +80341,8 @@
   "nightly_from": 535,
   "nightly_to": 1683,
   "rate_rows": 11,
+  "real_bedrooms": 6,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -80642,9 +80642,7 @@
   ],
   "image": "/assets/villas/villa-noel/01-800.webp",
   "image_large": "/assets/villas/villa-noel/01-1400.webp",
-  "image_colour": "#878c8e",
-  "real_bedrooms": 6,
-  "real_bathrooms": 4
+  "image_colour": "#878c8e"
  },
  {
   "slug": "villa-pantera",
@@ -80793,6 +80791,8 @@
   "nightly_from": 1100,
   "nightly_to": 4715,
   "rate_rows": 8,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -81132,9 +81132,7 @@
   ],
   "image": "/assets/villas/villa-pantera/01-800.webp",
   "image_large": "/assets/villas/villa-pantera/01-1400.webp",
-  "image_colour": "#667268",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#667268"
  },
  {
   "slug": "villa-porroig-relax",
@@ -81161,7 +81159,7 @@
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
-  "cleaning": "6 Cleanings per week",
+  "cleaning": "5 Cleanings per week",
   "cleaning_charge": 0,
   "check_in": "16:00",
   "check_out": "10:00",
@@ -81330,6 +81328,8 @@
   "nightly_from": 1273,
   "nightly_to": 4243,
   "rate_rows": 11,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -81549,9 +81549,7 @@
   ],
   "image": "/assets/villas/villa-porroig-relax/01-800.webp",
   "image_large": "/assets/villas/villa-porroig-relax/01-1400.webp",
-  "image_colour": "#969685",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#969685"
  },
  {
   "slug": "villa-sadie",
@@ -81698,6 +81696,8 @@
   "nightly_from": 1331,
   "nightly_to": 2853,
   "rate_rows": 10,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -81877,9 +81877,7 @@
   ],
   "image": "/assets/villas/villa-sadie/01-800.webp",
   "image_large": "/assets/villas/villa-sadie/01-1400.webp",
-  "image_colour": "#4690a8",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#4690a8"
  },
  {
   "slug": "villa-shiva",
@@ -82262,6 +82260,8 @@
   "nightly_from": 5343,
   "nightly_to": 10000,
   "rate_rows": 8,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -82585,9 +82585,7 @@
   ],
   "image": "/assets/villas/villa-shiva/01-800.webp",
   "image_large": "/assets/villas/villa-shiva/01-1400.webp",
-  "image_colour": "#a3a6a1",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#a3a6a1"
  },
  {
   "slug": "villa-tess",
@@ -82778,6 +82776,8 @@
   "nightly_from": 2858,
   "nightly_to": 4286,
   "rate_rows": 5,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -83037,9 +83037,7 @@
   ],
   "image": "/assets/villas/villa-tess/01-800.webp",
   "image_large": "/assets/villas/villa-tess/01-1400.webp",
-  "image_colour": "#7a8ea8",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#7a8ea8"
  },
  {
   "slug": "villa-trevi",
@@ -83225,6 +83223,8 @@
   "nightly_from": 629,
   "nightly_to": 1572,
   "rate_rows": 6,
+  "real_bedrooms": 5,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -83366,9 +83366,7 @@
   ],
   "image": "/assets/villas/villa-trevi/01-800.webp",
   "image_large": "/assets/villas/villa-trevi/01-1400.webp",
-  "image_colour": "#71796e",
-  "real_bedrooms": 5,
-  "real_bathrooms": 4
+  "image_colour": "#71796e"
  },
  {
   "slug": "villa-zeus",
@@ -83528,6 +83526,8 @@
   "nightly_from": 2955,
   "nightly_to": 3693,
   "rate_rows": 6,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -83631,9 +83631,7 @@
   ],
   "image": "/assets/villas/villa-zeus/01-800.webp",
   "image_large": "/assets/villas/villa-zeus/01-1400.webp",
-  "image_colour": "#5e909e",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#5e909e"
  },
  {
   "slug": "vista-conta",
@@ -83763,6 +83761,8 @@
   "nightly_from": 616,
   "nightly_to": 616,
   "rate_rows": 4,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -83894,9 +83894,7 @@
   ],
   "image": "/assets/villas/vista-conta/01-800.webp",
   "image_large": "/assets/villas/vista-conta/01-1400.webp",
-  "image_colour": "#7d6a59",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#7d6a59"
  },
  {
   "slug": "can-carva",
@@ -84034,6 +84032,8 @@
   "nightly_from": 472,
   "nightly_to": 5380,
   "rate_rows": 11,
+  "real_bedrooms": 5,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -84205,9 +84205,7 @@
   ],
   "image": "/assets/villas/can-carva/01-800.webp",
   "image_large": "/assets/villas/can-carva/01-1400.webp",
-  "image_colour": "#8a9a8e",
-  "real_bedrooms": 5,
-  "real_bathrooms": 4
+  "image_colour": "#8a9a8e"
  },
  {
   "slug": "can-kai",
@@ -84410,6 +84408,8 @@
   "nightly_from": 770,
   "nightly_to": 1572,
   "rate_rows": 7,
+  "real_bedrooms": 6,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -84497,9 +84497,7 @@
   ],
   "image": "/assets/villas/can-kai/01-800.webp",
   "image_large": "/assets/villas/can-kai/01-1400.webp",
-  "image_colour": "#5f5341",
-  "real_bedrooms": 6,
-  "real_bathrooms": 4
+  "image_colour": "#5f5341"
  },
  {
   "slug": "la-perla-escondida",
@@ -84702,6 +84700,8 @@
   "nightly_from": 1258,
   "nightly_to": 1320,
   "rate_rows": 5,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -85013,9 +85013,7 @@
   ],
   "image": "/assets/villas/la-perla-escondida/01-800.webp",
   "image_large": "/assets/villas/la-perla-escondida/01-1400.webp",
-  "image_colour": "#68564c",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#68564c"
  },
  {
   "slug": "can-cenote",
@@ -85233,6 +85231,8 @@
   "nightly_from": 1415,
   "nightly_to": 1572,
   "rate_rows": 4,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -85376,9 +85376,7 @@
   ],
   "image": "/assets/villas/can-cenote/01-800.webp",
   "image_large": "/assets/villas/can-cenote/01-1400.webp",
-  "image_colour": "#84877d",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#84877d"
  },
  {
   "slug": "can-de-baix",
@@ -85519,6 +85517,8 @@
   "nightly_from": 550,
   "nightly_to": 675,
   "rate_rows": 6,
+  "real_bedrooms": 3,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -85634,9 +85634,7 @@
   ],
   "image": "/assets/villas/can-de-baix/01-800.webp",
   "image_large": "/assets/villas/can-de-baix/01-1400.webp",
-  "image_colour": "#a2a8a3",
-  "real_bedrooms": 3,
-  "real_bathrooms": 2
+  "image_colour": "#a2a8a3"
  },
  {
   "slug": "can-fabulosa",
@@ -85846,6 +85844,8 @@
   "nightly_from": 2122,
   "nightly_to": 4243,
   "rate_rows": 8,
+  "real_bedrooms": 9,
+  "real_bathrooms": 10,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -86093,9 +86093,7 @@
   ],
   "image": "/assets/villas/can-fabulosa/01-800.webp",
   "image_large": "/assets/villas/can-fabulosa/01-1400.webp",
-  "image_colour": "#84969f",
-  "real_bedrooms": 9,
-  "real_bathrooms": 10
+  "image_colour": "#84969f"
  },
  {
   "slug": "can-krishna",
@@ -86226,6 +86224,8 @@
   "nightly_from": 440,
   "nightly_to": 803,
   "rate_rows": 8,
+  "real_bedrooms": 3,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -86433,9 +86433,7 @@
   ],
   "image": "/assets/villas/can-krishna/01-800.webp",
   "image_large": "/assets/villas/can-krishna/01-1400.webp",
-  "image_colour": "#879893",
-  "real_bedrooms": 3,
-  "real_bathrooms": 3
+  "image_colour": "#879893"
  },
  {
   "slug": "can-laurel",
@@ -86557,6 +86555,8 @@
   "nightly_from": 473,
   "nightly_to": 715,
   "rate_rows": 9,
+  "real_bedrooms": 3,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -86864,9 +86864,7 @@
   ],
   "image": "/assets/villas/can-laurel/01-800.webp",
   "image_large": "/assets/villas/can-laurel/01-1400.webp",
-  "image_colour": "#7e8896",
-  "real_bedrooms": 3,
-  "real_bathrooms": 2
+  "image_colour": "#7e8896"
  },
  {
   "slug": "can-meil",
@@ -87123,6 +87121,8 @@
   "nightly_from": 324,
   "nightly_to": 1886,
   "rate_rows": 11,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -87358,9 +87358,7 @@
   ],
   "image": "/assets/villas/can-meil/01-800.webp",
   "image_large": "/assets/villas/can-meil/01-1400.webp",
-  "image_colour": "#939f9a",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#939f9a"
  },
  {
   "slug": "can-milna",
@@ -87540,6 +87538,8 @@
   "nightly_from": 1022,
   "nightly_to": 2024,
   "rate_rows": 11,
+  "real_bedrooms": 3,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -87763,9 +87763,7 @@
   ],
   "image": "/assets/villas/can-milna/01-800.webp",
   "image_large": "/assets/villas/can-milna/01-1400.webp",
-  "image_colour": "#6c7d71",
-  "real_bedrooms": 3,
-  "real_bathrooms": 3
+  "image_colour": "#6c7d71"
  },
  {
   "slug": "can-milna-deluxe",
@@ -87958,6 +87956,8 @@
   "nightly_from": 1148,
   "nightly_to": 2347,
   "rate_rows": 11,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -88181,9 +88181,7 @@
   ],
   "image": "/assets/villas/can-milna-deluxe/01-800.webp",
   "image_large": "/assets/villas/can-milna-deluxe/01-1400.webp",
-  "image_colour": "#a4a38b",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#a4a38b"
  },
  {
   "slug": "can-olivander",
@@ -88321,6 +88319,8 @@
   "nightly_from": 660,
   "nightly_to": 1018,
   "rate_rows": 8,
+  "real_bedrooms": 3,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -88532,9 +88532,7 @@
   ],
   "image": "/assets/villas/can-olivander/01-800.webp",
   "image_large": "/assets/villas/can-olivander/01-1400.webp",
-  "image_colour": "#88988a",
-  "real_bedrooms": 3,
-  "real_bathrooms": 3
+  "image_colour": "#88988a"
  },
  {
   "slug": "can-scarlett",
@@ -88705,6 +88703,8 @@
   "nightly_from": 474,
   "nightly_to": 474,
   "rate_rows": 1,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -89012,9 +89012,7 @@
   ],
   "image": "/assets/villas/can-scarlett/01-800.webp",
   "image_large": "/assets/villas/can-scarlett/01-1400.webp",
-  "image_colour": "#919eac",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#919eac"
  },
  {
   "slug": "can-solis",
@@ -89222,6 +89220,8 @@
   "nightly_from": 445,
   "nightly_to": 1069,
   "rate_rows": 10,
+  "real_bedrooms": 3,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -89469,9 +89469,7 @@
   ],
   "image": "/assets/villas/can-solis/01-800.webp",
   "image_large": "/assets/villas/can-solis/01-1400.webp",
-  "image_colour": "#7296ae",
-  "real_bedrooms": 3,
-  "real_bathrooms": 2
+  "image_colour": "#7296ae"
  },
  {
   "slug": "cana-gotas",
@@ -89620,6 +89618,8 @@
   "nightly_from": 739,
   "nightly_to": 1383,
   "rate_rows": 6,
+  "real_bedrooms": 3,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -89939,9 +89939,7 @@
   ],
   "image": "/assets/villas/cana-gotas/01-800.webp",
   "image_large": "/assets/villas/cana-gotas/01-1400.webp",
-  "image_colour": "#94adaa",
-  "real_bedrooms": 3,
-  "real_bathrooms": 3
+  "image_colour": "#94adaa"
  },
  {
   "slug": "cana-susanna",
@@ -90073,6 +90071,8 @@
   "nightly_from": 550,
   "nightly_to": 1155,
   "rate_rows": 13,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -90232,9 +90232,7 @@
   ],
   "image": "/assets/villas/cana-susanna/01-800.webp",
   "image_large": "/assets/villas/cana-susanna/01-1400.webp",
-  "image_colour": "#92948f",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#92948f"
  },
  {
   "slug": "casa-bayona",
@@ -90432,6 +90430,8 @@
   "nightly_from": 1156,
   "nightly_to": 2465,
   "rate_rows": 13,
+  "real_bedrooms": 4,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -90747,9 +90747,7 @@
   ],
   "image": "/assets/villas/casa-bayona/01-800.webp",
   "image_large": "/assets/villas/casa-bayona/01-1400.webp",
-  "image_colour": "#7c8590",
-  "real_bedrooms": 4,
-  "real_bathrooms": 2
+  "image_colour": "#7c8590"
  },
  {
   "slug": "casa-clareta",
@@ -90886,6 +90884,8 @@
   "nightly_from": 715,
   "nightly_to": 1540,
   "rate_rows": 11,
+  "real_bedrooms": 3,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "format_differs",
    "ok": true,
@@ -91207,9 +91207,7 @@
   ],
   "image": "/assets/villas/casa-clareta/01-800.webp",
   "image_large": "/assets/villas/casa-clareta/01-1400.webp",
-  "image_colour": "#888884",
-  "real_bedrooms": 3,
-  "real_bathrooms": 3
+  "image_colour": "#888884"
  },
  {
   "slug": "es-palauet-duplex",
@@ -91312,6 +91310,8 @@
   "nightly_from": 384,
   "nightly_to": 574,
   "rate_rows": 8,
+  "real_bedrooms": 2,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "other_register",
    "ok": true,
@@ -91593,9 +91593,7 @@
   ],
   "image": "/assets/villas/es-palauet-duplex/01-800.webp",
   "image_large": "/assets/villas/es-palauet-duplex/01-1400.webp",
-  "image_colour": "#cdbaab",
-  "real_bedrooms": 2,
-  "real_bathrooms": 2
+  "image_colour": "#cdbaab"
  },
  {
   "slug": "puig-can-fluxa",
@@ -91727,6 +91725,8 @@
   "nightly_from": 473,
   "nightly_to": 528,
   "rate_rows": 4,
+  "real_bedrooms": 3,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -91922,9 +91922,7 @@
   ],
   "image": "/assets/villas/puig-can-fluxa/01-800.webp",
   "image_large": "/assets/villas/puig-can-fluxa/01-1400.webp",
-  "image_colour": "#7b8ba1",
-  "real_bedrooms": 3,
-  "real_bathrooms": 2
+  "image_colour": "#7b8ba1"
  },
  {
   "slug": "serene-sanctuary",
@@ -92121,6 +92119,8 @@
   "nightly_from": 1375,
   "nightly_to": 3610,
   "rate_rows": 15,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -92268,9 +92268,7 @@
   ],
   "image": "/assets/villas/serene-sanctuary/01-800.webp",
   "image_large": "/assets/villas/serene-sanctuary/01-1400.webp",
-  "image_colour": "#587774",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#587774"
  },
  {
   "slug": "the-beach-house-cala-llenya",
@@ -92411,6 +92409,8 @@
   "nightly_from": 605,
   "nightly_to": 765,
   "rate_rows": 9,
+  "real_bedrooms": 3,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -92522,9 +92522,7 @@
   ],
   "image": "/assets/villas/the-beach-house-cala-llenya/01-800.webp",
   "image_large": "/assets/villas/the-beach-house-cala-llenya/01-1400.webp",
-  "image_colour": "#8e9678",
-  "real_bedrooms": 3,
-  "real_bathrooms": 3
+  "image_colour": "#8e9678"
  },
  {
   "slug": "villa-azure",
@@ -92552,7 +92550,7 @@
   "bathrooms": 4,
   "sleeps": 6,
   "price_from": 5500,
-  "price_to": 14300,
+  "price_to": 14850,
   "price_on_request": false,
   "min_nights": 3,
   "short_stays": true,
@@ -92708,8 +92706,10 @@
   "v_id": 13687,
   "v_uuid": "660fea8d-5f3e-4b11-b4ee-ce5987042c44",
   "nightly_from": 786,
-  "nightly_to": 2043,
+  "nightly_to": 2122,
   "rate_rows": 10,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -92985,9 +92985,7 @@
   ],
   "image": "/assets/villas/villa-azure/01-800.webp",
   "image_large": "/assets/villas/villa-azure/01-1400.webp",
-  "image_colour": "#808f87",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#808f87"
  },
  {
   "slug": "villa-casita",
@@ -93132,6 +93130,8 @@
   "nightly_from": 865,
   "nightly_to": 1258,
   "rate_rows": 6,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -93367,9 +93367,7 @@
   ],
   "image": "/assets/villas/villa-casita/01-800.webp",
   "image_large": "/assets/villas/villa-casita/01-1400.webp",
-  "image_colour": "#768c9a",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#768c9a"
  },
  {
   "slug": "villa-cayu",
@@ -93538,6 +93536,8 @@
   "nightly_from": 732,
   "nightly_to": 2030,
   "rate_rows": 15,
+  "real_bedrooms": 4,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -93697,9 +93697,7 @@
   ],
   "image": "/assets/villas/villa-cayu/01-800.webp",
   "image_large": "/assets/villas/villa-cayu/01-1400.webp",
-  "image_colour": "#7a8586",
-  "real_bedrooms": 4,
-  "real_bathrooms": 4
+  "image_colour": "#7a8586"
  },
  {
   "slug": "villa-charlotte",
@@ -93897,6 +93895,8 @@
   "nightly_from": 1705,
   "nightly_to": 3355,
   "rate_rows": 10,
+  "real_bedrooms": 3,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -94124,9 +94124,7 @@
   ],
   "image": "/assets/villas/villa-charlotte/01-800.webp",
   "image_large": "/assets/villas/villa-charlotte/01-1400.webp",
-  "image_colour": "#6d837b",
-  "real_bedrooms": 3,
-  "real_bathrooms": 3
+  "image_colour": "#6d837b"
  },
  {
   "slug": "villa-escondida",
@@ -94276,6 +94274,8 @@
   "nightly_from": 943,
   "nightly_to": 1336,
   "rate_rows": 8,
+  "real_bedrooms": 3,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -94531,9 +94531,7 @@
   ],
   "image": "/assets/villas/villa-escondida/01-800.webp",
   "image_large": "/assets/villas/villa-escondida/01-1400.webp",
-  "image_colour": "#74787a",
-  "real_bedrooms": 3,
-  "real_bathrooms": 3
+  "image_colour": "#74787a"
  },
  {
   "slug": "villa-harper",
@@ -94695,6 +94693,8 @@
   "nightly_from": 495,
   "nightly_to": 2585,
   "rate_rows": 26,
+  "real_bedrooms": 3,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "format_differs",
    "ok": true,
@@ -94864,9 +94864,7 @@
   ],
   "image": "/assets/villas/villa-harper/01-800.webp",
   "image_large": "/assets/villas/villa-harper/01-1400.webp",
-  "image_colour": "#7e949b",
-  "real_bedrooms": 3,
-  "real_bathrooms": 4
+  "image_colour": "#7e949b"
  },
  {
   "slug": "villa-jayden",
@@ -95071,6 +95069,8 @@
   "nightly_from": 5108,
   "nightly_to": 8486,
   "rate_rows": 10,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -95338,9 +95338,7 @@
   ],
   "image": "/assets/villas/villa-jayden/01-800.webp",
   "image_large": "/assets/villas/villa-jayden/01-1400.webp",
-  "image_colour": "#80989c",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#80989c"
  },
  {
   "slug": "villa-london",
@@ -95509,6 +95507,8 @@
   "nightly_from": 2200,
   "nightly_to": 3080,
   "rate_rows": 9,
+  "real_bedrooms": 7,
+  "real_bathrooms": 7,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -95816,9 +95816,7 @@
   ],
   "image": "/assets/villas/villa-london/01-800.webp",
   "image_large": "/assets/villas/villa-london/01-1400.webp",
-  "image_colour": "#7b9aa4",
-  "real_bedrooms": 7,
-  "real_bathrooms": 7
+  "image_colour": "#7b9aa4"
  },
  {
   "slug": "villa-marti",
@@ -96040,6 +96038,8 @@
   "nightly_from": 935,
   "nightly_to": 2358,
   "rate_rows": 10,
+  "real_bedrooms": 5,
+  "real_bathrooms": 4,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -96331,9 +96331,7 @@
   ],
   "image": "/assets/villas/villa-marti/01-800.webp",
   "image_large": "/assets/villas/villa-marti/01-1400.webp",
-  "image_colour": "#9d9981",
-  "real_bedrooms": 5,
-  "real_bathrooms": 4
+  "image_colour": "#9d9981"
  },
  {
   "slug": "villa-pardis",
@@ -96520,6 +96518,8 @@
   "nightly_from": 750,
   "nightly_to": 1300,
   "rate_rows": 11,
+  "real_bedrooms": 3,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -96735,9 +96735,7 @@
   ],
   "image": "/assets/villas/villa-pardis/01-800.webp",
   "image_large": "/assets/villas/villa-pardis/01-1400.webp",
-  "image_colour": "#a8a793",
-  "real_bedrooms": 3,
-  "real_bathrooms": 3
+  "image_colour": "#a8a793"
  },
  {
   "slug": "villa-perla-blanca",
@@ -96916,6 +96914,8 @@
   "nightly_from": 550,
   "nightly_to": 2530,
   "rate_rows": 9,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -97275,9 +97275,7 @@
   ],
   "image": "/assets/villas/villa-perla-blanca/01-800.webp",
   "image_large": "/assets/villas/villa-perla-blanca/01-1400.webp",
-  "image_colour": "#96b0bd",
-  "real_bedrooms": 6,
-  "real_bathrooms": 6
+  "image_colour": "#96b0bd"
  },
  {
   "slug": "villa-petunia",
@@ -97459,6 +97457,8 @@
   "nightly_from": 1493,
   "nightly_to": 2829,
   "rate_rows": 9,
+  "real_bedrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -97566,9 +97566,7 @@
   ],
   "image": "/assets/villas/villa-petunia/01-800.webp",
   "image_large": "/assets/villas/villa-petunia/01-1400.webp",
-  "image_colour": "#71796e",
-  "real_bedrooms": 6,
-  "real_bathrooms": 5
+  "image_colour": "#71796e"
  },
  {
   "slug": "villa-solaire",
@@ -97759,6 +97757,8 @@
   "nightly_from": 1925,
   "nightly_to": 2436,
   "rate_rows": 5,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -97954,9 +97954,7 @@
   ],
   "image": "/assets/villas/villa-solaire/01-800.webp",
   "image_large": "/assets/villas/villa-solaire/01-1400.webp",
-  "image_colour": "#8096a3",
-  "real_bedrooms": 5,
-  "real_bathrooms": 5
+  "image_colour": "#8096a3"
  },
  {
   "slug": "villa-vinya-morna",
@@ -98092,6 +98090,8 @@
   "nightly_from": 1281,
   "nightly_to": 1281,
   "rate_rows": 2,
+  "real_bedrooms": 3,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -98267,9 +98267,7 @@
   ],
   "image": "/assets/villas/villa-vinya-morna/01-800.webp",
   "image_large": "/assets/villas/villa-vinya-morna/01-1400.webp",
-  "image_colour": "#5d686d",
-  "real_bedrooms": 3,
-  "real_bathrooms": 5
+  "image_colour": "#5d686d"
  },
  {
   "slug": "casa-valldaura-1",
@@ -98394,6 +98392,8 @@
   "nightly_from": 198,
   "nightly_to": 743,
   "rate_rows": 11,
+  "real_bedrooms": 3,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -98693,9 +98693,7 @@
   ],
   "image": "/assets/villas/casa-valldaura-1/01-800.webp",
   "image_large": "/assets/villas/casa-valldaura-1/01-1400.webp",
-  "image_colour": "#677c8c",
-  "real_bedrooms": 3,
-  "real_bathrooms": 2
+  "image_colour": "#677c8c"
  },
  {
   "slug": "casa-valldaura-2",
@@ -98813,6 +98811,8 @@
   "nightly_from": 198,
   "nightly_to": 743,
   "rate_rows": 11,
+  "real_bedrooms": 3,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -99112,9 +99112,7 @@
   ],
   "image": "/assets/villas/casa-valldaura-2/01-800.webp",
   "image_large": "/assets/villas/casa-valldaura-2/01-1400.webp",
-  "image_colour": "#462f29",
-  "real_bedrooms": 3,
-  "real_bathrooms": 2
+  "image_colour": "#462f29"
  },
  {
   "slug": "villa-cala-tarida-rafael",
@@ -99196,6 +99194,8 @@
   "nightly_from": 550,
   "nightly_to": 1069,
   "rate_rows": 10,
+  "real_bedrooms": 4,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -99391,9 +99391,7 @@
   ],
   "image": "/assets/villas/villa-cala-tarida-rafael/01-800.webp",
   "image_large": "/assets/villas/villa-cala-tarida-rafael/01-1400.webp",
-  "image_colour": "#928e88",
-  "real_bedrooms": 4,
-  "real_bathrooms": 2
+  "image_colour": "#928e88"
  },
  {
   "slug": "alegre-blue",
@@ -99529,6 +99527,8 @@
   "nightly_from": 315,
   "nightly_to": 880,
   "rate_rows": 11,
+  "real_bedrooms": 2,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -99788,9 +99788,7 @@
   ],
   "image": "/assets/villas/alegre-blue/01-800.webp",
   "image_large": "/assets/villas/alegre-blue/01-1400.webp",
-  "image_colour": "#8c949e",
-  "real_bedrooms": 2,
-  "real_bathrooms": 2
+  "image_colour": "#8c949e"
  },
  {
   "slug": "can-cabrit",
@@ -99926,6 +99924,8 @@
   "nightly_from": 550,
   "nightly_to": 550,
   "rate_rows": 4,
+  "real_bedrooms": 2,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -100261,9 +100261,7 @@
   ],
   "image": "/assets/villas/can-cabrit/01-800.webp",
   "image_large": "/assets/villas/can-cabrit/01-1400.webp",
-  "image_colour": "#7f9cac",
-  "real_bedrooms": 2,
-  "real_bathrooms": 3
+  "image_colour": "#7f9cac"
  },
  {
   "slug": "casa-monigue",
@@ -100388,6 +100386,8 @@
   "nightly_from": 869,
   "nightly_to": 1089,
   "rate_rows": 4,
+  "real_bedrooms": 2,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -100683,9 +100683,7 @@
   ],
   "image": "/assets/villas/casa-monigue/01-800.webp",
   "image_large": "/assets/villas/casa-monigue/01-1400.webp",
-  "image_colour": "#a0b1b1",
-  "real_bedrooms": 2,
-  "real_bathrooms": 2
+  "image_colour": "#a0b1b1"
  },
  {
   "slug": "villa-jesus-for-four",
@@ -100817,6 +100815,8 @@
   "nightly_from": 393,
   "nightly_to": 462,
   "rate_rows": 4,
+  "real_bedrooms": 2,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -101136,9 +101136,7 @@
   ],
   "image": "/assets/villas/villa-jesus-for-four/01-800.webp",
   "image_large": "/assets/villas/villa-jesus-for-four/01-1400.webp",
-  "image_colour": "#919388",
-  "real_bedrooms": 2,
-  "real_bathrooms": 2
+  "image_colour": "#919388"
  },
  {
   "slug": "villa-mini",
@@ -101286,6 +101284,8 @@
   "nightly_from": 311,
   "nightly_to": 715,
   "rate_rows": 16,
+  "real_bedrooms": 2,
+  "real_bathrooms": 2,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -101585,9 +101585,7 @@
   ],
   "image": "/assets/villas/villa-mini/01-800.webp",
   "image_large": "/assets/villas/villa-mini/01-1400.webp",
-  "image_colour": "#79969f",
-  "real_bedrooms": 2,
-  "real_bathrooms": 2
+  "image_colour": "#79969f"
  },
  {
   "slug": "villa-jesus",
@@ -101717,6 +101715,8 @@
   "nightly_from": 330,
   "nightly_to": 363,
   "rate_rows": 4,
+  "real_bedrooms": 1,
+  "real_bathrooms": 1,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -102036,9 +102036,7 @@
   ],
   "image": "/assets/villas/villa-jesus/01-800.webp",
   "image_large": "/assets/villas/villa-jesus/01-1400.webp",
-  "image_colour": "#919388",
-  "real_bedrooms": 1,
-  "real_bathrooms": 1
+  "image_colour": "#919388"
  },
  {
   "slug": "es-palauet-apartment",
@@ -102129,6 +102127,8 @@
   "nightly_from": 272,
   "nightly_to": 338,
   "rate_rows": 7,
+  "real_bedrooms": 1,
+  "real_bathrooms": 1,
   "licence_check": {
    "status": "other_register",
    "ok": true,
@@ -102410,9 +102410,7 @@
   ],
   "image": "/assets/villas/es-palauet-apartment/01-800.webp",
   "image_large": "/assets/villas/es-palauet-apartment/01-1400.webp",
-  "image_colour": "#aea2a1",
-  "real_bedrooms": 1,
-  "real_bathrooms": 1
+  "image_colour": "#aea2a1"
  },
  {
   "slug": "corazon-del-mar",
@@ -102624,6 +102622,8 @@
   "nightly_from": 0,
   "nightly_to": 0,
   "rate_rows": 0,
+  "real_bedrooms": 6,
+  "real_bathrooms": 9,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -102779,9 +102779,7 @@
   ],
   "image": "/assets/villas/corazon-del-mar/01-800.webp",
   "image_large": "/assets/villas/corazon-del-mar/01-1400.webp",
-  "image_colour": "#345173",
-  "real_bedrooms": 6,
-  "real_bathrooms": 9
+  "image_colour": "#345173"
  },
  {
   "slug": "villa-beverly",
@@ -102897,6 +102895,8 @@
   "nightly_from": 0,
   "nightly_to": 0,
   "rate_rows": 0,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -103108,9 +103108,7 @@
   ],
   "image": "/assets/villas/villa-beverly/01-800.webp",
   "image_large": "/assets/villas/villa-beverly/01-1400.webp",
-  "image_colour": "#2c6b91",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#2c6b91"
  },
  {
   "slug": "villa-can-exotic",
@@ -103234,6 +103232,8 @@
   "nightly_from": 0,
   "nightly_to": 0,
   "rate_rows": 0,
+  "real_bedrooms": 4,
+  "real_bathrooms": 3,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -103489,8 +103489,6 @@
   ],
   "image": "/assets/villas/villa-can-exotic/01-800.webp",
   "image_large": "/assets/villas/villa-can-exotic/01-1400.webp",
-  "image_colour": "#5f7b91",
-  "real_bedrooms": 4,
-  "real_bathrooms": 3
+  "image_colour": "#5f7b91"
  }
 ]
