@@ -403,3 +403,10 @@ With dates, cards show the price for the stay instead of the weekly "from" price
 aren't Saturday to Saturday and fewer than 8 villas match, a "Villas available Saturday to
 Saturday" section (smaller thumbnails, up to 8) offers villas free for the closest Saturdays, with
 the same filters, each confirmed live; one click searches those dates.
+
+Stay rules (Edo, 3 Nov 2026), in the search and the concierge: booked nights always block; a stay
+shorter than the minimum matches when it fills a calendar gap shorter than the minimum; strict
+changeover days (e.g. Saturday–Saturday) are waived for stays of at least 3 × the minimum and for gap
+stays; a check-in within the next 10 days waives both. Villas matched through one of these
+exceptions show "on request (owner to confirm)" with the calendar price, since IMpulse's live quote
+applies the plain rules.

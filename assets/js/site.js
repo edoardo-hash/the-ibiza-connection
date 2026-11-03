@@ -850,27 +850,51 @@
       }
       return Math.round(total);
     };
-    // Strict changeover day (portal rule, src/lib/rules/availability.ts): the check-in night's period sets
-    // the check-in weekday, the last night's period the check-out weekday (else the villa's own rule).
-    // Not applied to last-minute stays (≤ 7 days away) or stays of at least twice the period minimum.
+    // Stay rules (Edo, 3 Nov 2026):
+    //  - booked nights always block;
+    //  - minimum stay X: a shorter stay still matches when it fills a calendar gap shorter than X
+    //    (the free window between two bookings), as long as it fits in it;
+    //  - strict changeover day (e.g. Saturday–Saturday; the check-in night's period sets the check-in
+    //    day, the last night's the check-out day, else the villa's rule): waived for stays of at
+    //    least 3 × the minimum stay, and for gap stays;
+    //  - check-in within the next 10 days: minimum stay and changeover day are both waived.
+    // A villa matched only thanks to an exception is "relaxed": IMpulse's live quote applies the plain
+    // rules, so for those a live "no" means "on request" (the owner decides), not "not available".
+    const NEAR_DAYS = 10;
+    const STRICT_WAIVER_MULTIPLE = 3;
     const weekday = (iso) => new Date(`${iso}T00:00:00Z`).getUTCDay();
     const periodFor = (rates, day) => rates.find((r) => r[0] <= day && day <= r[1]);
-    const strictOk = (villa, from, to, nights) => {
+    const dayNum = (iso) => Date.parse(`${iso}T00:00:00Z`) / 86400000;
+    const stayCheck = (villa, from, to, nights) => {
+      if (!villa.b.every(([ci, co]) => !(ci < to && co > from))) return { ok: false };
       const lastNight = new Date(Date.parse(`${to}T00:00:00Z`) - 86400000).toISOString().slice(0, 10);
+      const periodMin = Math.max(0, ...villa.r.filter((r) => r[0] <= lastNight && r[1] >= from).map((r) => r[3] || 0));
+      const minStay = periodMin || villa.m || 0;
+      const today = new Date().toISOString().slice(0, 10);
+      const near = dayNum(from) - dayNum(today) <= NEAR_DAYS;
+      // The free window around the stay, bounded by the nearest bookings.
+      let gapStart = -Infinity;
+      let gapEnd = Infinity;
+      villa.b.forEach(([ci, co]) => {
+        if (co <= from) gapStart = Math.max(gapStart, dayNum(co));
+        if (ci >= to) gapEnd = Math.min(gapEnd, dayNum(ci));
+      });
+      const gapNights = gapEnd - gapStart;
+      const gapStay = Number.isFinite(gapNights) && minStay > 0 && gapNights < minStay && nights <= gapNights;
+      const minOk = villa.s || !minStay || nights >= minStay;
       const pIn = periodFor(villa.r, from);
       const pOut = periodFor(villa.r, lastNight);
       const dayIn = pIn && pIn[4] !== undefined ? pIn[4] : villa.d ?? -1;
       const dayOut = pOut && pOut[4] !== undefined ? pOut[4] : villa.d ?? -1;
-      const today = new Date().toISOString().slice(0, 10);
-      const near = (Date.parse(`${from}T00:00:00Z`) - Date.parse(`${today}T00:00:00Z`)) / 86400000 <= 7;
-      const maxMin = Math.max(0, ...villa.r.filter((r) => r[0] <= lastNight && r[1] >= from).map((r) => r[3] || 0));
-      if (near || (maxMin > 0 && nights >= 2 * maxMin)) return true;
-      return (dayIn < 0 || weekday(from) === dayIn) && (dayOut < 0 || weekday(to) === dayOut);
+      const dayOk = (dayIn < 0 || weekday(from) === dayIn) && (dayOut < 0 || weekday(to) === dayOut);
+      const longStay = minStay > 0 && nights >= STRICT_WAIVER_MULTIPLE * minStay;
+      if (minOk && dayOk) return { ok: true, relaxed: false };
+      const minPass = minOk || near || gapStay;
+      const dayPass = dayOk || near || gapStay || longStay;
+      return minPass && dayPass ? { ok: true, relaxed: true } : { ok: false };
     };
-    const freeFor = (villa, from, to, nights) =>
-      villa.b.every(([ci, co]) => !(ci < to && co > from)) &&
-      (villa.s || !villa.m || nights >= villa.m) &&
-      strictOk(villa, from, to, nights);
+    const freeFor = (villa, from, to, nights) => stayCheck(villa, from, to, nights).ok;
+    const relaxedSet = new Set(); // uuids matched only through an exception, for the current dates
 
     const loadAvailability = async () => {
       const from = dateFrom?.value || "";
@@ -885,9 +909,11 @@
         const prices = new Map();
         cards.forEach((card) => {
           const villa = data.villas[card.dataset.idx];
-          if (!villa || !freeFor(villa, from, to, nights)) return;
+          const check = villa ? stayCheck(villa, from, to, nights) : { ok: false };
+          if (!check.ok) return;
           const uuid = String(card.dataset.uuid || "").toLowerCase();
           free.add(uuid);
+          if (check.relaxed) relaxedSet.add(`${uuid}|${from}|${to}`);
           const total = estimateStay(villa.r, from, to, nights);
           if (total) prices.set(uuid, total);
         });
@@ -1001,9 +1027,11 @@
           ? "Checking availability…"
           : state === "ok"
             ? "Available for your dates"
-            : state === "no"
-              ? "Not available for these dates"
-              : "Availability to be confirmed";
+            : state === "request"
+              ? "Free on the calendar · on request (owner to confirm)"
+              : state === "no"
+                ? "Not available for these dates"
+                : "Availability to be confirmed";
       // The price for the stay replaces the weekly "from" price: confirmed once IMpulse answered,
       // the calendar estimate while checking.
       if (priceEl) {
@@ -1011,9 +1039,9 @@
         const total = state === "ok" ? r.price : availabilityPrice.get(uuid) || 0;
         priceEl.innerHTML = total
           ? `<strong>${eur(total)}</strong><em>for ${nights} nights</em>`
-          : state === "ok"
-            ? "<strong>Price on request</strong>"
-            : priceEl.dataset.weekly;
+          : state === "pending"
+            ? priceEl.dataset.weekly
+            : "<strong>Price on request</strong>";
       }
     };
     const scheduleApply = () => {
@@ -1035,8 +1063,10 @@
           .then((d) => {
             if (!d || d.ok === false) throw new Error("live");
             const price = d.priceOnRequest ? 0 : Number(d.price) || 0;
-            liveResult.set(key, { state: d.available ? "ok" : "no", price });
+            const state = d.available ? "ok" : relaxedSet.has(key) ? "request" : "no";
+            liveResult.set(key, { state, price });
             if (key !== liveKey(card)) return; // dates changed meanwhile
+            if (state === "request") return; // stays listed with the calendar estimate
             if (!d.available) {
               availabilitySet?.delete(uuid);
               availabilityPrice.delete(uuid);
@@ -1154,7 +1184,7 @@
             const img = $(".villa-card__media img", card);
             const src = img?.currentSrc || img?.getAttribute("src") || "";
             const st = live?.state || "pending";
-            const status = st === "ok" ? (price ? `${eur(price)} for ${nights} nights` : "Available · price on request") : st === "error" ? "Availability to be confirmed" : "Checking availability…";
+            const status = st === "ok" ? (price ? `${eur(price)} for ${nights} nights` : "Available · price on request") : st === "request" ? "On request (owner to confirm)" : st === "error" ? "Availability to be confirmed" : "Checking availability…";
             return `<a class="satsat__villa" href="${link}" data-key="${key}">
               <span class="satsat__img">${src ? `<img src="${src}" alt="" loading="lazy">` : ""}</span>
               <span class="satsat__text"><strong>${$(".villa-card__name", card)?.textContent || ""}</strong>
@@ -1177,7 +1207,8 @@
           .then((r) => r.json())
           .then((d) => {
             if (!d || d.ok === false) throw new Error("live");
-            satLive.set(key, { state: d.available ? "ok" : "no", price: d.priceOnRequest ? 0 : Number(d.price) || 0 });
+            const relaxed = stayCheck(staysData.villas[card.dataset.idx], a, b, nights).relaxed;
+            satLive.set(key, { state: d.available ? "ok" : relaxed ? "request" : "no", price: d.priceOnRequest ? 0 : Number(d.price) || 0 });
           })
           .catch(() => satLive.set(key, { state: "error", price: 0 }))
           .finally(() => scheduleApply());
