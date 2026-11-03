@@ -119,6 +119,26 @@ VILLA_BY_SLUG = {v["slug"]: v for v in VILLAS}
 # (exact GPS, worked out by fetch_invenio.py) as "<card number>:<km>" pairs, to keep pages small.
 VILLA_INDEX = {v["slug"]: i for i, v in enumerate(VILLAS)}
 
+# Instant date search (Edo, 3 Nov 2026): one small file the villa list loads when dates are picked —
+# per card number: confirmed booked ranges (data/busy.json, nightly calendar), nightly CLIENT rates
+# (PRICES, markup already applied, none on DCC), minimum nights and the short-stay rule.
+# Fingerprinted name, so the one-year asset cache never serves yesterday's calendar.
+_BUSY = load(DATA / "busy.json") if (DATA / "busy.json").exists() else {"busy": {}, "fetched_at": ""}
+STAYS = {
+    "updated": _BUSY.get("fetched_at", ""),
+    "villas": {
+        str(VILLA_INDEX[v["slug"]]): {
+            "b": _BUSY["busy"].get(v["v_uuid"].lower(), []),
+            "r": [[r["from"], r["to"], r["night"], r.get("min_nights") or 0] for r in PRICES.get(v["slug"], [])],
+            "m": v.get("min_nights") or 0,
+            "s": 1 if v.get("short_stays") else 0,
+        }
+        for v in VILLAS
+    },
+}
+STAYS_JSON = json.dumps(STAYS, separators=(",", ":"))
+STAYS_URL = f"/assets/data/stays.{hashlib.sha1(STAYS_JSON.encode()).hexdigest()[:10]}.json"
+
 # /assets/* is served with a one-year immutable cache (vercel.json), so the stylesheet and the
 # script are linked with a fingerprint of their content: a change reaches returning visitors at once.
 ASSET_VERSION = {
@@ -902,12 +922,38 @@ def date_range_field(from_name: str, to_name: str, *, from_id: str = "", to_id: 
           </div>"""
 
 
+PRICE_MATCH = SETTINGS.get("price_match", {})
+
+
+def price_match_url(villa_name: str = "") -> str:
+    """Enquiry form pre-filled for a price match (assets/js/site.js reads ?match=1)."""
+    q = {"match": "1"}
+    if villa_name:
+        q["villa"] = villa_name
+    return "/contact/?" + "&".join(f"{k}={quote(v)}" for k, v in q.items())
+
+
+def price_match_band() -> str:
+    """Price match guarantee (Edo, 3 Nov 2026): we match any price found on other websites."""
+    if not PRICE_MATCH:
+        return ""
+    return f"""
+<section class="price-match" aria-label="{esc(PRICE_MATCH['label'])}">
+  <div class="wrap price-match__inner">
+    <span class="price-match__badge">{icon('check')} {esc(PRICE_MATCH['label'])}</span>
+    <p><strong>{esc(PRICE_MATCH['title'])}</strong> {esc(PRICE_MATCH['text'])}</p>
+    <a class="link" href="{price_match_url()}">{esc(PRICE_MATCH['link_label'])}{icon('arrow')}</a>
+  </div>
+</section>"""
+
+
 def budget_range(attrs: tuple[str, str] = ("", "")) -> str:
-    """Budget per week, from – to (euros). With dates, the live price for the stay is compared per week."""
+    """Budget for the whole stay, from – to (euros), as on the portal. With dates: the price of the
+    stay; before dates are picked: the cheapest week (the card's "from" price)."""
     return f"""<div class="bed-range budget-range">
-            <input type="number" inputmode="numeric" min="0" step="500" name="pmin" placeholder="€ from" aria-label="Budget per week from (euros)" {attrs[0]}>
+            <input type="number" inputmode="numeric" min="0" step="500" name="pmin" placeholder="€ from" aria-label="Budget for the stay from (euros)" {attrs[0]}>
             <span aria-hidden="true">–</span>
-            <input type="number" inputmode="numeric" min="0" step="500" name="pmax" placeholder="€ to" aria-label="Budget per week up to (euros)" {attrs[1]}>
+            <input type="number" inputmode="numeric" min="0" step="500" name="pmax" placeholder="€ to" aria-label="Budget for the stay up to (euros)" {attrs[1]}>
           </div>"""
 
 
@@ -955,7 +1001,7 @@ def build_home() -> str:
           {bedrooms_range()}
         </div>
         <div class="search-field search-field--budget">
-          <span class="search-field__label">Budget / week</span>
+          <span class="search-field__label">Budget for the stay</span>
           {budget_range()}
         </div>
         <button class="btn" type="submit">{esc(search['submit'])}{icon('arrow')}</button>
@@ -1004,6 +1050,7 @@ def build_home() -> str:
   <span class="hero__scroll">{esc(hero['scroll_label'])}</span>
   {search_panel}
 </section>
+{price_match_band()}
 
 <section class="section home-intro">
   <div class="wrap">
@@ -1169,6 +1216,7 @@ def build_villas() -> str:
         <p class="eyebrow">The collection</p>
         <h1>Villas in Ibiza</h1>
         <p class="lede">{len(VILLAS)} private houses across {COUNTS['areas']} areas of the island — from fincas in the pine woods to contemporary villas above the sea. Every one visited, photographed and priced by us.</p>
+        <p class="price-match-note">{icon('check')} <strong>{esc(PRICE_MATCH.get('label', ''))}:</strong> {esc(PRICE_MATCH.get('text', ''))} <a href="{price_match_url()}">{esc(PRICE_MATCH.get('link_label', ''))}</a></p>
       </div>
       <div class="page-head__meta">
         <span><strong>{len(VILLAS)}</strong> villas</span>
@@ -1211,7 +1259,7 @@ def build_villas() -> str:
 <section class="results">
   <div class="wrap">
     <div class="availability-note" data-availability-note hidden></div>
-    <div class="results__grid" data-results>{cards}</div>
+    <div class="results__grid" data-results data-stays="{STAYS_URL}">{cards}</div>
     <div class="results__empty" data-empty>
       <h3>No villas match those filters</h3>
       <p class="lede" style="margin-inline:auto">Try widening the dates or the number of guests — or tell us what you are looking for and we will find it.</p>
@@ -1262,9 +1310,9 @@ def build_villas() -> str:
       {bedrooms_range(attrs=('data-filter="bmin"', 'data-filter="bmax"'))}
     </div>
     <div class="filter-group">
-      <h4>Budget per week</h4>
+      <h4>Budget for the stay</h4>
       {budget_range(attrs=('data-filter="pmin"', 'data-filter="pmax"'))}
-      <p class="filter-hint">With dates, the live price for your stay counts (per week).</p>
+      <p class="filter-hint">The price of your whole stay. Until you pick dates, we compare the cheapest week.</p>
     </div>
     <div class="filter-group">
       <h4>Sort by</h4>
@@ -1309,7 +1357,7 @@ def build_villas() -> str:
         title="The collection — private villas in Ibiza",
         description=(
             f"Browse {len(VILLAS)} private villas in Ibiza by area, guests, bedrooms and price. "
-            "Photographed and priced by a local team. Best price guaranteed."
+            "Photographed and priced by a local team. Price match guarantee."
         ),
         path="/villas/",
         body=body,
@@ -1354,7 +1402,7 @@ def build_villa(villa: dict) -> str:
     price_note = (
         f"Minimum {villa['min_nights']} nights"
         + (" · Short stays possible" if villa.get("short_stays") else "")
-        + " · Best price guaranteed"
+        + " · Price match guarantee"
     )
 
     guests = "".join(
@@ -1523,6 +1571,7 @@ def build_villa(villa: dict) -> str:
       <form class="booking" id="booking" novalidate data-villa-uuid="{villa['v_uuid']}" data-villa-name="{esc(villa['name'])}">
         <div class="booking__price">{price_html}</div>
         <p class="booking__note">{esc(price_note)}</p>
+        <p class="booking__match">{icon('check')} {esc(PRICE_MATCH.get('short', ''))} <a href="{price_match_url(villa['name'])}">{esc(PRICE_MATCH.get('link_label', ''))}</a></p>
         <div class="booking__fields">
           <div class="booking__field booking__field--wide booking__field--dates">
             {date_range_field("from", "to", from_id="book-from", to_id="book-to")}
@@ -1541,7 +1590,7 @@ def build_villa(villa: dict) -> str:
         </div>
         <div class="booking__assure">
           <span>{icon('check')} Local team, on the island</span>
-          <span>{icon('check')} Best price guaranteed</span>
+          <span>{icon('check')} Price match guarantee</span>
           <span>{icon('check')} No booking fee</span>
         </div>
       </form>
@@ -2208,6 +2257,8 @@ def main() -> None:
 
     # Assets
     shutil.copytree(ASSETS, STAGE / "assets")
+
+    write(STAYS_URL.lstrip("/"), STAYS_JSON)
 
     # Core pages
     write("index.html", build_home())

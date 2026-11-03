@@ -546,8 +546,8 @@
       dates: { from: dateFrom?.value || "", to: dateTo?.value || "" },
     });
 
-    // Budget per week: the card's weekly "from" price, or — with dates — the live price for the
-    // stay brought to a week (price × 7 / nights). Price on request never matches a budget.
+    // Budget for the whole stay (Edo, 3 Nov 2026; as on the portal): with dates, the price of the stay;
+    // before dates are picked, the cheapest week (the card's "from" price). Price on request never matches.
     let availabilityPrice = new Map();
     const stayNights = () => {
       const f = dateFrom?.value;
@@ -555,15 +555,13 @@
       return f && t ? Math.round((Date.parse(`${t}T00:00:00Z`) - Date.parse(`${f}T00:00:00Z`)) / 86400000) : 0;
     };
     const stayPrice = (card) => availabilityPrice.get(String(card.dataset.uuid || "").toLowerCase()) || 0;
-    const weeklyPrice = (card) => {
-      const nights = stayNights();
-      const live = stayPrice(card);
-      if (availabilitySet && nights && live) return (live * 7) / nights;
+    const budgetPrice = (card) => {
+      if (availabilitySet && stayNights()) return stayPrice(card);
       return Number(card.dataset.price) || 0;
     };
     const inBudget = (card, state) => {
       if (!state.pmin && !state.pmax) return true;
-      const p = weeklyPrice(card);
+      const p = budgetPrice(card);
       if (!p) return false;
       return (!state.pmin || p >= Number(state.pmin)) && (!state.pmax || p <= Number(state.pmax));
     };
@@ -622,7 +620,7 @@
       const loose = { ...state, bmin: "", bmax: "", guests: "", pmin: "", pmax: "" };
       const cap = state.pmax ? Number(state.pmax) * (1 + OVER_BUDGET_TOLERANCE) : null;
       const pool = new Set(
-        cards.filter((c) => matches(c, loose) && Number(c.dataset.bedrooms) < need && (!cap || (weeklyPrice(c) && weeklyPrice(c) <= cap)))
+        cards.filter((c) => matches(c, loose) && Number(c.dataset.bedrooms) < need && (!cap || (budgetPrice(c) && budgetPrice(c) <= cap)))
       );
       const found = [];
       pool.forEach((a) => {
@@ -631,8 +629,8 @@
           const beds = Number(a.dataset.bedrooms) + Number(b.dataset.bedrooms);
           const sleeps = Number(a.dataset.sleeps) + Number(b.dataset.sleeps);
           if (beds < need || (guests && sleeps < guests)) return;
-          const pa = weeklyPrice(a);
-          const pb = weeklyPrice(b);
+          const pa = budgetPrice(a);
+          const pb = budgetPrice(b);
           const total = pa && pb ? pa + pb : null;
           if (cap && (total === null || total > cap)) return;
           found.push({ a, b, km, beds, sleeps, total, spare: beds - need });
@@ -698,7 +696,7 @@
         .map((p) => {
           const q = new URLSearchParams(params);
           q.set("villa", `${$(".villa-card__name", p.a)?.textContent} + ${$(".villa-card__name", p.b)?.textContent}`);
-          const total = p.total === null ? "price on request" : dated ? `${eur((p.total * stayNights()) / 7)} for your dates` : `from ${eur(p.total)} / week`;
+          const total = p.total === null ? "price on request" : dated ? `${eur(p.total)} for your dates` : `from ${eur(p.total)} / week`;
           return `<div class="pair">
             <div class="pair__villas">${pairVillaHtml(p.a)}<span class="pair__plus" aria-hidden="true">+</span>${pairVillaHtml(p.b)}</div>
             <div class="pair__foot">
@@ -761,7 +759,8 @@
       if (state.pmin || state.pmax) {
         const eur = (n) => `€${Number(n).toLocaleString("en-GB")}`;
         const label = state.pmin && state.pmax ? `${eur(state.pmin)} – ${eur(state.pmax)}` : state.pmin ? `From ${eur(state.pmin)}` : `Up to ${eur(state.pmax)}`;
-        chips.push(makeChip(`${label} / week`, "budget"));
+        const dated = Boolean(availabilitySet && stayNights());
+        chips.push(makeChip(`${label} ${dated ? "for the stay" : "(a week, until you pick dates)"}`, "budget"));
       }
       if (state.dates.from && state.dates.to) chips.push(makeChip(formatRange(state.dates.from, state.dates.to), "dates"));
       if (savedOnly) chips.push(makeChip("Saved villas", "saved"));
@@ -803,10 +802,77 @@
       noteEl.classList.toggle("is-muted", muted);
     };
 
+    // Instant date search (Edo, 3 Nov 2026): the owners' calendars (nightly copy, confirmed bookings
+    // only) and the nightly rates come in one small file (data-stays on the results grid), loaded the
+    // first time dates are picked. A villa is free when no booking overlaps the stay and the stay meets
+    // its minimum nights (unless it takes short stays). The stay price is estimated from the nightly
+    // rates; the villa page still checks availability and the exact price live with IMpulse.
+    let staysData = null;
+    const loadStays = async () => {
+      if (staysData) return staysData;
+      const url = results.dataset.stays;
+      if (!url) throw new Error("no stays file");
+      const response = await fetch(url);
+      if (!response.ok) throw new Error("stays file");
+      staysData = await response.json();
+      return staysData;
+    };
+    const dayAfter = (iso) => {
+      const d = new Date(`${iso}T00:00:00Z`);
+      d.setUTCDate(d.getUTCDate() + 1);
+      return d.toISOString().slice(0, 10);
+    };
+    const estimateStay = (rates, from, to, nights) => {
+      let total = 0;
+      for (let d = from; d < to; d = dayAfter(d)) {
+        const covering = rates.filter((r) => r[0] <= d && d <= r[1]);
+        if (!covering.length) return 0;
+        const fitting = covering.filter((r) => !r[3] || r[3] <= nights);
+        const pick = (fitting.length ? fitting : covering).reduce((best, r) => (r[3] > best[3] ? r : best));
+        total += pick[2];
+      }
+      return Math.round(total);
+    };
+    const freeFor = (villa, from, to, nights) =>
+      villa.b.every(([ci, co]) => !(ci < to && co > from)) && (villa.s || !villa.m || nights >= villa.m);
+
     const loadAvailability = async () => {
       const from = dateFrom?.value || "";
       const to = dateTo?.value || "";
       const request = ++availabilityRequest;
+      if (!from || !to || to <= from) return loadLiveAvailability();
+      try {
+        const data = await loadStays();
+        if (request !== availabilityRequest) return;
+        const nights = Math.round((Date.parse(`${to}T00:00:00Z`) - Date.parse(`${from}T00:00:00Z`)) / 86400000);
+        const free = new Set();
+        const prices = new Map();
+        cards.forEach((card) => {
+          const villa = data.villas[card.dataset.idx];
+          if (!villa || !freeFor(villa, from, to, nights)) return;
+          const uuid = String(card.dataset.uuid || "").toLowerCase();
+          free.add(uuid);
+          const total = estimateStay(villa.r, from, to, nights);
+          if (total) prices.set(uuid, total);
+        });
+        availabilitySet = free;
+        availabilityPrice = prices;
+        const updated = data.updated ? new Date(data.updated).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : "";
+        setNote(
+          `<strong>${free.size}</strong> villas free for <strong>${formatRange(from, to)}</strong> (${nights} nights), from the owners' calendars${updated ? ` of ${updated}` : ""}. Prices are estimates for your dates — each villa page confirms availability and the exact price live.`
+        );
+        apply();
+      } catch (error) {
+        if (request !== availabilityRequest) return;
+        loadLiveAvailability();
+      }
+    };
+
+    // Backup: the live IMpulse check for all villas (slow, ~20 s), used only if the calendar file can't be read.
+    const loadLiveAvailability = async () => {
+      const from = dateFrom?.value || "";
+      const to = dateTo?.value || "";
+      const request = availabilityRequest;
       availabilitySet = null;
 
       if (!from || !to) {
@@ -1188,6 +1254,13 @@
     const prefill = () => {
       const params = new URLSearchParams(window.location.search);
       const villa = params.get("villa");
+      // Price match (Edo, 3 Nov 2026): ?match=1 opens a ready-worded request.
+      if (params.get("match")) {
+        const message = $("#c-message");
+        if (message && !message.value) {
+          message.value = `I found ${villa || "a villa"} for a lower price on another website. Here is the link: \n\nCould you match that price?`;
+        }
+      }
       const arrive = params.get("arrive") || params.get("from");
       const depart = params.get("depart") || params.get("to");
       const guests = params.get("guests");
@@ -1195,7 +1268,7 @@
         const field = $("#c-villa");
         if (field) field.value = villa;
         const message = $("#c-message");
-        if (message && !message.value) message.value = `We would like to enquire about ${villa}.`;
+        if (message && !message.value && !params.get("match")) message.value = `We would like to enquire about ${villa}.`;
       }
       if (arrive || depart) {
         const field = $("#c-dates");

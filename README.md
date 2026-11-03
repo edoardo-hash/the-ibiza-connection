@@ -186,8 +186,23 @@ availability), the list is topped up with the **closest villas outside it** by a
 GPS until **8** are shown, under a note and with a "Nearby · area · km" badge
 (`NEARBY_TRIGGER` / `MIN_RESULTS` in `assets/js/site.js`).
 
-**Budget per week, from – to** (`pmin` / `pmax`): the card's weekly "from" price, or with
-dates the live price for the stay brought to a week. Price on request never matches a budget.
+**Budget for the stay, from – to** (`pmin` / `pmax`, as on the portal): with dates, the
+price of the whole stay; before dates are picked, the cheapest week. Price on request never
+matches a budget.
+
+**Instant date search:** no live call. `fetch_invenio.py` saves the confirmed bookings from
+the netcup mirror's nightly `api_villa_calendar` (`data/busy.json`; under offer / requested /
+cancelled don't block, portal rule); `build.py` writes one fingerprinted file
+(`/assets/data/stays.<hash>.json`: per card, booked ranges, nightly client rates, minimum
+nights, short-stay rule) that the villa list loads when dates are picked. Free = no booking
+overlapping the stay and minimum nights met (unless short stays). The stay price is
+estimated from the nightly rates (checked against IMpulse for 3–10 Jul 2027: 201 of 203
+free villas found, all prices within 2 %). The villa page still checks live with IMpulse.
+If the file can't be loaded, the old live search (~20 s) runs instead.
+
+**Price match guarantee** (`price_match` in `content/settings.json`): band under the home
+search, note on the villa list, line in every booking box; "Send us the link" opens the
+enquiry form pre-worded (`/contact/?match=1&villa=…`).
 
 **Two villas together** (the portal's villa-groups logic, 2 villas / 5 km): when a search
 with bedrooms "from" finds no single villa (in the chosen place), up to 6 pairs are shown —

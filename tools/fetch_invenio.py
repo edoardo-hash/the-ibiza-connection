@@ -800,6 +800,38 @@ def main() -> None:
         "max_sleeps": max([v["sleeps"] for v in villas] or [0]),
     }
 
+    # Booked dates for the instant date search (Edo, 3 Nov 2026). Read from the netcup mirror's
+    # nightly copy of api_villa_calendar (no IMpulse load); IMpulse directly only if that fails.
+    # Only "Confirmed" blocks count (portal rule: under offer / requested don't block until paid);
+    # cancelled ones are ignored. The villa page still checks availability live before booking.
+    busy: dict[str, list[list[str]]] = {}
+    try:
+        cal_rows = []
+        mirror = os.environ.get("INVENIO_LR_BASE_URL", "").strip()
+        for base in ([mirror] if mirror else []) + [None]:
+            try:
+                cal_rows, cal_size = api_form("api_villa_calendar", [{"v_uuid": ""}], base=base)
+            except Exception as exc:  # noqa: BLE001
+                print(f"  ! calendar from {base or 'IMpulse'} failed ({exc})")
+            if cal_rows:
+                break
+        listed = {v["v_uuid"].lower() for v in villas}
+        today_iso = datetime.now(timezone.utc).date().isoformat()
+        for r in cal_rows:
+            uuid = str(r.get("v_uuid") or "").strip().lower()
+            if uuid not in listed or str(r.get("status") or "").strip().lower() != "confirmed":
+                continue
+            ci, co = str(r.get("checkin") or "")[:10], str(r.get("checkout") or "")[:10]
+            if len(ci) == 10 and len(co) == 10 and co > today_iso and co > ci:
+                busy.setdefault(uuid, []).append([ci, co])
+        for ranges in busy.values():
+            ranges.sort()
+        print(f"  calendar: {sum(len(x) for x in busy.values())} confirmed bookings on {len(busy)} villas")
+    except Exception as exc:  # noqa: BLE001
+        print(f"  ! calendar skipped ({exc}); date searches fall back to live availability")
+    if busy or not (DATA / "busy.json").exists():
+        (DATA / "busy.json").write_text(json.dumps({"fetched_at": iso_now(), "busy": busy}, separators=(",", ":")), encoding="utf-8")
+
     (DATA / "villas.json").write_text(json.dumps(villas, ensure_ascii=False, indent=1), encoding="utf-8")
     (DATA / "prices.json").write_text(json.dumps(public_prices, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (DATA / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -574,6 +574,20 @@ body.menu-open .site-menu { opacity: 1; visibility: visible; }
   letter-spacing: 0.08em;
 }
 
+/* Price match guarantee ------------------------------------------------- */
+.price-match { background: var(--sea); color: var(--bone); }
+.price-match__inner { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; padding-block: 22px; }
+.price-match__badge { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--clay-soft); }
+.price-match__badge svg, .price-match-note svg, .booking__match svg { width: 14px; height: 14px; flex-shrink: 0; }
+.price-match p { margin: 0; flex: 1 1 420px; font-size: 16px; font-weight: 400; color: rgba(246, 241, 231, 0.9); }
+.price-match p strong { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; color: var(--bone); margin-right: 6px; }
+.price-match .link { color: var(--bone); border-color: rgba(246, 241, 231, 0.5); }
+.price-match-note { margin-top: 18px; font-size: 14px; color: var(--ink-2); display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.price-match-note a, .booking__match a { text-decoration: underline; text-underline-offset: 3px; }
+.price-match-note svg, .booking__match svg { color: var(--clay); align-self: center; }
+.booking__match { display: block; margin: -4px 0 14px; padding: 10px 12px; background: rgba(162, 98, 60, 0.08); font-size: 13px; line-height: 1.5; }
+.booking__match svg { display: inline-block; vertical-align: -2px; margin-right: 4px; }
+
 /* Two villas together (pairs within 5 km) -------------------------------- */
 .pairs { grid-column: 1 / -1; padding: 28px 0 8px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
 .pairs h3 { font-size: clamp(1.6rem, 2.4vw, 2.2rem); margin-bottom: 8px; }

@@ -7,7 +7,7 @@
     "url": "https://theibizaconnection.net",
     "locale": "en_GB",
     "tagline": "Private villas and island living, arranged by people who live here.",
-    "description": "A hand-picked collection of private villas in Ibiza, with boat days, cars and concierge arranged by a local team in Santa Eulària. Best price guaranteed.",
+    "description": "A hand-picked collection of private villas in Ibiza, with boat days, cars and concierge arranged by a local team in Santa Eulària. Price match guarantee: found it for less elsewhere? We'll match it.",
     "email": "mail@theibizaconnection.net",
     "phone_display": "+34 697 87 58 90",
     "phone": "+34697875890",
@@ -165,5 +165,12 @@
       "name": "Can Best",
       "note": "Removed by Edo, 2 Nov 2026 (description in IMpulse is just \"i\")"
     }
-  ]
+  ],
+  "price_match": {
+    "label": "Price match guarantee",
+    "title": "Found it for less? We'll match it.",
+    "text": "If you find the same villa for less on another website, send us the link and we will match the price.",
+    "short": "Seen this villa for less on another website? Send us the link and we'll match the price.",
+    "link_label": "Send us the link"
+  }
 }
