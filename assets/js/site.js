@@ -1315,7 +1315,7 @@
       const mailto = `mailto:${form.dataset.mailto}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
       window.location.href = mailto;
       showStatus(
-        "Your email app should open with the enquiry ready to send. If it does not, write to mail@theibizaconnection.net or message us on WhatsApp."
+        "Your email app should open with the enquiry ready to send. If it does not, write to info@theibizaconnection.net or message us on WhatsApp."
       );
     });
 
