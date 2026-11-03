@@ -181,6 +181,20 @@
   "nightly_from": 4715,
   "nightly_to": 6286,
   "rate_rows": 7,
+  "licensed_bedrooms": 14,
+  "licensed_bathrooms": 9,
+  "licence_check": {
+   "status": "format_differs",
+   "ok": true,
+   "licence": "VTV-02166",
+   "register_licence": "ETV2166E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Number 2166 is correct, but IMpulse has 'VTV-02166' and the register has ETV2166E",
+    "Shown for 28 guests; the register allows 8 places"
+   ]
+  },
   "near": [
    [
     "puesta-del-sol",
@@ -507,6 +521,19 @@
   "nightly_from": 6600,
   "nightly_to": 11000,
   "rate_rows": 12,
+  "licensed_bedrooms": 11,
+  "licensed_bathrooms": 10,
+  "licence_check": {
+   "status": "other_register",
+   "ok": true,
+   "licence": "AG-0037-E",
+   "register_licence": null,
+   "register_places": null,
+   "register_municipality": null,
+   "issues": [
+    "'AG-0037-E' is an agroturismo licence: not in the tourist-home list, check it in its own register"
+   ]
+  },
   "near": [
    [
     "villa-trevi",
@@ -590,10 +617,6 @@
    ],
    [
     "casa-alhena",
-    5.0
-   ],
-   [
-    "villa-brisa",
     5.0
    ],
    [
@@ -946,6 +969,19 @@
   "nightly_from": 11429,
   "nightly_to": 18572,
   "rate_rows": 6,
+  "licensed_bedrooms": 9,
+  "licensed_bathrooms": 9,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "VTV-0053-EIF",
+   "register_licence": "VTV0053EIF",
+   "register_places": 6,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": [
+    "Shown for 20 guests; the register allows 6 places"
+   ]
+  },
   "near": [
    [
     "can-xarraca",
@@ -1190,6 +1226,19 @@
   "nightly_from": 6429,
   "nightly_to": 12858,
   "rate_rows": 11,
+  "licensed_bedrooms": 9,
+  "licensed_bathrooms": 9,
+  "licence_check": {
+   "status": "other_register",
+   "ok": true,
+   "licence": "AG-0043-E.",
+   "register_licence": null,
+   "register_places": null,
+   "register_municipality": null,
+   "issues": [
+    "'AG-0043-E.' is an agroturismo licence: not in the tourist-home list, check it in its own register"
+   ]
+  },
   "near": [
    [
     "can-noelia",
@@ -1238,10 +1287,6 @@
    [
     "villa-serenya",
     3.5
-   ],
-   [
-    "villa-brisa",
-    4.0
    ],
    [
     "villa-lino",
@@ -1337,7 +1382,7 @@
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
   "bedrooms": 9,
-  "bathrooms": 9,
+  "bathrooms": 11,
   "sleeps": 17,
   "price_from": 11011,
   "price_to": 30800,
@@ -1475,6 +1520,19 @@
   "nightly_from": 1573,
   "nightly_to": 4400,
   "rate_rows": 11,
+  "licensed_bedrooms": 9,
+  "licensed_bathrooms": 9,
+  "licence_check": {
+   "status": "other_register",
+   "ok": true,
+   "licence": "AG-0046-E",
+   "register_licence": null,
+   "register_places": null,
+   "register_municipality": null,
+   "issues": [
+    "'AG-0046-E' is an agroturismo licence: not in the tourist-home list, check it in its own register"
+   ]
+  },
   "near": [
    [
     "cana-celeste",
@@ -1566,10 +1624,6 @@
    ],
    [
     "can-vina",
-    4.5
-   ],
-   [
-    "villa-brisa",
     4.5
    ],
    [
@@ -1828,6 +1882,17 @@
   "nightly_from": 1971,
   "nightly_to": 4212,
   "rate_rows": 11,
+  "licensed_bedrooms": 8,
+  "licensed_bathrooms": 7,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-1041-E",
+   "register_licence": "ET1041E",
+   "register_places": 16,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
    [
     "can-leilani",
@@ -1843,10 +1908,6 @@
    ],
    [
     "can-xarraca",
-    4.0
-   ],
-   [
-    "villa-brisa",
     4.0
    ],
    [
@@ -1927,8 +1988,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 8,
-  "bathrooms": 8,
+  "bedrooms": 9,
+  "bathrooms": 9,
   "sleeps": 16,
   "price_from": 33000,
   "price_to": 60500,
@@ -2169,6 +2230,17 @@
   "nightly_from": 4715,
   "nightly_to": 8643,
   "rate_rows": 5,
+  "licensed_bedrooms": 8,
+  "licensed_bathrooms": 8,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1257-E and ET-0851-E",
+   "register_licence": "ETV1257E + ET0851E",
+   "register_places": 16,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-porroig-relax",
@@ -2231,10 +2303,6 @@
     2.5
    ],
    [
-    "la-flaca",
-    2.5
-   ],
-   [
     "villa-amazonia",
     2.5
    ],
@@ -2268,10 +2336,6 @@
    ],
    [
     "villa-marielle",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -2590,11 +2654,18 @@
   "nightly_from": 11597,
   "nightly_to": 22433,
   "rate_rows": 6,
+  "licensed_bedrooms": 7,
+  "licensed_bathrooms": 7,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-1112-E",
+   "register_licence": "ET1112E",
+   "register_places": 14,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
-   [
-    "la-flaca",
-    0.5
-   ],
    [
     "villa-amaris",
     0.5
@@ -2717,10 +2788,6 @@
    ],
    [
     "villa-hailey",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -2995,6 +3062,17 @@
   "nightly_from": 708,
   "nightly_to": 1650,
   "rate_rows": 9,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-0972-E",
+   "register_licence": "ETV0972E",
+   "register_places": 12,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "can-carva",
@@ -3159,7 +3237,7 @@
   "district": "San Antonio de Portmany",
   "country": "Spain",
   "bedrooms": 6,
-  "bathrooms": 6,
+  "bathrooms": 7,
   "sleeps": 12,
   "price_from": 9900,
   "price_to": 18425,
@@ -3281,6 +3359,17 @@
   "nightly_from": 1415,
   "nightly_to": 2633,
   "rate_rows": 14,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1794-EIF",
+   "register_licence": "ETV1794EIF",
+   "register_places": 12,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "can-ki",
@@ -3554,6 +3643,19 @@
   "nightly_from": 1493,
   "nightly_to": 3379,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1191-E",
+   "register_licence": "ETV1191E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Shown for 12 guests; the register allows 10 places"
+   ]
+  },
   "near": [
    [
     "la-perla-escondida",
@@ -3644,10 +3746,6 @@
     3.5
    ],
    [
-    "la-flaca",
-    3.5
-   ],
-   [
     "villa-amaris",
     3.5
    ],
@@ -3733,10 +3831,6 @@
    ],
    [
     "villa-ivy",
-    4.5
-   ],
-   [
-    "villa-nia",
     4.5
    ],
    [
@@ -3860,7 +3954,7 @@
   "district": "Ibiza",
   "country": "Spain",
   "bedrooms": 6,
-  "bathrooms": 6,
+  "bathrooms": 5,
   "sleeps": 12,
   "price_from": 6600,
   "price_to": 15730,
@@ -3966,6 +4060,17 @@
   "nightly_from": 943,
   "nightly_to": 2248,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2546-E",
+   "register_licence": "ETV2546E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-nik",
@@ -4181,8 +4286,8 @@
   "region_name": "San Juan",
   "district": "San Juan de Labritja",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 8,
+  "bathrooms": 8,
   "sleeps": 12,
   "price_from": 10996,
   "price_to": 21704,
@@ -4334,6 +4439,17 @@
   "nightly_from": 1496,
   "nightly_to": 3101,
   "rate_rows": 13,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0354-E",
+   "register_licence": "ET0354E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-amaya",
@@ -4865,6 +4981,17 @@
   "nightly_from": 2483,
   "nightly_to": 4950,
   "rate_rows": 13,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 7,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2336-E",
+   "register_licence": "ETV2336E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-jeanette",
@@ -5222,6 +5349,17 @@
   "nightly_from": 1022,
   "nightly_to": 1415,
   "rate_rows": 6,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1274-E",
+   "register_licence": "ETV1274E",
+   "register_places": 12,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "villa-gie",
@@ -5602,6 +5740,17 @@
   "nightly_from": 877,
   "nightly_to": 1746,
   "rate_rows": 13,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV2008E",
+   "register_licence": "ETV2008E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "cana-calma",
@@ -5665,10 +5814,6 @@
    ],
    [
     "casa-alhena",
-    3.5
-   ],
-   [
-    "villa-brisa",
     3.5
    ],
    [
@@ -5925,11 +6070,18 @@
   "nightly_from": 2420,
   "nightly_to": 4699,
   "rate_rows": 6,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0819-E",
+   "register_licence": "ET0819E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
-   [
-    "villa-nia",
-    0.5
-   ],
    [
     "can-vista-cala-jondal",
     1.0
@@ -6103,10 +6255,6 @@
     4.0
    ],
    [
-    "la-flaca",
-    4.0
-   ],
-   [
     "villa-amazonia",
     4.0
    ],
@@ -6216,7 +6364,7 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 5,
+  "bedrooms": 6,
   "bathrooms": 4,
   "sleeps": 12,
   "price_from": 11550,
@@ -6393,6 +6541,17 @@
   "nightly_from": 1650,
   "nightly_to": 4400,
   "rate_rows": 8,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1426-E",
+   "register_licence": "ETV1426E",
+   "register_places": 12,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "can-solis",
@@ -6744,6 +6903,17 @@
   "nightly_from": 1415,
   "nightly_to": 1886,
   "rate_rows": 5,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1873-E",
+   "register_licence": "ETV1873E",
+   "register_places": 12,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
    [
     "villa-gina",
@@ -6759,10 +6929,6 @@
    ],
    [
     "cielo-del-norte",
-    4.0
-   ],
-   [
-    "villa-brisa",
     4.0
    ],
    [
@@ -6852,8 +7018,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 5,
+  "bedrooms": 8,
+  "bathrooms": 8,
   "sleeps": 12,
   "price_from": 30000,
   "price_to": 99500,
@@ -7180,6 +7346,17 @@
   "nightly_from": 4286,
   "nightly_to": 14215,
   "rate_rows": 9,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1461-E",
+   "register_licence": "ETV1461E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-balena",
@@ -7605,6 +7782,17 @@
   "nightly_from": 693,
   "nightly_to": 6930,
   "rate_rows": 20,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1532-E",
+   "register_licence": "ETV1532E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-paradis",
@@ -7773,8 +7961,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 8,
+  "bathrooms": 8,
   "sleeps": 12,
   "price_from": 27500,
   "price_to": 41800,
@@ -7981,6 +8169,19 @@
   "nightly_from": 3929,
   "nightly_to": 5972,
   "rate_rows": 6,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1434-E",
+   "register_licence": "ETV1434E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Shown for 12 guests; the register allows 10 places"
+   ]
+  },
   "near": [
    [
     "villa-paraiso",
@@ -8008,10 +8209,6 @@
    ],
    [
     "villa-can-exotic",
-    2.0
-   ],
-   [
-    "villa-nia",
     2.0
    ],
    [
@@ -8163,10 +8360,6 @@
     5.0
    ],
    [
-    "la-flaca",
-    5.0
-   ],
-   [
     "villa-amazonia",
     5.0
    ],
@@ -8276,7 +8469,7 @@
   "district": "San Juan de Labritja",
   "country": "Spain",
   "bedrooms": 6,
-  "bathrooms": 5,
+  "bathrooms": 6,
   "sleeps": 12,
   "price_from": 12980,
   "price_to": 15015,
@@ -8423,6 +8616,17 @@
   "nightly_from": 1855,
   "nightly_to": 2145,
   "rate_rows": 2,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2112-E",
+   "register_licence": "ETV2112E",
+   "register_places": 12,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
    [
     "can-mira",
@@ -8510,10 +8714,6 @@
    ],
    [
     "can-nora",
-    4.5
-   ],
-   [
-    "villa-brisa",
     4.5
    ],
    [
@@ -8765,6 +8965,17 @@
   "nightly_from": 2051,
   "nightly_to": 3929,
   "rate_rows": 5,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1129E",
+   "register_licence": "ETV1129E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-beth",
@@ -8995,8 +9206,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 5,
+  "bedrooms": 8,
+  "bathrooms": 7,
   "sleeps": 12,
   "price_from": 49999,
   "price_to": 70000,
@@ -9235,6 +9446,17 @@
   "nightly_from": 7143,
   "nightly_to": 10000,
   "rate_rows": 5,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0445-E",
+   "register_licence": "ET0445E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-solaire",
@@ -9645,6 +9867,17 @@
   "nightly_from": 786,
   "nightly_to": 2515,
   "rate_rows": 23,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV2413E",
+   "register_licence": "ETV2413E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-monica",
@@ -9838,8 +10071,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 4,
+  "bedrooms": 6,
+  "bathrooms": 5,
   "sleeps": 12,
   "price_from": 11660,
   "price_to": 29150,
@@ -9994,6 +10227,19 @@
   "nightly_from": 1666,
   "nightly_to": 4165,
   "rate_rows": 13,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2389-E",
+   "register_licence": "ETV2389E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Shown for 12 guests; the register allows 10 places"
+   ]
+  },
   "near": [
    [
     "villa-zaria",
@@ -10021,10 +10267,6 @@
    ],
    [
     "el-sueno-marino",
-    2.0
-   ],
-   [
-    "la-flaca",
     2.0
    ],
    [
@@ -10212,10 +10454,6 @@
     5.0
    ],
    [
-    "villa-nia",
-    5.0
-   ],
-   [
     "villa-tess",
     5.0
    ]
@@ -10280,8 +10518,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 7,
+  "bathrooms": 8,
   "sleeps": 12,
   "price_from": 20000,
   "price_to": 45000,
@@ -10501,6 +10739,19 @@
   "nightly_from": 2572,
   "nightly_to": 6429,
   "rate_rows": 12,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2565-E",
+   "register_licence": "ETV2565E",
+   "register_places": 11,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Shown for 12 guests; the register allows 11 places"
+   ]
+  },
   "near": [
    [
     "villa-centelleo",
@@ -10584,10 +10835,6 @@
    ],
    [
     "villa-marielle",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -10807,8 +11054,8 @@
   "region_name": "San Juan",
   "district": "San Juan de Labritja",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 8,
+  "bathrooms": 8,
   "sleeps": 12,
   "price_from": 19375,
   "price_to": 40000,
@@ -11023,6 +11270,17 @@
   "nightly_from": 2768,
   "nightly_to": 5715,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1156-E",
+   "register_licence": "ETV1156E",
+   "register_places": 12,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
    [
     "villa-carrion",
@@ -11090,10 +11348,6 @@
    ],
    [
     "villa-amaya",
-    4.5
-   ],
-   [
-    "villa-brisa",
     4.5
    ],
    [
@@ -11188,7 +11442,7 @@
   "district": "San Juan de Labritja",
   "country": "Spain",
   "bedrooms": 6,
-  "bathrooms": 4,
+  "bathrooms": 5,
   "sleeps": 12,
   "price_from": 15125,
   "price_to": 61600,
@@ -11375,6 +11629,17 @@
   "nightly_from": 2161,
   "nightly_to": 8800,
   "rate_rows": 17,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2167-E",
+   "register_licence": "ETV2167E",
+   "register_places": 12,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
    [
     "finca-utopia-xarraca",
@@ -11623,6 +11888,17 @@
   "nightly_from": 629,
   "nightly_to": 2908,
   "rate_rows": 16,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 7,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV1435E",
+   "register_licence": "ETV1435E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "cana-gotas",
@@ -12096,6 +12372,17 @@
   "nightly_from": 582,
   "nightly_to": 1320,
   "rate_rows": 11,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-1073-E",
+   "register_licence": "ET1073E",
+   "register_places": 12,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "casa-yolanda-2",
@@ -12217,8 +12504,8 @@
   "region_name": "San Antonio",
   "district": "San Antonio de Portmany",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 5,
+  "bedrooms": 7,
+  "bathrooms": 6,
   "sleeps": 12,
   "price_from": 4422,
   "price_to": 10780,
@@ -12356,6 +12643,17 @@
   "nightly_from": 632,
   "nightly_to": 1540,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-1073-E",
+   "register_licence": "ET1073E",
+   "register_places": 12,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "casa-yolanda-1",
@@ -12629,6 +12927,17 @@
   "nightly_from": 1258,
   "nightly_to": 1886,
   "rate_rows": 8,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1615-E",
+   "register_licence": "ETV1615E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-cabrit",
@@ -13138,6 +13447,20 @@
   "nightly_from": 1650,
   "nightly_to": 1870,
   "rate_rows": 5,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "format_differs",
+   "ok": true,
+   "licence": "ETC1922EO",
+   "register_licence": "ETV1922E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": [
+    "Number 1922 is correct, but IMpulse has 'ETC1922EO' and the register has ETV1922E",
+    "Shown for 12 guests; the register allows 10 places"
+   ]
+  },
   "near": [
    [
     "can-de-baix",
@@ -13177,10 +13500,6 @@
    ],
    [
     "the-beach-house-cala-llenya",
-    3.5
-   ],
-   [
-    "villa-brisa",
     3.5
    ],
    [
@@ -13465,6 +13784,17 @@
   "nightly_from": 1965,
   "nightly_to": 4636,
   "rate_rows": 11,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 7,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1176-E",
+   "register_licence": "ETV1176E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-diso",
@@ -13877,6 +14207,17 @@
   "nightly_from": 1415,
   "nightly_to": 4597,
   "rate_rows": 12,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0661-E",
+   "register_licence": "ET0661E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-balena",
@@ -14177,8 +14518,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 8,
+  "bathrooms": 8,
   "sleeps": 12,
   "price_from": 104500,
   "price_to": 104500,
@@ -14403,6 +14744,17 @@
   "nightly_from": 14929,
   "nightly_to": 14929,
   "rate_rows": 3,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2115-E",
+   "register_licence": "ETV2115E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-mambo",
@@ -14926,6 +15278,19 @@
   "nightly_from": 4400,
   "nightly_to": 12100,
   "rate_rows": 15,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1793-E",
+   "register_licence": "ETV1793E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Shown for 12 guests; the register allows 8 places"
+   ]
+  },
   "near": [
    [
     "villa-charlotte",
@@ -14954,10 +15319,6 @@
    [
     "villa-serenity",
     0.5
-   ],
-   [
-    "la-flaca",
-    1.0
    ],
    [
     "villa-amazonia",
@@ -15049,10 +15410,6 @@
    ],
    [
     "villa-frankie",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -15177,8 +15534,8 @@
   "region_name": "San Juan",
   "district": "San Juan de Labritja",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 7,
+  "bathrooms": 7,
   "sleeps": 12,
   "price_from": 11100,
   "price_to": 24468,
@@ -15318,6 +15675,17 @@
   "nightly_from": 1586,
   "nightly_to": 3496,
   "rate_rows": 11,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1991-E",
+   "register_licence": "ETV1991E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-cecilia",
@@ -15676,6 +16044,17 @@
   "nightly_from": 1320,
   "nightly_to": 2750,
   "rate_rows": 13,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-0986-E",
+   "register_licence": "ETV0986E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-beth",
@@ -15909,8 +16288,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 7,
+  "bathrooms": 7,
   "sleeps": 12,
   "price_from": 50000,
   "price_to": 100000,
@@ -16098,6 +16477,19 @@
   "nightly_from": 6429,
   "nightly_to": 55000,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "format_differs",
+   "ok": true,
+   "licence": "ETV-1101-E",
+   "register_licence": "ET1101E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Number 1101 is correct, but IMpulse has 'ETV-1101-E' and the register has ET1101E"
+   ]
+  },
   "near": [
    [
     "can-tehani",
@@ -16193,10 +16585,6 @@
    ],
    [
     "villa-marielle",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -16594,6 +16982,17 @@
   "nightly_from": 629,
   "nightly_to": 2750,
   "rate_rows": 7,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1190-E",
+   "register_licence": "ETV1190E",
+   "register_places": 12,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "can-ki",
@@ -16895,6 +17294,17 @@
   "nightly_from": 2358,
   "nightly_to": 2750,
   "rate_rows": 7,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2450-E",
+   "register_licence": "ETV2450E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-simo",
@@ -17366,6 +17776,17 @@
   "nightly_from": 578,
   "nightly_to": 1898,
   "rate_rows": 16,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0435-E",
+   "register_licence": "ET0435E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-agustin",
@@ -17683,6 +18104,17 @@
   "nightly_from": 2286,
   "nightly_to": 3572,
   "rate_rows": 7,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1470-E",
+   "register_licence": "ETV1470E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-casita",
@@ -17790,10 +18222,6 @@
    ],
    [
     "villa-jayden",
-    3.5
-   ],
-   [
-    "villa-nia",
     3.5
    ],
    [
@@ -18062,6 +18490,17 @@
   "nightly_from": 1258,
   "nightly_to": 1745,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1383-E",
+   "register_licence": "ETV1383E",
+   "register_places": 12,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "can-ellie",
@@ -18160,8 +18599,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 9,
+  "bathrooms": 8,
   "sleeps": 12,
   "price_from": 6600,
   "price_to": 28600,
@@ -18294,6 +18733,17 @@
   "nightly_from": 943,
   "nightly_to": 4086,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1906-E",
+   "register_licence": "ETV1906E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-fabulosa",
@@ -18546,7 +18996,7 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 6,
+  "bedrooms": 7,
   "bathrooms": 6,
   "sleeps": 12,
   "price_from": 7700,
@@ -18717,6 +19167,17 @@
   "nightly_from": 1100,
   "nightly_to": 2420,
   "rate_rows": 20,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1318-E",
+   "register_licence": "ETV1318E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-chloe",
@@ -19055,6 +19516,19 @@
   "nightly_from": 943,
   "nightly_to": 3300,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2097-E",
+   "register_licence": "ETV2097E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": [
+    "Shown for 12 guests; the register allows 6 places"
+   ]
+  },
   "near": [
    [
     "villa-emilia",
@@ -19556,6 +20030,17 @@
   "nightly_from": 1965,
   "nightly_to": 4715,
   "rate_rows": 16,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1247-E",
+   "register_licence": "ETV1247E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-cala-tarida-rafael",
@@ -19909,6 +20394,17 @@
   "nightly_from": 1556,
   "nightly_to": 3129,
   "rate_rows": 9,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0467-E",
+   "register_licence": "ET0467E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "cana-susanna",
@@ -20079,7 +20575,7 @@
   "region_name": "San Antonio",
   "district": "San Antonio de Portmany",
   "country": "Spain",
-  "bedrooms": 6,
+  "bedrooms": 7,
   "bathrooms": 4,
   "sleeps": 12,
   "price_from": 6050,
@@ -20229,6 +20725,19 @@
   "nightly_from": 865,
   "nightly_to": 2554,
   "rate_rows": 6,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "format_differs",
+   "ok": true,
+   "licence": "ETV-1050-E2",
+   "register_licence": "ET1050E",
+   "register_places": 12,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": [
+    "Number 1050 is correct, but IMpulse has 'ETV-1050-E2' and the register has ET1050E"
+   ]
+  },
   "near": [
    [
     "villa-style",
@@ -20548,6 +21057,17 @@
   "nightly_from": 1768,
   "nightly_to": 2122,
   "rate_rows": 4,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2241-E",
+   "register_licence": "ETV2241E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-alivia",
@@ -20563,10 +21083,6 @@
    ],
    [
     "can-gabriel",
-    2.5
-   ],
-   [
-    "villa-brisa",
     2.5
    ],
    [
@@ -20832,6 +21348,17 @@
   "nightly_from": 1426,
   "nightly_to": 3123,
   "rate_rows": 28,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0288-E",
+   "register_licence": "ET0288E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-melanie",
@@ -21165,6 +21692,17 @@
   "nightly_from": 2358,
   "nightly_to": 4950,
   "rate_rows": 17,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1030-E",
+   "register_licence": "ETV1030E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-casita",
@@ -21256,10 +21794,6 @@
    ],
    [
     "villa-jayden",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -21643,6 +22177,17 @@
   "nightly_from": 2405,
   "nightly_to": 4950,
   "rate_rows": 11,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1353-E",
+   "register_licence": "ETV1353E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-casita",
@@ -21734,10 +22279,6 @@
    ],
    [
     "villa-jayden",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -22123,6 +22664,17 @@
   "nightly_from": 2546,
   "nightly_to": 5516,
   "rate_rows": 13,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1353-E",
+   "register_licence": "ETV1353E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-casita",
@@ -22214,10 +22766,6 @@
    ],
    [
     "villa-jayden",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -22377,8 +22925,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 5,
+  "bedrooms": 8,
+  "bathrooms": 7,
   "sleeps": 12,
   "price_from": 19800,
   "price_to": 41580,
@@ -22605,6 +23153,17 @@
   "nightly_from": 2829,
   "nightly_to": 5940,
   "rate_rows": 11,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1353-E",
+   "register_licence": "ETV1353E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-casita",
@@ -22696,10 +23255,6 @@
    ],
    [
     "villa-jayden",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -23007,6 +23562,17 @@
   "nightly_from": 865,
   "nightly_to": 1965,
   "rate_rows": 7,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1044-E",
+   "register_licence": "ETV1044E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-fabulosa",
@@ -23255,8 +23821,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 8,
+  "bathrooms": 8,
   "sleeps": 12,
   "price_from": 44000,
   "price_to": 49500,
@@ -23504,6 +24070,17 @@
   "nightly_from": 6286,
   "nightly_to": 7072,
   "rate_rows": 3,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1805-E",
+   "register_licence": "ETV1805E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-frankie",
@@ -23586,10 +24163,6 @@
     3.0
    ],
    [
-    "la-flaca",
-    3.0
-   ],
-   [
     "villa-amaris",
     3.0
    ],
@@ -23659,10 +24232,6 @@
    ],
    [
     "villa-jaja",
-    4.0
-   ],
-   [
-    "villa-nia",
     4.0
    ],
    [
@@ -23840,7 +24409,7 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 6,
+  "bedrooms": 7,
   "bathrooms": 7,
   "sleeps": 12,
   "price_from": 13200,
@@ -23972,6 +24541,17 @@
   "nightly_from": 1886,
   "nightly_to": 16500,
   "rate_rows": 17,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 7,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1348-E",
+   "register_licence": "ETV1348E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-melody",
@@ -24284,6 +24864,17 @@
   "nightly_from": 1048,
   "nightly_to": 3471,
   "rate_rows": 17,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1672-E",
+   "register_licence": "ETV1672E",
+   "register_places": 12,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
    [
     "cielo-del-norte",
@@ -24391,8 +24982,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 5,
+  "bedrooms": 7,
+  "bathrooms": 6,
   "sleeps": 12,
   "price_from": 13200,
   "price_to": 22000,
@@ -24561,6 +25152,17 @@
   "nightly_from": 1886,
   "nightly_to": 3143,
   "rate_rows": 7,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV1897E",
+   "register_licence": "ETV1897E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "alegre-blue",
@@ -24589,10 +25191,6 @@
    [
     "villa-wendy",
     0.5
-   ],
-   [
-    "la-flaca",
-    1.0
    ],
    [
     "villa-amaris",
@@ -24700,10 +25298,6 @@
    ],
    [
     "villa-bailey",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -24971,6 +25565,17 @@
   "nightly_from": 666,
   "nightly_to": 1572,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1944-E",
+   "register_licence": "ETV1944E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-aspen",
@@ -25277,6 +25882,17 @@
   "nightly_from": 2129,
   "nightly_to": 4208,
   "rate_rows": 11,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1143-E",
+   "register_licence": "ETV1143E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-amaris",
@@ -25308,10 +25924,6 @@
    ],
    [
     "alegre-blue",
-    1.0
-   ],
-   [
-    "la-flaca",
     1.0
    ],
    [
@@ -25408,10 +26020,6 @@
    ],
    [
     "la-perla-escondida",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -25681,11 +26289,18 @@
   "nightly_from": 613,
   "nightly_to": 1195,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0723-E",
+   "register_licence": "ET0723E",
+   "register_places": 12,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
-   [
-    "villa-brisa",
-    1.0
-   ],
    [
     "can-alivia",
     2.0
@@ -25831,8 +26446,8 @@
   "region_name": "San Antonio",
   "district": "San Antonio de Portmany",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 7,
+  "bathrooms": 7,
   "sleeps": 12,
   "price_from": 14850,
   "price_to": 29700,
@@ -26000,6 +26615,17 @@
   "nightly_from": 2122,
   "nightly_to": 4243,
   "rate_rows": 7,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1277-E",
+   "register_licence": "ETV1277E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-elsa",
@@ -26325,6 +26951,17 @@
   "nightly_from": 2829,
   "nightly_to": 3458,
   "rate_rows": 6,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1468-E",
+   "register_licence": "ETV1468E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-chloe",
@@ -26615,6 +27252,20 @@
   "nightly_from": 1320,
   "nightly_to": 1650,
   "rate_rows": 9,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "format_differs",
+   "ok": true,
+   "licence": "ETV2400-E0",
+   "register_licence": "ETV2400E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": [
+    "Number 2400 is correct, but IMpulse has 'ETV2400-E0' and the register has ETV2400E",
+    "Shown for 12 guests; the register allows 6 places"
+   ]
+  },
   "near": [
    [
     "can-de-baix",
@@ -26674,10 +27325,6 @@
    ],
    [
     "can-luna",
-    5.0
-   ],
-   [
-    "villa-brisa",
     5.0
    ],
    [
@@ -26753,7 +27400,7 @@
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
   "bedrooms": 6,
-  "bathrooms": 6,
+  "bathrooms": 7,
   "sleeps": 12,
   "price_from": 20625,
   "price_to": 55000,
@@ -26926,6 +27573,17 @@
   "nightly_from": 2947,
   "nightly_to": 7858,
   "rate_rows": 9,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1848-E",
+   "register_licence": "ETV1848E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-london",
@@ -27486,6 +28144,17 @@
   "nightly_from": 1715,
   "nightly_to": 4465,
   "rate_rows": 18,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2585-E",
+   "register_licence": "ETV2585E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-fabulosa",
@@ -27887,6 +28556,17 @@
   "nightly_from": 2829,
   "nightly_to": 5972,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2418-E",
+   "register_licence": "ETV2418E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-amazonia",
@@ -27910,10 +28590,6 @@
    ],
    [
     "alegre-blue",
-    1.0
-   ],
-   [
-    "la-flaca",
     1.0
    ],
    [
@@ -28030,10 +28706,6 @@
    ],
    [
     "can-vista-cala-jondal",
-    3.5
-   ],
-   [
-    "villa-nia",
     3.5
    ],
    [
@@ -28282,6 +28954,17 @@
   "nightly_from": 613,
   "nightly_to": 1195,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0721-E",
+   "register_licence": "ET0721E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-alivia",
@@ -28297,10 +28980,6 @@
    ],
    [
     "can-gabriel",
-    2.0
-   ],
-   [
-    "villa-brisa",
     2.0
    ],
    [
@@ -28658,6 +29337,17 @@
   "nightly_from": 755,
   "nightly_to": 2515,
   "rate_rows": 12,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1875-E",
+   "register_licence": "ETV1875E",
+   "register_places": 11,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "can-arte",
@@ -28883,6 +29573,17 @@
   "nightly_from": 1100,
   "nightly_to": 1980,
   "rate_rows": 13,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 7,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2020-E",
+   "register_licence": "ETV2020E",
+   "register_places": 11,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
    [
     "can-noelia",
@@ -28934,10 +29635,6 @@
    ],
    [
     "can-mayans",
-    3.5
-   ],
-   [
-    "villa-brisa",
     3.5
    ],
    [
@@ -29165,6 +29862,17 @@
   "nightly_from": 841,
   "nightly_to": 2043,
   "rate_rows": 27,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0289-E",
+   "register_licence": "ET0289E",
+   "register_places": 11,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-lydia",
@@ -29563,6 +30271,20 @@
   "nightly_from": 1415,
   "nightly_to": 12353,
   "rate_rows": 10,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "format_differs",
+   "ok": true,
+   "licence": "ETV-2348-V",
+   "register_licence": "ETV2348E",
+   "register_places": 10,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": [
+    "Number 2348 is correct, but IMpulse has 'ETV-2348-V' and the register has ETV2348E",
+    "Shown for 11 guests; the register allows 10 places"
+   ]
+  },
   "near": [
    [
     "finca-utopia",
@@ -29614,10 +30336,6 @@
    ],
    [
     "can-alivia",
-    4.0
-   ],
-   [
-    "villa-brisa",
     4.0
    ],
    [
@@ -29712,8 +30430,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 9,
+  "bathrooms": 8,
   "sleeps": 11,
   "price_from": 11550,
   "price_to": 17600,
@@ -29860,6 +30578,17 @@
   "nightly_from": 1650,
   "nightly_to": 2515,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1579-E",
+   "register_licence": "ETV1579E",
+   "register_places": 11,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-solis",
@@ -30162,8 +30891,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 8,
+  "bathrooms": 10,
   "sleeps": 11,
   "price_from": 66000,
   "price_to": 77000,
@@ -30289,6 +31018,19 @@
   "nightly_from": 9429,
   "nightly_to": 11000,
   "rate_rows": 2,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1483-E",
+   "register_licence": "ETV1483E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": [
+    "Shown for 11 guests; the register allows 8 places"
+   ]
+  },
   "near": [
    [
     "villa-de-golf",
@@ -30732,6 +31474,17 @@
   "nightly_from": 1572,
   "nightly_to": 3850,
   "rate_rows": 10,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2576-E",
+   "register_licence": "ETV2576E",
+   "register_places": 11,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "los-pinos",
@@ -31060,6 +31813,17 @@
   "nightly_from": 2572,
   "nightly_to": 20000,
   "rate_rows": 4,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV -1206-E",
+   "register_licence": "ETV1206E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-alivia",
@@ -31080,10 +31844,6 @@
    [
     "villa-sadie",
     1.5
-   ],
-   [
-    "villa-brisa",
-    2.5
    ],
    [
     "villa-espada",
@@ -31365,6 +32125,17 @@
   "nightly_from": 644,
   "nightly_to": 1336,
   "rate_rows": 9,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1498-E",
+   "register_licence": "ETV1498E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-eliana",
@@ -31649,6 +32420,19 @@
   "nightly_from": 1022,
   "nightly_to": 1886,
   "rate_rows": 9,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2044-E",
+   "register_licence": "ETV2044E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": [
+    "Shown for 10 guests; the register allows 8 places"
+   ]
+  },
   "near": [
    [
     "can-mayans",
@@ -31972,6 +32756,17 @@
   "nightly_from": 396,
   "nightly_to": 2277,
   "rate_rows": 15,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0605-E",
+   "register_licence": "ET0605E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-trevi",
@@ -32215,6 +33010,17 @@
   "nightly_from": 1100,
   "nightly_to": 1886,
   "rate_rows": 15,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2034-E",
+   "register_licence": "ETV2034E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-marielle",
@@ -32238,10 +33044,6 @@
    ],
    [
     "can-vista-cala-jondal",
-    1.5
-   ],
-   [
-    "villa-nia",
     1.5
    ],
    [
@@ -32299,10 +33101,6 @@
    [
     "villa-tess",
     2.0
-   ],
-   [
-    "la-flaca",
-    2.5
    ],
    [
     "villa-amazonia",
@@ -32639,6 +33437,19 @@
   "nightly_from": 928,
   "nightly_to": 2109,
   "rate_rows": 12,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1635-E",
+   "register_licence": "ETV1635E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": [
+    "Shown for 10 guests; the register allows 6 places"
+   ]
+  },
   "near": [
    [
     "the-beach-house-cala-llenya",
@@ -32752,8 +33563,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 10,
   "price_from": 16500,
   "price_to": 22000,
@@ -32868,6 +33679,19 @@
   "nightly_from": 2358,
   "nightly_to": 3143,
   "rate_rows": 8,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "format_differs",
+   "ok": true,
+   "licence": "ET-0913-E",
+   "register_licence": "ETV0913E",
+   "register_places": 10,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": [
+    "Number 0913 is correct, but IMpulse has 'ET-0913-E' and the register has ETV0913E"
+   ]
+  },
   "near": [
    [
     "can-mayans",
@@ -33191,6 +34015,17 @@
   "nightly_from": 786,
   "nightly_to": 1650,
   "rate_rows": 15,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0870-E",
+   "register_licence": "ET0870E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-sylvia",
@@ -33568,6 +34403,19 @@
   "nightly_from": 645,
   "nightly_to": 2153,
   "rate_rows": 10,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0626-E",
+   "register_licence": "ET0626E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Shown for 10 guests; the register allows 8 places"
+   ]
+  },
   "near": [
    [
     "villa-beverly",
@@ -33703,10 +34551,6 @@
    ],
    [
     "can-vista-cala-jondal",
-    4.5
-   ],
-   [
-    "villa-nia",
     4.5
    ],
    [
@@ -34064,6 +34908,17 @@
   "nightly_from": 1886,
   "nightly_to": 3246,
   "rate_rows": 10,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1949-E",
+   "register_licence": "ETV1949E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-nora",
@@ -34408,6 +35263,17 @@
   "nightly_from": 1210,
   "nightly_to": 2248,
   "rate_rows": 9,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1382-E",
+   "register_licence": "ETV1382E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-solvista",
@@ -34717,6 +35583,17 @@
   "nightly_from": 655,
   "nightly_to": 9162,
   "rate_rows": 38,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1947-E",
+   "register_licence": "ETV1947E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-aria",
@@ -34989,6 +35866,17 @@
   "nightly_from": 605,
   "nightly_to": 875,
   "rate_rows": 6,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0414-E",
+   "register_licence": "ET0414E",
+   "register_places": 10,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
    [
     "can-aspen",
@@ -35267,6 +36155,17 @@
   "nightly_from": 2436,
   "nightly_to": 2436,
   "rate_rows": 4,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1651-E",
+   "register_licence": "ETV1651E",
+   "register_places": 12,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
    [
     "can-octavia",
@@ -35581,6 +36480,19 @@
   "nightly_from": 660,
   "nightly_to": 1089,
   "rate_rows": 8,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0592-E",
+   "register_licence": "ET0592E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Shown for 10 guests; the register allows 8 places"
+   ]
+  },
   "near": [
    [
     "can-olivander",
@@ -35931,6 +36843,17 @@
   "nightly_from": 1698,
   "nightly_to": 3112,
   "rate_rows": 7,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV1941E",
+   "register_licence": "ETV1941E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-balena",
@@ -36365,6 +37288,17 @@
   "nightly_from": 1100,
   "nightly_to": 1415,
   "rate_rows": 5,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1362-E",
+   "register_licence": "ETV1362E",
+   "register_places": 10,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
    [
     "can-catalina",
@@ -36668,6 +37602,17 @@
   "nightly_from": 943,
   "nightly_to": 1572,
   "rate_rows": 5,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0401-E",
+   "register_licence": "ET0401E",
+   "register_places": 10,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "can-meuni",
@@ -36912,6 +37857,17 @@
   "nightly_from": 629,
   "nightly_to": 2138,
   "rate_rows": 12,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2319-E",
+   "register_licence": "ETV2319E",
+   "register_places": 10,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "casa-maxi",
@@ -37050,8 +38006,8 @@
   "region_name": "San Antonio",
   "district": "San Antonio de Portmany",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 4,
+  "bedrooms": 6,
+  "bathrooms": 5,
   "sleeps": 10,
   "price_from": 6853,
   "price_to": 13783,
@@ -37203,6 +38159,17 @@
   "nightly_from": 979,
   "nightly_to": 1969,
   "rate_rows": 8,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0507-E",
+   "register_licence": "ET0507E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-elsa",
@@ -37385,8 +38352,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 10,
   "price_from": 9900,
   "price_to": 26400,
@@ -37530,11 +38497,18 @@
   "nightly_from": 1415,
   "nightly_to": 3772,
   "rate_rows": 18,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1516-E",
+   "register_licence": "ETV1516E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
-   [
-    "villa-nia",
-    0.5
-   ],
    [
     "can-josie",
     1.0
@@ -37657,10 +38631,6 @@
    ],
    [
     "can-tehani",
-    3.5
-   ],
-   [
-    "la-flaca",
     3.5
    ],
    [
@@ -37817,8 +38787,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
+  "bedrooms": 7,
+  "bathrooms": 7,
   "sleeps": 10,
   "price_from": 6600,
   "price_to": 26400,
@@ -37958,6 +38928,17 @@
   "nightly_from": 943,
   "nightly_to": 3772,
   "rate_rows": 10,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1908-E",
+   "register_licence": "ETV1908E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-ashley",
@@ -38458,6 +39439,19 @@
   "nightly_from": 849,
   "nightly_to": 1226,
   "rate_rows": 7,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0744-E",
+   "register_licence": "ET0744E",
+   "register_places": 9,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": [
+    "Shown for 10 guests; the register allows 9 places"
+   ]
+  },
   "near": [
    [
     "can-timo",
@@ -38797,6 +39791,17 @@
   "nightly_from": 660,
   "nightly_to": 2358,
   "rate_rows": 9,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 7,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1931-E",
+   "register_licence": "ETV1931E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "belantara",
@@ -39048,6 +40053,17 @@
   "nightly_from": 396,
   "nightly_to": 1634,
   "rate_rows": 12,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1818-E",
+   "register_licence": "ETV1818E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-deme",
@@ -39434,6 +40450,17 @@
   "nightly_from": 3300,
   "nightly_to": 3615,
   "rate_rows": 7,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-0933-E",
+   "register_licence": "ETV0933E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-milna",
@@ -39470,10 +40497,6 @@
    [
     "villa-claire",
     2.0
-   ],
-   [
-    "la-flaca",
-    2.5
    ],
    [
     "villa-amazonia",
@@ -39838,6 +40861,19 @@
   "nightly_from": 1886,
   "nightly_to": 2829,
   "rate_rows": 8,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1804-E",
+   "register_licence": "ETV1804E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": [
+    "Shown for 10 guests; the register allows 6 places"
+   ]
+  },
   "near": [
    [
     "villa-apia",
@@ -40352,6 +41388,17 @@
   "nightly_from": 1462,
   "nightly_to": 2028,
   "rate_rows": 5,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0290-E",
+   "register_licence": "ET0290E",
+   "register_places": 10,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "can-arte",
@@ -40642,6 +41689,17 @@
   "nightly_from": 9286,
   "nightly_to": 22143,
   "rate_rows": 13,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV2128E",
+   "register_licence": "ETV2128E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "casa-bayona",
@@ -40976,8 +42034,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
+  "bedrooms": 7,
+  "bathrooms": 7,
   "sleeps": 10,
   "price_from": 6600,
   "price_to": 26400,
@@ -41121,6 +42179,17 @@
   "nightly_from": 943,
   "nightly_to": 3772,
   "rate_rows": 10,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1907-E",
+   "register_licence": "ETV1907E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "casa-fourteen",
@@ -41446,296 +42515,6 @@
   "image_colour": "#7c8985"
  },
  {
-  "slug": "villa-brisa",
-  "name": "Villa Brisa",
-  "tagline": "Countryside Villa with Infinity Pool and Panoramic Morna Valley Views",
-  "summary": "Villa Brisa is a newly built countryside property that combines traditional Ibizan architecture with subtle oriental influences. Designed with a clear focus on comfort, quality, and aesthetic harmony, the villa offers…",
-  "description": [
-   "Villa Brisa is a newly built countryside property that combines traditional Ibizan architecture with subtle oriental influences. Designed with a clear focus on comfort, quality, and aesthetic harmony, the villa offers five air-conditioned bedrooms, each with its own private bathroom. Natural materials, warm tones, and carefully chosen decorative details create a serene and welcoming atmosphere throughout the home.",
-   "The interior spaces are bright and generously proportioned, featuring stone walls, high ceilings, and exposed wooden beams that enhance the villa’s character. A spacious living area with TV provides a relaxed environment for gathering and unwinding, while the fully equipped kitchen integrates naturally with both the indoor and outdoor dining areas, supporting a comfortable, social lifestyle.",
-   "Outdoor living is central to the experience of Villa Brisa. The infinity pool opens toward panoramic valley views, offering a strong sense of space and connection to the surrounding landscape. Multiple terraces, lounge areas, and a covered outdoor kitchen with a large dining table provide ideal settings for relaxation, entertaining, and enjoying long meals in complete privacy.",
-   "Surrounded by a landscaped garden and positioned to ensure tranquility and seclusion, Villa Brisa offers a peaceful retreat immersed in Ibiza’s natural beauty, ideal for guests seeking privacy, scenery, and a relaxed Mediterranean ambiance."
-  ],
-  "area": "San Carlos",
-  "area_key": "San Carlos",
-  "region": "santa-eulalia",
-  "region_name": "Santa Eulalia",
-  "district": "Santa Eulalia del Rio",
-  "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
-  "sleeps": 10,
-  "price_from": 4180,
-  "price_to": 8800,
-  "price_on_request": false,
-  "min_nights": 7,
-  "short_stays": false,
-  "cleaning": "0 - Final Cleaning",
-  "cleaning_charge": 0,
-  "check_in": "15:00",
-  "check_out": "11:00",
-  "check_in_days": "Strictly Saturday-Saturday",
-  "license": "ETV-1292-E",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": null,
-  "amenities": [
-   "Al Fresco Dining",
-   "BBQ",
-   "Country View",
-   "Music System",
-   "Safety Box",
-   "Sunrise View",
-   "Lawn Area",
-   "Infinity pool",
-   "Outdoor Kitchen",
-   "Air Con - Bedrooms Only"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Lawn Area",
-     "Infinity pool",
-     "Outdoor Kitchen"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Music System",
-     "Safety Box",
-     "Air Con - Bedrooms Only"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Country View"
-    ]
-   },
-   {
-    "title": "Also included",
-    "items": [
-     "Sunrise View"
-    ]
-   }
-  ],
-  "audience": [
-   "Couples",
-   "Families",
-   "Friends"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Villamorna01.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Villamorna03.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 309.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0098.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0150.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Villamorna26.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Villamorna29.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0022.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0025.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0027.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0045.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0036.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0038.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0039.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0041.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0053.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0055.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0071.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0090.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0094.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0104.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0108.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0110.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0113.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0120.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0122.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0124.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0129.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0130.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0131.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0134.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0135.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0145.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0146.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0153.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0156.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0159.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0160.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0169.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0170.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0173.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0175.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0179.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0182.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0185.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0200.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0201.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0225.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0233.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0237.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0238.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 298.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 301.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 304.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 305.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 308.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 310.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 311.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 313.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 316.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 293.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 288.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0211.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0219.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0222.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/9684/villa_images/Can Vich 0223.jpg"
-  ],
-  "lat": 39.04042,
-  "lng": 1.5076,
-  "v_id": 9684,
-  "v_uuid": "e719028f-7020-457f-bcf7-fdea1d65bdad",
-  "nightly_from": 598,
-  "nightly_to": 1258,
-  "rate_rows": 8,
-  "near": [
-   [
-    "villa-serenya",
-    1.0
-   ],
-   [
-    "can-alivia",
-    2.0
-   ],
-   [
-    "villa-xantara",
-    2.0
-   ],
-   [
-    "cana-calma",
-    2.5
-   ],
-   [
-    "villa-lino",
-    2.5
-   ],
-   [
-    "can-de-baix",
-    3.5
-   ],
-   [
-    "can-gabriel",
-    3.5
-   ],
-   [
-    "can-kali",
-    3.5
-   ],
-   [
-    "finca-palmeras",
-    3.5
-   ],
-   [
-    "can-leilani",
-    4.0
-   ],
-   [
-    "can-noelia",
-    4.0
-   ],
-   [
-    "finca-utopia",
-    4.0
-   ],
-   [
-    "villa-gina",
-    4.0
-   ],
-   [
-    "villa-sadie",
-    4.0
-   ],
-   [
-    "can-octavia",
-    4.5
-   ],
-   [
-    "can-vina",
-    4.5
-   ],
-   [
-    "villa-carrion",
-    4.5
-   ],
-   [
-    "villa-espada",
-    4.5
-   ],
-   [
-    "can-anna-grande",
-    5.0
-   ],
-   [
-    "cielo-del-norte",
-    5.0
-   ],
-   [
-    "villa-hilltopview",
-    5.0
-   ],
-   [
-    "villa-terra-blanca",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/villa-brisa/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#71726a"
-   },
-   {
-    "base": "villas/villa-brisa/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#8298b6"
-   },
-   {
-    "base": "villas/villa-brisa/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#94857e"
-   },
-   {
-    "base": "villas/villa-brisa/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#bca89b"
-   },
-   {
-    "base": "villas/villa-brisa/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#a99b8e"
-   },
-   {
-    "base": "villas/villa-brisa/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#c6ac94"
-   }
-  ],
-  "image": "/assets/villas/villa-brisa/01-800.webp",
-  "image_large": "/assets/villas/villa-brisa/01-1400.webp",
-  "image_colour": "#71726a"
- },
- {
   "slug": "villa-calm",
   "name": "Villa Calm",
   "tagline": "Clifftop glass and open sea, Cala Llonga at your feet.",
@@ -41923,6 +42702,17 @@
   "nightly_from": 396,
   "nightly_to": 5544,
   "rate_rows": 17,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-0947-E",
+   "register_licence": "ETV0947E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-judith",
@@ -42342,6 +43132,17 @@
   "nightly_from": 786,
   "nightly_to": 1650,
   "rate_rows": 13,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2180-E",
+   "register_licence": "ETV2180E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-vinya-morna",
@@ -42614,6 +43415,17 @@
   "nightly_from": 2122,
   "nightly_to": 2436,
   "rate_rows": 4,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2363-E",
+   "register_licence": "ETV2363E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-balena",
@@ -43051,6 +43863,17 @@
   "nightly_from": 1179,
   "nightly_to": 1650,
   "rate_rows": 6,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0982-E",
+   "register_licence": "ET0982E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "casa-dhort",
@@ -43102,10 +43925,6 @@
    ],
    [
     "cana-susanna",
-    4.0
-   ],
-   [
-    "la-flaca",
     4.0
    ],
    [
@@ -43432,11 +44251,18 @@
   "nightly_from": 897,
   "nightly_to": 3137,
   "rate_rows": 14,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2349-E",
+   "register_licence": "ETV2349E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
-   [
-    "la-flaca",
-    0.5
-   ],
    [
     "villa-amaris",
     0.5
@@ -43575,10 +44401,6 @@
    ],
    [
     "la-perla-escondida",
-    3.5
-   ],
-   [
-    "villa-nia",
     3.5
    ],
    [
@@ -43830,6 +44652,17 @@
   "nightly_from": 1910,
   "nightly_to": 1910,
   "rate_rows": 1,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2591-E",
+   "register_licence": "ETV2591E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "cana-susanna",
@@ -44104,6 +44937,19 @@
   "nightly_from": 1415,
   "nightly_to": 2515,
   "rate_rows": 9,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1177-E",
+   "register_licence": "ETV1177E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": [
+    "Shown for 10 guests; the register allows 8 places"
+   ]
+  },
   "near": [
    [
     "house-of-dreams",
@@ -44609,6 +45455,17 @@
   "nightly_from": 2279,
   "nightly_to": 3300,
   "rate_rows": 6,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1547-E",
+   "register_licence": "ETV1547E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-nizra",
@@ -44683,10 +45540,6 @@
     3.0
    ],
    [
-    "la-flaca",
-    3.0
-   ],
-   [
     "villa-amaris",
     3.0
    ],
@@ -44724,10 +45577,6 @@
    ],
    [
     "can-mistique",
-    3.5
-   ],
-   [
-    "villa-nia",
     3.5
    ],
    [
@@ -45095,6 +45944,17 @@
   "nightly_from": 2723,
   "nightly_to": 7779,
   "rate_rows": 8,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2290-E",
+   "register_licence": "ETV2290E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-fabienne",
@@ -45234,10 +46094,6 @@
    ],
    [
     "villa-marielle",
-    4.0
-   ],
-   [
-    "villa-nia",
     4.0
    ],
    [
@@ -45442,6 +46298,17 @@
   "nightly_from": 791,
   "nightly_to": 1655,
   "rate_rows": 8,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1847-E",
+   "register_licence": "ETV1847E",
+   "register_places": 10,
+   "register_municipality": "EIVISSA",
+   "issues": []
+  },
   "near": [
    [
     "villa-espera",
@@ -45710,8 +46577,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 10,
   "price_from": 11000,
   "price_to": 20900,
@@ -45852,6 +46719,17 @@
   "nightly_from": 1572,
   "nightly_to": 2986,
   "rate_rows": 6,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1168-E",
+   "register_licence": "ETV1168E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-paloma",
@@ -46221,6 +47099,17 @@
   "nightly_from": 786,
   "nightly_to": 8250,
   "rate_rows": 16,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV2406E",
+   "register_licence": "ETV2406E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-danza",
@@ -46363,10 +47252,6 @@
     4.5
    ],
    [
-    "villa-nia",
-    4.5
-   ],
-   [
     "villa-paraiso",
     4.5
    ],
@@ -46433,8 +47318,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
+  "bedrooms": 8,
+  "bathrooms": 8,
   "sleeps": 10,
   "price_from": 41800,
   "price_to": 49500,
@@ -46627,6 +47512,17 @@
   "nightly_from": 5972,
   "nightly_to": 7072,
   "rate_rows": 7,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1660-E",
+   "register_licence": "ETV1660E",
+   "register_places": 14,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-balena",
@@ -46930,8 +47826,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
+  "bedrooms": 8,
+  "bathrooms": 8,
   "sleeps": 10,
   "price_from": 55000,
   "price_to": 121000,
@@ -47200,6 +48096,17 @@
   "nightly_from": 7858,
   "nightly_to": 17286,
   "rate_rows": 9,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2077-E",
+   "register_licence": "ETV2077E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-berry",
@@ -47215,10 +48122,6 @@
    ],
    [
     "can-sabina",
-    1.5
-   ],
-   [
-    "villa-nia",
     1.5
    ],
    [
@@ -47315,10 +48218,6 @@
    ],
    [
     "can-tehani",
-    3.0
-   ],
-   [
-    "la-flaca",
     3.0
    ],
    [
@@ -47650,6 +48549,17 @@
   "nightly_from": 1100,
   "nightly_to": 1870,
   "rate_rows": 8,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2452-E",
+   "register_licence": "ETV2452E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-melanie",
@@ -47821,429 +48731,6 @@
   "image": "/assets/villas/villa-monica/01-800.webp",
   "image_large": "/assets/villas/villa-monica/01-1400.webp",
   "image_colour": "#73776a"
- },
- {
-  "slug": "villa-nia",
-  "name": "Villa Nia",
-  "tagline": "A stunning property located close to Cala Jondal",
-  "summary": "Villa Nia is a uniquely designed 5 bedroom property perfectly situated in one of the most desirable areas of Ibiza, and offers spectacular views over Cala Jondal, the sparkling Mediterranean sea and the surrounding…",
-  "description": [
-   "Villa Nia is a uniquely designed 5 bedroom property perfectly situated in one of the most desirable areas of Ibiza, and offers spectacular views over Cala Jondal, the sparkling Mediterranean sea and the surrounding countryside and coastline landscape.",
-   "Upon entering this modern, minimalist style home, the spacious hall leads into the large and tastefully decorated living room which is flooded with the glorious Ibizan sunlight through floor to ceiling sliding glass doors which emphasis the full effect of the unrivaled sea views. Careful attention has been paid to every detail for your comfort and luxury and tasteful decoration abounds throughout every part of this sophisticated villa.",
-   "A modern fully equipped kitchen offers you the option to extend out onto the outdoor covered terrace and al fresco dining area for entertaining, or alternatively set a more formal evening scene for your guests in the large interior dining room located in an adjacent and open plan style to the stylish kitchen. Villa Nia offers clean and bright contemporary interiors throughout which is enhanced with neutral and well chosen decor. All bedrooms are luxuriously furnished with en-suite or connecting bathrooms and some have access to their owner private terrace.",
-   "Step outside and spend a long lazy day soaking up the healing rays of the Ibizan sunshine around the fabulous pool area, which is surrounded by ample luxurious sun loungers, with a large outdoor dining area complete with BBQ and an incredibly inviting and comfortable shaded chill-out area providing an ideal space to truly appreciate the sea views, relax and reflect after another idyllic day.",
-   "Villa Nia also offers a full size tennis court just meters from the main house ideal for sport oriented holiday makers or for anyone who wishes to fine tune any long lost skills."
-  ],
-  "area": "Cala Jondal",
-  "area_key": "Cala Jondal",
-  "region": "san-jose",
-  "region_name": "San José",
-  "district": "San Jose de Sa Talaia",
-  "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
-  "sleeps": 10,
-  "price_from": 11000,
-  "price_to": 24200,
-  "price_on_request": false,
-  "min_nights": 7,
-  "short_stays": false,
-  "cleaning": "2 Cleanings per week",
-  "cleaning_charge": 0,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Flexible check in days",
-  "license": "2014047792",
-  "dcc": false,
-  "api_switch_on": true,
-  "unpublished_on": null,
-  "amenities": [
-   "Garden",
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "Alarm",
-   "BBQ",
-   "Country View",
-   "Fenced",
-   "Music System",
-   "Swimming Pool",
-   "TV - Satellite",
-   "Wifi",
-   "Hire Car Recommended",
-   "Safety Box",
-   "Sunloungers",
-   "Sea View",
-   "Tennis Court",
-   "Private Parking",
-   "Fully fitted kitchen",
-   "Gated",
-   "Terraces",
-   "Wine Cooler",
-   "CCTV"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Garden",
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers",
-     "Private Parking",
-     "Terraces"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "Music System",
-     "TV - Satellite",
-     "Wifi",
-     "Safety Box",
-     "Fully fitted kitchen"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Alarm",
-     "Country View",
-     "Fenced",
-     "Hire Car Recommended",
-     "Sea View",
-     "Gated",
-     "CCTV"
-    ]
-   },
-   {
-    "title": "Also included",
-    "items": [
-     "Tennis Court",
-     "Wine Cooler"
-    ]
-   }
-  ],
-  "audience": [
-   "Filming",
-   "Private",
-   "Couples",
-   "Families",
-   "Friends",
-   "Retreats",
-   "Honeymoon",
-   "Neighbours"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/04.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/05.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/32.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/01.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/28.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/image0 (1).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/06.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/26.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/02.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/03.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/07.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/08.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/09.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/10.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/11.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/12.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/13.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/14.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/15.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/16.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/17.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/18.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/19.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/20.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/21.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/22.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/23.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/24.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/25..jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/27.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/29.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/30.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/31.jpg"
-  ],
-  "lat": 38.87995,
-  "lng": 1.32239,
-  "v_id": 37,
-  "v_uuid": "cf1d6d2f-90cf-4fab-b66c-b31db941b15d",
-  "nightly_from": 1572,
-  "nightly_to": 3458,
-  "rate_rows": 6,
-  "near": [
-   [
-    "can-josie",
-    0.5
-   ],
-   [
-    "can-vista-cala-jondal",
-    0.5
-   ],
-   [
-    "villa-jayden",
-    1.0
-   ],
-   [
-    "can-berry",
-    1.5
-   ],
-   [
-    "villa-azure",
-    1.5
-   ],
-   [
-    "villa-evelyn",
-    1.5
-   ],
-   [
-    "villa-marielle",
-    1.5
-   ],
-   [
-    "villa-paola",
-    1.5
-   ],
-   [
-    "villa-paraiso",
-    1.5
-   ],
-   [
-    "villa-tess",
-    1.5
-   ],
-   [
-    "can-nuri",
-    2.0
-   ],
-   [
-    "can-sabina",
-    2.0
-   ],
-   [
-    "villa-dama",
-    2.0
-   ],
-   [
-    "villa-can-exotic",
-    2.5
-   ],
-   [
-    "villa-ronda",
-    2.5
-   ],
-   [
-    "alegre-blue",
-    3.0
-   ],
-   [
-    "can-frutal",
-    3.0
-   ],
-   [
-    "can-laurel",
-    3.0
-   ],
-   [
-    "can-tehani",
-    3.0
-   ],
-   [
-    "villa-amaris",
-    3.0
-   ],
-   [
-    "villa-andana",
-    3.0
-   ],
-   [
-    "villa-centelleo",
-    3.0
-   ],
-   [
-    "villa-eliza",
-    3.0
-   ],
-   [
-    "villa-magnifique",
-    3.0
-   ],
-   [
-    "villa-maia",
-    3.0
-   ],
-   [
-    "villa-margo",
-    3.0
-   ],
-   [
-    "villa-meghan",
-    3.0
-   ],
-   [
-    "villa-meghan-deluxe",
-    3.0
-   ],
-   [
-    "villa-meghan-grande",
-    3.0
-   ],
-   [
-    "villa-mila",
-    3.0
-   ],
-   [
-    "villa-porroig-relax",
-    3.0
-   ],
-   [
-    "villa-puma",
-    3.0
-   ],
-   [
-    "villa-riley",
-    3.0
-   ],
-   [
-    "villa-serenity",
-    3.0
-   ],
-   [
-    "villa-trinity",
-    3.0
-   ],
-   [
-    "waterfront-dream",
-    3.0
-   ],
-   [
-    "can-pajarito",
-    3.5
-   ],
-   [
-    "la-flaca",
-    3.5
-   ],
-   [
-    "villa-amazonia",
-    3.5
-   ],
-   [
-    "villa-casita",
-    3.5
-   ],
-   [
-    "villa-charlotte",
-    3.5
-   ],
-   [
-    "villa-cubes",
-    3.5
-   ],
-   [
-    "villa-fabienne",
-    3.5
-   ],
-   [
-    "villa-frankie",
-    3.5
-   ],
-   [
-    "villa-nadal",
-    3.5
-   ],
-   [
-    "villa-wendy",
-    3.5
-   ],
-   [
-    "la-perla-escondida",
-    4.0
-   ],
-   [
-    "villa-beverly",
-    4.0
-   ],
-   [
-    "villa-heidi",
-    4.0
-   ],
-   [
-    "villa-nizra",
-    4.0
-   ],
-   [
-    "can-beso",
-    4.5
-   ],
-   [
-    "can-daneri",
-    4.5
-   ],
-   [
-    "villa-escondida",
-    4.5
-   ],
-   [
-    "villa-jeanette",
-    4.5
-   ],
-   [
-    "can-senna",
-    5.0
-   ],
-   [
-    "casa-can-tina",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/villa-nia/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#6c8a9f"
-   },
-   {
-    "base": "villas/villa-nia/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#849893"
-   },
-   {
-    "base": "villas/villa-nia/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#5b79a4"
-   },
-   {
-    "base": "villas/villa-nia/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#7397a0"
-   },
-   {
-    "base": "villas/villa-nia/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#83a2b7"
-   },
-   {
-    "base": "villas/villa-nia/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#696343"
-   }
-  ],
-  "image": "/assets/villas/villa-nia/01-800.webp",
-  "image_large": "/assets/villas/villa-nia/01-1400.webp",
-  "image_colour": "#6c8a9f"
  },
  {
   "slug": "villa-obsidian",
@@ -48467,6 +48954,17 @@
   "nightly_from": 3143,
   "nightly_to": 4715,
   "rate_rows": 10,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET0916E",
+   "register_licence": "ET0916E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "casa-alhena",
@@ -48811,6 +49309,17 @@
   "nightly_from": 5343,
   "nightly_to": 7543,
   "rate_rows": 7,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0981-E",
+   "register_licence": "ET0981E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-bailey",
@@ -48846,10 +49355,6 @@
    ],
    [
     "can-senna",
-    3.5
-   ],
-   [
-    "la-flaca",
     3.5
    ],
    [
@@ -48988,8 +49493,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 10,
   "price_from": 24640,
   "price_to": 42900,
@@ -49181,6 +49686,17 @@
   "nightly_from": 3520,
   "nightly_to": 6129,
   "rate_rows": 8,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0827-E",
+   "register_licence": "ET0827E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-berry",
@@ -49216,10 +49732,6 @@
    ],
    [
     "villa-marielle",
-    1.5
-   ],
-   [
-    "villa-nia",
     1.5
    ],
    [
@@ -49272,10 +49784,6 @@
    ],
    [
     "can-laurel",
-    2.5
-   ],
-   [
-    "la-flaca",
     2.5
    ],
    [
@@ -49481,8 +49989,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 6,
+  "bedrooms": 7,
+  "bathrooms": 9,
   "sleeps": 10,
   "price_from": 7970,
   "price_to": 16940,
@@ -49652,6 +50160,17 @@
   "nightly_from": 1139,
   "nightly_to": 2420,
   "rate_rows": 9,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1064-E",
+   "register_licence": "ETV1064E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-nuri",
@@ -49667,10 +50186,6 @@
    ],
    [
     "can-vista-cala-jondal",
-    1.5
-   ],
-   [
-    "villa-nia",
     1.5
    ],
    [
@@ -49847,10 +50362,6 @@
    ],
    [
     "can-danza",
-    5.0
-   ],
-   [
-    "la-flaca",
     5.0
    ],
    [
@@ -50081,11 +50592,18 @@
   "nightly_from": 1047,
   "nightly_to": 2348,
   "rate_rows": 12,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2343-E",
+   "register_licence": "ETV2343E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
-   [
-    "la-flaca",
-    0.5
-   ],
    [
     "villa-amaris",
     0.5
@@ -50223,10 +50741,6 @@
     3.0
    ],
    [
-    "villa-nia",
-    3.0
-   ],
-   [
     "villa-tess",
     3.0
    ],
@@ -50342,7 +50856,7 @@
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
   "bedrooms": 5,
-  "bathrooms": 6,
+  "bathrooms": 5,
   "sleeps": 10,
   "price_from": 25000,
   "price_to": 109643,
@@ -50487,6 +51001,17 @@
   "nightly_from": 3572,
   "nightly_to": 45000,
   "rate_rows": 10,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-0891-E",
+   "register_licence": "ETV0891E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-tehani",
@@ -50578,10 +51103,6 @@
    ],
    [
     "villa-marielle",
-    2.5
-   ],
-   [
-    "villa-nia",
     2.5
    ],
    [
@@ -50702,10 +51223,6 @@
    ],
    [
     "can-sahara",
-    5.0
-   ],
-   [
-    "la-flaca",
     5.0
    ],
    [
@@ -50917,6 +51434,17 @@
   "nightly_from": 629,
   "nightly_to": 1073,
   "rate_rows": 12,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0486-E",
+   "register_licence": "ET0486E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-deme",
@@ -51121,7 +51649,7 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 5,
+  "bedrooms": 6,
   "bathrooms": 6,
   "sleeps": 10,
   "price_from": 4120,
@@ -51253,6 +51781,17 @@
   "nightly_from": 589,
   "nightly_to": 2153,
   "rate_rows": 13,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1222-E",
+   "register_licence": "ETV1222E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-alyssa",
@@ -51557,8 +52096,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 10,
   "price_from": 4235,
   "price_to": 11165,
@@ -51657,6 +52196,17 @@
   "nightly_from": 605,
   "nightly_to": 1595,
   "rate_rows": 7,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1172-E",
+   "register_licence": "ETV1172E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-mambo",
@@ -52183,6 +52733,19 @@
   "nightly_from": 629,
   "nightly_to": 2358,
   "rate_rows": 10,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0836-E",
+   "register_licence": "ET0836E",
+   "register_places": 8,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": [
+    "Shown for 10 guests; the register allows 8 places"
+   ]
+  },
   "near": [
    [
     "can-orange",
@@ -52510,6 +53073,17 @@
   "nightly_from": 1258,
   "nightly_to": 2515,
   "rate_rows": 5,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV 1451 E",
+   "register_licence": "ETV1451E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-simo",
@@ -52807,7 +53381,7 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 5,
+  "bedrooms": 6,
   "bathrooms": 5,
   "sleeps": 10,
   "price_from": 13866,
@@ -52941,6 +53515,17 @@
   "nightly_from": 1981,
   "nightly_to": 5186,
   "rate_rows": 26,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV2108E",
+   "register_licence": "ETV2108E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-elyza",
@@ -53091,8 +53676,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
+  "bedrooms": 12,
+  "bathrooms": 12,
   "sleeps": 10,
   "price_from": 85000,
   "price_to": 165000,
@@ -53302,6 +53887,17 @@
   "nightly_from": 12143,
   "nightly_to": 23572,
   "rate_rows": 9,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-0881-E",
+   "register_licence": "ETV0881E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-can-exotic",
@@ -53397,10 +53993,6 @@
    ],
    [
     "villa-jayden",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -53686,6 +54278,17 @@
   "nightly_from": 1022,
   "nightly_to": 1415,
   "rate_rows": 7,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2437-E",
+   "register_licence": "ETV2437E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-marita",
@@ -53992,6 +54595,17 @@
   "nightly_from": 8572,
   "nightly_to": 9429,
   "rate_rows": 4,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-0952-E",
+   "register_licence": "ETV0952E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-milna",
@@ -54019,10 +54633,6 @@
    ],
    [
     "casa-dhort",
-    2.5
-   ],
-   [
-    "la-flaca",
     2.5
    ],
    [
@@ -54434,6 +55044,17 @@
   "nightly_from": 1886,
   "nightly_to": 2829,
   "rate_rows": 7,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1253-E",
+   "register_licence": "ETV1253E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "cana-gotas",
@@ -54766,8 +55387,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
+  "bedrooms": 7,
+  "bathrooms": 8,
   "sleeps": 10,
   "price_from": 21285,
   "price_to": 58905,
@@ -54949,6 +55570,17 @@
   "nightly_from": 3041,
   "nightly_to": 8415,
   "rate_rows": 13,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1521-E",
+   "register_licence": "ETV1521E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-magnifique",
@@ -54968,10 +55600,6 @@
    ],
    [
     "can-sabina",
-    2.0
-   ],
-   [
-    "la-flaca",
     2.0
    ],
    [
@@ -55044,10 +55672,6 @@
    ],
    [
     "villa-marielle",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -55188,8 +55812,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
+  "bedrooms": 7,
+  "bathrooms": 7,
   "sleeps": 9,
   "price_from": 4158,
   "price_to": 20790,
@@ -55324,6 +55948,17 @@
   "nightly_from": 594,
   "nightly_to": 2970,
   "rate_rows": 12,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0803-E",
+   "register_licence": "ET0803E",
+   "register_places": 9,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-goia",
@@ -55707,6 +56342,17 @@
   "nightly_from": 792,
   "nightly_to": 2145,
   "rate_rows": 6,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1871-E",
+   "register_licence": "ETV1871E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-lino",
@@ -55719,10 +56365,6 @@
    [
     "villa-xantara",
     1.0
-   ],
-   [
-    "villa-brisa",
-    2.0
    ],
    [
     "villa-serenya",
@@ -55998,6 +56640,17 @@
   "nightly_from": 655,
   "nightly_to": 9162,
   "rate_rows": 38,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1946-E",
+   "register_licence": "ETV1946E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-luna",
@@ -56283,6 +56936,17 @@
   "nightly_from": 943,
   "nightly_to": 1258,
   "rate_rows": 8,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0810-E",
+   "register_licence": "ET0810E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-cleo",
@@ -56710,6 +57374,17 @@
   "nightly_from": 943,
   "nightly_to": 1886,
   "rate_rows": 12,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0458-E",
+   "register_licence": "ET0458E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-brielle",
@@ -57065,6 +57740,19 @@
   "nightly_from": 590,
   "nightly_to": 1368,
   "rate_rows": 8,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2492-E",
+   "register_licence": "ETV2492E",
+   "register_places": 4,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": [
+    "Shown for 8 guests; the register allows 4 places"
+   ]
+  },
   "near": [
    [
     "can-balena",
@@ -57364,8 +58052,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 13958,
   "price_to": 13958,
@@ -57506,6 +58194,17 @@
   "nightly_from": 1994,
   "nightly_to": 1994,
   "rate_rows": 1,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0391-E",
+   "register_licence": "ET0391E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "casa-roma",
@@ -57712,8 +58411,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 6,
   "sleeps": 8,
   "price_from": 13860,
   "price_to": 19250,
@@ -57888,6 +58587,17 @@
   "nightly_from": 1980,
   "nightly_to": 2750,
   "rate_rows": 4,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1856-E",
+   "register_licence": "ETV1856E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-terra",
@@ -58033,8 +58743,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 7,
+  "bathrooms": 6,
   "sleeps": 8,
   "price_from": 21560,
   "price_to": 26950,
@@ -58213,6 +58923,17 @@
   "nightly_from": 3080,
   "nightly_to": 3850,
   "rate_rows": 5,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0917-E",
+   "register_licence": "ET0917E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-hilltopview",
@@ -58381,8 +59102,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 6,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 11550,
   "price_to": 17600,
@@ -58566,6 +59287,17 @@
   "nightly_from": 1650,
   "nightly_to": 2515,
   "rate_rows": 8,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2153-E",
+   "register_licence": "ETV2153E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "alegre-blue",
@@ -58624,10 +59356,6 @@
     2.0
    ],
    [
-    "la-flaca",
-    2.0
-   ],
-   [
     "la-perla-escondida",
     2.0
    ],
@@ -58677,10 +59405,6 @@
    ],
    [
     "villa-evelyn",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -59028,6 +59752,17 @@
   "nightly_from": 1733,
   "nightly_to": 2178,
   "rate_rows": 6,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1952-E",
+   "register_licence": "ETV1952E",
+   "register_places": 8,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "can-ariel",
@@ -59320,6 +60055,17 @@
   "nightly_from": 990,
   "nightly_to": 2138,
   "rate_rows": 9,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1358-E",
+   "register_licence": "ETV1358E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-scarlett",
@@ -59630,8 +60376,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 6,
+  "bathrooms": 9,
   "sleeps": 8,
   "price_from": 35000,
   "price_to": 35000,
@@ -59816,6 +60562,17 @@
   "nightly_from": 5000,
   "nightly_to": 5000,
   "rate_rows": 1,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0311-E",
+   "register_licence": "ET0311E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-paradis",
@@ -60077,6 +60834,17 @@
   "nightly_from": 1022,
   "nightly_to": 1336,
   "rate_rows": 7,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1735-E",
+   "register_licence": "ETV1735E",
+   "register_places": 8,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "can-savasana",
@@ -60169,8 +60937,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 8,
   "price_from": 11000,
   "price_to": 38500,
@@ -60363,6 +61131,17 @@
   "nightly_from": 1572,
   "nightly_to": 5500,
   "rate_rows": 11,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0479-E",
+   "register_licence": "ET0479E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-captur",
@@ -60714,6 +61493,17 @@
   "nightly_from": 668,
   "nightly_to": 1100,
   "rate_rows": 9,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1569-E",
+   "register_licence": "ETV1569E",
+   "register_places": 8,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "villa-style",
@@ -60934,8 +61724,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 10,
+  "bathrooms": 9,
   "sleeps": 8,
   "price_from": 13200,
   "price_to": 31900,
@@ -61066,6 +61856,19 @@
   "nightly_from": 1886,
   "nightly_to": 4558,
   "rate_rows": 8,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2543-E",
+   "register_licence": "ETV2543E",
+   "register_places": 7,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Shown for 8 guests; the register allows 7 places"
+   ]
+  },
   "near": [
    [
     "villa-andana",
@@ -61181,10 +61984,6 @@
    ],
    [
     "casa-roma",
-    3.5
-   ],
-   [
-    "villa-nia",
     3.5
    ],
    [
@@ -61481,6 +62280,19 @@
   "nightly_from": 1320,
   "nightly_to": 2200,
   "rate_rows": 7,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1478-E",
+   "register_licence": "ETV1478E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Shown for 8 guests; the register allows 6 places"
+   ]
+  },
   "near": [
    [
     "villa-dama",
@@ -61555,10 +62367,6 @@
     2.0
    ],
    [
-    "la-flaca",
-    2.0
-   ],
-   [
     "villa-amazonia",
     2.0
    ],
@@ -61568,10 +62376,6 @@
    ],
    [
     "villa-magnifique",
-    2.0
-   ],
-   [
-    "villa-nia",
     2.0
    ],
    [
@@ -61929,6 +62733,17 @@
   "nightly_from": 2286,
   "nightly_to": 14000,
   "rate_rows": 11,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2590-E",
+   "register_licence": "ETV2590E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-brooke",
@@ -62138,6 +62953,17 @@
   "nightly_from": 1155,
   "nightly_to": 10395,
   "rate_rows": 10,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2568-E",
+   "register_licence": "ETV2568E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-balena",
@@ -62601,6 +63427,17 @@
   "nightly_from": 393,
   "nightly_to": 1572,
   "rate_rows": 8,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0787-E",
+   "register_licence": "ET0787E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "casa-alhena",
@@ -62955,6 +63792,17 @@
   "nightly_from": 770,
   "nightly_to": 1430,
   "rate_rows": 10,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1554-E",
+   "register_licence": "ETV-1554-E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-balena",
@@ -63361,6 +64209,17 @@
   "nightly_from": 739,
   "nightly_to": 1383,
   "rate_rows": 6,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1474-E",
+   "register_licence": "ETV1474E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "casa-can-tina",
@@ -63680,6 +64539,17 @@
   "nightly_from": 786,
   "nightly_to": 1399,
   "rate_rows": 6,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2299-E",
+   "register_licence": "ETV2299E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "puig-can-fluxa",
@@ -63988,6 +64858,17 @@
   "nightly_from": 1760,
   "nightly_to": 1760,
   "rate_rows": 2,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1865-E",
+   "register_licence": "ETV1865E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "cana-sole",
@@ -64123,10 +65004,6 @@
    ],
    [
     "can-vista-cala-jondal",
-    5.0
-   ],
-   [
-    "villa-nia",
     5.0
    ]
   ],
@@ -64305,6 +65182,17 @@
   "nightly_from": 676,
   "nightly_to": 2043,
   "rate_rows": 12,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1914-E",
+   "register_licence": "ETV1914E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-apia",
@@ -64780,6 +65668,19 @@
   "nightly_from": 786,
   "nightly_to": 1022,
   "rate_rows": 5,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "format_differs",
+   "ok": true,
+   "licence": "ETV-0983-E",
+   "register_licence": "ET0983E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Number 0983 is correct, but IMpulse has 'ETV-0983-E' and the register has ET0983E"
+   ]
+  },
   "near": [
    [
     "villa-claire",
@@ -64831,10 +65732,6 @@
    ],
    [
     "cana-susanna",
-    4.0
-   ],
-   [
-    "la-flaca",
     4.0
    ],
    [
@@ -65151,6 +66048,17 @@
   "nightly_from": 1006,
   "nightly_to": 1808,
   "rate_rows": 5,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV1174E",
+   "register_licence": "ETV1174E",
+   "register_places": 10,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
    [
     "villa-gina",
@@ -65186,10 +66094,6 @@
    ],
    [
     "finca-utopia-xarraca",
-    5.0
-   ],
-   [
-    "villa-brisa",
     5.0
    ],
    [
@@ -65351,6 +66255,17 @@
   "nightly_from": 1786,
   "nightly_to": 2886,
   "rate_rows": 6,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1711-E",
+   "register_licence": "ETV1711E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "serene-sanctuary",
@@ -65661,6 +66576,17 @@
   "nightly_from": 1603,
   "nightly_to": 2868,
   "rate_rows": 9,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0580-E",
+   "register_licence": "ET0580E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-balena",
@@ -65964,8 +66890,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 6,
   "sleeps": 8,
   "price_from": 11550,
   "price_to": 32450,
@@ -66128,11 +67054,18 @@
   "nightly_from": 1650,
   "nightly_to": 4636,
   "rate_rows": 8,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0498-E",
+   "register_licence": "ET0498E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
-   [
-    "la-flaca",
-    0.5
-   ],
    [
     "villa-charlotte",
     0.5
@@ -66274,10 +67207,6 @@
     3.5
    ],
    [
-    "villa-nia",
-    3.5
-   ],
-   [
     "villa-ocean-vista",
     3.5
    ],
@@ -66371,7 +67300,7 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 4,
+  "bedrooms": 6,
   "bathrooms": 4,
   "sleeps": 8,
   "price_from": 4439,
@@ -66488,6 +67417,17 @@
   "nightly_from": 635,
   "nightly_to": 1662,
   "rate_rows": 13,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1486-E",
+   "register_licence": "ETV1486E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-mia",
@@ -66798,6 +67738,17 @@
   "nightly_from": 396,
   "nightly_to": 1089,
   "rate_rows": 11,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2609-E",
+   "register_licence": "ETV2609E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-pajarito",
@@ -66897,10 +67848,6 @@
    ],
    [
     "villa-escondida",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -67037,8 +67984,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 6001,
   "price_to": 13500,
@@ -67220,6 +68167,19 @@
   "nightly_from": 858,
   "nightly_to": 1929,
   "rate_rows": 15,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0664-E",
+   "register_licence": "ET0664E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": [
+    "Shown for 8 guests; the register allows 6 places"
+   ]
+  },
   "near": [
    [
     "casa-canela",
@@ -67584,8 +68544,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 6160,
   "price_to": 16500,
@@ -67755,6 +68715,17 @@
   "nightly_from": 880,
   "nightly_to": 2358,
   "rate_rows": 10,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1341-E",
+   "register_licence": "ETV1341E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "cana-susanna",
@@ -67959,8 +68930,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 13860,
   "price_to": 39600,
@@ -68097,6 +69068,17 @@
   "nightly_from": 1980,
   "nightly_to": 5658,
   "rate_rows": 13,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1696-E",
+   "register_licence": "ETV1696E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-balena",
@@ -68610,6 +69592,17 @@
   "nightly_from": 9036,
   "nightly_to": 14300,
   "rate_rows": 5,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0642-E",
+   "register_licence": "ET0642E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-hailey",
@@ -68637,10 +69630,6 @@
    ],
    [
     "can-senna",
-    2.5
-   ],
-   [
-    "la-flaca",
     2.5
    ],
    [
@@ -68948,6 +69937,17 @@
   "nightly_from": 660,
   "nightly_to": 1089,
   "rate_rows": 9,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0590-E",
+   "register_licence": "ET0590E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-mistique",
@@ -69168,8 +70168,8 @@
   "region_name": "San Juan",
   "district": "San Juan de Labritja",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 15469,
   "price_to": 18563,
@@ -69385,6 +70385,17 @@
   "nightly_from": 2210,
   "nightly_to": 2652,
   "rate_rows": 2,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-1047-E",
+   "register_licence": "ET1047E",
+   "register_places": 9,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "issues": []
+  },
   "near": [
    [
     "can-vina",
@@ -69456,10 +70467,6 @@
    ],
    [
     "villa-amaya",
-    4.5
-   ],
-   [
-    "villa-brisa",
     4.5
    ],
    [
@@ -69684,6 +70691,17 @@
   "nightly_from": 786,
   "nightly_to": 1886,
   "rate_rows": 12,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1796-E",
+   "register_licence": "ETV1796E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-deme",
@@ -69890,8 +70908,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 8,
   "price_from": 13860,
   "price_to": 19250,
@@ -70024,6 +71042,17 @@
   "nightly_from": 1430,
   "nightly_to": 2750,
   "rate_rows": 6,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0708-E",
+   "register_licence": "ET0708E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-balena",
@@ -70323,7 +71352,7 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 4,
+  "bedrooms": 6,
   "bathrooms": 3,
   "sleeps": 8,
   "price_from": 3812,
@@ -70487,6 +71516,17 @@
   "nightly_from": 545,
   "nightly_to": 1782,
   "rate_rows": 12,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1675-E",
+   "register_licence": "ETV1675E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-sabina",
@@ -70561,10 +71601,6 @@
     2.0
    ],
    [
-    "la-flaca",
-    2.0
-   ],
-   [
     "villa-amazonia",
     2.0
    ],
@@ -70578,10 +71614,6 @@
    ],
    [
     "villa-magnifique",
-    2.0
-   ],
-   [
-    "villa-nia",
     2.0
    ],
    [
@@ -70789,8 +71821,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 10395,
   "price_to": 10395,
@@ -70910,6 +71942,17 @@
   "nightly_from": 1485,
   "nightly_to": 1485,
   "rate_rows": 1,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0979-E",
+   "register_licence": "ET0979E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-auren",
@@ -71452,6 +72495,17 @@
   "nightly_from": 1886,
   "nightly_to": 2200,
   "rate_rows": 4,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2487-E",
+   "register_licence": "ETV2487E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-mambo",
@@ -71878,6 +72932,17 @@
   "nightly_from": 556,
   "nightly_to": 2283,
   "rate_rows": 10,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1589-E",
+   "register_licence": "ETV1589E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-balena",
@@ -72176,8 +73241,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 8,
   "price_from": 10010,
   "price_to": 18832,
@@ -72346,6 +73411,17 @@
   "nightly_from": 1430,
   "nightly_to": 2691,
   "rate_rows": 4,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2391-E",
+   "register_licence": "ETV2391E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-simo",
@@ -72796,6 +73872,17 @@
   "nightly_from": 2358,
   "nightly_to": 2750,
   "rate_rows": 6,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0424-E",
+   "register_licence": "ET0424E",
+   "register_places": 9,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-azure",
@@ -72823,10 +73910,6 @@
    ],
    [
     "villa-magnifique",
-    1.5
-   ],
-   [
-    "villa-nia",
     1.5
    ],
    [
@@ -72867,10 +73950,6 @@
    ],
    [
     "alegre-blue",
-    2.5
-   ],
-   [
-    "la-flaca",
     2.5
    ],
    [
@@ -73085,8 +74164,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 7,
+  "bathrooms": 7,
   "sleeps": 8,
   "price_from": 50000,
   "price_to": 267143,
@@ -73360,6 +74439,17 @@
   "nightly_from": 7143,
   "nightly_to": 70000,
   "rate_rows": 15,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1793-E",
+   "register_licence": "ETV1793E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-bailey",
@@ -73395,10 +74485,6 @@
    ],
    [
     "can-senna",
-    3.0
-   ],
-   [
-    "la-flaca",
     3.0
    ],
    [
@@ -73577,8 +74663,8 @@
   "region_name": "San Antonio",
   "district": "San Antonio de Portmany",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 8,
   "price_from": 3850,
   "price_to": 14850,
@@ -73728,6 +74814,19 @@
   "nightly_from": 550,
   "nightly_to": 2122,
   "rate_rows": 16,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "format_differs",
+   "ok": true,
+   "licence": "ETE0146",
+   "register_licence": "ET0146E",
+   "register_places": 8,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": [
+    "Number 0146 is correct, but IMpulse has 'ETE0146' and the register has ET0146E"
+   ]
+  },
   "near": [
    [
     "can-timo",
@@ -73883,8 +74982,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 6930,
   "price_to": 11165,
@@ -74017,6 +75116,17 @@
   "nightly_from": 990,
   "nightly_to": 1595,
   "rate_rows": 5,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0637-E",
+   "register_licence": "ET0637E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-floral",
@@ -74135,10 +75245,6 @@
     5.0
    ],
    [
-    "villa-brisa",
-    5.0
-   ],
-   [
     "villa-nicole",
     5.0
    ],
@@ -74211,8 +75317,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 9240,
   "price_to": 27500,
@@ -74433,6 +75539,17 @@
   "nightly_from": 1320,
   "nightly_to": 23100,
   "rate_rows": 25,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2156-E",
+   "register_licence": "ETV2156E",
+   "register_places": 9,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "cana-gotas",
@@ -74750,8 +75867,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 47300,
   "price_to": 51700,
@@ -74888,6 +76005,17 @@
   "nightly_from": 6758,
   "nightly_to": 7386,
   "rate_rows": 3,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2511-E",
+   "register_licence": "ETV2511E",
+   "register_places": 10,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-calm",
@@ -75328,6 +76456,17 @@
   "nightly_from": 715,
   "nightly_to": 2000,
   "rate_rows": 14,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2404-E",
+   "register_licence": "ETV2404E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-alyssa",
@@ -75629,8 +76768,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 6369,
   "price_to": 10483,
@@ -75762,6 +76901,17 @@
   "nightly_from": 910,
   "nightly_to": 1498,
   "rate_rows": 6,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1932-E",
+   "register_licence": "ETV1932E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-bassora",
@@ -75912,8 +77062,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 6,
   "sleeps": 8,
   "price_from": 4510,
   "price_to": 15070,
@@ -76025,6 +77175,17 @@
   "nightly_from": 645,
   "nightly_to": 2153,
   "rate_rows": 10,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1221-E",
+   "register_licence": "ETV1221E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-alyssa",
@@ -76452,6 +77613,19 @@
   "nightly_from": 385,
   "nightly_to": 1375,
   "rate_rows": 10,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "format_differs",
+   "ok": true,
+   "licence": "ET-0471-E4",
+   "register_licence": "ET0471E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Number 0471 is correct, but IMpulse has 'ET-0471-E4' and the register has ET0471E"
+   ]
+  },
   "near": [
    [
     "can-carva",
@@ -76766,6 +77940,17 @@
   "nightly_from": 2515,
   "nightly_to": 3025,
   "rate_rows": 4,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2151-E",
+   "register_licence": "ETV2151E",
+   "register_places": 9,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-amaris",
@@ -76797,10 +77982,6 @@
    ],
    [
     "alegre-blue",
-    1.0
-   ],
-   [
-    "la-flaca",
     1.0
    ],
    [
@@ -76893,10 +78074,6 @@
    ],
    [
     "el-sueno-marino",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -77140,6 +78317,17 @@
   "nightly_from": 550,
   "nightly_to": 1155,
   "rate_rows": 8,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1428-E",
+   "register_licence": "ETV1428E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-goia",
@@ -77405,8 +78593,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 9416,
   "price_to": 30910,
@@ -77612,6 +78800,17 @@
   "nightly_from": 1346,
   "nightly_to": 4416,
   "rate_rows": 22,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2527-E",
+   "register_licence": "ETV2527E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-amorigen",
@@ -77803,7 +79002,7 @@
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
   "bedrooms": 4,
-  "bathrooms": 4,
+  "bathrooms": 6,
   "sleeps": 8,
   "price_from": 25300,
   "price_to": 35000,
@@ -77991,11 +79190,18 @@
   "nightly_from": 3615,
   "nightly_to": 5000,
   "rate_rows": 4,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1284-E",
+   "register_licence": "ETV1284E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
-   [
-    "la-flaca",
-    0.5
-   ],
    [
     "villa-amaris",
     0.5
@@ -78121,10 +79327,6 @@
     3.0
    ],
    [
-    "villa-nia",
-    3.0
-   ],
-   [
     "villa-tess",
     3.0
    ],
@@ -78241,8 +79443,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 7,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 13750,
   "price_to": 27500,
@@ -78454,6 +79656,17 @@
   "nightly_from": 1965,
   "nightly_to": 3929,
   "rate_rows": 9,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2503-E",
+   "register_licence": "ETV2503E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-casita",
@@ -78569,10 +79782,6 @@
    ],
    [
     "villa-ceres",
-    3.5
-   ],
-   [
-    "villa-nia",
     3.5
    ],
    [
@@ -78860,6 +80069,17 @@
   "nightly_from": 1081,
   "nightly_to": 1572,
   "rate_rows": 9,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1712-E",
+   "register_licence": "ETV1712E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-aria",
@@ -79010,7 +80230,7 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 4,
+  "bedrooms": 6,
   "bathrooms": 4,
   "sleeps": 8,
   "price_from": 3742,
@@ -79123,6 +80343,17 @@
   "nightly_from": 535,
   "nightly_to": 1683,
   "rate_rows": 11,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0266-E",
+   "register_licence": "ET0266E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-ingrid",
@@ -79431,8 +80662,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 19454,
   "price_to": 33000,
@@ -79562,6 +80793,17 @@
   "nightly_from": 1100,
   "nightly_to": 4715,
   "rate_rows": 8,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV 1720 E",
+   "register_licence": "ETV1720E",
+   "register_places": 8,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "casa-canela",
@@ -79911,8 +81153,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 8,
   "price_from": 8910,
   "price_to": 29700,
@@ -80088,6 +81330,17 @@
   "nightly_from": 1273,
   "nightly_to": 4243,
   "rate_rows": 11,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0834-E",
+   "register_licence": "ET0834E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-magnifique",
@@ -80150,10 +81403,6 @@
     2.5
    ],
    [
-    "la-flaca",
-    2.5
-   ],
-   [
     "villa-amazonia",
     2.5
    ],
@@ -80183,10 +81432,6 @@
    ],
    [
     "villa-marielle",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -80322,8 +81567,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 8,
   "price_from": 9317,
   "price_to": 19965,
@@ -80453,6 +81698,17 @@
   "nightly_from": 1331,
   "nightly_to": 2853,
   "rate_rows": 10,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2074-E",
+   "register_licence": "ETV2074E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-hilltopview",
@@ -80532,10 +81788,6 @@
    ],
    [
     "villa-amorigen",
-    4.0
-   ],
-   [
-    "villa-brisa",
     4.0
    ],
    [
@@ -80655,8 +81907,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 8,
   "price_from": 37400,
   "price_to": 70000,
@@ -81010,6 +82262,17 @@
   "nightly_from": 5343,
   "nightly_to": 10000,
   "rate_rows": 8,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1911-E",
+   "register_licence": "ETV1911E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-scarlett",
@@ -81515,6 +82778,17 @@
   "nightly_from": 2858,
   "nightly_to": 4286,
   "rate_rows": 5,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2114-E",
+   "register_licence": "ETV2114E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-vista-cala-jondal",
@@ -81538,10 +82812,6 @@
    ],
    [
     "villa-jayden",
-    1.5
-   ],
-   [
-    "villa-nia",
     1.5
    ],
    [
@@ -81622,10 +82892,6 @@
    ],
    [
     "can-laurel",
-    3.5
-   ],
-   [
-    "la-flaca",
     3.5
    ],
    [
@@ -81793,7 +83059,7 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 4,
+  "bedrooms": 5,
   "bathrooms": 4,
   "sleeps": 8,
   "price_from": 4400,
@@ -81959,6 +83225,19 @@
   "nightly_from": 629,
   "nightly_to": 1572,
   "rate_rows": 6,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1223-E",
+   "register_licence": "ETV1223E",
+   "register_places": 7,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": [
+    "Shown for 8 guests; the register allows 7 places"
+   ]
+  },
   "near": [
    [
     "can-bassora",
@@ -82108,8 +83387,8 @@
   "region_name": "San Antonio",
   "district": "San Antonio de Portmany",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 8,
   "price_from": 20680,
   "price_to": 25850,
@@ -82249,6 +83528,17 @@
   "nightly_from": 2955,
   "nightly_to": 3693,
   "rate_rows": 6,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1555-E",
+   "register_licence": "ETV1555E",
+   "register_places": 8,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "casa-yolanda-1",
@@ -82473,6 +83763,17 @@
   "nightly_from": 616,
   "nightly_to": 616,
   "rate_rows": 4,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV2616E",
+   "register_licence": "ETV-2616-E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-elyza",
@@ -82733,6 +84034,17 @@
   "nightly_from": 472,
   "nightly_to": 5380,
   "rate_rows": 11,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1632-E",
+   "register_licence": "ETV1632E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-lumara",
@@ -82915,8 +84227,8 @@
   "region_name": "San Antonio",
   "district": "San Antonio de Portmany",
   "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 3,
+  "bedrooms": 6,
+  "bathrooms": 4,
   "sleeps": 7,
   "price_from": 5390,
   "price_to": 11000,
@@ -83098,6 +84410,17 @@
   "nightly_from": 770,
   "nightly_to": 1572,
   "rate_rows": 7,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0823-E",
+   "register_licence": "ET0823E",
+   "register_places": 7,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "casa-yolanda-1",
@@ -83177,374 +84500,6 @@
   "image": "/assets/villas/can-kai/01-800.webp",
   "image_large": "/assets/villas/can-kai/01-1400.webp",
   "image_colour": "#5f5341"
- },
- {
-  "slug": "la-flaca",
-  "name": "La Flaca",
-  "tagline": "Seven bedrooms, sweeping views over Porroig and Es Cubells",
-  "summary": "La Flaca is a fantastic modern villa located in the exclusive gated community of Vista Alegre. Distributed along two large floors, it offers 6 suites and multiple luxury amenities. This amazing property enjoys coastline…",
-  "description": [
-   "La Flaca is a fantastic modern villa located in the exclusive gated community of Vista Alegre. Distributed along two large floors, it offers 6 suites and multiple luxury amenities. This amazing property enjoys coastline views towards Porroig and Es Cubells bays, without doubt one of the most beautiful panoramas of the Balearic Islands.",
-   "This excellently designed villa is perfect to pass time away with friends and families in designer style. Large sliding glass doors join the massive living and swimming pool areas giving the spaces ample floor to ceiling ventilation and light. With high walls, large comfortable sofas, lavish sea views and quality throughout La Flaca is a property well worth the stay.",
-   "All six bedrooms are en-suite facing the stunning views, with common access to living areas and balconies but ensuring privacy for all guests. The stylish architecture supports the tag of a super villa in one of the most prestigious areas in the island.The villa shares additional private access with its neighbours, both offering extra security in an already safe and protected urbanization. It has parking space for six cars, including a two-car garage.",
-   "In the area we find some of the most famous landmarks in Ibiza such as Blue Marlin beach club and Es Torrent Restaurant, for many the best seafood restaurant on the island."
-  ],
-  "area": "Vista Alegre",
-  "area_key": "Vista Alegre",
-  "region": "san-jose",
-  "region_name": "San José",
-  "district": "San Jose de Sa Talaia",
-  "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 7,
-  "sleeps": 7,
-  "price_from": 19965,
-  "price_to": 27451,
-  "price_on_request": false,
-  "min_nights": 7,
-  "short_stays": false,
-  "cleaning": "2 Cleanings per week",
-  "cleaning_charge": 0,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Flexible check in days",
-  "license": "ETV-0422-E",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": "2026-10-30",
-  "amenities": [
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "Alarm",
-   "BBQ",
-   "Fenced",
-   "Music System",
-   "TV - Satellite",
-   "Wifi",
-   "Safety Box",
-   "Sunloungers",
-   "Sea View",
-   "Gated Community",
-   "Private Parking",
-   "Garage",
-   "Office Space",
-   "Central Heating",
-   "Smart TV",
-   "Fully fitted kitchen",
-   "Infinity pool",
-   "Gated",
-   "Roof Terrace",
-   "Terraces",
-   "Outdoor Kitchen",
-   "Gym/Fitness Equipment"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Sunloungers",
-     "Private Parking",
-     "Infinity pool",
-     "Roof Terrace",
-     "Terraces",
-     "Outdoor Kitchen"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "Music System",
-     "TV - Satellite",
-     "Wifi",
-     "Safety Box",
-     "Office Space",
-     "Central Heating",
-     "Smart TV",
-     "Fully fitted kitchen",
-     "Gym/Fitness Equipment"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Alarm",
-     "Fenced",
-     "Sea View",
-     "Gated"
-    ]
-   },
-   {
-    "title": "Also included",
-    "items": [
-     "Gated Community",
-     "Garage"
-    ]
-   }
-  ],
-  "audience": [
-   "Filming",
-   "Private",
-   "Couples",
-   "Families",
-   "Friends"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation-luxury-designer-villa-in-exclusive-urbanisation.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (13).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (1).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (2).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (4).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (3).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (5).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (6).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (10).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (7).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (9).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (8).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (16).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (15).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (11).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (12).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/756/villa_images/new-luxury-designer-villa-in-exclusive-urbanisation (14).jpeg"
-  ],
-  "lat": 38.88118,
-  "lng": 1.2821,
-  "v_id": 756,
-  "v_uuid": "5e0d0f87-cb58-4491-a185-1e3837f0114c",
-  "nightly_from": 2853,
-  "nightly_to": 3922,
-  "rate_rows": 7,
-  "near": [
-   [
-    "villa-amazonia",
-    0.5
-   ],
-   [
-    "villa-charlotte",
-    0.5
-   ],
-   [
-    "villa-cubes",
-    0.5
-   ],
-   [
-    "villa-eliza",
-    0.5
-   ],
-   [
-    "villa-mila",
-    0.5
-   ],
-   [
-    "villa-riley",
-    0.5
-   ],
-   [
-    "villa-amaris",
-    1.0
-   ],
-   [
-    "villa-maia",
-    1.0
-   ],
-   [
-    "villa-puma",
-    1.0
-   ],
-   [
-    "villa-serenity",
-    1.0
-   ],
-   [
-    "villa-wendy",
-    1.0
-   ],
-   [
-    "alegre-blue",
-    1.5
-   ],
-   [
-    "can-frutal",
-    2.0
-   ],
-   [
-    "can-milna",
-    2.0
-   ],
-   [
-    "can-milna-deluxe",
-    2.0
-   ],
-   [
-    "can-sabina",
-    2.0
-   ],
-   [
-    "can-senna",
-    2.0
-   ],
-   [
-    "villa-dama",
-    2.0
-   ],
-   [
-    "waterfront-dream",
-    2.0
-   ],
-   [
-    "can-berry",
-    2.5
-   ],
-   [
-    "el-sueno-marino",
-    2.5
-   ],
-   [
-    "villa-azure",
-    2.5
-   ],
-   [
-    "villa-bailey",
-    2.5
-   ],
-   [
-    "villa-evelyn",
-    2.5
-   ],
-   [
-    "villa-magnifique",
-    2.5
-   ],
-   [
-    "villa-paola",
-    2.5
-   ],
-   [
-    "villa-porroig-relax",
-    2.5
-   ],
-   [
-    "villa-zaria",
-    2.5
-   ],
-   [
-    "can-laurel",
-    3.0
-   ],
-   [
-    "villa-frankie",
-    3.0
-   ],
-   [
-    "villa-hailey",
-    3.0
-   ],
-   [
-    "villa-marielle",
-    3.0
-   ],
-   [
-    "villa-nizra",
-    3.0
-   ],
-   [
-    "can-beso",
-    3.5
-   ],
-   [
-    "can-vista-cala-jondal",
-    3.5
-   ],
-   [
-    "la-perla-escondida",
-    3.5
-   ],
-   [
-    "villa-nia",
-    3.5
-   ],
-   [
-    "villa-ocean-vista",
-    3.5
-   ],
-   [
-    "villa-tess",
-    3.5
-   ],
-   [
-    "can-josie",
-    4.0
-   ],
-   [
-    "casa-dhort",
-    4.0
-   ],
-   [
-    "villa-claire",
-    4.0
-   ],
-   [
-    "villa-jayden",
-    4.5
-   ],
-   [
-    "can-nuri",
-    5.0
-   ],
-   [
-    "villa-paraiso",
-    5.0
-   ],
-   [
-    "villa-ronda",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/la-flaca/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#8c8d8e"
-   },
-   {
-    "base": "villas/la-flaca/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#9db7c0"
-   },
-   {
-    "base": "villas/la-flaca/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#89929c"
-   },
-   {
-    "base": "villas/la-flaca/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#9dabb3"
-   },
-   {
-    "base": "villas/la-flaca/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#ac9e87"
-   },
-   {
-    "base": "villas/la-flaca/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#b8b4a6"
-   }
-  ],
-  "image": "/assets/villas/la-flaca/01-800.webp",
-  "image_large": "/assets/villas/la-flaca/01-1400.webp",
-  "image_colour": "#8c8d8e"
  },
  {
   "slug": "la-perla-escondida",
@@ -83747,6 +84702,17 @@
   "nightly_from": 1258,
   "nightly_to": 1320,
   "rate_rows": 5,
+  "licensed_bedrooms": 4,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV1390E",
+   "register_licence": "ETV1390E",
+   "register_places": 7,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-beso",
@@ -83829,10 +84795,6 @@
     3.5
    ],
    [
-    "la-flaca",
-    3.5
-   ],
-   [
     "villa-amaris",
     3.5
    ],
@@ -83894,10 +84856,6 @@
    ],
    [
     "villa-brielle",
-    4.0
-   ],
-   [
-    "villa-nia",
     4.0
    ],
    [
@@ -84073,8 +85031,8 @@
   "region_name": "San Antonio",
   "district": "San Antonio de Portmany",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 3,
+  "bedrooms": 6,
+  "bathrooms": 5,
   "sleeps": 6,
   "price_from": 9900,
   "price_to": 11000,
@@ -84275,6 +85233,17 @@
   "nightly_from": 1415,
   "nightly_to": 1572,
   "rate_rows": 4,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-0920-E",
+   "register_licence": "ETV0920E",
+   "register_places": 6,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "can-harley",
@@ -84550,6 +85519,17 @@
   "nightly_from": 550,
   "nightly_to": 675,
   "rate_rows": 6,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1626-E",
+   "register_licence": "ETV1626E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "finca-palmeras",
@@ -84565,10 +85545,6 @@
    ],
    [
     "can-gabriel",
-    3.5
-   ],
-   [
-    "villa-brisa",
     3.5
    ],
    [
@@ -84683,8 +85659,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 3,
+  "bedrooms": 9,
+  "bathrooms": 10,
   "sleeps": 6,
   "price_from": 14850,
   "price_to": 29700,
@@ -84870,6 +85846,17 @@
   "nightly_from": 2122,
   "nightly_to": 4243,
   "rate_rows": 8,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0781-E",
+   "register_licence": "ET0781E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-goia",
@@ -85239,6 +86226,17 @@
   "nightly_from": 440,
   "nightly_to": 803,
   "rate_rows": 8,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1608-E",
+   "register_licence": "ETV1608E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-auren",
@@ -85559,6 +86557,17 @@
   "nightly_from": 473,
   "nightly_to": 715,
   "rate_rows": 9,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0267-E",
+   "register_licence": "ET0267E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-berry",
@@ -85637,10 +86646,6 @@
     3.0
    ],
    [
-    "la-flaca",
-    3.0
-   ],
-   [
     "villa-amaris",
     3.0
    ],
@@ -85670,10 +86675,6 @@
    ],
    [
     "villa-mila",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -85882,8 +86883,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 3,
+  "bedrooms": 4,
+  "bathrooms": 4,
   "sleeps": 6,
   "price_from": 2268,
   "price_to": 13200,
@@ -86122,6 +87123,17 @@
   "nightly_from": 324,
   "nightly_to": 1886,
   "rate_rows": 11,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-0954-E",
+   "register_licence": "ETV0954E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-beth",
@@ -86528,6 +87540,17 @@
   "nightly_from": 1022,
   "nightly_to": 2024,
   "rate_rows": 11,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0436-E",
+   "register_licence": "ET0436E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-milna-deluxe",
@@ -86548,10 +87571,6 @@
    [
     "villa-bailey",
     1.5
-   ],
-   [
-    "la-flaca",
-    2.0
    ],
    [
     "villa-amazonia",
@@ -86768,8 +87787,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 3,
+  "bedrooms": 4,
+  "bathrooms": 4,
   "sleeps": 6,
   "price_from": 8030,
   "price_to": 16429,
@@ -86939,6 +87958,17 @@
   "nightly_from": 1148,
   "nightly_to": 2347,
   "rate_rows": 11,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0436-E",
+   "register_licence": "ET0436E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-milna",
@@ -86959,10 +87989,6 @@
    [
     "villa-bailey",
     1.5
-   ],
-   [
-    "la-flaca",
-    2.0
    ],
    [
     "villa-amazonia",
@@ -87295,6 +88321,17 @@
   "nightly_from": 660,
   "nightly_to": 1018,
   "rate_rows": 8,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0589-E",
+   "register_licence": "ET0589E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-mistique",
@@ -87514,8 +88551,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 2,
+  "bedrooms": 4,
+  "bathrooms": 3,
   "sleeps": 6,
   "price_from": 3312,
   "price_to": 3312,
@@ -87668,6 +88705,17 @@
   "nightly_from": 474,
   "nightly_to": 474,
   "rate_rows": 1,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2414-E",
+   "register_licence": "ETV2414E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-mambo",
@@ -88174,6 +89222,17 @@
   "nightly_from": 445,
   "nightly_to": 1069,
   "rate_rows": 10,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1427-E",
+   "register_licence": "ETV1427E",
+   "register_places": 6,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "can-koi",
@@ -88561,6 +89620,17 @@
   "nightly_from": 739,
   "nightly_to": 1383,
   "rate_rows": 6,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0831-E",
+   "register_licence": "ET0831E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "casa-clareta",
@@ -88890,7 +89960,7 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 3,
+  "bedrooms": 4,
   "bathrooms": 3,
   "sleeps": 6,
   "price_from": 3850,
@@ -89003,6 +90073,17 @@
   "nightly_from": 550,
   "nightly_to": 1155,
   "rate_rows": 13,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2444-E",
+   "register_licence": "ETV2444E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-katherine",
@@ -89180,7 +90261,7 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 3,
+  "bedrooms": 4,
   "bathrooms": 2,
   "sleeps": 6,
   "price_from": 8087,
@@ -89351,6 +90432,17 @@
   "nightly_from": 1156,
   "nightly_to": 2465,
   "rate_rows": 13,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2582-E",
+   "register_licence": "ETV2582E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "the-wave-ibiza",
@@ -89794,6 +90886,19 @@
   "nightly_from": 715,
   "nightly_to": 1540,
   "rate_rows": 11,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "format_differs",
+   "ok": true,
+   "licence": "ETV-1102-E",
+   "register_licence": "ET1102E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": [
+    "Number 1102 is correct, but IMpulse has 'ETV-1102-E' and the register has ET1102E"
+   ]
+  },
   "near": [
    [
     "cana-gotas",
@@ -90207,6 +91312,19 @@
   "nightly_from": 384,
   "nightly_to": 574,
   "rate_rows": 8,
+  "licensed_bedrooms": 2,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "other_register",
+   "ok": true,
+   "licence": "HAC-0059-E",
+   "register_licence": null,
+   "register_places": null,
+   "register_municipality": null,
+   "issues": [
+    "'HAC-0059-E' is an hotel/apartment licence: not in the tourist-home list, check it in its own register"
+   ]
+  },
   "near": [
    [
     "es-palauet-apartment",
@@ -90609,6 +91727,17 @@
   "nightly_from": 473,
   "nightly_to": 528,
   "rate_rows": 4,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV2120E",
+   "register_licence": "ETV2120E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "casa-alhena",
@@ -90821,8 +91950,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 3,
+  "bedrooms": 5,
+  "bathrooms": 5,
   "sleeps": 6,
   "price_from": 9625,
   "price_to": 25269,
@@ -90992,6 +92121,17 @@
   "nightly_from": 1375,
   "nightly_to": 3610,
   "rate_rows": 15,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV1648E",
+   "register_licence": "ETV1648E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "los-pinos",
@@ -91271,6 +92411,17 @@
   "nightly_from": 605,
   "nightly_to": 765,
   "rate_rows": 9,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0576-E",
+   "register_licence": "ET0576E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-brooke",
@@ -91397,7 +92548,7 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 3,
+  "bedrooms": 4,
   "bathrooms": 4,
   "sleeps": 6,
   "price_from": 5500,
@@ -91559,6 +92710,17 @@
   "nightly_from": 786,
   "nightly_to": 2043,
   "rate_rows": 10,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2125-E",
+   "register_licence": "ETV2125E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-evelyn",
@@ -91586,10 +92748,6 @@
    ],
    [
     "villa-magnifique",
-    1.5
-   ],
-   [
-    "villa-nia",
     1.5
    ],
    [
@@ -91630,10 +92788,6 @@
    ],
    [
     "alegre-blue",
-    2.5
-   ],
-   [
-    "la-flaca",
     2.5
    ],
    [
@@ -91850,8 +93004,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 3,
+  "bedrooms": 4,
+  "bathrooms": 4,
   "sleeps": 6,
   "price_from": 6050,
   "price_to": 8800,
@@ -91978,6 +93132,17 @@
   "nightly_from": 865,
   "nightly_to": 1258,
   "rate_rows": 6,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0862-E",
+   "register_licence": "ET0862E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-fabienne",
@@ -92093,10 +93258,6 @@
    ],
    [
     "villa-ceres",
-    3.5
-   ],
-   [
-    "villa-nia",
     3.5
    ],
    [
@@ -92228,8 +93389,8 @@
   "region_name": "San Antonio",
   "district": "San Antonio de Portmany",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 3,
+  "bedrooms": 4,
+  "bathrooms": 4,
   "sleeps": 6,
   "price_from": 5121,
   "price_to": 14207,
@@ -92377,6 +93538,17 @@
   "nightly_from": 732,
   "nightly_to": 2030,
   "rate_rows": 15,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1869-E",
+   "register_licence": "ETV1869E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-harper",
@@ -92725,11 +93897,18 @@
   "nightly_from": 1705,
   "nightly_to": 3355,
   "rate_rows": 10,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1729-E",
+   "register_licence": "ETV1729E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
-   [
-    "la-flaca",
-    0.5
-   ],
    [
     "villa-amaris",
     0.5
@@ -92876,10 +94055,6 @@
    ],
    [
     "la-perla-escondida",
-    3.5
-   ],
-   [
-    "villa-nia",
     3.5
    ],
    [
@@ -93101,6 +94276,17 @@
   "nightly_from": 943,
   "nightly_to": 1336,
   "rate_rows": 8,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1242-E",
+   "register_licence": "ETV1242E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-tehani",
@@ -93259,10 +94445,6 @@
     4.5
    ],
    [
-    "villa-nia",
-    4.5
-   ],
-   [
     "villa-paraiso",
     4.5
    ],
@@ -93371,7 +94553,7 @@
   "district": "San Antonio de Portmany",
   "country": "Spain",
   "bedrooms": 3,
-  "bathrooms": 3,
+  "bathrooms": 4,
   "sleeps": 6,
   "price_from": 3465,
   "price_to": 18095,
@@ -93513,6 +94695,19 @@
   "nightly_from": 495,
   "nightly_to": 2585,
   "rate_rows": 26,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "format_differs",
+   "ok": true,
+   "licence": "ETV-1071-E",
+   "register_licence": "ET1071E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": [
+    "Number 1071 is correct, but IMpulse has 'ETV-1071-E' and the register has ET1071E"
+   ]
+  },
   "near": [
    [
     "can-carva",
@@ -93690,8 +94885,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 3,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 6,
   "price_from": 35750,
   "price_to": 59400,
@@ -93876,6 +95071,17 @@
   "nightly_from": 5108,
   "nightly_to": 8486,
   "rate_rows": 10,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV/2165-E",
+   "register_licence": "ETV2165E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-josie",
@@ -93887,10 +95093,6 @@
    ],
    [
     "can-vista-cala-jondal",
-    1.0
-   ],
-   [
-    "villa-nia",
     1.0
    ],
    [
@@ -94062,10 +95264,6 @@
     4.5
    ],
    [
-    "la-flaca",
-    4.5
-   ],
-   [
     "villa-amazonia",
     4.5
    ],
@@ -94158,8 +95356,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 4,
+  "bedrooms": 7,
+  "bathrooms": 7,
   "sleeps": 6,
   "price_from": 15400,
   "price_to": 21560,
@@ -94311,6 +95509,17 @@
   "nightly_from": 2200,
   "nightly_to": 3080,
   "rate_rows": 9,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 4,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1816-E",
+   "register_licence": "ETV1816E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-tuscany",
@@ -94630,8 +95839,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 3,
+  "bedrooms": 5,
+  "bathrooms": 4,
   "sleeps": 6,
   "price_from": 6545,
   "price_to": 16500,
@@ -94831,6 +96040,17 @@
   "nightly_from": 935,
   "nightly_to": 2358,
   "rate_rows": 10,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0544-E",
+   "register_licence": "ET0544E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-balena",
@@ -95300,6 +96520,17 @@
   "nightly_from": 750,
   "nightly_to": 1300,
   "rate_rows": 11,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2195-E",
+   "register_licence": "ETV2195E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-fabulosa",
@@ -95528,8 +96759,8 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 3,
+  "bedrooms": 6,
+  "bathrooms": 6,
   "sleeps": 6,
   "price_from": 4576,
   "price_to": 17710,
@@ -95685,6 +96916,17 @@
   "nightly_from": 550,
   "nightly_to": 2530,
   "rate_rows": 9,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1721-E",
+   "register_licence": "ETV1721E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "house-of-dreams",
@@ -96058,8 +97300,8 @@
   "region_name": "Santa Eulalia",
   "district": "Santa Eulalia del Rio",
   "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 3,
+  "bedrooms": 6,
+  "bathrooms": 5,
   "sleeps": 6,
   "price_from": 10450,
   "price_to": 19800,
@@ -96217,6 +97459,17 @@
   "nightly_from": 1493,
   "nightly_to": 2829,
   "rate_rows": 9,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0860-E",
+   "register_licence": "ET0860E",
+   "register_places": 6,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "issues": []
+  },
   "near": [
    [
     "casa-yolanda-1",
@@ -96506,6 +97759,17 @@
   "nightly_from": 1925,
   "nightly_to": 2436,
   "rate_rows": 5,
+  "licensed_bedrooms": 5,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "EtV-2314-E",
+   "register_licence": "ETV2314E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-sahara",
@@ -96828,6 +98092,17 @@
   "nightly_from": 1281,
   "nightly_to": 1281,
   "rate_rows": 2,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1425-E",
+   "register_licence": "ETV1425E",
+   "register_places": 6,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "villa-can-gertrudis",
@@ -97119,6 +98394,17 @@
   "nightly_from": 198,
   "nightly_to": 743,
   "rate_rows": 11,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1114-E",
+   "register_licence": "ETV1114E",
+   "register_places": 5,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "casa-valldaura-2",
@@ -97527,6 +98813,17 @@
   "nightly_from": 198,
   "nightly_to": 743,
   "rate_rows": 11,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1113-E",
+   "register_licence": "ETV1113E",
+   "register_places": 5,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "casa-valldaura-1",
@@ -97840,7 +99137,7 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 3,
+  "bedrooms": 4,
   "bathrooms": 2,
   "sleeps": 5,
   "price_from": 3850,
@@ -97899,6 +99196,17 @@
   "nightly_from": 550,
   "nightly_to": 1069,
   "rate_rows": 10,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2605-E",
+   "register_licence": "ETV2605E",
+   "register_places": 5,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-ivy",
@@ -98221,6 +99529,17 @@
   "nightly_from": 315,
   "nightly_to": 880,
   "rate_rows": 11,
+  "licensed_bedrooms": 2,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2573–E",
+   "register_licence": "ETV2573E",
+   "register_places": 4,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-puma",
@@ -98256,10 +99575,6 @@
    ],
    [
     "can-sabina",
-    1.5
-   ],
-   [
-    "la-flaca",
     1.5
    ],
    [
@@ -98348,10 +99663,6 @@
    ],
    [
     "villa-magnifique",
-    3.0
-   ],
-   [
-    "villa-nia",
     3.0
    ],
    [
@@ -98615,6 +99926,17 @@
   "nightly_from": 550,
   "nightly_to": 550,
   "rate_rows": 4,
+  "licensed_bedrooms": 2,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1333-E",
+   "register_licence": "ETV1333E",
+   "register_places": 4,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "finca-lucia",
@@ -99066,6 +100388,17 @@
   "nightly_from": 869,
   "nightly_to": 1089,
   "rate_rows": 4,
+  "licensed_bedrooms": 2,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2332-E",
+   "register_licence": "ETV2332E",
+   "register_places": 4,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "can-simo",
@@ -99484,6 +100817,17 @@
   "nightly_from": 393,
   "nightly_to": 462,
   "rate_rows": 4,
+  "licensed_bedrooms": 2,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1943-E",
+   "register_licence": "ETV1943E",
+   "register_places": 4,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "casa-fourteen",
@@ -99942,6 +101286,17 @@
   "nightly_from": 311,
   "nightly_to": 715,
   "rate_rows": 16,
+  "licensed_bedrooms": 2,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1594-E",
+   "register_licence": "ETV1594E",
+   "register_places": 4,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "casa-fourteen",
@@ -100362,6 +101717,17 @@
   "nightly_from": 330,
   "nightly_to": 363,
   "rate_rows": 4,
+  "licensed_bedrooms": 1,
+  "licensed_bathrooms": 1,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1943-E",
+   "register_licence": "ETV1943E",
+   "register_places": 4,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "issues": []
+  },
   "near": [
    [
     "casa-fourteen",
@@ -100763,6 +102129,19 @@
   "nightly_from": 272,
   "nightly_to": 338,
   "rate_rows": 7,
+  "licensed_bedrooms": 1,
+  "licensed_bathrooms": 1,
+  "licence_check": {
+   "status": "other_register",
+   "ok": true,
+   "licence": "HAC-0059-E",
+   "register_licence": null,
+   "register_places": null,
+   "register_municipality": null,
+   "issues": [
+    "'HAC-0059-E' is an hotel/apartment licence: not in the tourist-home list, check it in its own register"
+   ]
+  },
   "near": [
    [
     "es-palauet-duplex",
@@ -101058,7 +102437,7 @@
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
   "bedrooms": 6,
-  "bathrooms": 6,
+  "bathrooms": 9,
   "sleeps": 12,
   "price_from": 0,
   "price_to": 0,
@@ -101245,6 +102624,17 @@
   "nightly_from": 0,
   "nightly_to": 0,
   "rate_rows": 0,
+  "licensed_bedrooms": 6,
+  "licensed_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-1061-E",
+   "register_licence": "ET1061E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-sylvia",
@@ -101409,7 +102799,7 @@
   "region_name": "Ibiza",
   "district": "Ibiza",
   "country": "Spain",
-  "bedrooms": 3,
+  "bedrooms": 4,
   "bathrooms": 3,
   "sleeps": 6,
   "price_from": 0,
@@ -101507,6 +102897,17 @@
   "nightly_from": 0,
   "nightly_to": 0,
   "rate_rows": 0,
+  "licensed_bedrooms": 3,
+  "licensed_bathrooms": 3,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1694-E",
+   "register_licence": "ETV1694E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "can-daneri",
@@ -101645,10 +103046,6 @@
     4.0
    ],
    [
-    "villa-nia",
-    4.0
-   ],
-   [
     "villa-marielle",
     4.5
    ],
@@ -101730,8 +103127,8 @@
   "region_name": "San José",
   "district": "San Jose de Sa Talaia",
   "country": "Spain",
-  "bedrooms": 2,
-  "bathrooms": 2,
+  "bedrooms": 4,
+  "bathrooms": 3,
   "sleeps": 4,
   "price_from": 0,
   "price_to": 0,
@@ -101837,6 +103234,17 @@
   "nightly_from": 0,
   "nightly_to": 0,
   "rate_rows": 0,
+  "licensed_bedrooms": 2,
+  "licensed_bathrooms": 2,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0543-E",
+   "register_licence": "ET0543E",
+   "register_places": 4,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "issues": []
+  },
   "near": [
    [
     "villa-trinity",
@@ -101920,10 +103328,6 @@
    ],
    [
     "villa-jayden",
-    2.5
-   ],
-   [
-    "villa-nia",
     2.5
    ],
    [

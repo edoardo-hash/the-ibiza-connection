@@ -50,32 +50,6 @@
       "href": "/villas/"
     },
     {
-      "label": "Destinations",
-      "href": "/destinations/",
-      "children": [
-        {
-          "label": "San Juan",
-          "href": "/destinations/san-juan/"
-        },
-        {
-          "label": "San Antonio",
-          "href": "/destinations/san-antonio/"
-        },
-        {
-          "label": "San José",
-          "href": "/destinations/san-jose/"
-        },
-        {
-          "label": "Santa Eulalia",
-          "href": "/destinations/santa-eulalia/"
-        },
-        {
-          "label": "Ibiza",
-          "href": "/destinations/ibiza/"
-        }
-      ]
-    },
-    {
       "label": "Experiences",
       "href": "/experiences/",
       "children": [
@@ -172,5 +146,8 @@
     "text": "If you find the same villa for less on another website, send us the link and we will match the price.",
     "short": "Seen this villa for less on another website? Send us the link and we'll match the price.",
     "link_label": "Send us the link"
-  }
+  },
+  "licence_policy": "hide",
+  "licence_confirmed": {},
+  "_licence_notes": "licence_policy: 'hide' keeps villas whose licence fails the official-register check (data/licence-check.json) off the site; 'flag' lists them anyway. licence_confirmed: IMpulse uuid -> note, e.g. 'Confirmed by HAM <name> on <date>', to put a failed villa back."
 }

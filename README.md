@@ -345,3 +345,26 @@ screenshots/             review captures
 
 Site code © The Ibiza Connection. Photography © the villa owners / The Ibiza
 Connection. Do not reuse the photography outside this website without permission.
+
+## Licence check (official register)
+
+Every refresh (`tools/fetch_invenio.py`, so daily and for every newly published villa)
+checks each villa's tourist licence against the Consell d'Eivissa register stored in
+`data/register/habitatges-turistics.csv`. The 4 digits are the licence: `ETV1276E` is
+correct when 1276 is in the register.
+
+| Status | Meaning | On the site |
+|---|---|---|
+| `verified` | number in the register, written the same way | listed |
+| `format_differs` | number correct, prefix/suffix differ from the register (flagged — fix in IMpulse) | listed, with the register's spelling |
+| `other_register` | AG (agroturismo) or HAC licence, not in this list (flagged) | listed |
+| `not_in_register` / `no_number` | the 4 digits aren't in the register / can't be read | hidden until a HAM confirms |
+
+Results are stored in `data/licence-check.json` (`python3 tools/licence_check.py --report`
+prints them). To put a hidden villa back, add its IMpulse uuid to
+`content/settings.json → licence_confirmed`; `licence_policy: "flag"` lists failures anyway.
+Refresh the register with a new download from the Consell:
+`python3 tools/licence_check.py --import ~/Downloads/List-habitatges-turistics_-DDMMYYYY.xls`.
+
+Bedrooms and bathrooms are the villa's real counts from IMpulse (`api_villa_list_lr`);
+guests stay the licensed number. The licence is shown on every villa card and villa page.

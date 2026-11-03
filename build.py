@@ -354,6 +354,16 @@ def image_tag(image: dict, alt: str, sizes: str, cls: str = "", loading: str = "
     return "<img " + " ".join(attrs) + ">"
 
 
+def display_licence(villa: dict) -> str:
+    """The tourist licence as the official register writes it when the 4 digits are
+    verified (data/licence-check.json), otherwise as entered in IMpulse."""
+    check = villa.get("licence_check") or {}
+    if check.get("status") in ("verified", "format_differs") and check.get("register_licence"):
+        return check["register_licence"]
+    lic = (villa.get("license") or "").strip()
+    return "" if lic.upper() == "TBA" else lic
+
+
 def villa_card(villa: dict, *, compact: bool = False, image_index: int = 0) -> str:
     image = villa_image(villa, image_index)
     price = (
@@ -384,6 +394,7 @@ def villa_card(villa: dict, *, compact: bool = False, image_index: int = 0) -> s
                 <span>{villa['bedrooms']} bedrooms</span>
                 <span>{villa['bathrooms']} bathrooms</span>
               </div>
+              {f'<p class="villa-card__licence">Tourist licence {esc(display_licence(villa))}</p>' if display_licence(villa) else ''}
               <div class="villa-card__price"><span>From</span>{price}</div>
             </div>
           </a>
@@ -1436,8 +1447,8 @@ def build_villa(villa: dict) -> str:
         facts.append(("Cleaning charge", money(villa["cleaning_charge"])))
     if villa.get("check_in_days"):
         facts.append(("Arrival days", esc(villa["check_in_days"])))
-    if villa.get("license") and villa["license"].upper() != "TBA":
-        facts.append(("Tourist licence", esc(villa["license"])))
+    if display_licence(villa):
+        facts.append(("Tourist licence", esc(display_licence(villa))))
     facts.append(("Short stays", "Available on request" if villa.get("short_stays") else "Weekly stays"))
     fact_html = "".join(
         f'<div class="fact"><dt>{label}</dt><dd>{value}</dd></div>' for label, value in facts
@@ -1525,6 +1536,7 @@ def build_villa(villa: dict) -> str:
       <span class="spec">{icon('bath')} {villa['bathrooms']} bathrooms</span>
       <span class="spec">{icon('users')} Sleeps {villa['sleeps']}</span>
       <span class="spec">{icon('calendar')} {villa['min_nights']} nights minimum</span>
+      {f'<span class="spec spec--licence">Tourist licence {esc(display_licence(villa))}</span>' if display_licence(villa) else ''}
       {f'<span class="spec">{icon("pool")} Private pool</span>' if "Swimming Pool" in villa.get("amenities", []) else ''}
     </div>
   </div>

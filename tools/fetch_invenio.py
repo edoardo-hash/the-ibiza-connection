@@ -36,6 +36,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import licence_check  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 IMAGES = ROOT / "assets" / "villas"
@@ -704,6 +707,32 @@ def main() -> None:
             villa["price_to"] = max(villa["price_to"], villa["nightly_to"] * 7)
             villa["price_on_request"] = False
 
+    # Room counts and licence check (Edo, 3 Nov 2026).
+    # Bedrooms and bathrooms: the REAL counts from IMpulse (api_villa_list only carries the
+    # licensed ones), as on the Invenio portal. Guests stay the licensed number.
+    lr_by_uuid = {str(r.get("bp_uuid") or "").strip().lower(): r for r in lr_rows if isinstance(r, dict)}
+    for villa in villas:
+        lr = lr_by_uuid.get(villa["v_uuid"].lower(), {})
+        villa["licensed_bedrooms"], villa["licensed_bathrooms"] = villa["bedrooms"], villa["bathrooms"]
+        villa["bedrooms"] = as_int(lr.get("bedrooms")) or villa["bedrooms"]
+        villa["bathrooms"] = as_int(lr.get("bathrooms")) or villa["bathrooms"]
+    # Every listed villa (so every newly published one) is checked against the official
+    # register in data/register/ on each refresh. Failures stay off the site until the HAM
+    # confirms the licence (content/settings.json "licence_confirmed", by IMpulse uuid).
+    settings = json.loads((ROOT / "content" / "settings.json").read_text(encoding="utf-8"))
+    report = licence_check.check_villas(villas, lr_by_uuid, settings.get("licence_confirmed") or {})
+    if report:
+        policy = settings.get("licence_policy", "hide")
+        if policy == "hide" and not args.only:
+            villas = [v for v in villas if v["licence_check"]["ok"]]
+        report["policy"] = policy
+        (DATA / "licence-check.json").write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"  licence check (register of {report['register_as_of']}): {report['counts']}")
+        if report["hidden"]:
+            print(f"  ! {'hidden' if policy == 'hide' else 'FAILED (still listed)'} until a HAM confirms: "
+                  + ", ".join(report["hidden"]))
+        print(f"  {len(report['flagged'])} more flagged for review → data/licence-check.json")
+
     # "Two villas nearby" (Edo, 3 Nov 2026, portal villa-groups logic with 2 villas / 5 km): for
     # each villa, the other listed villas within PAIR_MAX_KM by EXACT GPS (straight line). Only
     # the distance rounded UP to the next half kilometre is stored; exact positions never are.
@@ -798,6 +827,8 @@ def main() -> None:
         "min_price": min([v["price_from"] for v in villas if v["price_from"]] or [0]),
         "max_price": max([v["price_to"] for v in villas] or [0]),
         "max_sleeps": max([v["sleeps"] for v in villas] or [0]),
+        "licence_check": report.get("counts", {}) if report else {},
+        "licence_hidden": len(report.get("hidden", [])) if report else 0,
     }
 
     # Booked dates for the instant date search (Edo, 3 Nov 2026). Read from the netcup mirror's

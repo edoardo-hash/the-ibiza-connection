@@ -877,6 +877,13 @@ body.menu-open .site-menu { opacity: 1; visibility: visible; }
   letter-spacing: 0.04em;
   color: var(--muted);
 }
+.villa-card__licence {
+  margin: 6px 0 0;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
 .villa-card__price {
   display: flex;
   align-items: baseline;
@@ -1197,6 +1204,7 @@ select.filter-select,
   border-top: 1px solid var(--line);
 }
 .spec { display: flex; align-items: center; gap: 9px; font-size: 12px; letter-spacing: 0.04em; color: var(--ink-2); }
+.spec--licence { text-transform: uppercase; letter-spacing: 0.1em; font-size: 11px; color: var(--muted); }
 .spec svg { width: 17px; height: 17px; color: var(--clay); flex-shrink: 0; }
 
 .gallery {
