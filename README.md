@@ -206,7 +206,7 @@ enquiry form pre-worded (`/contact/?match=1&villa=…`).
 
 **Two villas together** (the portal's villa-groups logic, 2 villas / 1 km): when a search
 with bedrooms "from" finds no single villa (in the chosen place), up to 6 pairs are shown —
-two villas within 1 km of each other, each too small alone, together covering the bedrooms
+two villas within 1 km of each other (widened to 2, 3, then 5 km when that gives fewer than 3 pairs), each too small alone, together covering the bedrooms
 (and guests); same other filters; closest first, then fewest spare bedrooms, then cheapest;
 a villa in at most 2 pairs; up to 20 % over the maximum budget. Distances come from the
 EXACT GPS in the long-rental list, worked out by `fetch_invenio.py` (`near` in

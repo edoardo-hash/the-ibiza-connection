@@ -603,8 +603,11 @@
     const PAIRS_PER_VILLA = 2;
     const OVER_BUDGET_TOLERANCE = 0.2;
     const cardByIdx = new Map(cards.map((c) => [c.dataset.idx, c]));
-    const PAIR_MAX_KM = 1;
-    const nearOf = (card) =>
+    // Start with villas within 1 km; if that gives fewer than PAIR_MIN pairs, widen step by step
+    // (Edo, 3 Nov 2026). The build stores neighbours up to 5 km.
+    const PAIR_STEPS_KM = [1, 2, 3, 5];
+    const PAIR_MIN = 3;
+    const nearOf = (card, maxKm) =>
       (card.dataset.near || "")
         .split(" ")
         .filter(Boolean)
@@ -612,9 +615,18 @@
           const [idx, km] = x.split(":");
           return { card: cardByIdx.get(idx), km: Number(km) };
         })
-        .filter((n) => n.card && n.km <= PAIR_MAX_KM);
+        .filter((n) => n.card && n.km <= maxKm);
     let pairsEl = null;
     const findPairs = (state) => {
+      let best = { pairs: [], local: true, maxKm: PAIR_STEPS_KM[0] };
+      for (const maxKm of PAIR_STEPS_KM) {
+        const r = findPairsWithin(state, maxKm);
+        if (r.pairs.length > best.pairs.length) best = { ...r, maxKm };
+        if (r.pairs.length >= PAIR_MIN) break;
+      }
+      return best;
+    };
+    const findPairsWithin = (state, maxKm) => {
       const need = Number(state.bmin);
       const guests = Number(state.guests) || 0;
       if (!need) return { pairs: [], local: true };
@@ -625,7 +637,7 @@
       );
       const found = [];
       pool.forEach((a) => {
-        nearOf(a).forEach(({ card: b, km }) => {
+        nearOf(a, maxKm).forEach(({ card: b, km }) => {
           if (!pool.has(b) || Number(b.dataset.idx) <= Number(a.dataset.idx)) return;
           const beds = Number(a.dataset.bedrooms) + Number(b.dataset.bedrooms);
           const sleeps = Number(a.dataset.sleeps) + Number(b.dataset.sleeps);
@@ -690,8 +702,8 @@
       const where = state.district || state.area ? locationLabel(state) : "";
       const beds = `${state.bmin}${state.bmax && state.bmax !== state.bmin ? `–${state.bmax}` : "+"} bedrooms`;
       const intro = result.alongside
-        ? `For ${beds}${where ? ` in ${where}` : ""} you can also take two villas a few minutes apart${dated ? ", both free for your dates" : ""}${!result.local && where ? ` — the closest pairs to ${where}` : ""}.`
-        : `No single villa${where ? ` in ${where}` : ""} has ${state.bmin}${state.bmax && state.bmax !== state.bmin ? `–${state.bmax}` : "+"} bedrooms${dated ? " free for your dates" : ""}. These pairs of villas, a few minutes apart, have them together${!result.local && where ? ` — the closest pairs to ${where}` : ""}.`;
+        ? `For ${beds}${where ? ` in ${where}` : ""} you can also take two villas within ${result.maxKm} km of each other${dated ? ", both free for your dates" : ""}${!result.local && where ? ` — the closest pairs to ${where}` : ""}.`
+        : `No single villa${where ? ` in ${where}` : ""} has ${state.bmin}${state.bmax && state.bmax !== state.bmin ? `–${state.bmax}` : "+"} bedrooms${dated ? " free for your dates" : ""}. These pairs of villas, within ${result.maxKm} km of each other, have them together${!result.local && where ? ` — the closest pairs to ${where}` : ""}.`;
       const params = new URLSearchParams();
       if (dateFrom?.value) params.set("arrive", dateFrom.value);
       if (dateTo?.value) params.set("depart", dateTo.value);
