@@ -70,6 +70,24 @@ VILLAS = load(DATA / "villas.json")
 # they stay hidden whatever the daily refresh brings back.
 _HIDDEN = {str(h["uuid"]).lower() for h in SETTINGS.get("hidden_villas", [])}
 VILLAS = [v for v in VILLAS if str(v.get("v_uuid", "")).lower() not in _HIDDEN]
+
+def _area_villas(name: str) -> dict:
+    try:
+        return {k.lower(): v for k, v in load(DATA / "area" / name)["villas"].items()}
+    except (OSError, KeyError, ValueError):
+        return {}
+
+
+# "The area" (Edo, 3 Nov 2026, as on the Invenio portal): road distances first (portal's OSRM file),
+# then the portal's older straight-line file, then the ones fetch_invenio.py computed for new villas.
+AREA_SOURCES = [_area_villas("area-road.json"), _area_villas("area-info.json"), _area_villas("area-computed.json")]
+
+
+def area_info(villa: dict) -> dict | None:
+    uuid = str(villa.get("v_uuid") or "").lower()
+    return next((src[uuid] for src in AREA_SOURCES if uuid in src), None)
+
+
 META = load(DATA / "meta.json")
 PRICES = load(DATA / "prices.json")
 
@@ -1495,6 +1513,40 @@ def build_villa(villa: dict) -> str:
         <a class="link" href="https://www.openstreetmap.org/?mlat={lat}&amp;mlon={lng}#map=14/{lat}/{lng}" target="_blank" rel="noopener">View larger map</a>
       </div>"""
 
+    nearby_html = ""
+    info = area_info(villa)
+    if info:
+        def dist(n):
+            return "—" if n is None else f"{n:.1f}".rstrip("0").rstrip(".") + " km"
+
+        rows = [("Airport", dist(info.get("airportKm"))), ("Ibiza Town", dist(info.get("townKm")))]
+        for label, key in (("Nearest beach", "beach"), ("Nearest village", "nearTown"), ("Nearest supermarket", "supermarket")):
+            item = info.get(key)
+            if item and item.get("name"):
+                rows.append((label, f"<strong>{esc(item['name'])}</strong>, {dist(item.get('km'))}"))
+        rows_html = "".join(f'<div class="nearby__row"><dt>{label}</dt><dd>{value}</dd></div>' for label, value in rows)
+
+        def place_list(title, items):
+            if not items:
+                return ""
+            lis = "".join(
+                f'<li><div><strong>{esc(x["name"])}</strong>'
+                + (f'<span>{esc(x["note"])}</span>' if x.get("note") else "")
+                + f'</div><em>{dist(x.get("km"))}</em></li>'
+                for x in items[:3]
+            )
+            return f'<div class="nearby__group"><h3>{title}</h3><ul>{lis}</ul></div>'
+
+        nearby_html = f"""
+        <div class="nearby">
+          <dl class="nearby__facts">{rows_html}</dl>
+          <div class="nearby__lists">
+            {place_list("Restaurants nearby", info.get("restaurants"))}
+            {place_list("Worth seeing nearby", info.get("sights"))}
+          </div>
+          <p class="nearby__note">Distances {'by road' if info.get('road') else 'in a straight line'}.</p>
+        </div>"""
+
     similar = [v for v in VILLAS if v["region"] == villa["region"] and v["slug"] != villa["slug"]]
     similar.sort(key=lambda v: abs((v["price_from"] or 999999) - (villa["price_from"] or 999999)))
     similar_html = "".join(villa_card(v) for v in similar[:3])
@@ -1567,6 +1619,7 @@ def build_villa(villa: dict) -> str:
       <section class="villa-section">
         <h2>The area</h2>
         <p class="villa-intro" style="font-size:1.05rem">{esc(region['intro'][0])}</p>
+        {nearby_html}
         <p class="muted" style="font-size:13px">Exact addresses are shared once a booking is confirmed. The map shows the approximate area.</p>
         {map_section}
       </section>

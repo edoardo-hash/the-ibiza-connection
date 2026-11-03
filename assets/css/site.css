@@ -1721,3 +1721,20 @@ select.filter-select,
   .site-header, .site-menu, .filter-bar, .booking, .mobile-bar, .site-footer, .lightbox { display: none !important; }
   body { background: #fff; color: #000; }
 }
+
+/* The area: what's nearby (same data as the Invenio portal) */
+.nearby { margin: 26px 0 22px; }
+.nearby__facts { margin: 0; border-top: 1px solid var(--line); }
+.nearby__row { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.nearby__row dt { color: var(--muted); }
+.nearby__row dd { margin: 0; text-align: right; color: var(--ink-2); }
+.nearby__row strong { font-weight: 500; color: var(--ink); }
+.nearby__lists { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; margin-top: 26px; }
+.nearby__group h3 { font-family: var(--sans); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; color: var(--muted); margin: 0 0 6px; }
+.nearby__group ul { list-style: none; margin: 0; padding: 0; }
+.nearby__group li { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.nearby__group li strong { display: block; font-weight: 500; color: var(--ink); }
+.nearby__group li span { display: block; font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.nearby__group li em { font-style: normal; white-space: nowrap; color: var(--ink-2); }
+.nearby__note { font-size: 12px; color: var(--muted); margin: 12px 0 0; }
+@media (max-width: 760px) { .nearby__lists { grid-template-columns: 1fr; gap: 18px; } }

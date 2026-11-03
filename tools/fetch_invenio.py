@@ -733,6 +733,66 @@ def main() -> None:
                   + ", ".join(report["hidden"]))
         print(f"  {len(report['flagged'])} more flagged for review → data/licence-check.json")
 
+    # "The area" (Edo, 3 Nov 2026, as on the Invenio portal): road distances come from the portal's
+    # data/area/area-road.json (OSRM, by uuid). Villas missing there get them computed here in a
+    # straight line from the exact GPS, with the portal's rules (lib/area-compute.ts). Only place
+    # names and kilometres are stored; the villa's position never is.
+    area_dir = DATA / "area"
+    try:
+        road = json.loads((area_dir / "area-road.json").read_text(encoding="utf-8"))["villas"]
+        older = json.loads((area_dir / "area-info.json").read_text(encoding="utf-8"))["villas"]
+        places = json.loads((area_dir / "area-places.json").read_text(encoding="utf-8"))
+    except (OSError, KeyError, ValueError):
+        road, older, places = {}, {}, None
+    computed = {}
+    if places:
+        def hav(a, b):
+            la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+            h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+            return 2 * 6371 * math.asin(math.sqrt(h))
+
+        def pt(x):
+            return (x["lat"], x["lng"])
+
+        def nearest(items, p):
+            best = min(items, key=lambda x: hav(p, pt(x)), default=None)
+            return {"name": best["name"], "km": round(hav(p, pt(best)), 1)} if best else None
+
+        def as_place(x, d):
+            return {k: v for k, v in {"name": x["name"], "km": round(d, 1), "kind": x.get("kind"),
+                                      "category": x.get("category"), "note": x.get("note")}.items() if v}
+
+        for villa in villas:
+            uuid = villa["v_uuid"].lower()
+            p = exact_gps.get(uuid)
+            if uuid in road or uuid in older or not p or not (38.8 < p[0] < 39.15 and 1.15 < p[1] < 1.65):
+                continue
+            ranked = sorted(((x, hav(p, pt(x))) for x in places["places"]), key=lambda t: t[1])
+            restaurants = [as_place(x, d) for x, d in ranked if x.get("kind") in ("restaurant", "beach_club")][:3]
+            sights, seen = [], []
+            for x, d in ranked:
+                if x.get("kind") != "sight":
+                    continue
+                tokens = {t.strip().lower() for t in re.split(r"[,/]", x.get("category") or "") if t.strip()}
+                if any(tokens & s for s in seen):
+                    continue
+                sights.append(as_place(x, d))
+                seen.append(tokens)
+                if len(sights) == 3:
+                    break
+            computed[uuid] = {
+                "airportKm": round(hav(p, pt(places["airport"])), 1), "airportMin": None,
+                "townKm": round(hav(p, pt(places["town"])), 1),
+                "beach": nearest(places["beaches"], p), "supermarket": nearest(places["supermarkets"], p),
+                "nearTown": nearest(places["towns"], p), "road": False,
+                "restaurants": restaurants, "sights": sights,
+            }
+        (area_dir / "area-computed.json").write_text(
+            json.dumps({"updated": iso_now(), "villas": computed}, ensure_ascii=False, separators=(",", ":")),
+            encoding="utf-8")
+        print(f"  area: {sum(1 for v in villas if v['v_uuid'].lower() in road)} by road, "
+              f"{len(computed)} computed in a straight line")
+
     # "Two villas nearby" (Edo, 3 Nov 2026, portal villa-groups logic with 2 villas / 5 km): for
     # each villa, the other listed villas within PAIR_MAX_KM by EXACT GPS (straight line). Only
     # the distance rounded UP to the next half kilometre is stored; exact positions never are.
