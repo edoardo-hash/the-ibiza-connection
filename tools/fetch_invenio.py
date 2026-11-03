@@ -707,15 +707,17 @@ def main() -> None:
             villa["price_to"] = max(villa["price_to"], villa["nightly_to"] * 7)
             villa["price_on_request"] = False
 
-    # Room counts and licence check (Edo, 3 Nov 2026).
-    # Bedrooms and bathrooms: the REAL counts from IMpulse (api_villa_list only carries the
-    # licensed ones), as on the Invenio portal. Guests stay the licensed number.
+    # Room counts (Edo, 3 Nov 2026): the site shows and searches the LICENSED bedrooms and bathrooms
+    # (api_villa_list) — the rooms that can legally be rented. Many houses have more rooms than their
+    # licence (e.g. 9 bedrooms licensed for 3); counting those made bedroom searches return villas
+    # that sleep far fewer people. The real counts from IMpulse are kept as real_* for reference only.
     lr_by_uuid = {str(r.get("bp_uuid") or "").strip().lower(): r for r in lr_rows if isinstance(r, dict)}
     for villa in villas:
         lr = lr_by_uuid.get(villa["v_uuid"].lower(), {})
-        villa["licensed_bedrooms"], villa["licensed_bathrooms"] = villa["bedrooms"], villa["bathrooms"]
-        villa["bedrooms"] = as_int(lr.get("bedrooms")) or villa["bedrooms"]
-        villa["bathrooms"] = as_int(lr.get("bathrooms")) or villa["bathrooms"]
+        villa["real_bedrooms"] = as_int(lr.get("bedrooms")) or villa["bedrooms"]
+        villa["real_bathrooms"] = as_int(lr.get("bathrooms")) or villa["bathrooms"]
+        villa["bedrooms"] = villa["bedrooms"] or villa["real_bedrooms"]
+        villa["bathrooms"] = villa["bathrooms"] or villa["real_bathrooms"]
     # Every listed villa (so every newly published one) is checked against the official
     # register in data/register/ on each refresh. Failures stay off the site until the HAM
     # confirms the licence (content/settings.json "licence_confirmed", by IMpulse uuid).

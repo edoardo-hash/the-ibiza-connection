@@ -366,8 +366,8 @@ prints them). To put a hidden villa back, add its IMpulse uuid to
 Refresh the register with a new download from the Consell:
 `python3 tools/licence_check.py --import ~/Downloads/List-habitatges-turistics_-DDMMYYYY.xls`.
 
-Bedrooms and bathrooms are the villa's real counts from IMpulse (`api_villa_list_lr`);
-guests stay the licensed number. The licence is shown on every villa card and villa page.
+Bedrooms, bathrooms and guests are the licensed numbers (the rooms that can legally be rented),
+for display and search; the real counts from IMpulse are kept as `real_bedrooms`/`real_bathrooms`. The licence is shown on every villa card and villa page.
 
 ## The area (what's nearby)
 
