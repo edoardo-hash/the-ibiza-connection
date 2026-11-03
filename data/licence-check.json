@@ -2934,17 +2934,15 @@
   "cf1d6d2f-90cf-4fab-b66c-b31db941b15d": {
    "name": "Villa Nia",
    "slug": "villa-nia",
-   "status": "no_number",
-   "ok": false,
-   "licence": "2014047792",
-   "register_licence": null,
-   "register_places": null,
-   "register_municipality": null,
-   "register": null,
-   "register_name": null,
-   "issues": [
-    "'2014047792' has no readable 4-digit licence number"
-   ]
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1477-E",
+   "register_licence": "ETV1477E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CALA JONDAL",
+   "issues": []
   },
   "231e563f-a91b-48af-9622-ccafe5a6cbd9": {
    "name": "Villa Nicole",
@@ -3567,13 +3565,11 @@
  },
  "counts": {
   "format_differs": 13,
-  "no_number": 1,
   "not_in_register": 2,
-  "verified": 250
+  "verified": 251
  },
  "hidden": [
-  "Villa Brisa",
-  "Villa Nia"
+  "Villa Brisa"
  ],
  "flagged": [
   "Can Anna Grande",

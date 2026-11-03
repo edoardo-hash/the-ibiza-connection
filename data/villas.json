@@ -2353,6 +2353,10 @@
     3.0
    ],
    [
+    "villa-nia",
+    3.0
+   ],
+   [
     "villa-wendy",
     3.0
    ],
@@ -2808,6 +2812,10 @@
    ],
    [
     "villa-hailey",
+    3.0
+   ],
+   [
+    "villa-nia",
     3.0
    ],
    [
@@ -3861,6 +3869,10 @@
    ],
    [
     "villa-ivy",
+    4.5
+   ],
+   [
+    "villa-nia",
     4.5
    ],
    [
@@ -6125,6 +6137,10 @@
   },
   "near": [
    [
+    "villa-nia",
+    0.5
+   ],
+   [
     "can-vista-cala-jondal",
     1.0
    ],
@@ -8265,6 +8281,10 @@
    ],
    [
     "villa-can-exotic",
+    2.0
+   ],
+   [
+    "villa-nia",
     2.0
    ],
    [
@@ -10528,6 +10548,10 @@
     5.0
    ],
    [
+    "villa-nia",
+    5.0
+   ],
+   [
     "villa-tess",
     5.0
    ]
@@ -10911,6 +10935,10 @@
    ],
    [
     "villa-marielle",
+    3.0
+   ],
+   [
+    "villa-nia",
     3.0
    ],
    [
@@ -15518,6 +15546,10 @@
     3.0
    ],
    [
+    "villa-nia",
+    3.0
+   ],
+   [
     "villa-nizra",
     3.0
    ],
@@ -16696,6 +16728,10 @@
    ],
    [
     "villa-marielle",
+    3.0
+   ],
+   [
+    "villa-nia",
     3.0
    ],
    [
@@ -18341,6 +18377,10 @@
    ],
    [
     "villa-jayden",
+    3.5
+   ],
+   [
+    "villa-nia",
     3.5
    ],
    [
@@ -21936,6 +21976,10 @@
     3.0
    ],
    [
+    "villa-nia",
+    3.0
+   ],
+   [
     "villa-paraiso",
     3.0
    ],
@@ -22422,6 +22466,10 @@
    ],
    [
     "villa-jayden",
+    3.0
+   ],
+   [
+    "villa-nia",
     3.0
    ],
    [
@@ -22916,6 +22964,10 @@
     3.0
    ],
    [
+    "villa-nia",
+    3.0
+   ],
+   [
     "villa-paraiso",
     3.0
    ],
@@ -23406,6 +23458,10 @@
    ],
    [
     "villa-jayden",
+    3.0
+   ],
+   [
+    "villa-nia",
     3.0
    ],
    [
@@ -24391,6 +24447,10 @@
    ],
    [
     "villa-jaja",
+    4.0
+   ],
+   [
+    "villa-nia",
     4.0
    ],
    [
@@ -25470,6 +25530,10 @@
     3.0
    ],
    [
+    "villa-nia",
+    3.0
+   ],
+   [
     "villa-tess",
     3.0
    ],
@@ -26197,6 +26261,10 @@
    ],
    [
     "la-perla-escondida",
+    3.0
+   ],
+   [
+    "villa-nia",
     3.0
    ],
    [
@@ -28901,6 +28969,10 @@
    ],
    [
     "can-vista-cala-jondal",
+    3.5
+   ],
+   [
+    "villa-nia",
     3.5
    ],
    [
@@ -33268,6 +33340,10 @@
     1.5
    ],
    [
+    "villa-nia",
+    1.5
+   ],
+   [
     "alegre-blue",
     2.0
    ],
@@ -34784,6 +34860,10 @@
    ],
    [
     "can-vista-cala-jondal",
+    4.5
+   ],
+   [
+    "villa-nia",
     4.5
    ],
    [
@@ -38766,6 +38846,10 @@
    "issues": []
   },
   "near": [
+   [
+    "villa-nia",
+    0.5
+   ],
    [
     "can-josie",
     1.0
@@ -44705,6 +44789,10 @@
     3.5
    ],
    [
+    "villa-nia",
+    3.5
+   ],
+   [
     "villa-ocean-vista",
     3.5
    ],
@@ -45891,6 +45979,10 @@
     3.5
    ],
    [
+    "villa-nia",
+    3.5
+   ],
+   [
     "villa-paola",
     3.5
    ],
@@ -46407,6 +46499,10 @@
    ],
    [
     "villa-marielle",
+    4.0
+   ],
+   [
+    "villa-nia",
     4.0
    ],
    [
@@ -47571,6 +47667,10 @@
     4.5
    ],
    [
+    "villa-nia",
+    4.5
+   ],
+   [
     "villa-paraiso",
     4.5
    ],
@@ -48448,6 +48548,10 @@
     1.5
    ],
    [
+    "villa-nia",
+    1.5
+   ],
+   [
     "villa-paola",
     1.5
    ],
@@ -49060,6 +49164,442 @@
   "image": "/assets/villas/villa-monica/01-800.webp",
   "image_large": "/assets/villas/villa-monica/01-1400.webp",
   "image_colour": "#73776a"
+ },
+ {
+  "slug": "villa-nia",
+  "name": "Villa Nia",
+  "tagline": "A stunning property located close to Cala Jondal",
+  "summary": "Villa Nia is a uniquely designed 5 bedroom property perfectly situated in one of the most desirable areas of Ibiza, and offers spectacular views over Cala Jondal, the sparkling Mediterranean sea and the surrounding…",
+  "description": [
+   "Villa Nia is a uniquely designed 5 bedroom property perfectly situated in one of the most desirable areas of Ibiza, and offers spectacular views over Cala Jondal, the sparkling Mediterranean sea and the surrounding countryside and coastline landscape.",
+   "Upon entering this modern, minimalist style home, the spacious hall leads into the large and tastefully decorated living room which is flooded with the glorious Ibizan sunlight through floor to ceiling sliding glass doors which emphasis the full effect of the unrivaled sea views. Careful attention has been paid to every detail for your comfort and luxury and tasteful decoration abounds throughout every part of this sophisticated villa.",
+   "A modern fully equipped kitchen offers you the option to extend out onto the outdoor covered terrace and al fresco dining area for entertaining, or alternatively set a more formal evening scene for your guests in the large interior dining room located in an adjacent and open plan style to the stylish kitchen. Villa Nia offers clean and bright contemporary interiors throughout which is enhanced with neutral and well chosen decor. All bedrooms are luxuriously furnished with en-suite or connecting bathrooms and some have access to their owner private terrace.",
+   "Step outside and spend a long lazy day soaking up the healing rays of the Ibizan sunshine around the fabulous pool area, which is surrounded by ample luxurious sun loungers, with a large outdoor dining area complete with BBQ and an incredibly inviting and comfortable shaded chill-out area providing an ideal space to truly appreciate the sea views, relax and reflect after another idyllic day.",
+   "Villa Nia also offers a full size tennis court just meters from the main house ideal for sport oriented holiday makers or for anyone who wishes to fine tune any long lost skills."
+  ],
+  "area": "Cala Jondal",
+  "area_key": "Cala Jondal",
+  "region": "san-jose",
+  "region_name": "San José",
+  "district": "San Jose de Sa Talaia",
+  "country": "Spain",
+  "bedrooms": 5,
+  "bathrooms": 5,
+  "sleeps": 10,
+  "price_from": 11000,
+  "price_to": 24200,
+  "price_on_request": false,
+  "min_nights": 7,
+  "short_stays": false,
+  "cleaning": "2 Cleanings per week",
+  "cleaning_charge": 0,
+  "check_in": "16:00",
+  "check_out": "10:00",
+  "check_in_days": "Flexible check in days",
+  "license": "ETV-1477-E",
+  "dcc": false,
+  "api_switch_on": true,
+  "unpublished_on": null,
+  "amenities": [
+   "Garden",
+   "Air Conditioning",
+   "Al Fresco Dining",
+   "Alarm",
+   "BBQ",
+   "Country View",
+   "Fenced",
+   "Music System",
+   "Swimming Pool",
+   "TV - Satellite",
+   "Wifi",
+   "Hire Car Recommended",
+   "Safety Box",
+   "Sunloungers",
+   "Sea View",
+   "Tennis Court",
+   "Private Parking",
+   "Fully fitted kitchen",
+   "Gated",
+   "Terraces",
+   "Wine Cooler",
+   "CCTV"
+  ],
+  "amenity_groups": [
+   {
+    "title": "Outside",
+    "items": [
+     "Garden",
+     "Al Fresco Dining",
+     "BBQ",
+     "Swimming Pool",
+     "Sunloungers",
+     "Private Parking",
+     "Terraces"
+    ]
+   },
+   {
+    "title": "Inside",
+    "items": [
+     "Air Conditioning",
+     "Music System",
+     "TV - Satellite",
+     "Wifi",
+     "Safety Box",
+     "Fully fitted kitchen"
+    ]
+   },
+   {
+    "title": "Setting",
+    "items": [
+     "Alarm",
+     "Country View",
+     "Fenced",
+     "Hire Car Recommended",
+     "Sea View",
+     "Gated",
+     "CCTV"
+    ]
+   },
+   {
+    "title": "Also included",
+    "items": [
+     "Tennis Court",
+     "Wine Cooler"
+    ]
+   }
+  ],
+  "audience": [
+   "Filming",
+   "Private",
+   "Couples",
+   "Families",
+   "Friends",
+   "Retreats",
+   "Honeymoon",
+   "Neighbours"
+  ],
+  "photos": [
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/04.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/05.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/32.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/01.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/28.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/image0 (1).jpeg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/06.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/26.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/02.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/03.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/07.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/08.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/09.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/10.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/11.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/12.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/13.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/14.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/15.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/16.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/17.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/18.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/19.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/20.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/21.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/22.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/23.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/24.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/25..jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/27.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/29.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/30.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/37/villa_images/31.jpg"
+  ],
+  "lat": 38.87995,
+  "lng": 1.32239,
+  "v_id": 37,
+  "v_uuid": "cf1d6d2f-90cf-4fab-b66c-b31db941b15d",
+  "nightly_from": 1572,
+  "nightly_to": 3458,
+  "rate_rows": 6,
+  "real_bedrooms": 6,
+  "real_bathrooms": 6,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1477-E",
+   "register_licence": "ETV1477E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CALA JONDAL",
+   "issues": []
+  },
+  "near": [
+   [
+    "can-josie",
+    0.5
+   ],
+   [
+    "can-vista-cala-jondal",
+    0.5
+   ],
+   [
+    "villa-jayden",
+    1.0
+   ],
+   [
+    "can-berry",
+    1.5
+   ],
+   [
+    "villa-azure",
+    1.5
+   ],
+   [
+    "villa-evelyn",
+    1.5
+   ],
+   [
+    "villa-marielle",
+    1.5
+   ],
+   [
+    "villa-paola",
+    1.5
+   ],
+   [
+    "villa-paraiso",
+    1.5
+   ],
+   [
+    "villa-tess",
+    1.5
+   ],
+   [
+    "can-nuri",
+    2.0
+   ],
+   [
+    "can-sabina",
+    2.0
+   ],
+   [
+    "villa-dama",
+    2.0
+   ],
+   [
+    "villa-can-exotic",
+    2.5
+   ],
+   [
+    "villa-ronda",
+    2.5
+   ],
+   [
+    "alegre-blue",
+    3.0
+   ],
+   [
+    "can-frutal",
+    3.0
+   ],
+   [
+    "can-laurel",
+    3.0
+   ],
+   [
+    "can-tehani",
+    3.0
+   ],
+   [
+    "villa-amaris",
+    3.0
+   ],
+   [
+    "villa-andana",
+    3.0
+   ],
+   [
+    "villa-centelleo",
+    3.0
+   ],
+   [
+    "villa-eliza",
+    3.0
+   ],
+   [
+    "villa-magnifique",
+    3.0
+   ],
+   [
+    "villa-maia",
+    3.0
+   ],
+   [
+    "villa-margo",
+    3.0
+   ],
+   [
+    "villa-meghan",
+    3.0
+   ],
+   [
+    "villa-meghan-deluxe",
+    3.0
+   ],
+   [
+    "villa-meghan-grande",
+    3.0
+   ],
+   [
+    "villa-mila",
+    3.0
+   ],
+   [
+    "villa-porroig-relax",
+    3.0
+   ],
+   [
+    "villa-puma",
+    3.0
+   ],
+   [
+    "villa-riley",
+    3.0
+   ],
+   [
+    "villa-serenity",
+    3.0
+   ],
+   [
+    "villa-trinity",
+    3.0
+   ],
+   [
+    "waterfront-dream",
+    3.0
+   ],
+   [
+    "can-pajarito",
+    3.5
+   ],
+   [
+    "la-flaca",
+    3.5
+   ],
+   [
+    "villa-amazonia",
+    3.5
+   ],
+   [
+    "villa-casita",
+    3.5
+   ],
+   [
+    "villa-charlotte",
+    3.5
+   ],
+   [
+    "villa-cubes",
+    3.5
+   ],
+   [
+    "villa-fabienne",
+    3.5
+   ],
+   [
+    "villa-frankie",
+    3.5
+   ],
+   [
+    "villa-nadal",
+    3.5
+   ],
+   [
+    "villa-wendy",
+    3.5
+   ],
+   [
+    "la-perla-escondida",
+    4.0
+   ],
+   [
+    "villa-beverly",
+    4.0
+   ],
+   [
+    "villa-heidi",
+    4.0
+   ],
+   [
+    "villa-nizra",
+    4.0
+   ],
+   [
+    "can-beso",
+    4.5
+   ],
+   [
+    "can-daneri",
+    4.5
+   ],
+   [
+    "villa-escondida",
+    4.5
+   ],
+   [
+    "villa-jeanette",
+    4.5
+   ],
+   [
+    "can-senna",
+    5.0
+   ],
+   [
+    "casa-can-tina",
+    5.0
+   ]
+  ],
+  "images": [
+   {
+    "base": "villas/villa-nia/01",
+    "width": 1400,
+    "height": 933,
+    "colour": "#6c8a9f"
+   },
+   {
+    "base": "villas/villa-nia/02",
+    "width": 1400,
+    "height": 933,
+    "colour": "#849893"
+   },
+   {
+    "base": "villas/villa-nia/03",
+    "width": 1400,
+    "height": 933,
+    "colour": "#5b79a4"
+   },
+   {
+    "base": "villas/villa-nia/04",
+    "width": 1400,
+    "height": 933,
+    "colour": "#7397a0"
+   },
+   {
+    "base": "villas/villa-nia/05",
+    "width": 1400,
+    "height": 933,
+    "colour": "#83a2b7"
+   },
+   {
+    "base": "villas/villa-nia/06",
+    "width": 1400,
+    "height": 933,
+    "colour": "#696343"
+   }
+  ],
+  "image": "/assets/villas/villa-nia/01-800.webp",
+  "image_large": "/assets/villas/villa-nia/01-1400.webp",
+  "image_colour": "#6c8a9f"
  },
  {
   "slug": "villa-obsidian",
@@ -50074,6 +50614,10 @@
     1.5
    ],
    [
+    "villa-nia",
+    1.5
+   ],
+   [
     "villa-amaris",
     2.0
    ],
@@ -50531,6 +51075,10 @@
    ],
    [
     "can-vista-cala-jondal",
+    1.5
+   ],
+   [
+    "villa-nia",
     1.5
    ],
    [
@@ -51096,6 +51644,10 @@
     3.0
    ],
    [
+    "villa-nia",
+    3.0
+   ],
+   [
     "villa-tess",
     3.0
    ],
@@ -51460,6 +52012,10 @@
    ],
    [
     "villa-marielle",
+    2.5
+   ],
+   [
+    "villa-nia",
     2.5
    ],
    [
@@ -54371,6 +54927,10 @@
     3.0
    ],
    [
+    "villa-nia",
+    3.0
+   ],
+   [
     "villa-paraiso",
     3.0
    ],
@@ -56063,6 +56623,10 @@
    ],
    [
     "villa-marielle",
+    3.0
+   ],
+   [
+    "villa-nia",
     3.0
    ],
    [
@@ -59823,6 +60387,10 @@
     3.0
    ],
    [
+    "villa-nia",
+    3.0
+   ],
+   [
     "villa-zaria",
     3.0
    ],
@@ -62416,6 +62984,10 @@
     3.5
    ],
    [
+    "villa-nia",
+    3.5
+   ],
+   [
     "can-sahara",
     4.0
    ],
@@ -62811,6 +63383,10 @@
    ],
    [
     "villa-magnifique",
+    2.0
+   ],
+   [
+    "villa-nia",
     2.0
    ],
    [
@@ -65454,6 +66030,10 @@
    [
     "can-vista-cala-jondal",
     5.0
+   ],
+   [
+    "villa-nia",
+    5.0
    ]
   ],
   "images": [
@@ -67676,6 +68256,10 @@
     3.5
    ],
    [
+    "villa-nia",
+    3.5
+   ],
+   [
     "villa-ocean-vista",
     3.5
    ],
@@ -68321,6 +68905,10 @@
    ],
    [
     "villa-escondida",
+    3.0
+   ],
+   [
+    "villa-nia",
     3.0
    ],
    [
@@ -72116,6 +72704,10 @@
     2.0
    ],
    [
+    "villa-nia",
+    2.0
+   ],
+   [
     "villa-porroig-relax",
     2.0
    ],
@@ -74419,6 +75011,10 @@
    ],
    [
     "villa-magnifique",
+    1.5
+   ],
+   [
+    "villa-nia",
     1.5
    ],
    [
@@ -78620,6 +79216,10 @@
     3.0
    ],
    [
+    "villa-nia",
+    3.0
+   ],
+   [
     "villa-tess",
     3.0
    ],
@@ -79880,6 +80480,10 @@
     3.0
    ],
    [
+    "villa-nia",
+    3.0
+   ],
+   [
     "villa-tess",
     3.0
    ],
@@ -80337,6 +80941,10 @@
    ],
    [
     "villa-ceres",
+    3.5
+   ],
+   [
+    "villa-nia",
     3.5
    ],
    [
@@ -82002,6 +82610,10 @@
     3.0
    ],
    [
+    "villa-nia",
+    3.0
+   ],
+   [
     "can-frutal",
     3.5
    ],
@@ -83385,6 +83997,10 @@
    ],
    [
     "villa-jayden",
+    1.5
+   ],
+   [
+    "villa-nia",
     1.5
    ],
    [
@@ -85390,6 +86006,10 @@
     3.5
    ],
    [
+    "villa-nia",
+    3.5
+   ],
+   [
     "villa-ocean-vista",
     3.5
    ],
@@ -85829,6 +86449,10 @@
    ],
    [
     "villa-brielle",
+    4.0
+   ],
+   [
+    "villa-nia",
     4.0
    ],
    [
@@ -87662,6 +88286,10 @@
    ],
    [
     "villa-mila",
+    3.0
+   ],
+   [
+    "villa-nia",
     3.0
    ],
    [
@@ -93780,6 +94408,10 @@
     1.5
    ],
    [
+    "villa-nia",
+    1.5
+   ],
+   [
     "villa-porroig-relax",
     1.5
    ],
@@ -94293,6 +94925,10 @@
    ],
    [
     "villa-ceres",
+    3.5
+   ],
+   [
+    "villa-nia",
     3.5
    ],
    [
@@ -95101,6 +95737,10 @@
     3.5
    ],
    [
+    "villa-nia",
+    3.5
+   ],
+   [
     "villa-ocean-vista",
     3.5
    ],
@@ -95487,6 +96127,10 @@
    ],
    [
     "villa-jayden",
+    4.5
+   ],
+   [
+    "villa-nia",
     4.5
    ],
    [
@@ -96142,6 +96786,10 @@
    ],
    [
     "can-vista-cala-jondal",
+    1.0
+   ],
+   [
+    "villa-nia",
     1.0
    ],
    [
@@ -100745,6 +101393,10 @@
     3.0
    ],
    [
+    "villa-nia",
+    3.0
+   ],
+   [
     "villa-porroig-relax",
     3.0
    ],
@@ -104145,6 +104797,10 @@
     4.0
    ],
    [
+    "villa-nia",
+    4.0
+   ],
+   [
     "villa-marielle",
     4.5
    ],
@@ -104429,6 +105085,10 @@
    ],
    [
     "villa-jayden",
+    2.5
+   ],
+   [
+    "villa-nia",
     2.5
    ],
    [
