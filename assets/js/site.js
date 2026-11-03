@@ -594,8 +594,8 @@
     let nearbyHead = null;
 
     // "Two villas nearby" (Edo, 3 Nov 2026 — the portal's villa-groups logic, src/lib/villa-groups.ts,
-    // with 2 villas and 5 km): when no single villa has the bedrooms asked for, propose pairs of villas
-    // within 5 km of each other (EXACT GPS, worked out at build time; only "within X km" reaches the page)
+    // with 2 villas; 1 km since Edo, 3 Nov 2026): when no single villa has the bedrooms asked for, propose pairs of villas
+    // within PAIR_MAX_KM of each other (EXACT GPS, worked out at build time; only "within X km" reaches the page)
     // that together have the bedrooms (and guests). Same filters except size; a villa big enough on its
     // own is never in a pair. Closest first, then fewest spare bedrooms, then cheapest; each villa in at
     // most 2 pairs; the pair may go up to 20 % over the maximum budget, as on the portal.
@@ -603,6 +603,7 @@
     const PAIRS_PER_VILLA = 2;
     const OVER_BUDGET_TOLERANCE = 0.2;
     const cardByIdx = new Map(cards.map((c) => [c.dataset.idx, c]));
+    const PAIR_MAX_KM = 1;
     const nearOf = (card) =>
       (card.dataset.near || "")
         .split(" ")
@@ -611,7 +612,7 @@
           const [idx, km] = x.split(":");
           return { card: cardByIdx.get(idx), km: Number(km) };
         })
-        .filter((n) => n.card);
+        .filter((n) => n.card && n.km <= PAIR_MAX_KM);
     let pairsEl = null;
     const findPairs = (state) => {
       const need = Number(state.bmin);

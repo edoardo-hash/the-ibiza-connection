@@ -204,9 +204,9 @@ If the file can't be loaded, the old live search (~20 s) runs instead.
 search, note on the villa list, line in every booking box; "Send us the link" opens the
 enquiry form pre-worded (`/contact/?match=1&villa=…`).
 
-**Two villas together** (the portal's villa-groups logic, 2 villas / 5 km): when a search
+**Two villas together** (the portal's villa-groups logic, 2 villas / 1 km): when a search
 with bedrooms "from" finds no single villa (in the chosen place), up to 6 pairs are shown —
-two villas within 5 km of each other, each too small alone, together covering the bedrooms
+two villas within 1 km of each other, each too small alone, together covering the bedrooms
 (and guests); same other filters; closest first, then fewest spare bedrooms, then cheapest;
 a villa in at most 2 pairs; up to 20 % over the maximum budget. Distances come from the
 EXACT GPS in the long-rental list, worked out by `fetch_invenio.py` (`near` in
@@ -397,7 +397,7 @@ and the strict changeover day — e.g. "Strictly Saturday-Saturday" villas only 
 Saturday, as on the portal, except last-minute stays and stays of twice the minimum). Every villa
 then SHOWN is confirmed live with IMpulse (the villa page's single quote, 6 at a time, one retry):
 a villa that isn't available drops out, the others show the confirmed price for the stay. Bedroom
-searches and the "two villas within 5 km" pairs use the licensed (legal) bedrooms. Pairs are offered,
+searches and the "two villas within 1 km" pairs use the licensed (legal) bedrooms. Pairs are offered,
 as on the portal, when no single villa fits, when fewer than 3 do, or for 10+ bedrooms or 20+ guests.
 With dates, cards show the price for the stay instead of the weekly "from" price. When the dates
 aren't Saturday to Saturday and fewer than 8 villas match, a "Villas available Saturday to
