@@ -30,7 +30,7 @@
   "check_in": "16:00",
   "check_out": "11:00",
   "check_in_days": "Flexible check in days",
-  "license": "VTV-02166",
+  "license": "VTV-0216-EIF",
   "dcc": false,
   "api_switch_on": false,
   "unpublished_on": null,
@@ -184,17 +184,16 @@
   "real_bedrooms": 14,
   "real_bathrooms": 9,
   "licence_check": {
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "VTV-02166",
-   "register_licence": "ETV2166E",
-   "register_places": 8,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "licence": "VTV-0216-EIF",
+   "register_licence": "VTV0216EIF",
+   "register_places": 17,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
    "register": "habitatges-turistics",
-   "register_name": "CAN COLMENA",
+   "register_name": "CASA DATSCHA",
    "issues": [
-    "Number 2166 is correct, but IMpulse has 'VTV-02166' and the register has ETV2166E",
-    "Shown for 28 guests; the register allows 8 places"
+    "Shown for 28 guests; the register allows 17 places"
    ]
   },
   "near": [
@@ -325,7 +324,7 @@
   "check_in": "16:00",
   "check_out": "10:00",
   "check_in_days": "Flexible check in days",
-  "license": "AG-0037-E",
+  "license": "AG-0037-EIF",
   "dcc": false,
   "api_switch_on": false,
   "unpublished_on": null,
@@ -526,17 +525,15 @@
   "real_bedrooms": 11,
   "real_bathrooms": 10,
   "licence_check": {
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "AG-0037-E",
+   "licence": "AG-0037-EIF",
    "register_licence": "AG0037EIF",
    "register_places": 22,
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "turisme-rural",
    "register_name": "CAN SKYE",
-   "issues": [
-    "Number 0037 is correct, but IMpulse has 'AG-0037-E' and the register has AG0037EIF"
-   ]
+   "issues": []
   },
   "near": [
    [
@@ -1101,7 +1098,7 @@
   "check_in": "16:00",
   "check_out": "10:00",
   "check_in_days": "Flexible check in days",
-  "license": "AG-0043-E.",
+  "license": "AG-0043-E",
   "dcc": true,
   "api_switch_on": false,
   "unpublished_on": "2026-10-28",
@@ -1237,7 +1234,7 @@
   "licence_check": {
    "status": "verified",
    "ok": true,
-   "licence": "AG-0043-E.",
+   "licence": "AG-0043-E",
    "register_licence": "AG0043E",
    "register_places": 22,
    "register_municipality": "SANT JOAN DE LABRITJA",
@@ -8697,7 +8694,7 @@
   "nightly_to": 2145,
   "rate_rows": 2,
   "real_bedrooms": 6,
-  "real_bathrooms": 6,
+  "real_bathrooms": 5,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -13428,7 +13425,7 @@
   "check_in": "16:00",
   "check_out": "10:00",
   "check_in_days": "Flexible check in days",
-  "license": "ETC1922EO",
+  "license": "ETV-1922-E",
   "dcc": false,
   "api_switch_on": false,
   "unpublished_on": null,
@@ -13570,16 +13567,15 @@
   "real_bedrooms": 6,
   "real_bathrooms": 6,
   "licence_check": {
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETC1922EO",
+   "licence": "ETV-1922-E",
    "register_licence": "ETV1922E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "CAN COLOMARET",
    "issues": [
-    "Number 1922 is correct, but IMpulse has 'ETC1922EO' and the register has ETV1922E",
     "Shown for 12 guests; the register allows 10 places"
    ]
   },
@@ -16442,7 +16438,7 @@
   "check_in": "16:00",
   "check_out": "10:00",
   "check_in_days": "Flexible check in days",
-  "license": "ETV-1101-E",
+  "license": "ET-1101-E",
   "dcc": true,
   "api_switch_on": false,
   "unpublished_on": null,
@@ -16621,17 +16617,15 @@
   "real_bedrooms": 7,
   "real_bathrooms": 7,
   "licence_check": {
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETV-1101-E",
+   "licence": "ET-1101-E",
    "register_licence": "ET1101E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "VILLA CENTELLEO",
-   "issues": [
-    "Number 1101 is correct, but IMpulse has 'ETV-1101-E' and the register has ET1101E"
-   ]
+   "issues": []
   },
   "near": [
    [
@@ -30345,7 +30339,7 @@
   "check_in": "17:00",
   "check_out": "10:00",
   "check_in_days": "Flexible check in days",
-  "license": "ETV-2348-V",
+  "license": "ETV-2348-E",
   "dcc": false,
   "api_switch_on": false,
   "unpublished_on": null,
@@ -30549,16 +30543,15 @@
   "real_bedrooms": 5,
   "real_bathrooms": 4,
   "licence_check": {
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETV-2348-V",
+   "licence": "ETV-2348-E",
    "register_licence": "ETV2348E",
    "register_places": 10,
    "register_municipality": "SANT JOAN DE LABRITJA",
    "register": "habitatges-turistics",
    "register_name": "CAN MURTERA",
    "issues": [
-    "Number 2348 is correct, but IMpulse has 'ETV-2348-V' and the register has ETV2348E",
     "Shown for 11 guests; the register allows 10 places"
    ]
   },
@@ -33879,7 +33872,7 @@
   "check_in": "16:00",
   "check_out": "10:00",
   "check_in_days": "Strictly Saturday-Saturday",
-  "license": "ET-0913-E",
+  "license": "ETV-0913-E",
   "dcc": false,
   "api_switch_on": true,
   "unpublished_on": null,
@@ -33985,17 +33978,15 @@
   "real_bedrooms": 6,
   "real_bathrooms": 6,
   "licence_check": {
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ET-0913-E",
+   "licence": "ETV-0913-E",
    "register_licence": "ETV0913E",
    "register_places": 10,
    "register_municipality": "SANT JOAN DE LABRITJA",
    "register": "habitatges-turistics",
    "register_name": "CAN MAYANS",
-   "issues": [
-    "Number 0913 is correct, but IMpulse has 'ET-0913-E' and the register has ETV0913E"
-   ]
+   "issues": []
   },
   "near": [
    [
@@ -66590,7 +66581,7 @@
   "check_in": "16:00",
   "check_out": "10:00",
   "check_in_days": "Strictly Saturday-Saturday",
-  "license": "ETV-0983-E",
+  "license": "ET-0983-E",
   "dcc": false,
   "api_switch_on": false,
   "unpublished_on": null,
@@ -66702,17 +66693,15 @@
   "real_bedrooms": 4,
   "real_bathrooms": 4,
   "licence_check": {
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETV-0983-E",
+   "licence": "ET-0983-E",
    "register_licence": "ET0983E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "AL VENT",
-   "issues": [
-    "Number 0983 is correct, but IMpulse has 'ETV-0983-E' and the register has ET0983E"
-   ]
+   "issues": []
   },
   "near": [
    [
@@ -75793,7 +75782,7 @@
   "check_in": "16:00",
   "check_out": "10:00",
   "check_in_days": "Flexible check in days",
-  "license": "ETE0146",
+  "license": "ET-0146-E",
   "dcc": false,
   "api_switch_on": false,
   "unpublished_on": null,
@@ -75934,17 +75923,15 @@
   "real_bedrooms": 6,
   "real_bathrooms": 6,
   "licence_check": {
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETE0146",
+   "licence": "ET-0146-E",
    "register_licence": "ET0146E",
    "register_places": 8,
    "register_municipality": "SANT ANTONI DE PORTMANY",
    "register": "habitatges-turistics",
    "register_name": "VILLA MARIA",
-   "issues": [
-    "Number 0146 is correct, but IMpulse has 'ETE0146' and the register has ET0146E"
-   ]
+   "issues": []
   },
   "near": [
    [
@@ -83805,7 +83792,7 @@
   "license": "ETV-2114-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-03",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -85737,7 +85724,7 @@
   "license": "ETV-0422-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": "2026-10-30",
+  "unpublished_on": null,
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -92426,7 +92413,7 @@
   "check_in": "16:00",
   "check_out": "10:00",
   "check_in_days": "Flexible check in days",
-  "license": "ETV-1102-E",
+  "license": "ET-1102-E",
   "dcc": false,
   "api_switch_on": true,
   "unpublished_on": null,
@@ -92534,17 +92521,15 @@
   "real_bedrooms": 3,
   "real_bathrooms": 3,
   "licence_check": {
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETV-1102-E",
+   "licence": "ET-1102-E",
    "register_licence": "ET1102E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "VILLA CLARA IBIZA",
-   "issues": [
-    "Number 1102 is correct, but IMpulse has 'ETV-1102-E' and the register has ET1102E"
-   ]
+   "issues": []
   },
   "near": [
    [
@@ -96254,7 +96239,7 @@
   "check_in": "16:00",
   "check_out": "10:00",
   "check_in_days": "Flexible check in days",
-  "license": "ETV-1071-E",
+  "license": "ET-1071-E",
   "dcc": false,
   "api_switch_on": false,
   "unpublished_on": null,
@@ -96387,17 +96372,15 @@
   "real_bedrooms": 3,
   "real_bathrooms": 4,
   "licence_check": {
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETV-1071-E",
+   "licence": "ET-1071-E",
    "register_licence": "ET1071E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "CASA SANDRA",
-   "issues": [
-    "Number 1071 is correct, but IMpulse has 'ETV-1071-E' and the register has ET1071E"
-   ]
+   "issues": []
   },
   "near": [
    [

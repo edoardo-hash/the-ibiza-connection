@@ -96,17 +96,15 @@
   "4f976bc3-e520-4789-b94d-1e699cfce86b": {
    "name": "Can Anna Grande",
    "slug": "can-anna-grande",
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "AG-0037-E",
+   "licence": "AG-0037-EIF",
    "register_licence": "AG0037EIF",
    "register_places": 22,
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "turisme-rural",
    "register_name": "CAN SKYE",
-   "issues": [
-    "Number 0037 is correct, but IMpulse has 'AG-0037-E' and the register has AG0037EIF"
-   ]
+   "issues": []
   },
   "06adba92-625f-41d6-90a2-1a9629379fd7": {
    "name": "Can Aria",
@@ -137,17 +135,16 @@
   "17c52bb7-bba8-4c52-a00f-f73467c99ac5": {
    "name": "Can Arte",
    "slug": "can-arte",
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "VTV-02166",
-   "register_licence": "ETV2166E",
-   "register_places": 8,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "licence": "VTV-0216-EIF",
+   "register_licence": "VTV0216EIF",
+   "register_places": 17,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
    "register": "habitatges-turistics",
-   "register_name": "CAN COLMENA",
+   "register_name": "CASA DATSCHA",
    "issues": [
-    "Number 2166 is correct, but IMpulse has 'VTV-02166' and the register has ETV2166E",
-    "Shown for 28 guests; the register allows 8 places"
+    "Shown for 28 guests; the register allows 17 places"
    ]
   },
   "3a524ca8-98e2-45cc-a05a-b7e25a4b3856": {
@@ -341,17 +338,15 @@
   "f6152e64-c661-4ad8-9e39-1202b28dcc0a": {
    "name": "Can Catalina",
    "slug": "can-catalina",
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ET-0913-E",
+   "licence": "ETV-0913-E",
    "register_licence": "ETV0913E",
    "register_places": 10,
    "register_municipality": "SANT JOAN DE LABRITJA",
    "register": "habitatges-turistics",
    "register_name": "CAN MAYANS",
-   "issues": [
-    "Number 0913 is correct, but IMpulse has 'ET-0913-E' and the register has ETV0913E"
-   ]
+   "issues": []
   },
   "fb1a986d-b4c0-4636-be68-84543836634d": {
    "name": "Can Cecilia",
@@ -873,16 +868,15 @@
   "70a22162-ced1-4e7e-ad3e-7bab2ca75401": {
    "name": "Can Noelia",
    "slug": "can-noelia",
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETV-2348-V",
+   "licence": "ETV-2348-E",
    "register_licence": "ETV2348E",
    "register_places": 10,
    "register_municipality": "SANT JOAN DE LABRITJA",
    "register": "habitatges-turistics",
    "register_name": "CAN MURTERA",
    "issues": [
-    "Number 2348 is correct, but IMpulse has 'ETV-2348-V' and the register has ETV2348E",
     "Shown for 11 guests; the register allows 10 places"
    ]
   },
@@ -1263,32 +1257,28 @@
   "c0f178e0-7d54-4178-9252-78f91c9cfa36": {
    "name": "Casa Clareta",
    "slug": "casa-clareta",
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETV-1102-E",
+   "licence": "ET-1102-E",
    "register_licence": "ET1102E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "VILLA CLARA IBIZA",
-   "issues": [
-    "Number 1102 is correct, but IMpulse has 'ETV-1102-E' and the register has ET1102E"
-   ]
+   "issues": []
   },
   "4815dbf6-0c3d-42d7-8bb7-e5cf5ae349ee": {
    "name": "Casa d'Hort",
    "slug": "casa-dhort",
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETV-0983-E",
+   "licence": "ET-0983-E",
    "register_licence": "ET0983E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "AL VENT",
-   "issues": [
-    "Number 0983 is correct, but IMpulse has 'ETV-0983-E' and the register has ET0983E"
-   ]
+   "issues": []
   },
   "071e8d5f-9ab5-4dbf-8a98-50f7a257e04e": {
    "name": "Casa Fourteen",
@@ -1498,16 +1488,15 @@
   "1e999304-2835-43bd-8d2e-bae50ef2239a": {
    "name": "Finca Palmeras",
    "slug": "finca-palmeras",
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETC1922EO",
+   "licence": "ETV-1922-E",
    "register_licence": "ETV1922E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "CAN COLOMARET",
    "issues": [
-    "Number 1922 is correct, but IMpulse has 'ETC1922EO' and the register has ETV1922E",
     "Shown for 12 guests; the register allows 10 places"
    ]
   },
@@ -1529,7 +1518,7 @@
    "slug": "finca-utopia",
    "status": "verified",
    "ok": true,
-   "licence": "AG-0043-E.",
+   "licence": "AG-0043-E",
    "register_licence": "AG0043E",
    "register_places": 22,
    "register_municipality": "SANT JOAN DE LABRITJA",
@@ -2050,17 +2039,15 @@
   "2dbec9dc-ded5-4e2f-a6ab-eacf4f492d88": {
    "name": "Villa Centelleo",
    "slug": "villa-centelleo",
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETV-1101-E",
+   "licence": "ET-1101-E",
    "register_licence": "ET1101E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "VILLA CENTELLEO",
-   "issues": [
-    "Number 1101 is correct, but IMpulse has 'ETV-1101-E' and the register has ET1101E"
-   ]
+   "issues": []
   },
   "5fc23eb8-abeb-402d-b658-8502d2604f39": {
    "name": "Villa Ceres",
@@ -2407,32 +2394,28 @@
   "7db92cc8-8f6b-49e5-8ed0-5ff4e894095f": {
    "name": "Villa Harper",
    "slug": "villa-harper",
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETV-1071-E",
+   "licence": "ET-1071-E",
    "register_licence": "ET1071E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "CASA SANDRA",
-   "issues": [
-    "Number 1071 is correct, but IMpulse has 'ETV-1071-E' and the register has ET1071E"
-   ]
+   "issues": []
   },
   "487e2406-ddd3-4241-b2f1-5f1d5b4facc2": {
    "name": "Villa Hebe",
    "slug": "villa-hebe",
-   "status": "format_differs",
+   "status": "verified",
    "ok": true,
-   "licence": "ETE0146",
+   "licence": "ET-0146-E",
    "register_licence": "ET0146E",
    "register_places": 8,
    "register_municipality": "SANT ANTONI DE PORTMANY",
    "register": "habitatges-turistics",
    "register_name": "VILLA MARIA",
-   "issues": [
-    "Number 0146 is correct, but IMpulse has 'ETE0146' and the register has ET0146E"
-   ]
+   "issues": []
   },
   "593fa913-51e7-4eb5-8bfe-d74f405540a9": {
    "name": "Villa Heidi",
@@ -3564,20 +3547,18 @@
   }
  },
  "counts": {
-  "format_differs": 13,
+  "format_differs": 3,
   "not_in_register": 2,
-  "verified": 251
+  "verified": 261
  },
  "hidden": [
   "Villa Brisa"
  ],
  "flagged": [
-  "Can Anna Grande",
   "Can Arte",
   "Can Aspen",
   "Can Beso",
   "Can Brooke",
-  "Can Catalina",
   "Can Cleo",
   "Can Daneri",
   "Can Milna",
@@ -3589,11 +3570,9 @@
   "Can Sabina",
   "Can Senna",
   "Can Tehani",
-  "Casa Clareta",
   "Casa Maxi",
   "Casa Yolanda 1",
   "Casa Yolanda 2",
-  "Casa d'Hort",
   "Es Palauet Apartment",
   "Es Palauet Duplex",
   "Finca Palmeras",
@@ -3603,11 +3582,8 @@
   "Villa Amaris",
   "Villa Apia",
   "Villa Auren",
-  "Villa Centelleo",
   "Villa Fico",
   "Villa Hailey",
-  "Villa Harper",
-  "Villa Hebe",
   "Villa Ingrid",
   "Villa Jesus",
   "Villa Jesus for-four",
