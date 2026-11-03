@@ -343,6 +343,7 @@ def villa_card(villa: dict, *, compact: bool = False, image_index: int = 0) -> s
         <article class="villa-card"
            data-villa data-slug="{villa['slug']}" data-uuid="{villa['v_uuid']}" data-name="{esc(villa['name'].lower())}"
            data-area="{esc(villa['area'])}" data-district="{esc(villa['district'])}" data-region="{villa['region']}"
+           data-lat="{villa.get('lat') or ''}" data-lng="{villa.get('lng') or ''}"
            data-sleeps="{villa['sleeps']}" data-bedrooms="{villa['bedrooms']}"
            data-price="{villa['price_from']}" data-features="{esc(features)}">
           <a class="villa-card__link" href="/villa/{villa['slug']}/">
@@ -858,22 +859,26 @@ def region_options(selected: str = "") -> str:
     return "".join(options)
 
 
-def where_options() -> str:
-    """"Where": each portal district, then its areas (as on the portal). Values are
-    d:<district> or a:<district>|<area>, read by assets/js/site.js."""
-    options = ['<option value="">Anywhere</option>']
+def municipality_options() -> str:
+    """Municipality menu: the portal's five districts, with villa counts."""
+    options = ['<option value="">All municipalities</option>']
     for value, label in DISTRICTS:
-        villas = [v for v in VILLAS if v["district"] == value]
-        if not villas:
-            continue
-        areas: dict[str, int] = {}
-        for v in villas:
-            areas[v["area"]] = areas.get(v["area"], 0) + 1
-        options.append(f'<optgroup label="{esc(label)}">')
-        options.append(f'<option value="d:{esc(value)}">All of {esc(label)} ({len(villas)})</option>')
-        for area in sorted(areas, key=str.lower):
-            options.append(f'<option value="a:{esc(value)}|{esc(area)}">{esc(area)} ({areas[area]})</option>')
-        options.append("</optgroup>")
+        n = sum(1 for v in VILLAS if v["district"] == value)
+        if n:
+            options.append(f'<option value="{esc(value)}">{esc(label)} ({n})</option>')
+    return "".join(options)
+
+
+def area_menu_options() -> str:
+    """Area menu: every area (IMpulse/portal names), tagged with its municipality. The script
+    shows only the chosen municipality's areas; picking an area also sets its municipality."""
+    options = ['<option value="">All areas</option>']
+    areas: dict[tuple[str, str], int] = {}
+    for v in VILLAS:
+        areas[(v["district"], v["area"])] = areas.get((v["district"], v["area"]), 0) + 1
+    order = {value: i for i, (value, _) in enumerate(DISTRICTS)}
+    for (district, area), n in sorted(areas.items(), key=lambda kv: (order.get(kv[0][0], 9), kv[0][1].lower())):
+        options.append(f'<option value="{esc(area)}" data-district="{esc(district)}">{esc(area)} ({n})</option>')
     return "".join(options)
 
 
@@ -917,9 +922,13 @@ def build_home() -> str:
     search = hero["search"]
     search_panel = f"""
       <form class="search-panel" action="/villas/" method="get" role="search" aria-label="Find a villa">
-        <div class="search-field search-field--where">
-          <label for="hero-where">{esc(search['regions_label'])}</label>
-          <select id="hero-where" name="where">{where_options()}</select>
+        <div class="search-field search-field--muni">
+          <label for="hero-district">Municipality</label>
+          <select id="hero-district" name="district" data-muni>{municipality_options()}</select>
+        </div>
+        <div class="search-field search-field--area">
+          <label for="hero-area">Area</label>
+          <select id="hero-area" name="area" data-area-menu>{area_menu_options()}</select>
         </div>
         <div class="search-field search-field--dates">
           {date_range_field("arrive", "depart", label=search.get("dates_label", "Check in · Check out"))}
@@ -1161,7 +1170,8 @@ def build_villas() -> str:
         {icon('search')}
         <input type="search" placeholder="Search by villa or area" aria-label="Search villas" data-search>
       </div>
-      <select class="filter-select filter-select--bar" data-filter="where" aria-label="Where">{where_options()}</select>
+      <select class="filter-select filter-select--bar" data-filter="district" data-muni aria-label="Municipality">{municipality_options()}</select>
+      <select class="filter-select filter-select--bar" data-filter="area" data-area-menu aria-label="Area">{area_menu_options()}</select>
       <select class="filter-select filter-select--bar" data-filter="guests" aria-label="Guests">
         <option value="">Any guests</option>
         {''.join(f'<option value="{n}">{n}+ guests</option>' for n in (2, 4, 6, 8, 10, 12))}
@@ -1216,8 +1226,12 @@ def build_villas() -> str:
       <p class="filter-hint">We check live availability with the villa owners.</p>
     </div>
     <div class="filter-group">
-      <h4>Where</h4>
-      <select class="filter-select" style="width:100%" data-filter="where" aria-label="Where">{where_options()}</select>
+      <h4>Municipality</h4>
+      <select class="filter-select" style="width:100%" data-filter="district" data-muni aria-label="Municipality">{municipality_options()}</select>
+    </div>
+    <div class="filter-group">
+      <h4>Area</h4>
+      <select class="filter-select" style="width:100%" data-filter="area" data-area-menu aria-label="Area">{area_menu_options()}</select>
     </div>
     <div class="filter-group">
       <h4>Guests</h4>
@@ -1527,7 +1541,7 @@ def build_villa(villa: dict) -> str:
   <div class="wrap">
     <div class="section-head reveal">
       <div><p class="eyebrow">Keep looking</p><h2>More in {esc(region['name'])}</h2></div>
-      <div class="section-head__aside"><a class="link" href="/villas/?where={quote('d:' + region['district'])}">All villas in {esc(region['name'])}{icon('arrow')}</a></div>
+      <div class="section-head__aside"><a class="link" href="/villas/?district={quote(region['district'])}">All villas in {esc(region['name'])}{icon('arrow')}</a></div>
     </div>
     <div class="villa-grid">{similar_html}</div>
   </div>
@@ -1727,7 +1741,7 @@ def build_destination(region: dict) -> str:
       <div><p class="eyebrow">The houses</p><h2>Villas in {esc(region['name'])}</h2></div>
       <div class="section-head__aside">
         <p class="lede">{len(villas)} houses in this part of the island{f', from {money(min(prices))} per week' if prices else ''}.</p>
-        <a class="link" href="/villas/?where={quote('d:' + region['district'])}">See all {len(villas)} villas{icon('arrow')}</a>
+        <a class="link" href="/villas/?district={quote(region['district'])}">See all {len(villas)} villas{icon('arrow')}</a>
       </div>
     </div>
     <div class="villa-grid">{cards}</div>

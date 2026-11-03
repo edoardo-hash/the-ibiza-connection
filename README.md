@@ -176,6 +176,16 @@ The build is atomic: it renders into `.build/`, swaps it with `dist/`, and the r
 server never serves a half-written page. A full rebuild takes about a second (excluding
 photography).
 
+### Search: location and "nearby"
+
+Location is two menus, **Municipality** (the portal's five districts) and **Area** (that
+municipality's areas, IMpulse names); picking an area sets its municipality. URL:
+`/villas/?district=<district>&area=<area>` (older `?where=` / `?region=` links still work).
+When a municipality/area search finds **5 villas or fewer** (after the other filters and
+availability), the list is topped up with the **closest villas outside it** by approximate
+GPS until **8** are shown, under a note and with a "Nearby · area · km" badge
+(`NEARBY_TRIGGER` / `MIN_RESULTS` in `assets/js/site.js`).
+
 ### Hiding a villa
 
 To take a villa off the site by hand, add it to `hidden_villas` in `content/settings.json`

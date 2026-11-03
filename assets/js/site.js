@@ -407,6 +407,51 @@
   });
   syncAllDateRanges();
 
+  /* ------------------------------------------------------------------ */
+  /*  Location: Municipality + Area menus (as on the portal)             */
+  /*  The Area menu lists the chosen municipality's areas; picking an    */
+  /*  area also sets its municipality. Every pair on the page (hero,     */
+  /*  filter bar, filter drawer) shows the same choice.                  */
+  /* ------------------------------------------------------------------ */
+  const muniMenus = $$("[data-muni]");
+  const areaMenus = $$("[data-area-menu]");
+  const AREA_DISTRICT = {};
+  const AREA_OPTIONS = areaMenus[0]
+    ? Array.from(areaMenus[0].options).map((o) => {
+        if (o.value) AREA_DISTRICT[o.value] = o.dataset.district || "";
+        return { value: o.value, label: o.textContent, district: o.dataset.district || "" };
+      })
+    : [];
+  const renderAreaMenu = (menu, district) => {
+    menu.innerHTML = "";
+    AREA_OPTIONS.filter((o) => !o.value || !district || o.district === district).forEach((o) => {
+      const opt = document.createElement("option");
+      opt.value = o.value;
+      opt.textContent = o.label;
+      if (o.district) opt.dataset.district = o.district;
+      menu.appendChild(opt);
+    });
+  };
+  const setLocation = (district, area) => {
+    const d = area ? AREA_DISTRICT[area] || district || "" : district || "";
+    const a = area && (!d || AREA_DISTRICT[area] === d) ? area : "";
+    muniMenus.forEach((m) => (m.value = d));
+    areaMenus.forEach((m) => {
+      renderAreaMenu(m, d);
+      m.value = a;
+    });
+    document.dispatchEvent(new CustomEvent("location:change", { detail: { district: d, area: a } }));
+  };
+  muniMenus.forEach((m) =>
+    m.addEventListener("change", () => {
+      const area = areaMenus[0]?.value || "";
+      setLocation(m.value, AREA_DISTRICT[area] === m.value ? area : "");
+    })
+  );
+  areaMenus.forEach((m) =>
+    m.addEventListener("change", () => setLocation(m.value ? AREA_DISTRICT[m.value] : muniMenus[0]?.value || "", m.value))
+  );
+
   /* Hero search: leave empty fields out of the URL. */
   $$(".search-panel").forEach((form) =>
     form.addEventListener("submit", () => {
@@ -446,25 +491,22 @@
     const todayIso = new Date().toISOString().slice(0, 10);
 
     const params = new URLSearchParams(window.location.search);
-    // "Where" (portal districts and areas): d:<district> or a:<district>|<area>.
-    // Older links (?region=<slug>, ?area=<name>, ?bedrooms=<n>) still work.
-    const legacyWhere = () => {
+    // Location: ?district=<municipality>&area=<area>. Older links still work:
+    // ?where=d:<district> / a:<district>|<area>, ?region=<slug> (old and new slugs), ?bedrooms=<n>.
+    const initialLocation = () => {
+      let district = params.get("district") || "";
+      let area = params.get("area") || "";
+      const where = params.get("where") || "";
+      if (where.startsWith("d:")) district = where.slice(2);
+      if (where.startsWith("a:")) [district, area] = where.slice(2).split("|");
       const RENAMED = { north: "san-juan", west: "san-antonio", "south-west": "san-jose", east: "santa-eulalia", "ibiza-town": "ibiza" };
       const region = RENAMED[params.get("region")] || params.get("region");
-      const area = params.get("area");
-      if (area) {
-        const card = cards.find((c) => c.dataset.area === area);
-        if (card) return `a:${card.dataset.district}|${area}`;
-      }
-      if (region) {
-        const card = cards.find((c) => c.dataset.region === region);
-        if (card) return `d:${card.dataset.district}`;
-      }
-      return "";
+      if (!district && region) district = cards.find((c) => c.dataset.region === region)?.dataset.district || "";
+      return { district, area };
     };
     const initial = {
       q: params.get("q") || "",
-      where: params.get("where") || legacyWhere(),
+      ...initialLocation(),
       guests: params.get("guests") || "",
       bmin: params.get("bmin") || params.get("bedrooms") || "",
       bmax: params.get("bmax") || "",
@@ -483,7 +525,8 @@
     };
 
     if (searchInput) searchInput.value = initial.q;
-    ["where", "guests", "bmin", "bmax", "price", "sort"].forEach((name) => setControl(name, initial[name]));
+    ["guests", "bmin", "bmax", "price", "sort"].forEach((name) => setControl(name, initial[name]));
+    setLocation(initial.district, initial.area);
     featureEls.forEach((el) => {
       el.checked = initial.features.includes(el.dataset.feature);
     });
@@ -495,7 +538,8 @@
 
     const currentState = () => ({
       q: (searchInput?.value || "").trim().toLowerCase(),
-      where: filterEls.find((el) => el.dataset.filter === "where")?.value || "",
+      district: muniMenus[0]?.value || "",
+      area: areaMenus[0]?.value || "",
       guests: filterEls.find((el) => el.dataset.filter === "guests")?.value || "",
       bmin: filterEls.find((el) => el.dataset.filter === "bmin")?.value || "",
       bmax: filterEls.find((el) => el.dataset.filter === "bmax")?.value || "",
@@ -514,14 +558,36 @@
       return price >= Number(min) && price <= Number(max);
     };
 
+    const inLocation = (card, state) =>
+      (!state.district || card.dataset.district === state.district) && (!state.area || card.dataset.area === state.area);
+
+    // "Nearby": when a municipality/area search finds NEARBY_TRIGGER villas or fewer, the list is
+    // topped up with the closest villas outside it (by approximate GPS) until MIN_RESULTS are shown.
+    const NEARBY_TRIGGER = 5;
+    const MIN_RESULTS = 8;
+    const coords = (card) => [Number(card.dataset.lat), Number(card.dataset.lng)];
+    const hasCoords = (card) => coords(card).every((n) => Number.isFinite(n) && n !== 0);
+    const km = ([lat1, lng1], [lat2, lng2]) => {
+      const r = (x) => (x * Math.PI) / 180;
+      const h = Math.sin(r(lat2 - lat1) / 2) ** 2 + Math.cos(r(lat1)) * Math.cos(r(lat2)) * Math.sin(r(lng2 - lng1) / 2) ** 2;
+      return 12742 * Math.asin(Math.sqrt(h));
+    };
+    const locationCentre = (state) => {
+      const inside = cards.filter((c) => inLocation(c, state) && hasCoords(c));
+      if (!inside.length) return null;
+      const sum = inside.reduce((acc, c) => [acc[0] + coords(c)[0], acc[1] + coords(c)[1]], [0, 0]);
+      return [sum[0] / inside.length, sum[1] / inside.length];
+    };
+    const locationLabel = (state) => {
+      if (state.area) return state.area;
+      const opt = muniMenus[0] && Array.from(muniMenus[0].options).find((o) => o.value === state.district);
+      return opt ? opt.textContent.replace(/\s*\(\d+\)$/, "") : state.district;
+    };
+    let nearbyHead = null;
+
     const matches = (card, state) => {
       const features = (card.dataset.features || "").split(" ").filter(Boolean);
       if (state.q && !`${card.dataset.name} ${card.dataset.area}`.toLowerCase().includes(state.q)) return false;
-      if (state.where.startsWith("d:") && card.dataset.district !== state.where.slice(2)) return false;
-      if (state.where.startsWith("a:")) {
-        const [district, area] = state.where.slice(2).split("|");
-        if (card.dataset.district !== district || card.dataset.area !== area) return false;
-      }
       if (state.guests && Number(card.dataset.sleeps) < Number(state.guests)) return false;
       const beds = Number(card.dataset.bedrooms);
       if (state.bmin && beds < Number(state.bmin)) return false;
@@ -552,11 +618,8 @@
       if (!chipsEl) return;
       const chips = [];
       if (state.q) chips.push(makeChip(`“${state.q}”`, "q"));
-      if (state.where) {
-        const option = $(`[data-filter="where"] option[value="${CSS.escape(state.where)}"]`);
-        const label = option ? option.textContent.replace(/\s*\(\d+\)$/, "").replace(/^All of /, "") : state.where.slice(2);
-        chips.push(makeChip(label, "where"));
-      }
+      if (state.district) chips.push(makeChip(locationLabel({ district: state.district }), "district"));
+      if (state.area) chips.push(makeChip(state.area, "area"));
       if (state.guests) chips.push(makeChip(`${state.guests}+ guests`, "guests"));
       if (state.bmin || state.bmax) {
         const label =
@@ -583,7 +646,8 @@
     const syncUrl = (state) => {
       const params = new URLSearchParams();
       if (state.q) params.set("q", state.q);
-      if (state.where) params.set("where", state.where);
+      if (state.district) params.set("district", state.district);
+      if (state.area) params.set("area", state.area);
       if (state.guests) params.set("guests", state.guests);
       if (state.bmin) params.set("bmin", state.bmin);
       if (state.bmax) params.set("bmax", state.bmax);
@@ -662,13 +726,50 @@
     const apply = (resetStep = true) => {
       if (resetStep) visible = step;
       const state = currentState();
-      const matched = cards.filter((card) => matches(card, state));
-      const ordered = sortCards(matched, state.sort);
+      const others = cards.filter((card) => matches(card, state));
+      const exact = others.filter((card) => inLocation(card, state));
+      let nearby = [];
+      const centre = state.district || state.area ? locationCentre(state) : null;
+      if (centre && exact.length <= NEARBY_TRIGGER) {
+        nearby = others
+          .filter((card) => !inLocation(card, state) && hasCoords(card))
+          .map((card) => ({ card, d: km(centre, coords(card)) }))
+          .sort((a, b) => a.d - b.d)
+          .slice(0, Math.max(0, MIN_RESULTS - exact.length));
+      }
+      const nearbyCards = nearby.map((n) => n.card);
+      const ordered = [...sortCards(exact, state.sort), ...nearbyCards];
+      const matched = ordered;
       ordered.forEach((card) => results.appendChild(card));
       cards.forEach((card) => {
         const index = ordered.indexOf(card);
         card.hidden = index === -1 || index >= visible;
+        const near = nearby.find((n) => n.card === card);
+        card.classList.toggle("is-nearby", Boolean(near));
+        let badge = $(".villa-card__nearby", card);
+        if (near) {
+          if (!badge) {
+            badge = document.createElement("span");
+            badge.className = "villa-card__nearby";
+            $(".villa-card__media", card)?.appendChild(badge);
+          }
+          badge.textContent = `Nearby · ${card.dataset.area} · ${near.d < 1 ? "<1" : Math.round(near.d)} km`;
+        } else if (badge) badge.remove();
       });
+      // A full-width note before the first nearby villa.
+      if (nearbyCards.length) {
+        if (!nearbyHead) {
+          nearbyHead = document.createElement("div");
+          nearbyHead.className = "results__nearby";
+          nearbyHead.setAttribute("role", "note");
+        }
+        const where = locationLabel(state);
+        nearbyHead.innerHTML = exact.length
+          ? `Only <strong>${exact.length}</strong> ${exact.length === 1 ? "villa" : "villas"} in ${where} ${exact.length === 1 ? "matches" : "match"} your search — here ${nearbyCards.length === 1 ? "is" : "are"} <strong>${nearbyCards.length}</strong> more close by.`
+          : `No villas in ${where} match your search — here are the <strong>${nearbyCards.length}</strong> closest.`;
+        results.insertBefore(nearbyHead, nearbyCards[0]);
+        nearbyHead.hidden = exact.length >= visible;
+      } else if (nearbyHead) nearbyHead.remove();
       if (countEl) countEl.textContent = String(matched.length);
       if (drawerCount) drawerCount.textContent = String(matched.length);
       if (emptyEl) emptyEl.classList.toggle("is-visible", matched.length === 0);
@@ -692,8 +793,10 @@
       const b = clean(hi);
       if (a && b && Number(b) < Number(a) && hi) hi.value = a;
     };
+    document.addEventListener("location:change", () => apply());
     filterEls.forEach((el) =>
       el.addEventListener("change", () => {
+        if (el.dataset.filter === "district" || el.dataset.filter === "area") return; // setLocation handles these
         if (el.dataset.filter === "bmin" || el.dataset.filter === "bmax") normaliseBeds();
         controlsFor(el.dataset.filter).forEach((other) => {
           if (other !== el) other.value = el.value;
@@ -724,6 +827,12 @@
         else if (action === "saved") {
           savedOnly = false;
           if (savedToggle) savedToggle.checked = false;
+        } else if (action === "district") {
+          setLocation("", "");
+          return; // setLocation re-applies
+        } else if (action === "area") {
+          setLocation(muniMenus[0]?.value || "", "");
+          return;
         } else if (action === "beds") {
           setControl("bmin", "");
           setControl("bmax", "");
@@ -748,8 +857,9 @@
     const clearAll = () => {
       if (searchInput) searchInput.value = "";
       filterEls.forEach((el) => {
-        el.value = el.dataset.filter === "sort" ? "featured" : "";
+        if (el.dataset.filter !== "district" && el.dataset.filter !== "area") el.value = el.dataset.filter === "sort" ? "featured" : "";
       });
+      setLocation("", "");
       featureEls.forEach((el) => (el.checked = false));
       if (dateFrom) dateFrom.value = "";
       if (dateTo) dateTo.value = "";

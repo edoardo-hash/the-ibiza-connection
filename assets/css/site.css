@@ -476,7 +476,7 @@ body.menu-open .site-menu { opacity: 1; visibility: visible; }
   border: 1px solid var(--line);
   box-shadow: 0 30px 80px -50px rgba(22, 20, 15, 0.55);
   display: grid;
-  grid-template-columns: 1.15fr 1.45fr 0.8fr 0.95fr auto;
+  grid-template-columns: 0.95fr 1fr 1.35fr 0.75fr 0.9fr auto;
   align-items: stretch;
   padding: 10px;
   gap: 0;
@@ -552,6 +552,27 @@ body.menu-open .site-menu { opacity: 1; visibility: visible; }
 .filter-group .date-range__label { display: none; }
 .booking__field--dates .date-range__label { font-size: 11px; letter-spacing: 0.18em; }
 .booking__field--dates .date-range__value { font-size: 14px; min-height: 22px; }
+
+/* Nearby results (search topped up with the closest villas) ------------ */
+.results__nearby {
+  grid-column: 1 / -1;
+  padding: 18px 22px;
+  border-left: 2px solid var(--clay);
+  background: rgba(162, 98, 60, 0.07);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.villa-card__nearby {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  padding: 7px 12px;
+  background: var(--ink);
+  color: var(--bone);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
 
 /* Bedrooms from – to ----------------------------------------------------- */
 .bed-range { display: flex; align-items: center; gap: 8px; min-height: 26px; }
@@ -1601,9 +1622,10 @@ select.filter-select,
     grid-template-columns: 1fr 1fr;
   }
   .search-field { padding: 10px 12px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .search-field--where, .search-field--dates { grid-column: span 2; border-right: 0; }
+  .search-field--area { border-right: 0; }
+  .search-field--dates { grid-column: span 2; border-right: 0; }
+  .search-field:nth-child(4) { border-bottom: 0; }
   .search-field--beds { border-right: 0; border-bottom: 0; }
-  .search-field:nth-child(3) { border-bottom: 0; }
   .search-panel .btn { grid-column: span 2; margin: 8px 10px 6px; }
   .search-field label, .search-field__label, .date-range__label { font-size: 11px; }
   .search-field select, .search-field input { font-size: 14px; }
