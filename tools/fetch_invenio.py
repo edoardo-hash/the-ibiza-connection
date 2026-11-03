@@ -718,6 +718,12 @@ def main() -> None:
         villa["real_bathrooms"] = as_int(lr.get("bathrooms")) or villa["bathrooms"]
         villa["bedrooms"] = villa["bedrooms"] or villa["real_bedrooms"]
         villa["bathrooms"] = villa["bathrooms"] or villa["real_bathrooms"]
+        # Licence (Edo, 3 Nov 2026): take it from the full villa record (api_villa_list_lr), which is
+        # the back-office licence field the HAMs edit. api_villa_list's own "license" can hold another
+        # value (Villa Nia: 2014047792 there, ETV-1477-E in the record).
+        lr_licence = clean_text(lr.get("license"))
+        if is_licensed(lr_licence):
+            villa["license"] = lr_licence
     # Every listed villa (so every newly published one) is checked against the official
     # register in data/register/ on each refresh. Failures stay off the site until the HAM
     # confirms the licence (content/settings.json "licence_confirmed", by IMpulse uuid).
