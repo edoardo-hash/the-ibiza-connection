@@ -148,6 +148,8 @@
     "link_label": "Send us the link"
   },
   "licence_policy": "hide",
-  "licence_confirmed": {},
+  "licence_confirmed": {
+    "5e0d0f87-cb58-4491-a185-1e3837f0114c": "La Flaca (ETV-0422-E): confirmed by Edo, 3 Nov 2026"
+  },
   "_licence_notes": "licence_policy: 'hide' keeps villas whose licence fails the official-register check (data/licence-check.json) off the site; 'flag' lists them anyway. licence_confirmed: IMpulse uuid -> note, e.g. 'Confirmed by HAM <name> on <date>', to put a failed villa back."
 }
