@@ -11,6 +11,8 @@
    "register_licence": "ETV2573E",
    "register_places": 4,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA HORIZON",
    "issues": []
   },
   "7890a112-b124-48a5-bfbc-958e4b3d21b5": {
@@ -22,6 +24,8 @@
    "register_licence": "ETV0972E",
    "register_places": 12,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CASA BELLO",
    "issues": []
   },
   "9e63480f-9683-41a1-8511-82a2e447c7ae": {
@@ -33,6 +37,8 @@
    "register_licence": "ETV1206E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA VILDA",
    "issues": []
   },
   "4a4696c2-438a-46e5-8c49-8c0d991e889e": {
@@ -44,6 +50,8 @@
    "register_licence": "ET0787E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CANA CELESTE",
    "issues": []
   },
   "e955e678-69ef-4cf8-bf3d-bfcb4eebb7a4": {
@@ -55,6 +63,8 @@
    "register_licence": "ET0831E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PETIT",
    "issues": []
   },
   "601f3976-3acf-4e5a-9679-8bf5cd267071": {
@@ -66,6 +76,8 @@
    "register_licence": "ETV1498E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "DOS MONOS",
    "issues": []
   },
   "e52660c8-33f9-4484-be3d-09c4112edef3": {
@@ -77,19 +89,23 @@
    "register_licence": "ETV1871E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN RIBES",
    "issues": []
   },
   "4f976bc3-e520-4789-b94d-1e699cfce86b": {
    "name": "Can Anna Grande",
    "slug": "can-anna-grande",
-   "status": "other_register",
+   "status": "format_differs",
    "ok": true,
    "licence": "AG-0037-E",
-   "register_licence": null,
-   "register_places": null,
-   "register_municipality": null,
+   "register_licence": "AG0037EIF",
+   "register_places": 22,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "turisme-rural",
+   "register_name": "CAN SKYE",
    "issues": [
-    "'AG-0037-E' is an agroturismo licence: not in the tourist-home list, check it in its own register"
+    "Number 0037 is correct, but IMpulse has 'AG-0037-E' and the register has AG0037EIF"
    ]
   },
   "06adba92-625f-41d6-90a2-1a9629379fd7": {
@@ -101,6 +117,8 @@
    "register_licence": "ETV1946E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "LOS ALGARROBOS",
    "issues": []
   },
   "bab4ff1a-a272-4dc2-8f1e-0637d2053bea": {
@@ -112,6 +130,8 @@
    "register_licence": "ETV1794EIF",
    "register_places": 12,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CAN RAFALET O GRAO DES COLL",
    "issues": []
   },
   "17c52bb7-bba8-4c52-a00f-f73467c99ac5": {
@@ -123,6 +143,8 @@
    "register_licence": "ETV2166E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN COLMENA",
    "issues": [
     "Number 2166 is correct, but IMpulse has 'VTV-02166' and the register has ETV2166E",
     "Shown for 28 guests; the register allows 8 places"
@@ -137,6 +159,8 @@
    "register_licence": "ETV-1554-E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA CAP MARTINET TALAMANCA",
    "issues": []
   },
   "e2c5d919-edd7-4d0b-96e0-9ee1eb082ba9": {
@@ -148,6 +172,8 @@
    "register_licence": "ETV1435E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA MONTE GOLF",
    "issues": []
   },
   "8e5b3e4a-d4d8-4134-9db5-cee19b53657e": {
@@ -159,6 +185,8 @@
    "register_licence": "ETV1474E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA ALIPEP",
    "issues": []
   },
   "ee922962-acd8-4a0a-b0e5-33f375433270": {
@@ -170,6 +198,8 @@
    "register_licence": "ETV2044E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN BASETAS",
    "issues": [
     "Shown for 10 guests; the register allows 8 places"
    ]
@@ -183,6 +213,8 @@
    "register_licence": "ETV2444E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "AVILA",
    "issues": []
   },
   "8ad7b0f3-5566-45c8-baeb-c7f4103f3f7f": {
@@ -194,6 +226,8 @@
    "register_licence": "ET0810E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PEP MAÑA",
    "issues": []
   },
   "b40061b4-e2aa-4c34-ac44-ad75fa3d3704": {
@@ -205,6 +239,8 @@
    "register_licence": "ET0605E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CA NA CARLA",
    "issues": []
   },
   "30281336-36ab-40a6-a8bb-f298735cc794": {
@@ -216,6 +252,8 @@
    "register_licence": "ETV2034E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "SA PAISSA DE CAS BERRIS",
    "issues": []
   },
   "5df336ed-657f-4269-9e22-138b305f242e": {
@@ -227,6 +265,8 @@
    "register_licence": "ETV1191E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN TUMAS",
    "issues": [
     "Shown for 12 guests; the register allows 10 places"
    ]
@@ -240,6 +280,8 @@
    "register_licence": "ET0458E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "LAS PALOMAS",
    "issues": []
   },
   "58bcde38-3683-46a6-a729-dc35d11b356c": {
@@ -251,6 +293,8 @@
    "register_licence": "ETV1635E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN VIRGINIA",
    "issues": [
     "Shown for 10 guests; the register allows 6 places"
    ]
@@ -264,6 +308,8 @@
    "register_licence": "ETV1333E",
    "register_places": 4,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PATO",
    "issues": []
   },
   "925b6e38-2177-4be1-a353-fcc5e9032afc": {
@@ -275,6 +321,8 @@
    "register_licence": "ETV2546E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "SES CASETES",
    "issues": []
   },
   "097a432b-303e-40d1-8576-44b7ff9c9921": {
@@ -286,6 +334,8 @@
    "register_licence": "ETV1632E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA CARVI",
    "issues": []
   },
   "f6152e64-c661-4ad8-9e39-1202b28dcc0a": {
@@ -297,6 +347,8 @@
    "register_licence": "ETV0913E",
    "register_places": 10,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN MAYANS",
    "issues": [
     "Number 0913 is correct, but IMpulse has 'ET-0913-E' and the register has ETV0913E"
    ]
@@ -310,6 +362,8 @@
    "register_licence": "ET0354E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN RAFAL",
    "issues": []
   },
   "7dfbaad5-5ea3-4b63-904f-a492c356ef7e": {
@@ -321,6 +375,8 @@
    "register_licence": "ETV0920E",
    "register_places": 6,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "S´HORT DE SA BOTIGA",
    "issues": []
   },
   "c527635b-c3a8-4fe7-8a0e-121d7988d67d": {
@@ -332,6 +388,8 @@
    "register_licence": "ET0870E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "ONCE LLAVES",
    "issues": []
   },
   "5d5a8cfe-424b-4915-a5e7-3b25d3f4c57e": {
@@ -343,6 +401,8 @@
    "register_licence": "ETV2492E",
    "register_places": 4,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAS GOBERNADOR",
    "issues": [
     "Shown for 8 guests; the register allows 4 places"
    ]
@@ -356,6 +416,8 @@
    "register_licence": "ET0626E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN DANIEL",
    "issues": [
     "Shown for 10 guests; the register allows 8 places"
    ]
@@ -369,6 +431,8 @@
    "register_licence": "ETV2336E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "EL GALOP",
    "issues": []
   },
   "8f090aca-ab07-4e48-b81b-af92d89bac4d": {
@@ -380,6 +444,8 @@
    "register_licence": "ETV1949E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN BARDA",
    "issues": []
   },
   "98de65de-2fad-4c60-aac6-4e52a40a2fdf": {
@@ -391,6 +457,8 @@
    "register_licence": "ETV1626E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CA N´ANDREUET DE BAIX",
    "issues": []
   },
   "d7b91ea9-16eb-44f7-983e-fb3e05b8fd5b": {
@@ -402,6 +470,8 @@
    "register_licence": "ET0391E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VALLTORTA",
    "issues": []
   },
   "62cdf013-9b7c-44e4-8615-46d72a6c9318": {
@@ -413,6 +483,8 @@
    "register_licence": "ETV1274E",
    "register_places": 12,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CAN ELEFANT",
    "issues": []
   },
   "93448023-1a59-4973-ad2e-9da449a4ebc7": {
@@ -424,6 +496,8 @@
    "register_licence": "ETV1382E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PUJOL BASA",
    "issues": []
   },
   "1604c901-85af-4944-8a33-da1beac22fe1": {
@@ -435,6 +509,8 @@
    "register_licence": "ETV1856E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA CALACONTA 20",
    "issues": []
   },
   "a8ec48f9-ef5f-4da0-9c28-acd86c6f0fd7": {
@@ -446,6 +522,8 @@
    "register_licence": "ET0781E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "SA TANCA DE CANA VICA",
    "issues": []
   },
   "635765dc-e376-45d7-aab1-4716c1b1114b": {
@@ -457,6 +535,8 @@
    "register_licence": "ET0917E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PERA DE SA COVA",
    "issues": []
   },
   "b7dc0f07-cced-4656-97ff-8b7b3da9d761": {
@@ -468,6 +548,8 @@
    "register_licence": "ETV2153E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN CLADDAGH",
    "issues": []
   },
   "fb9529d3-6c51-4955-b72e-2e62e1958ae3": {
@@ -479,6 +561,8 @@
    "register_licence": "ETV2008E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN ADA",
    "issues": []
   },
   "931a43ed-023e-43ea-989d-3fe9ca5536c3": {
@@ -490,6 +574,8 @@
    "register_licence": "ETV1875E",
    "register_places": 11,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CAN FRARE",
    "issues": []
   },
   "abf7c45d-ac51-470b-ba74-f7dcc54d83ac": {
@@ -501,6 +587,8 @@
    "register_licence": "ET0819E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA PURA",
    "issues": []
   },
   "ec7d99c5-00c7-4535-aee1-197d598f3be5": {
@@ -512,6 +600,8 @@
    "register_licence": "ET0823E",
    "register_places": 7,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CAN ROSER",
    "issues": []
   },
   "a9504ecd-6331-4a28-ad7d-d594a0cdb48d": {
@@ -523,6 +613,8 @@
    "register_licence": "ETV2020E",
    "register_places": 11,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PORTELL",
    "issues": []
   },
   "5f71bb29-6054-4c47-87d4-e462186cad03": {
@@ -534,6 +626,8 @@
    "register_licence": "ETV1952E",
    "register_places": 8,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CAN BONET",
    "issues": []
   },
   "6281f2bb-bb5a-4ed8-ac1b-82041ced8c8a": {
@@ -545,6 +639,8 @@
    "register_licence": "ETV1426E",
    "register_places": 12,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "SA TANCA",
    "issues": []
   },
   "226880c5-2ee1-461b-ad90-a58c7581f7fa": {
@@ -556,6 +652,8 @@
    "register_licence": "ETV1608E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA FELIZ",
    "issues": []
   },
   "8c832cc8-2b49-4aea-a112-a0ea91e14040": {
@@ -567,6 +665,8 @@
    "register_licence": "ET0267E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "ES BOSC",
    "issues": []
   },
   "91347e46-0eb9-43d7-93e9-a55140633cf4": {
@@ -578,6 +678,8 @@
    "register_licence": "ETV1873E",
    "register_places": 12,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "BOCA SEGA",
    "issues": []
   },
   "6807c8cd-1daa-44a7-9ed3-cc1348b56851": {
@@ -589,6 +691,8 @@
    "register_licence": "ETV1947E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "LAS HIGUERAS",
    "issues": []
   },
   "2807edf4-94cf-4e5b-b100-2debf646a7cf": {
@@ -600,6 +704,8 @@
    "register_licence": "ETV1358E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "BOHO HOUSE",
    "issues": []
   },
   "ef6b79fc-a60e-4e94-a2c0-7d0b23a07952": {
@@ -611,6 +717,8 @@
    "register_licence": "ET0414E",
    "register_places": 10,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "ES FORN BLANC",
    "issues": []
   },
   "ca658c11-3c09-41f0-a21f-b32903042eeb": {
@@ -622,6 +730,8 @@
    "register_licence": "ETV0954E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA MEDIA LUNA",
    "issues": []
   },
   "084b2de6-14d2-4523-a5f2-da2fa4bccf18": {
@@ -633,6 +743,8 @@
    "register_licence": "ET0289E",
    "register_places": 11,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN RAFAL",
    "issues": []
   },
   "da174057-32a3-4a90-8de4-6dd8a3302357": {
@@ -644,6 +756,8 @@
    "register_licence": "ET0311E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN ALMA",
    "issues": []
   },
   "7d08c079-bc31-4927-86d7-9d553805012b": {
@@ -655,6 +769,8 @@
    "register_licence": "ETV1735E",
    "register_places": 8,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "SOLIVENT",
    "issues": []
   },
   "67a7c6de-cb72-4d3a-9ade-c360664b2653": {
@@ -666,7 +782,11 @@
    "register_licence": "ET0436E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "issues": []
+   "register": "habitatges-turistics",
+   "register_name": "CAN TERESITA",
+   "issues": [
+    "Can Milna + Can Milna Deluxe share licence ET0436E: 12 guests shown together, the register allows 6 places"
+   ]
   },
   "4ffb3bf2-27ab-496e-bb42-a625ea882805": {
    "name": "Can Milna Deluxe",
@@ -677,7 +797,11 @@
    "register_licence": "ET0436E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "issues": []
+   "register": "habitatges-turistics",
+   "register_name": "CAN TERESITA",
+   "issues": [
+    "Can Milna + Can Milna Deluxe share licence ET0436E: 12 guests shown together, the register allows 6 places"
+   ]
   },
   "422056d9-7dc6-4f27-8280-06e7c8233324": {
    "name": "Can Mira",
@@ -688,6 +812,8 @@
    "register_licence": "ETV1651E",
    "register_places": 12,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN MIRNA",
    "issues": []
   },
   "d8b9294c-db7e-4260-9bd1-a1b86a89b34c": {
@@ -699,6 +825,8 @@
    "register_licence": "ET0592E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "MOUSTIQUE",
    "issues": [
     "Shown for 10 guests; the register allows 8 places"
    ]
@@ -712,6 +840,8 @@
    "register_licence": "ETV1941E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CALIMA",
    "issues": []
   },
   "b2095532-7303-41a1-8323-f17f4db66da1": {
@@ -723,6 +853,8 @@
    "register_licence": "ETV1461E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN NEMO",
    "issues": []
   },
   "eaf431e1-a8f3-4fef-8ad1-870edf394672": {
@@ -734,6 +866,8 @@
    "register_licence": "ET0479E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN ROVA",
    "issues": []
   },
   "70a22162-ced1-4e7e-ad3e-7bab2ca75401": {
@@ -745,6 +879,8 @@
    "register_licence": "ETV2348E",
    "register_places": 10,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN MURTERA",
    "issues": [
     "Number 2348 is correct, but IMpulse has 'ETV-2348-V' and the register has ETV2348E",
     "Shown for 11 guests; the register allows 10 places"
@@ -759,6 +895,8 @@
    "register_licence": "ETV1532E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "LAS CICADAS",
    "issues": []
   },
   "061e8895-4853-4cb4-8603-eb8f7be45ba7": {
@@ -770,6 +908,8 @@
    "register_licence": "ETV1434E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "ES TROS",
    "issues": [
     "Shown for 12 guests; the register allows 10 places"
    ]
@@ -783,6 +923,8 @@
    "register_licence": "ETV2112E",
    "register_places": 12,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN XARRACO",
    "issues": []
   },
   "7a56b50e-6578-49b5-a9da-57f5cfd157c2": {
@@ -794,6 +936,8 @@
    "register_licence": "ET0589E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA OLIVO",
    "issues": []
   },
   "ec296213-54b8-403e-8250-e82e8c2ef917": {
@@ -805,6 +949,8 @@
    "register_licence": "ETV1569E",
    "register_places": 8,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CAN VALENCIA",
    "issues": []
   },
   "f41d4fa1-8184-4029-b2eb-707c32d446fc": {
@@ -816,6 +962,8 @@
    "register_licence": "ETV2543E",
    "register_places": 7,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN CUCO",
    "issues": [
     "Shown for 8 guests; the register allows 7 places"
    ]
@@ -829,6 +977,8 @@
    "register_licence": "ETV1129E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN ROMANIS",
    "issues": []
   },
   "982ec12a-6adc-4fb1-b744-034e2a76b971": {
@@ -840,6 +990,8 @@
    "register_licence": "ETV1362E",
    "register_places": 10,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA ES PUIG D´EN ARMAT",
    "issues": []
   },
   "69f7e082-f679-477e-94d0-e8b4ff348fab": {
@@ -851,6 +1003,8 @@
    "register_licence": "ETV1478E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN CANTO",
    "issues": [
     "Shown for 8 guests; the register allows 6 places"
    ]
@@ -864,6 +1018,8 @@
    "register_licence": "ETV1579E",
    "register_places": 11,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN MALALT D´EN FITA",
    "issues": []
   },
   "ac2742bb-ccb9-4873-8a2e-d91fe6d3bc47": {
@@ -875,6 +1031,8 @@
    "register_licence": "ET0445E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA SAKHARA",
    "issues": []
   },
   "4a40a937-1fa3-4ad4-9bc0-db56fab986e5": {
@@ -886,6 +1044,8 @@
    "register_licence": "ETV2413E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN ALCANTARA",
    "issues": []
   },
   "9c11c75f-881e-4129-8a73-408ff346b544": {
@@ -897,6 +1057,8 @@
    "register_licence": "ET0401E",
    "register_places": 10,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA SARAHMUK",
    "issues": []
   },
   "8b30acda-2fc0-48a7-ae28-8a6cb84ad3f0": {
@@ -908,6 +1070,8 @@
    "register_licence": "ETV2414E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "SA CIGONYA 5",
    "issues": []
   },
   "4e1a315f-d303-4938-afb6-5e3d3dc532b5": {
@@ -919,6 +1083,8 @@
    "register_licence": "ETV2590E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN SEF",
    "issues": []
   },
   "3bb030c2-99bc-4737-a9cb-85c86bd62612": {
@@ -930,6 +1096,8 @@
    "register_licence": "ETV2389E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN BIBI",
    "issues": [
     "Shown for 12 guests; the register allows 10 places"
    ]
@@ -943,6 +1111,8 @@
    "register_licence": "ETV2568E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA VENTURA",
    "issues": []
   },
   "5134d815-efef-48b7-a1fc-03d7ce8489ee": {
@@ -954,6 +1124,8 @@
    "register_licence": "ETV1427E",
    "register_places": 6,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CASA AMERICANO",
    "issues": []
   },
   "e9de14fc-9c93-46ca-a7e5-6584885bb149": {
@@ -965,6 +1137,8 @@
    "register_licence": "ETV2565E",
    "register_places": 11,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN TEHANI",
    "issues": [
     "Shown for 12 guests; the register allows 11 places"
    ]
@@ -978,6 +1152,8 @@
    "register_licence": "ETV2319E",
    "register_places": 10,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CAN TRUY",
    "issues": []
   },
   "c6f07ad8-b8c8-4a28-b7ed-1c73877407ab": {
@@ -989,6 +1165,8 @@
    "register_licence": "ET0507E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CA´N GUERXONET",
    "issues": []
   },
   "2e5becff-5985-45c8-8038-93e932375aa6": {
@@ -1000,6 +1178,8 @@
    "register_licence": "ETV1156E",
    "register_places": 12,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN CELESTER",
    "issues": []
   },
   "50d0d1f9-e253-4748-9399-8a64078c2a1d": {
@@ -1011,6 +1191,8 @@
    "register_licence": "ETV1516E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN MUR",
    "issues": []
   },
   "520702ac-3544-4770-bd95-a1d8adbaa511": {
@@ -1022,6 +1204,8 @@
    "register_licence": "ETV2167E",
    "register_places": 12,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA LA VISTA",
    "issues": []
   },
   "11f487fb-7b24-4bd0-ab77-b980aff32a25": {
@@ -1033,6 +1217,8 @@
    "register_licence": "ETV2299E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA DEL ALMA",
    "issues": []
   },
   "222bbadd-5380-4c00-9dfc-0d6e0ec8f51e": {
@@ -1044,6 +1230,8 @@
    "register_licence": "ETV2582E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA BESO",
    "issues": []
   },
   "016bcef2-4c68-4d95-8bd1-f8e1316ba263": {
@@ -1055,6 +1243,8 @@
    "register_licence": "ETV1914E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "ES COLL DES COCONS",
    "issues": []
   },
   "78005492-88ef-4dc7-8349-a434eb421888": {
@@ -1066,6 +1256,8 @@
    "register_licence": "ETV1865E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA SEVILLA",
    "issues": []
   },
   "c0f178e0-7d54-4178-9252-78f91c9cfa36": {
@@ -1077,6 +1269,8 @@
    "register_licence": "ET1102E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA CLARA IBIZA",
    "issues": [
     "Number 1102 is correct, but IMpulse has 'ETV-1102-E' and the register has ET1102E"
    ]
@@ -1090,6 +1284,8 @@
    "register_licence": "ET0983E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "AL VENT",
    "issues": [
     "Number 0983 is correct, but IMpulse has 'ETV-0983-E' and the register has ET0983E"
    ]
@@ -1103,6 +1299,8 @@
    "register_licence": "ETV1908E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "ES MAIOLS B",
    "issues": []
   },
   "6ee19aa6-0b35-452e-b221-0077f61d7eb2": {
@@ -1114,6 +1312,8 @@
    "register_licence": "ET0744E",
    "register_places": 9,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CAN MIEL",
    "issues": [
     "Shown for 10 guests; the register allows 9 places"
    ]
@@ -1127,6 +1327,8 @@
    "register_licence": "ETV2332E",
    "register_places": 4,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA MONIQUE",
    "issues": []
   },
   "6b7801e8-d55f-483b-873e-46a7ff2d4a0f": {
@@ -1138,6 +1340,8 @@
    "register_licence": "ETV1931E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA VALLE",
    "issues": []
   },
   "c04544dd-cd56-4f1f-a015-b79a72891d1f": {
@@ -1149,6 +1353,8 @@
    "register_licence": "ETV1818E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA TOSCANA",
    "issues": []
   },
   "2d2f9751-7c52-4c07-8e7a-d8568e0a9f42": {
@@ -1160,6 +1366,8 @@
    "register_licence": "ETV1114E",
    "register_places": 5,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN RUSIÑOL 1",
    "issues": []
   },
   "ad676935-0c88-48d9-b84c-581e3295edb4": {
@@ -1171,6 +1379,8 @@
    "register_licence": "ETV1113E",
    "register_places": 5,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN RUSIÑOL 2",
    "issues": []
   },
   "acb19b6b-ef04-45bd-9449-cdd83eaa6b36": {
@@ -1182,7 +1392,11 @@
    "register_licence": "ET1073E",
    "register_places": 12,
    "register_municipality": "SANT ANTONI DE PORTMANY",
-   "issues": []
+   "register": "habitatges-turistics",
+   "register_name": "CAN BEIA DES PUIG",
+   "issues": [
+    "Casa Yolanda 1 + Casa Yolanda 2 share licence ET1073E: 24 guests shown together, the register allows 12 places"
+   ]
   },
   "3f8398f2-941a-48d5-af86-3d1f53cae734": {
    "name": "Casa Yolanda 2",
@@ -1193,7 +1407,11 @@
    "register_licence": "ET1073E",
    "register_places": 12,
    "register_municipality": "SANT ANTONI DE PORTMANY",
-   "issues": []
+   "register": "habitatges-turistics",
+   "register_name": "CAN BEIA DES PUIG",
+   "issues": [
+    "Casa Yolanda 1 + Casa Yolanda 2 share licence ET1073E: 24 guests shown together, the register allows 12 places"
+   ]
   },
   "20226e5b-04e7-458d-b22f-89f53fd729ba": {
    "name": "Cielo del Norte",
@@ -1204,6 +1422,8 @@
    "register_licence": "ETV1174E",
    "register_places": 10,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "BOHEMIAN PEARL",
    "issues": []
   },
   "e5ce24f8-7e9a-4f3d-b579-999a244e5a27": {
@@ -1215,6 +1435,8 @@
    "register_licence": "ET1061E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "SA COVA",
    "issues": []
   },
   "dba98a71-47e0-4cf1-92ce-71f9598005f9": {
@@ -1226,32 +1448,38 @@
    "register_licence": "ETV0933E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA LINEA",
    "issues": []
   },
   "ad6e3c4e-1fcf-47d0-9def-71afa337e6b2": {
    "name": "Es Palauet Apartment",
    "slug": "es-palauet-apartment",
-   "status": "other_register",
+   "status": "verified",
    "ok": true,
    "licence": "HAC-0059-E",
-   "register_licence": null,
-   "register_places": null,
-   "register_municipality": null,
+   "register_licence": "HAC0059E",
+   "register_places": 6,
+   "register_municipality": "EIVISSA",
+   "register": "establiments-hotelers",
+   "register_name": "PALAUET",
    "issues": [
-    "'HAC-0059-E' is an hotel/apartment licence: not in the tourist-home list, check it in its own register"
+    "Es Palauet Apartment + Es Palauet Duplex share licence HAC0059E: 8 guests shown together, the register allows 6 places"
    ]
   },
   "a83921b9-98d4-41e0-abc8-d12121bc09af": {
    "name": "Es Palauet Duplex",
    "slug": "es-palauet-duplex",
-   "status": "other_register",
+   "status": "verified",
    "ok": true,
    "licence": "HAC-0059-E",
-   "register_licence": null,
-   "register_places": null,
-   "register_municipality": null,
+   "register_licence": "HAC0059E",
+   "register_places": 6,
+   "register_municipality": "EIVISSA",
+   "register": "establiments-hotelers",
+   "register_name": "PALAUET",
    "issues": [
-    "'HAC-0059-E' is an hotel/apartment licence: not in the tourist-home list, check it in its own register"
+    "Es Palauet Apartment + Es Palauet Duplex share licence HAC0059E: 8 guests shown together, the register allows 6 places"
    ]
   },
   "bbe632d9-e5b0-425d-9a43-5801f0e84bc0": {
@@ -1263,6 +1491,8 @@
    "register_licence": "ETV1615E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN BUFI",
    "issues": []
   },
   "1e999304-2835-43bd-8d2e-bae50ef2239a": {
@@ -1274,6 +1504,8 @@
    "register_licence": "ETV1922E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN COLOMARET",
    "issues": [
     "Number 1922 is correct, but IMpulse has 'ETC1922EO' and the register has ETV1922E",
     "Shown for 12 guests; the register allows 10 places"
@@ -1288,20 +1520,22 @@
    "register_licence": "ET0803E",
    "register_places": 9,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA SAMAVARA",
    "issues": []
   },
   "78e6f6e1-81a5-4e06-9912-f2cb75a95866": {
    "name": "Finca Utopia",
    "slug": "finca-utopia",
-   "status": "other_register",
+   "status": "verified",
    "ok": true,
    "licence": "AG-0043-E.",
-   "register_licence": null,
-   "register_places": null,
-   "register_municipality": null,
-   "issues": [
-    "'AG-0043-E.' is an agroturismo licence: not in the tourist-home list, check it in its own register"
-   ]
+   "register_licence": "AG0043E",
+   "register_places": 22,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "turisme-rural",
+   "register_name": "FINCA DELICA",
+   "issues": []
   },
   "81afc765-287a-4777-b04c-36ca09feafe4": {
    "name": "Finca Utopia Xarraca",
@@ -1312,6 +1546,8 @@
    "register_licence": "VTV0053EIF",
    "register_places": 6,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA COVA",
    "issues": [
     "Shown for 20 guests; the register allows 6 places"
    ]
@@ -1325,6 +1561,8 @@
    "register_licence": "ETV1804E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA CAN FURNET",
    "issues": [
     "Shown for 10 guests; the register allows 6 places"
    ]
@@ -1338,6 +1576,8 @@
    "register_licence": null,
    "register_places": null,
    "register_municipality": null,
+   "register": null,
+   "register_name": null,
    "issues": [
     "0422 ('ETV-0422-E') is not in the register"
    ],
@@ -1352,6 +1592,8 @@
    "register_licence": "ETV1390E",
    "register_places": 7,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "LA CASITA",
    "issues": []
   },
   "f31b04ae-5b29-45b8-80ab-9b4810d45535": {
@@ -1363,6 +1605,8 @@
    "register_licence": "ETV1711E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "LOS PINOS",
    "issues": []
   },
   "94678e3a-3a9a-4289-9b6a-0747128c152b": {
@@ -1374,6 +1618,8 @@
    "register_licence": "ETV1176E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA VADELLA MOUNTAIN",
    "issues": []
   },
   "36fbd8f0-51ba-4949-8a56-86a03e1a8dda": {
@@ -1385,6 +1631,8 @@
    "register_licence": "ET0290E",
    "register_places": 10,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "SOL POST",
    "issues": []
   },
   "05e708f6-9c71-49a3-9adc-78ceb357461c": {
@@ -1396,6 +1644,8 @@
    "register_licence": "ETV2120E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN FLUXA DES PUIG",
    "issues": []
   },
   "154e625f-14f6-4bff-bc4c-287bf9bda1ed": {
@@ -1407,6 +1657,8 @@
    "register_licence": "ETV1648E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN CAN",
    "issues": []
   },
   "12f557bd-36fd-4d25-8d36-c5f4130baf2e": {
@@ -1418,6 +1670,8 @@
    "register_licence": "ET0576E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA LA PLAYA, LA JOYA",
    "issues": []
   },
   "593e9e3f-e94b-4d3f-80a4-54e55960b28a": {
@@ -1429,6 +1683,8 @@
    "register_licence": "ETV2128E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "THE WAVE IBIZA",
    "issues": []
   },
   "f6d51f2d-f78b-45a3-97eb-4735d5396986": {
@@ -1440,6 +1696,8 @@
    "register_licence": "ET0580E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA PAPIRO",
    "issues": []
   },
   "92a0f1ce-844e-4adf-8a5f-f4c1328e1063": {
@@ -1451,6 +1709,8 @@
    "register_licence": "ET0661E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA MARTINET",
    "issues": []
   },
   "66a79b1d-35ad-4d04-9b98-e4759c112861": {
@@ -1462,6 +1722,8 @@
    "register_licence": "ETV2115E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CANA VENTURA",
    "issues": []
   },
   "1650ab84-7b7c-4b88-88c6-b7ac2cc77a16": {
@@ -1473,8 +1735,11 @@
    "register_licence": "ETV1793E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA INFINITY",
    "issues": [
-    "Shown for 12 guests; the register allows 8 places"
+    "Shown for 12 guests; the register allows 8 places",
+    "Villa Amaris + Villa Hailey share licence ETV1793E: 20 guests shown together, the register allows 8 places"
    ]
   },
   "eca65e40-b221-432e-85f7-6a331bd0d962": {
@@ -1486,6 +1751,8 @@
    "register_licence": "ETV1991E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN RAFALET",
    "issues": []
   },
   "73be8a15-2770-481d-a59a-4e49f182a515": {
@@ -1497,6 +1764,8 @@
    "register_licence": "ET0498E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA ACAI",
    "issues": []
   },
   "c840baf7-78b0-484e-b02a-d056474693c3": {
@@ -1508,6 +1777,8 @@
    "register_licence": "ETV1486E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN FERRAGUT",
    "issues": []
   },
   "8c1fba59-753b-41fc-91d0-9969f5e4d952": {
@@ -1519,6 +1790,8 @@
    "register_licence": "ETV2609E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN DONADIO",
    "issues": []
   },
   "114df68d-4536-47ff-b83e-5ac8f43e1466": {
@@ -1530,6 +1803,8 @@
    "register_licence": "ET0664E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN BLAKE",
    "issues": [
     "Shown for 8 guests; the register allows 6 places"
    ]
@@ -1543,6 +1818,8 @@
    "register_licence": "ETV1907E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "ES MAIOLS A",
    "issues": []
   },
   "57b16833-7b4d-46e1-8250-cff16e473153": {
@@ -1554,6 +1831,8 @@
    "register_licence": "ETV1483E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA OASIS",
    "issues": [
     "Shown for 11 guests; the register allows 8 places"
    ]
@@ -1567,6 +1846,8 @@
    "register_licence": "ETV1341E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CA NICOLE",
    "issues": []
   },
   "ab8343c2-36dd-44d6-9015-6432914c2629": {
@@ -1578,6 +1859,8 @@
    "register_licence": "ETV1696E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA WAVE",
    "issues": []
   },
   "660fea8d-5f3e-4b11-b4ee-ce5987042c44": {
@@ -1589,6 +1872,8 @@
    "register_licence": "ETV2125E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA MINERVA",
    "issues": []
   },
   "f998cd45-6388-4e7a-994e-862560e9491d": {
@@ -1600,6 +1885,8 @@
    "register_licence": "ET0642E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA ATLANTIS",
    "issues": []
   },
   "7ea17a4e-5dc6-4424-b3c6-42afc7bb4adb": {
@@ -1611,6 +1898,8 @@
    "register_licence": "ETV1694E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA ES MIXTERS",
    "issues": []
   },
   "535b80d6-9852-4e14-aec2-aceefc30b03f": {
@@ -1622,6 +1911,8 @@
    "register_licence": "ETV0986E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA SARGANTANA",
    "issues": []
   },
   "e719028f-7020-457f-bcf7-fdea1d65bdad": {
@@ -1633,6 +1924,8 @@
    "register_licence": null,
    "register_places": null,
    "register_municipality": null,
+   "register": null,
+   "register_name": null,
    "issues": [
     "1292 ('ETV-1292-E') is not in the register"
    ]
@@ -1646,6 +1939,8 @@
    "register_licence": "ETV2605E",
    "register_places": 5,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN RAFEL-CALA TARIDA",
    "issues": []
   },
   "4d18f5a3-87ce-4686-90b1-0eb086ddd0ce": {
@@ -1657,6 +1952,8 @@
    "register_licence": "ETV0947E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA MANAGUA",
    "issues": []
   },
   "c01ca8b5-9ea3-4b5c-9baa-d0654065970d": {
@@ -1668,6 +1965,8 @@
    "register_licence": "ET0543E",
    "register_places": 4,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA FINA",
    "issues": []
   },
   "ded1897d-0c8d-4db0-b993-b7c832696c5d": {
@@ -1679,6 +1978,8 @@
    "register_licence": "ETV2180E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "MAS SUEÑOS",
    "issues": []
   },
   "2b15c0fd-4a02-419d-828c-fb6a0b74a665": {
@@ -1690,6 +1991,8 @@
    "register_licence": "ETV2363E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA MONO",
    "issues": []
   },
   "9a632db9-01ac-4f50-a7f1-d8e242e6395b": {
@@ -1701,6 +2004,8 @@
    "register_licence": "ET0590E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "SA LLUNA",
    "issues": []
   },
   "02a82ba3-93f7-4dea-8301-29a836da9dc0": {
@@ -1712,6 +2017,8 @@
    "register_licence": "ET1047E",
    "register_places": 9,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN CARRION",
    "issues": []
   },
   "efd89257-250b-44b4-81d7-d4ecb6424c29": {
@@ -1723,6 +2030,8 @@
    "register_licence": "ET0862E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN VICENT DE SA MATA",
    "issues": []
   },
   "f6b14175-042a-41ba-98ea-337045171f52": {
@@ -1734,6 +2043,8 @@
    "register_licence": "ETV1869E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CANA LLUCA",
    "issues": []
   },
   "2dbec9dc-ded5-4e2f-a6ab-eacf4f492d88": {
@@ -1745,6 +2056,8 @@
    "register_licence": "ET1101E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA CENTELLEO",
    "issues": [
     "Number 1101 is correct, but IMpulse has 'ETV-1101-E' and the register has ET1101E"
    ]
@@ -1758,6 +2071,8 @@
    "register_licence": "ETV1796E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN COOL",
    "issues": []
   },
   "eee6e598-ee82-4075-9b20-1f7f9aa36550": {
@@ -1769,6 +2084,8 @@
    "register_licence": "ETV1729E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA BORA",
    "issues": []
   },
   "92145a0b-0e21-4f55-85ae-ac3ad0360390": {
@@ -1780,6 +2097,8 @@
    "register_licence": "ETV1190E",
    "register_places": 12,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CAN TALAYA",
    "issues": []
   },
   "a095e481-4d08-4d68-8678-7f0d896c23f6": {
@@ -1791,6 +2110,8 @@
    "register_licence": "ET0982E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA BLANCA",
    "issues": []
   },
   "5a44b163-3a31-4991-9585-ec3a0e639071": {
@@ -1802,6 +2123,8 @@
    "register_licence": "ET0708E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "AMANECER",
    "issues": []
   },
   "e771f93c-313a-4ce0-b52a-d02a81fd351f": {
@@ -1813,6 +2136,8 @@
    "register_licence": "ETV2349E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA GLORY",
    "issues": []
   },
   "a0c7ca98-80ef-4510-b556-c92628d15a2e": {
@@ -1824,6 +2149,8 @@
    "register_licence": "ETV2450E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CA NA MARIA MAÑA",
    "issues": []
   },
   "0ac83836-1122-48ed-8871-66f5a4a4048d": {
@@ -1835,6 +2162,8 @@
    "register_licence": "ETV1675E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA DOLORES",
    "issues": []
   },
   "da67c111-2752-4177-8e5e-ecaab0b02b40": {
@@ -1846,6 +2175,8 @@
    "register_licence": "ET0979E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "LAS BARDAS",
    "issues": []
   },
   "5efdc02b-0d71-406a-be1c-5e44bf0bab16": {
@@ -1857,6 +2188,8 @@
    "register_licence": "ETV2591E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PARADISO",
    "issues": []
   },
   "7af4b734-c7c6-419b-9cb8-2989475f7f08": {
@@ -1868,6 +2201,8 @@
    "register_licence": "ET0435E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "LA FABRICA",
    "issues": []
   },
   "5187cd5e-dc37-41d5-9294-9e72aa4b123c": {
@@ -1879,6 +2214,8 @@
    "register_licence": "ET1112E",
    "register_places": 14,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "SA CALMA",
    "issues": []
   },
   "7e81ce02-5382-4f0c-99a9-6b03a7f8932b": {
@@ -1890,6 +2227,8 @@
    "register_licence": "ETV2487E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN EMYLA",
    "issues": []
   },
   "ce830fc3-1ea1-4311-920b-1942d8095c2c": {
@@ -1901,6 +2240,8 @@
    "register_licence": "ETV1589E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "TRIPLE X",
    "issues": []
   },
   "ccbe8fd6-be70-4942-89ab-888dcb19412d": {
@@ -1912,20 +2253,22 @@
    "register_licence": "ETV1242E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN ALOE",
    "issues": []
   },
   "e7a2a8ce-63de-4933-bdb2-0d134e076a3b": {
    "name": "Villa Espada",
    "slug": "villa-espada",
-   "status": "other_register",
+   "status": "verified",
    "ok": true,
    "licence": "AG-0046-E",
-   "register_licence": null,
-   "register_places": null,
-   "register_municipality": null,
-   "issues": [
-    "'AG-0046-E' is an agroturismo licence: not in the tourist-home list, check it in its own register"
-   ]
+   "register_licence": "AG0046E",
+   "register_places": 17,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "turisme-rural",
+   "register_name": "CAN BET",
+   "issues": []
   },
   "7444ee8e-d889-4194-a580-4380e4ee74ac": {
    "name": "Villa Espera",
@@ -1936,6 +2279,8 @@
    "register_licence": "ETV2391E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA MARGARITA",
    "issues": []
   },
   "a18954cb-b3ba-435f-892b-9a78a899df9f": {
@@ -1947,6 +2292,8 @@
    "register_licence": "ET0424E",
    "register_places": 9,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA BLANCA",
    "issues": []
   },
   "187fabab-312b-4487-8520-89c25284ecbf": {
@@ -1958,6 +2305,8 @@
    "register_licence": "ETV1470E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA FABIO",
    "issues": []
   },
   "798225ee-194f-455e-8c36-693133905584": {
@@ -1969,6 +2318,8 @@
    "register_licence": "ETV1177E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN HIGUERA",
    "issues": [
     "Shown for 10 guests; the register allows 8 places"
    ]
@@ -1982,6 +2333,8 @@
    "register_licence": "ETV1547E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA DELPHINE",
    "issues": []
   },
   "ae2ec6f6-f2f7-4915-89fc-159b01a081c4": {
@@ -1993,6 +2346,8 @@
    "register_licence": "ETV1383E",
    "register_places": 12,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA MELOGRANO",
    "issues": []
   },
   "be3fcb08-6dd8-4644-85a9-8b1fc0a95b8c": {
@@ -2004,6 +2359,8 @@
    "register_licence": "ET1041E",
    "register_places": 16,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PEP DE SA GUAITA",
    "issues": []
   },
   "c753cad1-30f0-4e9d-b3f2-ab39ffb94f97": {
@@ -2015,6 +2372,8 @@
    "register_licence": "ETV1906E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN SELLERAS",
    "issues": []
   },
   "a6e7b687-be58-47d4-86c6-d7afcd5f7dc4": {
@@ -2026,7 +2385,11 @@
    "register_licence": "ETV1793E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "issues": []
+   "register": "habitatges-turistics",
+   "register_name": "VILLA INFINITY",
+   "issues": [
+    "Villa Amaris + Villa Hailey share licence ETV1793E: 20 guests shown together, the register allows 8 places"
+   ]
   },
   "baef5895-0bbc-4685-af11-b9db2c0fe74c": {
    "name": "Villa Haisley",
@@ -2037,6 +2400,8 @@
    "register_licence": "ETV1318E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA MONTE",
    "issues": []
   },
   "7db92cc8-8f6b-49e5-8ed0-5ff4e894095f": {
@@ -2048,6 +2413,8 @@
    "register_licence": "ET1071E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA SANDRA",
    "issues": [
     "Number 1071 is correct, but IMpulse has 'ETV-1071-E' and the register has ET1071E"
    ]
@@ -2061,6 +2428,8 @@
    "register_licence": "ET0146E",
    "register_places": 8,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA MARIA",
    "issues": [
     "Number 0146 is correct, but IMpulse has 'ETE0146' and the register has ET0146E"
    ]
@@ -2074,6 +2443,8 @@
    "register_licence": "ETV2290E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA TYANE",
    "issues": []
   },
   "634363b9-ddcf-4716-8613-b99671e6299a": {
@@ -2085,6 +2456,8 @@
    "register_licence": "ET0637E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "SA MUNTANYA DEN JUAN SANDICH",
    "issues": []
   },
   "b1dd8600-e1b8-4fc7-858a-c48e8051a1ac": {
@@ -2096,6 +2469,8 @@
    "register_licence": "ETV1847E",
    "register_places": 10,
    "register_municipality": "EIVISSA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA OLIVERA",
    "issues": []
   },
   "f7552fbe-439f-467f-8a64-9a8ecefcd100": {
@@ -2107,6 +2482,8 @@
    "register_licence": "ETV2156E",
    "register_places": 9,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "ALTOS DEL ALBIR",
    "issues": []
   },
   "8915a428-1bd4-437c-86b7-feccf76dc561": {
@@ -2118,6 +2495,8 @@
    "register_licence": "ETV2097E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA VALERIA",
    "issues": [
     "Shown for 12 guests; the register allows 6 places"
    ]
@@ -2131,6 +2510,8 @@
    "register_licence": "ETV1247E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "ES CANAL DEN FORN",
    "issues": []
   },
   "c1168257-20b8-4169-ae15-893d8af01ff6": {
@@ -2142,6 +2523,8 @@
    "register_licence": "ETV1168E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA JAIA",
    "issues": []
   },
   "2faff1c3-457d-4c41-b98e-608f6e97f737": {
@@ -2153,6 +2536,8 @@
    "register_licence": "ETV2165E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "SA CALETA HILL",
    "issues": []
   },
   "80e1df34-04b1-4b5c-9524-99f34cc89be3": {
@@ -2164,6 +2549,8 @@
    "register_licence": "ETV2406E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN CUSTERA",
    "issues": []
   },
   "bfd0a5cc-03da-41c6-aa07-b2b5757a2223": {
@@ -2175,7 +2562,11 @@
    "register_licence": "ETV1943E",
    "register_places": 4,
    "register_municipality": "SANTA EULARIA DES RIU",
-   "issues": []
+   "register": "habitatges-turistics",
+   "register_name": "CIELO Y TIERRA",
+   "issues": [
+    "Villa Jesus + Villa Jesus for-four share licence ETV1943E: 7 guests shown together, the register allows 4 places"
+   ]
   },
   "cdfcedfd-1943-447c-baf9-a457e8aced58": {
    "name": "Villa Jesus for-four",
@@ -2186,7 +2577,11 @@
    "register_licence": "ETV1943E",
    "register_places": 4,
    "register_municipality": "SANTA EULARIA DES RIU",
-   "issues": []
+   "register": "habitatges-turistics",
+   "register_name": "CIELO Y TIERRA",
+   "issues": [
+    "Villa Jesus + Villa Jesus for-four share licence ETV1943E: 7 guests shown together, the register allows 4 places"
+   ]
   },
   "71a17dad-a586-41ad-a928-35901fe379cf": {
    "name": "Villa Judith",
@@ -2197,6 +2592,8 @@
    "register_licence": "ETV2511E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN GUILLEM",
    "issues": []
   },
   "60577a25-3adc-4d07-b992-37e1b191ce4b": {
@@ -2208,6 +2605,8 @@
    "register_licence": "ET0467E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN ALEXIA",
    "issues": []
   },
   "40e015bf-4ce8-402c-9955-ed7694a9b199": {
@@ -2219,6 +2618,8 @@
    "register_licence": "ETV2404E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA PETRU",
    "issues": []
   },
   "60feed7d-efef-40f8-a01b-67737edc8051": {
@@ -2230,6 +2631,8 @@
    "register_licence": "ET1050E",
    "register_places": 12,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA CAROL",
    "issues": [
     "Number 1050 is correct, but IMpulse has 'ETV-1050-E2' and the register has ET1050E"
    ]
@@ -2243,6 +2646,8 @@
    "register_licence": "ETV1932E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN COSMI",
    "issues": []
   },
   "8f7a0e01-6389-4c1c-a069-df4ad7c5404e": {
@@ -2254,6 +2659,8 @@
    "register_licence": "ETV2241E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CA NA MESTRA",
    "issues": []
   },
   "fed5a5a2-40c8-4d1e-8b22-07e94d483588": {
@@ -2265,6 +2672,8 @@
    "register_licence": "ETV1221E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA JULIETA",
    "issues": []
   },
   "dead4e39-fd34-4cf4-86f8-205004678193": {
@@ -2276,6 +2685,8 @@
    "register_licence": "ETV1816E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA COBHAM PARADISE",
    "issues": []
   },
   "d42d2d6a-0eaa-4973-ae94-728100b0f149": {
@@ -2287,6 +2698,8 @@
    "register_licence": "ET0471E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "AVILA 20",
    "issues": [
     "Number 0471 is correct, but IMpulse has 'ET-0471-E4' and the register has ET0471E"
    ]
@@ -2300,6 +2713,8 @@
    "register_licence": "ET0288E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "ES CALO",
    "issues": []
   },
   "81418f3f-88f2-49b2-8db8-406152f316f5": {
@@ -2311,6 +2726,8 @@
    "register_licence": "ETV1660E",
    "register_places": 14,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA LA CINQ",
    "issues": []
   },
   "79d89a93-81aa-43a8-b426-7b64ba45af4d": {
@@ -2322,6 +2739,8 @@
    "register_licence": "ETV1257E + ET0851E",
    "register_places": 16,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "LAS ARENAS",
    "issues": []
   },
   "4bd0e80f-6813-4eab-9f7a-bb8312e3d673": {
@@ -2333,6 +2752,8 @@
    "register_licence": "ETV2151E",
    "register_places": 9,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA VIOLA",
    "issues": []
   },
   "0e185320-b09f-4a24-abcc-fea8694eaa62": {
@@ -2344,6 +2765,8 @@
    "register_licence": "ETV1030E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN VISTAS",
    "issues": []
   },
   "4d4c79ef-059d-4aaa-a268-46f07fb7ca51": {
@@ -2355,6 +2778,8 @@
    "register_licence": "ETV2077E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "NA XICA",
    "issues": []
   },
   "a8b7fb50-77c3-47d9-985c-da9f2790c4f1": {
@@ -2366,6 +2791,8 @@
    "register_licence": "ETV1428E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN SECORRAT",
    "issues": []
   },
   "ec0a9480-d5da-4d7c-a5ef-46789931e9c9": {
@@ -2377,6 +2804,8 @@
    "register_licence": "ETV2576E",
    "register_places": 11,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA CANOMI",
    "issues": []
   },
   "1b74d93d-189b-4c62-8aef-4707e10705c4": {
@@ -2388,6 +2817,8 @@
    "register_licence": "ET0544E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN TASHELLU",
    "issues": []
   },
   "59589fea-5963-4442-855f-6cbf8a80ee05": {
@@ -2399,7 +2830,11 @@
    "register_licence": "ETV1353E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "issues": []
+   "register": "habitatges-turistics",
+   "register_name": "EVERLAND",
+   "issues": [
+    "Villa Meghan + Villa Meghan Deluxe + Villa Meghan Grande share licence ETV1353E: 36 guests shown together, the register allows 12 places"
+   ]
   },
   "ecb3b4e5-4d55-4341-8bf5-6b2eedd62e37": {
    "name": "Villa Meghan Deluxe",
@@ -2410,7 +2845,11 @@
    "register_licence": "ETV1353E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "issues": []
+   "register": "habitatges-turistics",
+   "register_name": "EVERLAND",
+   "issues": [
+    "Villa Meghan + Villa Meghan Deluxe + Villa Meghan Grande share licence ETV1353E: 36 guests shown together, the register allows 12 places"
+   ]
   },
   "b28d70e1-1a2c-419e-951f-93f409f825a6": {
    "name": "Villa Meghan Grande",
@@ -2421,7 +2860,11 @@
    "register_licence": "ETV1353E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "issues": []
+   "register": "habitatges-turistics",
+   "register_name": "EVERLAND",
+   "issues": [
+    "Villa Meghan + Villa Meghan Deluxe + Villa Meghan Grande share licence ETV1353E: 36 guests shown together, the register allows 12 places"
+   ]
   },
   "76459e7c-6003-4286-9da2-0dff87c98258": {
    "name": "Villa Mia",
@@ -2432,6 +2875,8 @@
    "register_licence": "ETV2527E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA MIAMI",
    "issues": []
   },
   "82fdf69a-7d83-481f-bbcc-0047c9435739": {
@@ -2443,6 +2888,8 @@
    "register_licence": "ETV1284E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA VISTA ALEGRE",
    "issues": []
   },
   "4860681e-26f3-41ee-b5c3-b411271a35ae": {
@@ -2454,6 +2901,8 @@
    "register_licence": "ETV1594E",
    "register_places": 4,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA FLUXA",
    "issues": []
   },
   "f9cebf85-2563-4a20-9981-41848382ee80": {
@@ -2465,6 +2914,8 @@
    "register_licence": "ETV2452E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CA NA MORENETA",
    "issues": []
   },
   "b159701f-ac54-4d41-b7cb-d18aaf10f1a3": {
@@ -2476,6 +2927,8 @@
    "register_licence": "ETV2503E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA FONTANA",
    "issues": []
   },
   "cf1d6d2f-90cf-4fab-b66c-b31db941b15d": {
@@ -2487,6 +2940,8 @@
    "register_licence": null,
    "register_places": null,
    "register_municipality": null,
+   "register": null,
+   "register_name": null,
    "issues": [
     "'2014047792' has no readable 4-digit licence number"
    ]
@@ -2500,6 +2955,8 @@
    "register_licence": "ETV1044E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN NIC",
    "issues": []
   },
   "b049f8f5-e5df-4028-8cdd-20cc9d54abdf": {
@@ -2511,6 +2968,8 @@
    "register_licence": "ETV1712E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "EL GRILLON",
    "issues": []
   },
   "b4602fa3-2d50-49c4-96a7-b84d26e2ab66": {
@@ -2522,6 +2981,8 @@
    "register_licence": "ETV1805E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "PURA",
    "issues": []
   },
   "082ff8da-4a64-4598-965c-1accad1f3b46": {
@@ -2533,6 +2994,8 @@
    "register_licence": "ET0266E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA BLANCO",
    "issues": []
   },
   "de60b310-1b03-41fc-9256-1ede6c9b07f8": {
@@ -2544,6 +3007,8 @@
    "register_licence": "ET0916E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN MAJA",
    "issues": []
   },
   "1e334bc1-d272-4230-81ee-4f0f91c46ab1": {
@@ -2555,6 +3020,8 @@
    "register_licence": "ET0981E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA ORION",
    "issues": []
   },
   "5afe328a-290d-4f92-8712-f46d71448ce8": {
@@ -2566,6 +3033,8 @@
    "register_licence": "ETV1720E",
    "register_places": 8,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CASANOVA",
    "issues": []
   },
   "55f85072-1a79-4356-9b59-8963acf0be21": {
@@ -2577,6 +3046,8 @@
    "register_licence": "ET0827E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN JONDAL",
    "issues": []
   },
   "8b2fd6dc-4fad-4943-9a0c-29e92f014a6e": {
@@ -2588,6 +3059,8 @@
    "register_licence": "ETV1348E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN GUASCH",
    "issues": []
   },
   "3065b54e-ddfb-446c-8190-e0a735f323f1": {
@@ -2599,6 +3072,8 @@
    "register_licence": "ETV1064E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PAREDES",
    "issues": []
   },
   "a14588f0-d05f-46c9-8ca3-0176808ea3bc": {
@@ -2610,6 +3085,8 @@
    "register_licence": "ETV2195E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN REPHI",
    "issues": []
   },
   "07af07d6-9ccf-4763-a11f-e3996c05143f": {
@@ -2621,6 +3098,8 @@
    "register_licence": "ETV1672E",
    "register_places": 12,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PARDALET",
    "issues": []
   },
   "14cd39b0-d6c8-415b-888d-396f440beff2": {
@@ -2632,6 +3111,8 @@
    "register_licence": "ETV1721E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN ALEXA",
    "issues": []
   },
   "6272289b-cad3-496b-807b-38be01cf5f83": {
@@ -2643,6 +3124,8 @@
    "register_licence": "ET0860E",
    "register_places": 6,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "FORADA",
    "issues": []
   },
   "1c83427b-86c4-47e9-ae65-b7cdcf729bfd": {
@@ -2654,6 +3137,8 @@
    "register_licence": "ET0834E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA AURORA",
    "issues": []
   },
   "6d7e0e26-9e87-405d-91c9-6fa99332821a": {
@@ -2665,6 +3150,8 @@
    "register_licence": "ETV1897E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA LUMA",
    "issues": []
   },
   "34c5fc1f-d6c8-442e-97af-e6cdc3d07f6a": {
@@ -2676,6 +3163,8 @@
    "register_licence": "ETV1944E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN ROSA IBIZA",
    "issues": []
   },
   "dbd3c2d4-5dc4-498c-b69a-f978475ef048": {
@@ -2687,6 +3176,8 @@
    "register_licence": "ETV2343E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "FIREFLY",
    "issues": []
   },
   "234fca47-4bbf-48cf-93a7-1b3a4af4c6b3": {
@@ -2698,6 +3189,8 @@
    "register_licence": "ETV0891E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN ROCAS",
    "issues": []
   },
   "c5c66834-be0e-44ff-8d3b-83b72121ceff": {
@@ -2709,6 +3202,8 @@
    "register_licence": "ET0486E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PATXI",
    "issues": []
   },
   "22c3b2d6-ae4b-4384-bce6-6fea74ca309f": {
@@ -2720,6 +3215,8 @@
    "register_licence": "ETV2074E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PEP PUJOL",
    "issues": []
   },
   "ac557f11-77d4-456c-9ee7-98b3f96e0fc4": {
@@ -2731,6 +3228,8 @@
    "register_licence": "ETV1222E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA ROMEO",
    "issues": []
   },
   "e1d9aa73-d553-4192-a915-ec482fde8a12": {
@@ -2742,6 +3241,8 @@
    "register_licence": "ETV1143E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA 10.9",
    "issues": []
   },
   "c1a75604-38ee-4379-ade7-60b626e53d53": {
@@ -2753,6 +3254,8 @@
    "register_licence": "ET0723E",
    "register_places": 12,
    "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PEP SITGES",
    "issues": []
   },
   "27d84773-8063-4fb3-b995-fb0e74bdeb66": {
@@ -2764,6 +3267,8 @@
    "register_licence": "ETV1172E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "LOS GRANADOS",
    "issues": []
   },
   "3902ea3f-0b22-4790-8863-249f1efc987e": {
@@ -2775,6 +3280,8 @@
    "register_licence": "ETV1911E",
    "register_places": 8,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA CAN LAGARTO",
    "issues": []
   },
   "01733af6-321d-4662-afa2-43ec38a18fb5": {
@@ -2786,6 +3293,8 @@
    "register_licence": "ETV2314E",
    "register_places": 6,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CISNE 6",
    "issues": []
   },
   "ba1a5e16-2347-4639-abe3-7c4d0e965e71": {
@@ -2797,6 +3306,8 @@
    "register_licence": "ETV1277E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN CASETA",
    "issues": []
   },
   "d930762e-0953-4b83-a176-62deb53909f3": {
@@ -2808,6 +3319,8 @@
    "register_licence": "ET0836E",
    "register_places": 8,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA STYLE",
    "issues": [
     "Shown for 10 guests; the register allows 8 places"
    ]
@@ -2821,6 +3334,8 @@
    "register_licence": "ETV1468E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CANISARA",
    "issues": []
   },
   "39b3dd07-13d7-4637-a870-2c7126d42d30": {
@@ -2832,6 +3347,8 @@
    "register_licence": "ETV1451E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "MISADA",
    "issues": []
   },
   "82984d73-e0a5-40aa-8a0d-1d21b42adc98": {
@@ -2843,6 +3360,8 @@
    "register_licence": "ETV2108E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN TEPA",
    "issues": []
   },
   "b5f6a406-7e0a-4062-9397-923e125b5e00": {
@@ -2854,6 +3373,8 @@
    "register_licence": "ETV2400E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN XIC",
    "issues": [
     "Number 2400 is correct, but IMpulse has 'ETV2400-E0' and the register has ETV2400E",
     "Shown for 12 guests; the register allows 6 places"
@@ -2868,6 +3389,8 @@
    "register_licence": "ETV2114E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "TESORO DE ORO",
    "issues": []
   },
   "5ee4745e-4322-42f8-ae0a-916ba0e0d244": {
@@ -2879,6 +3402,8 @@
    "register_licence": "ETV1223E",
    "register_places": 7,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA AMIGO",
    "issues": [
     "Shown for 8 guests; the register allows 7 places"
    ]
@@ -2892,6 +3417,8 @@
    "register_licence": "ETV0881E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN CARDONA I",
    "issues": []
   },
   "ca94a11c-9ee3-40ac-968d-9cb9d8f5f922": {
@@ -2903,6 +3430,8 @@
    "register_licence": "ETV1848E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA TOSKAN",
    "issues": []
   },
   "4af7c460-fa77-4796-ab2c-5da599eb048a": {
@@ -2914,6 +3443,8 @@
    "register_licence": "ETV2585E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN GECO",
    "issues": []
   },
   "6d28fa6d-a580-43e5-8622-34b8f8181b19": {
@@ -2925,6 +3456,8 @@
    "register_licence": "ETV1425E",
    "register_places": 6,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "SA VINYA VELLA",
    "issues": []
   },
   "5704c4e6-6afa-49c0-982b-1b76eb0d8d4e": {
@@ -2936,6 +3469,8 @@
    "register_licence": "ETV2437E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "TARIDA BEACH HOUSE",
    "issues": []
   },
   "631d5f0e-6639-4055-9f71-700e9023721b": {
@@ -2947,6 +3482,8 @@
    "register_licence": "ETV2418E",
    "register_places": 12,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "JUMALI",
    "issues": []
   },
   "432b24eb-cdad-4fa2-84a6-138027d33f5f": {
@@ -2958,6 +3495,8 @@
    "register_licence": "ET0721E",
    "register_places": 12,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CAN XUMEU DEN MARCH",
    "issues": []
   },
   "d45be8af-e90f-4129-a9d2-284aa02c8867": {
@@ -2969,6 +3508,8 @@
    "register_licence": "ETV0952E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CANA LUA",
    "issues": []
   },
   "432bf4bf-2db2-4caa-b4be-f33bd77d8f04": {
@@ -2980,6 +3521,8 @@
    "register_licence": "ETV1555E",
    "register_places": 8,
    "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CAN FELIX",
    "issues": []
   },
   "89e71069-e246-424b-b650-8a8ae6f31dec": {
@@ -2991,6 +3534,8 @@
    "register_licence": "ETV1253E",
    "register_places": 10,
    "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA COCOON",
    "issues": []
   },
   "e4041595-3dbb-444b-b6b5-ab7bd57ff949": {
@@ -3002,6 +3547,8 @@
    "register_licence": "ETV-2616-E",
    "register_places": 8,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN MAR",
    "issues": []
   },
   "48723692-d0e0-4586-9203-d2fff762d410": {
@@ -3013,15 +3560,16 @@
    "register_licence": "ETV1521E",
    "register_places": 10,
    "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA SA  MIRADA",
    "issues": []
   }
  },
  "counts": {
-  "format_differs": 12,
+  "format_differs": 13,
   "no_number": 1,
   "not_in_register": 2,
-  "other_register": 5,
-  "verified": 246
+  "verified": 250
  },
  "hidden": [
   "Villa Brisa",
@@ -3036,6 +3584,8 @@
   "Can Catalina",
   "Can Cleo",
   "Can Daneri",
+  "Can Milna",
+  "Can Milna Deluxe",
   "Can Mistique",
   "Can Noelia",
   "Can Nuri",
@@ -3045,11 +3595,12 @@
   "Can Tehani",
   "Casa Clareta",
   "Casa Maxi",
+  "Casa Yolanda 1",
+  "Casa Yolanda 2",
   "Casa d'Hort",
   "Es Palauet Apartment",
   "Es Palauet Duplex",
   "Finca Palmeras",
-  "Finca Utopia",
   "Finca Utopia Xarraca",
   "House of Dreams",
   "La Flaca",
@@ -3057,13 +3608,18 @@
   "Villa Apia",
   "Villa Auren",
   "Villa Centelleo",
-  "Villa Espada",
   "Villa Fico",
+  "Villa Hailey",
   "Villa Harper",
   "Villa Hebe",
   "Villa Ingrid",
+  "Villa Jesus",
+  "Villa Jesus for-four",
   "Villa Larish",
   "Villa Lumara",
+  "Villa Meghan",
+  "Villa Meghan Deluxe",
+  "Villa Meghan Grande",
   "Villa Style",
   "Villa Terra Blanca",
   "Villa Trevi"
