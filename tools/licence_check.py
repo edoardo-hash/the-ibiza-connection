@@ -19,7 +19,8 @@ Separators and zero-padding don't count ("ETV-1276-E" = "ETV1276E").
 Statuses
   verified        the number is in the register, written the same way
   format_differs  the number is in the register, prefix/suffix differ → flagged, fix in IMpulse
-  other_register  agroturismo (AG) or hotel/apartment (HAC) licence: not in this list → flagged
+  (AG agroturismo, HAC hotel-apartment and other kinds are checked in their own Consell lists —
+   turisme rural, establiments hotelers, apartaments — stored next to the tourist-home list)
   not_in_register the 4 digits are not in the register → failure
   no_number       no 4-digit licence number can be read → failure
 Failures are kept off the site until a HAM confirms the licence
@@ -40,10 +41,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 REGISTER_DIR = ROOT / "data" / "register"
 REGISTER_CSV = REGISTER_DIR / "habitatges-turistics.csv"
+# The Consell publishes one list per kind of accommodation; each is stored as its own CSV.
+REGISTER_KINDS = {
+    "habitatges turístics": "habitatges-turistics",   # ET, ETV, VT, VTV (tourist homes)
+    "turisme rural": "turisme-rural",                 # AG (agroturismo), HR, HRU
+    "establiments hotelers": "establiments-hotelers", # H, HPM, HA, HAC, TI…
+    "apartaments": "apartaments",                     # A, APM
+}
 REPORT = ROOT / "data" / "licence-check.json"
 
 FAIL = {"not_in_register", "no_number"}
-COLUMNS = ["number", "licence", "subtype", "places", "rooms", "cadastre", "municipality"]
+COLUMNS = ["number", "licence", "register", "name", "subtype", "places", "rooms", "cadastre", "municipality"]
 
 # Cadastral municipality codes (province 07 + INE municipality) → register spelling.
 CADASTRE_MUNICIPALITY = {
@@ -62,6 +70,9 @@ REGION_MUNICIPALITIES = {
     "san-juan": {"SANT JOAN DE LABRITJA"},
 }
 HOUSING_PREFIXES = {"ET", "ETV", "VT", "VTV"}
+# Licence letters of the other Consell lists; anything else (including typos such as "ETC" or
+# "ETE") is treated as a tourist-home licence, where only the number counts.
+OTHER_KIND_PREFIXES = {"AG", "HR", "HRU", "H", "HA", "HAC", "HC", "HPM", "HS", "TI", "A", "APM", "CH", "HOS", "AT"}
 
 
 def licence_number(text) -> int | None:
@@ -113,15 +124,25 @@ def parse_register_file(path: Path) -> list[dict]:
     if head_at is None:
         sys.exit(f"{path}: header row with 'Número Inscripció' not found")
     head = cells(rows[head_at])
+    title = (cells(rows[0]) or [""])[0] if head_at > 0 else ""
+    kind = next((slug for key, slug in REGISTER_KINDS.items() if key in title.lower()), None)
+    if kind is None:
+        first = cells(rows[head_at + 1]) if len(rows) > head_at + 1 else []
+        kind = next((slug for key, slug in REGISTER_KINDS.items() if first and key in first[0].lower()), "habitatges-turistics")
 
-    def col(*names):
+    def col(*names, required=True):
         for i, h in enumerate(head):
             if any(n.lower() in h.lower() for n in names):
                 return i
-        sys.exit(f"{path}: column {names[0]!r} not found in {head}")
+        if required:
+            sys.exit(f"{path}: column {names[0]!r} not found in {head}")
+        return None
 
     i_num, i_sub, i_places = col("Inscrip"), col("Sub-tipus"), col("Total Places")
-    i_rooms, i_cad, i_mun = col("Total Habitacions"), col("cadastral"), col("Municipi")
+    i_rooms = col("Total Habitacions", "Total Apartaments", required=False)
+    i_cad, i_mun = col("cadastral", required=False), col("Municipi")
+    i_name = col("Nom Comercial", required=False)
+    get = lambda c, i: c[i] if i is not None and i < len(c) else ""
     out = []
     for r in rows[head_at + 1:]:
         c = cells(r)
@@ -133,10 +154,12 @@ def parse_register_file(path: Path) -> list[dict]:
         out.append({
             "number": n,
             "licence": c[i_num].lstrip("#"),
+            "register": kind,
+            "name": get(c, i_name),
             "subtype": c[i_sub],
             "places": c[i_places],
-            "rooms": c[i_rooms],
-            "cadastre": c[i_cad],
+            "rooms": get(c, i_rooms),
+            "cadastre": get(c, i_cad),
             "municipality": c[i_mun],
         })
     return out
@@ -144,30 +167,36 @@ def parse_register_file(path: Path) -> list[dict]:
 
 def import_register(path: Path) -> Path:
     rows = parse_register_file(path)
-    if len(rows) < 1000:
-        sys.exit(f"{path}: only {len(rows)} licences — that doesn't look like the full register")
+    kind = rows[0]["register"] if rows else ""
+    minimum = 1000 if kind == "habitatges-turistics" else 20
+    if len(rows) < minimum:
+        sys.exit(f"{path}: only {len(rows)} licences — that doesn't look like the full list")
     REGISTER_DIR.mkdir(parents=True, exist_ok=True)
     m = re.search(r"(\d{2})(\d{2})(\d{4})", Path(path).name)
     as_of = f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else date.today().isoformat()
-    with REGISTER_CSV.open("w", newline="", encoding="utf-8") as fh:
-        fh.write(f"# Consell d'Eivissa tourist-home register, as of {as_of}; source file {Path(path).name}\n")
+    out = REGISTER_DIR / f"{kind}.csv"
+    with out.open("w", newline="", encoding="utf-8") as fh:
+        fh.write(f"# Consell d'Eivissa register ({kind}), as of {as_of}; source file {Path(path).name}\n")
         w = csv.DictWriter(fh, fieldnames=COLUMNS)
         w.writeheader()
         w.writerows(rows)
-    print(f"Register: {len(rows)} licences as of {as_of} → {REGISTER_CSV.relative_to(ROOT)}")
-    return REGISTER_CSV
+    print(f"Register {kind}: {len(rows)} licences as of {as_of} → {out.relative_to(ROOT)}")
+    return out
 
 
 def load_register() -> tuple[list[dict], str]:
-    if not REGISTER_CSV.exists():
-        return [], ""
-    with REGISTER_CSV.open(encoding="utf-8") as fh:
-        first = fh.readline()
-        m = re.search(r"as of (\d{4}-\d{2}-\d{2})", first)
-        rows = list(csv.DictReader(fh))
-    for r in rows:
-        r["number"] = int(r["number"])
-    return rows, (m.group(1) if m else "")
+    rows, dates = [], []
+    for path in sorted(REGISTER_DIR.glob("*.csv")):
+        with path.open(encoding="utf-8") as fh:
+            first = fh.readline()
+            m = re.search(r"as of (\d{4}-\d{2}-\d{2})", first)
+            if m:
+                dates.append(m.group(1))
+            for r in csv.DictReader(fh):
+                r["number"] = int(r["number"])
+                r["register"] = r.get("register") or path.stem
+                rows.append(r)
+    return rows, (min(dates) if dates else "")
 
 
 # --- check ----------------------------------------------------------------------------
@@ -204,14 +233,16 @@ def check_villa(villa: dict, by_number: dict) -> dict:
                    and villa.get("sleeps", 0) > sum(r["register_places"] for r in subs) else [])}
     num, prefix = four_digits(lic), licence_prefix(lic)
     hits = by_number.get(num, []) if num is not None else []
+    # Tourist homes: the prefix doesn't matter (ET/ETV/VT/VTV share the numbering rule). Other kinds
+    # (AG agroturismo, HAC hotel-apartment…) only match a licence of the same letters in their own list.
+    if prefix not in OTHER_KIND_PREFIXES:
+        hits = [h for h in hits if h.get("register", "habitatges-turistics") == "habitatges-turistics"]
+    else:
+        hits = [h for h in hits if licence_prefix(h["licence"]) == prefix]
     exact = [h for h in hits if shape(h["licence"]) == shape(lic)]
     match = (exact or hits or [None])[0]
     issues: list[str] = []
-    if prefix in ("AG", "HAC"):
-        status = "other_register"
-        issues.append(f"'{lic}' is an {'agroturismo' if prefix == 'AG' else 'hotel/apartment'} licence: "
-                      "not in the tourist-home list, check it in its own register")
-    elif num is None:
+    if num is None:
         status = "no_number"
         issues.append(f"'{lic}' has no readable 4-digit licence number")
     elif not hits:
@@ -233,6 +264,8 @@ def check_villa(villa: dict, by_number: dict) -> dict:
         "register_licence": " / ".join(h["licence"] for h in (exact or hits)) or None,
         "register_places": places,
         "register_municipality": match["municipality"] if match else None,
+        "register": match.get("register") if match else None,
+        "register_name": match.get("name") if match else None,
         "issues": issues,
     }
 
@@ -256,6 +289,23 @@ def check_villas(villas: list[dict], lr_by_uuid: dict, confirmed: dict | None = 
             res["confirmed_by_ham"] = confirmed[uuid]
         v["licence_check"] = res
         report["villas"][uuid] = {"name": v.get("name"), "slug": v.get("slug"), **res}
+    # Several listed units on one licence (e.g. a hotel-apartment licence split into two villas):
+    # their guests together must fit the licence's places.
+    shared = defaultdict(list)
+    for v in villas:
+        res = v["licence_check"]
+        if res.get("register_licence") and res.get("register_places"):
+            shared[res["register_licence"]].append(v)
+    for lic, group in shared.items():
+        if len(group) > 1:
+            total = sum(v.get("sleeps", 0) for v in group)
+            places = group[0]["licence_check"]["register_places"]
+            if total > places:
+                names = " + ".join(v.get("name", "") for v in group)
+                for v in group:
+                    msg = f"{names} share licence {lic}: {total} guests shown together, the register allows {places} places"
+                    v["licence_check"]["issues"].append(msg)
+                    report["villas"][str(v.get("v_uuid") or "").lower()]["issues"] = v["licence_check"]["issues"]
     counts: dict[str, int] = defaultdict(int)
     for r in report["villas"].values():
         counts[r["status"]] += 1

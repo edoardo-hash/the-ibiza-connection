@@ -1,0 +1,2083 @@
+
+	<table style="font-size:1.0em !important; border:1px solid #C0C0C0;">
+		<thead>
+			
+			<tr>
+				<th colspan="12" style="text-align:center; vertical-align:middle; background:#694489; color:white; font-size:1.3em; height:45px; ">Turisme Rural</th>
+			</tr>
+	
+			<tr>					
+				<th style="width:200px; background:#ABC3EA; font-size:1.1em; border:1px solid #C0C0C0;">
+					Tipus
+				</th>
+				<th style="width:250px; background:#ABC3EA; font-size:1.1em; border:1px solid #C0C0C0;">
+					Sub-tipus
+				</th>
+				<th style="width:100px; !important; background:#ABC3EA; font-size:1.1em; border:1px solid #C0C0C0;">
+					Número Inscripció
+				</th>
+				<th style="width:300px !important; background:#ABC3EA; font-size:1.1em; border:1px solid #C0C0C0;">
+					Nom Comercial
+				</th>
+				<th style="width:200px; background:#ABC3EA; font-size:1.1em; border:1px solid #C0C0C0;">
+					Categoria
+				</th>
+				
+				
+				
+					<th style="width:130px; background:#ABC3EA; font-size:1.1em; border:1px solid #C0C0C0;">
+						Total Habitacions
+					</th>
+					<th style="width:100px; background:#ABC3EA; font-size:1.1em; border:1px solid #C0C0C0;">
+						Total Places
+					</th>
+				
+
+				<th style="width:900px; background:#ABC3EA; font-size:1.1em; border:1px solid #C0C0C0;">
+					Direcció
+				</th>
+				<th style="width:200px; background:#ABC3EA; font-size:1.1em; border:1px solid #C0C0C0;">
+					Municipi
+				</th>
+				<th style="width:100px; background:#ABC3EA; font-size:1.1em; border:1px solid #C0C0C0;">
+					Telèfon
+				</th>
+				<th style="width:200px; background:#ABC3EA; font-size:1.1em; border:1px solid #C0C0C0;">
+					Email
+				</th>
+				<th style="width:200px; background:#ABC3EA; font-size:1.1em; border:1px solid #C0C0C0;">
+					Pàgina Web
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+		
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0018E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						AGUAMADERA IBIZA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							11
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							22
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						POLÍGON 19 - PARCEL·LA 57 - CALA LLONGA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0012EIF
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						ATZARO
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							24
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							48
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CL FINCA CAN PAROT -  SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0036E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CA NA JOANETA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							3
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							6
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						POLÍGON 11 - PARCEL·LA 98 
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Hotel Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#HR0026E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CA NA XICA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						4 estrelles
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							20
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							40
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CR SANT MIQUEL;      Km 10;5 -  SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0010EIF
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CA N´ARABI
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							12
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							24
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						PUIG DEN VALLS  07819 -PUIG DEN VALLS -  SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0006EIF
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CA SA VILDA MARGE
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							6
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							11
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CA SA VILDA MARGE CTRA. PORTINATX -  SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0046E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN BET
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							8
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							17
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Venda es Novells - polígono 02 parcela 128 polígono 05, parcela 159 polígono 13, parcelas 021,136,179 y 247 polígono 14, parcela 050 y polígono 19, parcela 287
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0050E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CAN COSMI PRATS
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							6
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							14
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 27 - PARCEL·LA. 43 - SANTA GERTRUDIS DE FRUITERA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Hotel Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#HR0028E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN CURREU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							0
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							0
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						LG FINCA CAN CURREU POLIGON 4 PARC 79      SANT CARLES DE PERALTA - 07850 SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0016E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CAN DOMO
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							7
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							14
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 19 - PARCEL·LA 158 - CALA LLONGA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0024E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN FUSTER
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							8
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							15
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						LG VENDA CAS RIPOLLS;    1 SANT JOAN DE LABRITJA -  SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0013EIF
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CAN GALL
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							11
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							26
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						VENDA DES PORRAL NÚM. 17  07812 - SANT LLORENÇ DE BALÀFIA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0019E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN GUILLEM
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							7
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							14
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN GUILLEN CTRA. SAN MIGUEL PUIG DEN VALLS -  SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0017E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CAN JAUME
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							12
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							24
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						LG CAN JAUME ARABI DE DALT      PUIG DEN VALLS -  SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Hotel Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#HR0049E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN LLUC
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							25
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							50
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN GASPARO  07816 -SAN RAFAEL -  SANT ANTONI DE PORTMANY
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANT ANTONI DE PORTMANY
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0015E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CAN MARQUET
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							9
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							17
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CR STA. GERTRUDIS A SANT LLORENÇ KM. 1      SANTA GERTRUDIS DE FRUITERA - 07814 
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						60949180
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						canmarquet@gmail.com
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0004EIF
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN MARTI
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							4
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							9
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						POLÍGON 10 - PARCEL·LA 15
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0040E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CAN MIQUELETA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							12
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							24
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 2 - PARCEL·LA 5 - SANT JORDI DE SES SALINES 
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT JOSEP DE SA TALAIA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0011EIF
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN PARRAMATA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							6
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							14
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SA ROTA DEN COSMI  - POLIGON 13 PARCEL·LA 31
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0033E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CAN PERE SORD
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							9
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							18
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 11 - PARCEL·LA 31 - SANT LLORENÇ DE BALÀFIA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0007EIF
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN PLANELLS
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							10
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							20
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						DE RUBIO 2  07815 - SANT MIQUEL DE BALANSAT
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0002EIF
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CAN PUJOLET-SANTA INES
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							10
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							20
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 13 - PARCEL·LA 259 - SANTA AGNÈS DE CORONA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT ANTONI DE PORTMANY
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0034E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN RIERO
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							8
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							15
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						LG CAN RIERO   18 SANT LLORENÇ DE BALAFIA - 07812 SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0032E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CAN SA ROCA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							10
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							20
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 3 - PARCEL·LA 101
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT ANTONI DE PORTMANY
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						97100000000
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0030E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN SASTRE
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							4
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							10
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						POLÍGON 18 - PARCEL·LA 4 - SANT RAFEL DE SA CREU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANT ANTONI DE PORTMANY
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0037EIF
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CAN SKYE
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							11
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							22
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 8 - PARCEL·LA 153 - SANT CARLES DE PERALTA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0046BAL
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN TALAIAS
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							6
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							12
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						POLÍGON 7 - PARCEL·LA 128 - POU DES LLEÓ
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0048E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CAN TONI XUMEU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							5
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							10
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 19 - PARCEL·LA 39 - CALA LLONGA 
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0003EIF
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAS GASI
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							20
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							40
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						POLÍGON 27 - PARCEL·LA 119 - SANTA GERTRUDIS DE FRUITERA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Hotel Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#HRU0005BAL
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						CAS PLA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							16
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							32
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						LG CAS PLA Nº 33  PORT DE SANT MIQUEL  
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Hotel Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#HR0023E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CASA MACA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							10
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							20
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						LG CAN PALAU DE DALT POLIGON 2 PARCEL·LA 83      EIVISSA - 07800 EIVISSA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						EIVISSA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Hotel Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#HR0027E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						DIOSA ASTARTE
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							10
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							18
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						LG CAN LLUQUINO SANT MATEU D´AUBARCA -  SANT ANTONI DE PORTMANY
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT ANTONI DE PORTMANY
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Hotel Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#HRU0014EIF
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						ES CUCONS
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							14
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							28
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAMI PLA DE CORONA  07828 -SANTA INES -  SANT ANTONI DE PORTMANY
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANT ANTONI DE PORTMANY
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0043E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						FINCA DELICA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						3 estrelles
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							11
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							22
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 21 - PARCEL·LA 179 - SANT LLORENÇ DE BALAFIA 
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						620525194
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						info@fincadelica.com
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						WWW.FINCADELICS.COM
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Hotel Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#HRU0005EIF
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						HOTEL RURAL CAN MARIES
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							14
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							28
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Vénda des Port, 30 - Polígono 2 Parcela 188 - SANT JOAN DE LABRITJA 
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0047E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						JAYASOM IBIZA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						3 estrelles Superior
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							12
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							24
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 20  - PARCEL·LA 89 - SANT RAFEL DE SA CREU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT ANTONI DE PORTMANY
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						george@mapleleafcapital.com
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						www.jayasom.com
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0044E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						LES TERRASSES
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							12
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							24
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						POLÍGON 16 - PARCEL·LA 357 I 358
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0035E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						MORNA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							3
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							6
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 4 - PARCEL·LA 94
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0038E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						PURE HOUSE IBIZA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							4
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							8
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						POLÍGON 7 - PARCEL·LA 316 - SANT JORDI DE SES SALINES
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANT JOSEP DE SA TALAIA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0042E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SA MARINA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							8
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							20
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 6 - PARCEL·LA 102 - CALA BOIX
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0022E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SA VINYA D´EN PALERM
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							4
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							8
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						LG PLA DEN ROIG SAN MIGUEL -  SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#AG0041E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SAFRAGELL IBIZA SUITES SPA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							12
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							24
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						POLÍGON 15 - PARCEL·LA 64 - SANT LLORENÇ DE BALAFIA 
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANT JOAN DE LABRITJA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Agroturisme
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						#AG0020E
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						XARC
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						Sense categoría
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							10
+						</td>
+						<td style="text-align:center; background:#C0C0C0;border:1px solid #C0C0C0;">
+							20
+						</td>
+															
+					
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						CAN PERE DEN COSMI ES NOVELLS  07849 -STA. EULA -  SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:#C0C0C0;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+				
+				<tr>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Turisme Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						Hotel Rural
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						#HR0045E
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						XERECA
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						5 estrelles
+					</td>
+					
+					
+					
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							19
+						</td>
+						<td style="text-align:center; background:transparent;border:1px solid #C0C0C0;">
+							38
+						</td>
+															
+					
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						LG FINCA CAN CUENZA; POLIG. 22; PARCEL. 106 Y 130 - 07813 SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						SANTA EULARIA DES RIU
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+					<td style="text-align:left; background:transparent;border:1px solid #C0C0C0;">
+						
+					</td>
+				</tr>
+			
+			
+		</tbody>
+	</table>
+
+				

@@ -531,6 +531,7 @@ def organisation_schema() -> dict:
             "addressCountry": "ES",
         },
         "geo": {"@type": "GeoCoordinates", "latitude": SITE["map"]["lat"], "longitude": SITE["map"]["lng"]},
+        "hasMap": SITE["maps_url"],
         "areaServed": "Ibiza",
         "sameAs": [s["href"] for s in SITE["socials"]],
     }
@@ -600,7 +601,7 @@ def menu() -> str:
     </div>
     <div>
       <p class="eyebrow">Find us</p>
-      <p class="muted" style="color:rgba(246,241,231,.7);font-size:14px">{esc(SITE['address']['line1'])}<br>{esc(SITE['address']['line2'])}<br>{esc(SITE['address']['line3'])}</p>
+      <p class="muted" style="color:rgba(246,241,231,.7);font-size:14px"><a href="{esc(SITE['maps_url'])}" target="_blank" rel="noopener" style="color:inherit">{esc(SITE['address']['line1'])}<br>{esc(SITE['address']['line2'])}<br>{esc(SITE['address']['line3'])}</a></p>
     </div>
     <div class="site-menu__socials">{socials}</div>
   </div>
@@ -633,7 +634,7 @@ def footer() -> str:
       <div class="footer-cols">{''.join(cols)}</div>
     </div>
     <div class="footer-middle">
-      <span>{esc(SITE['address']['line1'])}, {esc(SITE['address']['line2'])}, {esc(SITE['address']['line3'])}</span>
+      <a href="{esc(SITE['maps_url'])}" target="_blank" rel="noopener" style="color:inherit">{esc(SITE['address']['line1'])}, {esc(SITE['address']['line2'])}, {esc(SITE['address']['line3'])}</a>
       <span>{esc(SITE['hours'])}</span>
       <div class="site-menu__socials" style="margin:0">{socials}</div>
     </div>
@@ -2200,7 +2201,7 @@ def build_contact() -> str:
     </div>
     <div class="map-note">
       <span>{esc(page['map_note'])}</span>
-      <a class="link" href="https://www.openstreetmap.org/?mlat={lat}&amp;mlon={lng}#map=16/{lat}/{lng}" target="_blank" rel="noopener">Open in maps</a>
+      <a class="link" href="{esc(SITE['maps_url'])}" target="_blank" rel="noopener">Open in Google Maps</a>
     </div>
   </div>
 </section>

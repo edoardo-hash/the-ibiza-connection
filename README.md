@@ -410,3 +410,10 @@ changeover days (e.g. Saturday–Saturday) are waived for stays of at least 3 ×
 stays; a check-in within the next 10 days waives both. Villas matched through one of these
 exceptions show "on request (owner to confirm)" with the calendar price, since IMpulse's live quote
 applies the plain rules.
+
+Licence registers: the Consell publishes four lists (tourist homes, turisme rural, establiments
+hotelers, apartaments). All four are stored in `data/register/` (CSV, plus the original .xls in
+`data/register/source/`); `python3 tools/licence_check.py --import <file.xls>` refreshes one.
+Tourist-home licences (ET/ETV/VT/VTV, or a mistyped prefix) match on the number; AG, HAC and the
+other kinds match the same letters + number in their own list. Units sharing one licence (e.g. Es
+Palauet) are flagged when their guests together exceed the licence's places.
