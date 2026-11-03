@@ -963,28 +963,41 @@
     const paintLive = (card) => {
       const dated = liveFromCalendar && availabilitySet && stayNights();
       let line = $(".villa-card__live", card);
+      const priceEl = $(".villa-card__price", card);
+      if (priceEl && !priceEl.dataset.weekly) priceEl.dataset.weekly = priceEl.innerHTML;
       if (!dated) {
         if (line) line.remove();
+        if (priceEl && priceEl.dataset.weekly) priceEl.innerHTML = priceEl.dataset.weekly;
         return;
       }
       if (!line) {
         line = document.createElement("p");
         line.className = "villa-card__live";
-        $(".villa-card__price", card)?.before(line);
+        priceEl?.before(line);
       }
       const r = liveResult.get(liveKey(card));
       const nights = stayNights();
-      line.dataset.state = r?.state || "pending";
+      const state = r?.state || "pending";
+      line.dataset.state = state;
       line.textContent =
-        !r || r.state === "pending"
+        state === "pending"
           ? "Checking availability…"
-          : r.state === "ok"
-            ? r.price
-              ? `Available · ${eur(r.price)} for ${nights} nights`
-              : "Available · price on request"
-            : r.state === "no"
+          : state === "ok"
+            ? "Available for your dates"
+            : state === "no"
               ? "Not available for these dates"
               : "Availability to be confirmed";
+      // The price for the stay replaces the weekly "from" price: confirmed once IMpulse answered,
+      // the calendar estimate while checking.
+      if (priceEl) {
+        const uuid = String(card.dataset.uuid || "").toLowerCase();
+        const total = state === "ok" ? r.price : availabilityPrice.get(uuid) || 0;
+        priceEl.innerHTML = total
+          ? `<strong>${eur(total)}</strong><em>for ${nights} nights</em>`
+          : state === "ok"
+            ? "<strong>Price on request</strong>"
+            : priceEl.dataset.weekly;
+      }
     };
     const scheduleApply = () => {
       clearTimeout(liveApplyTimer);
@@ -1046,6 +1059,114 @@
       runLive();
     };
 
+    // "Villas available Saturday to Saturday" (Edo, 3 Nov 2026): when the dates aren't Saturday to
+    // Saturday and fewer than SATSAT_TRIGGER villas match, offer the villas free for the closest
+    // Saturdays (same filters), as small thumbnails, each confirmed live like the main results.
+    const SATSAT_TRIGGER = 8;
+    const SATSAT_MAX = 8;
+    let satEl = null;
+    const satLive = new Map(); // "uuid|from|to" → {state, price}
+    const addDays = (iso, n) => new Date(Date.parse(`${iso}T00:00:00Z`) + n * 86400000).toISOString().slice(0, 10);
+    const closestSaturday = (iso) => {
+      const d = weekday(iso); // 0 Sun … 6 Sat
+      const back = (d + 1) % 7; // days since the previous Saturday
+      return back <= 3 ? addDays(iso, -back) : addDays(iso, 7 - back);
+    };
+    const satDates = (from, to) => {
+      let a = closestSaturday(from);
+      const today = new Date().toISOString().slice(0, 10);
+      if (a <= today) a = addDays(a, 7);
+      let b = closestSaturday(to);
+      if (b <= a) b = addDays(a, 7);
+      return [a, b];
+    };
+    const renderSatSat = (state, matched) => {
+      const from = dateFrom?.value || "";
+      const to = dateTo?.value || "";
+      const show = liveFromCalendar && staysData && from && to && matched.length < SATSAT_TRIGGER &&
+        !(weekday(from) === 6 && weekday(to) === 6);
+      if (!show) {
+        if (satEl) satEl.remove();
+        return;
+      }
+      const [a, b] = satDates(from, to);
+      const nights = Math.round((Date.parse(`${b}T00:00:00Z`) - Date.parse(`${a}T00:00:00Z`)) / 86400000);
+      const shownSet = new Set(matched);
+      const want = (card) => {
+        if (shownSet.has(card)) return false;
+        const f = (card.dataset.features || "").split(" ");
+        if (state.q && !`${card.dataset.name} ${card.dataset.area}`.toLowerCase().includes(state.q)) return false;
+        if (state.guests && Number(card.dataset.sleeps) < Number(state.guests)) return false;
+        const beds = Number(card.dataset.bedrooms);
+        if (state.bmin && beds < Number(state.bmin)) return false;
+        if (state.bmax && beds > Number(state.bmax)) return false;
+        if (state.features.some((x) => !f.includes(x))) return false;
+        if ((state.district || state.area) && !inLocation(card, state)) return false;
+        return true;
+      };
+      const list = [];
+      for (const card of sortCards(cards.filter(want), state.sort)) {
+        const villa = staysData.villas[card.dataset.idx];
+        if (!villa || !freeFor(villa, a, b, nights)) continue;
+        const key = `${String(card.dataset.uuid || "").toLowerCase()}|${a}|${b}`;
+        const live = satLive.get(key);
+        if (live?.state === "no") continue;
+        const price = live?.state === "ok" && live.price ? live.price : estimateStay(villa.r, a, b, nights);
+        if ((state.pmin || state.pmax) && (!price || (state.pmin && price < Number(state.pmin)) || (state.pmax && price > Number(state.pmax)))) continue;
+        list.push({ card, key, price, live });
+        if (list.length >= SATSAT_MAX) break;
+      }
+      if (!list.length) {
+        if (satEl) satEl.remove();
+        return;
+      }
+      if (!satEl) {
+        satEl = document.createElement("section");
+        satEl.className = "satsat";
+      }
+      const range = formatRange(a, b);
+      const q = new URLSearchParams(window.location.search);
+      q.set("arrive", a);
+      q.set("depart", b);
+      satEl.innerHTML = `<div class="satsat__head"><h3>Villas available Saturday to Saturday</h3>
+          <p>Many villas change over on Saturdays. These are free for <strong>${range}</strong> (${nights} nights), the closest Saturdays to your dates.
+          <a class="link" href="${window.location.pathname}?${q.toString()}">Search these dates</a></p></div>
+        <div class="satsat__grid">${list
+          .map(({ card, key, price, live }) => {
+            const link = `${$("a.villa-card__link", card)?.getAttribute("href") || "#"}?arrive=${a}&depart=${b}`;
+            const img = $(".villa-card__media img", card);
+            const src = img?.currentSrc || img?.getAttribute("src") || "";
+            const st = live?.state || "pending";
+            const status = st === "ok" ? (price ? `${eur(price)} for ${nights} nights` : "Available · price on request") : st === "error" ? "Availability to be confirmed" : "Checking availability…";
+            return `<a class="satsat__villa" href="${link}" data-key="${key}">
+              <span class="satsat__img">${src ? `<img src="${src}" alt="" loading="lazy">` : ""}</span>
+              <span class="satsat__text"><strong>${$(".villa-card__name", card)?.textContent || ""}</strong>
+                <span>${card.dataset.area} · ${card.dataset.bedrooms} bedrooms · sleeps ${card.dataset.sleeps}</span>
+                <span class="villa-card__live" data-state="${st}">${status}</span></span>
+            </a>`;
+          })
+          .join("")}</div>`;
+      (moreWrap || results).after(satEl);
+      // Live confirmation for these dates too.
+      list.forEach(({ card, key, live }) => {
+        if (live) return;
+        satLive.set(key, { state: "pending", price: 0 });
+        const [uuid] = key.split("|");
+        fetch("/api/availability/", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ uuid, from: a, to: b }),
+        })
+          .then((r) => r.json())
+          .then((d) => {
+            if (!d || d.ok === false) throw new Error("live");
+            satLive.set(key, { state: d.available ? "ok" : "no", price: d.priceOnRequest ? 0 : Number(d.price) || 0 });
+          })
+          .catch(() => satLive.set(key, { state: "error", price: 0 }))
+          .finally(() => scheduleApply());
+      });
+    };
+
     const apply = (resetStep = true) => {
       if (resetStep) visible = step;
       const state = currentState();
@@ -1104,6 +1225,7 @@
       renderChips(state);
       syncUrl(state);
       confirmShown([...ordered.slice(0, visible), ...pairResult.pairs.flatMap((p) => [p.a, p.b])]);
+      renderSatSat(state, matched);
     };
 
     // Bedrooms from–to: whole numbers 1–30, and "to" never below "from" (as on the portal).
