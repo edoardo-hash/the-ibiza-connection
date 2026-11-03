@@ -48,7 +48,7 @@ jobs:
 
       - name: Commit and push if anything changed
         run: |
-          git add data assets/villas
+          git add data assets/villas lib/chat-data.json
           # meta.json always changes (fetch timestamp): on its own it is not a reason to deploy.
           if git diff --cached --quiet -- . ':(exclude)data/meta.json'; then
             echo "No villa changes since the last refresh."
