@@ -557,6 +557,14 @@ def main() -> None:
             return None
 
     status = {}
+    # Exact positions, for the "two villas nearby" pairs only (portal rule: exact GPS, server-side).
+    # They stay in memory: only the rounded distance between two villas is written (see below).
+    exact_gps: dict[str, tuple[float, float]] = {}
+    for r in lr_rows:
+        if isinstance(r, dict):
+            lat, lng = parse_gps(r.get("actual_gps"))
+            if lat is not None:
+                exact_gps[str(r.get("bp_uuid") or "").strip().lower()] = (lat, lng)
     for r in lr_rows:
         if not isinstance(r, dict):
             continue
@@ -695,6 +703,33 @@ def main() -> None:
             villa["price_from"] = villa["nightly_from"] * 7
             villa["price_to"] = max(villa["price_to"], villa["nightly_to"] * 7)
             villa["price_on_request"] = False
+
+    # "Two villas nearby" (Edo, 3 Nov 2026, portal villa-groups logic with 2 villas / 5 km): for
+    # each villa, the other listed villas within PAIR_MAX_KM by EXACT GPS (straight line). Only
+    # the distance rounded UP to the next half kilometre is stored; exact positions never are.
+    # Villas without an exact position are left out, as on the portal.
+    pair_max_km = 5.0
+
+    def km_between(a, b):
+        dy = (b[0] - a[0]) * 111.32
+        dx = (b[1] - a[1]) * 111.32 * math.cos(math.radians((a[0] + b[0]) / 2))
+        return math.hypot(dx, dy)
+
+    located = [(v, exact_gps.get(v["v_uuid"].lower())) for v in villas]
+    located = [(v, pt) for v, pt in located if pt]
+    for villa in villas:
+        villa["near"] = []
+    for i, (va, pa) in enumerate(located):
+        for vb, pb in located[i + 1:]:
+            d = km_between(pa, pb)
+            if d <= pair_max_km:
+                rounded = max(0.5, math.ceil(d * 2) / 2)
+                va["near"].append([vb["slug"], rounded])
+                vb["near"].append([va["slug"], rounded])
+    for villa in villas:
+        villa["near"].sort(key=lambda x: (x[1], x[0]))
+    print(f"  pairs: {len(located)} villas with an exact position, "
+          f"{sum(len(v['near']) for v in villas) // 2} pairs within {pair_max_km:g} km")
 
     # Curated ordering: best-value / most complete villas lead the collection.
     villas.sort(key=lambda v: (0 if v["photos"] else 1, v["price_from"] <= 0, -v["sleeps"], v["name"].lower()))

@@ -476,7 +476,7 @@ body.menu-open .site-menu { opacity: 1; visibility: visible; }
   border: 1px solid var(--line);
   box-shadow: 0 30px 80px -50px rgba(22, 20, 15, 0.55);
   display: grid;
-  grid-template-columns: 0.95fr 1fr 1.35fr 0.75fr 0.9fr auto;
+  grid-template-columns: 0.9fr 0.95fr 1.3fr 0.75fr 0.85fr 1fr auto;
   align-items: stretch;
   padding: 10px;
   gap: 0;
@@ -574,6 +574,26 @@ body.menu-open .site-menu { opacity: 1; visibility: visible; }
   letter-spacing: 0.08em;
 }
 
+/* Two villas together (pairs within 5 km) -------------------------------- */
+.pairs { grid-column: 1 / -1; padding: 28px 0 8px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+.pairs h3 { font-size: clamp(1.6rem, 2.4vw, 2.2rem); margin-bottom: 8px; }
+.pairs__intro { color: var(--muted); max-width: 70ch; margin-bottom: 22px; }
+.pair { border: 1px solid var(--line); background: var(--white); margin-bottom: 16px; }
+.pair__villas { display: grid; grid-template-columns: 1fr auto 1fr; align-items: stretch; }
+.pair__plus { display: grid; place-items: center; padding: 0 10px; font-family: var(--serif); font-size: 1.8rem; color: var(--clay); }
+.pair__villa { display: grid; grid-template-columns: 132px 1fr; gap: 14px; padding: 14px; color: var(--ink); }
+.pair__villa:hover strong { color: var(--clay); }
+.pair__img { aspect-ratio: 4 / 3; overflow: hidden; background: var(--bone-2); }
+.pair__img img { width: 100%; height: 100%; object-fit: cover; }
+.pair__text { display: flex; flex-direction: column; gap: 3px; font-size: 13px; color: var(--muted); }
+.pair__text strong { font-family: var(--serif); font-weight: 400; font-size: 1.3rem; color: var(--ink); }
+.pair__foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px 20px; padding: 12px 16px; border-top: 1px solid var(--line); font-size: 14px; }
+@media (max-width: 760px) {
+  .pair__villas { grid-template-columns: 1fr; }
+  .pair__plus { padding: 0; font-size: 1.4rem; }
+  .pair__villa { grid-template-columns: 104px 1fr; }
+}
+
 /* Bedrooms from – to ----------------------------------------------------- */
 .bed-range { display: flex; align-items: center; gap: 8px; min-height: 26px; }
 .bed-range input {
@@ -595,6 +615,7 @@ body.menu-open .site-menu { opacity: 1; visibility: visible; }
 .bed-range input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 .bed-range input:focus { outline: 0; border-bottom-color: var(--clay); }
 .bed-range span { color: var(--muted); }
+.budget-range input { width: 5.4em; }
 .filter-group .bed-range input { width: 100%; border: 1px solid var(--line-strong); padding: 10px 12px; background: var(--white); text-align: left; }
 
 /* Calendar popover / bottom sheet ---------------------------------------- */
@@ -1624,8 +1645,8 @@ select.filter-select,
   .search-field { padding: 10px 12px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .search-field--area { border-right: 0; }
   .search-field--dates { grid-column: span 2; border-right: 0; }
-  .search-field:nth-child(4) { border-bottom: 0; }
-  .search-field--beds { border-right: 0; border-bottom: 0; }
+  .search-field--beds { border-right: 0; }
+  .search-field--budget { grid-column: span 2; border-right: 0; border-bottom: 0; }
   .search-panel .btn { grid-column: span 2; margin: 8px 10px 6px; }
   .search-field label, .search-field__label, .date-range__label { font-size: 11px; }
   .search-field select, .search-field input { font-size: 14px; }

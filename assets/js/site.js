@@ -7,12 +7,6 @@
   const body = document.body;
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  const PRICE_LABELS = {
-    "0-7500": "Under €7,500",
-    "7500-15000": "€7,500 – €15,000",
-    "15000-30000": "€15,000 – €30,000",
-    "30000-": "€30,000+",
-  };
 
   /* ------------------------------------------------------------------ */
   /*  Header                                                             */
@@ -510,7 +504,9 @@
       guests: params.get("guests") || "",
       bmin: params.get("bmin") || params.get("bedrooms") || "",
       bmax: params.get("bmax") || "",
-      price: params.get("price") || "",
+      // Budget per week; older ?price=7500-15000 links still work.
+      pmin: params.get("pmin") || (params.get("price") || "").split("-")[0] || "",
+      pmax: params.get("pmax") || (params.get("price") || "").split("-")[1] || "",
       features: (params.get("features") || "").split(",").filter(Boolean),
       sort: params.get("sort") || "featured",
       arrive: params.get("arrive") || "",
@@ -525,7 +521,7 @@
     };
 
     if (searchInput) searchInput.value = initial.q;
-    ["guests", "bmin", "bmax", "price", "sort"].forEach((name) => setControl(name, initial[name]));
+    ["guests", "bmin", "bmax", "pmin", "pmax", "sort"].forEach((name) => setControl(name, initial[name]));
     setLocation(initial.district, initial.area);
     featureEls.forEach((el) => {
       el.checked = initial.features.includes(el.dataset.feature);
@@ -543,19 +539,33 @@
       guests: filterEls.find((el) => el.dataset.filter === "guests")?.value || "",
       bmin: filterEls.find((el) => el.dataset.filter === "bmin")?.value || "",
       bmax: filterEls.find((el) => el.dataset.filter === "bmax")?.value || "",
-      price: filterEls.find((el) => el.dataset.filter === "price")?.value || "",
+      pmin: filterEls.find((el) => el.dataset.filter === "pmin")?.value || "",
+      pmax: filterEls.find((el) => el.dataset.filter === "pmax")?.value || "",
       sort: filterEls.find((el) => el.dataset.filter === "sort")?.value || "featured",
       features: featureEls.filter((el) => el.checked).map((el) => el.dataset.feature),
       dates: { from: dateFrom?.value || "", to: dateTo?.value || "" },
     });
 
-    const inPrice = (price, bucket) => {
-      if (!bucket) return true;
-      if (!price) return false;
-      const [min, max] = bucket.split("-");
-      if (!min) return price <= Number(max);
-      if (!max) return price >= Number(min);
-      return price >= Number(min) && price <= Number(max);
+    // Budget per week: the card's weekly "from" price, or — with dates — the live price for the
+    // stay brought to a week (price × 7 / nights). Price on request never matches a budget.
+    let availabilityPrice = new Map();
+    const stayNights = () => {
+      const f = dateFrom?.value;
+      const t = dateTo?.value;
+      return f && t ? Math.round((Date.parse(`${t}T00:00:00Z`) - Date.parse(`${f}T00:00:00Z`)) / 86400000) : 0;
+    };
+    const stayPrice = (card) => availabilityPrice.get(String(card.dataset.uuid || "").toLowerCase()) || 0;
+    const weeklyPrice = (card) => {
+      const nights = stayNights();
+      const live = stayPrice(card);
+      if (availabilitySet && nights && live) return (live * 7) / nights;
+      return Number(card.dataset.price) || 0;
+    };
+    const inBudget = (card, state) => {
+      if (!state.pmin && !state.pmax) return true;
+      const p = weeklyPrice(card);
+      if (!p) return false;
+      return (!state.pmin || p >= Number(state.pmin)) && (!state.pmax || p <= Number(state.pmax));
     };
 
     const inLocation = (card, state) =>
@@ -585,6 +595,122 @@
     };
     let nearbyHead = null;
 
+    // "Two villas nearby" (Edo, 3 Nov 2026 — the portal's villa-groups logic, src/lib/villa-groups.ts,
+    // with 2 villas and 5 km): when no single villa has the bedrooms asked for, propose pairs of villas
+    // within 5 km of each other (EXACT GPS, worked out at build time; only "within X km" reaches the page)
+    // that together have the bedrooms (and guests). Same filters except size; a villa big enough on its
+    // own is never in a pair. Closest first, then fewest spare bedrooms, then cheapest; each villa in at
+    // most 2 pairs; the pair may go up to 20 % over the maximum budget, as on the portal.
+    const PAIR_LIMIT = 6;
+    const PAIRS_PER_VILLA = 2;
+    const OVER_BUDGET_TOLERANCE = 0.2;
+    const cardByIdx = new Map(cards.map((c) => [c.dataset.idx, c]));
+    const nearOf = (card) =>
+      (card.dataset.near || "")
+        .split(" ")
+        .filter(Boolean)
+        .map((x) => {
+          const [idx, km] = x.split(":");
+          return { card: cardByIdx.get(idx), km: Number(km) };
+        })
+        .filter((n) => n.card);
+    let pairsEl = null;
+    const findPairs = (state) => {
+      const need = Number(state.bmin);
+      const guests = Number(state.guests) || 0;
+      if (!need) return { pairs: [], local: true };
+      const loose = { ...state, bmin: "", bmax: "", guests: "", pmin: "", pmax: "" };
+      const cap = state.pmax ? Number(state.pmax) * (1 + OVER_BUDGET_TOLERANCE) : null;
+      const pool = new Set(
+        cards.filter((c) => matches(c, loose) && Number(c.dataset.bedrooms) < need && (!cap || (weeklyPrice(c) && weeklyPrice(c) <= cap)))
+      );
+      const found = [];
+      pool.forEach((a) => {
+        nearOf(a).forEach(({ card: b, km }) => {
+          if (!pool.has(b) || Number(b.dataset.idx) <= Number(a.dataset.idx)) return;
+          const beds = Number(a.dataset.bedrooms) + Number(b.dataset.bedrooms);
+          const sleeps = Number(a.dataset.sleeps) + Number(b.dataset.sleeps);
+          if (beds < need || (guests && sleeps < guests)) return;
+          const pa = weeklyPrice(a);
+          const pb = weeklyPrice(b);
+          const total = pa && pb ? pa + pb : null;
+          if (cap && (total === null || total > cap)) return;
+          found.push({ a, b, km, beds, sleeps, total, spare: beds - need });
+        });
+      });
+      const hasLocation = state.district || state.area;
+      let list = found;
+      let local = true;
+      if (hasLocation) {
+        const inside = found.filter((p) => inLocation(p.a, state) || inLocation(p.b, state));
+        if (inside.length) list = inside;
+        else {
+          local = false;
+          const centre = locationCentre(state);
+          if (centre) {
+            const dist = (p) => Math.min(...[p.a, p.b].filter(hasCoords).map((c) => km(centre, coords(c))), Infinity);
+            list = [...found].sort((x, y) => dist(x) - dist(y)).slice(0, 40);
+          }
+        }
+      }
+      list.sort((x, y) => x.km - y.km || x.spare - y.spare || (x.total ?? Infinity) - (y.total ?? Infinity));
+      const used = new Map();
+      const out = [];
+      for (const p of list) {
+        if (out.length >= PAIR_LIMIT) break;
+        if ((used.get(p.a) || 0) >= PAIRS_PER_VILLA || (used.get(p.b) || 0) >= PAIRS_PER_VILLA) continue;
+        out.push(p);
+        used.set(p.a, (used.get(p.a) || 0) + 1);
+        used.set(p.b, (used.get(p.b) || 0) + 1);
+      }
+      return { pairs: out, local };
+    };
+    const eur = (n) => `€${Math.round(n).toLocaleString("en-GB")}`;
+    const pairVillaHtml = (card) => {
+      const link = $("a.villa-card__link", card)?.getAttribute("href") || "#";
+      const img = $(".villa-card__media img", card);
+      const src = img?.currentSrc || img?.getAttribute("src") || "";
+      const name = $(".villa-card__name", card)?.textContent || "";
+      const dated = availabilitySet && stayNights() && stayPrice(card);
+      const price = dated ? `${eur(stayPrice(card))} for your dates` : Number(card.dataset.price) ? `from ${eur(Number(card.dataset.price))} / week` : "Price on request";
+      return `<a class="pair__villa" href="${link}">
+          <span class="pair__img">${src ? `<img src="${src}" alt="" loading="lazy">` : ""}</span>
+          <span class="pair__text"><strong>${name}</strong><span>${card.dataset.area} · ${card.dataset.bedrooms} bedrooms · sleeps ${card.dataset.sleeps}</span><span>${price}</span></span>
+        </a>`;
+    };
+    const renderPairs = (state, result) => {
+      if (!result.pairs.length) {
+        if (pairsEl) pairsEl.remove();
+        return;
+      }
+      if (!pairsEl) {
+        pairsEl = document.createElement("section");
+        pairsEl.className = "pairs";
+      }
+      const dated = availabilitySet && stayNights();
+      const where = state.district || state.area ? locationLabel(state) : "";
+      const intro = `No single villa${where ? ` in ${where}` : ""} has ${state.bmin}${state.bmax && state.bmax !== state.bmin ? `–${state.bmax}` : "+"} bedrooms${dated ? " free for your dates" : ""}. These pairs of villas, a few minutes apart, have them together${!result.local && where ? ` — the closest pairs to ${where}` : ""}.`;
+      const params = new URLSearchParams();
+      if (dateFrom?.value) params.set("arrive", dateFrom.value);
+      if (dateTo?.value) params.set("depart", dateTo.value);
+      if (state.guests) params.set("guests", state.guests);
+      pairsEl.innerHTML = `<h3>Two villas together</h3><p class="pairs__intro">${intro}</p>${result.pairs
+        .map((p) => {
+          const q = new URLSearchParams(params);
+          q.set("villa", `${$(".villa-card__name", p.a)?.textContent} + ${$(".villa-card__name", p.b)?.textContent}`);
+          const total = p.total === null ? "price on request" : dated ? `${eur((p.total * stayNights()) / 7)} for your dates` : `from ${eur(p.total)} / week`;
+          return `<div class="pair">
+            <div class="pair__villas">${pairVillaHtml(p.a)}<span class="pair__plus" aria-hidden="true">+</span>${pairVillaHtml(p.b)}</div>
+            <div class="pair__foot">
+              <span><strong>${p.beds} bedrooms</strong> · sleeps ${p.sleeps} · within ${p.km.toLocaleString("en-GB")} km · ${total}</span>
+              <a class="link" href="/contact/?${q.toString()}">Ask about these two</a>
+            </div>
+          </div>`;
+        })
+        .join("")}`;
+      results.insertBefore(pairsEl, results.firstChild);
+    };
+
     const matches = (card, state) => {
       const features = (card.dataset.features || "").split(" ").filter(Boolean);
       if (state.q && !`${card.dataset.name} ${card.dataset.area}`.toLowerCase().includes(state.q)) return false;
@@ -592,7 +718,7 @@
       const beds = Number(card.dataset.bedrooms);
       if (state.bmin && beds < Number(state.bmin)) return false;
       if (state.bmax && beds > Number(state.bmax)) return false;
-      if (!inPrice(Number(card.dataset.price), state.price)) return false;
+      if (!inBudget(card, state)) return false;
       if (state.features.some((feature) => !features.includes(feature))) return false;
       if (availabilitySet && !availabilitySet.has(String(card.dataset.uuid || "").toLowerCase())) return false;
       if (savedOnly && !saved.includes(card.dataset.slug)) return false;
@@ -632,7 +758,11 @@
               : `Up to ${state.bmax} bedrooms`;
         chips.push(makeChip(label, "beds"));
       }
-      if (state.price) chips.push(makeChip(PRICE_LABELS[state.price] || state.price, "price"));
+      if (state.pmin || state.pmax) {
+        const eur = (n) => `€${Number(n).toLocaleString("en-GB")}`;
+        const label = state.pmin && state.pmax ? `${eur(state.pmin)} – ${eur(state.pmax)}` : state.pmin ? `From ${eur(state.pmin)}` : `Up to ${eur(state.pmax)}`;
+        chips.push(makeChip(`${label} / week`, "budget"));
+      }
       if (state.dates.from && state.dates.to) chips.push(makeChip(formatRange(state.dates.from, state.dates.to), "dates"));
       if (savedOnly) chips.push(makeChip("Saved villas", "saved"));
       state.features.forEach((feature) => {
@@ -651,7 +781,8 @@
       if (state.guests) params.set("guests", state.guests);
       if (state.bmin) params.set("bmin", state.bmin);
       if (state.bmax) params.set("bmax", state.bmax);
-      if (state.price) params.set("price", state.price);
+      if (state.pmin) params.set("pmin", state.pmin);
+      if (state.pmax) params.set("pmax", state.pmax);
       if (state.dates.from) params.set("arrive", state.dates.from);
       if (state.dates.to) params.set("depart", state.dates.to);
       if (state.features.length) params.set("features", state.features.join(","));
@@ -704,6 +835,7 @@
         if (request !== availabilityRequest) return;
         if (data.ok && Array.isArray(data.villas)) {
           availabilitySet = new Set(data.villas.map((villa) => String(villa.uuid || "").toLowerCase()));
+          availabilityPrice = new Map(data.villas.map((villa) => [String(villa.uuid || "").toLowerCase(), Number(villa.price) || 0]));
           const availableHere = cards.filter((card) =>
             availabilitySet.has(String(card.dataset.uuid || "").toLowerCase())
           ).length;
@@ -738,6 +870,8 @@
           .slice(0, Math.max(0, MIN_RESULTS - exact.length));
       }
       const nearbyCards = nearby.map((n) => n.card);
+      // No single villa with the bedrooms asked for (in the chosen place, or anywhere nearby) → pairs.
+      const pairResult = state.bmin && exact.length === 0 ? findPairs(state) : { pairs: [] };
       const ordered = [...sortCards(exact, state.sort), ...nearbyCards];
       const matched = ordered;
       ordered.forEach((card) => results.appendChild(card));
@@ -770,9 +904,10 @@
         results.insertBefore(nearbyHead, nearbyCards[0]);
         nearbyHead.hidden = exact.length >= visible;
       } else if (nearbyHead) nearbyHead.remove();
-      if (countEl) countEl.textContent = String(matched.length);
+      if (countEl) countEl.textContent = !matched.length && pairResult.pairs.length ? `${pairResult.pairs.length} pairs of` : String(matched.length);
       if (drawerCount) drawerCount.textContent = String(matched.length);
-      if (emptyEl) emptyEl.classList.toggle("is-visible", matched.length === 0);
+      renderPairs(state, pairResult);
+      if (emptyEl) emptyEl.classList.toggle("is-visible", matched.length === 0 && !pairResult.pairs.length);
       if (moreWrap) moreWrap.hidden = visible >= matched.length;
       if (moreBtn) moreBtn.textContent = `Load more villas (${Math.max(0, matched.length - visible)})`;
       renderChips(state);
@@ -798,6 +933,16 @@
       el.addEventListener("change", () => {
         if (el.dataset.filter === "district" || el.dataset.filter === "area") return; // setLocation handles these
         if (el.dataset.filter === "bmin" || el.dataset.filter === "bmax") normaliseBeds();
+        if (el.dataset.filter === "pmin" || el.dataset.filter === "pmax") {
+          const lo = controlsFor("pmin")[0];
+          const hi = controlsFor("pmax")[0];
+          [lo, hi].forEach((x) => {
+            if (!x) return;
+            const n = Math.round(Number(x.value));
+            x.value = x.value === "" || !Number.isFinite(n) || n <= 0 ? "" : String(n);
+          });
+          if (lo?.value && hi?.value && Number(hi.value) < Number(lo.value)) hi.value = lo.value;
+        }
         controlsFor(el.dataset.filter).forEach((other) => {
           if (other !== el) other.value = el.value;
         });
@@ -833,6 +978,9 @@
         } else if (action === "area") {
           setLocation(muniMenus[0]?.value || "", "");
           return;
+        } else if (action === "budget") {
+          setControl("pmin", "");
+          setControl("pmax", "");
         } else if (action === "beds") {
           setControl("bmin", "");
           setControl("bmax", "");

@@ -115,6 +115,9 @@ META["max_price"] = max([v.get("price_to") or 0 for v in VILLAS] or [0])
 )
 
 VILLA_BY_SLUG = {v["slug"]: v for v in VILLAS}
+# Card numbers for the "two villas nearby" pairs: each card carries its neighbours within 5 km
+# (exact GPS, worked out by fetch_invenio.py) as "<card number>:<km>" pairs, to keep pages small.
+VILLA_INDEX = {v["slug"]: i for i, v in enumerate(VILLAS)}
 
 # /assets/* is served with a one-year immutable cache (vercel.json), so the stylesheet and the
 # script are linked with a fingerprint of their content: a change reaches returning visitors at once.
@@ -344,6 +347,7 @@ def villa_card(villa: dict, *, compact: bool = False, image_index: int = 0) -> s
            data-villa data-slug="{villa['slug']}" data-uuid="{villa['v_uuid']}" data-name="{esc(villa['name'].lower())}"
            data-area="{esc(villa['area'])}" data-district="{esc(villa['district'])}" data-region="{villa['region']}"
            data-lat="{villa.get('lat') or ''}" data-lng="{villa.get('lng') or ''}"
+           data-idx="{VILLA_INDEX.get(villa['slug'], '')}" data-near="{' '.join(f'{VILLA_INDEX[s]}:{km:g}' for s, km in villa.get('near', []) if s in VILLA_INDEX)}"
            data-sleeps="{villa['sleeps']}" data-bedrooms="{villa['bedrooms']}"
            data-price="{villa['price_from']}" data-features="{esc(features)}">
           <a class="villa-card__link" href="/villa/{villa['slug']}/">
@@ -898,6 +902,15 @@ def date_range_field(from_name: str, to_name: str, *, from_id: str = "", to_id: 
           </div>"""
 
 
+def budget_range(attrs: tuple[str, str] = ("", "")) -> str:
+    """Budget per week, from – to (euros). With dates, the live price for the stay is compared per week."""
+    return f"""<div class="bed-range budget-range">
+            <input type="number" inputmode="numeric" min="0" step="500" name="pmin" placeholder="€ from" aria-label="Budget per week from (euros)" {attrs[0]}>
+            <span aria-hidden="true">–</span>
+            <input type="number" inputmode="numeric" min="0" step="500" name="pmax" placeholder="€ to" aria-label="Budget per week up to (euros)" {attrs[1]}>
+          </div>"""
+
+
 def bedrooms_range(min_name: str = "bmin", max_name: str = "bmax", attrs: tuple[str, str] = ("", "")) -> str:
     """Bedrooms "from – to" (as on the portal): two number fields, any range (e.g. 2 to 4)."""
     return f"""<div class="bed-range">
@@ -940,6 +953,10 @@ def build_home() -> str:
         <div class="search-field search-field--beds">
           <span class="search-field__label">{esc(search.get('bedrooms_label', 'Bedrooms'))}</span>
           {bedrooms_range()}
+        </div>
+        <div class="search-field search-field--budget">
+          <span class="search-field__label">Budget / week</span>
+          {budget_range()}
         </div>
         <button class="btn" type="submit">{esc(search['submit'])}{icon('arrow')}</button>
       </form>"""
@@ -1245,14 +1262,9 @@ def build_villas() -> str:
       {bedrooms_range(attrs=('data-filter="bmin"', 'data-filter="bmax"'))}
     </div>
     <div class="filter-group">
-      <h4>Weekly price</h4>
-      <select class="filter-select" style="width:100%" data-filter="price" aria-label="Weekly price">
-        <option value="">Any price</option>
-        <option value="0-7500">Under €7,500</option>
-        <option value="7500-15000">€7,500 – €15,000</option>
-        <option value="15000-30000">€15,000 – €30,000</option>
-        <option value="30000-">€30,000 and above</option>
-      </select>
+      <h4>Budget per week</h4>
+      {budget_range(attrs=('data-filter="pmin"', 'data-filter="pmax"'))}
+      <p class="filter-hint">With dates, the live price for your stay counts (per week).</p>
     </div>
     <div class="filter-group">
       <h4>Sort by</h4>

@@ -186,6 +186,17 @@ availability), the list is topped up with the **closest villas outside it** by a
 GPS until **8** are shown, under a note and with a "Nearby · area · km" badge
 (`NEARBY_TRIGGER` / `MIN_RESULTS` in `assets/js/site.js`).
 
+**Budget per week, from – to** (`pmin` / `pmax`): the card's weekly "from" price, or with
+dates the live price for the stay brought to a week. Price on request never matches a budget.
+
+**Two villas together** (the portal's villa-groups logic, 2 villas / 5 km): when a search
+with bedrooms "from" finds no single villa (in the chosen place), up to 6 pairs are shown —
+two villas within 5 km of each other, each too small alone, together covering the bedrooms
+(and guests); same other filters; closest first, then fewest spare bedrooms, then cheapest;
+a villa in at most 2 pairs; up to 20 % over the maximum budget. Distances come from the
+EXACT GPS in the long-rental list, worked out by `fetch_invenio.py` (`near` in
+`data/villas.json`, rounded up to 0.5 km); exact positions are never written anywhere.
+
 ### Hiding a villa
 
 To take a villa off the site by hand, add it to `hidden_villas` in `content/settings.json`
