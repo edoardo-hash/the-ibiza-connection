@@ -1333,14 +1333,15 @@
    "name": "La Flaca",
    "slug": "la-flaca",
    "status": "not_in_register",
-   "ok": false,
+   "ok": true,
    "licence": "ETV-0422-E",
    "register_licence": null,
    "register_places": null,
    "register_municipality": null,
    "issues": [
     "0422 ('ETV-0422-E') is not in the register"
-   ]
+   ],
+   "confirmed_by_ham": "La Flaca (ETV-0422-E): confirmed by Edo, 3 Nov 2026"
   },
   "4d72a45f-7fce-48c0-b43a-1228532582be": {
    "name": "La Perla Escondida",
@@ -3023,7 +3024,6 @@
   "verified": 246
  },
  "hidden": [
-  "La Flaca",
   "Villa Brisa",
   "Villa Nia"
  ],
@@ -3052,6 +3052,7 @@
   "Finca Utopia",
   "Finca Utopia Xarraca",
   "House of Dreams",
+  "La Flaca",
   "Villa Amaris",
   "Villa Apia",
   "Villa Auren",
