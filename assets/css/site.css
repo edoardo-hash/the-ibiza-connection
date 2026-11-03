@@ -1783,3 +1783,12 @@ select.filter-select,
   .concierge__panel { width: 100%; height: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { .concierge__typing i { animation: none; opacity: .6; } }
+
+/* Live confirmation on dated searches */
+.villa-card__live { margin: 8px 0 0; font-size: 12px; letter-spacing: 0.03em; color: var(--muted); display: flex; align-items: center; gap: 7px; }
+.villa-card__live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--line-strong); flex-shrink: 0; }
+.villa-card__live[data-state="pending"]::before { animation: concierge-dot 1s infinite ease-in-out; }
+.villa-card__live[data-state="ok"] { color: var(--ink-2); }
+.villa-card__live[data-state="ok"]::before { background: #4f9a62; }
+.villa-card__live[data-state="no"]::before { background: #b5533c; }
+.villa-card__live[data-state="error"]::before { background: var(--clay-soft); }

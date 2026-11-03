@@ -141,14 +141,25 @@ VILLA_INDEX = {v["slug"]: i for i, v in enumerate(VILLAS)}
 # per card number: confirmed booked ranges (data/busy.json, nightly calendar), nightly CLIENT rates
 # (PRICES, markup already applied, none on DCC), minimum nights and the short-stay rule.
 # Fingerprinted name, so the one-year asset cache never serves yesterday's calendar.
+def strict_day(label) -> int:
+    """'Strictly Saturday-Saturday' → 6 (as the portal's strictDayFromLabel); -1 when flexible."""
+    text = str(label or "").lower()
+    if "strict" not in text:
+        return -1
+    days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+    return next((i for i, d in enumerate(days) if d in text), -1)
+
+
 _BUSY = load(DATA / "busy.json") if (DATA / "busy.json").exists() else {"busy": {}, "fetched_at": ""}
 STAYS = {
     "updated": _BUSY.get("fetched_at", ""),
     "villas": {
         str(VILLA_INDEX[v["slug"]]): {
             "b": _BUSY["busy"].get(v["v_uuid"].lower(), []),
-            "r": [[r["from"], r["to"], r["night"], r.get("min_nights") or 0] for r in PRICES.get(v["slug"], [])],
+            # Fifth value: the period's strict changeover weekday (0 = Sunday … 6 = Saturday), -1 flexible.
+            "r": [[r["from"], r["to"], r["night"], r.get("min_nights") or 0, strict_day(r.get("checkin"))] for r in PRICES.get(v["slug"], [])],
             "m": v.get("min_nights") or 0,
+            "d": strict_day(v.get("check_in_days")),
             "s": 1 if v.get("short_stays") else 0,
         }
         for v in VILLAS
@@ -2330,7 +2341,8 @@ def write_chat_data() -> None:
             "amenities": v.get("amenities") or [],
             "nearby": {k: info.get(k) for k in ("airportKm", "townKm", "beach", "nearTown", "supermarket",
                                                "restaurants", "sights") if info.get(k) is not None},
-            "rates": [[r["from"], r["to"], r["night"], r.get("min_nights") or 0] for r in PRICES.get(v["slug"], [])],
+            "rates": [[r["from"], r["to"], r["night"], r.get("min_nights") or 0, strict_day(r.get("checkin"))] for r in PRICES.get(v["slug"], [])],
+            "strict_day": strict_day(v.get("check_in_days")),
             "booked": _BUSY["busy"].get(v["v_uuid"].lower(), []),
         })
     data = {

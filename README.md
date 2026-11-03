@@ -389,3 +389,12 @@ WhatsApp, email or the contact form.
 Set `ANTHROPIC_API_KEY` in Vercel (Production) to switch it on; without it the button stays
 hidden. `CHAT_MODEL` overrides the model (default `claude-sonnet-4-5`). 30 messages per visitor
 per 10 minutes.
+
+## Dated searches: confirmed live
+
+With dates, the villa list first narrows on the calendar file (confirmed bookings, minimum nights
+and the strict changeover day — e.g. "Strictly Saturday-Saturday" villas only match Saturday to
+Saturday, as on the portal, except last-minute stays and stays of twice the minimum). Every villa
+then SHOWN is confirmed live with IMpulse (the villa page's single quote, 6 at a time, one retry):
+a villa that isn't available drops out, the others show the confirmed price for the stay. Bedroom
+searches and the "two villas within 5 km" pairs use the licensed (legal) bedrooms.

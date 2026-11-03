@@ -174,7 +174,7 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  if (url.pathname === "/api/availability") {
+  if (url.pathname === "/api/availability" || url.pathname === "/api/availability/") {
     if (req.method === "OPTIONS") {
       res.writeHead(204, { Allow: "POST, OPTIONS", ...SECURITY_HEADERS }).end();
       return;

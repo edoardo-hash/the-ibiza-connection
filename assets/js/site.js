@@ -833,8 +833,27 @@
       }
       return Math.round(total);
     };
+    // Strict changeover day (portal rule, src/lib/rules/availability.ts): the check-in night's period sets
+    // the check-in weekday, the last night's period the check-out weekday (else the villa's own rule).
+    // Not applied to last-minute stays (≤ 7 days away) or stays of at least twice the period minimum.
+    const weekday = (iso) => new Date(`${iso}T00:00:00Z`).getUTCDay();
+    const periodFor = (rates, day) => rates.find((r) => r[0] <= day && day <= r[1]);
+    const strictOk = (villa, from, to, nights) => {
+      const lastNight = new Date(Date.parse(`${to}T00:00:00Z`) - 86400000).toISOString().slice(0, 10);
+      const pIn = periodFor(villa.r, from);
+      const pOut = periodFor(villa.r, lastNight);
+      const dayIn = pIn && pIn[4] !== undefined ? pIn[4] : villa.d ?? -1;
+      const dayOut = pOut && pOut[4] !== undefined ? pOut[4] : villa.d ?? -1;
+      const today = new Date().toISOString().slice(0, 10);
+      const near = (Date.parse(`${from}T00:00:00Z`) - Date.parse(`${today}T00:00:00Z`)) / 86400000 <= 7;
+      const maxMin = Math.max(0, ...villa.r.filter((r) => r[0] <= lastNight && r[1] >= from).map((r) => r[3] || 0));
+      if (near || (maxMin > 0 && nights >= 2 * maxMin)) return true;
+      return (dayIn < 0 || weekday(from) === dayIn) && (dayOut < 0 || weekday(to) === dayOut);
+    };
     const freeFor = (villa, from, to, nights) =>
-      villa.b.every(([ci, co]) => !(ci < to && co > from)) && (villa.s || !villa.m || nights >= villa.m);
+      villa.b.every(([ci, co]) => !(ci < to && co > from)) &&
+      (villa.s || !villa.m || nights >= villa.m) &&
+      strictOk(villa, from, to, nights);
 
     const loadAvailability = async () => {
       const from = dateFrom?.value || "";
@@ -855,11 +874,19 @@
           const total = estimateStay(villa.r, from, to, nights);
           if (total) prices.set(uuid, total);
         });
+        // Results already confirmed live for these dates keep their verdict and price.
+        cards.forEach((card) => {
+          const r = liveResult.get(liveKey(card));
+          const uuid = String(card.dataset.uuid || "").toLowerCase();
+          if (r?.state === "no") free.delete(uuid);
+          else if (r?.state === "ok" && r.price) prices.set(uuid, r.price);
+        });
         availabilitySet = free;
         availabilityPrice = prices;
+        liveFromCalendar = true;
         const updated = data.updated ? new Date(data.updated).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : "";
         setNote(
-          `<strong>${free.size}</strong> villas free for <strong>${formatRange(from, to)}</strong> (${nights} nights), from the owners' calendars${updated ? ` of ${updated}` : ""}. Prices are estimates for your dates — each villa page confirms availability and the exact price live.`
+          `Villas free for <strong>${formatRange(from, to)}</strong> (${nights} nights) on the owners' calendars${updated ? ` of ${updated}` : ""}. Each villa shown is then <strong>confirmed live</strong> with our booking system — availability and the exact price for your stay.`
         );
         apply();
       } catch (error) {
@@ -874,6 +901,7 @@
       const to = dateTo?.value || "";
       const request = availabilityRequest;
       availabilitySet = null;
+      liveFromCalendar = false;
 
       if (!from || !to) {
         setNote("");
@@ -919,6 +947,103 @@
         );
       }
       apply();
+    };
+
+    // Live confirmation (Edo, 3 Nov 2026: "when running a search, availability and price must be
+    // confirmed"): the calendar file only narrows the list; every villa SHOWN for dates is then checked
+    // live with IMpulse (the same single-villa quote as the villa page), 4 at a time. A villa IMpulse
+    // says is not available drops out; the others show the confirmed price for the stay.
+    const LIVE_CONCURRENCY = 6;
+    const liveResult = new Map(); // "uuid|from|to" → {state: "pending"|"ok"|"no"|"error", price}
+    const liveQueue = [];
+    let liveRunning = 0;
+    let liveFromCalendar = false; // true when the list came from the calendar file (needs confirming)
+    let liveApplyTimer = 0;
+    const liveKey = (card) => `${String(card.dataset.uuid || "").toLowerCase()}|${dateFrom?.value || ""}|${dateTo?.value || ""}`;
+    const paintLive = (card) => {
+      const dated = liveFromCalendar && availabilitySet && stayNights();
+      let line = $(".villa-card__live", card);
+      if (!dated) {
+        if (line) line.remove();
+        return;
+      }
+      if (!line) {
+        line = document.createElement("p");
+        line.className = "villa-card__live";
+        $(".villa-card__price", card)?.before(line);
+      }
+      const r = liveResult.get(liveKey(card));
+      const nights = stayNights();
+      line.dataset.state = r?.state || "pending";
+      line.textContent =
+        !r || r.state === "pending"
+          ? "Checking availability…"
+          : r.state === "ok"
+            ? r.price
+              ? `Available · ${eur(r.price)} for ${nights} nights`
+              : "Available · price on request"
+            : r.state === "no"
+              ? "Not available for these dates"
+              : "Availability to be confirmed";
+    };
+    const scheduleApply = () => {
+      clearTimeout(liveApplyTimer);
+      liveApplyTimer = setTimeout(() => apply(false), 150);
+    };
+    const runLive = () => {
+      while (liveRunning < LIVE_CONCURRENCY && liveQueue.length) {
+        const card = liveQueue.shift();
+        const key = liveKey(card);
+        const [uuid, from, to] = key.split("|");
+        liveRunning += 1;
+        fetch("/api/availability/", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ uuid, from, to }),
+        })
+          .then((r) => r.json())
+          .then((d) => {
+            if (!d || d.ok === false) throw new Error("live");
+            const price = d.priceOnRequest ? 0 : Number(d.price) || 0;
+            liveResult.set(key, { state: d.available ? "ok" : "no", price });
+            if (key !== liveKey(card)) return; // dates changed meanwhile
+            if (!d.available) {
+              availabilitySet?.delete(uuid);
+              availabilityPrice.delete(uuid);
+            } else if (price) availabilityPrice.set(uuid, price);
+          })
+          .catch(() => {
+            // One retry (IMpulse sometimes takes >25 s); then "to be confirmed".
+            if (!card.dataset.liveRetried) {
+              card.dataset.liveRetried = "1";
+              liveResult.set(key, { state: "pending", price: 0 });
+              liveQueue.push(card);
+            } else liveResult.set(key, { state: "error", price: 0 });
+          })
+          .finally(() => {
+            liveRunning -= 1;
+            paintLive(card);
+            scheduleApply();
+            runLive();
+          });
+      }
+    };
+    const confirmShown = (shown) => {
+      if (!liveFromCalendar || !availabilitySet || !stayNights()) {
+        cards.forEach(paintLive);
+        return;
+      }
+      shown.forEach((card) => {
+        const key = liveKey(card);
+        if (!liveResult.has(key)) {
+          liveResult.set(key, { state: "pending", price: 0 });
+          liveQueue.push(card);
+        } else if (liveResult.get(key).state === "ok" && liveResult.get(key).price) {
+          availabilityPrice.set(key.split("|")[0], liveResult.get(key).price);
+        }
+        paintLive(card);
+      });
+      runLive();
     };
 
     const apply = (resetStep = true) => {
@@ -978,6 +1103,7 @@
       if (moreBtn) moreBtn.textContent = `Load more villas (${Math.max(0, matched.length - visible)})`;
       renderChips(state);
       syncUrl(state);
+      confirmShown([...ordered.slice(0, visible), ...pairResult.pairs.flatMap((p) => [p.a, p.b])]);
     };
 
     // Bedrooms from–to: whole numbers 1–30, and "to" never below "from" (as on the portal).
