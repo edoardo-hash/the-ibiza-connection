@@ -687,7 +687,10 @@
       }
       const dated = availabilitySet && stayNights();
       const where = state.district || state.area ? locationLabel(state) : "";
-      const intro = `No single villa${where ? ` in ${where}` : ""} has ${state.bmin}${state.bmax && state.bmax !== state.bmin ? `–${state.bmax}` : "+"} bedrooms${dated ? " free for your dates" : ""}. These pairs of villas, a few minutes apart, have them together${!result.local && where ? ` — the closest pairs to ${where}` : ""}.`;
+      const beds = `${state.bmin}${state.bmax && state.bmax !== state.bmin ? `–${state.bmax}` : "+"} bedrooms`;
+      const intro = result.alongside
+        ? `For ${beds}${where ? ` in ${where}` : ""} you can also take two villas a few minutes apart${dated ? ", both free for your dates" : ""}${!result.local && where ? ` — the closest pairs to ${where}` : ""}.`
+        : `No single villa${where ? ` in ${where}` : ""} has ${state.bmin}${state.bmax && state.bmax !== state.bmin ? `–${state.bmax}` : "+"} bedrooms${dated ? " free for your dates" : ""}. These pairs of villas, a few minutes apart, have them together${!result.local && where ? ` — the closest pairs to ${where}` : ""}.`;
       const params = new URLSearchParams();
       if (dateFrom?.value) params.set("arrive", dateFrom.value);
       if (dateTo?.value) params.set("depart", dateTo.value);
@@ -706,7 +709,8 @@
           </div>`;
         })
         .join("")}`;
-      results.insertBefore(pairsEl, results.firstChild);
+      if (result.alongside) (moreWrap || results).after(pairsEl);
+      else results.insertBefore(pairsEl, results.firstChild);
     };
 
     const matches = (card, state) => {
@@ -1183,7 +1187,11 @@
       }
       const nearbyCards = nearby.map((n) => n.card);
       // No single villa with the bedrooms asked for (in the chosen place, or anywhere nearby) → pairs.
-      const pairResult = state.bmin && exact.length === 0 ? findPairs(state) : { pairs: [] };
+      // Portal rule (src/lib/villa-groups.ts): propose pairs when no single villa fits, when fewer than
+      // 3 single villas fit, or for a big request (10+ bedrooms or 20+ guests).
+      const bigRequest = Number(state.bmin) >= 10 || Number(state.guests) >= 20;
+      const pairResult = state.bmin && (exact.length < 3 || bigRequest) ? findPairs(state) : { pairs: [] };
+      pairResult.alongside = exact.length > 0;
       const ordered = [...sortCards(exact, state.sort), ...nearbyCards];
       const matched = ordered;
       ordered.forEach((card) => results.appendChild(card));

@@ -397,7 +397,8 @@ and the strict changeover day — e.g. "Strictly Saturday-Saturday" villas only 
 Saturday, as on the portal, except last-minute stays and stays of twice the minimum). Every villa
 then SHOWN is confirmed live with IMpulse (the villa page's single quote, 6 at a time, one retry):
 a villa that isn't available drops out, the others show the confirmed price for the stay. Bedroom
-searches and the "two villas within 5 km" pairs use the licensed (legal) bedrooms.
+searches and the "two villas within 5 km" pairs use the licensed (legal) bedrooms. Pairs are offered,
+as on the portal, when no single villa fits, when fewer than 3 do, or for 10+ bedrooms or 20+ guests.
 With dates, cards show the price for the stay instead of the weekly "from" price. When the dates
 aren't Saturday to Saturday and fewer than 8 villas match, a "Villas available Saturday to
 Saturday" section (smaller thumbnails, up to 8) offers villas free for the closest Saturdays, with
