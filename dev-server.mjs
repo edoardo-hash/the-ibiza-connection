@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createGzip } from "node:zlib";
 import { checkAvailability } from "./lib/availability.mjs";
+import { chat, chatEnabled } from "./lib/chat.mjs";
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.join(ROOT, "dist");
@@ -150,6 +151,25 @@ const server = http.createServer(async (req, res) => {
     sendJson(res, 200, {
       ok: true,
       apiConfigured: Boolean(process.env.INVENIO_API_KEY && process.env.INVENIO_BP_UUID),
+    });
+    return;
+  }
+
+  if (url.pathname === "/api/chat" || url.pathname === "/api/chat/") {
+    if (req.method === "GET") {
+      sendJson(res, 200, { enabled: chatEnabled() });
+      return;
+    }
+    let raw = "";
+    req.on("data", (chunk) => {
+      raw += chunk;
+      if (raw.length > 100_000) req.destroy();
+    });
+    req.on("end", async () => {
+      let input = {};
+      try { input = JSON.parse(raw || "{}"); } catch { /* empty */ }
+      const result = await chat(input, { ip: req.socket.remoteAddress || "" });
+      sendJson(res, result.status, result.body);
     });
     return;
   }

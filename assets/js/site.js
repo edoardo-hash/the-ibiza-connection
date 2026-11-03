@@ -1325,6 +1325,120 @@
     });
   }
 
+
+  /* ------------------------------------------------------------------ */
+  /*  AI concierge (api/chat). Shown only when the server has a key.     */
+  /* ------------------------------------------------------------------ */
+  (function concierge() {
+    const STORE = "tic-concierge";
+    const read = () => {
+      try { return JSON.parse(sessionStorage.getItem(STORE) || "[]"); } catch { return []; }
+    };
+    const save = (list) => {
+      try { sessionStorage.setItem(STORE, JSON.stringify(list.slice(-24))); } catch { /* private mode */ }
+    };
+    const escapeHtml = (t) => t.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    // Light markdown: [text](link) for site paths, wa.me and mailto; **bold**; lists; line breaks.
+    const render = (text) =>
+      escapeHtml(text)
+        .replace(/\[([^\]]+)\]\(((?:\/[^\s)]*)|(?:https:\/\/wa\.me\/[^\s)]*)|(?:mailto:[^\s)]*))\)/g, (_, label, href) =>
+          `<a href="${href}"${href.startsWith("/") ? "" : ' target="_blank" rel="noopener"'}>${label}</a>`)
+        .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+        .replace(/^\s*[-•]\s+/gm, "• ")
+        .replace(/\n/g, "<br>");
+
+    const start = () => {
+      const root = document.createElement("div");
+      root.className = "concierge";
+      root.innerHTML = `
+        <button class="concierge__open" type="button" aria-expanded="false" aria-controls="concierge-panel">
+          <span class="concierge__dot" aria-hidden="true"></span> Ask our concierge
+        </button>
+        <section class="concierge__panel" id="concierge-panel" role="dialog" aria-label="Villa concierge" hidden>
+          <header class="concierge__head">
+            <div><strong>Villa concierge</strong><span>AI assistant · our team confirms every booking</span></div>
+            <button class="concierge__close" type="button" aria-label="Close">×</button>
+          </header>
+          <div class="concierge__log" aria-live="polite"></div>
+          <form class="concierge__form">
+            <label class="sr-only" for="concierge-input">Your message</label>
+            <textarea id="concierge-input" rows="1" maxlength="2000" placeholder="Dates, guests, the kind of villa you like…"></textarea>
+            <button type="submit" aria-label="Send">→</button>
+          </form>
+        </section>`;
+      document.body.appendChild(root);
+      const open = root.querySelector(".concierge__open");
+      const panel = root.querySelector(".concierge__panel");
+      const log = root.querySelector(".concierge__log");
+      const form = root.querySelector(".concierge__form");
+      const input = root.querySelector("textarea");
+      let history = read();
+      let busy = false;
+
+      const bubble = (role, html) => {
+        const el = document.createElement("div");
+        el.className = `concierge__msg concierge__msg--${role}`;
+        el.innerHTML = html;
+        log.appendChild(el);
+        log.scrollTop = log.scrollHeight;
+        return el;
+      };
+      const paint = () => {
+        log.innerHTML = "";
+        bubble("assistant", "Hello! I can help you find the right villa in Ibiza. When are you thinking of coming, and how many of you are there?");
+        history.forEach((m) => bubble(m.role, m.role === "user" ? escapeHtml(m.content).replace(/\n/g, "<br>") : render(m.content)));
+      };
+      const toggle = (show) => {
+        panel.hidden = !show;
+        open.setAttribute("aria-expanded", String(show));
+        root.classList.toggle("is-open", show);
+        if (show) { paint(); setTimeout(() => input.focus(), 50); }
+      };
+      open.addEventListener("click", () => toggle(panel.hidden));
+      root.querySelector(".concierge__close").addEventListener("click", () => toggle(false));
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) toggle(false); });
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); }
+      });
+      input.addEventListener("input", () => {
+        input.style.height = "auto";
+        input.style.height = `${Math.min(input.scrollHeight, 120)}px`;
+      });
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const text = input.value.trim();
+        if (!text || busy) return;
+        busy = true;
+        input.value = "";
+        input.style.height = "auto";
+        history.push({ role: "user", content: text });
+        save(history);
+        bubble("user", escapeHtml(text).replace(/\n/g, "<br>"));
+        const wait = bubble("assistant", '<span class="concierge__typing"><i></i><i></i><i></i></span>');
+        try {
+          const res = await fetch("/api/chat/", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ messages: history, page: location.pathname }),
+          });
+          const data = await res.json().catch(() => ({}));
+          const reply = data.reply || data.error || "Sorry, something went wrong. Please message us on WhatsApp.";
+          if (data.reply) { history.push({ role: "assistant", content: reply }); save(history); }
+          wait.innerHTML = render(reply);
+        } catch {
+          wait.innerHTML = "Sorry, I couldn't connect. Please message us on WhatsApp.";
+        }
+        log.scrollTop = log.scrollHeight;
+        busy = false;
+      });
+    };
+
+    fetch("/api/chat/", { method: "GET" })
+      .then((r) => (r.ok ? r.json() : { enabled: false }))
+      .then((d) => { if (d.enabled) start(); })
+      .catch(() => {});
+  })();
+
   /* ------------------------------------------------------------------ */
   /*  Small niceties                                                     */
   /* ------------------------------------------------------------------ */

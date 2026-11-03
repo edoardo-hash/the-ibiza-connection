@@ -2313,6 +2313,37 @@ def write(path: str, content: str) -> None:
     target.write_text(content, encoding="utf-8")
 
 
+def write_chat_data() -> None:
+    """lib/chat-data.json for the AI concierge (api/chat): only what the public site shows —
+    client prices (markup applied, none on DCC), booked dates, area distances. No net prices,
+    no owners, no exact positions, no uuids."""
+    villas = []
+    for v in VILLAS:
+        info = area_info(v) or {}
+        villas.append({
+            "slug": v["slug"], "name": v["name"], "area": v["area"], "district": v["region_name"],
+            "bedrooms": v["bedrooms"], "bathrooms": v["bathrooms"], "sleeps": v["sleeps"],
+            "from_week": v.get("price_from") or None, "to_week": v.get("price_to") or None,
+            "min_nights": v.get("min_nights") or 7, "short_stays": bool(v.get("short_stays")),
+            "check_in_days": v.get("check_in_days") or "", "licence": display_licence(v),
+            "summary": v.get("summary") or "", "audience": v.get("audience") or [],
+            "amenities": v.get("amenities") or [],
+            "nearby": {k: info.get(k) for k in ("airportKm", "townKm", "beach", "nearTown", "supermarket",
+                                               "restaurants", "sights") if info.get(k) is not None},
+            "rates": [[r["from"], r["to"], r["night"], r.get("min_nights") or 0] for r in PRICES.get(v["slug"], [])],
+            "booked": _BUSY["busy"].get(v["v_uuid"].lower(), []),
+        })
+    data = {
+        "updated": _BUSY.get("fetched_at", ""),
+        "site": SITE_URL,
+        "whatsapp": SITE.get("whatsapp", ""),
+        "email": SITE.get("email", ""),
+        "price_match": (SETTINGS.get("price_match") or {}).get("text", ""),
+        "villas": villas,
+    }
+    (ROOT / "lib" / "chat-data.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+
+
 def main() -> None:
     # Build into a staging folder, then swap it into place. This keeps the
     # running site complete while a rebuild is in progress.
@@ -2324,6 +2355,7 @@ def main() -> None:
     shutil.copytree(ASSETS, STAGE / "assets")
 
     write(STAYS_URL.lstrip("/"), STAYS_JSON)
+    write_chat_data()
 
     # Core pages
     write("index.html", build_home())

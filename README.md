@@ -368,3 +368,24 @@ Refresh the register with a new download from the Consell:
 
 Bedrooms and bathrooms are the villa's real counts from IMpulse (`api_villa_list_lr`);
 guests stay the licensed number. The licence is shown on every villa card and villa page.
+
+## The area (what's nearby)
+
+Villa pages show distances to the airport and Ibiza Town, the nearest beach, village and
+supermarket, and the three nearest restaurants and places worth seeing — the same data as the
+Invenio portal. `data/area/area-road.json` (road km, OSRM) and `area-info.json` come from the
+portal repo (`src/data/`); villas missing there are computed in a straight line from their exact
+GPS by `fetch_invenio.py` into `area-computed.json`. Only names and kilometres are stored.
+
+## AI concierge
+
+A chat button on every page ("Ask our concierge") answers visitors with Claude, using only what
+the site shows: `build.py` writes `lib/chat-data.json` (client prices, booked dates, rooms,
+licences, what's nearby — no net prices, owners or positions). `lib/chat.mjs` gives Claude two
+tools (`search_villas`, `villa_details`) so availability and prices are computed, not guessed.
+It never books or promises anything: bookings, payments, discounts, events and complaints go to
+WhatsApp, email or the contact form.
+
+Set `ANTHROPIC_API_KEY` in Vercel (Production) to switch it on; without it the button stays
+hidden. `CHAT_MODEL` overrides the model (default `claude-sonnet-4-5`). 30 messages per visitor
+per 10 minutes.

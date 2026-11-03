@@ -29,6 +29,10 @@
   "functions": {
     "api/availability/index.js": {
       "maxDuration": 60
+    },
+    "api/chat/index.js": {
+      "maxDuration": 60,
+      "includeFiles": "lib/chat-data.json"
     }
   },
   "redirects": [
