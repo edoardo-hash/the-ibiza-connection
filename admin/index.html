@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Control panel — The Ibiza Connection</title>
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body class="cp">
+
+<!-- Login -->
+<section class="cp-login" data-view="login" hidden>
+  <form class="cp-login__card" data-login>
+    <img class="cp-mark" src="/assets/img/mark.svg" width="40" height="40" alt="">
+    <p class="eyebrow">The Ibiza Connection</p>
+    <h1>Control panel</h1>
+    <label class="cp-field">
+      <span>Email</span>
+      <input type="email" name="email" autocomplete="username" required>
+    </label>
+    <label class="cp-field">
+      <span>Password</span>
+      <input type="password" name="password" autocomplete="current-password" required>
+    </label>
+    <p class="cp-error" data-login-error hidden></p>
+    <button class="btn btn--block" type="submit">Log in</button>
+  </form>
+</section>
+
+<!-- Panel -->
+<div class="cp-app" data-view="app" hidden>
+  <header class="cp-top">
+    <a class="cp-brand" href="/" target="_blank" rel="noopener">
+      <img src="/assets/img/mark.svg" width="28" height="28" alt="">
+      <span>The Ibiza Connection <em>control panel</em></span>
+    </a>
+    <div class="cp-top__right">
+      <span class="cp-user" data-user></span>
+      <button class="cp-link" type="button" data-logout>Log out</button>
+    </div>
+  </header>
+
+  <main class="cp-main">
+    <section class="cp-chat" aria-label="Ask for a change">
+      <div class="cp-thread" data-thread aria-live="polite">
+        <div class="cp-welcome" data-welcome>
+          <p class="eyebrow">Edit the website</p>
+          <h2>What would you like to change?</h2>
+          <p>Describe the change in plain words, or attach a photo and say where it should go. Every change is saved as a draft — check it in Preview, then Publish.</p>
+          <div class="cp-examples">
+            <button type="button" data-example="Our opening hours have changed to ">Update opening hours</button>
+            <button type="button" data-example="On the boat rental page, change ">Edit a page</button>
+            <button type="button" data-example="Change the phone number shown on the website to ">Change the phone number</button>
+            <button type="button" data-example="On the home page, rewrite the main headline to ">Rewrite a headline</button>
+            <button type="button" data-example="Use the attached photo as the main picture on the home page.">Change a photo</button>
+            <button type="button" data-example="Where on the website do we mention the opening hours?">Ask a question</button>
+          </div>
+        </div>
+      </div>
+      <form class="cp-compose" data-compose>
+        <label class="visually-hidden" for="cp-input">Your request</label>
+        <div class="cp-tray" data-tray hidden></div>
+        <textarea id="cp-input" name="message" rows="3" placeholder="e.g. Change the opening hours in the footer to Monday to Saturday, 9:00–19:00 — or attach a photo and say where it should go" required></textarea>
+        <div class="cp-compose__bar">
+          <label class="cp-attach">
+            <input type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" multiple data-file>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><circle cx="8.5" cy="10" r="1.6"/><path d="m21 16-5-5-7 7"/></svg>
+            <span>Add photo</span>
+          </label>
+          <span class="cp-hint">Enter to send · Shift+Enter for a new line · you can also paste or drop photos</span>
+          <button class="btn btn--sm" type="submit" data-send>Send</button>
+        </div>
+      </form>
+    </section>
+
+    <aside class="cp-side">
+      <section class="cp-card" data-pending-card>
+        <div class="cp-card__head">
+          <p class="eyebrow">Draft</p>
+          <button class="cp-link" type="button" data-refresh>Refresh</button>
+        </div>
+        <h2 data-pending-title>No changes waiting</h2>
+        <ul class="cp-list" data-pending-list></ul>
+        <div class="cp-actions" data-pending-actions hidden>
+          <a class="btn btn--ghost btn--sm" data-preview target="_blank" rel="noopener">Open preview</a>
+          <button class="btn btn--sm" type="button" data-publish>Publish</button>
+          <button class="cp-link" type="button" data-undo-draft>Undo last change</button>
+          <button class="cp-link cp-link--danger" type="button" data-discard>Discard draft</button>
+        </div>
+        <p class="cp-note" data-pending-note hidden>The preview rebuilds in about 3–4 minutes after each change.</p>
+      </section>
+
+      <section class="cp-card">
+        <p class="eyebrow">Recently published</p>
+        <ul class="cp-list cp-list--quiet" data-recent></ul>
+        <p class="cp-note">“Undo” puts a reversal of that change into the draft — check it, then Publish. Villa names, photos, prices and availability come from IMpulse — change them there.</p>
+      </section>
+    </aside>
+  </main>
+</div>
+
+<div class="cp-toast" data-toast role="status" hidden></div>
+<script src="/admin/admin.js" defer></script>
+</body>
+</html>

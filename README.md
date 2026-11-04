@@ -417,3 +417,25 @@ hotelers, apartaments). All four are stored in `data/register/` (CSV, plus the o
 Tourist-home licences (ET/ETV/VT/VTV, or a mistyped prefix) match on the number; AG, HAC and the
 other kinds match the same letters + number in their own list. Units sharing one licence (e.g. Es
 Palauet) are flagged when their guests together exceed the licence's places.
+
+## Control panel (/admin/)
+
+Natalia and Edo edit the site's words, contact details, styles and editorial photos by chatting with Claude at
+`/admin/`. Every change is a commit on the `cms-draft` branch (Vercel builds a preview of it); **Publish** moves it to
+`main`. Same design as the Lila Villas panel.
+
+- Files: `admin/` (page), `api/admin/index.js` (one endpoint, `/api/admin/?action=…`), `lib/cms/` (auth, GitHub, editor).
+- Claude may edit only `content/**/*.json` and `assets/css/site.css`, and add photos under `assets/img/uploads/`.
+  Edits must stay valid JSON; `pricing`, `hidden_villas`, `licence_*` and `site.url` in settings.json are refused.
+- Undo is limited to those files; the daily "Villa refresh" commits are hidden from Recently published.
+- Commits carry the editor's first name and info@theibizaconnection.net (the repo is public).
+
+Vercel settings (Production only, Sensitive; redeploy after any change):
+
+| Variable | What |
+| --- | --- |
+| ADMIN_USERS | JSON email → scrypt hash. Make a hash: `node --input-type=module -e "import {hashPassword} from './lib/cms/auth.js'; console.log(hashPassword('pw'))"` |
+| ADMIN_SESSION_SECRET | 32+ random characters; changing it logs everyone out |
+| GITHUB_TOKEN | Fine-grained token, repository the-ibiza-connection only, Contents read/write |
+| ANTHROPIC_API_KEY | Already set for the concierge chat; model `claude-sonnet-5-5` (override ANTHROPIC_MODEL) |
+| CMS_PREVIEW_URL (optional) | Defaults to theibizaconnection-git-cms-draft-edos-projects-ab12d8b9.vercel.app |

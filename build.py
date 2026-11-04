@@ -2368,6 +2368,8 @@ def main() -> None:
 
     # Assets
     shutil.copytree(ASSETS, STAGE / "assets")
+    # Control panel (/admin/): static page; its API is api/admin/index.js. Not indexed.
+    shutil.copytree(ROOT / "admin", STAGE / "admin")
 
     write(STAYS_URL.lstrip("/"), STAYS_JSON)
     write_chat_data()
@@ -2399,7 +2401,7 @@ def main() -> None:
     write("sitemap.xml", build_sitemap())
     write(
         "robots.txt",
-        f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n",
+        f"User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: {SITE_URL}/sitemap.xml\n",
     )
     write(
         "site.webmanifest",
