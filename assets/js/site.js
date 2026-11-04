@@ -1651,8 +1651,10 @@
       const root = document.createElement("div");
       root.className = "concierge";
       root.innerHTML = `
-        <button class="concierge__open" type="button" aria-expanded="false" aria-controls="concierge-panel">
-          <span class="concierge__dot" aria-hidden="true"></span> Ask our concierge
+        <button class="concierge__open" type="button" aria-expanded="false" aria-controls="concierge-panel" aria-label="Ask our concierge">
+          <span class="concierge__dot" aria-hidden="true"></span>
+          <svg class="concierge__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8 8 0 0 1-8.5 8L7 21l1-4.5A8 8 0 1 1 21 11.5z"/></svg>
+          <span class="concierge__label">Ask our concierge</span>
         </button>
         <section class="concierge__panel" id="concierge-panel" role="dialog" aria-label="Villa concierge" hidden>
           <header class="concierge__head">
@@ -1667,6 +1669,16 @@
           </form>
         </section>`;
       document.body.appendChild(root);
+      // Keep the pill out of the way: hidden while the home search panel is on screen
+      // and while someone is typing in a form field elsewhere on the page.
+      const yieldTo = (on, why) => root.classList.toggle(`is-yielding-${why}`, on);
+      const heroSearch = document.querySelector(".search-panel");
+      if (heroSearch && "IntersectionObserver" in window) {
+        new IntersectionObserver(([e]) => yieldTo(e.isIntersecting, "search"), { threshold: 0 }).observe(heroSearch);
+      }
+      const isField = (el) => el && el.matches && el.matches("input, select, textarea") && !root.contains(el);
+      document.addEventListener("focusin", (e) => yieldTo(isField(e.target), "typing"));
+      document.addEventListener("focusout", () => setTimeout(() => yieldTo(isField(document.activeElement), "typing"), 0));
       const open = root.querySelector(".concierge__open");
       const panel = root.querySelector(".concierge__panel");
       const log = root.querySelector(".concierge__log");
@@ -1746,6 +1758,21 @@
   const year = new Date().getFullYear();
   $$("[data-year]").forEach((el) => {
     el.textContent = String(year);
+  });
+
+  // Home search on phones: bedrooms and budget sit behind "More filters".
+  // Opens by itself if either already has a value (e.g. coming back to the page).
+  $$("[data-search-more]").forEach((btn) => {
+    const panel = btn.closest(".search-panel");
+    const extra = $$(".search-field--beds input, .search-field--beds select, .search-field--budget input, .search-field--budget select", panel);
+    const set = (on) => {
+      panel.classList.toggle("is-expanded", on);
+      btn.setAttribute("aria-expanded", String(on));
+      btn.firstChild.textContent = on ? "Fewer filters " : "More filters ";
+      btn.lastElementChild.textContent = on ? "−" : "+";
+    };
+    if (extra.some((el) => el.value && el.value !== "0")) set(true);
+    btn.addEventListener("click", () => set(!panel.classList.contains("is-expanded")));
   });
 
   // Set today's date as the minimum for any standalone date inputs.

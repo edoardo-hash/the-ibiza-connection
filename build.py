@@ -564,6 +564,7 @@ def header(active: str = "") -> str:
     </nav>
     <div class="header-actions">
       <a class="header-phone" href="tel:{SITE['phone']}">{SITE['phone_display']}</a>
+      <a class="header-wa" href="{wa_link(SITE['whatsapp_message'])}" target="_blank" rel="noopener" aria-label="WhatsApp us">{icon('chat')}</a>
       <a class="btn btn--small btn--ghost" href="/contact/">Plan your stay</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
         <span></span><span></span><span class="sr-only">Menu</span>
@@ -1033,7 +1034,7 @@ def build_home() -> str:
         <div class="search-field search-field--dates">
           {date_range_field("arrive", "depart", label=search.get("dates_label", "Check in · Check out"))}
         </div>
-        <div class="search-field">
+        <div class="search-field search-field--guests">
           <label for="hero-guests">{esc(search['guests_label'])}</label>
           <select id="hero-guests" name="guests">{guest_options()}</select>
         </div>
@@ -1045,6 +1046,7 @@ def build_home() -> str:
           <span class="search-field__label">Budget for the stay</span>
           {budget_range()}
         </div>
+        <button class="search-more" type="button" aria-expanded="false" data-search-more>More filters <span aria-hidden="true">+</span></button>
         <button class="btn" type="submit">{esc(search['submit'])}{icon('arrow')}</button>
       </form>"""
 
@@ -1232,7 +1234,7 @@ def amenity_filter_options() -> str:
     chosen = [a for a in preferred if counts.get(a, 0) >= 6][:12]
     return "".join(
         f'<label class="check"><input type="checkbox" data-feature="{slugify(a)}">'
-        f'<span>{esc(a.replace(" (additional charges may apply)", ""))} <span class="muted" style="font-size:11px">({counts.get(a, 0)})</span></span></label>'
+        f'<span>{esc(a.replace(" (additional charges may apply)", ""))} <span class="muted" style="font-size:12px">({counts.get(a, 0)})</span></span></label>'
         for a in chosen
     )
 
