@@ -430,7 +430,7 @@ Natalia and Edo edit the site's words, contact details, styles and editorial pho
 - Undo is limited to those files; the daily "Villa refresh" commits are hidden from Recently published.
 - Commits carry the editor's first name and info@theibizaconnection.net (the repo is public).
 
-Vercel settings (Production only, Sensitive; redeploy after any change):
+Vercel settings (Production only, Sensitive; redeploy after any change). Set up 4 Nov 2026 for Natalia and Edo:
 
 | Variable | What |
 | --- | --- |
