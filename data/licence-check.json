@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-03",
+ "checked_on": "2026-11-04",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -238,19 +238,6 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "CA NA CARLA",
-   "issues": []
-  },
-  "30281336-36ab-40a6-a8bb-f298735cc794": {
-   "name": "Can Berry",
-   "slug": "can-berry",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-2034-E",
-   "register_licence": "ETV2034E",
-   "register_places": 10,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "SA PAISSA DE CAS BERRIS",
    "issues": []
   },
   "5df336ed-657f-4269-9e22-138b305f242e": {
@@ -1109,19 +1096,6 @@
    "register_name": "VILLA VENTURA",
    "issues": []
   },
-  "5134d815-efef-48b7-a1fc-03d7ce8489ee": {
-   "name": "Can Solis",
-   "slug": "can-solis",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-1427-E",
-   "register_licence": "ETV1427E",
-   "register_places": 6,
-   "register_municipality": "SANT ANTONI DE PORTMANY",
-   "register": "habitatges-turistics",
-   "register_name": "CASA AMERICANO",
-   "issues": []
-  },
   "e9de14fc-9c93-46ca-a7e5-6584885bb149": {
    "name": "Can Tehani",
    "slug": "can-tehani",
@@ -1319,19 +1293,6 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "CASA MONIQUE",
-   "issues": []
-  },
-  "6b7801e8-d55f-483b-873e-46a7ff2d4a0f": {
-   "name": "Casa Muca",
-   "slug": "casa-muca",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-1931-E",
-   "register_licence": "ETV1931E",
-   "register_places": 10,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CASA VALLE",
    "issues": []
   },
   "c04544dd-cd56-4f1f-a015-b79a72891d1f": {
@@ -3549,7 +3510,7 @@
  "counts": {
   "format_differs": 3,
   "not_in_register": 2,
-  "verified": 261
+  "verified": 258
  },
  "hidden": [
   "Villa Brisa"
