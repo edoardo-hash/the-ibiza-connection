@@ -334,6 +334,15 @@ def icon(name: str, cls: str = "") -> str:
     )
 
 
+# The logo (Nov 2026): wordmark with the mirrorball O, inlined so it takes the header's text colour.
+BRAND_LOGO_SVG = (ROOT / "assets" / "img" / "brand" / "tic-logo-current.svg").read_text(encoding="utf-8").strip()
+
+
+def brand_logo(cls: str = "brand__logo", uid: str = "bc") -> str:
+    svg = BRAND_LOGO_SVG.replace('role="img" aria-label="The Ibiza Connection"', f'class="{cls}" aria-hidden="true" focusable="false"')
+    return svg.replace('id="bc"', f'id="{uid}"').replace("url(#bc)", f"url(#{uid})")
+
+
 def brand_mark(cls: str = "brand__mark") -> str:
     return (
         f'<svg class="{cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
@@ -522,7 +531,7 @@ def organisation_schema() -> dict:
         "telephone": SITE["phone"],
         "vatID": SITE["nif"],
         "image": SITE_URL + "/assets/img/og.webp",
-        "logo": SITE_URL + "/assets/img/favicon.svg",
+        "logo": SITE_URL + "/assets/img/brand/tic-logo.svg",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": SITE["address"]["line1"],
@@ -556,8 +565,7 @@ def header(active: str = "") -> str:
 <header class="site-header" data-header>
   <div class="site-header__inner">
     <a class="brand" href="/" aria-label="{esc(SITE['name'])} — home">
-      {brand_mark()}
-      <span class="brand__name">{esc(SITE['name'])}</span>
+      {brand_logo()}
     </a>
     <nav class="nav" aria-label="Primary">
       <ul>{nav_items}</ul>
@@ -623,7 +631,7 @@ def footer() -> str:
   <div class="wrap">
     <div class="footer-top">
       <div>
-        <div class="footer-brand__mark">{brand_mark()}<span class="brand__name">{esc(SITE['name'])}</span></div>
+        <div class="footer-brand__mark" role="img" aria-label="{esc(SITE['name'])}">{brand_logo("footer-brand__logo", "bf")}</div>
         <h2 class="footer-headline">{esc(FOOTER['headline'])}</h2>
         <p class="footer-note">{esc(FOOTER['note'])}</p>
         <div class="footer-contact">
@@ -2039,7 +2047,7 @@ def build_article(post: dict) -> str:
             "publisher": {
                 "@type": "Organization",
                 "name": SITE["name"],
-                "logo": {"@type": "ImageObject", "url": SITE_URL + "/assets/img/favicon.svg"},
+                "logo": {"@type": "ImageObject", "url": SITE_URL + "/assets/img/brand/tic-logo.svg"},
             },
             "mainEntityOfPage": f"{SITE_URL}/journal/{post['slug']}/",
         }
