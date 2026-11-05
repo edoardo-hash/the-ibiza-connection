@@ -135,8 +135,6 @@ em { font-style: italic; }
   opacity: 0.7;
 }
 .eyebrow--plain::before { display: none; }
-/* Home hero: the logo's tagline, same light, widely spaced lettering. */
-.hero__tagline { font-weight: 400; letter-spacing: 0.5em; }
 .eyebrow--light { color: rgba(246, 241, 231, 0.86); }
 
 .lede {
@@ -257,7 +255,12 @@ body[data-hero] .site-header.is-stuck {
 }
 .brand__mark { width: 26px; height: 26px; flex-shrink: 0; }
 .brand__logo { display: block; height: 22px; width: auto; }
-.footer-brand__logo { display: block; height: 28px; width: auto; max-width: 100%; }
+/* Home: the full logo with its tagline sits in the hero; the header shows the small logo once you scroll. */
+.hero__logo { margin: 0 0 clamp(26px, 4vw, 44px); }
+.hero__logo-svg { display: block; width: clamp(340px, 44vw, 640px); max-width: 100%; height: auto; }
+body[data-hero] .site-header:not(.is-stuck) .brand { opacity: 0; pointer-events: none; }
+body[data-hero] .site-header .brand { transition: opacity 0.4s var(--ease); }
+.footer-brand__logo { display: block; height: 44px; width: auto; max-width: 100%; }
 .brand__name {
   font-size: 12px;
   font-weight: 500;
@@ -1662,7 +1665,7 @@ select.filter-select,
   .brand__name { font-size: 12px; letter-spacing: 0.167em; }
   .brand__mark { width: 22px; height: 22px; }
   .brand__logo { height: 14px; }
-  .footer-brand__logo { height: 22px; }
+  .footer-brand__logo { height: 34px; }
   .hero { padding-top: calc(var(--header) + 26px); }
   .hero__title { max-width: 12ch; font-size: clamp(2.7rem, 12vw, 4.2rem); }
   .search-panel {

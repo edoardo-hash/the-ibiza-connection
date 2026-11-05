@@ -336,11 +336,14 @@ def icon(name: str, cls: str = "") -> str:
 
 # The logo (Nov 2026): wordmark with the mirrorball O, inlined so it takes the header's text colour.
 BRAND_LOGO_SVG = (ROOT / "assets" / "img" / "brand" / "tic-logo-current.svg").read_text(encoding="utf-8").strip()
+BRAND_LOCKUP_SVG = (ROOT / "assets" / "img" / "brand" / "tic-logo-tagline-current.svg").read_text(encoding="utf-8").strip()
 
 
-def brand_logo(cls: str = "brand__logo", uid: str = "bc") -> str:
-    svg = BRAND_LOGO_SVG.replace('role="img" aria-label="The Ibiza Connection"', f'class="{cls}" aria-hidden="true" focusable="false"')
-    return svg.replace('id="bc"', f'id="{uid}"').replace("url(#bc)", f"url(#{uid})")
+def brand_logo(cls: str = "brand__logo", uid: str = "bc", tagline: bool = False) -> str:
+    """The logo inline; tagline=True is the full lockup with 'Private villas · Ibiza' underneath."""
+    svg, old = (BRAND_LOCKUP_SVG, "bt") if tagline else (BRAND_LOGO_SVG, "bc")
+    svg = svg.replace('role="img" aria-label="The Ibiza Connection"', f'class="{cls}" aria-hidden="true" focusable="false"')
+    return svg.replace(f'id="{old}"', f'id="{uid}"').replace(f"url(#{old})", f"url(#{uid})")
 
 
 def brand_mark(cls: str = "brand__mark") -> str:
@@ -631,7 +634,7 @@ def footer() -> str:
   <div class="wrap">
     <div class="footer-top">
       <div>
-        <div class="footer-brand__mark" role="img" aria-label="{esc(SITE['name'])}">{brand_logo("footer-brand__logo", "bf")}</div>
+        <div class="footer-brand__mark" role="img" aria-label="{esc(SITE['name'])}">{brand_logo("footer-brand__logo", "bf", tagline=True)}</div>
         <h2 class="footer-headline">{esc(FOOTER['headline'])}</h2>
         <p class="footer-note">{esc(FOOTER['note'])}</p>
         <div class="footer-contact">
@@ -1090,7 +1093,7 @@ def build_home() -> str:
     </picture>
   </div>
   <div class="hero__inner wrap">
-    <p class="eyebrow eyebrow--light eyebrow--plain hero__tagline">{esc(hero['eyebrow'])}</p>
+    <div class="hero__logo" role="img" aria-label="{esc(SITE['name'])} · {esc(hero['eyebrow'])}">{brand_logo("hero__logo-svg", "bh", tagline=True)}</div>
     <h1 class="hero__title">{hero['title_html']}</h1>
     <p class="hero__lede">{esc(hero['lede'])}</p>
     <div class="hero__actions">
