@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-04",
+ "checked_on": "2026-11-05",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -571,19 +571,6 @@
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "CASA PURA",
-   "issues": []
-  },
-  "ec7d99c5-00c7-4535-aee1-197d598f3be5": {
-   "name": "Can Kai",
-   "slug": "can-kai",
-   "status": "verified",
-   "ok": true,
-   "licence": "ET-0823-E",
-   "register_licence": "ET0823E",
-   "register_places": 7,
-   "register_municipality": "SANT ANTONI DE PORTMANY",
-   "register": "habitatges-turistics",
-   "register_name": "CAN ROSER",
    "issues": []
   },
   "a9504ecd-6331-4a28-ad7d-d594a0cdb48d": {
@@ -1474,19 +1461,6 @@
    "register_name": "VILLA SAMAVARA",
    "issues": []
   },
-  "78e6f6e1-81a5-4e06-9912-f2cb75a95866": {
-   "name": "Finca Utopia",
-   "slug": "finca-utopia",
-   "status": "verified",
-   "ok": true,
-   "licence": "AG-0043-E",
-   "register_licence": "AG0043E",
-   "register_places": 22,
-   "register_municipality": "SANT JOAN DE LABRITJA",
-   "register": "turisme-rural",
-   "register_name": "FINCA DELICA",
-   "issues": []
-  },
   "81afc765-287a-4777-b04c-36ca09feafe4": {
    "name": "Finca Utopia Xarraca",
    "slug": "finca-utopia-xarraca",
@@ -1868,17 +1842,15 @@
   "e719028f-7020-457f-bcf7-fdea1d65bdad": {
    "name": "Villa Brisa",
    "slug": "villa-brisa",
-   "status": "not_in_register",
-   "ok": false,
-   "licence": "ETV-1292-E",
-   "register_licence": null,
-   "register_places": null,
-   "register_municipality": null,
-   "register": null,
-   "register_name": null,
-   "issues": [
-    "1292 ('ETV-1292-E') is not in the register"
-   ]
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1792-E",
+   "register_licence": "ETV1792E",
+   "register_places": 10,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA MORNA",
+   "issues": []
   },
   "a2f9886d-6a6b-46fc-97d1-5bafd8e369c6": {
    "name": "Villa Cala Tarida Rafael",
@@ -2322,6 +2294,19 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "CAN SELLERAS",
+   "issues": []
+  },
+  "39658bdd-f817-4938-b467-a3d7d43f54a0": {
+   "name": "Villa Gracie",
+   "slug": "villa-gracie",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1620-E",
+   "register_licence": "ETV1620E",
+   "register_places": 4,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "HATAEW",
    "issues": []
   },
   "a6e7b687-be58-47d4-86c6-d7afcd5f7dc4": {
@@ -3509,12 +3494,10 @@
  },
  "counts": {
   "format_differs": 3,
-  "not_in_register": 2,
+  "not_in_register": 1,
   "verified": 258
  },
- "hidden": [
-  "Villa Brisa"
- ],
+ "hidden": [],
  "flagged": [
   "Can Arte",
   "Can Aspen",
