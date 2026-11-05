@@ -1090,7 +1090,7 @@ def build_home() -> str:
     </picture>
   </div>
   <div class="hero__inner wrap">
-    <p class="eyebrow eyebrow--light">{esc(hero['eyebrow'])}</p>
+    <p class="eyebrow eyebrow--light eyebrow--plain hero__tagline">{esc(hero['eyebrow'])}</p>
     <h1 class="hero__title">{hero['title_html']}</h1>
     <p class="hero__lede">{esc(hero['lede'])}</p>
     <div class="hero__actions">
