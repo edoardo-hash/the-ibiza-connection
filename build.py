@@ -538,7 +538,8 @@ def organisation_schema() -> dict:
         "address": {
             "@type": "PostalAddress",
             "streetAddress": SITE["address"]["line1"],
-            "addressLocality": "Santa Eulària des Riu",
+            "addressLocality": "Santa Eulalia del Río",
+            "postalCode": "07840",
             "addressRegion": "Ibiza, Balearic Islands",
             "addressCountry": "ES",
         },

@@ -14,13 +14,13 @@
     "whatsapp": "34697875890",
     "whatsapp_message": "Hello The Ibiza Connection, I would like to enquire about a villa.",
     "address": {
-      "line1": "Carrer Pintors Puget 16, Local 3",
-      "line2": "Santa Eulària des Riu",
+      "line1": "Calle Molins de Rey 12",
+      "line2": "07840 Santa Eulalia del Río",
       "line3": "Ibiza, Balearic Islands"
     },
     "map": {
-      "lat": 38.98489,
-      "lng": 1.53303
+      "lat": 38.98438,
+      "lng": 1.53635
     },
     "hours": "Monday to Saturday, by phone or WhatsApp",
     "socials": [
@@ -37,7 +37,7 @@
         "href": "https://twitter.com/ibizaconnection"
       }
     ],
-    "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x1299417978e93511:0x152cf6e8a40573ef?sa=X&ved=1t:8290&ictx=111"
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Calle+Molins+de+Rey+12,+07840+Santa+Eulalia+del+R%C3%ADo,+Ibiza"
   },
   "pricing": {
     "currency": "EUR",
@@ -132,7 +132,7 @@
         ]
       }
     ],
-    "legal": "The Ibiza Connection · NIF B42772145 · Carrer Pintors Puget 16, Local 3, Santa Eulària des Riu, Ibiza"
+    "legal": "The Ibiza Connection · NIF B42772145 · Calle Molins de Rey 12, 07840 Santa Eulalia del Río, Ibiza"
   },
   "hidden_villas": [
     {
