@@ -532,7 +532,9 @@ def organisation_schema() -> dict:
         "description": SITE["description"],
         "email": SITE["email"],
         "telephone": SITE["phone"],
-        "vatID": SITE["nif"],
+        "legalName": SITE["legal_name"],
+        "taxID": SITE["nif"],
+        "vatID": SITE.get("vat") or SITE["nif"],
         "image": SITE_URL + "/assets/img/og.webp",
         "logo": SITE_URL + "/assets/img/brand/tic-logo.svg",
         "address": {

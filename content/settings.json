@@ -2,8 +2,9 @@
   "site": {
     "name": "The Ibiza Connection",
     "short_name": "Ibiza Connection",
-    "legal_name": "The Ibiza Connection",
-    "nif": "B42772145",
+    "legal_name": "Invenio Homes S.L.",
+    "nif": "B16649519",
+    "vat": "ESB16649519",
     "url": "https://theibizaconnection.net",
     "locale": "en_GB",
     "tagline": "Private villas and island living, arranged by people who live here.",
@@ -132,7 +133,7 @@
         ]
       }
     ],
-    "legal": "The Ibiza Connection · NIF B42772145 · Calle Molins de Rey 12, 07840 Santa Eulalia del Río, Ibiza"
+    "legal": "The Ibiza Connection is operated by Invenio Homes S.L. · NIF B16649519 · VAT ESB16649519 · Calle Molins de Rey 12, 07840 Santa Eulalia del Río, Ibiza, Baleares"
   },
   "hidden_villas": [
     {
