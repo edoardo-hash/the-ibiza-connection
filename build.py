@@ -568,7 +568,7 @@ def header(active: str = "") -> str:
 <header class="site-header" data-header>
   <div class="site-header__inner">
     <a class="brand" href="/" aria-label="{esc(SITE['name'])} — home">
-      {brand_logo()}
+      {brand_logo("brand__logo brand__logo--short", "bs")}{brand_logo("brand__logo brand__logo--full", "bh", tagline=True)}
     </a>
     <nav class="nav" aria-label="Primary">
       <ul>{nav_items}</ul>
@@ -1093,7 +1093,6 @@ def build_home() -> str:
     </picture>
   </div>
   <div class="hero__inner wrap">
-    <div class="hero__logo" role="img" aria-label="{esc(SITE['name'])} · {esc(hero['eyebrow'])}">{brand_logo("hero__logo-svg", "bh", tagline=True)}</div>
     <h1 class="hero__title">{hero['title_html']}</h1>
     <p class="hero__lede">{esc(hero['lede'])}</p>
     <div class="hero__actions">

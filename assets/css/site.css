@@ -255,11 +255,10 @@ body[data-hero] .site-header.is-stuck {
 }
 .brand__mark { width: 26px; height: 26px; flex-shrink: 0; }
 .brand__logo { display: block; height: 22px; width: auto; }
-/* Home: the full logo with its tagline sits in the hero; the header shows the small logo once you scroll. */
-.hero__logo { margin: 0 0 clamp(18px, 2.4vw, 28px); }
-.hero__logo-svg { display: block; width: clamp(240px, 24vw, 340px); max-width: 100%; height: auto; }
-body[data-hero] .site-header:not(.is-stuck) .brand { opacity: 0; pointer-events: none; }
-body[data-hero] .site-header .brand { transition: opacity 0.4s var(--ease); }
+/* Home, over the photo: the full logo with its tagline, in line with the menu. Small logo once scrolled. */
+.brand__logo--full { display: none; width: 300px; height: auto; margin-top: 12px; }
+body[data-hero] .site-header:not(.is-stuck) .brand__logo--full { display: block; }
+body[data-hero] .site-header:not(.is-stuck) .brand__logo--short { display: none; }
 .footer-brand__logo { display: block; height: 44px; width: auto; max-width: 100%; }
 .brand__name {
   font-size: 12px;
@@ -1665,6 +1664,7 @@ select.filter-select,
   .brand__name { font-size: 12px; letter-spacing: 0.167em; }
   .brand__mark { width: 22px; height: 22px; }
   .brand__logo { height: 14px; }
+  .brand__logo--full { width: 210px; height: auto; margin-top: 8px; }
   .footer-brand__logo { height: 34px; }
   .hero { padding-top: calc(var(--header) + 26px); }
   .hero__title { max-width: 12ch; font-size: clamp(2.7rem, 12vw, 4.2rem); }
