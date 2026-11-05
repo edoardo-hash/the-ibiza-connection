@@ -256,8 +256,8 @@ body[data-hero] .site-header.is-stuck {
 .brand__mark { width: 26px; height: 26px; flex-shrink: 0; }
 .brand__logo { display: block; height: 22px; width: auto; }
 /* Home: the full logo with its tagline sits in the hero; the header shows the small logo once you scroll. */
-.hero__logo { margin: 0 0 clamp(26px, 4vw, 44px); }
-.hero__logo-svg { display: block; width: clamp(340px, 44vw, 640px); max-width: 100%; height: auto; }
+.hero__logo { margin: 0 0 clamp(18px, 2.4vw, 28px); }
+.hero__logo-svg { display: block; width: clamp(240px, 24vw, 340px); max-width: 100%; height: auto; }
 body[data-hero] .site-header:not(.is-stuck) .brand { opacity: 0; pointer-events: none; }
 body[data-hero] .site-header .brand { transition: opacity 0.4s var(--ease); }
 .footer-brand__logo { display: block; height: 44px; width: auto; max-width: 100%; }
