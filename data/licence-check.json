@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-05",
+ "checked_on": "2026-11-06",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -374,36 +374,6 @@
    "register_name": "ONCE LLAVES",
    "issues": []
   },
-  "5d5a8cfe-424b-4915-a5e7-3b25d3f4c57e": {
-   "name": "Can Cleo",
-   "slug": "can-cleo",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-2492-E",
-   "register_licence": "ETV2492E",
-   "register_places": 4,
-   "register_municipality": "SANTA EULARIA DES RIU",
-   "register": "habitatges-turistics",
-   "register_name": "CAS GOBERNADOR",
-   "issues": [
-    "Shown for 8 guests; the register allows 4 places"
-   ]
-  },
-  "8ec3f91c-b217-4af2-9f54-5f425af05b53": {
-   "name": "Can Daneri",
-   "slug": "can-daneri",
-   "status": "verified",
-   "ok": true,
-   "licence": "ET-0626-E",
-   "register_licence": "ET0626E",
-   "register_places": 8,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CAN DANIEL",
-   "issues": [
-    "Shown for 10 guests; the register allows 8 places"
-   ]
-  },
   "a1166e7b-39f2-4d88-afb7-a54883b91e41": {
    "name": "Can Danza",
    "slug": "can-danza",
@@ -441,19 +411,6 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "CA N´ANDREUET DE BAIX",
-   "issues": []
-  },
-  "d7b91ea9-16eb-44f7-983e-fb3e05b8fd5b": {
-   "name": "Can Deme",
-   "slug": "can-deme",
-   "status": "verified",
-   "ok": true,
-   "licence": "ET-0391-E",
-   "register_licence": "ET0391E",
-   "register_places": 8,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "VALLTORTA",
    "issues": []
   },
   "62cdf013-9b7c-44e4-8615-46d72a6c9318": {
@@ -1163,6 +1120,19 @@
    "register_name": "CASA LA VISTA",
    "issues": []
   },
+  "a1f34a77-76f6-47bc-a844-30fbbf1011d5": {
+   "name": "Casa Aces",
+   "slug": "casa-aces",
+   "status": "verified",
+   "ok": true,
+   "licence": "VTV-0250-EIF",
+   "register_licence": "VTV0250EIF",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "CASA TORRES CARON",
+   "issues": []
+  },
   "11f487fb-7b24-4bd0-ab77-b980aff32a25": {
    "name": "Casa Alhena",
    "slug": "casa-alhena",
@@ -1364,19 +1334,6 @@
    "register_name": "BOHEMIAN PEARL",
    "issues": []
   },
-  "e5ce24f8-7e9a-4f3d-b579-999a244e5a27": {
-   "name": "Corazon del Mar",
-   "slug": "corazon-del-mar",
-   "status": "verified",
-   "ok": true,
-   "licence": "ET-1061-E",
-   "register_licence": "ET1061E",
-   "register_places": 12,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "SA COVA",
-   "issues": []
-  },
   "dba98a71-47e0-4cf1-92ce-71f9598005f9": {
    "name": "El Sueno Marino",
    "slug": "el-sueno-marino",
@@ -1419,6 +1376,19 @@
    "issues": [
     "Es Palauet Apartment + Es Palauet Duplex share licence HAC0059E: 8 guests shown together, the register allows 6 places"
    ]
+  },
+  "70f36daa-4cff-46cb-be75-d4a0df5a3645": {
+   "name": "Finca Can Maddie",
+   "slug": "finca-can-maddie",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV2229E",
+   "register_licence": "ETV2229E",
+   "register_places": 8,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CAN FRIT DE SA BARDA",
+   "issues": []
   },
   "bbe632d9-e5b0-425d-9a43-5801f0e84bc0": {
    "name": "Finca Lucia",
@@ -1852,6 +1822,19 @@
    "register_name": "CASA MORNA",
    "issues": []
   },
+  "ff05e659-edc5-4037-b9b9-f9b6c4af7003": {
+   "name": "Villa Cala Blu",
+   "slug": "villa-cala-blu",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1737-E",
+   "register_licence": "ETV1737E",
+   "register_places": 8,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN MARI DE LA BASSA",
+   "issues": []
+  },
   "a2f9886d-6a6b-46fc-97d1-5bafd8e369c6": {
    "name": "Villa Cala Tarida Rafael",
    "slug": "villa-cala-tarida-rafael",
@@ -2188,19 +2171,6 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "turisme-rural",
    "register_name": "CAN BET",
-   "issues": []
-  },
-  "7444ee8e-d889-4194-a580-4380e4ee74ac": {
-   "name": "Villa Espera",
-   "slug": "villa-espera",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-2391-E",
-   "register_licence": "ETV2391E",
-   "register_places": 8,
-   "register_municipality": "SANTA EULARIA DES RIU",
-   "register": "habitatges-turistics",
-   "register_name": "VILLA MARGARITA",
    "issues": []
   },
   "a18954cb-b3ba-435f-892b-9a78a899df9f": {
@@ -2951,19 +2921,6 @@
    "register_name": "VILLA ORION",
    "issues": []
   },
-  "5afe328a-290d-4f92-8712-f46d71448ce8": {
-   "name": "Villa Pantera",
-   "slug": "villa-pantera",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV 1720 E",
-   "register_licence": "ETV1720E",
-   "register_places": 8,
-   "register_municipality": "SANT ANTONI DE PORTMANY",
-   "register": "habitatges-turistics",
-   "register_name": "CASANOVA",
-   "issues": []
-  },
   "55f85072-1a79-4356-9b59-8963acf0be21": {
    "name": "Villa Paola",
    "slug": "villa-paola",
@@ -3495,7 +3452,7 @@
  "counts": {
   "format_differs": 3,
   "not_in_register": 1,
-  "verified": 258
+  "verified": 255
  },
  "hidden": [],
  "flagged": [
@@ -3503,8 +3460,6 @@
   "Can Aspen",
   "Can Beso",
   "Can Brooke",
-  "Can Cleo",
-  "Can Daneri",
   "Can Milna",
   "Can Milna Deluxe",
   "Can Mistique",
