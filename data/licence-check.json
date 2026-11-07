@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-06",
+ "checked_on": "2026-11-07",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -2588,6 +2588,19 @@
    "register_name": "VILLA COBHAM PARADISE",
    "issues": []
   },
+  "e1d6c33f-d1e9-4139-a992-cf4c774cff3d": {
+   "name": "Villa Lucy",
+   "slug": "villa-lucy",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2306-E",
+   "register_licence": "ETV2306E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA OMNIA",
+   "issues": []
+  },
   "d42d2d6a-0eaa-4973-ae94-728100b0f149": {
    "name": "Villa Lumara",
    "slug": "villa-lumara",
@@ -3452,7 +3465,7 @@
  "counts": {
   "format_differs": 3,
   "not_in_register": 1,
-  "verified": 255
+  "verified": 256
  },
  "hidden": [],
  "flagged": [

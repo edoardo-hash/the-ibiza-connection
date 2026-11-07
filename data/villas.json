@@ -3311,6 +3311,10 @@
     2.0
    ],
    [
+    "villa-lucy",
+    2.0
+   ],
+   [
     "alegre-blue",
     2.5
    ],
@@ -8641,6 +8645,10 @@
     1.5
    ],
    [
+    "villa-lucy",
+    1.5
+   ],
+   [
     "can-verde",
     2.0
    ],
@@ -9647,6 +9655,10 @@
     4.5
    ],
    [
+    "villa-lucy",
+    4.5
+   ],
+   [
     "can-chloe",
     5.0
    ],
@@ -10016,6 +10028,10 @@
    ],
    [
     "villa-azure",
+    4.0
+   ],
+   [
+    "villa-lucy",
     4.0
    ],
    [
@@ -10610,6 +10626,10 @@
    ],
    [
     "villa-eliza",
+    5.0
+   ],
+   [
+    "villa-lucy",
     5.0
    ],
    [
@@ -15724,6 +15744,10 @@
     2.5
    ],
    [
+    "villa-lucy",
+    2.5
+   ],
+   [
     "can-elsa",
     3.0
    ],
@@ -16103,7 +16127,7 @@
   "v_uuid": "2dbec9dc-ded5-4e2f-a6ab-eacf4f492d88",
   "nightly_from": 6429,
   "nightly_to": 55000,
-  "rate_rows": 10,
+  "rate_rows": 9,
   "real_bedrooms": 7,
   "real_bathrooms": 7,
   "licence_check": {
@@ -17451,6 +17475,10 @@
    ],
    [
     "villa-gracie",
+    3.5
+   ],
+   [
+    "villa-lucy",
     3.5
    ],
    [
@@ -18877,6 +18905,10 @@
     4.0
    ],
    [
+    "villa-lucy",
+    4.0
+   ],
+   [
     "villa-lydia",
     4.0
    ],
@@ -19732,6 +19764,10 @@
     3.5
    ],
    [
+    "villa-lucy",
+    3.5
+   ],
+   [
     "villa-lydia",
     3.5
    ],
@@ -20107,6 +20143,10 @@
    ],
    [
     "villa-jaja",
+    5.0
+   ],
+   [
+    "villa-lucy",
     5.0
    ],
    [
@@ -23718,6 +23758,10 @@
     2.5
    ],
    [
+    "villa-lucy",
+    2.5
+   ],
+   [
     "villa-maia",
     2.5
    ],
@@ -24938,6 +24982,10 @@
     4.5
    ],
    [
+    "villa-lucy",
+    4.5
+   ],
+   [
     "villa-paraiso",
     4.5
    ],
@@ -25704,6 +25752,10 @@
     5.0
    ],
    [
+    "villa-lucy",
+    5.0
+   ],
+   [
     "villa-trinity",
     5.0
    ]
@@ -25901,7 +25953,7 @@
   "v_uuid": "c1a75604-38ee-4379-ade7-60b626e53d53",
   "nightly_from": 613,
   "nightly_to": 1195,
-  "rate_rows": 10,
+  "rate_rows": 9,
   "real_bedrooms": 6,
   "real_bathrooms": 5,
   "licence_check": {
@@ -26286,6 +26338,10 @@
    ],
    [
     "can-paloma",
+    2.5
+   ],
+   [
+    "villa-lucy",
     2.5
    ],
    [
@@ -26684,6 +26740,10 @@
    ],
    [
     "villa-jaja",
+    5.0
+   ],
+   [
+    "villa-lucy",
     5.0
    ],
    [
@@ -28356,6 +28416,10 @@
     4.5
    ],
    [
+    "villa-lucy",
+    4.5
+   ],
+   [
     "can-mistique",
     5.0
    ],
@@ -28576,7 +28640,7 @@
   "v_uuid": "432b24eb-cdad-4fa2-84a6-138027d33f5f",
   "nightly_from": 613,
   "nightly_to": 1195,
-  "rate_rows": 10,
+  "rate_rows": 9,
   "real_bedrooms": 6,
   "real_bathrooms": 6,
   "licence_check": {
@@ -31840,6 +31904,10 @@
     3.5
    ],
    [
+    "villa-lucy",
+    3.5
+   ],
+   [
     "villa-gracie",
     4.0
    ],
@@ -33372,6 +33440,10 @@
     5.0
    ],
    [
+    "villa-lucy",
+    5.0
+   ],
+   [
     "villa-monica",
     5.0
    ],
@@ -34135,6 +34207,10 @@
    ],
    [
     "villa-harper",
+    2.5
+   ],
+   [
+    "villa-lucy",
     2.5
    ],
    [
@@ -35327,6 +35403,10 @@
    [
     "villa-cara",
     0.5
+   ],
+   [
+    "villa-lucy",
+    1.0
    ],
    [
     "can-elsa",
@@ -37029,6 +37109,10 @@
    ],
    [
     "villa-eliana",
+    2.0
+   ],
+   [
+    "villa-lucy",
     2.0
    ],
    [
@@ -43137,6 +43221,10 @@
     5.0
    ],
    [
+    "villa-lucy",
+    5.0
+   ],
+   [
     "villa-paraiso",
     5.0
    ],
@@ -44252,6 +44340,10 @@
    ],
    [
     "villa-eliza",
+    3.0
+   ],
+   [
+    "villa-lucy",
     3.0
    ],
    [
@@ -45441,6 +45533,10 @@
     1.5
    ],
    [
+    "villa-lucy",
+    1.5
+   ],
+   [
     "can-elsa",
     2.0
    ],
@@ -45980,6 +46076,423 @@
   "image": "/assets/villas/villa-jeanette/01-800.webp",
   "image_large": "/assets/villas/villa-jeanette/01-1400.webp",
   "image_colour": "#8f8a75"
+ },
+ {
+  "slug": "villa-lucy",
+  "name": "Villa Lucy",
+  "tagline": "A sleek and sophisticated villa close to wonderful beaches",
+  "summary": "Villa Lucy is a modern 5 bedroom property located in the very heart of the mountains of Ibiza, just minutes away from some of the most popular beaches on the west coast of Ibiza and only a short walk to the many…",
+  "description": [
+   "Villa Lucy is a modern 5 bedroom property located in the very heart of the mountains of Ibiza, just minutes away from some of the most popular beaches on the west coast of Ibiza and only a short walk to the many delights which San Jose village has to offer. This contemporary home is set on a sprawling plot of land, and its most popular feature is that it offers uninterrupted and unforgettable countryside and sea views. It is finished to the highest specifications",
+   "Villa Lucy has been expertly styled and finished with expert attention to the finest details, to create a modern theme which abounds throughout the property. A modern, welcoming lounge area looks out to the sea, the property is equipped with a well appointed, clean white kitchen. Natural light floods through the floor to ceiling sliding doors to create the illusion of extra open space between already expansive interiors and exteriors.",
+   "Each of the five bedrooms are resplendent with king size beds, private terraces with memorable seaviews, en-suite bathrooms and all are of course furnished to the highest standard with stylish, designer fittings. All of the beds are fitted with luxury 500 thread count 100% Egyptian cotton for your comfort and enjoyment.",
+   "The rectangular heated infinity pool is surrounded by a spacious sun terrace, a large outdoor dining area, dedicated chill-out area and a roof terrace where you can truly immerse yourself in the uninterrupted seaviews. You will also find a outdoor gym, a bespoke sauna with forest views, making this the ideal spot to rest, revive and relax.",
+   "Sauna and heated pool 1000€ per week",
+   "A wonderful family home for your stay in Ibiza."
+  ],
+  "area": "San Jose",
+  "area_key": "San Jose",
+  "region": "san-jose",
+  "region_name": "San José",
+  "district": "San Jose de Sa Talaia",
+  "country": "Spain",
+  "bedrooms": 5,
+  "bathrooms": 5,
+  "sleeps": 10,
+  "price_from": 9900,
+  "price_to": 25000,
+  "price_on_request": false,
+  "min_nights": 7,
+  "short_stays": false,
+  "cleaning": "6 Cleanings per week",
+  "cleaning_charge": 0,
+  "check_in": "16:00",
+  "check_out": "10:00",
+  "check_in_days": "Strictly Saturday-Saturday",
+  "license": "ETV-2306-E",
+  "dcc": false,
+  "api_switch_on": false,
+  "unpublished_on": null,
+  "amenities": [
+   "Air Conditioning",
+   "Al Fresco Dining",
+   "Alarm",
+   "BBQ",
+   "Country View",
+   "Fenced",
+   "Music System",
+   "Swimming Pool",
+   "TV - Satellite",
+   "Wheelchair Friendly",
+   "Wifi",
+   "Hire Car Recommended",
+   "Safety Box",
+   "Sunloungers",
+   "Sea View",
+   "Private Parking",
+   "Central Heating",
+   "Smart TV",
+   "Fully fitted kitchen",
+   "Infinity pool",
+   "Gated",
+   "Roof Terrace",
+   "Terraces",
+   "Sauna/Steam Room",
+   "Sunset View",
+   "Live in Staff",
+   "Staff",
+   "Heated Pool (additional charges may apply)",
+   "Gym/Fitness Equipment"
+  ],
+  "amenity_groups": [
+   {
+    "title": "Outside",
+    "items": [
+     "Al Fresco Dining",
+     "BBQ",
+     "Swimming Pool",
+     "Sunloungers",
+     "Private Parking",
+     "Infinity pool",
+     "Roof Terrace",
+     "Terraces",
+     "Heated Pool (additional charges may apply)"
+    ]
+   },
+   {
+    "title": "Inside",
+    "items": [
+     "Air Conditioning",
+     "Music System",
+     "TV - Satellite",
+     "Wifi",
+     "Safety Box",
+     "Central Heating",
+     "Smart TV",
+     "Fully fitted kitchen",
+     "Gym/Fitness Equipment"
+    ]
+   },
+   {
+    "title": "Setting",
+    "items": [
+     "Alarm",
+     "Country View",
+     "Fenced",
+     "Hire Car Recommended",
+     "Sea View",
+     "Gated",
+     "Sunset View"
+    ]
+   },
+   {
+    "title": "Also included",
+    "items": [
+     "Wheelchair Friendly",
+     "Sauna/Steam Room",
+     "Live in Staff",
+     "Staff"
+    ]
+   }
+  ],
+  "audience": [
+   "Private",
+   "Couples",
+   "Families",
+   "Friends"
+  ],
+  "photos": [
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/1O5A0057.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/exterior 8.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/exterior 3.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/gym 3.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/exterior 5.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/exterior 4.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/exterior 6.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/gym 1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/gym 2.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/1O5A0347.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/interior corridor DSC04838.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/kitchen DSC04664.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/room 1 DSC04376.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/room 2 xbathroom pano DSC04592.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/room 4 DSC04929.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/room 5 DSC05000.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/room B DSC04535.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/room C DSC04610.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/room C DSC06446.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/room C DSC06447.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/room C DSC06448.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8/villa_images/room C DSC06449.jpg"
+  ],
+  "lat": 38.92478,
+  "lng": 1.28164,
+  "v_id": 8,
+  "v_uuid": "e1d6c33f-d1e9-4139-a992-cf4c774cff3d",
+  "nightly_from": 1415,
+  "nightly_to": 3572,
+  "rate_rows": 10,
+  "real_bedrooms": 5,
+  "real_bathrooms": 5,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2306-E",
+   "register_licence": "ETV2306E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA OMNIA",
+   "issues": []
+  },
+  "near": [
+   [
+    "can-mistique",
+    1.0
+   ],
+   [
+    "can-olivander",
+    1.0
+   ],
+   [
+    "villa-cara",
+    1.0
+   ],
+   [
+    "can-paloma",
+    1.5
+   ],
+   [
+    "villa-jaja",
+    1.5
+   ],
+   [
+    "can-beso",
+    2.0
+   ],
+   [
+    "can-beth",
+    2.0
+   ],
+   [
+    "can-verde",
+    2.0
+   ],
+   [
+    "la-perla-escondida",
+    2.0
+   ],
+   [
+    "can-elsa",
+    2.5
+   ],
+   [
+    "can-meil",
+    2.5
+   ],
+   [
+    "villa-brielle",
+    2.5
+   ],
+   [
+    "villa-nizra",
+    2.5
+   ],
+   [
+    "villa-solvista",
+    2.5
+   ],
+   [
+    "villa-frankie",
+    3.0
+   ],
+   [
+    "can-agustin",
+    3.5
+   ],
+   [
+    "can-frutal",
+    3.5
+   ],
+   [
+    "can-laurel",
+    3.5
+   ],
+   [
+    "villa-cala-tarida-rafael",
+    3.5
+   ],
+   [
+    "villa-eliana",
+    3.5
+   ],
+   [
+    "villa-ivy",
+    3.5
+   ],
+   [
+    "alegre-blue",
+    4.0
+   ],
+   [
+    "can-senna",
+    4.0
+   ],
+   [
+    "villa-haisley",
+    4.0
+   ],
+   [
+    "villa-harper",
+    4.0
+   ],
+   [
+    "villa-zaria",
+    4.0
+   ],
+   [
+    "can-sandra",
+    4.5
+   ],
+   [
+    "villa-aurora",
+    4.5
+   ],
+   [
+    "villa-cayu",
+    4.5
+   ],
+   [
+    "villa-marielle",
+    4.5
+   ],
+   [
+    "villa-puma",
+    4.5
+   ],
+   [
+    "villa-wendy",
+    4.5
+   ],
+   [
+    "can-carva",
+    5.0
+   ],
+   [
+    "can-chloe",
+    5.0
+   ],
+   [
+    "can-milna",
+    5.0
+   ],
+   [
+    "can-milna-deluxe",
+    5.0
+   ],
+   [
+    "can-sabina",
+    5.0
+   ],
+   [
+    "can-tehani",
+    5.0
+   ],
+   [
+    "la-flaca",
+    5.0
+   ],
+   [
+    "villa-amazonia",
+    5.0
+   ],
+   [
+    "villa-cubes",
+    5.0
+   ],
+   [
+    "villa-dama",
+    5.0
+   ],
+   [
+    "villa-gracie",
+    5.0
+   ],
+   [
+    "villa-katherine",
+    5.0
+   ],
+   [
+    "villa-lumara",
+    5.0
+   ],
+   [
+    "villa-maia",
+    5.0
+   ],
+   [
+    "villa-mila",
+    5.0
+   ],
+   [
+    "villa-riley",
+    5.0
+   ],
+   [
+    "villa-serenity",
+    5.0
+   ],
+   [
+    "villa-sylvia",
+    5.0
+   ],
+   [
+    "villa-violetta",
+    5.0
+   ]
+  ],
+  "images": [
+   {
+    "base": "villas/villa-lucy/01",
+    "width": 1400,
+    "height": 933,
+    "colour": "#90a4b0"
+   },
+   {
+    "base": "villas/villa-lucy/02",
+    "width": 1400,
+    "height": 933,
+    "colour": "#878567"
+   },
+   {
+    "base": "villas/villa-lucy/03",
+    "width": 1400,
+    "height": 933,
+    "colour": "#8f9cb1"
+   },
+   {
+    "base": "villas/villa-lucy/04",
+    "width": 1400,
+    "height": 933,
+    "colour": "#979895"
+   },
+   {
+    "base": "villas/villa-lucy/05",
+    "width": 1400,
+    "height": 2100,
+    "colour": "#aa9f89"
+   },
+   {
+    "base": "villas/villa-lucy/06",
+    "width": 1400,
+    "height": 933,
+    "colour": "#8691a1"
+   }
+  ],
+  "image": "/assets/villas/villa-lucy/01-800.webp",
+  "image_large": "/assets/villas/villa-lucy/01-1400.webp",
+  "image_colour": "#90a4b0"
  },
  {
   "slug": "villa-lyla",
@@ -46997,6 +47510,10 @@
    ],
    [
     "villa-jeanette",
+    4.5
+   ],
+   [
+    "villa-lucy",
     4.5
    ],
    [
@@ -49928,6 +50445,10 @@
    ],
    [
     "villa-centelleo",
+    5.0
+   ],
+   [
+    "villa-lucy",
     5.0
    ]
   ],
@@ -53485,6 +54006,10 @@
    [
     "can-mistique",
     5.0
+   ],
+   [
+    "villa-lucy",
+    5.0
    ]
   ],
   "images": [
@@ -53823,6 +54348,10 @@
    ],
    [
     "villa-dama",
+    4.0
+   ],
+   [
+    "villa-lucy",
     4.0
    ],
    [
@@ -56455,7 +56984,7 @@
   "v_uuid": "c62be673-a4ef-465b-9426-6bc68d51ffbc",
   "nightly_from": 943,
   "nightly_to": 1886,
-  "rate_rows": 12,
+  "rate_rows": 11,
   "real_bedrooms": 4,
   "real_bathrooms": 4,
   "licence_check": {
@@ -56493,6 +57022,10 @@
    [
     "villa-jaja",
     1.5
+   ],
+   [
+    "villa-lucy",
+    2.0
    ],
    [
     "can-mistique",
@@ -57735,6 +58268,10 @@
    ],
    [
     "el-sueno-marino",
+    3.5
+   ],
+   [
+    "villa-lucy",
     3.5
    ],
    [
@@ -60797,6 +61334,10 @@
     5.0
    ],
    [
+    "villa-lucy",
+    5.0
+   ],
+   [
     "villa-ocean-vista",
     5.0
    ]
@@ -63003,7 +63544,7 @@
     "base": "villas/casa-aces/02",
     "width": 1400,
     "height": 933,
-    "colour": "#a89588"
+    "colour": "#a79588"
    },
    {
     "base": "villas/casa-aces/03",
@@ -65124,13 +65665,13 @@
     "base": "villas/finca-can-maddie/02",
     "width": 1400,
     "height": 933,
-    "colour": "#8b8d7f"
+    "colour": "#8b8d80"
    },
    {
     "base": "villas/finca-can-maddie/03",
     "width": 1400,
     "height": 933,
-    "colour": "#877f68"
+    "colour": "#878068"
    },
    {
     "base": "villas/finca-can-maddie/04",
@@ -66246,6 +66787,10 @@
    ],
    [
     "can-nuri",
+    5.0
+   ],
+   [
+    "villa-lucy",
     5.0
    ],
    [
@@ -67826,6 +68371,10 @@
     4.5
    ],
    [
+    "villa-lucy",
+    4.5
+   ],
+   [
     "can-frutal",
     5.0
    ],
@@ -69041,7 +69590,7 @@
     "base": "villas/villa-cala-blu/02",
     "width": 1400,
     "height": 933,
-    "colour": "#7f9fc8"
+    "colour": "#7fa0c7"
    },
    {
     "base": "villas/villa-cala-blu/03",
@@ -69065,7 +69614,7 @@
     "base": "villas/villa-cala-blu/06",
     "width": 1400,
     "height": 933,
-    "colour": "#aea38e"
+    "colour": "#aea48e"
    }
   ],
   "image": "/assets/villas/villa-cala-blu/01-800.webp",
@@ -69235,6 +69784,10 @@
    [
     "can-olivander",
     0.5
+   ],
+   [
+    "villa-lucy",
+    1.0
    ],
    [
     "can-paloma",
@@ -71021,6 +71574,10 @@
    ],
    [
     "villa-heidi",
+    5.0
+   ],
+   [
+    "villa-lucy",
     5.0
    ],
    [
@@ -76484,6 +77041,10 @@
    [
     "villa-gie",
     5.0
+   ],
+   [
+    "villa-lucy",
+    5.0
    ]
   ],
   "images": [
@@ -76882,6 +77443,10 @@
    ],
    [
     "villa-claire",
+    5.0
+   ],
+   [
+    "villa-lucy",
     5.0
    ],
    [
@@ -78142,6 +78707,10 @@
    ],
    [
     "villa-centelleo",
+    5.0
+   ],
+   [
+    "villa-lucy",
     5.0
    ]
   ],
@@ -82443,6 +83012,10 @@
    [
     "villa-gie",
     5.0
+   ],
+   [
+    "villa-lucy",
+    5.0
    ]
   ],
   "images": [
@@ -82817,6 +83390,10 @@
     5.0
    ],
    [
+    "villa-lucy",
+    5.0
+   ],
+   [
     "villa-paraiso",
     5.0
    ],
@@ -83100,6 +83677,10 @@
    ],
    [
     "can-frutal",
+    2.0
+   ],
+   [
+    "villa-lucy",
     2.0
    ],
    [
@@ -85100,6 +85681,10 @@
     3.5
    ],
    [
+    "villa-lucy",
+    3.5
+   ],
+   [
     "villa-meghan",
     3.5
    ],
@@ -85569,6 +86154,10 @@
    ],
    [
     "villa-cara",
+    2.5
+   ],
+   [
+    "villa-lucy",
     2.5
    ],
    [
@@ -86125,6 +86714,10 @@
     5.0
    ],
    [
+    "villa-lucy",
+    5.0
+   ],
+   [
     "villa-tess",
     5.0
    ]
@@ -86547,6 +87140,10 @@
     5.0
    ],
    [
+    "villa-lucy",
+    5.0
+   ],
+   [
     "villa-tess",
     5.0
    ]
@@ -86750,6 +87347,10 @@
    [
     "villa-cara",
     0.5
+   ],
+   [
+    "villa-lucy",
+    1.0
    ],
    [
     "can-elsa",
@@ -90313,7 +90914,7 @@
   "v_uuid": "12f557bd-36fd-4d25-8d36-c5f4130baf2e",
   "nightly_from": 605,
   "nightly_to": 825,
-  "rate_rows": 7,
+  "rate_rows": 6,
   "real_bedrooms": 3,
   "real_bathrooms": 3,
   "licence_check": {
@@ -91542,6 +92143,10 @@
     4.5
    ],
    [
+    "villa-lucy",
+    4.5
+   ],
+   [
     "villa-monica",
     4.5
    ],
@@ -92690,6 +93295,10 @@
    ],
    [
     "villa-brielle",
+    4.0
+   ],
+   [
+    "villa-lucy",
     4.0
    ],
    [
@@ -95189,7 +95798,7 @@
   "license": "ET-0860-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-07",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -97118,6 +97727,10 @@
     3.5
    ],
    [
+    "villa-lucy",
+    3.5
+   ],
+   [
     "villa-lydia",
     3.5
    ],
@@ -97530,6 +98143,10 @@
    ],
    [
     "villa-jayden",
+    4.0
+   ],
+   [
+    "villa-lucy",
     4.0
    ],
    [
@@ -98799,6 +99416,10 @@
    ],
    [
     "villa-haisley",
+    5.0
+   ],
+   [
+    "villa-lucy",
     5.0
    ]
   ],
