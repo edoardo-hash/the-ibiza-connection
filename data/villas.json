@@ -12962,7 +12962,7 @@
   "license": "ETV-1922-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-08",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -26826,7 +26826,7 @@
   "license": "ETV2400-E0",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-08",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -46463,7 +46463,7 @@
     "base": "villas/villa-lucy/02",
     "width": 1400,
     "height": 933,
-    "colour": "#878567"
+    "colour": "#878667"
    },
    {
     "base": "villas/villa-lucy/03",
@@ -93076,7 +93076,7 @@
   "license": "ET-1071-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-08",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
