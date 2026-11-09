@@ -2120,7 +2120,7 @@
   "license": "ET-1112-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-09",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -6446,7 +6446,7 @@
   "license": "ETV-1873-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-09",
   "amenities": [
    "Al Fresco Dining",
    "Alarm",
@@ -8462,7 +8462,7 @@
   "license": "ETV-1129E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-09",
   "amenities": [
    "Garden",
    "Air Conditioning",
@@ -41928,7 +41928,7 @@
   "v_uuid": "ded1897d-0c8d-4db0-b993-b7c832696c5d",
   "nightly_from": 786,
   "nightly_to": 1650,
-  "rate_rows": 13,
+  "rate_rows": 12,
   "real_bedrooms": 5,
   "real_bathrooms": 4,
   "licence_check": {
@@ -57959,7 +57959,7 @@
   "license": "ETV-2153-E",
   "dcc": false,
   "api_switch_on": true,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-09",
   "amenities": [
    "Solar Electricity",
    "Garden",
@@ -76085,7 +76085,7 @@
   "license": "ETV-1932-E",
   "dcc": false,
   "api_switch_on": true,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-09",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
