@@ -2888,7 +2888,7 @@
   "check_in_days": "Strictly Saturday-Saturday",
   "license": "ETV-1794-EIF",
   "dcc": false,
-  "api_switch_on": false,
+  "api_switch_on": true,
   "unpublished_on": null,
   "amenities": [
    "Garden",
@@ -6025,7 +6025,7 @@
   "license": "ETV-1426-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -7066,10 +7066,6 @@
     1.0
    ],
    [
-    "villa-talamanca-views",
-    1.0
-   ],
-   [
     "can-mambo",
     1.5
    ],
@@ -7598,7 +7594,7 @@
   "bathrooms": 6,
   "sleeps": 12,
   "price_from": 27500,
-  "price_to": 41800,
+  "price_to": 66000,
   "price_on_request": false,
   "min_nights": 3,
   "short_stays": false,
@@ -7800,7 +7796,7 @@
   "v_id": 9709,
   "v_uuid": "061e8895-4853-4cb4-8603-eb8f7be45ba7",
   "nightly_from": 3929,
-  "nightly_to": 5972,
+  "nightly_to": 9429,
   "rate_rows": 6,
   "real_bedrooms": 8,
   "real_bathrooms": 8,
@@ -8462,7 +8458,7 @@
   "license": "ETV-1129E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": "2026-11-09",
+  "unpublished_on": null,
   "amenities": [
    "Garden",
    "Air Conditioning",
@@ -11798,10 +11794,6 @@
     4.0
    ],
    [
-    "villa-talamanca-views",
-    4.0
-   ],
-   [
     "villa-amorigen",
     4.5
    ],
@@ -12864,10 +12856,6 @@
    ],
    [
     "villa-marti",
-    4.5
-   ],
-   [
-    "villa-talamanca-views",
     4.5
    ],
    [
@@ -13934,10 +13922,6 @@
     1.0
    ],
    [
-    "villa-talamanca-views",
-    1.0
-   ],
-   [
     "can-mambo",
     1.5
    ],
@@ -14454,10 +14438,6 @@
    ],
    [
     "villa-shiva",
-    1.0
-   ],
-   [
-    "villa-talamanca-views",
     1.0
    ],
    [
@@ -17034,10 +17014,6 @@
     1.0
    ],
    [
-    "villa-talamanca-views",
-    1.0
-   ],
-   [
     "the-wave-ibiza",
     1.5
    ],
@@ -17253,8 +17229,8 @@
   "check_in_days": "Strictly Saturday-Saturday",
   "license": "ET-0435-E",
   "dcc": false,
-  "api_switch_on": true,
-  "unpublished_on": null,
+  "api_switch_on": false,
+  "unpublished_on": "2026-11-09",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -19218,10 +19194,6 @@
     1.0
    ],
    [
-    "villa-talamanca-views",
-    1.0
-   ],
-   [
     "can-simo",
     1.5
    ],
@@ -20237,8 +20209,8 @@
   "check_in_days": "Flexible check in days",
   "license": "ETV-1050-E2",
   "dcc": false,
-  "api_switch_on": true,
-  "unpublished_on": null,
+  "api_switch_on": false,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -21229,10 +21201,12 @@
    "Smart TV",
    "Fully fitted kitchen",
    "Infinity pool",
+   "Gated",
    "Terraces",
    "Outdoor Kitchen",
    "Yoga Area",
    "Bar",
+   "Live in Staff",
    "Massage area",
    "Pool/Snooker Table",
    "Games Room",
@@ -21274,7 +21248,8 @@
      "Alarm",
      "Fenced",
      "Hire Car Recommended",
-     "Sea View"
+     "Sea View",
+     "Gated"
     ]
    },
    {
@@ -21282,6 +21257,7 @@
     "items": [
      "Yoga Area",
      "Bar",
+     "Live in Staff",
      "Massage area",
      "Pool/Snooker Table",
      "Disco/Club Room",
@@ -21298,7 +21274,8 @@
    "Retreats",
    "Events",
    "Honeymoon",
-   "Weddings"
+   "Weddings",
+   "Neighbours"
   ],
   "photos": [
    "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/61/villa_images/13.jpg",
@@ -27437,10 +27414,6 @@
     3.5
    ],
    [
-    "villa-talamanca-views",
-    3.5
-   ],
-   [
     "casa-fourteen",
     4.0
    ],
@@ -30454,10 +30427,6 @@
    ],
    [
     "villa-ibiza-bay",
-    4.0
-   ],
-   [
-    "villa-talamanca-views",
     4.0
    ],
    [
@@ -35635,7 +35604,7 @@
   "license": "ETV1941E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -35817,10 +35786,6 @@
    ],
    [
     "villa-dalt-view",
-    1.0
-   ],
-   [
-    "villa-talamanca-views",
     1.0
    ],
    [
@@ -37997,10 +37962,6 @@
     3.0
    ],
    [
-    "villa-talamanca-views",
-    3.0
-   ],
-   [
     "can-koi",
     3.5
    ],
@@ -39598,10 +39559,6 @@
     3.5
    ],
    [
-    "villa-talamanca-views",
-    3.5
-   ],
-   [
     "villa-tuscany",
     3.5
    ],
@@ -40360,10 +40317,6 @@
     2.0
    ],
    [
-    "villa-talamanca-views",
-    2.0
-   ],
-   [
     "villa-tuscany",
     2.0
    ],
@@ -40845,10 +40798,6 @@
    ],
    [
     "villa-equis",
-    3.0
-   ],
-   [
-    "villa-talamanca-views",
     3.0
    ],
    [
@@ -42274,10 +42223,6 @@
    ],
    [
     "villa-dalt-view",
-    1.0
-   ],
-   [
-    "villa-talamanca-views",
     1.0
    ],
    [
@@ -43921,10 +43866,6 @@
     3.5
    ],
    [
-    "villa-talamanca-views",
-    3.5
-   ],
-   [
     "villa-tuscany",
     3.5
    ],
@@ -45110,10 +45051,6 @@
     1.5
    ],
    [
-    "villa-talamanca-views",
-    1.5
-   ],
-   [
     "can-balena",
     2.0
    ],
@@ -45363,7 +45300,7 @@
   "check_in_days": "Flexible check in days",
   "license": "ETV-1168-E",
   "dcc": false,
-  "api_switch_on": false,
+  "api_switch_on": true,
   "unpublished_on": null,
   "amenities": [
    "Air Conditioning",
@@ -46780,10 +46717,6 @@
    ],
    [
     "casa-bayona",
-    1.5
-   ],
-   [
-    "villa-talamanca-views",
     1.5
    ],
    [
@@ -49637,7 +49570,7 @@
   "bathrooms": 6,
   "sleeps": 10,
   "price_from": 7970,
-  "price_to": 16940,
+  "price_to": 17710,
   "price_on_request": false,
   "min_nights": 4,
   "short_stays": false,
@@ -49802,8 +49735,8 @@
   "v_id": 17401,
   "v_uuid": "3065b54e-ddfb-446c-8190-e0a735f323f1",
   "nightly_from": 1139,
-  "nightly_to": 2420,
-  "rate_rows": 9,
+  "nightly_to": 2530,
+  "rate_rows": 16,
   "real_bedrooms": 7,
   "real_bathrooms": 9,
   "licence_check": {
@@ -51315,8 +51248,8 @@
   "check_in_days": "Flexible check in days",
   "license": "ETV-1222-E",
   "dcc": false,
-  "api_switch_on": true,
-  "unpublished_on": null,
+  "api_switch_on": false,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -51484,10 +51417,6 @@
    ],
    [
     "villa-shiva",
-    1.0
-   ],
-   [
-    "villa-talamanca-views",
     1.0
    ],
    [
@@ -51905,10 +51834,6 @@
    ],
    [
     "villa-samy",
-    1.0
-   ],
-   [
-    "villa-talamanca-views",
     1.0
    ],
    [
@@ -52550,422 +52475,6 @@
   "image": "/assets/villas/villa-style/01-800.webp",
   "image_large": "/assets/villas/villa-style/01-1400.webp",
   "image_colour": "#b4bfce"
- },
- {
-  "slug": "villa-talamanca-views",
-  "name": "Villa Talamanca views",
-  "tagline": "A stylish property close to Ibiza Town with spectacular sea views",
-  "summary": "Villa Talamanca views is a remarkable, newly built villa situated in a very much sought-after area close to Talamanca, which offers breathtaking views of Dalt Vila, the neighbouring island Formentera and the sparkling…",
-  "description": [
-   "Villa Talamanca views is a remarkable, newly built villa situated in a very much sought-after area close to Talamanca, which offers breathtaking views of Dalt Vila, the neighbouring island Formentera and the sparkling turquoise sea. This property is perfectly located close to the charming village of Jesús, with its many amenities and is only a short drive from the centre of Ibiza Town, with its fabulous attractions.",
-   "This home, developed over three levels, has five outstanding bedrooms all with en suite bathrooms and two additional guest bathrooms. The interiors are sleek and clean in design, and elegant architecture with a monochrome style is brightened with splashes of colourful contemporary decor, artworks and unique sculptures throughout.",
-   "The ground floor features an impressive entrance leading directly into the lounge with a fully equipped kitchen, and bar and opening onto an outdoor terrace space. The first floor also offers another large living room which has direct access to a private terrace. The shining jewel in this house is undoubtedly the Master Suite, which occupies the entire second floor and boasts its own large private terrace with an outdoor lounge and spectacular sea views.",
-   "Outside, a spacious terrace area comes complete with an outdoor lounge, summer dining area, an equipped gas barbecue, a wooden decked pool area, a bespoke bar and relaxing hammocks. From breakfast through to starlit dinners, this is the most idyllic space to immerse yourself in the uninterrupted views of the sea and the dazzling lights of Ibiza Town."
-  ],
-  "area": "Talamanca",
-  "area_key": "Talamanca",
-  "region": "ibiza",
-  "region_name": "Ibiza",
-  "district": "Ibiza",
-  "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
-  "sleeps": 10,
-  "price_from": 8800,
-  "price_to": 17600,
-  "price_on_request": false,
-  "min_nights": 7,
-  "short_stays": false,
-  "cleaning": "6 Cleanings per week",
-  "cleaning_charge": 300,
-  "check_in": "16:00",
-  "check_out": "11:00",
-  "check_in_days": "Strictly Saturday-Saturday",
-  "license": "ETV 1451 E",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": "2026-11-02",
-  "amenities": [
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "Alarm",
-   "BBQ",
-   "Fenced",
-   "Music System",
-   "Swimming Pool",
-   "TV - Satellite",
-   "Wifi",
-   "Hire Car Recommended",
-   "Safety Box",
-   "Sunloungers",
-   "Sea View",
-   "Sunrise View",
-   "Private Parking",
-   "Lawn Area",
-   "Fully fitted kitchen",
-   "Terraces"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers",
-     "Private Parking",
-     "Lawn Area",
-     "Terraces"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "Music System",
-     "TV - Satellite",
-     "Wifi",
-     "Safety Box",
-     "Fully fitted kitchen"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Alarm",
-     "Fenced",
-     "Hire Car Recommended",
-     "Sea View"
-    ]
-   },
-   {
-    "title": "Also included",
-    "items": [
-     "Sunrise View"
-    ]
-   }
-  ],
-  "audience": [
-   "Families",
-   "Friends"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/05.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/19.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/01.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/06.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/28.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/29..jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/27.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/32.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/02.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/03.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/04.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/07..jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/08..jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/09.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/10.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/11.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/12.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/13.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/14.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/15.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/16.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/17.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/18.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/20.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/21.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/22.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/23.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/24.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/25.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/26.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/30.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/90/villa_images/31.jpg"
-  ],
-  "lat": 38.91787,
-  "lng": 1.46872,
-  "v_id": 90,
-  "v_uuid": "39b3dd07-13d7-4637-a870-2c7126d42d30",
-  "nightly_from": 1258,
-  "nightly_to": 2515,
-  "rate_rows": 5,
-  "real_bedrooms": 5,
-  "real_bathrooms": 5,
-  "licence_check": {
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV 1451 E",
-   "register_licence": "ETV1451E",
-   "register_places": 10,
-   "register_municipality": "SANTA EULARIA DES RIU",
-   "register": "habitatges-turistics",
-   "register_name": "MISADA",
-   "issues": []
-  },
-  "near": [
-   [
-    "can-simo",
-    0.5
-   ],
-   [
-    "can-balena",
-    1.0
-   ],
-   [
-    "can-mambo",
-    1.0
-   ],
-   [
-    "can-nala",
-    1.0
-   ],
-   [
-    "can-nemo",
-    1.0
-   ],
-   [
-    "cana-safari",
-    1.0
-   ],
-   [
-    "casa-monigue",
-    1.0
-   ],
-   [
-    "villa-abigail",
-    1.0
-   ],
-   [
-    "villa-allison",
-    1.0
-   ],
-   [
-    "villa-alyssa",
-    1.0
-   ],
-   [
-    "villa-capo",
-    1.0
-   ],
-   [
-    "villa-claudette",
-    1.0
-   ],
-   [
-    "villa-dalt-view",
-    1.0
-   ],
-   [
-    "villa-emilia",
-    1.0
-   ],
-   [
-    "villa-equis",
-    1.0
-   ],
-   [
-    "villa-ingrid",
-    1.0
-   ],
-   [
-    "villa-kni",
-    1.0
-   ],
-   [
-    "villa-livia",
-    1.0
-   ],
-   [
-    "villa-marti",
-    1.0
-   ],
-   [
-    "villa-samy",
-    1.0
-   ],
-   [
-    "villa-serenza",
-    1.0
-   ],
-   [
-    "can-scarlett",
-    1.5
-   ],
-   [
-    "casa-bayona",
-    1.5
-   ],
-   [
-    "villa-azura",
-    1.5
-   ],
-   [
-    "villa-ibiza-bay",
-    1.5
-   ],
-   [
-    "villa-lyla",
-    1.5
-   ],
-   [
-    "villa-noel",
-    1.5
-   ],
-   [
-    "villa-shiva",
-    1.5
-   ],
-   [
-    "the-wave-ibiza",
-    2.0
-   ],
-   [
-    "villa-mini",
-    2.0
-   ],
-   [
-    "villa-jesus",
-    2.5
-   ],
-   [
-    "villa-jesus-for-four",
-    2.5
-   ],
-   [
-    "casa-fourteen",
-    3.0
-   ],
-   [
-    "casa-valldaura-1",
-    3.0
-   ],
-   [
-    "casa-valldaura-2",
-    3.0
-   ],
-   [
-    "es-palauet-apartment",
-    3.0
-   ],
-   [
-    "es-palauet-duplex",
-    3.0
-   ],
-   [
-    "villa-apia",
-    3.0
-   ],
-   [
-    "villa-ashley",
-    3.0
-   ],
-   [
-    "casa-canela",
-    3.5
-   ],
-   [
-    "house-of-dreams",
-    3.5
-   ],
-   [
-    "villa-fico",
-    3.5
-   ],
-   [
-    "villa-london",
-    3.5
-   ],
-   [
-    "villa-perla-blanca",
-    3.5
-   ],
-   [
-    "villa-tuscany",
-    3.5
-   ],
-   [
-    "can-sage",
-    4.0
-   ],
-   [
-    "cana-serena",
-    4.0
-   ],
-   [
-    "villa-infinite",
-    4.0
-   ],
-   [
-    "can-cabrit",
-    4.5
-   ],
-   [
-    "cana-gotas",
-    4.5
-   ],
-   [
-    "casa-clareta",
-    4.5
-   ],
-   [
-    "finca-lucia",
-    4.5
-   ],
-   [
-    "villa-zola",
-    4.5
-   ],
-   [
-    "villa-de-golf",
-    5.0
-   ],
-   [
-    "villa-judith",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/villa-talamanca-views/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#8aa6b7"
-   },
-   {
-    "base": "villas/villa-talamanca-views/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#a1aeb5"
-   },
-   {
-    "base": "villas/villa-talamanca-views/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#557292"
-   },
-   {
-    "base": "villas/villa-talamanca-views/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#9eb9c9"
-   },
-   {
-    "base": "villas/villa-talamanca-views/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#79827c"
-   },
-   {
-    "base": "villas/villa-talamanca-views/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#9c9f9d"
-   }
-  ],
-  "image": "/assets/villas/villa-talamanca-views/01-800.webp",
-  "image_large": "/assets/villas/villa-talamanca-views/01-1400.webp",
-  "image_colour": "#8aa6b7"
  },
  {
   "slug": "villa-terra",
@@ -54910,10 +54419,6 @@
     4.5
    ],
    [
-    "villa-talamanca-views",
-    4.5
-   ],
-   [
     "puig-can-fluxa",
     5.0
    ],
@@ -56628,10 +56133,6 @@
     1.0
    ],
    [
-    "villa-talamanca-views",
-    1.0
-   ],
-   [
     "can-mambo",
     1.5
    ],
@@ -57255,7 +56756,7 @@
   "check_in_days": "Strictly Saturday-Saturday",
   "license": "ETV-1856-E",
   "dcc": false,
-  "api_switch_on": false,
+  "api_switch_on": true,
   "unpublished_on": null,
   "amenities": [
    "Garden",
@@ -57565,11 +57066,11 @@
   "slug": "can-floral",
   "name": "Can Floral",
   "tagline": "A wonderful family home located close to Santa Eulalia, Ibiza",
-  "summary": "Can Floral is a sprawling 5-bedroom villa estate situated in the east of Ibiza just behind the bustling town of Santa Eulalia, where you will find a stunning seafront promenade with many trendy shops, bars and…",
+  "summary": "Can Floral is a sprawling 4-bedroom villa estate situated in the east of Ibiza just behind the bustling town of Santa Eulalia, where you will find a stunning seafront promenade with many trendy shops, bars and…",
   "description": [
-   "Can Floral is a sprawling 5-bedroom villa estate situated in the east of Ibiza just behind the bustling town of Santa Eulalia, where you will find a stunning seafront promenade with many trendy shops, bars and restaurants. The area is home to some of the most popular and family-friendly beaches including Cala Pada, Cala Llonga, and Cala Nova, and a short drive from the centre of Ibiza Town.",
+   "Can Floral is a sprawling 4-bedroom villa estate situated in the east of Ibiza just behind the bustling town of Santa Eulalia, where you will find a stunning seafront promenade with many trendy shops, bars and restaurants. The area is home to some of the most popular and family-friendly beaches including Cala Pada, Cala Llonga, and Cala Nova, and a short drive from the centre of Ibiza Town.",
    "Inside, a large open plan living, and dining space and fully equipped kitchen area offer sliding floor-to-ceiling doors out onto the terrace where you can enjoy distant Mediterranean sea views. The interiors have been beautifully designed with crisp clean lines, plenty of natural sunlight and a gentle touch of Modern-influenced decor throughout, with colourful and exotic furnishings providing bright splashes of colour which perfectly complement the neutral tones of the house.",
-   "There are four separate bedrooms consisting of either a king-size four-poster bed or twin beds all with en-suites and three having access to the outdoor terrace. The fifth and bedrooms come as part of an adjoining family suite, perfect for those with younger children.",
+   "There are four separate bedrooms consisting of either a king-size four-poster bed or twin beds all with en-suites and three having access to the outdoor terrace.",
    "Can Floral is surrounded by lush lawns and tall palm trees with several large terraces perfect for entertaining or simply lounging around on the luxury daybeds. The pool leads over to the under-covered outdoor dining area with a substantial-sized dining table, BBQ and a large shaded comfy chill-out area. The expansive grounds offer sun and shade and are the ideal space to spend long lazy days lounging by the pool or simply relaxing with friends and family."
   ],
   "area": "Santa Eulalia",
@@ -57581,8 +57082,8 @@
   "bedrooms": 4,
   "bathrooms": 4,
   "sleeps": 8,
-  "price_from": 21560,
-  "price_to": 26950,
+  "price_from": 22854,
+  "price_to": 28567,
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
@@ -57755,9 +57256,9 @@
   "lng": 1.53144,
   "v_id": 152,
   "v_uuid": "635765dc-e376-45d7-aab1-4716c1b1114b",
-  "nightly_from": 3080,
-  "nightly_to": 3850,
-  "rate_rows": 5,
+  "nightly_from": 3265,
+  "nightly_to": 4081,
+  "rate_rows": 3,
   "real_bedrooms": 7,
   "real_bathrooms": 6,
   "licence_check": {
@@ -57959,7 +57460,7 @@
   "license": "ETV-2153-E",
   "dcc": false,
   "api_switch_on": true,
-  "unpublished_on": "2026-11-09",
+  "unpublished_on": null,
   "amenities": [
    "Solar Electricity",
    "Garden",
@@ -58980,10 +58481,6 @@
    ],
    [
     "villa-shiva",
-    1.0
-   ],
-   [
-    "villa-talamanca-views",
     1.0
    ],
    [
@@ -60528,377 +60025,6 @@
   "image_colour": "#8896a5"
  },
  {
-  "slug": "can-pajarito",
-  "name": "Can Pajarito",
-  "tagline": "A Restored Finca, Ten Bedrooms, One Road from Everything",
-  "summary": "Can Pajarito is a modern and minimalist style villa situated along the coastal road close to the capital of the island, Ibiza Town with its dazzling nightlife scene, and is located just a short distance from Ibiza Town,…",
-  "description": [
-   "Can Pajarito is a modern and minimalist style villa situated along the coastal road close to the capital of the island, Ibiza Town with its dazzling nightlife scene, and is located just a short distance from Ibiza Town, the nature reserve of Ses Salines and Cala Jondal, home to the world famous Blue Marlin Beach club. The picturesque villages of San Augustin and San Jose are a short drive away with their many amenities.",
-   "Can Pajarito is a traditional finca which has been lovingly restored to the highest standards, retaining its authentic charm yet having been upgraded to offer guests all the modern day comforts you may require. Surrounded by its natural environment, the finca is full of traditional features, and each space benefits from its own private entrance. The large living areas, original high ceilings and beautifully decorated communal areas allow guests to find the perfect place to relax, reflect and unwind. All bathrooms and kitchens have been modernised using local materials and the living areas offer an opulent amount space allowing larger groups all the privacy they need.",
-   "The property lies on an 8000m2 fully fenced plot with Mediterranean gardens. The luxurious private pool has a bespoke pool bar and is surrounded by numerous daybeds and parasols. There are several chill out areas around the pool as well as shaded al-fresco dining space with a fully fitted outdoor kitchen with barbecue next to it. The newest addition to the villa exteriors is a jacuzzi bathtub from where you can truly enjoy the luxury of your surroundings."
-  ],
-  "area": "San Jose",
-  "area_key": "San Jose",
-  "region": "san-jose",
-  "region_name": "San José",
-  "district": "San Jose de Sa Talaia",
-  "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
-  "sleeps": 8,
-  "price_from": 13200,
-  "price_to": 31900,
-  "price_on_request": false,
-  "min_nights": 7,
-  "short_stays": false,
-  "cleaning": "6 Cleanings per week",
-  "cleaning_charge": 0,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Flexible check in days",
-  "license": "ETV-2543-E",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": null,
-  "amenities": [
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "Alarm",
-   "BBQ",
-   "Country View",
-   "Fenced",
-   "Music System",
-   "Swimming Pool",
-   "Wifi",
-   "Hire Car Recommended",
-   "Safety Box",
-   "Sunloungers",
-   "Private Parking",
-   "Smart TV",
-   "Outdoor Kitchen"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers",
-     "Private Parking",
-     "Outdoor Kitchen"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "Music System",
-     "Wifi",
-     "Safety Box",
-     "Smart TV"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Alarm",
-     "Country View",
-     "Fenced",
-     "Hire Car Recommended"
-    ]
-   }
-  ],
-  "audience": [
-   "Private",
-   "Couples",
-   "Families",
-   "Friends",
-   "Retreats"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7698-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/south.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/DSC_6475.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7265-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7462-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/DSC_6151.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7887-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_4459.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7468-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/DSC_6286.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_8096-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/kitchen.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/fully equiped.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_4910 Kopie 2.JPG",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7207-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/DSC_6267.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7447-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7378-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7776-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_8207-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7758-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7854-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7399-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7453-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7791-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_8084-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7815-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7225-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7711-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/Can Cuco 3.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/pool.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/table close.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/table total.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/table.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7722-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_8165.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7741-HDR.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/terasse seaview.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/view masterbedroom.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_3175.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7576.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_3341.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/sunset view from Can Cuco terrasse.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/entrance night.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/no bnb entrace.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_8031.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7632.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/plaza eingang.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/solar.JPG",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/e car charging provided for free.jpg"
-  ],
-  "lat": 38.88864,
-  "lng": 1.36974,
-  "v_id": 436,
-  "v_uuid": "f41d4fa1-8184-4029-b2eb-707c32d446fc",
-  "nightly_from": 1886,
-  "nightly_to": 4558,
-  "rate_rows": 8,
-  "real_bedrooms": 10,
-  "real_bathrooms": 9,
-  "licence_check": {
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-2543-E",
-   "register_licence": "ETV2543E",
-   "register_places": 7,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CAN CUCO",
-   "issues": [
-    "Shown for 8 guests; the register allows 7 places"
-   ]
-  },
-  "near": [
-   [
-    "villa-andana",
-    1.0
-   ],
-   [
-    "villa-beverly",
-    1.0
-   ],
-   [
-    "casa-can-tina",
-    1.5
-   ],
-   [
-    "villa-nadal",
-    1.5
-   ],
-   [
-    "can-nuri",
-    2.0
-   ],
-   [
-    "cana-sole",
-    2.0
-   ],
-   [
-    "villa-can-exotic",
-    2.0
-   ],
-   [
-    "villa-casita",
-    2.0
-   ],
-   [
-    "villa-margo",
-    2.0
-   ],
-   [
-    "villa-meghan-grande",
-    2.0
-   ],
-   [
-    "villa-trinity",
-    2.0
-   ],
-   [
-    "villa-fabienne",
-    2.5
-   ],
-   [
-    "villa-heidi",
-    2.5
-   ],
-   [
-    "villa-meghan",
-    2.5
-   ],
-   [
-    "villa-meghan-deluxe",
-    2.5
-   ],
-   [
-    "villa-paraiso",
-    2.5
-   ],
-   [
-    "villa-ronda",
-    2.5
-   ],
-   [
-    "villa-centelleo",
-    3.0
-   ],
-   [
-    "villa-ceres",
-    3.0
-   ],
-   [
-    "villa-jayden",
-    3.0
-   ],
-   [
-    "villa-jeanette",
-    3.0
-   ],
-   [
-    "villa-sa-carroca-oasis",
-    3.0
-   ],
-   [
-    "can-danza",
-    3.5
-   ],
-   [
-    "can-josie",
-    3.5
-   ],
-   [
-    "can-tehani",
-    3.5
-   ],
-   [
-    "can-vista-cala-jondal",
-    3.5
-   ],
-   [
-    "casa-roma",
-    3.5
-   ],
-   [
-    "villa-nia",
-    3.5
-   ],
-   [
-    "can-sahara",
-    4.0
-   ],
-   [
-    "villa-escondida",
-    4.0
-   ],
-   [
-    "villa-solaire",
-    4.0
-   ],
-   [
-    "villa-tess",
-    4.0
-   ],
-   [
-    "can-nik",
-    4.5
-   ],
-   [
-    "villa-marielle",
-    4.5
-   ],
-   [
-    "villa-paola",
-    4.5
-   ],
-   [
-    "can-captur",
-    5.0
-   ],
-   [
-    "can-laurel",
-    5.0
-   ],
-   [
-    "can-sabina",
-    5.0
-   ],
-   [
-    "villa-azure",
-    5.0
-   ],
-   [
-    "villa-dama",
-    5.0
-   ],
-   [
-    "villa-evelyn",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/can-pajarito/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#6e8aa5"
-   },
-   {
-    "base": "villas/can-pajarito/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#abb5bd"
-   },
-   {
-    "base": "villas/can-pajarito/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#94a5b1"
-   },
-   {
-    "base": "villas/can-pajarito/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#cec9c0"
-   },
-   {
-    "base": "villas/can-pajarito/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#d4cdbc"
-   },
-   {
-    "base": "villas/can-pajarito/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#cac3bc"
-   }
-  ],
-  "image": "/assets/villas/can-pajarito/01-800.webp",
-  "image_large": "/assets/villas/can-pajarito/01-1400.webp",
-  "image_colour": "#6e8aa5"
- },
- {
   "slug": "can-sabina",
   "name": "Can Sabina",
   "tagline": "Luxurious finca-bungalow style house with pool on private plot.",
@@ -61825,10 +60951,6 @@
     0.5
    ],
    [
-    "villa-talamanca-views",
-    0.5
-   ],
-   [
     "can-mambo",
     1.0
    ],
@@ -62094,7 +61216,7 @@
   "check_in_days": "Flexible check in days",
   "license": "ET-0787-E",
   "dcc": false,
-  "api_switch_on": false,
+  "api_switch_on": true,
   "unpublished_on": null,
   "amenities": [
    "Solar Electricity",
@@ -62466,7 +61588,7 @@
   "check_in_days": "Flexible check in days",
   "license": "ETV-1554-E",
   "dcc": false,
-  "api_switch_on": false,
+  "api_switch_on": true,
   "unpublished_on": null,
   "amenities": [
    "Air Conditioning",
@@ -62484,6 +61606,7 @@
    "Sunloungers",
    "Sea View",
    "Fireplace",
+   "Private Parking",
    "Central Heating",
    "Fully fitted kitchen",
    "Town View",
@@ -62499,6 +61622,7 @@
      "BBQ",
      "Swimming Pool",
      "Sunloungers",
+     "Private Parking",
      "Terraces"
     ]
    },
@@ -62685,10 +61809,6 @@
    ],
    [
     "villa-lyla",
-    1.0
-   ],
-   [
-    "villa-talamanca-views",
     1.0
    ],
    [
@@ -62925,7 +62045,7 @@
   "check_in_days": "Flexible check in days",
   "license": "ETV-1474-E",
   "dcc": false,
-  "api_switch_on": false,
+  "api_switch_on": true,
   "unpublished_on": null,
   "amenities": [
    "Al Fresco Dining",
@@ -62940,6 +62060,7 @@
    "Safety Box",
    "Sunloungers",
    "Fireplace",
+   "Pets Allowed",
    "Fully fitted kitchen",
    "Terraces"
   ],
@@ -62971,6 +62092,12 @@
      "Country View",
      "Fenced",
      "Hire Car Recommended"
+    ]
+   },
+   {
+    "title": "Also included",
+    "items": [
+     "Pets Allowed"
     ]
    }
   ],
@@ -64259,7 +63386,7 @@
   "license": "ETV-1914-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Garden",
    "Air Conditioning",
@@ -64585,10 +63712,6 @@
    ],
    [
     "villa-nicole",
-    3.5
-   ],
-   [
-    "villa-talamanca-views",
     3.5
    ],
    [
@@ -66215,10 +65338,6 @@
    ],
    [
     "villa-serenza",
-    1.0
-   ],
-   [
-    "villa-talamanca-views",
     1.0
    ],
    [
@@ -67871,10 +66990,6 @@
     3.0
    ],
    [
-    "villa-talamanca-views",
-    3.0
-   ],
-   [
     "can-balena",
     3.5
    ],
@@ -68683,10 +67798,6 @@
    ],
    [
     "casa-monigue",
-    1.5
-   ],
-   [
-    "villa-talamanca-views",
     1.5
    ],
    [
@@ -70941,10 +70052,6 @@
     1.0
    ],
    [
-    "villa-talamanca-views",
-    1.0
-   ],
-   [
     "can-mambo",
     1.5
    ],
@@ -72031,10 +71138,6 @@
    [
     "villa-samy",
     5.0
-   ],
-   [
-    "villa-talamanca-views",
-    5.0
    ]
   ],
   "images": [
@@ -72115,7 +71218,7 @@
   "license": "ETV-2487-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -72377,10 +71480,6 @@
    ],
    [
     "villa-shiva",
-    1.0
-   ],
-   [
-    "villa-talamanca-views",
     1.0
    ],
    [
@@ -72811,10 +71910,6 @@
     1.0
    ],
    [
-    "villa-talamanca-views",
-    1.0
-   ],
-   [
     "can-scarlett",
     1.5
    ],
@@ -73041,8 +72136,8 @@
   "bedrooms": 4,
   "bathrooms": 4,
   "sleeps": 8,
-  "price_from": 16500,
-  "price_to": 19250,
+  "price_from": 17050,
+  "price_to": 19800,
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
@@ -73184,9 +72279,9 @@
   "lng": 1.31002,
   "v_id": 76,
   "v_uuid": "a18954cb-b3ba-435f-892b-9a78a899df9f",
-  "nightly_from": 2358,
-  "nightly_to": 2750,
-  "rate_rows": 6,
+  "nightly_from": 2436,
+  "nightly_to": 2829,
+  "rate_rows": 5,
   "real_bedrooms": 4,
   "real_bathrooms": 4,
   "licence_check": {
@@ -75061,10 +74156,6 @@
     4.0
    ],
    [
-    "villa-talamanca-views",
-    4.0
-   ],
-   [
     "villa-vanessa",
     4.0
    ],
@@ -75207,7 +74298,7 @@
   "check_in_days": "Strictly Saturday-Saturday",
   "license": "ETV-2511-E",
   "dcc": false,
-  "api_switch_on": false,
+  "api_switch_on": true,
   "unpublished_on": null,
   "amenities": [
    "Air Conditioning",
@@ -75547,10 +74638,6 @@
    [
     "villa-shiva",
     5.0
-   ],
-   [
-    "villa-talamanca-views",
-    5.0
    ]
   ],
   "images": [
@@ -75838,10 +74925,6 @@
     1.0
    ],
    [
-    "villa-talamanca-views",
-    1.0
-   ],
-   [
     "can-balena",
     1.5
    ],
@@ -76085,7 +75168,7 @@
   "license": "ETV-1932-E",
   "dcc": false,
   "api_switch_on": true,
-  "unpublished_on": "2026-11-09",
+  "unpublished_on": null,
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -76384,8 +75467,8 @@
   "check_in_days": "Flexible check in days",
   "license": "ETV-1221-E",
   "dcc": false,
-  "api_switch_on": true,
-  "unpublished_on": null,
+  "api_switch_on": false,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -76534,10 +75617,6 @@
    ],
    [
     "villa-shiva",
-    1.0
-   ],
-   [
-    "villa-talamanca-views",
     1.0
    ],
    [
@@ -78334,7 +77413,7 @@
   "license": "ETV-1284-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -79750,10 +78829,6 @@
    ],
    [
     "villa-jesus-for-four",
-    1.5
-   ],
-   [
-    "villa-talamanca-views",
     1.5
    ],
    [
@@ -81200,10 +80275,6 @@
     1.5
    ],
    [
-    "villa-talamanca-views",
-    1.5
-   ],
-   [
     "can-balena",
     2.0
    ],
@@ -81905,8 +80976,8 @@
   "check_in_days": "Flexible check in days",
   "license": "ETV-1223-E",
   "dcc": false,
-  "api_switch_on": true,
-  "unpublished_on": null,
+  "api_switch_on": false,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Garden",
    "Air Conditioning",
@@ -83059,6 +82130,375 @@
   "image": "/assets/villas/can-carva/01-800.webp",
   "image_large": "/assets/villas/can-carva/01-1400.webp",
   "image_colour": "#8a9a8e"
+ },
+ {
+  "slug": "can-pajarito",
+  "name": "Can Pajarito",
+  "tagline": "A Restored Finca, Ten Bedrooms, One Road from Everything",
+  "summary": "Can Pajarito is a modern and minimalist style villa situated along the coastal road close to the capital of the island, Ibiza Town with its dazzling nightlife scene, and is located just a short distance from Ibiza Town,…",
+  "description": [
+   "Can Pajarito is a modern and minimalist style villa situated along the coastal road close to the capital of the island, Ibiza Town with its dazzling nightlife scene, and is located just a short distance from Ibiza Town, the nature reserve of Ses Salines and Cala Jondal, home to the world famous Blue Marlin Beach club. The picturesque villages of San Augustin and San Jose are a short drive away with their many amenities.",
+   "Can Pajarito is a traditional finca which has been lovingly restored to the highest standards, retaining its authentic charm yet having been upgraded to offer guests all the modern day comforts you may require. Surrounded by its natural environment, the finca is full of traditional features, and each space benefits from its own private entrance. The large living areas, original high ceilings and beautifully decorated communal areas allow guests to find the perfect place to relax, reflect and unwind. All bathrooms and kitchens have been modernised using local materials and the living areas offer an opulent amount space allowing larger groups all the privacy they need.",
+   "The property lies on an 8000m2 fully fenced plot with Mediterranean gardens. The luxurious private pool has a bespoke pool bar and is surrounded by numerous daybeds and parasols. There are several chill out areas around the pool as well as shaded al-fresco dining space with a fully fitted outdoor kitchen with barbecue next to it. The newest addition to the villa exteriors is a jacuzzi bathtub from where you can truly enjoy the luxury of your surroundings."
+  ],
+  "area": "San Jose",
+  "area_key": "San Jose",
+  "region": "san-jose",
+  "region_name": "San José",
+  "district": "San Jose de Sa Talaia",
+  "country": "Spain",
+  "bedrooms": 4,
+  "bathrooms": 4,
+  "sleeps": 7,
+  "price_from": 13200,
+  "price_to": 34100,
+  "price_on_request": false,
+  "min_nights": 7,
+  "short_stays": false,
+  "cleaning": "6 Cleanings per week",
+  "cleaning_charge": 0,
+  "check_in": "16:00",
+  "check_out": "10:00",
+  "check_in_days": "Flexible check in days",
+  "license": "ETV-2543-E",
+  "dcc": false,
+  "api_switch_on": false,
+  "unpublished_on": null,
+  "amenities": [
+   "Air Conditioning",
+   "Al Fresco Dining",
+   "Alarm",
+   "BBQ",
+   "Country View",
+   "Fenced",
+   "Music System",
+   "Swimming Pool",
+   "Wifi",
+   "Hire Car Recommended",
+   "Safety Box",
+   "Sunloungers",
+   "Private Parking",
+   "Smart TV",
+   "Outdoor Kitchen"
+  ],
+  "amenity_groups": [
+   {
+    "title": "Outside",
+    "items": [
+     "Al Fresco Dining",
+     "BBQ",
+     "Swimming Pool",
+     "Sunloungers",
+     "Private Parking",
+     "Outdoor Kitchen"
+    ]
+   },
+   {
+    "title": "Inside",
+    "items": [
+     "Air Conditioning",
+     "Music System",
+     "Wifi",
+     "Safety Box",
+     "Smart TV"
+    ]
+   },
+   {
+    "title": "Setting",
+    "items": [
+     "Alarm",
+     "Country View",
+     "Fenced",
+     "Hire Car Recommended"
+    ]
+   }
+  ],
+  "audience": [
+   "Private",
+   "Couples",
+   "Families",
+   "Friends",
+   "Retreats"
+  ],
+  "photos": [
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7698-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/south.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/DSC_6475.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7265-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7462-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/DSC_6151.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7887-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_4459.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7468-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/DSC_6286.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_8096-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/kitchen.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/fully equiped.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_4910 Kopie 2.JPG",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7207-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/DSC_6267.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7447-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7378-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7776-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_8207-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7758-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7854-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7399-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7453-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7791-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_8084-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7815-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7225-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7711-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/Can Cuco 3.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/pool.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/table close.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/table total.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/table.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7722-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_8165.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7741-HDR.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/terasse seaview.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/view masterbedroom.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_3175.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7576.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_3341.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/sunset view from Can Cuco terrasse.jpeg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/entrance night.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/no bnb entrace.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_8031.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/IMG_7632.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/plaza eingang.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/solar.JPG",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/436/villa_images/e car charging provided for free.jpg"
+  ],
+  "lat": 38.88864,
+  "lng": 1.36974,
+  "v_id": 436,
+  "v_uuid": "f41d4fa1-8184-4029-b2eb-707c32d446fc",
+  "nightly_from": 1886,
+  "nightly_to": 4872,
+  "rate_rows": 9,
+  "real_bedrooms": 10,
+  "real_bathrooms": 9,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2543-E",
+   "register_licence": "ETV2543E",
+   "register_places": 7,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN CUCO",
+   "issues": []
+  },
+  "near": [
+   [
+    "villa-andana",
+    1.0
+   ],
+   [
+    "villa-beverly",
+    1.0
+   ],
+   [
+    "casa-can-tina",
+    1.5
+   ],
+   [
+    "villa-nadal",
+    1.5
+   ],
+   [
+    "can-nuri",
+    2.0
+   ],
+   [
+    "cana-sole",
+    2.0
+   ],
+   [
+    "villa-can-exotic",
+    2.0
+   ],
+   [
+    "villa-casita",
+    2.0
+   ],
+   [
+    "villa-margo",
+    2.0
+   ],
+   [
+    "villa-meghan-grande",
+    2.0
+   ],
+   [
+    "villa-trinity",
+    2.0
+   ],
+   [
+    "villa-fabienne",
+    2.5
+   ],
+   [
+    "villa-heidi",
+    2.5
+   ],
+   [
+    "villa-meghan",
+    2.5
+   ],
+   [
+    "villa-meghan-deluxe",
+    2.5
+   ],
+   [
+    "villa-paraiso",
+    2.5
+   ],
+   [
+    "villa-ronda",
+    2.5
+   ],
+   [
+    "villa-centelleo",
+    3.0
+   ],
+   [
+    "villa-ceres",
+    3.0
+   ],
+   [
+    "villa-jayden",
+    3.0
+   ],
+   [
+    "villa-jeanette",
+    3.0
+   ],
+   [
+    "villa-sa-carroca-oasis",
+    3.0
+   ],
+   [
+    "can-danza",
+    3.5
+   ],
+   [
+    "can-josie",
+    3.5
+   ],
+   [
+    "can-tehani",
+    3.5
+   ],
+   [
+    "can-vista-cala-jondal",
+    3.5
+   ],
+   [
+    "casa-roma",
+    3.5
+   ],
+   [
+    "villa-nia",
+    3.5
+   ],
+   [
+    "can-sahara",
+    4.0
+   ],
+   [
+    "villa-escondida",
+    4.0
+   ],
+   [
+    "villa-solaire",
+    4.0
+   ],
+   [
+    "villa-tess",
+    4.0
+   ],
+   [
+    "can-nik",
+    4.5
+   ],
+   [
+    "villa-marielle",
+    4.5
+   ],
+   [
+    "villa-paola",
+    4.5
+   ],
+   [
+    "can-captur",
+    5.0
+   ],
+   [
+    "can-laurel",
+    5.0
+   ],
+   [
+    "can-sabina",
+    5.0
+   ],
+   [
+    "villa-azure",
+    5.0
+   ],
+   [
+    "villa-dama",
+    5.0
+   ],
+   [
+    "villa-evelyn",
+    5.0
+   ]
+  ],
+  "images": [
+   {
+    "base": "villas/can-pajarito/01",
+    "width": 1400,
+    "height": 933,
+    "colour": "#6e8aa5"
+   },
+   {
+    "base": "villas/can-pajarito/02",
+    "width": 1400,
+    "height": 933,
+    "colour": "#abb5bd"
+   },
+   {
+    "base": "villas/can-pajarito/03",
+    "width": 1400,
+    "height": 933,
+    "colour": "#94a5b1"
+   },
+   {
+    "base": "villas/can-pajarito/04",
+    "width": 1400,
+    "height": 933,
+    "colour": "#cec9c0"
+   },
+   {
+    "base": "villas/can-pajarito/05",
+    "width": 1400,
+    "height": 933,
+    "colour": "#d4cdbc"
+   },
+   {
+    "base": "villas/can-pajarito/06",
+    "width": 1400,
+    "height": 933,
+    "colour": "#cac3bc"
+   }
+  ],
+  "image": "/assets/villas/can-pajarito/01-800.webp",
+  "image_large": "/assets/villas/can-pajarito/01-1400.webp",
+  "image_colour": "#6e8aa5"
  },
  {
   "slug": "la-flaca",
@@ -85878,7 +85318,7 @@
   "license": "ETV-0954-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Garden",
    "Air Conditioning",
@@ -87566,7 +87006,7 @@
   "bathrooms": 2,
   "sleeps": 6,
   "price_from": 3312,
-  "price_to": 3312,
+  "price_to": 15300,
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
@@ -87714,8 +87154,8 @@
   "v_id": 142,
   "v_uuid": "8b30acda-2fc0-48a7-ae28-8a6cb84ad3f0",
   "nightly_from": 474,
-  "nightly_to": 474,
-  "rate_rows": 1,
+  "nightly_to": 4406,
+  "rate_rows": 14,
   "real_bedrooms": 4,
   "real_bathrooms": 3,
   "licence_check": {
@@ -87828,10 +87268,6 @@
    ],
    [
     "villa-mini",
-    1.5
-   ],
-   [
-    "villa-talamanca-views",
     1.5
    ],
    [
@@ -88047,7 +87483,7 @@
   "check_in_days": "Strictly Saturday-Saturday",
   "license": "ET-0831-E",
   "dcc": false,
-  "api_switch_on": false,
+  "api_switch_on": true,
   "unpublished_on": null,
   "amenities": [
    "Garden",
@@ -88070,6 +87506,7 @@
    "Roof Terrace",
    "Terraces",
    "Outdoor Jacuzzi",
+   "Plunge Pool",
    "Ceiling Fans",
    "Golf Course View"
   ],
@@ -88112,6 +87549,7 @@
     "items": [
      "Gated Community",
      "Pets Allowed",
+     "Plunge Pool",
      "Ceiling Fans",
      "Golf Course View"
     ]
@@ -88403,10 +87841,6 @@
     4.5
    ],
    [
-    "villa-talamanca-views",
-    4.5
-   ],
-   [
     "can-cecilia",
     5.0
    ],
@@ -88505,7 +87939,7 @@
   "check_in_days": "Flexible check in days",
   "license": "ETV-2444-E",
   "dcc": false,
-  "api_switch_on": false,
+  "api_switch_on": true,
   "unpublished_on": null,
   "amenities": [
    "Air Conditioning",
@@ -89064,10 +88498,6 @@
    ],
    [
     "villa-shiva",
-    1.5
-   ],
-   [
-    "villa-talamanca-views",
     1.5
    ],
    [
@@ -89655,10 +89085,6 @@
     4.5
    ],
    [
-    "villa-talamanca-views",
-    4.5
-   ],
-   [
     "can-cecilia",
     5.0
    ],
@@ -89884,10 +89310,6 @@
    ],
    [
     "villa-serenza",
-    3.0
-   ],
-   [
-    "villa-talamanca-views",
     3.0
    ],
    [
@@ -90618,7 +90040,7 @@
   "v_uuid": "154e625f-14f6-4bff-bc4c-287bf9bda1ed",
   "nightly_from": 1375,
   "nightly_to": 3610,
-  "rate_rows": 15,
+  "rate_rows": 14,
   "real_bedrooms": 5,
   "real_bathrooms": 5,
   "licence_check": {
@@ -91911,7 +91333,7 @@
   "license": "ETV-1869-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Garden",
    "Al Fresco Dining",
@@ -92677,7 +92099,7 @@
   "check_in_days": "Flexible check in days",
   "license": "ETV-1242-E",
   "dcc": false,
-  "api_switch_on": false,
+  "api_switch_on": true,
   "unpublished_on": null,
   "amenities": [
    "Garden",
@@ -94186,10 +93608,6 @@
     3.5
    ],
    [
-    "villa-talamanca-views",
-    3.5
-   ],
-   [
     "house-of-dreams",
     4.0
    ],
@@ -94615,10 +94033,6 @@
     1.0
    ],
    [
-    "villa-talamanca-views",
-    1.0
-   ],
-   [
     "can-mambo",
     1.5
    ],
@@ -94864,7 +94278,7 @@
   "license": "ETV-2195-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -95575,10 +94989,6 @@
     3.5
    ],
    [
-    "villa-talamanca-views",
-    3.5
-   ],
-   [
     "villa-vanessa",
     3.5
    ],
@@ -96087,7 +95497,7 @@
   "license": "EtV-2314-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-10",
   "amenities": [
    "Views to Formentera",
    "Air Conditioning",
@@ -96985,10 +96395,6 @@
     3.0
    ],
    [
-    "villa-talamanca-views",
-    3.0
-   ],
-   [
     "can-balena",
     3.5
    ],
@@ -97379,10 +96785,6 @@
    ],
    [
     "house-of-dreams",
-    3.0
-   ],
-   [
-    "villa-talamanca-views",
     3.0
    ],
    [
@@ -98653,10 +98055,6 @@
     4.5
    ],
    [
-    "villa-talamanca-views",
-    4.5
-   ],
-   [
     "villa-amorigen",
     5.0
    ],
@@ -98922,10 +98320,6 @@
    ],
    [
     "villa-serenza",
-    1.0
-   ],
-   [
-    "villa-talamanca-views",
     1.0
    ],
    [
@@ -99728,10 +99122,6 @@
     2.5
    ],
    [
-    "villa-talamanca-views",
-    2.5
-   ],
-   [
     "can-balena",
     3.0
    ],
@@ -100136,10 +99526,6 @@
    ],
    [
     "can-sage",
-    2.0
-   ],
-   [
-    "villa-talamanca-views",
     2.0
    ],
    [
@@ -100602,10 +99988,6 @@
     2.5
    ],
    [
-    "villa-talamanca-views",
-    2.5
-   ],
-   [
     "can-balena",
     3.0
    ],
@@ -100935,10 +100317,6 @@
    ],
    [
     "villa-serenza",
-    3.0
-   ],
-   [
-    "villa-talamanca-views",
     3.0
    ],
    [
