@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-10",
+ "checked_on": "2026-11-11",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -104,6 +104,19 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "turisme-rural",
    "register_name": "CAN SKYE",
+   "issues": []
+  },
+  "380c613f-ec5c-4a83-b7dd-6ea772452658": {
+   "name": "Can Aqueduct",
+   "slug": "can-aqueduct",
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0490-E",
+   "register_licence": "ET0490E",
+   "register_places": 8,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CA´N MAX",
    "issues": []
   },
   "06adba92-625f-41d6-90a2-1a9629379fd7": {
@@ -476,19 +489,6 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "CAN PERA DE SA COVA",
-   "issues": []
-  },
-  "b7dc0f07-cced-4656-97ff-8b7b3da9d761": {
-   "name": "Can Frutal",
-   "slug": "can-frutal",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-2153-E",
-   "register_licence": "ETV2153E",
-   "register_places": 8,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CAN CLADDAGH",
    "issues": []
   },
   "fb9529d3-6c51-4955-b72e-2e62e1958ae3": {
@@ -956,6 +956,19 @@
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "CASA SAKHARA",
+   "issues": []
+  },
+  "61f5c229-744c-49d6-b1f3-5631570088d7": {
+   "name": "Can Salvador",
+   "slug": "can-salvador",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1432-E",
+   "register_licence": "ETV1432E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN CARDONA",
    "issues": []
   },
   "4a40a937-1fa3-4ad4-9bc0-db56fab986e5": {
@@ -1753,19 +1766,6 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "VILLA WAVE",
-   "issues": []
-  },
-  "660fea8d-5f3e-4b11-b4ee-ce5987042c44": {
-   "name": "Villa Azure",
-   "slug": "villa-azure",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-2125-E",
-   "register_licence": "ETV2125E",
-   "register_places": 6,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "VILLA MINERVA",
    "issues": []
   },
   "f998cd45-6388-4e7a-994e-862560e9491d": {
@@ -3088,19 +3088,6 @@
    "register_name": "CAN ROCAS",
    "issues": []
   },
-  "c5c66834-be0e-44ff-8d3b-83b72121ceff": {
-   "name": "Villa Sa Carroca Oasis",
-   "slug": "villa-sa-carroca-oasis",
-   "status": "verified",
-   "ok": true,
-   "licence": "ET-0486-E",
-   "register_licence": "ET0486E",
-   "register_places": 10,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CAN PATXI",
-   "issues": []
-  },
   "22c3b2d6-ae4b-4384-bce6-6fea74ca309f": {
    "name": "Villa Sadie",
    "slug": "villa-sadie",
@@ -3262,34 +3249,6 @@
     "Shown for 12 guests; the register allows 6 places"
    ]
   },
-  "3927441f-ce2b-40c9-bd9e-899a8c0f3977": {
-   "name": "Villa Tess",
-   "slug": "villa-tess",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-2114-E",
-   "register_licence": "ETV2114E",
-   "register_places": 10,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "TESORO DE ORO",
-   "issues": []
-  },
-  "5ee4745e-4322-42f8-ae0a-916ba0e0d244": {
-   "name": "Villa Trevi",
-   "slug": "villa-trevi",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-1223-E",
-   "register_licence": "ETV1223E",
-   "register_places": 7,
-   "register_municipality": "SANTA EULARIA DES RIU",
-   "register": "habitatges-turistics",
-   "register_name": "VILLA AMIGO",
-   "issues": [
-    "Shown for 8 guests; the register allows 7 places"
-   ]
-  },
   "1f845359-70eb-4def-830f-03df5b038b3f": {
    "name": "Villa Trinity",
    "slug": "villa-trinity",
@@ -3353,6 +3312,19 @@
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "TARIDA BEACH HOUSE",
+   "issues": []
+  },
+  "159d1fd8-5f4c-4d05-9c7a-4236dae0e0e6": {
+   "name": "Villa Vivian",
+   "slug": "villa-vivian",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1166-E",
+   "register_licence": "ETV1166E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA CAN SARMIENTO",
    "issues": []
   },
   "631d5f0e-6639-4055-9f71-700e9023721b": {
@@ -3450,7 +3422,7 @@
  "counts": {
   "format_differs": 3,
   "not_in_register": 1,
-  "verified": 255
+  "verified": 253
  },
  "hidden": [],
  "flagged": [
@@ -3489,8 +3461,7 @@
   "Villa Meghan Deluxe",
   "Villa Meghan Grande",
   "Villa Style",
-  "Villa Terra Blanca",
-  "Villa Trevi"
+  "Villa Terra Blanca"
  ],
  "policy": "hide"
 }

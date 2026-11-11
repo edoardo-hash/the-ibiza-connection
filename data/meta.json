@@ -1,22 +1,22 @@
 {
- "fetched_at": "2026-11-10T13:16:18Z",
+ "fetched_at": "2026-11-11T12:26:46Z",
  "destination": "Ibiza",
  "api_host": "api.inveniohomes.com",
- "available_in_account": 2716,
- "published": 259,
- "api_switch_on": 82,
- "recently_unpublished": 23,
+ "available_in_account": 2717,
+ "published": 257,
+ "api_switch_on": 79,
+ "recently_unpublished": 24,
  "dcc": 17,
  "regions": 5,
- "areas": 46,
- "photos": 1554,
+ "areas": 45,
+ "photos": 1542,
  "min_price": 1386,
  "max_price": 267143,
  "max_sleeps": 28,
  "licence_check": {
   "format_differs": 3,
   "not_in_register": 1,
-  "verified": 255
+  "verified": 253
  },
  "licence_hidden": 0
 }
