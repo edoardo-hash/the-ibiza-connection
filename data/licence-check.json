@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-11",
+ "checked_on": "2026-11-12",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -1885,6 +1885,19 @@
    "register_name": "MAS SUEÑOS",
    "issues": []
   },
+  "e0db50cc-71f6-4c3c-9c7b-9bba4f7b3429": {
+   "name": "Villa Can Retiro",
+   "slug": "villa-can-retiro",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1791-E",
+   "register_licence": "ETV1791E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "IPUNGA",
+   "issues": []
+  },
   "2b15c0fd-4a02-419d-828c-fb6a0b74a665": {
    "name": "Villa Capo",
    "slug": "villa-capo",
@@ -2584,6 +2597,19 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "VILLA COBHAM PARADISE",
+   "issues": []
+  },
+  "78e2253a-0cc8-46d5-b3cc-f44099f47219": {
+   "name": "Villa Loopa",
+   "slug": "villa-loopa",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2545-E",
+   "register_licence": "ETV2545E",
+   "register_places": 6,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "NA BLANCA",
    "issues": []
   },
   "e1d6c33f-d1e9-4139-a992-cf4c774cff3d": {
@@ -3288,6 +3314,19 @@
    "register_name": "CAN GECO",
    "issues": []
   },
+  "457fc290-3889-4435-9c67-f7d7781dda04": {
+   "name": "Villa Vidal",
+   "slug": "villa-vidal",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2458-E",
+   "register_licence": "ETV2458E",
+   "register_places": 12,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA LA VIDA",
+   "issues": []
+  },
   "6d28fa6d-a580-43e5-8622-34b8f8181b19": {
    "name": "Villa Vinya Morna",
    "slug": "villa-vinya-morna",
@@ -3422,7 +3461,7 @@
  "counts": {
   "format_differs": 3,
   "not_in_register": 1,
-  "verified": 253
+  "verified": 256
  },
  "hidden": [],
  "flagged": [
