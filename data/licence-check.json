@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-12",
+ "checked_on": "2026-11-13",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -13,19 +13,6 @@
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "VILLA HORIZON",
-   "issues": []
-  },
-  "7890a112-b124-48a5-bfbc-958e4b3d21b5": {
-   "name": "Belantara",
-   "slug": "belantara",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-0972-E",
-   "register_licence": "ETV0972E",
-   "register_places": 12,
-   "register_municipality": "SANT ANTONI DE PORTMANY",
-   "register": "habitatges-turistics",
-   "register_name": "CASA BELLO",
    "issues": []
   },
   "9e63480f-9683-41a1-8511-82a2e447c7ae": {
@@ -91,19 +78,6 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "CAN RIBES",
-   "issues": []
-  },
-  "4f976bc3-e520-4789-b94d-1e699cfce86b": {
-   "name": "Can Anna Grande",
-   "slug": "can-anna-grande",
-   "status": "verified",
-   "ok": true,
-   "licence": "AG-0037-EIF",
-   "register_licence": "AG0037EIF",
-   "register_places": 22,
-   "register_municipality": "SANTA EULARIA DES RIU",
-   "register": "turisme-rural",
-   "register_name": "CAN SKYE",
    "issues": []
   },
   "380c613f-ec5c-4a83-b7dd-6ea772452658": {
@@ -1834,8 +1808,8 @@
    "issues": []
   },
   "a2f9886d-6a6b-46fc-97d1-5bafd8e369c6": {
-   "name": "Villa Cala Tarida Rafael",
-   "slug": "villa-cala-tarida-rafael",
+   "name": "Villa Cala Tarida Pueblo",
+   "slug": "villa-cala-tarida-pueblo",
    "status": "verified",
    "ok": true,
    "licence": "ETV-2605-E",
@@ -3461,7 +3435,7 @@
  "counts": {
   "format_differs": 3,
   "not_in_register": 1,
-  "verified": 256
+  "verified": 254
  },
  "hidden": [],
  "flagged": [

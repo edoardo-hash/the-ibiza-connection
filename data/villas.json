@@ -254,10 +254,6 @@
     4.5
    ],
    [
-    "belantara",
-    5.0
-   ],
-   [
     "villa-gracie",
     5.0
    ]
@@ -303,300 +299,6 @@
   "image": "/assets/villas/can-arte/01-800.webp",
   "image_large": "/assets/villas/can-arte/01-1400.webp",
   "image_colour": "#82755b"
- },
- {
-  "slug": "can-anna-grande",
-  "name": "Can Anna Grande",
-  "tagline": "Private estate in a rural haven",
-  "summary": "Located in the middle of the Mediterranean sea lies the natural beauty of the island of Ibiza and located at the heart of it sits Can Anna Grande. Can Anna Grande, an old ibizencan finca (traditional farmhouse) was…",
-  "description": [
-   "Located in the middle of the Mediterranean sea lies the natural beauty of the island of Ibiza and located at the heart of it sits Can Anna Grande. Can Anna Grande, an old ibizencan finca (traditional farmhouse) was restored with love and care over the last few years, incorporating the latest technologies like inbuilt sound system and underfloor heating, without sacrificing any of it’s traditional and rural magic. This charming finca offers a breakfast service for the comfort of its guests",
-   "Sitting in the midst of aromatic herb gardens and fruit trees and overlooking the spectacular ibizan coast, Can Anna Grande can offer guests a unique countryside vista and direct access to the gentle rural ambience of the north coast of Ibiza.",
-   "The grounds include a lovely lawn with spectacular sea views, the signature infinity pool, the herb gardens full of aromatic plants and bushes, an outdoor dining area and barbecue and lots of small shaded relaxation spots with armchairs and hammocks.",
-   "Next to the large modern kitchen is a beautiful dining area with large windows opening to the garden and seaview and views to the garden.",
-   "The main villa has a total of 5 double bedrooms, 3 of which have an en-suite bathroom and one is a family room consisting of 2 bedrooms and one bathroom. \nAnnexe: From 2026, the property is offering four brand-new, spacious suites, each offering 50 m² of comfort with private terraces, ensuite bathrooms, and stunning sea views. Every suite is thoughtfully designed with air conditioning, fiber optic Wi-Fi, and a king-size bed, while the private outdoor patios include green spaces and exterior rain showers for a refreshing experience in nature.",
-   "In addition to the new suites, the villa now offers a fully equipped, air-conditioned indoor gym. Guests will be able to enjoy a range of cardio equipment and free weights, making it easy to stay active while embracing the tranquility of the surroundings."
-  ],
-  "area": "San Carlos",
-  "area_key": "San Carlos",
-  "region": "santa-eulalia",
-  "region_name": "Santa Eulalia",
-  "district": "Santa Eulalia del Rio",
-  "country": "Spain",
-  "bedrooms": 11,
-  "bathrooms": 10,
-  "sleeps": 22,
-  "price_from": 46200,
-  "price_to": 77000,
-  "price_on_request": false,
-  "min_nights": 5,
-  "short_stays": true,
-  "cleaning": "6 Cleanings per week",
-  "cleaning_charge": 0,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Flexible check in days",
-  "license": "AG-0037-EIF",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": "2026-11-05",
-  "amenities": [
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "Alarm",
-   "BBQ",
-   "Country View",
-   "Music System",
-   "Swimming Pool",
-   "Wheelchair Friendly",
-   "Wifi",
-   "Hire Car Recommended",
-   "Safety Box",
-   "Sunloungers",
-   "Sea View",
-   "Private Parking",
-   "Office Space",
-   "Smart TV",
-   "Gated",
-   "Outdoor Kitchen",
-   "Sauna/Steam Room",
-   "Yoga Area",
-   "Underfloor Heating",
-   "Facilities for disabled guests",
-   "Elevator",
-   "Gym/Fitness Equipment"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers",
-     "Private Parking",
-     "Outdoor Kitchen"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "Music System",
-     "Wifi",
-     "Safety Box",
-     "Office Space",
-     "Smart TV",
-     "Underfloor Heating",
-     "Gym/Fitness Equipment"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Alarm",
-     "Country View",
-     "Hire Car Recommended",
-     "Sea View",
-     "Gated"
-    ]
-   },
-   {
-    "title": "Also included",
-    "items": [
-     "Wheelchair Friendly",
-     "Sauna/Steam Room",
-     "Yoga Area",
-     "Facilities for disabled guests",
-     "Elevator"
-    ]
-   }
-  ],
-  "audience": [
-   "Families",
-   "Friends",
-   "Events"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Annex 1.1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Annex 1.2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Birds view 1.2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Deluxe Sea View Suites 1.9.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Deluxe Sea View Suites 1.10.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Deluxe Sea View Suites 1.11.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Deluxe Sea View Suites 1.12.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Deluxe Sea View Suites 1.13.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Deluxe Sea View Suites 1.14.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Deluxe Sea View Suites 1.15.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Deluxe Sea View Suites 1.16.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Dining Room 1.JPG",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Double room 1.1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Double room 1.2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Double room 1.3.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Double room 1.4.JPG",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Double room 2.1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Double room 2.2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Double room 2.3.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Double room 3.1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Double room 3.2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Exterior terrace dining table 2.JPG",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/18807/villa_images/Exterior terrace dining table 3.JPG"
-  ],
-  "lat": 39.02619,
-  "lng": 1.56054,
-  "v_id": 18807,
-  "v_uuid": "4f976bc3-e520-4789-b94d-1e699cfce86b",
-  "nightly_from": 6600,
-  "nightly_to": 11000,
-  "rate_rows": 12,
-  "real_bedrooms": 11,
-  "real_bathrooms": 10,
-  "licence_check": {
-   "status": "verified",
-   "ok": true,
-   "licence": "AG-0037-EIF",
-   "register_licence": "AG0037EIF",
-   "register_places": 22,
-   "register_municipality": "SANTA EULARIA DES RIU",
-   "register": "turisme-rural",
-   "register_name": "CAN SKYE",
-   "issues": []
-  },
-  "near": [
-   [
-    "can-bassora",
-    2.0
-   ],
-   [
-    "finca-palmeras",
-    2.0
-   ],
-   [
-    "the-beach-house-cala-llenya",
-    2.0
-   ],
-   [
-    "villa-terra-blanca",
-    2.0
-   ],
-   [
-    "can-brooke",
-    2.5
-   ],
-   [
-    "can-de-baix",
-    2.5
-   ],
-   [
-    "villa-libelula",
-    2.5
-   ],
-   [
-    "can-gabriel",
-    3.0
-   ],
-   [
-    "can-aria",
-    3.5
-   ],
-   [
-    "can-luna",
-    3.5
-   ],
-   [
-    "villa-niu-blau",
-    3.5
-   ],
-   [
-    "villa-sadie",
-    3.5
-   ],
-   [
-    "can-floral",
-    4.0
-   ],
-   [
-    "cana-calma",
-    4.0
-   ],
-   [
-    "villa-xantara",
-    4.0
-   ],
-   [
-    "can-alivia",
-    4.5
-   ],
-   [
-    "can-sef",
-    4.5
-   ],
-   [
-    "villa-hilltopview",
-    4.5
-   ],
-   [
-    "villa-obsidian",
-    4.5
-   ],
-   [
-    "casa-aces",
-    5.0
-   ],
-   [
-    "casa-alhena",
-    5.0
-   ],
-   [
-    "villa-brisa",
-    5.0
-   ],
-   [
-    "villa-lino",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/can-anna-grande/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#949fa1"
-   },
-   {
-    "base": "villas/can-anna-grande/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#848f92"
-   },
-   {
-    "base": "villas/can-anna-grande/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#959d9a"
-   },
-   {
-    "base": "villas/can-anna-grande/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#99a9ad"
-   },
-   {
-    "base": "villas/can-anna-grande/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#989b86"
-   },
-   {
-    "base": "villas/can-anna-grande/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#96988e"
-   }
-  ],
-  "image": "/assets/villas/can-anna-grande/01-800.webp",
-  "image_large": "/assets/villas/can-anna-grande/01-1400.webp",
-  "image_colour": "#949fa1"
  },
  {
   "slug": "finca-utopia-xarraca",
@@ -2505,336 +2207,6 @@
   "image_colour": "#6c737b"
  },
  {
-  "slug": "belantara",
-  "name": "Belantara",
-  "tagline": "Bright Mediterranean Villa in a Prime Location",
-  "summary": "Villa Belantara is a spacious, bright, and well-connected property located in Sant Antoni, set within a quiet residential area that offers privacy while remaining within walking distance of the beach, the town center,…",
-  "description": [
-   "Villa Belantara is a spacious, bright, and well-connected property located in Sant Antoni, set within a quiet residential area that offers privacy while remaining within walking distance of the beach, the town center, and Ibiza’s famous sunsets.",
-   "From the villa, it is easy to reach some of the island’s most iconic spots, including Ocean Beach (1.8 km), Es Paradís and Edén (2.1 km), as well as Café Mambo and Café del Mar (2.5 km).",
-   "The interior of the villa features six bedrooms with built-in wardrobes, three full bathrooms, and one guest toilet, along with a fully equipped kitchen and a comfortable dining area designed for shared moments with family or friends.",
-   "Recently renovated, the outdoor areas offer a magnificent swimming pool, a chill-out zone with sun loungers, a barbecue area, and a large garden with private parking. The property is equipped with air conditioning, Wi-Fi, and an alarm system, ensuring comfort and peace of mind throughout the stay.",
-   "Villa Belantara is an ideal choice for enjoying Ibiza in a relaxed setting, combining comfort, outdoor living, and proximity to the island’s most vibrant locations."
-  ],
-  "area": "San Antonio",
-  "area_key": "San Antonio",
-  "region": "san-antonio",
-  "region_name": "San Antonio",
-  "district": "San Antonio de Portmany",
-  "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 3,
-  "sleeps": 12,
-  "price_from": 4950,
-  "price_to": 11550,
-  "price_on_request": false,
-  "min_nights": 7,
-  "short_stays": false,
-  "cleaning": "0 - Final Cleaning",
-  "cleaning_charge": 0,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Flexible check in days",
-  "license": "ETV-0972-E",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": "2026-11-05",
-  "amenities": [
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "Alarm",
-   "BBQ",
-   "Country View",
-   "Swimming Pool",
-   "TV - Satellite",
-   "Wifi",
-   "Sunloungers",
-   "Private Parking",
-   "Garage",
-   "Fully fitted kitchen",
-   "Terraces",
-   "Eco Tax on arrival 2.20€ per day per adult over 15"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers",
-     "Private Parking",
-     "Terraces"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "TV - Satellite",
-     "Wifi",
-     "Fully fitted kitchen"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Alarm",
-     "Country View"
-    ]
-   },
-   {
-    "title": "Also included",
-    "items": [
-     "Garage",
-     "Eco Tax on arrival 2.20€ per day per adult over 15"
-    ]
-   }
-  ],
-  "audience": [
-   "Filming",
-   "Private",
-   "Couples",
-   "Families",
-   "Friends",
-   "Retreats",
-   "Events",
-   "Honeymoon",
-   "Weddings",
-   "Neighbours"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.06.33.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.06.40.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.06.46.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.06.53.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.06.59.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.09.22.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.09.35.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.09.41.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.09.47.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.09.52.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.09.57.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.10.03.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.10.09.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.10.17.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.10.23.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.10.28.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.10.34.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.10.38.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.10.43.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.10.48.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.10.54.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.11.00.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.11.06.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.11.11.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.11.16.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.11.23.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.11.29.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.11.35.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.11.44.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.16.07.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.11.50.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.11.55.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.12.01.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.12.07.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.12.13.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.12.21.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.12.27.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.12.33.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.12.40.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.12.46.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.12.52.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.12.59.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.13.06.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.13.11.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.13.17.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.13.23.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.13.29.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.13.52.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.14.03.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.14.08.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.14.14.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.14.21.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.14.27.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.14.33.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.14.39.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.14.44.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.14.50.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.14.56.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.15.02.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.15.12.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.15.19.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.15.37.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.15.50.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.15.55.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19205/villa_images/Captura de pantalla 2026-02-10 a las 11.16.01.png"
-  ],
-  "lat": 38.96458,
-  "lng": 1.32236,
-  "v_id": 19205,
-  "v_uuid": "7890a112-b124-48a5-bfbc-958e4b3d21b5",
-  "nightly_from": 708,
-  "nightly_to": 1650,
-  "rate_rows": 9,
-  "real_bedrooms": 6,
-  "real_bathrooms": 3,
-  "licence_check": {
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-0972-E",
-   "register_licence": "ETV0972E",
-   "register_places": 12,
-   "register_municipality": "SANT ANTONI DE PORTMANY",
-   "register": "habitatges-turistics",
-   "register_name": "CASA BELLO",
-   "issues": []
-  },
-  "near": [
-   [
-    "can-carva",
-    1.5
-   ],
-   [
-    "villa-cayu",
-    1.5
-   ],
-   [
-    "can-agustin",
-    2.0
-   ],
-   [
-    "villa-eliana",
-    2.0
-   ],
-   [
-    "villa-harper",
-    2.0
-   ],
-   [
-    "villa-lumara",
-    2.0
-   ],
-   [
-    "can-cenote",
-    3.0
-   ],
-   [
-    "villa-hebe",
-    3.0
-   ],
-   [
-    "villa-solvista",
-    3.0
-   ],
-   [
-    "can-elsa",
-    3.5
-   ],
-   [
-    "can-harley",
-    3.5
-   ],
-   [
-    "can-verde",
-    3.5
-   ],
-   [
-    "villa-gracie",
-    3.5
-   ],
-   [
-    "can-timo",
-    4.0
-   ],
-   [
-    "casa-maxi",
-    4.0
-   ],
-   [
-    "can-mistique",
-    4.5
-   ],
-   [
-    "can-olivander",
-    4.5
-   ],
-   [
-    "can-sandra",
-    4.5
-   ],
-   [
-    "puesta-del-sol",
-    4.5
-   ],
-   [
-    "villa-cara",
-    4.5
-   ],
-   [
-    "villa-jaja",
-    4.5
-   ],
-   [
-    "can-arte",
-    5.0
-   ],
-   [
-    "can-ellie",
-    5.0
-   ],
-   [
-    "can-paloma",
-    5.0
-   ],
-   [
-    "villa-monica",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/belantara/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#5e7193"
-   },
-   {
-    "base": "villas/belantara/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#9b9995"
-   },
-   {
-    "base": "villas/belantara/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#8c9189"
-   },
-   {
-    "base": "villas/belantara/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#7c91b0"
-   },
-   {
-    "base": "villas/belantara/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#6a7d9f"
-   },
-   {
-    "base": "villas/belantara/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#7b8da7"
-   }
-  ],
-  "image": "/assets/villas/belantara/01-800.webp",
-  "image_large": "/assets/villas/belantara/01-1400.webp",
-  "image_colour": "#5e7193"
- },
- {
   "slug": "can-ariel",
   "name": "Can Ariel",
   "tagline": "Six Bedrooms, Valley Views, and the Soul of Old Ibiza",
@@ -3435,7 +2807,7 @@
     4.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     4.5
    ],
    [
@@ -5011,10 +4383,6 @@
     4.5
    ],
    [
-    "belantara",
-    5.0
-   ],
-   [
     "can-aqueduct",
     5.0
    ],
@@ -5105,7 +4473,7 @@
   "bathrooms": 6,
   "sleeps": 12,
   "price_from": 6138,
-  "price_to": 12221,
+  "price_to": 13079,
   "price_on_request": false,
   "min_nights": 5,
   "short_stays": false,
@@ -5363,7 +4731,7 @@
   "v_id": 483,
   "v_uuid": "fb9529d3-6c51-4955-b72e-2e62e1958ae3",
   "nightly_from": 877,
-  "nightly_to": 1746,
+  "nightly_to": 1869,
   "rate_rows": 13,
   "real_bedrooms": 6,
   "real_bathrooms": 6,
@@ -5410,10 +4778,6 @@
    [
     "villa-lino",
     2.5
-   ],
-   [
-    "can-anna-grande",
-    3.0
    ],
    [
     "casa-aces",
@@ -8629,7 +7993,7 @@
     2.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     2.5
    ],
    [
@@ -8731,10 +8095,6 @@
    [
     "villa-sylvia",
     4.5
-   ],
-   [
-    "belantara",
-    5.0
    ],
    [
     "can-laurel",
@@ -10007,7 +9367,7 @@
     3.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     3.5
    ],
    [
@@ -10053,10 +9413,6 @@
    [
     "villa-vivian",
     4.0
-   ],
-   [
-    "belantara",
-    4.5
    ],
    [
     "can-agustin",
@@ -10611,7 +9967,7 @@
   "license": "ETV-2565-E",
   "dcc": true,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-13",
   "amenities": [
    "Garden",
    "Air Conditioning",
@@ -13539,10 +12895,6 @@
     1.5
    ],
    [
-    "can-anna-grande",
-    2.0
-   ],
-   [
     "villa-terra-blanca",
     2.0
    ],
@@ -13911,7 +13263,7 @@
     4.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     4.5
    ],
    [
@@ -16120,7 +15472,7 @@
     1.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     1.5
    ],
    [
@@ -16726,19 +16078,19 @@
     "base": "villas/villa-can-retiro/01",
     "width": 1400,
     "height": 933,
-    "colour": "#5c5b4f"
+    "colour": "#5c5c4f"
    },
    {
     "base": "villas/villa-can-retiro/02",
     "width": 1400,
     "height": 933,
-    "colour": "#606653"
+    "colour": "#606654"
    },
    {
     "base": "villas/villa-can-retiro/03",
     "width": 1400,
     "height": 933,
-    "colour": "#64634e"
+    "colour": "#64634f"
    },
    {
     "base": "villas/villa-can-retiro/04",
@@ -16750,7 +16102,7 @@
     "base": "villas/villa-can-retiro/05",
     "width": 1400,
     "height": 2100,
-    "colour": "#635b3f"
+    "colour": "#635b40"
    },
    {
     "base": "villas/villa-can-retiro/06",
@@ -16761,7 +16113,7 @@
   ],
   "image": "/assets/villas/villa-can-retiro/01-800.webp",
   "image_large": "/assets/villas/villa-can-retiro/01-1400.webp",
-  "image_colour": "#5c5b4f"
+  "image_colour": "#5c5c4f"
  },
  {
   "slug": "villa-centelleo",
@@ -18267,10 +17619,6 @@
     1.5
    ],
    [
-    "belantara",
-    2.0
-   ],
-   [
     "can-verde",
     2.0
    ],
@@ -19658,7 +19006,7 @@
     1.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     1.0
    ],
    [
@@ -20513,7 +19861,7 @@
   },
   "near": [
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     0.5
    ],
    [
@@ -20919,7 +20267,7 @@
     2.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     2.5
    ],
    [
@@ -21650,10 +20998,6 @@
     4.5
    ],
    [
-    "can-anna-grande",
-    5.0
-   ],
-   [
     "can-cecilia",
     5.0
    ],
@@ -21804,10 +21148,10 @@
    "Honeymoon"
   ],
   "photos": [
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/140/villa_images/32.jpg",
    "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/140/villa_images/03.jpg",
    "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/140/villa_images/01.jpg",
    "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/140/villa_images/02.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/140/villa_images/32.jpg",
    "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/140/villa_images/26.jpg",
    "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/140/villa_images/05.jpg",
    "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/140/villa_images/07.jpg",
@@ -21919,7 +21263,7 @@
     3.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     3.5
    ],
    [
@@ -27155,10 +26499,6 @@
     2.5
    ],
    [
-    "belantara",
-    3.0
-   ],
-   [
     "can-carva",
     3.0
    ],
@@ -27215,7 +26555,7 @@
     5.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     5.0
    ],
    [
@@ -27469,7 +26809,7 @@
     1.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     2.0
    ],
    [
@@ -27765,10 +27105,6 @@
    [
     "can-de-baix",
     1.5
-   ],
-   [
-    "can-anna-grande",
-    2.0
    ],
    [
     "finca-palmeras",
@@ -29213,7 +28549,7 @@
     "base": "villas/villa-vidal/02",
     "width": 1400,
     "height": 933,
-    "colour": "#787d86"
+    "colour": "#787e86"
    },
    {
     "base": "villas/villa-vidal/03",
@@ -29237,7 +28573,7 @@
     "base": "villas/villa-vidal/06",
     "width": 1400,
     "height": 933,
-    "colour": "#86867b"
+    "colour": "#86877b"
    }
   ],
   "image": "/assets/villas/villa-vidal/01-800.webp",
@@ -29468,7 +28804,7 @@
     3.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     3.5
    ],
    [
@@ -30182,10 +29518,6 @@
     3.5
    ],
    [
-    "can-anna-grande",
-    4.0
-   ],
-   [
     "can-de-baix",
     4.0
    ],
@@ -30537,10 +29869,6 @@
    [
     "villa-gie",
     2.5
-   ],
-   [
-    "belantara",
-    3.5
    ],
    [
     "can-carva",
@@ -31116,7 +30444,7 @@
     3.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     3.5
    ],
    [
@@ -32707,7 +32035,7 @@
     2.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     2.5
    ],
    [
@@ -33076,10 +32404,6 @@
     3.5
    ],
    [
-    "can-anna-grande",
-    4.0
-   ],
-   [
     "can-de-baix",
     4.0
    ],
@@ -33348,10 +32672,6 @@
    [
     "villa-solvista",
     1.5
-   ],
-   [
-    "belantara",
-    2.0
    ],
    [
     "can-verde",
@@ -33973,10 +33293,6 @@
     1.5
    ],
    [
-    "can-anna-grande",
-    2.0
-   ],
-   [
     "can-aria",
     2.0
    ],
@@ -34242,10 +33558,6 @@
    [
     "the-beach-house-cala-llenya",
     1.0
-   ],
-   [
-    "can-anna-grande",
-    2.5
    ],
    [
     "can-bassora",
@@ -34826,7 +34138,7 @@
     1.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     2.0
    ],
    [
@@ -35708,10 +35020,6 @@
     3.0
    ],
    [
-    "belantara",
-    3.5
-   ],
-   [
     "can-meil",
     3.5
    ],
@@ -35740,7 +35048,7 @@
     4.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     4.5
    ],
    [
@@ -35996,10 +35304,6 @@
    [
     "villa-obsidian",
     3.0
-   ],
-   [
-    "can-anna-grande",
-    3.5
    ],
    [
     "casa-alhena",
@@ -36955,12 +36259,8 @@
     4.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     4.0
-   ],
-   [
-    "belantara",
-    4.5
    ],
    [
     "can-carva",
@@ -38286,10 +37586,6 @@
     3.5
    ],
    [
-    "belantara",
-    4.0
-   ],
-   [
     "can-ki",
     4.0
    ],
@@ -38618,10 +37914,6 @@
     3.0
    ],
    [
-    "belantara",
-    3.5
-   ],
-   [
     "can-sandra",
     3.5
    ],
@@ -38638,7 +37930,7 @@
     4.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     4.0
    ],
    [
@@ -39856,10 +39148,6 @@
    [
     "villa-zeus",
     3.5
-   ],
-   [
-    "belantara",
-    4.0
    ],
    [
     "can-aqueduct",
@@ -41431,10 +40719,6 @@
     4.0
    ],
    [
-    "belantara",
-    4.5
-   ],
-   [
     "can-timo",
     4.5
    ],
@@ -42731,10 +42015,6 @@
    [
     "villa-espada",
     4.5
-   ],
-   [
-    "can-anna-grande",
-    5.0
    ],
    [
     "cielo-del-norte",
@@ -44950,7 +44230,7 @@
     3.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     3.5
    ],
    [
@@ -47003,7 +46283,7 @@
     3.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     3.0
    ],
    [
@@ -47065,10 +46345,6 @@
    [
     "villa-nizra",
     4.0
-   ],
-   [
-    "belantara",
-    4.5
    ],
    [
     "can-chloe",
@@ -47762,7 +47038,7 @@
     3.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     3.5
    ],
    [
@@ -49262,7 +48538,7 @@
     4.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     4.0
    ],
    [
@@ -49288,10 +48564,6 @@
    [
     "villa-haisley",
     4.5
-   ],
-   [
-    "belantara",
-    5.0
    ],
    [
     "can-agustin",
@@ -50110,10 +49382,6 @@
    ],
    [
     "can-alivia",
-    4.5
-   ],
-   [
-    "can-anna-grande",
     4.5
    ],
    [
@@ -53836,7 +53104,7 @@
     4.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     4.0
    ],
    [
@@ -54547,7 +53815,7 @@
     1.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     1.5
    ],
    [
@@ -55062,7 +54330,7 @@
     5.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     5.0
    ],
    [
@@ -56685,10 +55953,6 @@
     4.0
    ],
    [
-    "can-anna-grande",
-    4.5
-   ],
-   [
     "can-de-baix",
     4.5
    ],
@@ -57255,10 +56519,6 @@
    [
     "villa-obsidian",
     3.0
-   ],
-   [
-    "can-anna-grande",
-    3.5
    ],
    [
     "casa-alhena",
@@ -57963,7 +57223,7 @@
     1.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     1.5
    ],
    [
@@ -58438,7 +57698,7 @@
     4.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     4.0
    ],
    [
@@ -58805,10 +58065,6 @@
    ],
    [
     "can-alivia",
-    4.0
-   ],
-   [
-    "can-anna-grande",
     4.0
    ],
    [
@@ -61649,10 +60905,6 @@
     4.0
    ],
    [
-    "can-anna-grande",
-    4.5
-   ],
-   [
     "finca-palmeras",
     5.0
    ]
@@ -63588,10 +62840,6 @@
     4.5
    ],
    [
-    "can-anna-grande",
-    5.0
-   ],
-   [
     "finca-palmeras",
     5.0
    ],
@@ -63906,10 +63154,6 @@
    [
     "villa-xantara",
     4.5
-   ],
-   [
-    "can-anna-grande",
-    5.0
    ],
    [
     "can-fabulosa",
@@ -65962,7 +65206,7 @@
     3.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     3.5
    ],
    [
@@ -68390,7 +67634,7 @@
     3.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     3.0
    ],
    [
@@ -69594,7 +68838,7 @@
     3.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     3.5
    ],
    [
@@ -69925,7 +69169,7 @@
     3.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     4.0
    ],
    [
@@ -69934,10 +69178,6 @@
    ],
    [
     "alegre-blue",
-    4.5
-   ],
-   [
-    "belantara",
     4.5
    ],
    [
@@ -74209,10 +73449,6 @@
     2.0
    ],
    [
-    "belantara",
-    3.0
-   ],
-   [
     "can-ariel",
     3.0
    ],
@@ -74585,10 +73821,6 @@
    [
     "villa-libelula",
     4.0
-   ],
-   [
-    "can-anna-grande",
-    4.5
    ],
    [
     "can-cecilia",
@@ -76292,10 +75524,6 @@
     2.0
    ],
    [
-    "can-anna-grande",
-    2.5
-   ],
-   [
     "can-brooke",
     3.0
    ],
@@ -76980,10 +76208,6 @@
    [
     "villa-cayu",
     1.5
-   ],
-   [
-    "belantara",
-    2.0
    ],
    [
     "villa-gracie",
@@ -79492,10 +78716,6 @@
     3.0
    ],
    [
-    "can-anna-grande",
-    3.5
-   ],
-   [
     "can-gabriel",
     3.5
    ],
@@ -80619,10 +79839,6 @@
    [
     "villa-niu-blau",
     3.0
-   ],
-   [
-    "can-anna-grande",
-    3.5
    ],
    [
     "finca-palmeras",
@@ -81891,7 +81107,7 @@
     3.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     4.0
    ],
    [
@@ -82130,10 +81346,6 @@
    [
     "villa-harper",
     1.0
-   ],
-   [
-    "belantara",
-    1.5
    ],
    [
     "villa-cayu",
@@ -83443,7 +82655,7 @@
     5.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     5.0
    ],
    [
@@ -83796,10 +83008,6 @@
     2.5
    ],
    [
-    "belantara",
-    3.0
-   ],
-   [
     "can-ellie",
     3.0
    ],
@@ -84078,10 +83286,6 @@
    [
     "villa-terra-blanca",
     1.5
-   ],
-   [
-    "can-anna-grande",
-    2.5
    ],
    [
     "can-gabriel",
@@ -85716,7 +84920,7 @@
     1.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     1.5
    ],
    [
@@ -86988,15 +86192,11 @@
     3.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     4.0
    ],
    [
     "alegre-blue",
-    4.5
-   ],
-   [
-    "belantara",
     4.5
    ],
    [
@@ -88207,7 +87407,7 @@
     2.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     3.0
    ],
    [
@@ -90251,7 +89451,7 @@
     3.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     3.0
    ],
    [
@@ -90509,10 +89709,6 @@
    [
     "can-bassora",
     1.5
-   ],
-   [
-    "can-anna-grande",
-    2.0
    ],
    [
     "villa-libelula",
@@ -91153,10 +90349,6 @@
    [
     "villa-harper",
     1.0
-   ],
-   [
-    "belantara",
-    1.5
    ],
    [
     "can-agustin",
@@ -92310,10 +91502,6 @@
     1.0
    ],
    [
-    "belantara",
-    2.0
-   ],
-   [
     "can-agustin",
     2.0
    ],
@@ -92410,7 +91598,7 @@
     5.0
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     5.0
    ],
    [
@@ -93740,7 +92928,7 @@
     "base": "villas/villa-loopa/02",
     "width": 1400,
     "height": 933,
-    "colour": "#a29890"
+    "colour": "#a29990"
    },
    {
     "base": "villas/villa-loopa/03",
@@ -93758,7 +92946,7 @@
     "base": "villas/villa-loopa/05",
     "width": 1400,
     "height": 933,
-    "colour": "#5a7495"
+    "colour": "#5a7596"
    },
    {
     "base": "villas/villa-loopa/06",
@@ -96996,8 +96184,8 @@
   "image_colour": "#462f29"
  },
  {
-  "slug": "villa-cala-tarida-rafael",
-  "name": "Villa Cala Tarida Rafael",
+  "slug": "villa-cala-tarida-pueblo",
+  "name": "Villa Cala Tarida Pueblo",
   "tagline": "Charming villa with sunset views near Cala Tarida",
   "summary": "Villa Cala Tarida Pueblo is a contemporary retreat that harmoniously blends the charm of a traditional Ibizan finca with modern comforts. This elegant villa is ideally situated near the coastline of Cala Tarida.",
   "description": [
@@ -97248,44 +96436,44 @@
   ],
   "images": [
    {
-    "base": "villas/villa-cala-tarida-rafael/01",
+    "base": "villas/villa-cala-tarida-pueblo/01",
     "width": 1400,
     "height": 933,
     "colour": "#928e88"
    },
    {
-    "base": "villas/villa-cala-tarida-rafael/02",
+    "base": "villas/villa-cala-tarida-pueblo/02",
     "width": 1400,
     "height": 933,
-    "colour": "#939c9a"
+    "colour": "#939b9a"
    },
    {
-    "base": "villas/villa-cala-tarida-rafael/03",
+    "base": "villas/villa-cala-tarida-pueblo/03",
     "width": 1400,
     "height": 933,
-    "colour": "#9a9688"
+    "colour": "#9a9588"
    },
    {
-    "base": "villas/villa-cala-tarida-rafael/04",
+    "base": "villas/villa-cala-tarida-pueblo/04",
     "width": 1400,
     "height": 933,
-    "colour": "#a69f92"
+    "colour": "#a69e92"
    },
    {
-    "base": "villas/villa-cala-tarida-rafael/05",
+    "base": "villas/villa-cala-tarida-pueblo/05",
     "width": 1400,
     "height": 933,
     "colour": "#908f80"
    },
    {
-    "base": "villas/villa-cala-tarida-rafael/06",
+    "base": "villas/villa-cala-tarida-pueblo/06",
     "width": 1400,
     "height": 933,
     "colour": "#857769"
    }
   ],
-  "image": "/assets/villas/villa-cala-tarida-rafael/01-800.webp",
-  "image_large": "/assets/villas/villa-cala-tarida-rafael/01-1400.webp",
+  "image": "/assets/villas/villa-cala-tarida-pueblo/01-800.webp",
+  "image_large": "/assets/villas/villa-cala-tarida-pueblo/01-1400.webp",
   "image_colour": "#928e88"
  },
  {
@@ -98742,10 +97930,6 @@
     3.0
    ],
    [
-    "belantara",
-    3.5
-   ],
-   [
     "can-elsa",
     3.5
    ],
@@ -98822,7 +98006,7 @@
     4.5
    ],
    [
-    "villa-cala-tarida-rafael",
+    "villa-cala-tarida-pueblo",
     4.5
    ],
    [
