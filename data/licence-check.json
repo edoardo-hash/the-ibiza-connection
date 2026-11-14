@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-13",
+ "checked_on": "2026-11-14",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -2511,14 +2511,14 @@
    "slug": "villa-larish",
    "status": "format_differs",
    "ok": true,
-   "licence": "ETV-1050-E2",
+   "licence": "ETV-1050-E",
    "register_licence": "ET1050E",
    "register_places": 12,
    "register_municipality": "SANT ANTONI DE PORTMANY",
    "register": "habitatges-turistics",
    "register_name": "VILLA CAROL",
    "issues": [
-    "Number 1050 is correct, but IMpulse has 'ETV-1050-E2' and the register has ET1050E"
+    "Number 1050 is correct, but IMpulse has 'ETV-1050-E' and the register has ET1050E"
    ]
   },
   "61174055-3734-415e-be82-62cc624089ad": {
@@ -3249,6 +3249,21 @@
     "Shown for 12 guests; the register allows 6 places"
    ]
   },
+  "5ee4745e-4322-42f8-ae0a-916ba0e0d244": {
+   "name": "Villa Trevi",
+   "slug": "villa-trevi",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1223-E",
+   "register_licence": "ETV1223E",
+   "register_places": 7,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA AMIGO",
+   "issues": [
+    "Shown for 8 guests; the register allows 7 places"
+   ]
+  },
   "1f845359-70eb-4def-830f-03df5b038b3f": {
    "name": "Villa Trinity",
    "slug": "villa-trinity",
@@ -3435,7 +3450,7 @@
  "counts": {
   "format_differs": 3,
   "not_in_register": 1,
-  "verified": 254
+  "verified": 255
  },
  "hidden": [],
  "flagged": [
@@ -3474,7 +3489,8 @@
   "Villa Meghan Deluxe",
   "Villa Meghan Grande",
   "Villa Style",
-  "Villa Terra Blanca"
+  "Villa Terra Blanca",
+  "Villa Trevi"
  ],
  "policy": "hide"
 }
