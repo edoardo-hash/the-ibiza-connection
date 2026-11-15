@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-14",
+ "checked_on": "2026-11-15",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -3010,19 +3010,6 @@
    "register_name": "CAN ALEXA",
    "issues": []
   },
-  "6272289b-cad3-496b-807b-38be01cf5f83": {
-   "name": "Villa Petunia",
-   "slug": "villa-petunia",
-   "status": "verified",
-   "ok": true,
-   "licence": "ET-0860-E",
-   "register_licence": "ET0860E",
-   "register_places": 6,
-   "register_municipality": "SANT ANTONI DE PORTMANY",
-   "register": "habitatges-turistics",
-   "register_name": "FORADA",
-   "issues": []
-  },
   "1c83427b-86c4-47e9-ae65-b7cdcf729bfd": {
    "name": "Villa Porroig Relax",
    "slug": "villa-porroig-relax",
@@ -3450,7 +3437,7 @@
  "counts": {
   "format_differs": 3,
   "not_in_register": 1,
-  "verified": 255
+  "verified": 254
  },
  "hidden": [],
  "flagged": [
