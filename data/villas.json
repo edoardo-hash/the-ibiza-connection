@@ -988,10 +988,6 @@
    [
     "can-puig-lorenzo",
     5.0
-   ],
-   [
-    "finca-palmeras",
-    5.0
    ]
   ],
   "images": [
@@ -4768,10 +4764,6 @@
     2.5
    ],
    [
-    "finca-palmeras",
-    2.5
-   ],
-   [
     "villa-lino",
     2.5
    ],
@@ -4833,10 +4825,6 @@
    ],
    [
     "villa-serenya",
-    4.0
-   ],
-   [
-    "villa-terra-blanca",
     4.0
    ],
    [
@@ -8033,10 +8021,6 @@
     3.5
    ],
    [
-    "villa-harper",
-    3.5
-   ],
-   [
     "can-chloe",
     4.0
    ],
@@ -9317,10 +9301,6 @@
    [
     "villa-lydia",
     1.5
-   ],
-   [
-    "villa-harper",
-    2.5
    ],
    [
     "can-beth",
@@ -12686,342 +12666,6 @@
   "image_colour": "#7a8d77"
  },
  {
-  "slug": "finca-palmeras",
-  "name": "Finca Palmeras",
-  "tagline": "Where Ibiza's Soul Meets Timeless Luxury",
-  "summary": "Rooted in the heart of Ibiza's verdant countryside, this magnificent restored finca is a rare marriage of raw island soul and refined modern living. Ancient whitewashed walls, hand-hewn wooden beams and terracotta-toned…",
-  "description": [
-   "Rooted in the heart of Ibiza's verdant countryside, this magnificent restored finca is a rare marriage of raw island soul and refined modern living. Ancient whitewashed walls, hand-hewn wooden beams and terracotta-toned stone speak the language of the land, while every interior detail has been carefully curated to deliver the comfort and elegance that discerning guests expect. The result is a home that feels both deeply authentic and effortlessly luxurious — a place where the island's spirit lives in every room.",
-   "Set across generous landscaped grounds with sweeping panoramic views that roll from lush Mediterranean hills to the glittering sea beyond, Villa Terra Blanca accommodates up to 12 guests across six individually styled bedrooms. Whether you're gathering a family, celebrating a milestone with friends, or simply seeking an extraordinary private escape, this is your stage.",
-   "Living Spaces\nThe heart of the villa is its spectacular open-plan living and dining area — flooded with natural light, anchored by exposed wooden ceiling beams and dressed in handcrafted furnishings that feel simultaneously rustic and refined. Curated art pieces dot the whitewashed walls, and the flow between lounge, dining and kitchen makes the space feel both grand and warmly liveable.",
-   "The fully equipped contemporary kitchen is a pleasure to cook in — designed for the chef who wants to work with the finest local produce from Ibiza's markets, yet equally suited to catering for a crowd. The separate dining room, with its polished hardwood furniture and vintage sideboard, sets the scene for long, wine-filled evenings that drift effortlessly into the night.",
-   "Bedrooms & Bathrooms\nSix beautifully appointed bedrooms, each with its own distinct character, offer the perfect sanctuary after a day exploring the island. Four bedrooms feature private en-suite bathrooms, while a fifth shared bathroom serves the remaining rooms — ensuring that every guest enjoys their own private space.",
-   "Expect crisp white linen, premium mattresses, ample wardrobe storage and garden views from most rooms. The bathrooms are finished to a spa-like standard: contemporary fixtures, rainfall showers and plush towels combine to make the daily ritual of getting ready feel like an indulgence in itself.",
-   "Pool & Outdoor Living\nStep outside and the magic truly begins.",
-   "The centrepiece of Villa Terra Blanca's outdoor world is its large private swimming pool, set against a backdrop of pine-covered hillsides and open sky. Premium sun loungers line the terrace, perfectly positioned for those long, golden Ibizan afternoons when time seems to slow to a welcome standstill.",
-   "The surrounding landscaped gardens — lush, secluded and immaculately maintained — create a sense of complete privacy. A fully equipped BBQ area and multiple shaded terraces invite alfresco dining at its finest: fresh fish, local cheeses, chilled rosé, and the scent of jasmine in the evening air. This is outdoor living elevated to an art form.",
-   "Location\nNestled in the Ibizan countryside with panoramic views of both the green interior and the Mediterranean Sea, Villa Terra Blanca offers the perfect balance of seclusion and access. The island's iconic beaches, world-class restaurants and legendary nightlife are all within easy reach — yet the moment you step through the villa gates, the outside world simply falls away.",
-   "Layout \nBedroom 1\nMaster suite, en-suite bathroom, garden views",
-   "Bedroom 2\nDouble bedroom, en-suite bathroom",
-   "Bedroom 3\nDouble bedroom, en-suite bathroom",
-   "Bedroom 4\nTwin bedroom, en-suite bathroom",
-   "Bedroom 5\nDouble/Twin bedroom, shared bathroom",
-   "Bedroom 6\nDouble/Twin bedroom, shared bathroom"
-  ],
-  "area": "San Carlos",
-  "area_key": "San Carlos",
-  "region": "santa-eulalia",
-  "region_name": "Santa Eulalia",
-  "district": "Santa Eulalia del Rio",
-  "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
-  "sleeps": 12,
-  "price_from": 11715,
-  "price_to": 12760,
-  "price_on_request": false,
-  "min_nights": 7,
-  "short_stays": false,
-  "cleaning": "0 - Final Cleaning",
-  "cleaning_charge": 500,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Flexible check in days",
-  "license": "ETV-1922-E",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": "2026-11-08",
-  "amenities": [
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "BBQ",
-   "Country View",
-   "Swimming Pool",
-   "Wifi",
-   "Hire Car Recommended",
-   "Sunloungers",
-   "Smart TV"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "Wifi",
-     "Smart TV"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Country View",
-     "Hire Car Recommended"
-    ]
-   }
-  ],
-  "audience": [
-   "Filming",
-   "Private",
-   "Couples",
-   "Families",
-   "Friends",
-   "Retreats",
-   "Honeymoon",
-   "Weddings"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-055_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-001_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-005_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-073_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-010_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-003_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-004_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-006_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-002_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-007_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-008_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-009_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-011_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-012_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-013_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-014_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-015_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-016_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-017_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-018_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-019_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-020_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-021_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-022_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-023_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-024_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-025_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-026_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-027_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-028_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-029_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-031_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-032_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-033_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-034_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-035_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-036_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-037_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-038_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-039_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-040_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-042_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-043_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-044_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-045_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-046_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-047_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-048_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-049_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-050_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-051_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-081_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-080_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-079_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-075_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-076_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-072_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-078_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-077_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-074_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-052_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-053_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-054_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-056_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-057_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-058_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-059_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-060_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-061_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-062_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-063_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-064_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-065_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-066_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-067_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-071_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-068_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-069_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19637/villa_images/villa-carmen-070_HD.jpg"
-  ],
-  "lat": 39.03235,
-  "lng": 1.55366,
-  "v_id": 19637,
-  "v_uuid": "1e999304-2835-43bd-8d2e-bae50ef2239a",
-  "nightly_from": 1650,
-  "nightly_to": 1870,
-  "rate_rows": 5,
-  "real_bedrooms": 6,
-  "real_bathrooms": 6,
-  "licence_check": {
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-1922-E",
-   "register_licence": "ETV1922E",
-   "register_places": 10,
-   "register_municipality": "SANTA EULARIA DES RIU",
-   "register": "habitatges-turistics",
-   "register_name": "CAN COLOMARET",
-   "issues": [
-    "Shown for 12 guests; the register allows 10 places"
-   ]
-  },
-  "near": [
-   [
-    "can-de-baix",
-    1.5
-   ],
-   [
-    "villa-terra-blanca",
-    2.0
-   ],
-   [
-    "can-gabriel",
-    2.5
-   ],
-   [
-    "cana-calma",
-    3.0
-   ],
-   [
-    "villa-trevi",
-    3.0
-   ],
-   [
-    "villa-xantara",
-    3.0
-   ],
-   [
-    "can-alivia",
-    3.5
-   ],
-   [
-    "can-bassora",
-    3.5
-   ],
-   [
-    "the-beach-house-cala-llenya",
-    3.5
-   ],
-   [
-    "villa-brisa",
-    3.5
-   ],
-   [
-    "villa-lino",
-    3.5
-   ],
-   [
-    "villa-sadie",
-    3.5
-   ],
-   [
-    "can-brooke",
-    4.0
-   ],
-   [
-    "can-floral",
-    4.0
-   ],
-   [
-    "villa-hilltopview",
-    4.0
-   ],
-   [
-    "villa-libelula",
-    4.0
-   ],
-   [
-    "villa-serenya",
-    4.0
-   ],
-   [
-    "villa-niu-blau",
-    4.5
-   ],
-   [
-    "can-aria",
-    5.0
-   ],
-   [
-    "can-luna",
-    5.0
-   ],
-   [
-    "can-sef",
-    5.0
-   ],
-   [
-    "casa-aces",
-    5.0
-   ],
-   [
-    "villa-espada",
-    5.0
-   ],
-   [
-    "villa-obsidian",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/finca-palmeras/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#4d7375"
-   },
-   {
-    "base": "villas/finca-palmeras/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#557369"
-   },
-   {
-    "base": "villas/finca-palmeras/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#938d7a"
-   },
-   {
-    "base": "villas/finca-palmeras/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#9f8761"
-   },
-   {
-    "base": "villas/finca-palmeras/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#b39e89"
-   },
-   {
-    "base": "villas/finca-palmeras/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#8f8065"
-   }
-  ],
-  "image": "/assets/villas/finca-palmeras/01-800.webp",
-  "image_large": "/assets/villas/finca-palmeras/01-1400.webp",
-  "image_colour": "#4d7375"
- },
- {
   "slug": "lovella",
   "name": "Lovella",
   "tagline": "Clifftop seclusion above Cala Vadella's shimmering western waters",
@@ -15576,10 +15220,6 @@
     4.0
    ],
    [
-    "villa-harper",
-    4.0
-   ],
-   [
     "villa-katherine",
     4.0
    ],
@@ -17612,10 +17252,6 @@
    ],
    [
     "can-verde",
-    2.0
-   ],
-   [
-    "villa-harper",
     2.0
    ],
    [
@@ -20005,10 +19641,6 @@
     5.0
    ],
    [
-    "villa-harper",
-    5.0
-   ],
-   [
     "villa-nizra",
     5.0
    ],
@@ -20958,10 +20590,6 @@
     3.5
    ],
    [
-    "finca-palmeras",
-    3.5
-   ],
-   [
     "can-floral",
     4.0
    ],
@@ -21272,10 +20900,6 @@
    ],
    [
     "villa-haisley",
-    4.0
-   ],
-   [
-    "villa-harper",
     4.0
    ],
    [
@@ -26155,10 +25779,6 @@
     4.0
    ],
    [
-    "finca-palmeras",
-    4.0
-   ],
-   [
     "villa-carrion",
     4.0
    ],
@@ -26468,10 +26088,6 @@
    ],
    [
     "villa-cayu",
-    2.0
-   ],
-   [
-    "villa-harper",
     2.0
    ],
    [
@@ -26934,268 +26550,6 @@
   "image": "/assets/villas/villa-sylvia/01-800.webp",
   "image_large": "/assets/villas/villa-sylvia/01-1400.webp",
   "image_colour": "#a6a594"
- },
- {
-  "slug": "villa-terra-blanca",
-  "name": "Villa Terra Blanca",
-  "tagline": "Luxury Private Finca with Pool & Countryside Views",
-  "summary": "Set in a peaceful corner of the Ibizan countryside, Villa Terra Blanca is a beautiful traditional finca, lovingly restored to balance authentic island character with contemporary comfort. Whitewashed walls, warm…",
-  "description": [
-   "Set in a peaceful corner of the Ibizan countryside, Villa Terra Blanca is a beautiful traditional finca, lovingly restored to balance authentic island character with contemporary comfort. Whitewashed walls, warm terracotta and stone floors, exposed wooden beams and sun-filled terraces frame sweeping views over the island's wooded hills.",
-   "Sleeping up to 12 guests across six individually styled bedrooms — four with private en-suite bathrooms — the villa is an ideal retreat for families, groups of friends, or anyone marking a special occasion on the White Isle. At its heart is a light-filled open-plan living and dining area with handsome antique and contemporary furnishings, opening onto the gardens, alongside a fully equipped kitchen made for cooking with the island's finest local produce.",
-   "Outdoors is where Villa Terra Blanca comes alive. A large private pool takes centre stage, framed by a spacious sun terrace with loungers and parasols for relaxed afternoons in the sun. A shaded terrace and BBQ area invite easy alfresco dining, while the beautifully landscaped gardens offer a real sense of seclusion. The villa enjoys an accessible setting close to local roads, so guests may notice some gentle passing traffic at times — a small trade-off for its convenient location and the wider grounds that surround it.",
-   "With air conditioning and ceiling fans in the living spaces, comfortable heating throughout, high-speed Wi-Fi, private parking for several vehicles, and the option of bespoke concierge services, Villa Terra Blanca offers a relaxed and memorable escape that captures the essence of Ibiza."
-  ],
-  "area": "San Carlos",
-  "area_key": "San Carlos",
-  "region": "santa-eulalia",
-  "region_name": "Santa Eulalia",
-  "district": "Santa Eulalia del Rio",
-  "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 5,
-  "sleeps": 12,
-  "price_from": 9900,
-  "price_to": 11550,
-  "price_on_request": false,
-  "min_nights": 7,
-  "short_stays": false,
-  "cleaning": "0 - Final Cleaning",
-  "cleaning_charge": 500,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Flexible check in days",
-  "license": "ETV2400-E0",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": "2026-11-08",
-  "amenities": [
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "BBQ",
-   "Swimming Pool",
-   "Wifi",
-   "Sunloungers",
-   "Private Parking",
-   "Smart TV"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers",
-     "Private Parking"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "Wifi",
-     "Smart TV"
-    ]
-   }
-  ],
-  "audience": [],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-031_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-043_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-047_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-063_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-007_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-008_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-009_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-010_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-011_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-012_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-013_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-014_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-015_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-016_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-017_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-018_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-019_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-020_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-021_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-022_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-023_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-024_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-025_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-026_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-027_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-028_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-029_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-030_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-034_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-035_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-036_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-037_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-038_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-039_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-040_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-064_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-065_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-066_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-042_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-046_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-050_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-051_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-052_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-053_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-054_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-056_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-057_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-058_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-059_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-061_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-062_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-055_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-060_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-032_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-033_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-049_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-044_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-045_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-048_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-002_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-006_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-003_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-004_HD.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/19636/villa_images/villa-can-xic-001_HD.jpg"
-  ],
-  "lat": 39.03951,
-  "lng": 1.5608,
-  "v_id": 19636,
-  "v_uuid": "b5f6a406-7e0a-4062-9397-923e125b5e00",
-  "nightly_from": 1320,
-  "nightly_to": 1650,
-  "rate_rows": 9,
-  "real_bedrooms": 6,
-  "real_bathrooms": 5,
-  "licence_check": {
-   "status": "format_differs",
-   "ok": true,
-   "licence": "ETV2400-E0",
-   "register_licence": "ETV2400E",
-   "register_places": 6,
-   "register_municipality": "SANTA EULARIA DES RIU",
-   "register": "habitatges-turistics",
-   "register_name": "CAN XIC",
-   "issues": [
-    "Number 2400 is correct, but IMpulse has 'ETV2400-E0' and the register has ETV2400E",
-    "Shown for 12 guests; the register allows 6 places"
-   ]
-  },
-  "near": [
-   [
-    "can-de-baix",
-    1.5
-   ],
-   [
-    "finca-palmeras",
-    2.0
-   ],
-   [
-    "can-brooke",
-    3.0
-   ],
-   [
-    "the-beach-house-cala-llenya",
-    3.0
-   ],
-   [
-    "villa-trevi",
-    3.0
-   ],
-   [
-    "can-bassora",
-    3.5
-   ],
-   [
-    "can-sef",
-    3.5
-   ],
-   [
-    "can-gabriel",
-    4.0
-   ],
-   [
-    "villa-libelula",
-    4.0
-   ],
-   [
-    "cana-calma",
-    4.5
-   ],
-   [
-    "villa-xantara",
-    4.5
-   ],
-   [
-    "can-alivia",
-    5.0
-   ],
-   [
-    "can-aria",
-    5.0
-   ],
-   [
-    "can-luna",
-    5.0
-   ],
-   [
-    "villa-brisa",
-    5.0
-   ],
-   [
-    "villa-sadie",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/villa-terra-blanca/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#a1a78c"
-   },
-   {
-    "base": "villas/villa-terra-blanca/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#969c99"
-   },
-   {
-    "base": "villas/villa-terra-blanca/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#857b5f"
-   },
-   {
-    "base": "villas/villa-terra-blanca/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#9c826f"
-   },
-   {
-    "base": "villas/villa-terra-blanca/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#d1c0ab"
-   },
-   {
-    "base": "villas/villa-terra-blanca/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#ccbda9"
-   }
-  ],
-  "image": "/assets/villas/villa-terra-blanca/01-800.webp",
-  "image_large": "/assets/villas/villa-terra-blanca/01-1400.webp",
-  "image_colour": "#a1a78c"
  },
  {
   "slug": "villa-tuscany",
@@ -29490,10 +28844,6 @@
     2.5
    ],
    [
-    "finca-palmeras",
-    3.0
-   ],
-   [
     "villa-espada",
     3.0
    ],
@@ -29551,10 +28901,6 @@
    ],
    [
     "villa-obsidian",
-    4.5
-   ],
-   [
-    "villa-terra-blanca",
     4.5
    ],
    [
@@ -29908,10 +29254,6 @@
    ],
    [
     "villa-gracie",
-    4.5
-   ],
-   [
-    "villa-harper",
     4.5
    ],
    [
@@ -30457,10 +29799,6 @@
    ],
    [
     "villa-haisley",
-    4.0
-   ],
-   [
-    "villa-harper",
     4.0
    ],
    [
@@ -32384,10 +31722,6 @@
     3.0
    ],
    [
-    "finca-palmeras",
-    3.0
-   ],
-   [
     "villa-serenya",
     3.0
    ],
@@ -32433,10 +31767,6 @@
    ],
    [
     "villa-niu-blau",
-    4.5
-   ],
-   [
-    "villa-terra-blanca",
     4.5
    ],
    [
@@ -32675,10 +32005,6 @@
    ],
    [
     "can-verde",
-    2.0
-   ],
-   [
-    "villa-harper",
     2.0
    ],
    [
@@ -33321,14 +32647,6 @@
     3.5
    ],
    [
-    "finca-palmeras",
-    3.5
-   ],
-   [
-    "villa-terra-blanca",
-    3.5
-   ],
-   [
     "villa-hilltopview",
     4.0
    ],
@@ -33576,10 +32894,6 @@
     3.0
    ],
    [
-    "villa-terra-blanca",
-    3.0
-   ],
-   [
     "can-sef",
     3.5
    ],
@@ -33593,10 +32907,6 @@
    ],
    [
     "can-luna",
-    4.0
-   ],
-   [
-    "finca-palmeras",
     4.0
    ],
    [
@@ -35008,10 +34318,6 @@
     2.5
    ],
    [
-    "villa-harper",
-    2.5
-   ],
-   [
     "villa-lucy",
     2.5
    ],
@@ -35359,14 +34665,6 @@
    ],
    [
     "cana-calma",
-    5.0
-   ],
-   [
-    "finca-palmeras",
-    5.0
-   ],
-   [
-    "villa-terra-blanca",
     5.0
    ]
   ],
@@ -36252,10 +35550,6 @@
    ],
    [
     "villa-frankie",
-    3.5
-   ],
-   [
-    "villa-harper",
     3.5
    ],
    [
@@ -37903,10 +37197,6 @@
    ],
    [
     "villa-cayu",
-    2.5
-   ],
-   [
-    "villa-harper",
     2.5
    ],
    [
@@ -40745,10 +40035,6 @@
    [
     "villa-gracie",
     5.0
-   ],
-   [
-    "villa-harper",
-    5.0
    ]
   ],
   "images": [
@@ -41985,10 +41271,6 @@
     3.5
    ],
    [
-    "finca-palmeras",
-    3.5
-   ],
-   [
     "can-leilani",
     4.0
    ],
@@ -42026,10 +41308,6 @@
    ],
    [
     "villa-hilltopview",
-    5.0
-   ],
-   [
-    "villa-terra-blanca",
     5.0
    ]
   ],
@@ -45327,7 +44605,7 @@
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
-  "cleaning": "7 Cleanings per week",
+  "cleaning": "6 Cleanings per week",
   "cleaning_charge": 0,
   "check_in": "16:00",
   "check_out": "10:00",
@@ -46291,10 +45569,6 @@
     3.0
    ],
    [
-    "villa-harper",
-    3.0
-   ],
-   [
     "villa-ivy",
     3.0
    ],
@@ -47059,10 +46333,6 @@
    ],
    [
     "villa-haisley",
-    4.0
-   ],
-   [
-    "villa-harper",
     4.0
    ],
    [
@@ -48510,10 +47780,6 @@
     3.5
    ],
    [
-    "villa-harper",
-    3.5
-   ],
-   [
     "villa-lumara",
     3.5
    ],
@@ -49406,10 +48672,6 @@
    ],
    [
     "can-fabulosa",
-    5.0
-   ],
-   [
-    "finca-palmeras",
     5.0
    ],
    [
@@ -50792,8 +50054,8 @@
   "bedrooms": 5,
   "bathrooms": 5,
   "sleeps": 10,
-  "price_from": 7791,
-  "price_to": 16434,
+  "price_from": 7334,
+  "price_to": 16959,
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
@@ -50936,9 +50198,9 @@
   "lng": 1.29684,
   "v_id": 118,
   "v_uuid": "dbd3c2d4-5dc4-498c-b69a-f978475ef048",
-  "nightly_from": 1047,
-  "nightly_to": 2348,
-  "rate_rows": 12,
+  "nightly_from": 1048,
+  "nightly_to": 2423,
+  "rate_rows": 11,
   "real_bedrooms": 5,
   "real_bathrooms": 5,
   "licence_check": {
@@ -55929,10 +55191,6 @@
     3.5
    ],
    [
-    "finca-palmeras",
-    3.5
-   ],
-   [
     "can-floral",
     4.0
    ],
@@ -55974,10 +55232,6 @@
    ],
    [
     "puig-can-fluxa",
-    5.0
-   ],
-   [
-    "villa-terra-blanca",
     5.0
    ],
    [
@@ -56570,14 +55824,6 @@
    ],
    [
     "cana-calma",
-    5.0
-   ],
-   [
-    "finca-palmeras",
-    5.0
-   ],
-   [
-    "villa-terra-blanca",
     5.0
    ]
   ],
@@ -57335,10 +56581,6 @@
     4.0
    ],
    [
-    "villa-harper",
-    4.0
-   ],
-   [
     "villa-katherine",
     4.0
    ],
@@ -58077,10 +57319,6 @@
    ],
    [
     "can-alivia",
-    4.0
-   ],
-   [
-    "finca-palmeras",
     4.0
    ],
    [
@@ -60901,20 +60139,12 @@
     3.5
    ],
    [
-    "villa-terra-blanca",
-    3.5
-   ],
-   [
     "can-de-baix",
     4.0
    ],
    [
     "the-beach-house-cala-llenya",
     4.0
-   ],
-   [
-    "finca-palmeras",
-    5.0
    ]
   ],
   "images": [
@@ -62854,10 +62084,6 @@
    [
     "villa-vidal",
     4.5
-   ],
-   [
-    "finca-palmeras",
-    5.0
    ],
    [
     "villa-auren",
@@ -69177,10 +68403,6 @@
     3.5
    ],
    [
-    "villa-harper",
-    3.5
-   ],
-   [
     "villa-ivy",
     3.5
    ],
@@ -73521,10 +72743,6 @@
     4.5
    ],
    [
-    "villa-harper",
-    4.5
-   ],
-   [
     "villa-zeus",
     4.5
    ],
@@ -73824,10 +73042,6 @@
    ],
    [
     "can-bassora",
-    4.0
-   ],
-   [
-    "finca-palmeras",
     4.0
    ],
    [
@@ -75564,19 +74778,11 @@
     4.0
    ],
    [
-    "finca-palmeras",
-    4.0
-   ],
-   [
     "villa-hilltopview",
     4.0
    ],
    [
     "villa-sadie",
-    4.0
-   ],
-   [
-    "villa-terra-blanca",
     4.0
    ],
    [
@@ -76220,10 +75426,6 @@
    [
     "can-carva",
     0.5
-   ],
-   [
-    "villa-harper",
-    1.0
    ],
    [
     "villa-cayu",
@@ -78768,10 +77970,6 @@
     4.5
    ],
    [
-    "finca-palmeras",
-    4.5
-   ],
-   [
     "villa-espada",
     4.5
    ],
@@ -79865,10 +79063,6 @@
     3.0
    ],
    [
-    "finca-palmeras",
-    3.5
-   ],
-   [
     "villa-trevi",
     3.5
    ],
@@ -79934,10 +79128,6 @@
    ],
    [
     "villa-pardis",
-    5.0
-   ],
-   [
-    "villa-terra-blanca",
     5.0
    ]
   ],
@@ -80906,14 +80096,6 @@
     3.0
    ],
    [
-    "finca-palmeras",
-    3.0
-   ],
-   [
-    "villa-terra-blanca",
-    3.0
-   ],
-   [
     "can-floral",
     3.5
    ],
@@ -81697,10 +80879,6 @@
    [
     "villa-lumara",
     0.5
-   ],
-   [
-    "villa-harper",
-    1.0
    ],
    [
     "villa-cayu",
@@ -83399,10 +82577,6 @@
     4.5
    ],
    [
-    "villa-harper",
-    4.5
-   ],
-   [
     "villa-zeus",
     4.5
    ],
@@ -83630,14 +82804,6 @@
    "issues": []
   },
   "near": [
-   [
-    "finca-palmeras",
-    1.5
-   ],
-   [
-    "villa-terra-blanca",
-    1.5
-   ],
    [
     "can-gabriel",
     3.5
@@ -85403,10 +84569,6 @@
     4.5
    ],
    [
-    "villa-harper",
-    4.5
-   ],
-   [
     "villa-monica",
     4.5
    ],
@@ -86536,10 +85698,6 @@
    ],
    [
     "villa-cayu",
-    3.5
-   ],
-   [
-    "villa-harper",
     3.5
    ],
    [
@@ -89860,10 +89018,6 @@
    [
     "villa-katherine",
     4.5
-   ],
-   [
-    "villa-harper",
-    5.0
    ]
   ],
   "images": [
@@ -90084,14 +89238,6 @@
    [
     "can-luna",
     3.0
-   ],
-   [
-    "villa-terra-blanca",
-    3.0
-   ],
-   [
-    "finca-palmeras",
-    3.5
    ],
    [
     "can-de-baix",
@@ -90709,10 +89855,6 @@
    "issues": []
   },
   "near": [
-   [
-    "villa-harper",
-    1.0
-   ],
    [
     "can-agustin",
     1.5
@@ -91677,339 +90819,6 @@
   "image": "/assets/villas/villa-escondida/01-800.webp",
   "image_large": "/assets/villas/villa-escondida/01-1400.webp",
   "image_colour": "#74787a"
- },
- {
-  "slug": "villa-harper",
-  "name": "Villa Harper",
-  "tagline": "Private and secure with exceptional panoramic sea and sunset views",
-  "summary": "Villa Harper is an exceptionally elegant modern 3 bedroom property which offers superb panoramic sea and sunset views. Private and secure, this home is located close to some of the most popular beaches on Ibiza,…",
-  "description": [
-   "Villa Harper is an exceptionally elegant modern 3 bedroom property which offers superb panoramic sea and sunset views. Private and secure, this home is located close to some of the most popular beaches on Ibiza, including the sunset bays of Cala Conte and Cala Tarida. The picturesque villages of San Augustin and San Jose are a short drive away, and you have easy access to the centre of Ibiza Town with its dazzling array of nightlife venues.",
-   "The original features, decor and interiors have been lovingly refurbished with a splash of contemporary chic within this home creating a unique modern Ibizan warmth. Villa Harper boasts spacious living areas which are all tastefully and stylish furnished and decorated, and is of course complete with a well-equipped kitchen, a lounge within a double-height atrium, formal dining space, stylish bar and magnificent views through the floor-to-ceiling windows.",
-   "A statement staircase curls around the rough natural stone of the central atrium, providing a grand entrance to the master suite and second double bedroom. Downstairs, across two separate wings, a further two bedrooms reside. Also, another basic kitchen area is available for general use.",
-   "Broad decking surrounds the villa's large pool and integrated jacuzzi with an al-fresco dining area. A further spectacular outdoor chill-out area can be found on the roof and is complete with an open fireplace for spring or autumn evenings, allowing you to soak up the spectacular sight of the Ibizan sunset in comfort and style. Villa Harper sits splendidly in palm tree-filled gardens which are carefully manicured and maintained. The property is gated with a security camera system for your peace of mind."
-  ],
-  "area": "San Antonio",
-  "area_key": "San Antonio",
-  "region": "san-antonio",
-  "region_name": "San Antonio",
-  "district": "San Antonio de Portmany",
-  "country": "Spain",
-  "bedrooms": 3,
-  "bathrooms": 3,
-  "sleeps": 6,
-  "price_from": 3465,
-  "price_to": 18095,
-  "price_on_request": false,
-  "min_nights": 3,
-  "short_stays": true,
-  "cleaning": "0 - Final Cleaning",
-  "cleaning_charge": 500,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Flexible check in days",
-  "license": "ET-1071-E",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": "2026-11-08",
-  "amenities": [
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "Alarm",
-   "BBQ",
-   "Fenced",
-   "Music System",
-   "Swimming Pool",
-   "TV - Satellite",
-   "Wifi",
-   "Hire Car Recommended",
-   "Safety Box",
-   "Sunloungers",
-   "Sea View",
-   "Fireplace",
-   "Private Parking",
-   "Fully fitted kitchen",
-   "Roof Terrace",
-   "Terraces",
-   "Outdoor Jacuzzi",
-   "Bar",
-   "Sunset View",
-   "Underfloor Heating",
-   "Table Tennis",
-   "Eco Tax on arrival 2.20€ per day per adult over 15",
-   "Gym/Fitness Equipment"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers",
-     "Private Parking",
-     "Roof Terrace",
-     "Terraces",
-     "Outdoor Jacuzzi"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "Music System",
-     "TV - Satellite",
-     "Wifi",
-     "Safety Box",
-     "Fireplace",
-     "Fully fitted kitchen",
-     "Underfloor Heating",
-     "Gym/Fitness Equipment"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Alarm",
-     "Fenced",
-     "Hire Car Recommended",
-     "Sea View",
-     "Sunset View"
-    ]
-   },
-   {
-    "title": "Also included",
-    "items": [
-     "Bar",
-     "Table Tennis",
-     "Eco Tax on arrival 2.20€ per day per adult over 15"
-    ]
-   }
-  ],
-  "audience": [
-   "Private",
-   "Families",
-   "Friends"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/01.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/05.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/04.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/02.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/03.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/06.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/37.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/38.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/07.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/08.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/09.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/10.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/11.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/12.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/13.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/14.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/15.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/16.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/17.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/18.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/19.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/20.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/21.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/22.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/23.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/24.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/25.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/26.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/27.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/28.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/29.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/30.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/31.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/32.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/33.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/34.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/35.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/149/villa_images/36.jpeg"
-  ],
-  "lat": 38.95785,
-  "lng": 1.29265,
-  "v_id": 149,
-  "v_uuid": "7db92cc8-8f6b-49e5-8ed0-5ff4e894095f",
-  "nightly_from": 495,
-  "nightly_to": 2585,
-  "rate_rows": 26,
-  "real_bedrooms": 3,
-  "real_bathrooms": 4,
-  "licence_check": {
-   "status": "verified",
-   "ok": true,
-   "licence": "ET-1071-E",
-   "register_licence": "ET1071E",
-   "register_places": 6,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CASA SANDRA",
-   "issues": []
-  },
-  "near": [
-   [
-    "can-carva",
-    1.0
-   ],
-   [
-    "villa-cayu",
-    1.0
-   ],
-   [
-    "villa-lumara",
-    1.0
-   ],
-   [
-    "can-agustin",
-    2.0
-   ],
-   [
-    "villa-eliana",
-    2.0
-   ],
-   [
-    "villa-gracie",
-    2.0
-   ],
-   [
-    "villa-solvista",
-    2.0
-   ],
-   [
-    "can-elsa",
-    2.5
-   ],
-   [
-    "can-sandra",
-    2.5
-   ],
-   [
-    "can-verde",
-    2.5
-   ],
-   [
-    "villa-jaja",
-    3.0
-   ],
-   [
-    "can-mistique",
-    3.5
-   ],
-   [
-    "can-olivander",
-    3.5
-   ],
-   [
-    "can-paloma",
-    3.5
-   ],
-   [
-    "villa-cara",
-    3.5
-   ],
-   [
-    "villa-monica",
-    3.5
-   ],
-   [
-    "can-beth",
-    4.0
-   ],
-   [
-    "can-melanie",
-    4.0
-   ],
-   [
-    "villa-brielle",
-    4.0
-   ],
-   [
-    "villa-lucy",
-    4.0
-   ],
-   [
-    "villa-lydia",
-    4.0
-   ],
-   [
-    "can-cenote",
-    4.5
-   ],
-   [
-    "can-harley",
-    4.5
-   ],
-   [
-    "can-meil",
-    4.5
-   ],
-   [
-    "villa-hebe",
-    4.5
-   ],
-   [
-    "puesta-del-sol",
-    5.0
-   ],
-   [
-    "serene-sanctuary",
-    5.0
-   ],
-   [
-    "villa-cala-tarida-pueblo",
-    5.0
-   ],
-   [
-    "villa-ivy",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/villa-harper/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#7e949b"
-   },
-   {
-    "base": "villas/villa-harper/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#8ca3ae"
-   },
-   {
-    "base": "villas/villa-harper/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#8791a0"
-   },
-   {
-    "base": "villas/villa-harper/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#6d7892"
-   },
-   {
-    "base": "villas/villa-harper/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#6a6b75"
-   },
-   {
-    "base": "villas/villa-harper/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#758084"
-   }
-  ],
-  "image": "/assets/villas/villa-harper/01-800.webp",
-  "image_large": "/assets/villas/villa-harper/01-1400.webp",
-  "image_colour": "#7e949b"
  },
  {
   "slug": "villa-jayden",
@@ -96484,10 +95293,6 @@
     5.0
    ],
    [
-    "villa-harper",
-    5.0
-   ],
-   [
     "villa-solvista",
     5.0
    ],
@@ -97962,10 +96767,6 @@
    [
     "can-sandra",
     1.0
-   ],
-   [
-    "villa-harper",
-    2.0
    ],
    [
     "villa-lumara",

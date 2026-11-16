@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-15",
+ "checked_on": "2026-11-16",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -1388,21 +1388,6 @@
    "register_name": "CAN BUFI",
    "issues": []
   },
-  "1e999304-2835-43bd-8d2e-bae50ef2239a": {
-   "name": "Finca Palmeras",
-   "slug": "finca-palmeras",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-1922-E",
-   "register_licence": "ETV1922E",
-   "register_places": 10,
-   "register_municipality": "SANTA EULARIA DES RIU",
-   "register": "habitatges-turistics",
-   "register_name": "CAN COLOMARET",
-   "issues": [
-    "Shown for 12 guests; the register allows 10 places"
-   ]
-  },
   "f5526abb-9f3c-4275-aed6-5ebfe57056e4": {
    "name": "Finca Sabariz",
    "slug": "finca-sabariz",
@@ -2290,19 +2275,6 @@
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "VILLA MONTE",
-   "issues": []
-  },
-  "7db92cc8-8f6b-49e5-8ed0-5ff4e894095f": {
-   "name": "Villa Harper",
-   "slug": "villa-harper",
-   "status": "verified",
-   "ok": true,
-   "licence": "ET-1071-E",
-   "register_licence": "ET1071E",
-   "register_places": 6,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CASA SANDRA",
    "issues": []
   },
   "487e2406-ddd3-4241-b2f1-5f1d5b4facc2": {
@@ -3220,22 +3192,6 @@
    "register_name": "CAN TEPA",
    "issues": []
   },
-  "b5f6a406-7e0a-4062-9397-923e125b5e00": {
-   "name": "Villa Terra Blanca",
-   "slug": "villa-terra-blanca",
-   "status": "format_differs",
-   "ok": true,
-   "licence": "ETV2400-E0",
-   "register_licence": "ETV2400E",
-   "register_places": 6,
-   "register_municipality": "SANTA EULARIA DES RIU",
-   "register": "habitatges-turistics",
-   "register_name": "CAN XIC",
-   "issues": [
-    "Number 2400 is correct, but IMpulse has 'ETV2400-E0' and the register has ETV2400E",
-    "Shown for 12 guests; the register allows 6 places"
-   ]
-  },
   "5ee4745e-4322-42f8-ae0a-916ba0e0d244": {
    "name": "Villa Trevi",
    "slug": "villa-trevi",
@@ -3435,9 +3391,9 @@
   }
  },
  "counts": {
-  "format_differs": 3,
+  "format_differs": 2,
   "not_in_register": 1,
-  "verified": 254
+  "verified": 252
  },
  "hidden": [],
  "flagged": [
@@ -3458,7 +3414,6 @@
   "Casa Yolanda 2",
   "Es Palauet Apartment",
   "Es Palauet Duplex",
-  "Finca Palmeras",
   "Finca Utopia Xarraca",
   "House of Dreams",
   "La Flaca",
@@ -3476,7 +3431,6 @@
   "Villa Meghan Deluxe",
   "Villa Meghan Grande",
   "Villa Style",
-  "Villa Terra Blanca",
   "Villa Trevi"
  ],
  "policy": "hide"
