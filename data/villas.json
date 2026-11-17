@@ -624,10 +624,6 @@
     1.0
    ],
    [
-    "can-leilani",
-    3.0
-   ],
-   [
     "villa-gina",
     3.5
    ],
@@ -1219,10 +1215,6 @@
    "issues": []
   },
   "near": [
-   [
-    "can-leilani",
-    2.0
-   ],
    [
     "cielo-del-norte",
     2.5
@@ -2847,10 +2839,6 @@
     5.0
    ],
    [
-    "villa-eliana",
-    5.0
-   ],
-   [
     "villa-evelyn",
     5.0
    ],
@@ -4465,7 +4453,7 @@
   "bathrooms": 6,
   "sleeps": 12,
   "price_from": 6138,
-  "price_to": 13079,
+  "price_to": 14355,
   "price_on_request": false,
   "min_nights": 5,
   "short_stays": false,
@@ -4723,7 +4711,7 @@
   "v_id": 483,
   "v_uuid": "fb9529d3-6c51-4955-b72e-2e62e1958ae3",
   "nightly_from": 877,
-  "nightly_to": 1869,
+  "nightly_to": 2051,
   "rate_rows": 13,
   "real_bedrooms": 6,
   "real_bathrooms": 6,
@@ -5746,218 +5734,6 @@
   "image": "/assets/villas/can-koi/01-800.webp",
   "image_large": "/assets/villas/can-koi/01-1400.webp",
   "image_colour": "#6d7162"
- },
- {
-  "slug": "can-leilani",
-  "name": "Can Leilani",
-  "tagline": "Hidden in the hills of the north",
-  "summary": "Can Leilani is an idyllic property located in a quiet residential area of San Joan, in the picturesque north of the island surrounded with forestry and nature.\nStaying true to its traditional Ibizan roots, the newly…",
-  "description": [
-   "Can Leilani is an idyllic property located in a quiet residential area of San Joan, in the picturesque north of the island surrounded with forestry and nature.\nStaying true to its traditional Ibizan roots, the newly constructed 450-meter villa resonates the island’s traditional farmhouse architecture and has been meticulously designed to provide the perfect balance between modern comforts and island ambiance.",
-   "The property is perfectly situated within just a short drive to some of the best beaches on the island; such as Benirras, Puerto San Miguel, Cala San Vicente, Cala Xarraca and Portinatx.",
-   "The home is conveniently built across one level and the interiors are bright and airy with a welcoming atmosphere throughout all of the living spaces. An air of sophistication abounds throughout each room of this beautifully decorated home which is a true treasure trove of eclectic furnishings, lighting and ornaments which all add to the overall ambience. The air of elegance is maintained throughout the house extending to the 6 large bedroom suites, all of which are supremely stylish and complete with en suite bathrooms and access to an exterior terrace space, making the most of the countryside views.",
-   "The sleeping arrangements:\nMaster bedroom with four poster bed has an en-suite bathroom with shower and opens onto the terrace.\nBedroom 2 a twin/double with en-suite bathroom with shower\nBedroom 3 a twin/double with en-suite bathroom with shower and opens onto the terrace\nBedroom 4 double with en-suite bathroom with shower and opens onto the terrace\nBedroom 5 a twin/double with en-suite bathroom with shower and opens onto the terrace\nBedroom 6 double with en-suite bathroom with shower and opens onto the terrace",
-   "This recently built and spacious villa is surrounded by superb countryside views. \nSet within a private plot of beautiful gardens Can Leilani offers plenty of outdoor spaces to relax, from the stunning salt water pool, the main exterior lounging porch to a second covered porch with an alfresco dining area, a bar and a BBQ overlooking the magnificent landscape views.",
-   "A separate self-contained apartment offers a private entrance, living room, dining area, small kitchen, a bathroom and a double bedroom for those who seek an extra level of privacy."
-  ],
-  "area": "San Juan",
-  "area_key": "San Juan",
-  "region": "san-juan",
-  "region_name": "San Juan",
-  "district": "San Juan de Labritja",
-  "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 6,
-  "sleeps": 12,
-  "price_from": 9900,
-  "price_to": 13200,
-  "price_on_request": false,
-  "min_nights": 7,
-  "short_stays": false,
-  "cleaning": "1 Cleaning per week",
-  "cleaning_charge": 0,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Strictly Saturday-Saturday",
-  "license": "ETV-1873-E",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": "2026-11-09",
-  "amenities": [
-   "Al Fresco Dining",
-   "Alarm",
-   "BBQ",
-   "Country View",
-   "Music System",
-   "TV - Satellite",
-   "Wifi",
-   "Hire Car Recommended",
-   "Safety Box",
-   "Sunloungers",
-   "Fully fitted kitchen",
-   "Saltwater Pool",
-   "Air Con - Bedrooms Only"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Sunloungers"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Music System",
-     "TV - Satellite",
-     "Wifi",
-     "Safety Box",
-     "Fully fitted kitchen",
-     "Air Con - Bedrooms Only"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Alarm",
-     "Country View",
-     "Hire Car Recommended"
-    ]
-   },
-   {
-    "title": "Also included",
-    "items": [
-     "Saltwater Pool"
-    ]
-   }
-  ],
-  "audience": [
-   "Families",
-   "Friends"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/05.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/28.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/32.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/04.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/06.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/26..jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/30.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/01.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/07.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/16.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/15.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/14.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/17.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/18.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/19.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/08.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/09.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/10.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/11.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/12..jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/13.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/20.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/21.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/22..jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/23..jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/24..jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/25.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/29.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/27..jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/31.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/02.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/156/villa_images/03.jpg"
-  ],
-  "lat": 39.07855,
-  "lng": 1.5169,
-  "v_id": 156,
-  "v_uuid": "91347e46-0eb9-43d7-93e9-a55140633cf4",
-  "nightly_from": 1415,
-  "nightly_to": 1886,
-  "rate_rows": 5,
-  "real_bedrooms": 6,
-  "real_bathrooms": 6,
-  "licence_check": {
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-1873-E",
-   "register_licence": "ETV1873E",
-   "register_places": 12,
-   "register_municipality": "SANT JOAN DE LABRITJA",
-   "register": "habitatges-turistics",
-   "register_name": "BOCA SEGA",
-   "issues": []
-  },
-  "near": [
-   [
-    "villa-gina",
-    2.0
-   ],
-   [
-    "can-xarraca",
-    3.0
-   ],
-   [
-    "finca-utopia-xarraca",
-    3.0
-   ],
-   [
-    "cielo-del-norte",
-    4.0
-   ],
-   [
-    "villa-brisa",
-    4.0
-   ],
-   [
-    "villa-serenya",
-    4.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/can-leilani/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#8496a1"
-   },
-   {
-    "base": "villas/can-leilani/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#b8bcbf"
-   },
-   {
-    "base": "villas/can-leilani/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#84a1ac"
-   },
-   {
-    "base": "villas/can-leilani/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#80929a"
-   },
-   {
-    "base": "villas/can-leilani/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#a49580"
-   },
-   {
-    "base": "villas/can-leilani/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#aeada7"
-   }
-  ],
-  "image": "/assets/villas/can-leilani/01-800.webp",
-  "image_large": "/assets/villas/can-leilani/01-1400.webp",
-  "image_colour": "#8496a1"
  },
  {
   "slug": "can-nemo",
@@ -8013,10 +7789,6 @@
     3.5
    ],
    [
-    "villa-eliana",
-    3.5
-   ],
-   [
     "villa-gracie",
     3.5
    ],
@@ -9408,10 +9180,6 @@
    ],
    [
     "villa-cara",
-    4.5
-   ],
-   [
-    "villa-eliana",
     4.5
    ],
    [
@@ -11051,10 +10819,6 @@
    [
     "finca-utopia-xarraca",
     1.0
-   ],
-   [
-    "can-leilani",
-    3.0
    ],
    [
     "villa-gina",
@@ -15236,10 +15000,6 @@
     4.5
    ],
    [
-    "villa-eliana",
-    4.5
-   ],
-   [
     "villa-lumara",
     4.5
    ],
@@ -17036,342 +16796,6 @@
   "image": "/assets/villas/villa-dalt-view/01-800.webp",
   "image_large": "/assets/villas/villa-dalt-view/01-1400.webp",
   "image_colour": "#979185"
- },
- {
-  "slug": "villa-eliana",
-  "name": "Villa Eliana",
-  "tagline": "Six bedrooms, infinite sky, and Ibiza's most legendary sunsets",
-  "summary": "Nestled in the pine-scented hills beside the idyllic village of San Agustin, Villa Eliana is an elegant six-bedroom retreat with sweeping views over almond and olive groves to San Antonio Bay and the shimmering…",
-  "description": [
-   "Nestled in the pine-scented hills beside the idyllic village of San Agustin, Villa Eliana is an elegant six-bedroom retreat with sweeping views over almond and olive groves to San Antonio Bay and the shimmering Mediterranean. San José is just five minutes away, and Ibiza Town and the airport are around 20 minutes by car, so the island’s finest beaches, restaurants and beach clubs are always close at hand.",
-   "At the heart of the villa lies a magnificent 12m x 4.5m private pool, framed by tall palms, fragrant pines and serene woodland views. Landscaped gardens, secluded terraces and luxurious chill-out areas invite long, languid days in the Mediterranean sun. On the upper terrace, an al fresco dining table for up to 12 guests sets the stage for unforgettable dinners beneath Ibiza’s legendary sunsets and star-filled skies.",
-   "Inside, light-filled living spaces combine contemporary elegance with breathtaking views. The lounge opens onto a private balcony with direct access to the pool terrace, while the dining room offers a sophisticated setting for entertaining. A spacious, beautifully equipped kitchen, shaded by a mature pine, completes the living area.",
-   "Villa Eliana sleeps up to 12 guests in six bright, stylish bedrooms, many with dreamy views of the sea or countryside. There are two master suites, each with a private en-suite bathroom, and four double bedrooms sharing two sleek, modern bathrooms.",
-   "Secluded yet effortlessly connected, Villa Eliana is a sublime choice for families and friends seeking the very best of West Ibiza."
-  ],
-  "area": "San Agustin",
-  "area_key": "San Agustin",
-  "region": "san-antonio",
-  "region_name": "San Antonio",
-  "district": "San Antonio de Portmany",
-  "country": "Spain",
-  "bedrooms": 6,
-  "bathrooms": 4,
-  "sleeps": 12,
-  "price_from": 4043,
-  "price_to": 13283,
-  "price_on_request": false,
-  "min_nights": 7,
-  "short_stays": false,
-  "cleaning": "1 Cleaning per week",
-  "cleaning_charge": 0,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Strictly Saturday-Saturday",
-  "license": "ET-0435-E",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": "2026-11-09",
-  "amenities": [
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "Alarm",
-   "BBQ",
-   "Country View",
-   "Fenced",
-   "Music System",
-   "Swimming Pool",
-   "TV - Satellite",
-   "Wifi",
-   "Hire Car Recommended",
-   "Safety Box",
-   "Sunloungers",
-   "Sea View",
-   "Private Parking",
-   "Fully fitted kitchen",
-   "House Manager",
-   "Sunset View",
-   "Heated Pool (additional charges may apply)"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers",
-     "Private Parking",
-     "Heated Pool (additional charges may apply)"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "Music System",
-     "TV - Satellite",
-     "Wifi",
-     "Safety Box",
-     "Fully fitted kitchen"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Alarm",
-     "Country View",
-     "Fenced",
-     "Hire Car Recommended",
-     "Sea View",
-     "House Manager",
-     "Sunset View"
-    ]
-   }
-  ],
-  "audience": [
-   "Private",
-   "Couples",
-   "Families",
-   "Friends",
-   "Neighbours"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-79.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-9.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-48.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-84.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-32.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-86.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-85.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-71.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-45.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-35.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-36.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-37.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-38.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-39.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-42.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-43.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-44 copia.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-2 copia.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-46.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-52.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-47.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-65.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-67.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-55.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-68.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-69.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-66.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-62.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-33.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-34.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-72.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-73.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-74.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-76.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-77.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-53.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-64.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-54.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-63.copia.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-75.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-70.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-6.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-5.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-4.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-12.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-11.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-10 copia.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-14.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-80.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-81.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-40.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-41.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-83.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-87.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-24.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-20.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-21.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-27.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-29.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-28.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-82.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-15.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-17 copia.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-16.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-58.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-56.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-51.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-49.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-50.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-25.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-30.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-59.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-60.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/31/villa_images/lafabrica-31.jpg"
-  ],
-  "lat": 38.94939,
-  "lng": 1.31127,
-  "v_id": 31,
-  "v_uuid": "7af4b734-c7c6-419b-9cb8-2989475f7f08",
-  "nightly_from": 578,
-  "nightly_to": 1898,
-  "rate_rows": 16,
-  "real_bedrooms": 6,
-  "real_bathrooms": 4,
-  "licence_check": {
-   "status": "verified",
-   "ok": true,
-   "licence": "ET-0435-E",
-   "register_licence": "ET0435E",
-   "register_places": 12,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "LA FABRICA",
-   "issues": []
-  },
-  "near": [
-   [
-    "can-agustin",
-    0.5
-   ],
-   [
-    "villa-solvista",
-    1.0
-   ],
-   [
-    "can-elsa",
-    1.5
-   ],
-   [
-    "villa-cayu",
-    1.5
-   ],
-   [
-    "can-verde",
-    2.0
-   ],
-   [
-    "can-carva",
-    2.5
-   ],
-   [
-    "villa-lumara",
-    2.5
-   ],
-   [
-    "can-mistique",
-    3.0
-   ],
-   [
-    "can-olivander",
-    3.0
-   ],
-   [
-    "villa-cara",
-    3.0
-   ],
-   [
-    "villa-jaja",
-    3.0
-   ],
-   [
-    "can-paloma",
-    3.5
-   ],
-   [
-    "villa-gracie",
-    3.5
-   ],
-   [
-    "villa-lucy",
-    3.5
-   ],
-   [
-    "can-beth",
-    4.5
-   ],
-   [
-    "can-sandra",
-    4.5
-   ],
-   [
-    "villa-brielle",
-    4.5
-   ],
-   [
-    "villa-escondida",
-    4.5
-   ],
-   [
-    "villa-hebe",
-    4.5
-   ],
-   [
-    "can-beso",
-    5.0
-   ],
-   [
-    "can-cenote",
-    5.0
-   ],
-   [
-    "can-meil",
-    5.0
-   ],
-   [
-    "la-perla-escondida",
-    5.0
-   ],
-   [
-    "villa-monica",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/villa-eliana/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#8c9884"
-   },
-   {
-    "base": "villas/villa-eliana/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#73939c"
-   },
-   {
-    "base": "villas/villa-eliana/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#798870"
-   },
-   {
-    "base": "villas/villa-eliana/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#b6b1af"
-   },
-   {
-    "base": "villas/villa-eliana/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#bab8b0"
-   },
-   {
-    "base": "villas/villa-eliana/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#adada9"
-   }
-  ],
-  "image": "/assets/villas/villa-eliana/01-800.webp",
-  "image_large": "/assets/villas/villa-eliana/01-1400.webp",
-  "image_colour": "#8c9884"
  },
  {
   "slug": "villa-fabienne",
@@ -25767,10 +25191,6 @@
     4.0
    ],
    [
-    "can-leilani",
-    4.0
-   ],
-   [
     "can-octavia",
     4.0
    ],
@@ -26064,10 +25484,6 @@
    ],
    [
     "can-verde",
-    1.0
-   ],
-   [
-    "villa-eliana",
     1.0
    ],
    [
@@ -31988,10 +31404,6 @@
   },
   "near": [
    [
-    "villa-eliana",
-    0.5
-   ],
-   [
     "can-elsa",
     1.5
    ],
@@ -32993,7 +32405,7 @@
   "license": "ETV-0913-E",
   "dcc": false,
   "api_switch_on": true,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-17",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -34298,10 +33710,6 @@
     1.5
    ],
    [
-    "villa-eliana",
-    1.5
-   ],
-   [
     "villa-cara",
     2.0
    ],
@@ -35538,10 +34946,6 @@
    ],
    [
     "can-agustin",
-    3.0
-   ],
-   [
-    "villa-eliana",
     3.0
    ],
    [
@@ -37177,10 +36581,6 @@
    ],
    [
     "can-paloma",
-    2.0
-   ],
-   [
-    "villa-eliana",
     2.0
    ],
    [
@@ -41269,10 +40669,6 @@
    [
     "can-kali",
     3.5
-   ],
-   [
-    "can-leilani",
-    4.0
    ],
    [
     "can-noelia",
@@ -45565,10 +44961,6 @@
     3.0
    ],
    [
-    "villa-eliana",
-    3.0
-   ],
-   [
     "villa-ivy",
     3.0
    ],
@@ -46313,10 +45705,6 @@
    ],
    [
     "villa-cala-tarida-pueblo",
-    3.5
-   ],
-   [
-    "villa-eliana",
     3.5
    ],
    [
@@ -47849,10 +47237,6 @@
    ],
    [
     "can-olivander",
-    5.0
-   ],
-   [
-    "villa-eliana",
     5.0
    ],
    [
@@ -56601,10 +55985,6 @@
     4.5
    ],
    [
-    "villa-eliana",
-    4.5
-   ],
-   [
     "villa-frankie",
     4.5
    ],
@@ -63809,10 +63189,6 @@
     3.5
    ],
    [
-    "can-leilani",
-    4.0
-   ],
-   [
     "can-kali",
     4.5
    ],
@@ -68387,10 +67763,6 @@
     3.0
    ],
    [
-    "villa-eliana",
-    3.0
-   ],
-   [
     "villa-frankie",
     3.0
    ],
@@ -72739,10 +72111,6 @@
     4.5
    ],
    [
-    "villa-eliana",
-    4.5
-   ],
-   [
     "villa-zeus",
     4.5
    ],
@@ -75437,10 +74805,6 @@
    ],
    [
     "can-agustin",
-    2.5
-   ],
-   [
-    "villa-eliana",
     2.5
    ],
    [
@@ -80889,10 +80253,6 @@
     2.5
    ],
    [
-    "villa-eliana",
-    2.5
-   ],
-   [
     "villa-gracie",
     2.5
    ],
@@ -82200,10 +81560,6 @@
     5.0
    ],
    [
-    "villa-eliana",
-    5.0
-   ],
-   [
     "villa-fabienne",
     5.0
    ],
@@ -82601,10 +81957,6 @@
     5.0
    ],
    [
-    "villa-eliana",
-    5.0
-   ],
-   [
     "villa-gracie",
     5.0
    ]
@@ -82683,7 +82035,7 @@
   "license": "ETV-1626-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": "2026-11-11",
+  "unpublished_on": null,
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -84605,10 +83957,6 @@
     5.0
    ],
    [
-    "villa-eliana",
-    5.0
-   ],
-   [
     "villa-terra",
     5.0
    ],
@@ -85678,10 +85026,6 @@
    ],
    [
     "can-agustin",
-    3.0
-   ],
-   [
-    "villa-eliana",
     3.0
    ],
    [
@@ -89864,10 +89208,6 @@
     1.5
    ],
    [
-    "villa-eliana",
-    1.5
-   ],
-   [
     "villa-lumara",
     1.5
    ],
@@ -90719,10 +90059,6 @@
    ],
    [
     "villa-ceres",
-    4.5
-   ],
-   [
-    "villa-eliana",
     4.5
    ],
    [
@@ -96813,10 +96149,6 @@
     3.5
    ],
    [
-    "villa-eliana",
-    3.5
-   ],
-   [
     "villa-jaja",
     3.5
    ],
@@ -98641,8 +97973,8 @@
   "check_in_days": "Flexible check in days",
   "license": "ETV-1694-E",
   "dcc": false,
-  "api_switch_on": true,
-  "unpublished_on": null,
+  "api_switch_on": false,
+  "unpublished_on": "2026-11-16",
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
