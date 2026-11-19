@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-18",
+ "checked_on": "2026-11-19",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -1922,19 +1922,6 @@
    "register_name": "AMANECER",
    "issues": []
   },
-  "e771f93c-313a-4ce0-b52a-d02a81fd351f": {
-   "name": "Villa Cubes",
-   "slug": "villa-cubes",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-2349-E",
-   "register_licence": "ETV2349E",
-   "register_places": 10,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CASA GLORY",
-   "issues": []
-  },
   "a0c7ca98-80ef-4510-b556-c92628d15a2e": {
    "name": "Villa Dalt View",
    "slug": "villa-dalt-view",
@@ -2093,6 +2080,19 @@
    "register_name": "VILLA DELPHINE",
    "issues": []
   },
+  "ae2ec6f6-f2f7-4915-89fc-159b01a081c4": {
+   "name": "Villa Gie",
+   "slug": "villa-gie",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1383-E",
+   "register_licence": "ETV1383E",
+   "register_places": 12,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "VILLA MELOGRANO",
+   "issues": []
+  },
   "be3fcb08-6dd8-4644-85a9-8b1fc0a95b8c": {
    "name": "Villa Gina",
    "slug": "villa-gina",
@@ -2158,6 +2158,19 @@
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "VILLA MONTE",
+   "issues": []
+  },
+  "d21199ae-c56d-47d8-85eb-72df6dc17b45": {
+   "name": "Villa Hazel",
+   "slug": "villa-hazel",
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0845-E",
+   "register_licence": "ET0845E",
+   "register_places": 8,
+   "register_municipality": "SANTA EULARIA DES RIU",
+   "register": "habitatges-turistics",
+   "register_name": "LA DIOSA",
    "issues": []
   },
   "487e2406-ddd3-4241-b2f1-5f1d5b4facc2": {
@@ -2878,6 +2891,19 @@
    "register_name": "FIREFLY",
    "issues": []
   },
+  "63813f00-02d3-4b3c-9a0d-911137da269e": {
+   "name": "Villa Riviera",
+   "slug": "villa-riviera",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1276-E",
+   "register_licence": "ETV1276E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "101",
+   "issues": []
+  },
   "234fca47-4bbf-48cf-93a7-1b3a4af4c6b3": {
    "name": "Villa Ronda",
    "slug": "villa-ronda",
@@ -3211,7 +3237,7 @@
  "counts": {
   "format_differs": 2,
   "not_in_register": 1,
-  "verified": 238
+  "verified": 240
  },
  "hidden": [],
  "flagged": [
