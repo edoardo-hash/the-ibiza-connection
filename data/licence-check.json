@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-19",
+ "checked_on": "2026-11-20",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -1714,6 +1714,21 @@
    "register_name": "CASA MORNA",
    "issues": []
   },
+  "b37dac8f-af97-4518-b525-36732fa83bd8": {
+   "name": "Villa Buena Ibiza",
+   "slug": "villa-buena-ibiza",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1322-E",
+   "register_licence": "ETV1322E",
+   "register_places": 9,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CHEZ MOSAN",
+   "issues": [
+    "Shown for 10 guests; the register allows 9 places"
+   ]
+  },
   "ff05e659-edc5-4037-b9b9-f9b6c4af7003": {
    "name": "Villa Cala Blu",
    "slug": "villa-cala-blu",
@@ -1922,6 +1937,19 @@
    "register_name": "AMANECER",
    "issues": []
   },
+  "e771f93c-313a-4ce0-b52a-d02a81fd351f": {
+   "name": "Villa Cubes",
+   "slug": "villa-cubes",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2349-E",
+   "register_licence": "ETV2349E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CASA GLORY",
+   "issues": []
+  },
   "a0c7ca98-80ef-4510-b556-c92628d15a2e": {
    "name": "Villa Dalt View",
    "slug": "villa-dalt-view",
@@ -1974,6 +2002,19 @@
    "register_name": "CAN PARADISO",
    "issues": []
   },
+  "7af4b734-c7c6-419b-9cb8-2989475f7f08": {
+   "name": "Villa Eliana",
+   "slug": "villa-eliana",
+   "status": "verified",
+   "ok": true,
+   "licence": "ET-0435-E",
+   "register_licence": "ET0435E",
+   "register_places": 12,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "LA FABRICA",
+   "issues": []
+  },
   "5187cd5e-dc37-41d5-9294-9e72aa4b123c": {
    "name": "Villa Eliza",
    "slug": "villa-eliza",
@@ -2024,6 +2065,19 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "turisme-rural",
    "register_name": "CAN BET",
+   "issues": []
+  },
+  "7bf4a2b9-95db-4138-ba1b-0b9d405c9740": {
+   "name": "Villa Esther Grande",
+   "slug": "villa-esther-grande",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2333-E",
+   "register_licence": "ETV2333E",
+   "register_places": 9,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN DEVALL",
    "issues": []
   },
   "a18954cb-b3ba-435f-892b-9a78a899df9f": {
@@ -2584,6 +2638,19 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "CAN TASHELLU",
+   "issues": []
+  },
+  "752fed36-1450-4d56-882b-1183c02f4253": {
+   "name": "Villa Mati",
+   "slug": "villa-mati",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-2442-E",
+   "register_licence": "ETV2442E",
+   "register_places": 10,
+   "register_municipality": "SANT ANTONI DE PORTMANY",
+   "register": "habitatges-turistics",
+   "register_name": "CAS MATEUS",
    "issues": []
   },
   "59589fea-5963-4442-855f-6cbf8a80ee05": {
@@ -3237,7 +3304,7 @@
  "counts": {
   "format_differs": 2,
   "not_in_register": 1,
-  "verified": 240
+  "verified": 245
  },
  "hidden": [],
  "flagged": [
@@ -3264,6 +3331,7 @@
   "Villa Amaris",
   "Villa Apia",
   "Villa Auren",
+  "Villa Buena Ibiza",
   "Villa Fico",
   "Villa Hailey",
   "Villa Ingrid",
