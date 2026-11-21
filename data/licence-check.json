@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-20",
+ "checked_on": "2026-11-21",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -972,21 +972,6 @@
    "register": "habitatges-turistics",
    "register_name": "VILLA VENTURA",
    "issues": []
-  },
-  "e9de14fc-9c93-46ca-a7e5-6584885bb149": {
-   "name": "Can Tehani",
-   "slug": "can-tehani",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-2565-E",
-   "register_licence": "ETV2565E",
-   "register_places": 11,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CAN TEHANI",
-   "issues": [
-    "Shown for 12 guests; the register allows 11 places"
-   ]
   },
   "4cbc29a5-782c-44d1-8ee3-98e62a628245": {
    "name": "Can Timo",
@@ -2878,7 +2863,24 @@
    "register_municipality": "SANT JOSEP DE SA TALAIA",
    "register": "habitatges-turistics",
    "register_name": "CAN PAREDES",
-   "issues": []
+   "issues": [
+    "Villa Paraiso + Villa Paraiso - Copy share licence ETV1064E: 20 guests shown together, the register allows 10 places"
+   ]
+  },
+  "e44cb0cb-7838-4226-883f-736792e2da25": {
+   "name": "Villa Paraiso - Copy",
+   "slug": "villa-paraiso-copy",
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1064-E",
+   "register_licence": "ETV1064E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PAREDES",
+   "issues": [
+    "Villa Paraiso + Villa Paraiso - Copy share licence ETV1064E: 20 guests shown together, the register allows 10 places"
+   ]
   },
   "07af07d6-9ccf-4763-a11f-e3996c05143f": {
    "name": "Villa Parque",
@@ -3319,7 +3321,6 @@
   "Can Nuri",
   "Can Sabina",
   "Can Senna",
-  "Can Tehani",
   "Casa Maxi",
   "Casa Yolanda 1",
   "Casa Yolanda 2",
@@ -3342,6 +3343,8 @@
   "Villa Meghan",
   "Villa Meghan Deluxe",
   "Villa Meghan Grande",
+  "Villa Paraiso",
+  "Villa Paraiso - Copy",
   "Villa Style",
   "Villa Trevi"
  ],
