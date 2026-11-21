@@ -714,12 +714,11 @@ def shell(
   </div>
   <div class="lightbox__stage">
     <button class="lightbox__btn lightbox__btn--prev" type="button" data-lightbox-prev aria-label="Previous photo">{icon('chevron-left')}</button>
-    <img data-lightbox-img alt="">
     <button class="lightbox__btn lightbox__btn--next" type="button" data-lightbox-next aria-label="Next photo">{icon('chevron-right')}</button>
   </div>
   <div class="lightbox__foot"><span data-lightbox-caption></span><span>Use ← → to browse · Esc to close</span></div>
 </div>
-<script src="/assets/js/site.js?v={ASSET_VERSION['js']}" defer></script>
+<script src="/assets/js/site.js?v={ASSET_VERSION['js']}" defer></script>{ANALYTICS_TAG}
 {scripts}
 </body>
 </html>
@@ -995,6 +994,10 @@ def date_range_field(from_name: str, to_name: str, *, from_id: str = "", to_id: 
 
 
 PRICE_MATCH = SETTINGS.get("price_match", {})
+# Cookie-free visit counts (Vercel Web Analytics). Switch on in settings once Analytics is enabled on the
+# Vercel project, otherwise its script answers 404.
+ANALYTICS_TAG = ('\n<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>'
+                 '\n<script defer src="/_vercel/insights/script.js"></script>') if SETTINGS.get("analytics") else ""
 
 
 def price_match_url(villa_name: str = "") -> str:
@@ -1013,7 +1016,7 @@ def price_match_band() -> str:
 <section class="price-match" aria-label="{esc(PRICE_MATCH['label'])}">
   <div class="wrap price-match__inner">
     <span class="price-match__badge">{icon('check')} {esc(PRICE_MATCH['label'])}</span>
-    <p><strong>{esc(PRICE_MATCH['title'])}</strong> {esc(PRICE_MATCH['text'])}</p>
+    <p><strong>{esc(PRICE_MATCH['title'])}</strong> {esc(PRICE_MATCH.get('band') or PRICE_MATCH['text'])} <a class="price-match__terms" href="{esc(PRICE_MATCH.get('conditions_url', '/terms/'))}">{esc(PRICE_MATCH.get('conditions_label', 'Conditions'))}</a></p>
     <a class="link" href="{price_match_url()}">{esc(PRICE_MATCH['link_label'])}{icon('arrow')}</a>
   </div>
 </section>"""

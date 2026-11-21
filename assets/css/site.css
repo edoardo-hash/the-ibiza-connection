@@ -588,6 +588,8 @@ body.menu-open .site-menu { opacity: 1; visibility: visible; }
 .price-match p { margin: 0; flex: 1 1 420px; font-size: 16px; font-weight: 400; color: rgba(246, 241, 231, 0.9); }
 .price-match p strong { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; color: var(--bone); margin-right: 6px; }
 .price-match .link { color: var(--bone); border-color: rgba(246, 241, 231, 0.5); }
+.price-match__terms { color: rgba(246, 241, 231, 0.75); text-decoration: underline; text-underline-offset: 3px; margin-left: 4px; white-space: nowrap; }
+.price-match__terms:hover { color: var(--bone); }
 .price-match-note { margin-top: 18px; font-size: 14px; color: var(--ink-2); display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
 .price-match-note a, .booking__match a { text-decoration: underline; text-underline-offset: 3px; }
 .price-match-note svg, .booking__match svg { color: var(--clay); align-self: center; }
@@ -1882,3 +1884,22 @@ select.filter-select,
   .concierge__dot { position: absolute; top: 9px; right: 9px; width: 9px; height: 9px; box-shadow: 0 0 0 2px var(--ink); }
 }
 @media (prefers-reduced-motion: reduce) { .concierge { transition: none; } }
+
+/* Touch screens: every tap target at least 44 px (Nov 2026 launch review). Text links keep their look;
+   an invisible box around them takes the tap. */
+@media (pointer: coarse) {
+  .footer-col ul { gap: 0; }
+  .footer-col a, .footer-contact a, .footer-middle a, .footer-legal a, .site-menu__socials a, .breadcrumbs a,
+  .price-match__terms { display: inline-flex; align-items: center; min-height: 44px; }
+  .link, .brand { position: relative; }
+  .link::before, .brand::before { content: ""; position: absolute; left: -6px; right: -6px; top: 50%; height: 44px; transform: translateY(-50%); }
+  .villa-card__fav, .header-wa { width: 44px; height: 44px; }
+  select, input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], input[type="search"],
+  .search-field select, .booking__field select { min-height: 44px; }
+  input[type="checkbox"] { width: 22px; height: 22px; }
+  .footer-col a, .site-menu__socials a, .contact-socials a { min-width: 44px; }
+  .booking__contact a, .contact-detail a, .contact-socials a, .breadcrumbs a, .price-match-note a, .booking__match a,
+  .check-line a { display: inline-flex; align-items: center; min-height: 44px; }
+  .gallery__all, .btn-row .btn, .mobile-bar a { min-height: 44px; }
+  .check-line { min-height: 44px; align-items: center; }
+}

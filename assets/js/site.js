@@ -137,7 +137,13 @@
   const renderLightbox = () => {
     if (!lightbox || !gallery.length) return;
     const item = gallery[lightboxIndex];
-    const image = $("[data-lightbox-img]", lightbox);
+    let image = $("[data-lightbox-img]", lightbox);
+    if (!image) {
+      // Created on first open, so the page never carries an empty <img>.
+      image = document.createElement("img");
+      image.setAttribute("data-lightbox-img", "");
+      $("[data-lightbox-prev]", lightbox).after(image);
+    }
     const count = $("[data-lightbox-count]", lightbox);
     const caption = $("[data-lightbox-caption]", lightbox);
     image.src = item.src;

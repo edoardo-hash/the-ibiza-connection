@@ -147,8 +147,12 @@
     "title": "Found it for less? We'll match it.",
     "text": "If you find the same villa for less on another website, send us the link and we will match the price. Applies only to like-for-like offers for the same property, dates and occupancy. Price match requests must be submitted within 48 hours of receiving our quote, and competing prices must still be available at the time of verification.",
     "short": "Seen this villa for less on another website? Send us the link and we'll match the price. Like-for-like offers only, requested within 48 hours of our quote.",
-    "link_label": "Send us the link"
+    "link_label": "Send us the link",
+    "band": "Seen the same villa for less elsewhere? Send us the link.",
+    "conditions_label": "Conditions",
+    "conditions_url": "/terms/#price-match-guarantee"
   },
+  "analytics": false,
   "licence_policy": "hide",
   "licence_confirmed": {
     "5e0d0f87-cb58-4491-a185-1e3837f0114c": "La Flaca (ETV-0422-E): confirmed by Edo, 3 Nov 2026"

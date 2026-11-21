@@ -64,7 +64,7 @@
       "title": "Cookies",
       "paragraphs": [
         "This site uses no advertising or analytics cookies by default. It stores a small preference in your browser only when you use a feature that needs it — for example remembering the villas you have saved. That information stays in your browser and is not sent to us.",
-        "If we add analytics in future, this page will say so and you will be asked before anything is set."
+        "We count visits with Vercel Web Analytics, which sets no cookies and stores no personal data: it only records anonymous totals such as pages viewed, country and type of device."
       ]
     },
     {
