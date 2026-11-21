@@ -152,7 +152,7 @@
     "conditions_label": "Conditions",
     "conditions_url": "/terms/#price-match-guarantee"
   },
-  "analytics": false,
+  "analytics": true,
   "licence_policy": "hide",
   "licence_confirmed": {
     "5e0d0f87-cb58-4491-a185-1e3837f0114c": "La Flaca (ETV-0422-E): confirmed by Edo, 3 Nov 2026"
