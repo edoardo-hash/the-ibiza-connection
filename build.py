@@ -196,8 +196,8 @@ POSTS = {p["slug"]: p for p in JOURNAL["posts"]}
 
 SITE_URL = (
     os.environ.get("SITE_URL")
+    or SITE.get("url")
     or (f"https://{os.environ['VERCEL_PROJECT_PRODUCTION_URL']}" if os.environ.get("VERCEL_PROJECT_PRODUCTION_URL") else None)
-    or SITE["url"]
 ).rstrip("/")
 TODAY = date.today()
 BUILD_DAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
