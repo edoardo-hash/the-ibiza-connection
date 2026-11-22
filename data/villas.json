@@ -671,6 +671,331 @@
   "image_colour": "#72755d"
  },
  {
+  "slug": "finca-utopia",
+  "name": "Finca Utopia",
+  "tagline": "Finca Utopia – A Private Ibicencan Estate with 9 En-Suite Suites",
+  "summary": "Hidden deep in the heart of Ibiza’s beautiful countryside, Finca Utopia is an extraordinary private estate offering an exceptional setting for luxury escapes, celebrations, wellness retreats, and unforgettable…",
+  "description": [
+   "Hidden deep in the heart of Ibiza’s beautiful countryside, Finca Utopia is an extraordinary private estate offering an exceptional setting for luxury escapes, celebrations, wellness retreats, and unforgettable experiences. Set within an authentic 300-year-old Ibicencan farmstead and surrounded by approximately 20 acres of land, this unique property combines complete privacy, breathtaking countryside and distant sea views, and a wonderfully peaceful atmosphere.",
+   "More than just a luxury villa, Finca Utopia has been thoughtfully designed as a free-flowing sanctuary where guests can embrace outdoor living, reconnect with nature, and enjoy an effortless blend of relaxation, entertainment, and wellbeing. Despite its secluded location, the estate remains within easy reach of Ibiza’s charming villages, beautiful beaches, and island attractions.",
+   "Finca Utopia offers nine beautifully appointed en-suite suites, accommodating up to 18 guests. The accommodation is thoughtfully distributed between the main farmhouse, a distinctive private tower, and two independent garden casitas. Each suite provides generous living space, privacy, and its own unique connection to the surrounding landscape.",
+   "The main finca houses six elegant suites, including first-floor bedrooms with private terraces, Juliet balconies, and picturesque countryside views. The ground-floor garden suites offer an additional sense of seclusion, with private entrances, outdoor showers, luxurious bathtubs, and peaceful garden spaces.",
+   "One of the estate’s most distinctive features is its remarkable Tower Suite, occupying two levels of a private tower. This exceptional accommodation features a circular king-size bed, a private lounge, and an exclusive rooftop terrace offering spectacular 360-degree views across the Ibiza countryside.",
+   "A short stroll of approximately 40 metres from the main house leads to two independent garden casitas. These beautifully designed suites enjoy private entrances, raised bathtubs, open-air showers, and secluded gardens, making them ideal for guests seeking an extra level of independence and tranquillity.",
+   "All nine suites are equipped with air conditioning, heating, personal safes, blackout blinds or traditional wooden shutters, and high-quality finishes to ensure comfort throughout the year.",
+   "At Finca Utopia, the living spaces have been designed to encourage connection while allowing every guest the freedom to find their own peaceful corner. The impressive open-plan lounge and dining area features soaring ceilings, thoughtfully curated interiors, and comfortable seating for up to 18 guests. Iconic design pieces blend seamlessly with contemporary luxury and Ibiza’s distinctive artistic character, creating an inviting atmosphere that feels both sophisticated and relaxed.",
+   "Throughout the estate, a variety of indoor and outdoor dining and lounge areas provide beautiful settings for everything from leisurely breakfasts and long lunches to intimate dinners and lively evening gatherings.",
+   "For guests seeking relaxation and rejuvenation, a dedicated wellness and massage area features its own private entrance, showers, changing facilities, and a tranquil garden chill-out space. This makes Finca Utopia particularly well suited to wellness retreats, restorative holidays, and extended stays.",
+   "Outdoor living lies at the heart of the Finca Utopia experience. The estate's expansive gardens and beautifully designed entertaining spaces invite guests to enjoy Ibiza’s Mediterranean lifestyle from morning until late into the evening.",
+   "A spectacular outdoor dining and entertainment pergola, featuring an original Ibicencan mill, provides a memorable setting for gatherings and alfresco dining. This impressive space includes a fully equipped bar, a traditional stone pizza oven, and a professional Josper oven, creating the perfect environment for exceptional culinary experiences.",
+   "Elsewhere, an enchanting open-air dining area is centred around an original Ibicencan well, adding an authentic touch of island heritage. The lower garden offers another atmospheric gathering space, complete with a fire pit and Ofyr barbecue, ideal for relaxed dinners and conversations beneath the stars.",
+   "One of Finca Utopia’s most extraordinary features is its private cave nightclub, a truly unique addition that brings Ibiza’s legendary entertainment culture into the privacy of the estate. Carved into the natural landscape, this soundproofed and air-conditioned space features a high-specification sound system, home cinema, stone-walled bar, and comfortable chill-out areas.",
+   "The cave club provides an exceptional setting for private celebrations, intimate parties, music experiences, and special gatherings, allowing guests to enjoy a distinctive Ibiza nightlife experience without leaving the property.",
+   "The estate’s impressive natural saltwater oval swimming pool is surrounded by beautifully maintained terraces and lush Mediterranean gardens. Designed for both relaxation and enjoyment, the main pool also offers access for guests with reduced mobility.",
+   "A separate children’s pool provides a dedicated space for younger guests, making the property particularly appealing to families and multigenerational groups. Luxurious sun loungers, parasols, outdoor showers, and numerous shaded chill-out terraces are thoughtfully positioned throughout the grounds, ensuring plenty of space to unwind, enjoy the sunshine, or simply take in the peaceful surroundings.",
+   "A defining feature of Finca Utopia is its commitment to sustainable living and its remarkable farm-to-table philosophy. The estate is home to an extensive greenhouse covering more than 1,100 square metres, alongside beautiful edible gardens integrated throughout the grounds.",
+   "Dedicated on-site gardeners cultivate fresh seasonal produce using permaculture, biodynamic, and electroculture farming methods. This exceptional approach allows the estate's culinary team to incorporate freshly harvested ingredients into the dining experience, celebrating the natural flavours of Ibiza and creating a genuine connection between the land and the table.",
+   "For those who enjoy an active lifestyle, the estate offers an excellent variety of recreational and wellness facilities. Guests can enjoy a game of pétanque, make use of the grass football pitch, or practise yoga and meditation on the beautiful open-air yoga deck surrounded by nature.",
+   "Younger guests will love exploring the dedicated children's playground, complete with a treehouse and miniature cave. A traditional wooden boat installation in the lower garden adds another distinctive and playful element to the estate's unique character.",
+   "Finca Utopia offers a comprehensive staffing service designed to ensure guests enjoy a seamless and relaxing stay. The professional team includes a concierge manager, a private chef for eight hours per day, food and beverage service, housekeeping, and maintenance support.",
+   "Additional amenities include estate-wide Wi-Fi, a discreet integrated sound system throughout the grounds, solar panels, extensive guest parking, and video surveillance for added security and peace of mind.",
+   "With its remarkable combination of privacy, beautifully designed accommodation, exceptional entertaining facilities, wellness spaces, and expansive natural surroundings, Finca Utopia is an outstanding choice for luxury family holidays, private celebrations, milestone occasions, wellness and yoga retreats, creative gatherings, and corporate escapes.",
+   "Whether guests are seeking complete relaxation, meaningful time with family and friends, or an unforgettable occasion in an extraordinary setting, Finca Utopia offers the freedom and flexibility to create a truly personalised Ibiza experience.",
+   "Finca Utopia is far more than a place to stay. It is a private world of natural beauty, creativity, comfort, and authentic island character, designed to be experienced, shared, and remembered.",
+   "Please note that private events are subject to an additional fee, with pricing available upon request."
+  ],
+  "area": "San Lorenzo",
+  "area_key": "San Lorenzo",
+  "region": "san-juan",
+  "region_name": "San Juan",
+  "district": "San Juan de Labritja",
+  "country": "Spain",
+  "bedrooms": 9,
+  "bathrooms": 9,
+  "sleeps": 18,
+  "price_from": 45000,
+  "price_to": 90000,
+  "price_on_request": false,
+  "min_nights": 7,
+  "short_stays": false,
+  "cleaning": "6 Cleanings per week",
+  "cleaning_charge": 0,
+  "check_in": "16:00",
+  "check_out": "10:00",
+  "check_in_days": "Flexible check in days",
+  "license": "AG-0043-E",
+  "dcc": true,
+  "api_switch_on": false,
+  "unpublished_on": null,
+  "amenities": [
+   "Air Conditioning",
+   "Outdoor Play Area",
+   "Cinema Room",
+   "Country View",
+   "Music System",
+   "Swimming Pool",
+   "Wifi",
+   "Hire Car Recommended",
+   "Sunloungers",
+   "Private Parking",
+   "Lawn Area",
+   "Fully fitted kitchen",
+   "House Manager",
+   "Terraces",
+   "Sauna/Steam Room",
+   "Breakfast Chef",
+   "Child Play Area",
+   "Outdoor Bar",
+   "CCTV",
+   "Disco/Club Room",
+   "Petanque",
+   "Padel Court",
+   "Gym/Fitness Equipment"
+  ],
+  "amenity_groups": [
+   {
+    "title": "Outside",
+    "items": [
+     "Outdoor Play Area",
+     "Swimming Pool",
+     "Sunloungers",
+     "Private Parking",
+     "Lawn Area",
+     "Terraces",
+     "Outdoor Bar"
+    ]
+   },
+   {
+    "title": "Inside",
+    "items": [
+     "Air Conditioning",
+     "Cinema Room",
+     "Music System",
+     "Wifi",
+     "Fully fitted kitchen",
+     "Gym/Fitness Equipment"
+    ]
+   },
+   {
+    "title": "Setting",
+    "items": [
+     "Country View",
+     "Hire Car Recommended",
+     "House Manager",
+     "CCTV"
+    ]
+   },
+   {
+    "title": "Also included",
+    "items": [
+     "Sauna/Steam Room",
+     "Breakfast Chef",
+     "Child Play Area",
+     "Disco/Club Room",
+     "Petanque",
+     "Padel Court"
+    ]
+   }
+  ],
+  "audience": [
+   "Families",
+   "Friends",
+   "Retreats",
+   "Events",
+   "Honeymoon",
+   "Weddings"
+  ],
+  "photos": [
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica_Drone-4.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Finca_Delica_SELECTION_ReEdit-18.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-35.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Finca_Delica_SELECTION_ReEdit-16.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Finca_Delica_SELECTION_ReEdit-14.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Finca_Delica_SELECTION_ReEdit-20.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Finca_Delica_SELECTION_ReEdit-21.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Finca_Delica_SELECTION_ReEdit-27.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Finca_Delica-32.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Finca_Delica-74.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-4.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-9.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-16.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-21.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-22.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-42.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-58.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-61.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-68.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-74.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-87.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/FincaDelica-89.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 1 (1).jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 1 (2).jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 1 (3).jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 2 (1).jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 2 (2).jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 2.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 3 .jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 3 (1).jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 3.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 4 (2).jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 4.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 8 & 9 (1).jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Suite 8 & 9.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Tower Suite  (1).jpeg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Tower Suite .jpeg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Tower Suite .jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/1284/villa_images/Finca_Delica_SELECTION_ReEdit-19.jpg"
+  ],
+  "lat": 39.03734,
+  "lng": 1.47448,
+  "v_id": 1284,
+  "v_uuid": "78e6f6e1-81a5-4e06-9912-f2cb75a95866",
+  "nightly_from": 6429,
+  "nightly_to": 12858,
+  "rate_rows": 11,
+  "real_bedrooms": 9,
+  "real_bathrooms": 9,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "AG-0043-E",
+   "register_licence": "AG0043E",
+   "register_places": 22,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "turisme-rural",
+   "register_name": "FINCA DELICA",
+   "issues": []
+  },
+  "near": [
+   [
+    "can-noelia",
+    0.5
+   ],
+   [
+    "can-kali",
+    1.5
+   ],
+   [
+    "can-vina",
+    1.5
+   ],
+   [
+    "villa-carrion",
+    1.5
+   ],
+   [
+    "can-catalina",
+    2.5
+   ],
+   [
+    "can-octavia",
+    2.5
+   ],
+   [
+    "can-puig-lorenzo",
+    2.5
+   ],
+   [
+    "can-aspen",
+    3.0
+   ],
+   [
+    "can-mayans",
+    3.0
+   ],
+   [
+    "can-mira",
+    3.5
+   ],
+   [
+    "cielo-del-norte",
+    3.5
+   ],
+   [
+    "villa-serenya",
+    3.5
+   ],
+   [
+    "villa-brisa",
+    4.0
+   ],
+   [
+    "villa-lino",
+    4.0
+   ],
+   [
+    "villa-parque",
+    4.0
+   ],
+   [
+    "can-alivia",
+    4.5
+   ],
+   [
+    "can-melody",
+    4.5
+   ],
+   [
+    "cana-calma",
+    5.0
+   ],
+   [
+    "villa-gina",
+    5.0
+   ],
+   [
+    "villa-paradis",
+    5.0
+   ],
+   [
+    "villa-xantara",
+    5.0
+   ]
+  ],
+  "images": [
+   {
+    "base": "villas/finca-utopia/01",
+    "width": 1400,
+    "height": 933,
+    "colour": "#877a69"
+   },
+   {
+    "base": "villas/finca-utopia/02",
+    "width": 1400,
+    "height": 933,
+    "colour": "#908e76"
+   },
+   {
+    "base": "villas/finca-utopia/03",
+    "width": 1400,
+    "height": 933,
+    "colour": "#807f72"
+   },
+   {
+    "base": "villas/finca-utopia/04",
+    "width": 1400,
+    "height": 2100,
+    "colour": "#9b9d9c"
+   },
+   {
+    "base": "villas/finca-utopia/05",
+    "width": 1400,
+    "height": 933,
+    "colour": "#98998f"
+   },
+   {
+    "base": "villas/finca-utopia/06",
+    "width": 1400,
+    "height": 933,
+    "colour": "#b59a85"
+   }
+  ],
+  "image": "/assets/villas/finca-utopia/01-800.webp",
+  "image_large": "/assets/villas/finca-utopia/01-1400.webp",
+  "image_colour": "#877a69"
+ },
+ {
   "slug": "villa-espada",
   "name": "Villa Espada",
   "tagline": "Your Exclusive Summer Retreat in Ibiza",
@@ -1233,6 +1558,10 @@
    ],
    [
     "can-noelia",
+    5.0
+   ],
+   [
+    "finca-utopia",
     5.0
    ],
    [
@@ -6929,6 +7258,10 @@
     2.5
    ],
    [
+    "finca-utopia",
+    2.5
+   ],
+   [
     "can-catalina",
     3.0
    ],
@@ -9482,6 +9815,10 @@
    ],
    [
     "can-puig-lorenzo",
+    1.5
+   ],
+   [
+    "finca-utopia",
     1.5
    ],
    [
@@ -19243,6 +19580,10 @@
     4.0
    ],
    [
+    "finca-utopia",
+    4.0
+   ],
+   [
     "villa-carrion",
     4.0
    ],
@@ -22710,6 +23051,10 @@
     5.0
    ],
    [
+    "finca-utopia",
+    5.0
+   ],
+   [
     "villa-vanessa",
     5.0
    ]
@@ -22940,6 +23285,10 @@
    ],
    [
     "can-noelia",
+    4.0
+   ],
+   [
+    "finca-utopia",
     4.0
    ],
    [
@@ -24736,6 +25085,10 @@
    ],
    [
     "can-noelia",
+    3.5
+   ],
+   [
+    "finca-utopia",
     3.5
    ],
    [
@@ -27856,6 +28209,10 @@
     5.0
    ],
    [
+    "finca-utopia",
+    5.0
+   ],
+   [
     "villa-libelula",
     5.0
    ],
@@ -28381,6 +28738,10 @@
    [
     "villa-carrion",
     1.0
+   ],
+   [
+    "finca-utopia",
+    1.5
    ],
    [
     "can-octavia",
@@ -29074,6 +29435,10 @@
    ]
   },
   "near": [
+   [
+    "finca-utopia",
+    0.5
+   ],
    [
     "can-kali",
     1.0
@@ -30694,6 +31059,10 @@
     5.0
    ],
    [
+    "finca-utopia",
+    5.0
+   ],
+   [
     "villa-carrion",
     5.0
    ]
@@ -31204,6 +31573,10 @@
    ],
    [
     "can-vina",
+    3.0
+   ],
+   [
+    "finca-utopia",
     3.0
    ],
    [
@@ -32033,6 +32406,10 @@
    ],
    [
     "can-noelia",
+    2.5
+   ],
+   [
+    "finca-utopia",
     2.5
    ],
    [
@@ -33785,6 +34162,10 @@
     3.0
    ],
    [
+    "finca-utopia",
+    3.0
+   ],
+   [
     "villa-paradis",
     3.0
    ],
@@ -34089,6 +34470,10 @@
    ],
    [
     "can-noelia",
+    3.5
+   ],
+   [
+    "finca-utopia",
     3.5
    ],
    [
@@ -34765,6 +35150,10 @@
    ],
    [
     "can-noelia",
+    2.5
+   ],
+   [
+    "finca-utopia",
     2.5
    ],
    [
@@ -39637,6 +40026,10 @@
    ],
    [
     "can-noelia",
+    4.0
+   ],
+   [
+    "finca-utopia",
     4.0
    ],
    [
@@ -54105,6 +54498,10 @@
     4.5
    ],
    [
+    "finca-utopia",
+    4.5
+   ],
+   [
     "villa-obsidian",
     4.5
    ],
@@ -56954,6 +57351,10 @@
    ],
    [
     "can-noelia",
+    4.5
+   ],
+   [
+    "finca-utopia",
     4.5
    ],
    [
@@ -61807,6 +62208,10 @@
     3.5
    ],
    [
+    "finca-utopia",
+    3.5
+   ],
+   [
     "can-kali",
     4.5
    ],
@@ -61907,7 +62312,7 @@
   "license": "ETV2229E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": "2026-11-19",
+  "unpublished_on": null,
   "amenities": [
    "Garden",
    "Air Conditioning",
@@ -66744,6 +67149,10 @@
    ],
    [
     "can-puig-lorenzo",
+    1.5
+   ],
+   [
+    "finca-utopia",
     1.5
    ],
    [
@@ -84699,7 +85108,7 @@
   "bathrooms": 2,
   "sleeps": 6,
   "price_from": 2683,
-  "price_to": 4014,
+  "price_to": 11220,
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
@@ -84777,8 +85186,8 @@
   "v_id": 17454,
   "v_uuid": "a83921b9-98d4-41e0-abc8-d12121bc09af",
   "nightly_from": 384,
-  "nightly_to": 574,
-  "rate_rows": 8,
+  "nightly_to": 3203,
+  "rate_rows": 10,
   "real_bedrooms": 2,
   "real_bathrooms": 2,
   "licence_check": {
@@ -93632,7 +94041,7 @@
   "bedrooms": 1,
   "bathrooms": 1,
   "sleeps": 2,
-  "price_from": 1902,
+  "price_from": 1954,
   "price_to": 2362,
   "price_on_request": false,
   "min_nights": 7,
@@ -93699,7 +94108,7 @@
   "lng": 1.43106,
   "v_id": 17453,
   "v_uuid": "ad6e3c4e-1fcf-47d0-9def-71afa337e6b2",
-  "nightly_from": 272,
+  "nightly_from": 280,
   "nightly_to": 338,
   "rate_rows": 7,
   "real_bedrooms": 1,
@@ -94372,7 +94781,7 @@
     "base": "villas/villa-paraiso-copy/02",
     "width": 1400,
     "height": 933,
-    "colour": "#635f3f"
+    "colour": "#63603f"
    },
    {
     "base": "villas/villa-paraiso-copy/03",
@@ -94396,7 +94805,7 @@
     "base": "villas/villa-paraiso-copy/06",
     "width": 1400,
     "height": 933,
-    "colour": "#9a8975"
+    "colour": "#9a8974"
    }
   ],
   "image": "/assets/villas/villa-paraiso-copy/01-800.webp",

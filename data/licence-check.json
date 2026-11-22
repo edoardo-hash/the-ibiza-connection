@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-21",
+ "checked_on": "2026-11-22",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -1319,6 +1319,19 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "VILLA SAMAVARA",
+   "issues": []
+  },
+  "78e6f6e1-81a5-4e06-9912-f2cb75a95866": {
+   "name": "Finca Utopia",
+   "slug": "finca-utopia",
+   "status": "verified",
+   "ok": true,
+   "licence": "AG-0043-E",
+   "register_licence": "AG0043E",
+   "register_places": 22,
+   "register_municipality": "SANT JOAN DE LABRITJA",
+   "register": "turisme-rural",
+   "register_name": "FINCA DELICA",
    "issues": []
   },
   "81afc765-287a-4777-b04c-36ca09feafe4": {
@@ -3306,7 +3319,7 @@
  "counts": {
   "format_differs": 2,
   "not_in_register": 1,
-  "verified": 245
+  "verified": 246
  },
  "hidden": [],
  "flagged": [
