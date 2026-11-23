@@ -1983,7 +1983,7 @@
     3.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.5
    ],
    [
@@ -2465,7 +2465,7 @@
     4.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.5
    ],
    [
@@ -4398,7 +4398,7 @@
     5.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     5.0
    ],
    [
@@ -5381,7 +5381,7 @@
     1.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     1.5
    ],
    [
@@ -6803,7 +6803,7 @@
     0.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     0.5
    ],
    [
@@ -7438,7 +7438,7 @@
   "license": "ETV-1129E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-23",
   "amenities": [
    "Garden",
    "Air Conditioning",
@@ -8560,7 +8560,7 @@
     3.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.0
    ],
    [
@@ -13534,7 +13534,7 @@
     4.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.5
    ],
    [
@@ -15114,7 +15114,7 @@
     3.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.5
    ],
    [
@@ -16679,7 +16679,7 @@
     3.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.5
    ],
    [
@@ -20256,7 +20256,7 @@
     3.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.0
    ],
    [
@@ -20729,7 +20729,7 @@
     3.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.0
    ],
    [
@@ -21204,7 +21204,7 @@
     3.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.0
    ],
    [
@@ -21681,7 +21681,7 @@
     3.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.0
    ],
    [
@@ -22730,7 +22730,7 @@
     5.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     5.0
    ],
    [
@@ -23730,7 +23730,7 @@
     4.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.5
    ],
    [
@@ -24811,7 +24811,7 @@
     4.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.5
    ],
    [
@@ -27897,7 +27897,7 @@
     5.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     5.0
    ],
    [
@@ -36346,7 +36346,7 @@
     1.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     1.5
    ],
    [
@@ -42264,7 +42264,7 @@
     5.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     5.0
    ],
    [
@@ -43534,7 +43534,7 @@
     5.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     5.0
    ]
   ],
@@ -43873,7 +43873,7 @@
     3.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.5
    ],
    [
@@ -43991,7 +43991,7 @@
   "min_nights": 7,
   "short_stays": false,
   "cleaning": "0 - Final Cleaning",
-  "cleaning_charge": 525,
+  "cleaning_charge": 550,
   "check_in": "16:00",
   "check_out": "10:00",
   "check_in_days": "Flexible check in days",
@@ -45006,7 +45006,7 @@
     4.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.5
    ]
   ],
@@ -46360,7 +46360,7 @@
     3.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.0
    ],
    [
@@ -47345,7 +47345,7 @@
     1.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     1.5
    ],
    [
@@ -48636,7 +48636,7 @@
     2.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     2.5
    ],
    [
@@ -48818,14 +48818,14 @@
   "slug": "villa-paraiso",
   "name": "Villa Paraiso",
   "tagline": "Beautiful Spanish villa in Sa Caleta",
-  "summary": "Escape to Villa Paraiso, a luxurious Spanish villa located in a stunning natural oasis above the picturesque village of Sa Caleta, Ibiza. Surrounded by lush greenery and offering breathtaking sea views, this spacious…",
+  "summary": "Villa Paraiso is a private retreat in Sant Josep, set in a natural oasis above the village of Sa Caleta, with panoramic views over the Mediterranean. Surrounded by greenery and with complete privacy, it is a place to…",
   "description": [
-   "Escape to Villa Paraiso, a luxurious Spanish villa located in a stunning natural oasis above the picturesque village of Sa Caleta, Ibiza. Surrounded by lush greenery and offering breathtaking sea views, this spacious retreat provides the perfect setting for a relaxing vacation, corporate retreat, or workation.",
-   "The villa has five beautifully appointed bedrooms, each with its own private bathroom and air conditioning. Three of the bedrooms have private terraces, one of which features a roof terrace with panoramic views. The large open-plan living space includes a fully equipped kitchen with a dishwasher, and there are two outdoor kitchens—one for BBQs and one for preparing traditional paella.",
-   "Step outside to enjoy the 15x5 meter swimming pool, complete with a pool bar, or unwind in the 4-person jacuzzi. The villa also offers plenty of seating areas both inside and outside, allowing your group to spread out and enjoy the peaceful surroundings. For added convenience, there is fast Wi-Fi throughout the villa and ample parking space.",
-   "Villa Paraiso is ideally located just a short walk from the beach and a 10-minute drive from Ibiza’s most popular attractions. A bio supermarket is within walking distance for your daily needs, and the airport is only a 7-minute drive away.",
-   "Enhance your stay with a range of activities, hiking, mountain biking, horse riding, personal training, yoga, meditation, boxing, and more. You can also book a delightful BBQ or paella evening for a true taste of the island.",
-   "Whether you're here for a peaceful getaway, a corporate event, or a memorable celebration with friends and family, Villa Paraiso offers the ultimate Ibiza experience with luxury, comfort, and adventure at your fingertips.",
+   "Villa Paraiso is a private retreat in Sant Josep, set in a natural oasis above the village of Sa Caleta, with panoramic views over the Mediterranean. Surrounded by greenery and with complete privacy, it is a place to enjoy the quiet side of Ibiza while staying minutes from some of the island's best beaches and restaurants.",
+   "The villa has five bedrooms, each with a large double bed, its own bathroom and air conditioning. Several of the bedrooms open onto private terraces, including a roof terrace with views across the island. The interiors are bright and spacious: a living room of about 50 m², a dining room of about 27 m² and a fully equipped modern kitchen with dishwasher.",
+   "Outside, the 15 x 5 metre pool is surrounded by Balinese daybeds, hammocks and lounging areas, with a pool bar and a jacuzzi for four. There are two outdoor kitchens, one for barbecues and one for cooking traditional paella, and several chill-out corners where the group can spread out. Fast Wi-Fi, a sound system, an alarm and private parking complete the house.",
+   "Sa Caleta beach is about 5 minutes away and Cala Jondal, with restaurants such as Blue Marlin, Tropicana and Casa Jondal, about 6 minutes. Ibiza Airport is 5.5 km away (around 10 minutes), Playa d'en Bossa 12 minutes and Dalt Vila, the UNESCO-listed old town, 20 minutes. There is an organic supermarket within walking distance, and bars and restaurants close by.",
+   "During the stay, guests can book hiking, mountain biking, horse riding, personal training, yoga, meditation or boxing, as well as a BBQ or paella evening at the villa.",
+   "Ideal for families and groups of friends who want privacy without being far from anything.",
    "*Booking requests are subject to final owner confirmation after June 1st"
   ],
   "area": "Sa Caleta",
@@ -49005,8 +49005,8 @@
   "nightly_from": 1139,
   "nightly_to": 2530,
   "rate_rows": 12,
-  "real_bedrooms": 7,
-  "real_bathrooms": 9,
+  "real_bedrooms": 6,
+  "real_bathrooms": 8,
   "licence_check": {
    "status": "verified",
    "ok": true,
@@ -49017,7 +49017,7 @@
    "register": "habitatges-turistics",
    "register_name": "CAN PAREDES",
    "issues": [
-    "Villa Paraiso + Villa Paraiso - Copy share licence ETV1064E: 20 guests shown together, the register allows 10 places"
+    "Villa Paraiso + Villa Paraiso Luxury share licence ETV1064E: 20 guests shown together, the register allows 10 places"
    ]
   },
   "near": [
@@ -49026,7 +49026,7 @@
     0.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     0.5
    ],
    [
@@ -49270,6 +49270,464 @@
   ],
   "image": "/assets/villas/villa-paraiso/01-800.webp",
   "image_large": "/assets/villas/villa-paraiso/01-1400.webp",
+  "image_colour": "#aea9a1"
+ },
+ {
+  "slug": "villa-paraiso-luxury",
+  "name": "Villa Paraiso Luxury",
+  "tagline": "Beautiful Spanish villa in Sa Caleta",
+  "summary": "Villa Paraiso is a private retreat in Sant Josep, set in a natural oasis above the village of Sa Caleta, with panoramic views over the Mediterranean. Surrounded by greenery and with complete privacy, it is a place to…",
+  "description": [
+   "Villa Paraiso is a private retreat in Sant Josep, set in a natural oasis above the village of Sa Caleta, with panoramic views over the Mediterranean. Surrounded by greenery and with complete privacy, it is a place to enjoy the quiet side of Ibiza while staying minutes from some of the island's best beaches and restaurants.",
+   "The villa has five bedrooms, each with a large double bed, its own bathroom and air conditioning. Several of the bedrooms open onto private terraces, including a roof terrace with views across the island. The interiors are bright and spacious: a living room of about 50 m², a dining room of about 27 m² and a fully equipped modern kitchen with dishwasher.",
+   "Outside, the 15 x 5 metre pool is surrounded by Balinese daybeds, hammocks and lounging areas, with a pool bar and a jacuzzi for four. There are two outdoor kitchens, one for barbecues and one for cooking traditional paella, and several chill-out corners where the group can spread out. Fast Wi-Fi, a sound system, an alarm and private parking complete the house.",
+   "Sa Caleta beach is about 5 minutes away and Cala Jondal, with restaurants such as Blue Marlin, Tropicana and Casa Jondal, about 6 minutes. Ibiza Airport is 5.5 km away (around 10 minutes), Playa d'en Bossa 12 minutes and Dalt Vila, the UNESCO-listed old town, 20 minutes. There is an organic supermarket within walking distance, and bars and restaurants close by.",
+   "During the stay, guests can book hiking, mountain biking, horse riding, personal training, yoga, meditation or boxing, as well as a BBQ or paella evening at the villa.",
+   "Ideal for families and groups of friends who want privacy without being far from anything.",
+   "*Booking requests are subject to final owner confirmation after June 1st"
+  ],
+  "area": "Sa Caleta",
+  "area_key": "Sa Caleta",
+  "region": "san-jose",
+  "region_name": "San José",
+  "district": "San Jose de Sa Talaia",
+  "country": "Spain",
+  "bedrooms": 5,
+  "bathrooms": 6,
+  "sleeps": 10,
+  "price_from": 11737,
+  "price_to": 19481,
+  "price_on_request": false,
+  "min_nights": 4,
+  "short_stays": false,
+  "cleaning": "0 - Final Cleaning",
+  "cleaning_charge": 0,
+  "check_in": "16:00",
+  "check_out": "10:00",
+  "check_in_days": "Flexible check in days",
+  "license": "ETV-1064-E",
+  "dcc": false,
+  "api_switch_on": false,
+  "unpublished_on": null,
+  "amenities": [
+   "Views to Formentera",
+   "Air Conditioning",
+   "Al Fresco Dining",
+   "BBQ",
+   "Country View",
+   "Fenced",
+   "Music System",
+   "Swimming Pool",
+   "TV - Satellite",
+   "Wifi",
+   "Hire Car Recommended",
+   "Safety Box",
+   "Sunloungers",
+   "Sea View",
+   "Sunrise View",
+   "Fireplace",
+   "Private Parking",
+   "Pets Allowed",
+   "Fully fitted kitchen",
+   "Terraces",
+   "Yoga Area",
+   "Massage area",
+   "Staff",
+   "Outdoor Bar",
+   "Table Tennis",
+   "Air Con - Bedrooms Only"
+  ],
+  "amenity_groups": [
+   {
+    "title": "Outside",
+    "items": [
+     "Al Fresco Dining",
+     "BBQ",
+     "Swimming Pool",
+     "Sunloungers",
+     "Private Parking",
+     "Terraces",
+     "Outdoor Bar"
+    ]
+   },
+   {
+    "title": "Inside",
+    "items": [
+     "Air Conditioning",
+     "Music System",
+     "TV - Satellite",
+     "Wifi",
+     "Safety Box",
+     "Fireplace",
+     "Fully fitted kitchen",
+     "Air Con - Bedrooms Only"
+    ]
+   },
+   {
+    "title": "Setting",
+    "items": [
+     "Country View",
+     "Fenced",
+     "Hire Car Recommended",
+     "Sea View"
+    ]
+   },
+   {
+    "title": "Also included",
+    "items": [
+     "Views to Formentera",
+     "Sunrise View",
+     "Pets Allowed",
+     "Yoga Area",
+     "Massage area",
+     "Staff",
+     "Table Tennis"
+    ]
+   }
+  ],
+  "audience": [
+   "Filming",
+   "Couples",
+   "Families",
+   "Friends",
+   "Retreats",
+   "Events",
+   "Honeymoon"
+  ],
+  "photos": [
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/vista_exterior_1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/Exterior_1.0.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/exterior_2.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/salon_3.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/salon_2.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/salon_1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/salon_4.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_5_1.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/VistaExterior_1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_2.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_3.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_4.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_5.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_6.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/Terraza_9.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_7.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/PISCINA_2.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/zona_estar_final.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/exterior_4.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/Exterior_2.1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/piscina_5.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/EXTERIOR_3.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/PISCINA_3.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/PISCINA_4.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/Terraza_8.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/vista_exterior_2.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/bano_amarillo_2.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_1.1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_2.1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_3.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_4.1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_4.2.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_4.3.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_amarillo_1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_principal_1.2.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_principal_1.3.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_principal_1.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion__1.3.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_1.1.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_1.2.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_2_1.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_2_2.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_3_1.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_3_2.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_4.2.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_4.3.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_5_2.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_6_2.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_6_3.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_6_4.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_7_3.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_g_1.1.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_principal_1.4.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_principal_1.5.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_principal_1.6.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_principal_1.7.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/piscina_6.jpg",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/piscina_0.png",
+   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/Exterior_3.1_.png"
+  ],
+  "lat": 38.86859,
+  "lng": 1.34092,
+  "v_id": 20102,
+  "v_uuid": "e44cb0cb-7838-4226-883f-736792e2da25",
+  "nightly_from": 1677,
+  "nightly_to": 2783,
+  "rate_rows": 10,
+  "real_bedrooms": 7,
+  "real_bathrooms": 9,
+  "licence_check": {
+   "status": "verified",
+   "ok": true,
+   "licence": "ETV-1064-E",
+   "register_licence": "ETV1064E",
+   "register_places": 10,
+   "register_municipality": "SANT JOSEP DE SA TALAIA",
+   "register": "habitatges-turistics",
+   "register_name": "CAN PAREDES",
+   "issues": [
+    "Villa Paraiso + Villa Paraiso Luxury share licence ETV1064E: 20 guests shown together, the register allows 10 places"
+   ]
+  },
+  "near": [
+   [
+    "can-nuri",
+    0.5
+   ],
+   [
+    "villa-paraiso",
+    0.5
+   ],
+   [
+    "villa-jayden",
+    1.0
+   ],
+   [
+    "can-josie",
+    1.5
+   ],
+   [
+    "can-vista-cala-jondal",
+    1.5
+   ],
+   [
+    "villa-nia",
+    1.5
+   ],
+   [
+    "can-pajarito",
+    2.5
+   ],
+   [
+    "villa-andana",
+    2.5
+   ],
+   [
+    "villa-can-exotic",
+    2.5
+   ],
+   [
+    "villa-evelyn",
+    2.5
+   ],
+   [
+    "villa-loopa",
+    2.5
+   ],
+   [
+    "villa-paola",
+    2.5
+   ],
+   [
+    "villa-ronda",
+    2.5
+   ],
+   [
+    "can-salvador",
+    3.0
+   ],
+   [
+    "villa-beverly",
+    3.0
+   ],
+   [
+    "villa-casita",
+    3.0
+   ],
+   [
+    "villa-dama",
+    3.0
+   ],
+   [
+    "villa-margo",
+    3.0
+   ],
+   [
+    "villa-marielle",
+    3.0
+   ],
+   [
+    "villa-meghan",
+    3.0
+   ],
+   [
+    "villa-meghan-deluxe",
+    3.0
+   ],
+   [
+    "villa-meghan-grande",
+    3.0
+   ],
+   [
+    "villa-nadal",
+    3.0
+   ],
+   [
+    "villa-trinity",
+    3.0
+   ],
+   [
+    "can-sabina",
+    3.5
+   ],
+   [
+    "villa-centelleo",
+    3.5
+   ],
+   [
+    "villa-esther-grande",
+    3.5
+   ],
+   [
+    "villa-fabienne",
+    3.5
+   ],
+   [
+    "villa-heidi",
+    3.5
+   ],
+   [
+    "villa-magnifique",
+    3.5
+   ],
+   [
+    "villa-porroig-relax",
+    3.5
+   ],
+   [
+    "can-laurel",
+    4.0
+   ],
+   [
+    "casa-can-tina",
+    4.0
+   ],
+   [
+    "waterfront-dream",
+    4.0
+   ],
+   [
+    "alegre-blue",
+    4.5
+   ],
+   [
+    "cana-sole",
+    4.5
+   ],
+   [
+    "villa-amaris",
+    4.5
+   ],
+   [
+    "villa-charlotte",
+    4.5
+   ],
+   [
+    "villa-eliza",
+    4.5
+   ],
+   [
+    "villa-escondida",
+    4.5
+   ],
+   [
+    "villa-jeanette",
+    4.5
+   ],
+   [
+    "villa-maia",
+    4.5
+   ],
+   [
+    "villa-puma",
+    4.5
+   ],
+   [
+    "villa-riley",
+    4.5
+   ],
+   [
+    "villa-serenity",
+    4.5
+   ],
+   [
+    "can-danza",
+    5.0
+   ],
+   [
+    "la-flaca",
+    5.0
+   ],
+   [
+    "villa-amazonia",
+    5.0
+   ],
+   [
+    "villa-cubes",
+    5.0
+   ],
+   [
+    "villa-frankie",
+    5.0
+   ],
+   [
+    "villa-nizra",
+    5.0
+   ],
+   [
+    "villa-wendy",
+    5.0
+   ]
+  ],
+  "images": [
+   {
+    "base": "villas/villa-paraiso-luxury/01",
+    "width": 1400,
+    "height": 933,
+    "colour": "#aea9a1"
+   },
+   {
+    "base": "villas/villa-paraiso-luxury/02",
+    "width": 1400,
+    "height": 933,
+    "colour": "#635f3f"
+   },
+   {
+    "base": "villas/villa-paraiso-luxury/03",
+    "width": 1400,
+    "height": 2100,
+    "colour": "#707e79"
+   },
+   {
+    "base": "villas/villa-paraiso-luxury/04",
+    "width": 1400,
+    "height": 933,
+    "colour": "#908172"
+   },
+   {
+    "base": "villas/villa-paraiso-luxury/05",
+    "width": 1400,
+    "height": 933,
+    "colour": "#9c8c7f"
+   },
+   {
+    "base": "villas/villa-paraiso-luxury/06",
+    "width": 1400,
+    "height": 933,
+    "colour": "#9a8975"
+   }
+  ],
+  "image": "/assets/villas/villa-paraiso-luxury/01-800.webp",
+  "image_large": "/assets/villas/villa-paraiso-luxury/01-1400.webp",
   "image_colour": "#aea9a1"
  },
  {
@@ -49615,7 +50073,7 @@
     4.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.5
    ],
    [
@@ -49962,7 +50420,7 @@
     2.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     2.5
    ],
    [
@@ -51586,7 +52044,7 @@
     3.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.0
    ],
    [
@@ -53269,7 +53727,7 @@
     4.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.0
    ],
    [
@@ -54122,7 +54580,7 @@
     3.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.5
    ],
    [
@@ -58729,7 +59187,7 @@
     3.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.5
    ],
    [
@@ -60593,7 +61051,7 @@
     4.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.5
    ],
    [
@@ -61600,7 +62058,7 @@
     4.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.0
    ],
    [
@@ -63746,7 +64204,7 @@
     5.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     5.0
    ],
    [
@@ -64366,7 +64824,7 @@
     2.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     2.5
    ],
    [
@@ -68345,7 +68803,7 @@
     3.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.0
    ],
    [
@@ -68964,7 +69422,7 @@
   "bathrooms": 4,
   "sleeps": 8,
   "price_from": 3889,
-  "price_to": 15978,
+  "price_to": 17573,
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": true,
@@ -69075,7 +69533,7 @@
   "v_id": 654,
   "v_uuid": "ce830fc3-1ea1-4311-920b-1942d8095c2c",
   "nightly_from": 556,
-  "nightly_to": 2283,
+  "nightly_to": 2511,
   "rate_rows": 10,
   "real_bedrooms": 4,
   "real_bathrooms": 4,
@@ -69611,7 +70069,7 @@
     2.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     2.5
    ],
    [
@@ -73680,7 +74138,7 @@
     4.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.5
    ],
    [
@@ -74900,7 +75358,7 @@
     3.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.0
    ],
    [
@@ -76038,7 +76496,7 @@
     3.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.5
    ],
    [
@@ -78551,7 +79009,7 @@
     2.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     2.5
    ],
    [
@@ -79003,7 +79461,7 @@
     5.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     5.0
    ],
    [
@@ -81709,7 +82167,7 @@
     4.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.0
    ],
    [
@@ -86624,7 +87082,7 @@
     3.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.0
    ],
    [
@@ -87105,7 +87563,7 @@
     4.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.5
    ],
    [
@@ -87478,7 +87936,7 @@
     4.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.5
    ],
    [
@@ -87581,7 +88039,7 @@
   "bathrooms": 3,
   "sleeps": 6,
   "price_from": 35750,
-  "price_to": 59400,
+  "price_to": 59950,
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
@@ -87761,7 +88219,7 @@
   "v_id": 19,
   "v_uuid": "2faff1c3-457d-4c41-b98e-608f6e97f737",
   "nightly_from": 5108,
-  "nightly_to": 8486,
+  "nightly_to": 8565,
   "rate_rows": 10,
   "real_bedrooms": 6,
   "real_bathrooms": 6,
@@ -87798,7 +88256,7 @@
     1.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     1.0
    ],
    [
@@ -88733,7 +89191,7 @@
     2.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     2.5
    ],
    [
@@ -89367,8 +89825,8 @@
   "bedrooms": 3,
   "bathrooms": 3,
   "sleeps": 6,
-  "price_from": 4576,
-  "price_to": 17710,
+  "price_from": 4158,
+  "price_to": 19487,
   "price_on_request": false,
   "min_nights": 5,
   "short_stays": true,
@@ -89518,9 +89976,9 @@
   "lng": 1.45062,
   "v_id": 922,
   "v_uuid": "14cd39b0-d6c8-415b-888d-396f440beff2",
-  "nightly_from": 550,
-  "nightly_to": 2530,
-  "rate_rows": 9,
+  "nightly_from": 594,
+  "nightly_to": 2784,
+  "rate_rows": 8,
   "real_bedrooms": 6,
   "real_bathrooms": 6,
   "licence_check": {
@@ -91508,7 +91966,7 @@
     4.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     4.5
    ],
    [
@@ -94355,464 +94813,6 @@
   "image_colour": "#aea2a1"
  },
  {
-  "slug": "villa-paraiso-copy",
-  "name": "Villa Paraiso - Copy",
-  "tagline": "Beautiful Spanish villa in Sa Caleta",
-  "summary": "Escape to Villa Paraiso, a luxurious Spanish villa located in a stunning natural oasis above the picturesque village of Sa Caleta, Ibiza. Surrounded by lush greenery and offering breathtaking sea views, this spacious…",
-  "description": [
-   "Escape to Villa Paraiso, a luxurious Spanish villa located in a stunning natural oasis above the picturesque village of Sa Caleta, Ibiza. Surrounded by lush greenery and offering breathtaking sea views, this spacious retreat provides the perfect setting for a relaxing vacation, corporate retreat, or workation.",
-   "The villa has five beautifully appointed bedrooms, each with its own private bathroom and air conditioning. Three of the bedrooms have private terraces, one of which features a roof terrace with panoramic views. The large open-plan living space includes a fully equipped kitchen with a dishwasher, and there are two outdoor kitchens—one for BBQs and one for preparing traditional paella.",
-   "Step outside to enjoy the 15x5 meter swimming pool, complete with a pool bar, or unwind in the 4-person jacuzzi. The villa also offers plenty of seating areas both inside and outside, allowing your group to spread out and enjoy the peaceful surroundings. For added convenience, there is fast Wi-Fi throughout the villa and ample parking space.",
-   "Villa Paraiso is ideally located just a short walk from the beach and a 10-minute drive from Ibiza’s most popular attractions. A bio supermarket is within walking distance for your daily needs, and the airport is only a 7-minute drive away.",
-   "Enhance your stay with a range of activities, hiking, mountain biking, horse riding, personal training, yoga, meditation, boxing, and more. You can also book a delightful BBQ or paella evening for a true taste of the island.",
-   "Whether you're here for a peaceful getaway, a corporate event, or a memorable celebration with friends and family, Villa Paraiso offers the ultimate Ibiza experience with luxury, comfort, and adventure at your fingertips.",
-   "*Booking requests are subject to final owner confirmation after June 1st"
-  ],
-  "area": "Sa Caleta",
-  "area_key": "Sa Caleta",
-  "region": "san-jose",
-  "region_name": "San José",
-  "district": "San Jose de Sa Talaia",
-  "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 6,
-  "sleeps": 10,
-  "price_from": 0,
-  "price_to": 0,
-  "price_on_request": true,
-  "min_nights": 4,
-  "short_stays": false,
-  "cleaning": "0 - Final Cleaning",
-  "cleaning_charge": 0,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Flexible check in days",
-  "license": "ETV-1064-E",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": null,
-  "amenities": [
-   "Views to Formentera",
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "BBQ",
-   "Country View",
-   "Fenced",
-   "Music System",
-   "Swimming Pool",
-   "TV - Satellite",
-   "Wifi",
-   "Hire Car Recommended",
-   "Safety Box",
-   "Sunloungers",
-   "Sea View",
-   "Sunrise View",
-   "Fireplace",
-   "Private Parking",
-   "Pets Allowed",
-   "Fully fitted kitchen",
-   "Terraces",
-   "Yoga Area",
-   "Massage area",
-   "Staff",
-   "Outdoor Bar",
-   "Table Tennis",
-   "Air Con - Bedrooms Only"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers",
-     "Private Parking",
-     "Terraces",
-     "Outdoor Bar"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "Music System",
-     "TV - Satellite",
-     "Wifi",
-     "Safety Box",
-     "Fireplace",
-     "Fully fitted kitchen",
-     "Air Con - Bedrooms Only"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Country View",
-     "Fenced",
-     "Hire Car Recommended",
-     "Sea View"
-    ]
-   },
-   {
-    "title": "Also included",
-    "items": [
-     "Views to Formentera",
-     "Sunrise View",
-     "Pets Allowed",
-     "Yoga Area",
-     "Massage area",
-     "Staff",
-     "Table Tennis"
-    ]
-   }
-  ],
-  "audience": [
-   "Filming",
-   "Couples",
-   "Families",
-   "Friends",
-   "Retreats",
-   "Events",
-   "Honeymoon"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/vista_exterior_1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/Exterior_1.0.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/exterior_2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/salon_3.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/salon_2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/salon_1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/salon_4.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_5_1.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/VistaExterior_1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_3.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_4.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_5.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_6.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/Terraza_9.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_7.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/PISCINA_2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/zona_estar_final.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/exterior_4.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/Exterior_2.1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/terraza_1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/piscina_5.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/EXTERIOR_3.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/PISCINA_3.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/PISCINA_4.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/Terraza_8.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/vista_exterior_2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/bano_amarillo_2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_1.1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_2.1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_3.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_4.1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_4.2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_4.3.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_amarillo_1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_principal_1.2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_principal_1.3.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/baño_principal_1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion__1.3.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_1.1.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_1.2.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_2_1.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_2_2.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_3_1.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_3_2.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_4.2.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_4.3.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_5_2.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_6_2.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_6_3.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_6_4.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_7_3.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_g_1.1.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_principal_1.4.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_principal_1.5.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_principal_1.6.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/habitacion_principal_1.7.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/piscina_6.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/piscina_0.png",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/20102/villa_images/Exterior_3.1_.png"
-  ],
-  "lat": 38.86859,
-  "lng": 1.34092,
-  "v_id": 20102,
-  "v_uuid": "e44cb0cb-7838-4226-883f-736792e2da25",
-  "nightly_from": 0,
-  "nightly_to": 0,
-  "rate_rows": 0,
-  "real_bedrooms": 7,
-  "real_bathrooms": 9,
-  "licence_check": {
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-1064-E",
-   "register_licence": "ETV1064E",
-   "register_places": 10,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CAN PAREDES",
-   "issues": [
-    "Villa Paraiso + Villa Paraiso - Copy share licence ETV1064E: 20 guests shown together, the register allows 10 places"
-   ]
-  },
-  "near": [
-   [
-    "can-nuri",
-    0.5
-   ],
-   [
-    "villa-paraiso",
-    0.5
-   ],
-   [
-    "villa-jayden",
-    1.0
-   ],
-   [
-    "can-josie",
-    1.5
-   ],
-   [
-    "can-vista-cala-jondal",
-    1.5
-   ],
-   [
-    "villa-nia",
-    1.5
-   ],
-   [
-    "can-pajarito",
-    2.5
-   ],
-   [
-    "villa-andana",
-    2.5
-   ],
-   [
-    "villa-can-exotic",
-    2.5
-   ],
-   [
-    "villa-evelyn",
-    2.5
-   ],
-   [
-    "villa-loopa",
-    2.5
-   ],
-   [
-    "villa-paola",
-    2.5
-   ],
-   [
-    "villa-ronda",
-    2.5
-   ],
-   [
-    "can-salvador",
-    3.0
-   ],
-   [
-    "villa-beverly",
-    3.0
-   ],
-   [
-    "villa-casita",
-    3.0
-   ],
-   [
-    "villa-dama",
-    3.0
-   ],
-   [
-    "villa-margo",
-    3.0
-   ],
-   [
-    "villa-marielle",
-    3.0
-   ],
-   [
-    "villa-meghan",
-    3.0
-   ],
-   [
-    "villa-meghan-deluxe",
-    3.0
-   ],
-   [
-    "villa-meghan-grande",
-    3.0
-   ],
-   [
-    "villa-nadal",
-    3.0
-   ],
-   [
-    "villa-trinity",
-    3.0
-   ],
-   [
-    "can-sabina",
-    3.5
-   ],
-   [
-    "villa-centelleo",
-    3.5
-   ],
-   [
-    "villa-esther-grande",
-    3.5
-   ],
-   [
-    "villa-fabienne",
-    3.5
-   ],
-   [
-    "villa-heidi",
-    3.5
-   ],
-   [
-    "villa-magnifique",
-    3.5
-   ],
-   [
-    "villa-porroig-relax",
-    3.5
-   ],
-   [
-    "can-laurel",
-    4.0
-   ],
-   [
-    "casa-can-tina",
-    4.0
-   ],
-   [
-    "waterfront-dream",
-    4.0
-   ],
-   [
-    "alegre-blue",
-    4.5
-   ],
-   [
-    "cana-sole",
-    4.5
-   ],
-   [
-    "villa-amaris",
-    4.5
-   ],
-   [
-    "villa-charlotte",
-    4.5
-   ],
-   [
-    "villa-eliza",
-    4.5
-   ],
-   [
-    "villa-escondida",
-    4.5
-   ],
-   [
-    "villa-jeanette",
-    4.5
-   ],
-   [
-    "villa-maia",
-    4.5
-   ],
-   [
-    "villa-puma",
-    4.5
-   ],
-   [
-    "villa-riley",
-    4.5
-   ],
-   [
-    "villa-serenity",
-    4.5
-   ],
-   [
-    "can-danza",
-    5.0
-   ],
-   [
-    "la-flaca",
-    5.0
-   ],
-   [
-    "villa-amazonia",
-    5.0
-   ],
-   [
-    "villa-cubes",
-    5.0
-   ],
-   [
-    "villa-frankie",
-    5.0
-   ],
-   [
-    "villa-nizra",
-    5.0
-   ],
-   [
-    "villa-wendy",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/villa-paraiso-copy/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#aea9a1"
-   },
-   {
-    "base": "villas/villa-paraiso-copy/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#63603f"
-   },
-   {
-    "base": "villas/villa-paraiso-copy/03",
-    "width": 1400,
-    "height": 2100,
-    "colour": "#707e79"
-   },
-   {
-    "base": "villas/villa-paraiso-copy/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#908172"
-   },
-   {
-    "base": "villas/villa-paraiso-copy/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#9c8c7f"
-   },
-   {
-    "base": "villas/villa-paraiso-copy/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#9a8974"
-   }
-  ],
-  "image": "/assets/villas/villa-paraiso-copy/01-800.webp",
-  "image_large": "/assets/villas/villa-paraiso-copy/01-1400.webp",
-  "image_colour": "#aea9a1"
- },
- {
   "slug": "villa-beverly",
   "name": "Villa Beverly",
   "tagline": "Cosy home near nightlife",
@@ -95041,7 +95041,7 @@
     3.0
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     3.0
    ],
    [
@@ -95356,7 +95356,7 @@
     2.5
    ],
    [
-    "villa-paraiso-copy",
+    "villa-paraiso-luxury",
     2.5
    ],
    [
