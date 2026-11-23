@@ -36,7 +36,7 @@
   "featured": {
     "eyebrow": "01 — Selected stays",
     "title": "Houses with a point of view",
-    "text": "A short list from the collection: contemporary villas above the sea, old fincas in the pine woods, and a few places that are simply hard to leave.",
+    "text": "A short list from the collection: contemporary villas above the sea, old fincas in the pine woods, and a few places that are simply hard to leave. Travelling with a larger group? We also have larger villas and can arrange combinations of villas to stay close together.",
     "link": { "label": "View all {count} villas", "href": "/villas/" },
     "slugs": [
       "villa-katherine",
@@ -106,7 +106,7 @@
   },
   "cta": {
     "title_html": "Tell us what you are <em>dreaming</em> of.",
-    "text": "Send your dates, the size of your group and the feeling you are after. We will reply with a shortlist — usually the same day.",
+    "text": "Send your dates, the size of your group and the feeling you are after. We will reply with a shortlist — usually the same day. For larger groups, ask us about our larger villas and combinations of villas, or message us on WhatsApp for more options.",
     "image": "/assets/img/cta.webp",
     "image_alt": "An infinity pool looking out over the sea from the south-west coast",
     "primary": { "label": "Start an enquiry", "href": "/contact/" },

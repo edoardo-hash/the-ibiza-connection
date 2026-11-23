@@ -29,7 +29,7 @@
   },
   "details": [
     { "label": "Telephone", "value": "+34 697 87 58 90", "href": "tel:+34697875890" },
-    { "label": "WhatsApp", "value": "Chat with us", "href": "https://wa.me/34697875890?text=Hello%20The%20Ibiza%20Connection%2C%20I%20would%20like%20to%20enquire%20about%20a%20villa." },
+    { "label": "WhatsApp", "value": "Chat with us", "href": "https://wa.me/34697875890?text=Hello%20The%20Ibiza%20Connection%2C%20I%20would%20like%20to%20enquire%20about%20a%20villa.%20I%20am%20also%20interested%20in%20larger%20villas%20or%20a%20combination%20of%20villas." },
     { "label": "Email", "value": "info@theibizaconnection.net", "href": "mailto:info@theibizaconnection.net" },
     { "label": "Office", "value": "Calle Molins de Rey 12\n07840 Santa Eulalia del Río\nIbiza, Balearic Islands" },
     { "label": "Hours", "value": "Monday to Saturday, 10:00 – 19:00 (CET)" }
