@@ -145,10 +145,10 @@
   "price_match": {
     "label": "Price match guarantee",
     "title": "Found it for less? We'll match it.",
-    "text": "If you find the same villa for less on another website, send us the link and we will match the price. Applies only to like-for-like offers for the same property, dates and occupancy. Price match requests must be submitted within 48 hours of receiving our quote, and competing prices must still be available at the time of verification.",
-    "short": "Seen this villa for less on another website? Send us the link and we'll match the price. Like-for-like offers only, requested within 48 hours of our quote.",
-    "link_label": "Send us the link",
-    "band": "Seen the same villa for less elsewhere? Send us the link.",
+    "text": "If you find the same villa for less elsewhere, talk to us and we will match the price. Conditions apply.",
+    "short": "Seen this villa for less elsewhere? Talk to us and we'll match the price. Conditions apply.",
+    "link_label": "Talk to us",
+    "band": "Seen the same villa for less elsewhere? We'll match it.",
     "conditions_label": "Conditions",
     "conditions_url": "/terms/#price-match-guarantee"
   },
