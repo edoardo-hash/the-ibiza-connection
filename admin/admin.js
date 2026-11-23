@@ -89,6 +89,7 @@
       "content/settings.json": "Contact details, menu and footer",
       "content/destinations.json": "Destinations",
       "content/journal.json": "Journal",
+      "content/villa-highlights.json": "Villa highlights (Why you'll love…)",
       "assets/css/site.css": "Site styles",
     };
     if (map[path]) return map[path];

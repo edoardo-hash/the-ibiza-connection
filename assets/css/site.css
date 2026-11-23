@@ -1914,3 +1914,11 @@ select.filter-select,
 @media (max-width: 1080px) { .large-groups-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 640px) { .large-groups-grid { grid-template-columns: repeat(2, 1fr); } }
 .nav a { white-space: nowrap; }
+
+/* Why you'll love <villa> (23 Nov 2026) */
+.villa-highlights { border: 1px solid var(--line); border-radius: 14px; background: var(--white); padding: clamp(18px, 2.4vw, 28px); margin-bottom: clamp(28px, 4vw, 48px); }
+.villa-highlights h2 { font-family: var(--serif); font-size: clamp(1.5rem, 2.2vw, 1.9rem); font-weight: 400; margin: 0 0 16px; }
+.villa-highlights ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px; }
+.villa-highlights li { display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--ink-2); }
+.villa-highlights li svg { width: 22px; height: 22px; flex: none; color: var(--clay); }
+@media (max-width: 640px) { .villa-highlights ul { grid-template-columns: 1fr; } }

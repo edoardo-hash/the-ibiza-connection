@@ -305,6 +305,8 @@ ICONS = {
     "map-pin": '<path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/>',
     "calendar": '<rect x="3" y="5" width="18" height="16"/><path d="M8 3v4M16 3v4M3 10h18"/>',
     "key": '<circle cx="8" cy="9" r="4"/><path d="m11 12 9 9M16 17l2-2M19 20l2-2"/>',
+    "trophy": '<path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8M10 17h4"/>',
+    "home": '<path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z"/>',
     "star": '<path d="m12 3 2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.4l6.1-.8z"/>',
     "expand": '<path d="M9 4H4v5M15 20h5v-5M4 4l6 6M20 20l-6-6"/>',
     "quote": '<path d="M9 7H5v6h4v4H4M20 7h-4v6h4v4h-5"/>',
@@ -1451,6 +1453,91 @@ def area_link(villa: dict) -> str:
     return f"/destinations/{villa['region']}/"
 
 
+
+# "Why you'll love <villa>" (Natalia / Edo, 23 Nov 2026): a box under the photos with the things clients scan for,
+# so they don't have to read the description to find them. Built from the villa's own data (counts, views,
+# nearest beach by road, the stand-out amenities), at most HIGHLIGHT_MAX lines. content/villa-highlights.json
+# (editable from the control panel) replaces the automatic list for a villa: "villas": {"<slug>": ["Sea views", …]}.
+HIGHLIGHT_MAX = 6
+VILLA_HIGHLIGHTS = (load(CONTENT / "villa-highlights.json") or {}).get("villas", {}) if (CONTENT / "villa-highlights.json").exists() else {}
+_VIEW_RULES = [
+    (("Front Line",), "Front line to the sea", "sea"),
+    (("Sea Access",), "Direct access to the sea", "sea"),
+    (("Views to Formentera",), "Views to Formentera", "sea"),
+    (("Views to Ibiza Old Town",), "Views of Dalt Vila", "map-pin"),
+    (("Sea View", "Sunset View"), "Sea and sunset views", "sea"),
+    (("Sea View",), "Sea views", "sea"),
+    (("Sunset View",), "Sunset views", "sun"),
+    (("Country View",), "Countryside views", "leaf"),
+]
+_FEATURE_RULES = [
+    (("Tennis Court",), "Tennis court", "trophy"),
+    (("Padel Court", "Padel"), "Padel court", "trophy"),
+    (("Infinity pool",), "Infinity pool", "pool"),
+    (("Heated Pool (additional charges may apply)",), "Heated pool", "pool"),
+    (("Cinema Room",), "Cinema room", "tv"),
+    (("Disco/Club Room",), "Private club room", "music"),
+    (("Sauna/Steam Room",), "Sauna", "flame"),
+    (("Outdoor Jacuzzi", "Indoor Jacuzzi"), "Jacuzzi", "pool"),
+    (("Gym/Fitness Equipment",), "Gym", "dumbbell"),
+    (("Live in Staff", "Staff", "House Manager"), "Staff on site", "bell"),
+    (("Outdoor Kitchen", "Pizza Oven"), "Outdoor kitchen", "utensils"),
+    (("Yoga Area",), "Yoga area", "sun"),
+    (("Outdoor Play Area", "Child Play Area"), "Children's play area", "star"),
+    (("Pets Allowed",), "Pets welcome", "heart"),
+    (("Roof Terrace",), "Roof terrace", "sun"),
+    (("Garden", "Lawn Area"), "Gardens", "leaf"),
+]
+_HIGHLIGHT_ICON_WORDS = [("sea", "sea"), ("beach", "map-pin"), ("cala", "map-pin"), ("near", "map-pin"), ("walk", "map-pin"),
+                         ("bedroom", "home"), ("sleeps", "home"), ("pool", "pool"), ("tennis", "trophy"), ("padel", "trophy"),
+                         ("garden", "leaf"), ("view", "sun"), ("sunset", "sun"), ("gym", "dumbbell"), ("staff", "bell")]
+
+
+def villa_highlights(villa: dict) -> list[tuple[str, str]]:
+    custom = VILLA_HIGHLIGHTS.get(villa["slug"])
+    if isinstance(custom, list) and custom:
+        out = []
+        for item in custom[:HIGHLIGHT_MAX]:
+            text = item.get("text") if isinstance(item, dict) else str(item)
+            name = item.get("icon") if isinstance(item, dict) else None
+            if not name:
+                low = text.lower()
+                name = next((ic for word, ic in _HIGHLIGHT_ICON_WORDS if word in low), "check")
+            if text:
+                out.append((text, name if name in ICONS else "check"))
+        return out
+    have = set(villa.get("amenities") or [])
+    out = [(f"{villa['bedrooms']} bedrooms · Sleeps {villa['sleeps']}", "home")]
+    view = next(((t, i) for need, t, i in _VIEW_RULES if all(n in have for n in need)), None)
+    if view:
+        out.append(view)
+    info = area_info(villa) or {}
+    beach = info.get("beach") or {}
+    if beach.get("name") and beach.get("km") is not None and beach["km"] <= 5 and "Front Line" not in have:
+        km = beach["km"]
+        out.append((f"Near {beach['name']}" if km <= 1.5 else f"{km:g} km to {beach['name']}", "map-pin"))
+    for need, text, name in _FEATURE_RULES:
+        if len(out) >= HIGHLIGHT_MAX:
+            break
+        if any(n in have for n in need) and all(text != t for t, _ in out):
+            out.append((text, name))
+    if len(out) < HIGHLIGHT_MAX and "Swimming Pool" in have and not any("pool" in t.lower() for t, _ in out):
+        out.append(("Private pool", "pool"))
+    return out[:HIGHLIGHT_MAX]
+
+
+def highlights_box(villa: dict) -> str:
+    items = villa_highlights(villa)
+    if len(items) < 3:
+        return ""
+    lis = "".join(f'<li>{icon(name)}<span>{esc(text)}</span></li>' for text, name in items)
+    return f"""
+      <section class="villa-highlights" aria-labelledby="why-love">
+        <h2 id="why-love">Why you'll love {esc(villa['name'])}</h2>
+        <ul>{lis}</ul>
+      </section>"""
+
+
 def build_villa(villa: dict) -> str:
     from urllib.parse import quote
 
@@ -1656,6 +1743,7 @@ def build_villa(villa: dict) -> str:
 <div class="wrap">
   <div class="villa-layout">
     <div class="villa-main">
+      {highlights_box(villa)}
       <section class="villa-section">
         <h2>The villa</h2>
         <div class="villa-intro">

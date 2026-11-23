@@ -1,0 +1,4 @@
+{
+  "_about": "The 'Why you'll love <villa>' box under each villa's photos. It is filled automatically from the villa's data (bedrooms, views, nearest beach, stand-out amenities). To write it yourself for one villa, add the villa's page name (the part after /villa/ in its address) with up to 6 short lines, e.g. \"can-josie\": [\"Sea views\", \"Near Cala Jondal\", \"Private tennis court\"]. Remove the villa to go back to the automatic list.",
+  "villas": {}
+}
