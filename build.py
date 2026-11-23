@@ -1548,15 +1548,21 @@ def build_villa(villa: dict) -> str:
     if villa.get("lat") and villa.get("lng"):
         lat, lng = villa["lat"], villa["lng"]
         bbox = f"{lng - 0.018:.4f},{lat - 0.012:.4f},{lng + 0.018:.4f},{lat + 0.012:.4f}"
+        # Edo + Natalia, 23 Nov 2026: the map opens zoomed out on the whole island (the villa among the island's places,
+        # not a hillside), in the OpenMapTiles look of OpenStreetMap's "MapTiler OMT" layer. Drawn by MapLibre in
+        # site.js (initVillaMaps) with OpenFreeMap's OSM Bright style (OpenMapTiles data, no key); without JS the old
+        # OpenStreetMap embed stays as the fallback.
         map_section = f"""
       <div class="map-frame">
-        <iframe title="Map showing the approximate location of {esc(villa['name'])}"
-          src="https://www.openstreetmap.org/export/embed.html?bbox={bbox}&amp;layer=mapnik&amp;marker={lat},{lng}"
-          loading="lazy"></iframe>
+        <div class="villa-map" data-lat="{lat}" data-lng="{lng}" role="img" aria-label="Map showing the approximate location of {esc(villa['name'])} in Ibiza">
+          <noscript><iframe title="Map showing the approximate location of {esc(villa['name'])}"
+            src="https://www.openstreetmap.org/export/embed.html?bbox={bbox}&amp;layer=mapnik&amp;marker={lat},{lng}"
+            loading="lazy"></iframe></noscript>
+        </div>
       </div>
       <div class="map-note">
         <span>Approximate location · {esc(villa['area'])}, Ibiza</span>
-        <a class="link" href="https://www.openstreetmap.org/?mlat={lat}&amp;mlon={lng}#map=14/{lat}/{lng}" target="_blank" rel="noopener">View larger map</a>
+        <a class="link" href="https://www.openstreetmap.org/?mlat={lat}&amp;mlon={lng}#map=12/{lat}/{lng}&amp;layers=V" target="_blank" rel="noopener">View larger map</a>
       </div>"""
 
     nearby_html = ""

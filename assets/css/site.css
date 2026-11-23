@@ -1286,6 +1286,9 @@ select.filter-select,
 
 .map-frame { position: relative; border: 1px solid var(--line); background: var(--sand); }
 .map-frame iframe { width: 100%; height: 360px; border: 0; filter: grayscale(0.25) sepia(0.08); }
+.villa-map { width: 100%; height: 420px; }
+.villa-map .maplibregl-ctrl-attrib { font-size: 11px; }
+@media (max-width: 640px) { .villa-map { height: 340px; } }
 .map-note { display: flex; justify-content: space-between; gap: 16px; margin-top: 10px; font-size: 12px; letter-spacing: 0.073em; color: var(--muted); }
 
 /* Booking card ----------------------------------------------------------- */

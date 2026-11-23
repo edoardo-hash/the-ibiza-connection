@@ -1786,4 +1786,46 @@
   $$('input[type="date"]').forEach((input) => {
     if (!input.min) input.min = today;
   });
+
+  /* ------------------------------------------------------------------ */
+  /*  Villa map (Edo + Natalia, 23 Nov 2026)                             */
+  /*  Whole island in view, OpenMapTiles look (OSM Bright, OpenFreeMap), */
+  /*  MapLibre loaded only when the map scrolls into view.               */
+  /* ------------------------------------------------------------------ */
+  const villaMaps = $$(".villa-map[data-lat]");
+  if (villaMaps.length) {
+    const ML = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl";
+    let loading = null;
+    const loadLib = () => loading || (loading = new Promise((ok, fail) => {
+      const css = document.createElement("link");
+      css.rel = "stylesheet"; css.href = ML + ".css";
+      document.head.appendChild(css);
+      const s = document.createElement("script");
+      s.src = ML + ".js"; s.onload = ok; s.onerror = fail;
+      document.head.appendChild(s);
+    }));
+    const draw = (el) => {
+      const lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);
+      loadLib().then(() => {
+        const map = new window.maplibregl.Map({
+          container: el,
+          style: "https://tiles.openfreemap.org/styles/bright",
+          bounds: [[1.17, 38.83], [1.63, 39.12]],
+          fitBoundsOptions: { padding: 16 },
+          cooperativeGestures: true,
+          attributionControl: { compact: true },
+        });
+        map.addControl(new window.maplibregl.NavigationControl({ showCompass: false }), "top-right");
+        new window.maplibregl.Marker({ color: "#a2623c" }).setLngLat([lng, lat]).addTo(map);
+      }).catch(() => {
+        el.innerHTML = '<iframe title="Map" loading="lazy" style="width:100%;height:100%;border:0" src="https://www.openstreetmap.org/export/embed.html?bbox=1.17,38.83,1.63,39.12&amp;layer=mapnik&amp;marker=' + lat + ',' + lng + '"></iframe>';
+      });
+    };
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { io.unobserve(e.target); draw(e.target); } });
+      }, { rootMargin: "300px" });
+      villaMaps.forEach((el) => io.observe(el));
+    } else villaMaps.forEach(draw);
+  }
 })();
