@@ -216,3 +216,8 @@
 .cp-recent { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .cp-recent > span { min-width: 0; }
 .cp-recent .cp-link { flex: none; margin-top: 3px; }
+
+.cp-google { display: flex; align-items: center; justify-content: center; gap: 10px; background: #fff; color: var(--ink, #15130f); border: 1px solid rgba(21,19,15,.25); text-decoration: none; }
+.cp-google:hover { border-color: var(--ink, #15130f); }
+.cp-or { display: flex; align-items: center; gap: 12px; margin: 4px 0; font-size: 12px; letter-spacing: .04em; color: rgba(21,19,15,.55); }
+.cp-or::before, .cp-or::after { content: ""; flex: 1; height: 1px; background: rgba(21,19,15,.15); }

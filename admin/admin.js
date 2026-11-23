@@ -461,5 +461,14 @@
       previewUrl = r.previewUrl;
       start(r.user);
     })
-    .catch(() => show("login"));
+    .catch(() => {
+      show("login");
+      const msg = new URLSearchParams(location.search).get("login_error");
+      if (msg) {
+        const err = $("[data-login-error]");
+        err.textContent = msg;
+        err.hidden = false;
+        window.history.replaceState(null, "", "/admin/");
+      }
+    });
 })();
