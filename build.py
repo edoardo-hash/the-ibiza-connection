@@ -1804,6 +1804,98 @@ def area_list_for_region(region_slug: str) -> str:
     )
 
 
+# Large groups (Edo, 23 Nov 2026, Natalia's "larger villas + villa combos"): bedrooms decide, not guests.
+# One collection per bedroom threshold, each linking to the villa search (/villas/?bmin=N), which already shows
+# the single villas that size and, when there are none, pairs of neighbouring villas with the bedrooms together.
+# A collection is shown only when it has at least one single villa or one pair (counted here as site.js does:
+# both villas under N bedrooms, together N or more, within 5 km).
+LARGE_GROUP_STEPS = (8, 10, 12, 14, 16)
+PAIR_MAX_KM_BUILD = 5
+
+
+def large_group_counts(need: int) -> tuple[int, int]:
+    by = {v["slug"]: v for v in VILLAS}
+    singles = sum(1 for v in VILLAS if (v["bedrooms"] or 0) >= need)
+    pairs = set()
+    for a in VILLAS:
+        if (a["bedrooms"] or 0) >= need:
+            continue
+        for slug, km in a.get("near", []):
+            b = by.get(slug)
+            if b and km <= PAIR_MAX_KM_BUILD and (b["bedrooms"] or 0) < need and a["bedrooms"] + b["bedrooms"] >= need:
+                pairs.add(tuple(sorted((a["slug"], slug))))
+    return singles, len(pairs)
+
+
+def build_large_groups() -> str:
+    big = sorted((v for v in VILLAS if (v["bedrooms"] or 0) >= LARGE_GROUP_STEPS[0]),
+                 key=lambda v: (-(v["bedrooms"] or 0), v["name"]))
+    pool = big or sorted(VILLAS, key=lambda v: -(v["bedrooms"] or 0))[:6]
+    cards = ""
+    for i, need in enumerate(LARGE_GROUP_STEPS):
+        singles, pairs = large_group_counts(need)
+        if not singles and not pairs:
+            continue
+        parts = []
+        if singles:
+            parts.append(f"{singles} villa{'s' if singles != 1 else ''}")
+        if pairs:
+            parts.append("pairs of villas nearby" if singles else "Pairs of villas nearby")
+        image = villa_image(pool[i % len(pool)], 1 if i >= len(pool) else 0)
+        cards += f"""
+        <a class="region-card" href="/villas/?bmin={need}">
+          <div class="region-card__media" style="background-color:{image.get('colour', '#d8d1c4')}">
+            {image_tag(image, f"{need}+ bedroom villas in Ibiza", "(max-width: 760px) 50vw, 20vw")}
+          </div>
+          <div class="region-card__body">
+            <span class="region-card__name">{need}+ bedrooms</span>
+            <span class="region-card__count">{' + '.join(parts)}</span>
+          </div>
+        </a>"""
+    villa_cards = "".join(villa_card(v) for v in big)
+    largest = big[0]["bedrooms"] if big else 0
+    body = f"""
+<section class="page-head">
+  <div class="wrap">
+    <div class="page-head__top">
+      <div>
+        <p class="eyebrow">Large groups</p>
+        <h1>Villas for big groups</h1>
+        <p class="lede">Family reunions, celebrations, retreats: our largest villas, and pairs of villas close to each other when one house isn't enough. Pick the number of bedrooms you need.</p>
+      </div>
+      <div class="page-head__meta">
+        <span><strong>{len(big)}</strong> villas with {LARGE_GROUP_STEPS[0]}+ bedrooms</span>
+        {f'<span><strong>{largest}</strong> bedrooms in the largest</span>' if largest else ''}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="large-groups-grid">{cards}</div>
+  </div>
+</section>
+
+{f"""<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><p class="eyebrow">Our largest villas</p><h2>{LARGE_GROUP_STEPS[0]} bedrooms and more</h2></div></div>
+    <div class="villa-grid">{villa_cards}</div>
+  </div>
+</section>""" if villa_cards else ''}
+
+{enquiry_band("Planning for a big group?", "Tell us how many bedrooms you need, your dates and the corner of the island you like: we will put together villas close to each other, with one contact for everything.", "/assets/img/cta.webp")}
+"""
+    return shell(
+        title="Large groups — villas for big groups in Ibiza",
+        description="Ibiza villas with 8 bedrooms and more, and pairs of neighbouring villas for larger groups, celebrations and retreats.",
+        path="/large-groups/",
+        body=body,
+        active="large-groups",
+        image=(pool[0].get("image_large") or pool[0].get("image")) if pool else None,
+    )
+
+
 def build_destinations() -> str:
     rows = ""
     for index, slug in enumerate(REGION_ORDER, 1):
@@ -2330,7 +2422,7 @@ def build_404() -> str:
 
 
 def all_urls() -> list[tuple[str, str, str]]:
-    urls = [("/", "1.0", "weekly"), ("/villas/", "0.9", "weekly"), ("/destinations/", "0.8", "monthly")]
+    urls = [("/", "1.0", "weekly"), ("/villas/", "0.9", "weekly"), ("/large-groups/", "0.8", "weekly"), ("/destinations/", "0.8", "monthly")]
     urls += [(f"/destinations/{r['slug']}/", "0.7", "monthly") for r in DESTINATIONS["regions"]]
     urls += [(f"/villa/{v['slug']}/", "0.8", "weekly") for v in VILLAS]
     urls += [("/experiences/", "0.7", "monthly"), ("/experiences/boat-rental/", "0.6", "monthly"),
@@ -2416,6 +2508,7 @@ def main() -> None:
     write("index.html", build_home())
     write("villas/index.html", build_villas())
     write("destinations/index.html", build_destinations())
+    write("large-groups/index.html", build_large_groups())
     for region in DESTINATIONS["regions"]:
         write(f"destinations/{region['slug']}/index.html", build_destination(region))
     write("journal/index.html", build_journal())
