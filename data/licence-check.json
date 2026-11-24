@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-23",
+ "checked_on": "2026-11-24",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -1673,19 +1673,6 @@
    "register_name": "CASA ATLANTIS",
    "issues": []
   },
-  "7ea17a4e-5dc6-4424-b3c6-42afc7bb4adb": {
-   "name": "Villa Beverly",
-   "slug": "villa-beverly",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-1694-E",
-   "register_licence": "ETV1694E",
-   "register_places": 6,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CASA ES MIXTERS",
-   "issues": []
-  },
   "535b80d6-9852-4e14-aec2-aceefc30b03f": {
    "name": "Villa Brielle",
    "slug": "villa-brielle",
@@ -3319,7 +3306,7 @@
  "counts": {
   "format_differs": 2,
   "not_in_register": 1,
-  "verified": 246
+  "verified": 245
  },
  "hidden": [],
  "flagged": [
