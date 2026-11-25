@@ -885,10 +885,6 @@
     1.5
    ],
    [
-    "can-catalina",
-    2.5
-   ],
-   [
     "can-octavia",
     2.5
    ],
@@ -3854,10 +3850,6 @@
     4.5
    ],
    [
-    "can-catalina",
-    5.0
-   ],
-   [
     "can-kali",
     5.0
    ],
@@ -6424,10 +6416,6 @@
     3.5
    ],
    [
-    "can-catalina",
-    3.5
-   ],
-   [
     "can-mayans",
     3.5
    ],
@@ -7246,10 +7234,6 @@
     2.5
    ],
    [
-    "can-catalina",
-    3.0
-   ],
-   [
     "villa-espada",
     3.0
    ],
@@ -7409,8 +7393,8 @@
   "bedrooms": 6,
   "bathrooms": 6,
   "sleeps": 12,
-  "price_from": 14355,
-  "price_to": 27500,
+  "price_from": 14905,
+  "price_to": 28050,
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
@@ -7422,7 +7406,7 @@
   "license": "ETV-1129E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": "2026-11-23",
+  "unpublished_on": null,
   "amenities": [
    "Garden",
    "Air Conditioning",
@@ -7559,8 +7543,8 @@
   "lng": 1.27371,
   "v_id": 19259,
   "v_uuid": "2727fefe-f9bd-4536-b672-7f71c4c76493",
-  "nightly_from": 2051,
-  "nightly_to": 3929,
+  "nightly_from": 2130,
+  "nightly_to": 4008,
   "rate_rows": 5,
   "real_bedrooms": 6,
   "real_bathrooms": 6,
@@ -9796,10 +9780,6 @@
    [
     "finca-utopia",
     1.5
-   ],
-   [
-    "can-catalina",
-    2.0
    ],
    [
     "can-mayans",
@@ -13853,10 +13833,6 @@
    [
     "villa-mia",
     4.5
-   ],
-   [
-    "can-catalina",
-    5.0
    ],
    [
     "can-floral",
@@ -20355,7 +20331,7 @@
   "bathrooms": 5,
   "sleeps": 12,
   "price_from": 16335,
-  "price_to": 34650,
+  "price_to": 38115,
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
@@ -20367,7 +20343,7 @@
   "license": "ETV-1353-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": "2026-11-24",
+  "unpublished_on": null,
   "amenities": [
    "Views to Formentera",
    "Air Conditioning",
@@ -20574,7 +20550,7 @@
   "v_id": 126,
   "v_uuid": "59589fea-5963-4442-855f-6cbf8a80ee05",
   "nightly_from": 2334,
-  "nightly_to": 4950,
+  "nightly_to": 5445,
   "rate_rows": 12,
   "real_bedrooms": 6,
   "real_bathrooms": 5,
@@ -20836,7 +20812,7 @@
   "license": "ETV-1353-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": "2026-11-24",
+  "unpublished_on": null,
   "amenities": [
    "Views to Formentera",
    "Air Conditioning",
@@ -21295,8 +21271,8 @@
   "bedrooms": 6,
   "bathrooms": 5,
   "sleeps": 12,
-  "price_from": 19800,
-  "price_to": 41580,
+  "price_from": 21780,
+  "price_to": 46530,
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
@@ -21308,7 +21284,7 @@
   "license": "ETV-1353-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": "2026-11-24",
+  "unpublished_on": null,
   "amenities": [
    "Views to Formentera",
    "Air Conditioning",
@@ -21517,9 +21493,9 @@
   "lng": 1.35505,
   "v_id": 6987,
   "v_uuid": "b28d70e1-1a2c-419e-951f-93f409f825a6",
-  "nightly_from": 2829,
-  "nightly_to": 5940,
-  "rate_rows": 11,
+  "nightly_from": 3112,
+  "nightly_to": 6648,
+  "rate_rows": 12,
   "real_bedrooms": 8,
   "real_bathrooms": 7,
   "licence_check": {
@@ -22173,8 +22149,8 @@
   "bedrooms": 6,
   "bathrooms": 6,
   "sleeps": 12,
-  "price_from": 44000,
-  "price_to": 49500,
+  "price_from": 46200,
+  "price_to": 55000,
   "price_on_request": false,
   "min_nights": 7,
   "short_stays": false,
@@ -22416,8 +22392,8 @@
   "lng": 1.28941,
   "v_id": 503,
   "v_uuid": "b4602fa3-2d50-49c4-96a7-b84d26e2ab66",
-  "nightly_from": 6286,
-  "nightly_to": 7072,
+  "nightly_from": 6600,
+  "nightly_to": 7858,
   "rate_rows": 3,
   "real_bedrooms": 8,
   "real_bathrooms": 8,
@@ -22931,10 +22907,6 @@
     3.0
    ],
    [
-    "can-catalina",
-    3.0
-   ],
-   [
     "can-mayans",
     3.0
    ],
@@ -23242,10 +23214,6 @@
    [
     "finca-utopia",
     4.0
-   ],
-   [
-    "can-catalina",
-    4.5
    ],
    [
     "can-mayans",
@@ -23943,10 +23911,6 @@
    [
     "can-melody",
     3.0
-   ],
-   [
-    "can-catalina",
-    3.5
    ],
    [
     "can-nora",
@@ -28708,10 +28672,6 @@
     2.5
    ],
    [
-    "can-catalina",
-    3.0
-   ],
-   [
     "villa-lino",
     3.0
    ],
@@ -29402,10 +29362,6 @@
    [
     "villa-carrion",
     1.5
-   ],
-   [
-    "can-catalina",
-    2.5
    ],
    [
     "can-octavia",
@@ -31508,10 +31464,6 @@
     0.5
    ],
    [
-    "can-catalina",
-    1.5
-   ],
-   [
     "can-melody",
     2.0
    ],
@@ -32184,276 +32136,6 @@
   "image": "/assets/villas/can-brooke/01-800.webp",
   "image_large": "/assets/villas/can-brooke/01-1400.webp",
   "image_colour": "#899ba2"
- },
- {
-  "slug": "can-catalina",
-  "name": "Can Catalina",
-  "tagline": "A stylish property in the heart of the island with panoramic country views",
-  "summary": "This newly modernised five-bedroom Blakstad finca offers sensational south-facing views overlooking miles of the island’s luscious landscape. Can Catalina is located in Santa Gertrudis which is home to many fashionable…",
-  "description": [
-   "This newly modernised five-bedroom Blakstad finca offers sensational south-facing views overlooking miles of the island’s luscious landscape. Can Catalina is located in Santa Gertrudis which is home to many fashionable restaurants and boutiques as well as a rich agricultural landscape. Santa Gertrudis has a truly picturesque village square with a vibrant cafe culture. The bright lights of Ibiza Town with its famous nightlife scene are just a short drive away.",
-   "Traditionally styled to incorporate the natural, rustic elements of its surroundings, Can Catalina blends timeless designer furniture with fresh, modern soft furnishings to create a warm, welcoming environment. Stunning sabina wooden beams and terracotta tiles adorn every luxurious floor of the finca, creating a seamless flow from the ground floor all the way to the sumptuous day bed found on the roof, from where you can immerse yourself in the beauty of the nature which surrounds you.",
-   "All five bedrooms at Can Catalina offer breathtaking views overlooking the lush, green countryside. Leading out to its own private terrace, the master bedroom is the perfect spot for a morning coffee!",
-   "In the grounds of Can Catalina you can delight in a shaded pergola,inviting swimming pool and multiple terraces which all look over the lush, green surroundings making this the ultimate home to escape to. Offering peace and privacy, the outside spaces at this villa offer an array of shaded dining areas, cool relaxation beds and sunny lounge zones. The highest vantage point of all, on the roof terrace is a wonderful spot for extra peaceful sunbathing or stargazing at night."
-  ],
-  "area": "Santa Gertrudis",
-  "area_key": "Santa Gertrudis",
-  "region": "santa-eulalia",
-  "region_name": "Santa Eulalia",
-  "district": "Santa Eulalia del Rio",
-  "country": "Spain",
-  "bedrooms": 5,
-  "bathrooms": 5,
-  "sleeps": 10,
-  "price_from": 16500,
-  "price_to": 22000,
-  "price_on_request": false,
-  "min_nights": 7,
-  "short_stays": false,
-  "cleaning": "0 - Final Cleaning",
-  "cleaning_charge": 0,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Strictly Saturday-Saturday",
-  "license": "ETV-0913-E",
-  "dcc": false,
-  "api_switch_on": true,
-  "unpublished_on": "2026-11-17",
-  "amenities": [
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "Alarm",
-   "BBQ",
-   "Country View",
-   "Fenced",
-   "Music System",
-   "Swimming Pool",
-   "TV - Satellite",
-   "Wifi",
-   "Hire Car Recommended",
-   "Safety Box",
-   "Sunloungers",
-   "Fully fitted kitchen"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "Music System",
-     "TV - Satellite",
-     "Wifi",
-     "Safety Box",
-     "Fully fitted kitchen"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Alarm",
-     "Country View",
-     "Fenced",
-     "Hire Car Recommended"
-    ]
-   }
-  ],
-  "audience": [
-   "Families",
-   "Friends",
-   "Retreats"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/02.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/01.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/03.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/04.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/05.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/06.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/07.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/08.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/09.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/10.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/11.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/12.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/13.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/14.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/15.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/16.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/17.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/18.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/19.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/20.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/21.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/22.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/23.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/24.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/25.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/26.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/27.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/28.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/29.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/30.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/31.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/32.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/33.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/34.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/35.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/36.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/37.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/218/villa_images/38.jpg"
-  ],
-  "lat": 39.0279,
-  "lng": 1.44346,
-  "v_id": 218,
-  "v_uuid": "f6152e64-c661-4ad8-9e39-1202b28dcc0a",
-  "nightly_from": 2358,
-  "nightly_to": 3143,
-  "rate_rows": 8,
-  "real_bedrooms": 6,
-  "real_bathrooms": 6,
-  "licence_check": {
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-0913-E",
-   "register_licence": "ETV0913E",
-   "register_places": 10,
-   "register_municipality": "SANT JOAN DE LABRITJA",
-   "register": "habitatges-turistics",
-   "register_name": "CAN MAYANS",
-   "issues": []
-  },
-  "near": [
-   [
-    "can-mayans",
-    1.0
-   ],
-   [
-    "can-puig-lorenzo",
-    1.0
-   ],
-   [
-    "can-aspen",
-    1.5
-   ],
-   [
-    "can-vina",
-    2.0
-   ],
-   [
-    "villa-carrion",
-    2.0
-   ],
-   [
-    "can-melody",
-    2.5
-   ],
-   [
-    "can-noelia",
-    2.5
-   ],
-   [
-    "finca-utopia",
-    2.5
-   ],
-   [
-    "can-kali",
-    3.0
-   ],
-   [
-    "can-mira",
-    3.0
-   ],
-   [
-    "can-octavia",
-    3.0
-   ],
-   [
-    "villa-paradis",
-    3.0
-   ],
-   [
-    "can-nora",
-    3.5
-   ],
-   [
-    "villa-reina",
-    3.5
-   ],
-   [
-    "can-daphne",
-    4.5
-   ],
-   [
-    "villa-can-gertrudis",
-    4.5
-   ],
-   [
-    "villa-parque",
-    4.5
-   ],
-   [
-    "can-cecilia",
-    5.0
-   ],
-   [
-    "villa-amaya",
-    5.0
-   ],
-   [
-    "villa-vinya-morna",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/can-catalina/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#4b7c8c"
-   },
-   {
-    "base": "villas/can-catalina/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#507a85"
-   },
-   {
-    "base": "villas/can-catalina/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#6f9caf"
-   },
-   {
-    "base": "villas/can-catalina/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#849c9f"
-   },
-   {
-    "base": "villas/can-catalina/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#47574c"
-   },
-   {
-    "base": "villas/can-catalina/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#649aa8"
-   }
-  ],
-  "image": "/assets/villas/can-catalina/01-800.webp",
-  "image_large": "/assets/villas/can-catalina/01-1400.webp",
-  "image_colour": "#4b7c8c"
  },
  {
   "slug": "can-chloe",
@@ -33236,10 +32918,6 @@
    [
     "villa-perla-blanca",
     4.0
-   ],
-   [
-    "can-catalina",
-    4.5
    ],
    [
     "can-mayans",
@@ -34090,10 +33768,6 @@
     0.5
    ],
    [
-    "can-catalina",
-    1.0
-   ],
-   [
     "can-puig-lorenzo",
     1.5
    ],
@@ -34403,10 +34077,6 @@
    [
     "villa-amaya",
     2.5
-   ],
-   [
-    "can-catalina",
-    3.0
    ],
    [
     "villa-espada",
@@ -35064,10 +34734,6 @@
    "issues": []
   },
   "near": [
-   [
-    "can-catalina",
-    1.0
-   ],
    [
     "can-mayans",
     1.5
@@ -41009,10 +40675,6 @@
    [
     "villa-reina",
     4.0
-   ],
-   [
-    "can-catalina",
-    4.5
    ],
    [
     "can-puig-lorenzo",
@@ -57672,10 +57334,6 @@
     2.0
    ],
    [
-    "can-catalina",
-    2.5
-   ],
-   [
     "can-puig-lorenzo",
     2.5
    ],
@@ -67506,10 +67164,6 @@
     1.5
    ],
    [
-    "can-catalina",
-    2.0
-   ],
-   [
     "can-mira",
     2.0
    ],
@@ -73128,8 +72782,8 @@
   "check_in_days": "Flexible check in days",
   "license": "ETV-1932-E",
   "dcc": false,
-  "api_switch_on": true,
-  "unpublished_on": "2026-11-24",
+  "api_switch_on": false,
+  "unpublished_on": null,
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -90366,10 +90020,6 @@
    ],
    [
     "can-aspen",
-    5.0
-   ],
-   [
-    "can-catalina",
     5.0
    ],
    [
