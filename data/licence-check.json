@@ -1,6 +1,6 @@
 {
  "register_as_of": "2026-11-03",
- "checked_on": "2026-11-25",
+ "checked_on": "2026-11-27",
  "villas": {
   "2be55f4f-1103-4c38-ad6d-e3c0f5ba069c": {
    "name": "Alegre Blue",
@@ -1701,19 +1701,6 @@
     "Shown for 10 guests; the register allows 9 places"
    ]
   },
-  "ff05e659-edc5-4037-b9b9-f9b6c4af7003": {
-   "name": "Villa Cala Blu",
-   "slug": "villa-cala-blu",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-1737-E",
-   "register_licence": "ETV1737E",
-   "register_places": 8,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CAN MARI DE LA BASSA",
-   "issues": []
-  },
   "a2f9886d-6a6b-46fc-97d1-5bafd8e369c6": {
    "name": "Villa Cala Tarida Pueblo",
    "slug": "villa-cala-tarida-pueblo",
@@ -2143,19 +2130,6 @@
    "register_municipality": "SANTA EULARIA DES RIU",
    "register": "habitatges-turistics",
    "register_name": "CAN SELLERAS",
-   "issues": []
-  },
-  "39658bdd-f817-4938-b467-a3d7d43f54a0": {
-   "name": "Villa Gracie",
-   "slug": "villa-gracie",
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-1620-E",
-   "register_licence": "ETV1620E",
-   "register_places": 4,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "HATAEW",
    "issues": []
   },
   "a6e7b687-be58-47d4-86c6-d7afcd5f7dc4": {
@@ -3293,7 +3267,7 @@
  "counts": {
   "format_differs": 2,
   "not_in_register": 1,
-  "verified": 244
+  "verified": 242
  },
  "hidden": [],
  "flagged": [

@@ -248,10 +248,6 @@
    [
     "villa-lumara",
     4.5
-   ],
-   [
-    "villa-gracie",
-    5.0
    ]
   ],
   "images": [
@@ -1036,6 +1032,7 @@
    "Sunloungers",
    "Private Parking",
    "Lawn Area",
+   "Pets Allowed",
    "Smart TV",
    "Fully fitted kitchen",
    "Gated",
@@ -1073,6 +1070,7 @@
    {
     "title": "Also included",
     "items": [
+     "Pets Allowed",
      "Saltwater Pool",
      "Outdoor Cinema"
     ]
@@ -1626,7 +1624,7 @@
   "bathrooms": 8,
   "sleeps": 16,
   "price_from": 33000,
-  "price_to": 60500,
+  "price_to": 66550,
   "price_on_request": false,
   "min_nights": 5,
   "short_stays": false,
@@ -1862,7 +1860,7 @@
   "v_id": 1106,
   "v_uuid": "79d89a93-81aa-43a8-b426-7b64ba45af4d",
   "nightly_from": 4715,
-  "nightly_to": 8643,
+  "nightly_to": 9508,
   "rate_rows": 5,
   "real_bedrooms": 9,
   "real_bathrooms": 9,
@@ -6289,6 +6287,7 @@
    "Fireplace",
    "Private Parking",
    "Lawn Area",
+   "Pets Allowed",
    "Fully fitted kitchen"
   ],
   "amenity_groups": [
@@ -6322,9 +6321,16 @@
      "Country View",
      "Hire Car Recommended"
     ]
+   },
+   {
+    "title": "Also included",
+    "items": [
+     "Pets Allowed"
+    ]
    }
   ],
   "audience": [
+   "Filming",
    "Couples",
    "Families",
    "Friends",
@@ -7637,10 +7643,6 @@
     3.5
    ],
    [
-    "villa-gracie",
-    3.5
-   ],
-   [
     "villa-riviera",
     3.5
    ],
@@ -7714,10 +7716,6 @@
    ],
    [
     "los-pinos",
-    5.0
-   ],
-   [
-    "villa-cala-blu",
     5.0
    ],
    [
@@ -8887,10 +8885,6 @@
   },
   "near": [
    [
-    "villa-gracie",
-    1.0
-   ],
-   [
     "villa-monica",
     1.0
    ],
@@ -8924,10 +8918,6 @@
    ],
    [
     "villa-brielle",
-    3.0
-   ],
-   [
-    "villa-cala-blu",
     3.0
    ],
    [
@@ -14158,10 +14148,6 @@
     3.5
    ],
    [
-    "villa-gracie",
-    3.5
-   ],
-   [
     "villa-lydia",
     3.5
    ],
@@ -14199,10 +14185,6 @@
    ],
    [
     "villa-aurora",
-    4.0
-   ],
-   [
-    "villa-cala-blu",
     4.0
    ],
    [
@@ -16241,10 +16223,6 @@
     3.5
    ],
    [
-    "villa-gracie",
-    3.5
-   ],
-   [
     "villa-lucy",
     3.5
    ],
@@ -17632,10 +17610,6 @@
     3.5
    ],
    [
-    "villa-cala-blu",
-    3.5
-   ],
-   [
     "villa-jaja",
     3.5
    ],
@@ -17709,10 +17683,6 @@
    ],
    [
     "villa-claire",
-    5.0
-   ],
-   [
-    "villa-gracie",
     5.0
    ],
    [
@@ -18491,10 +18461,6 @@
     3.5
    ],
    [
-    "villa-cala-blu",
-    3.5
-   ],
-   [
     "villa-cara",
     3.5
    ],
@@ -18544,10 +18510,6 @@
    ],
    [
     "lovella",
-    4.5
-   ],
-   [
-    "villa-gracie",
     4.5
    ],
    [
@@ -18862,10 +18824,6 @@
    ],
    [
     "serene-sanctuary",
-    4.5
-   ],
-   [
-    "villa-cala-blu",
     4.5
    ],
    [
@@ -19765,10 +19723,6 @@
     1.5
    ],
    [
-    "villa-cala-blu",
-    1.5
-   ],
-   [
     "villa-riviera",
     1.5
    ],
@@ -19787,10 +19741,6 @@
    [
     "vista-conta",
     2.0
-   ],
-   [
-    "villa-gracie",
-    2.5
    ],
    [
     "villa-marita",
@@ -24192,10 +24142,6 @@
     2.0
    ],
    [
-    "villa-cala-blu",
-    2.0
-   ],
-   [
     "villa-cala-tarida-pueblo",
     2.0
    ],
@@ -24241,10 +24187,6 @@
    ],
    [
     "can-chloe",
-    3.0
-   ],
-   [
-    "villa-gracie",
     3.0
    ],
    [
@@ -25360,10 +25302,6 @@
     3.5
    ],
    [
-    "villa-gracie",
-    3.5
-   ],
-   [
     "can-beso",
     4.0
    ],
@@ -25699,10 +25637,6 @@
    ],
    [
     "villa-brielle",
-    3.5
-   ],
-   [
-    "villa-cala-blu",
     3.5
    ],
    [
@@ -27327,10 +27261,6 @@
     1.5
    ],
    [
-    "villa-cala-blu",
-    1.5
-   ],
-   [
     "villa-marita",
     1.5
    ],
@@ -27404,10 +27334,6 @@
    ],
    [
     "villa-diso",
-    5.0
-   ],
-   [
-    "villa-gracie",
     5.0
    ]
   ],
@@ -28462,10 +28388,6 @@
     4.0
    ],
    [
-    "villa-gracie",
-    4.5
-   ],
-   [
     "can-agustin",
     5.0
    ],
@@ -28959,19 +28881,11 @@
     2.0
    ],
    [
-    "villa-cala-blu",
-    2.0
-   ],
-   [
     "vista-conta",
     2.0
    ],
    [
     "can-elyza",
-    2.5
-   ],
-   [
-    "villa-gracie",
     2.5
    ],
    [
@@ -30526,10 +30440,6 @@
     1.5
    ],
    [
-    "villa-cala-blu",
-    1.5
-   ],
-   [
     "villa-riviera",
     1.5
    ],
@@ -30599,10 +30509,6 @@
    ],
    [
     "cana-susanna",
-    4.0
-   ],
-   [
-    "villa-gracie",
     4.0
    ],
    [
@@ -31219,10 +31125,6 @@
    [
     "villa-lucy",
     3.5
-   ],
-   [
-    "villa-gracie",
-    4.0
    ],
    [
     "villa-hebe",
@@ -32427,10 +32329,6 @@
     4.0
    ],
    [
-    "villa-cala-blu",
-    4.0
-   ],
-   [
     "villa-terra",
     4.0
    ],
@@ -33234,10 +33132,6 @@
    ],
    [
     "la-perla-escondida",
-    3.5
-   ],
-   [
-    "villa-gracie",
     3.5
    ],
    [
@@ -34468,10 +34362,6 @@
     4.5
    ],
    [
-    "villa-gracie",
-    4.5
-   ],
-   [
     "villa-haisley",
     4.5
    ],
@@ -35669,10 +35559,6 @@
    ],
    [
     "la-perla-escondida",
-    3.5
-   ],
-   [
-    "villa-gracie",
     3.5
    ],
    [
@@ -38427,10 +38313,6 @@
    [
     "villa-hebe",
     4.5
-   ],
-   [
-    "villa-gracie",
-    5.0
    ]
   ],
   "images": [
@@ -39922,10 +39804,6 @@
    [
     "villa-lucy",
     3.5
-   ],
-   [
-    "villa-gracie",
-    4.0
    ],
    [
     "can-beth",
@@ -44166,10 +44044,6 @@
     3.5
    ],
    [
-    "villa-gracie",
-    3.5
-   ],
-   [
     "villa-haisley",
     3.5
    ],
@@ -44235,10 +44109,6 @@
    ],
    [
     "villa-aurora",
-    5.0
-   ],
-   [
-    "villa-cala-blu",
     5.0
    ],
    [
@@ -44978,10 +44848,6 @@
    ],
    [
     "villa-dama",
-    5.0
-   ],
-   [
-    "villa-gracie",
     5.0
    ],
    [
@@ -46579,10 +46445,6 @@
     1.0
    ],
    [
-    "villa-gracie",
-    2.0
-   ],
-   [
     "villa-riviera",
     2.0
    ],
@@ -46592,10 +46454,6 @@
    ],
    [
     "serene-sanctuary",
-    2.5
-   ],
-   [
-    "villa-cala-blu",
     2.5
    ],
    [
@@ -51148,10 +51006,6 @@
     1.0
    ],
    [
-    "villa-cala-blu",
-    1.0
-   ],
-   [
     "villa-marita",
     1.5
    ],
@@ -51209,10 +51063,6 @@
    ],
    [
     "villa-brielle",
-    4.5
-   ],
-   [
-    "villa-gracie",
     4.5
    ],
    [
@@ -51931,10 +51781,6 @@
     2.5
    ],
    [
-    "villa-cala-blu",
-    2.5
-   ],
-   [
     "villa-katherine",
     2.5
    ],
@@ -51988,10 +51834,6 @@
    ],
    [
     "lovella",
-    4.5
-   ],
-   [
-    "villa-gracie",
     4.5
    ],
    [
@@ -55552,14 +55394,6 @@
     4.0
    ],
    [
-    "villa-cala-blu",
-    4.0
-   ],
-   [
-    "villa-gracie",
-    4.0
-   ],
-   [
     "villa-katherine",
     4.0
    ],
@@ -55700,7 +55534,7 @@
   "license": "ETV-1856-E",
   "dcc": false,
   "api_switch_on": true,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-26",
   "amenities": [
    "Garden",
    "Air Conditioning",
@@ -55891,10 +55725,6 @@
     1.0
    ],
    [
-    "villa-cala-blu",
-    1.0
-   ],
-   [
     "villa-marita",
     1.5
    ],
@@ -55952,10 +55782,6 @@
    ],
    [
     "villa-brielle",
-    4.5
-   ],
-   [
-    "villa-gracie",
     4.5
    ],
    [
@@ -57478,7 +57304,7 @@
   "license": "ETV-1735-E",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": null,
+  "unpublished_on": "2026-11-27",
   "amenities": [
    "Air Conditioning",
    "Alarm",
@@ -58089,8 +57915,8 @@
   "short_stays": true,
   "cleaning": "0 - Final Cleaning",
   "cleaning_charge": 300,
-  "check_in": "Flexible",
-  "check_out": "Flexible",
+  "check_in": "17:00",
+  "check_out": "10:00",
   "check_in_days": "Flexible check in days",
   "license": "ETV-1569-E",
   "dcc": false,
@@ -62811,10 +62637,6 @@
     0.5
    ],
    [
-    "villa-cala-blu",
-    0.5
-   ],
-   [
     "villa-terra",
     0.5
    ],
@@ -62884,10 +62706,6 @@
    ],
    [
     "villa-brielle",
-    4.0
-   ],
-   [
-    "villa-gracie",
     4.0
    ],
    [
@@ -66251,297 +66069,6 @@
   "image_colour": "#99b7c5"
  },
  {
-  "slug": "villa-cala-blu",
-  "name": "Villa Cala Blu",
-  "tagline": "A stylish villa on beautiful west coast of the island",
-  "summary": "Villa La Residence is a recently renovated 4 bedroom sleek and stylish villa which has been exquisitely finished and furnished. Set in a private, tranquil location this beautiful villa is an idyllic holiday option. Some…",
-  "description": [
-   "Villa La Residence is a recently renovated 4 bedroom sleek and stylish villa which has been exquisitely finished and furnished. Set in a private, tranquil location this beautiful villa is an idyllic holiday option. Some of the most beautiful beaches of the Island including Cala Bassa, Cala Comte and Cala Tarida which are just a short drive from the house alongside the picturesque villages of San Augustin and San Jose which are just a short drive away, and you have easy access to the centre of Ibiza Town with its dazzling array of nightlife venues.",
-   "Combining vintage chic furniture with a modern element. Villa La Residence is an amazing and peaceful place to stay. Each of the 4 bedrooms is equipped with luxurious beds, air conditioning and ensuite bathroom. Stylish throughout and the interior décor is of an exceptionally high standard.",
-   "Villa La Residence offers a fabulously sizeable saltwater swimming pool and plenty of outdoor spaces and terraces to enjoy memorable meals under the stars during your holiday in Ibiza. A bespoke alfresco dining area is complete with a barbeque for those who love to entertain. Villa La Residence is a contemporary property with beautifully designed spaces both inside and out.",
-   "Optional heated swimming pool (from the beginning of April to the end of November) For an additional fee."
-  ],
-  "area": "San Agustin",
-  "area_key": "San Agustin",
-  "region": "san-antonio",
-  "region_name": "San Antonio",
-  "district": "San Antonio de Portmany",
-  "country": "Spain",
-  "bedrooms": 4,
-  "bathrooms": 4,
-  "sleeps": 8,
-  "price_from": 3465,
-  "price_to": 17325,
-  "price_on_request": false,
-  "min_nights": 5,
-  "short_stays": false,
-  "cleaning": "2 Cleanings per week",
-  "cleaning_charge": 300,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Flexible check in days",
-  "license": "ETV-1737-E",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": "2026-11-19",
-  "amenities": [
-   "Al Fresco Dining",
-   "Alarm",
-   "BBQ",
-   "Fenced",
-   "Music System",
-   "Swimming Pool",
-   "Wifi",
-   "Sunloungers",
-   "Sea View",
-   "Private Parking",
-   "Fully fitted kitchen",
-   "Terraces",
-   "Saltwater Pool",
-   "Table Tennis",
-   "Heated Pool (additional charges may apply)"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers",
-     "Private Parking",
-     "Terraces",
-     "Heated Pool (additional charges may apply)"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Music System",
-     "Wifi",
-     "Fully fitted kitchen"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Alarm",
-     "Fenced",
-     "Sea View"
-    ]
-   },
-   {
-    "title": "Also included",
-    "items": [
-     "Saltwater Pool",
-     "Table Tennis"
-    ]
-   }
-  ],
-  "audience": [
-   "Couples",
-   "Families",
-   "Friends"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/WhatsApp Image 2023-04-26 at 17.54.06 (1).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/swimmingpool.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/WhatsApp Image 2023-04-26 at 17.54.04.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-02 (2).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-02 (4).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/WhatsApp Image 2023-04-26 at 17.54.05.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-08 (5) (1).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/residence.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/La Residence.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-04 (7).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-02 (1).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-04 (1).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/WhatsApp Image 2023-04-26 at 17.54.03.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-03 (4) (1).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-09.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-10 (1) (1).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-09 (6).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-09 (4) (1).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-03 (6) (1).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-03 (7) (1).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-02 (6) (1).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-04 (9).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-08 (3).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/WhatsApp Image 2023-04-26 at 17.54.08.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/WhatsApp Image 2023-04-26 at 17.54.03 (2).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/WhatsApp Image 2023-04-26 at 17.54.06.jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/WhatsApp Image 2023-04-26 at 17.54.05 (4).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/WhatsApp Image 2023-04-26 at 17.54.05 (3).jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/PHOTO-2023-04-26-17-54-04.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/WhatsApp Image 2023-04-26 at 17.54.07 (2).jpeg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/WhatsApp Image 2023-04-26 at 17.54.07.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/8021/villa_images/WhatsApp Image 2023-04-26 at 17.54.02.jpeg"
-  ],
-  "lat": 38.95999,
-  "lng": 1.23709,
-  "v_id": 8021,
-  "v_uuid": "ff05e659-edc5-4037-b9b9-f9b6c4af7003",
-  "nightly_from": 495,
-  "nightly_to": 2475,
-  "rate_rows": 13,
-  "real_bedrooms": 4,
-  "real_bathrooms": 4,
-  "licence_check": {
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-1737-E",
-   "register_licence": "ETV1737E",
-   "register_places": 8,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "CAN MARI DE LA BASSA",
-   "issues": []
-  },
-  "near": [
-   [
-    "los-pinos",
-    0.5
-   ],
-   [
-    "serene-sanctuary",
-    0.5
-   ],
-   [
-    "can-elyza",
-    1.0
-   ],
-   [
-    "villa-terra",
-    1.0
-   ],
-   [
-    "vista-conta",
-    1.0
-   ],
-   [
-    "villa-lydia",
-    1.5
-   ],
-   [
-    "villa-marita",
-    1.5
-   ],
-   [
-    "villa-vivian",
-    1.5
-   ],
-   [
-    "can-melanie",
-    2.0
-   ],
-   [
-    "villa-riviera",
-    2.0
-   ],
-   [
-    "villa-monica",
-    2.5
-   ],
-   [
-    "villa-violetta",
-    2.5
-   ],
-   [
-    "can-sandra",
-    3.0
-   ],
-   [
-    "villa-cala-tarida-pueblo",
-    3.5
-   ],
-   [
-    "villa-haisley",
-    3.5
-   ],
-   [
-    "villa-ivy",
-    3.5
-   ],
-   [
-    "villa-sylvia",
-    3.5
-   ],
-   [
-    "can-beth",
-    4.0
-   ],
-   [
-    "can-chloe",
-    4.0
-   ],
-   [
-    "villa-brielle",
-    4.0
-   ],
-   [
-    "villa-gracie",
-    4.0
-   ],
-   [
-    "villa-katherine",
-    4.5
-   ],
-   [
-    "can-paloma",
-    5.0
-   ],
-   [
-    "cana-susanna",
-    5.0
-   ],
-   [
-    "villa-jaja",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/villa-cala-blu/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#949090"
-   },
-   {
-    "base": "villas/villa-cala-blu/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#7fa0c7"
-   },
-   {
-    "base": "villas/villa-cala-blu/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#72899e"
-   },
-   {
-    "base": "villas/villa-cala-blu/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#b8ab9a"
-   },
-   {
-    "base": "villas/villa-cala-blu/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#ced1d2"
-   },
-   {
-    "base": "villas/villa-cala-blu/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#aea48e"
-   }
-  ],
-  "image": "/assets/villas/villa-cala-blu/01-800.webp",
-  "image_large": "/assets/villas/villa-cala-blu/01-1400.webp",
-  "image_colour": "#949090"
- },
- {
   "slug": "villa-cara",
   "name": "Villa Cara",
   "tagline": "San Jose village charm, minutes from Ibiza's finest sunset shores",
@@ -66795,10 +66322,6 @@
    ],
    [
     "villa-esther-grande",
-    4.5
-   ],
-   [
-    "villa-gracie",
     4.5
    ],
    [
@@ -73070,7 +72593,7 @@
   "license": "ET-0471-E4",
   "dcc": false,
   "api_switch_on": false,
-  "unpublished_on": "2026-11-18",
+  "unpublished_on": null,
   "amenities": [
    "Air Conditioning",
    "Al Fresco Dining",
@@ -73195,10 +72718,6 @@
    [
     "can-carva",
     0.5
-   ],
-   [
-    "villa-gracie",
-    2.0
    ],
    [
     "can-agustin",
@@ -77881,10 +77400,6 @@
     1.0
    ],
    [
-    "villa-cala-blu",
-    1.0
-   ],
-   [
     "serene-sanctuary",
     1.5
    ],
@@ -77922,10 +77437,6 @@
    ],
    [
     "villa-cala-tarida-pueblo",
-    4.0
-   ],
-   [
-    "villa-gracie",
     4.0
    ],
    [
@@ -78163,10 +77674,6 @@
    ],
    [
     "villa-eliana",
-    2.5
-   ],
-   [
-    "villa-gracie",
     2.5
    ],
    [
@@ -79867,10 +79374,6 @@
    ],
    [
     "villa-eliana",
-    5.0
-   ],
-   [
-    "villa-gracie",
     5.0
    ]
   ],
@@ -82857,10 +82360,6 @@
     4.5
    ],
    [
-    "villa-gracie",
-    4.5
-   ],
-   [
     "villa-haisley",
     4.5
    ],
@@ -84093,10 +83592,6 @@
    ],
    [
     "los-pinos",
-    5.0
-   ],
-   [
-    "villa-cala-blu",
     5.0
    ],
    [
@@ -85972,10 +85467,6 @@
     0.5
    ],
    [
-    "villa-cala-blu",
-    0.5
-   ],
-   [
     "can-elyza",
     1.0
    ],
@@ -86045,10 +85536,6 @@
    ],
    [
     "villa-brielle",
-    3.5
-   ],
-   [
-    "villa-gracie",
     3.5
    ],
    [
@@ -91033,10 +90520,6 @@
     3.5
    ],
    [
-    "villa-cala-blu",
-    3.5
-   ],
-   [
     "villa-diso",
     3.5
    ],
@@ -91094,10 +90577,6 @@
    ],
    [
     "lovella",
-    4.5
-   ],
-   [
-    "villa-gracie",
     4.5
    ],
    [
@@ -92388,352 +91867,6 @@
   "image": "/assets/villas/casa-monigue/01-800.webp",
   "image_large": "/assets/villas/casa-monigue/01-1400.webp",
   "image_colour": "#a0b1b1"
- },
- {
-  "slug": "villa-gracie",
-  "name": "Villa Gracie",
-  "tagline": "An oasis of tranquility located close to the famous sunset beaches of the west coast",
-  "summary": "Villa Gracie is a 2 bedroom villa located in the peaceful area of Port des Torrent, San José close by to some of the islands most blissful sunset beaches such as Cala Conta, Tarida and the famous Cala Bassa with its…",
-  "description": [
-   "Villa Gracie is a 2 bedroom villa located in the peaceful area of Port des Torrent, San José close by to some of the islands most blissful sunset beaches such as Cala Conta, Tarida and the famous Cala Bassa with its ever elegant eponymous beach club CBBC.",
-   "This stunning one level property is set among tasteful, Japanese inspired gardens with lush plantations and numerous outdoor chill out spaces which have been complemented with bamboo and Balinese furnishings.The colourful and exotic designs really make this home an exceptional choice. Inside Villa Gracie offers a continuation of the far eastern theme with a modern twist and quality fixtures and furnishings throughout. Each and every room has been supremely stylishly designed with a keen eye and attention to detail, and exceptional pieces of furniture and artworks abound. Villa Gracie is perfect for small groups of friends or family who enjoy spectacular interior design.",
-   "Outside in Villa Gracie guests will delight in an array of sun soaked and shaded areas to immerse yourself in Ibizan spirit, from an outdoor covered terrace lounge with daybeds and sofas, an al fresco dining space for entertaining friends and family, and the choice of a stylish swimming pool which curves around the property, or jacuzzi with plenty of sun lounging spots. The grounds are equally enchanting as the interior, making Villa Gracie an idyllic choice, in an especially sought after area."
-  ],
-  "area": "Port des Torrent",
-  "area_key": "Port des Torrent",
-  "region": "san-antonio",
-  "region_name": "San Antonio",
-  "district": "San Antonio de Portmany",
-  "country": "Spain",
-  "bedrooms": 2,
-  "bathrooms": 2,
-  "sleeps": 4,
-  "price_from": 4400,
-  "price_to": 6600,
-  "price_on_request": false,
-  "min_nights": 7,
-  "short_stays": true,
-  "cleaning": "0 - Final Cleaning",
-  "cleaning_charge": 350,
-  "check_in": "16:00",
-  "check_out": "10:00",
-  "check_in_days": "Strictly Saturday-Saturday",
-  "license": "ETV-1620-E",
-  "dcc": false,
-  "api_switch_on": false,
-  "unpublished_on": "2026-11-18",
-  "amenities": [
-   "Air Conditioning",
-   "Al Fresco Dining",
-   "Alarm",
-   "BBQ",
-   "Fenced",
-   "Music System",
-   "Swimming Pool",
-   "TV - Satellite",
-   "Wifi",
-   "Hire Car Recommended",
-   "Safety Box",
-   "Sunloungers",
-   "Urban View",
-   "Sauna/Steam Room",
-   "Gym/Fitness Equipment"
-  ],
-  "amenity_groups": [
-   {
-    "title": "Outside",
-    "items": [
-     "Al Fresco Dining",
-     "BBQ",
-     "Swimming Pool",
-     "Sunloungers"
-    ]
-   },
-   {
-    "title": "Inside",
-    "items": [
-     "Air Conditioning",
-     "Music System",
-     "TV - Satellite",
-     "Wifi",
-     "Safety Box",
-     "Gym/Fitness Equipment"
-    ]
-   },
-   {
-    "title": "Setting",
-    "items": [
-     "Alarm",
-     "Fenced",
-     "Hire Car Recommended"
-    ]
-   },
-   {
-    "title": "Also included",
-    "items": [
-     "Urban View",
-     "Sauna/Steam Room"
-    ]
-   }
-  ],
-  "audience": [
-   "Couples",
-   "Families",
-   "Friends"
-  ],
-  "photos": [
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/01.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/02.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/07.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/05.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/38.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/06.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/30.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/03.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/04.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/08.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/09.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/10.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/11.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/12.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/13.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/14.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/15.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/16.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/17.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/18.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/19.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/20.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/21.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/22.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/23.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/24.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/25.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/26.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/27.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/28.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/29.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/31.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/32.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/33.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/34.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/35.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/36.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/37.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/sauna1.jpg",
-   "https://plstaticserviceaccount-lvs-wcp-euwe-g8bceahmfxd3gdaa.z01.azurefd.net/customappcontent/Client/INVENIO/bp/182/villa_images/fitness1.jpg"
-  ],
-  "lat": 38.96257,
-  "lng": 1.27597,
-  "v_id": 182,
-  "v_uuid": "39658bdd-f817-4938-b467-a3d7d43f54a0",
-  "nightly_from": 629,
-  "nightly_to": 943,
-  "rate_rows": 7,
-  "real_bedrooms": 2,
-  "real_bathrooms": 2,
-  "licence_check": {
-   "status": "verified",
-   "ok": true,
-   "licence": "ETV-1620-E",
-   "register_licence": "ETV1620E",
-   "register_places": 4,
-   "register_municipality": "SANT JOSEP DE SA TALAIA",
-   "register": "habitatges-turistics",
-   "register_name": "HATAEW",
-   "issues": []
-  },
-  "near": [
-   [
-    "can-sandra",
-    1.0
-   ],
-   [
-    "villa-lumara",
-    2.0
-   ],
-   [
-    "villa-monica",
-    2.0
-   ],
-   [
-    "can-carva",
-    2.5
-   ],
-   [
-    "can-melanie",
-    2.5
-   ],
-   [
-    "villa-lydia",
-    2.5
-   ],
-   [
-    "villa-riviera",
-    3.0
-   ],
-   [
-    "can-elsa",
-    3.5
-   ],
-   [
-    "can-paloma",
-    3.5
-   ],
-   [
-    "can-verde",
-    3.5
-   ],
-   [
-    "serene-sanctuary",
-    3.5
-   ],
-   [
-    "villa-brielle",
-    3.5
-   ],
-   [
-    "villa-eliana",
-    3.5
-   ],
-   [
-    "villa-jaja",
-    3.5
-   ],
-   [
-    "villa-solvista",
-    3.5
-   ],
-   [
-    "can-agustin",
-    4.0
-   ],
-   [
-    "can-beth",
-    4.0
-   ],
-   [
-    "los-pinos",
-    4.0
-   ],
-   [
-    "villa-buena-ibiza",
-    4.0
-   ],
-   [
-    "villa-cala-blu",
-    4.0
-   ],
-   [
-    "villa-marita",
-    4.0
-   ],
-   [
-    "vista-conta",
-    4.0
-   ],
-   [
-    "can-elyza",
-    4.5
-   ],
-   [
-    "can-harley",
-    4.5
-   ],
-   [
-    "can-mistique",
-    4.5
-   ],
-   [
-    "can-olivander",
-    4.5
-   ],
-   [
-    "villa-cala-tarida-pueblo",
-    4.5
-   ],
-   [
-    "villa-cara",
-    4.5
-   ],
-   [
-    "villa-ivy",
-    4.5
-   ],
-   [
-    "villa-terra",
-    4.5
-   ],
-   [
-    "villa-violetta",
-    4.5
-   ],
-   [
-    "can-arte",
-    5.0
-   ],
-   [
-    "can-cenote",
-    5.0
-   ],
-   [
-    "puesta-del-sol",
-    5.0
-   ],
-   [
-    "villa-haisley",
-    5.0
-   ],
-   [
-    "villa-lucy",
-    5.0
-   ],
-   [
-    "villa-vivian",
-    5.0
-   ]
-  ],
-  "images": [
-   {
-    "base": "villas/villa-gracie/01",
-    "width": 1400,
-    "height": 933,
-    "colour": "#5f8998"
-   },
-   {
-    "base": "villas/villa-gracie/02",
-    "width": 1400,
-    "height": 933,
-    "colour": "#5e7873"
-   },
-   {
-    "base": "villas/villa-gracie/03",
-    "width": 1400,
-    "height": 933,
-    "colour": "#747c7d"
-   },
-   {
-    "base": "villas/villa-gracie/04",
-    "width": 1400,
-    "height": 933,
-    "colour": "#6c8280"
-   },
-   {
-    "base": "villas/villa-gracie/05",
-    "width": 1400,
-    "height": 933,
-    "colour": "#5e7873"
-   },
-   {
-    "base": "villas/villa-gracie/06",
-    "width": 1400,
-    "height": 933,
-    "colour": "#647b82"
-   }
-  ],
-  "image": "/assets/villas/villa-gracie/01-800.webp",
-  "image_large": "/assets/villas/villa-gracie/01-1400.webp",
-  "image_colour": "#5f8998"
  },
  {
   "slug": "villa-jesus-for-four",
